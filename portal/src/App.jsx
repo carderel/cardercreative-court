@@ -9,6 +9,7 @@ import PeoplePage from '@/pages/PeoplePage'
 import ArcsPage from '@/pages/ArcsPage'
 import EventsPage from '@/pages/EventsPage'
 import FilesPage from '@/pages/FilesPage'
+import IncidentsPage from '@/pages/IncidentsPage'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/timeline" element={<ProtectedRoute><TimelinePage /></ProtectedRoute>} />
         <Route path="/people" element={<ProtectedRoute><PeoplePage /></ProtectedRoute>} />
         <Route path="/arcs" element={<ProtectedRoute><ArcsPage /></ProtectedRoute>} />
+        <Route path="/incidents" element={<ProtectedRoute><IncidentsPage /></ProtectedRoute>} />
         <Route path="/events" element={<ProtectedRoute><EventsPage /></ProtectedRoute>} />
         <Route path="/files" element={<ProtectedRoute><FilesPage /></ProtectedRoute>} />
         <Route path="*" element={<Navigate to="/" replace />} />

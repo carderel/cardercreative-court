@@ -33,17 +33,19 @@ function wikiPathToRoute(rawPath) {
   const cleaned = rawPath.trim().replace(/^(\.\.\/)+/, '').replace(/\/$/, '')
   const top = cleaned.split('/')[0]
   switch (top) {
-    case 'entities':   return '/people'
-    case 'patterns':   return '/patterns'
-    case 'arcs':       return '/arcs'
-    case 'events':     return '/events'
-    case 'analysis':   return '/summary'
-    case 'timeline':   return '/timeline'
-    case 'docs':       return '/files'
-    case 'incidents':  return '/patterns'
+    case 'entities':        return '/people'
+    case 'patterns':        return '/patterns'
+    case 'arcs':            return '/arcs'
+    case 'events':          return '/events'
+    case 'analysis':        return '/summary'
+    case 'timeline':        return '/timeline'
+    case 'docs':            return '/files'
+    case 'spp-violations':  return '/files'
+    case 'incidents':       return '/incidents'
     default:
-      // bare RF-xx segment (relative incident link like ../RF-04/...)
-      if (/^RF-\d+/.test(top)) return '/patterns'
+      if (/^RF-\d+/.test(top)) return '/incidents'
+      // SPP section pages referenced relatively (e.g. from inside spp-violations/)
+      if (/^section-/.test(top)) return '/files'
       return '/'
   }
 }

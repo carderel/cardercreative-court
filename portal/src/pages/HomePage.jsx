@@ -16,6 +16,12 @@ const sections = [
     icon: '🔍',
   },
   {
+    title: 'Incidents',
+    description: '380 individual flagged signals organized by red flag category.',
+    path: '/incidents',
+    icon: '🚩',
+  },
+  {
     title: 'Timeline',
     description: 'Chronological index of all documented incidents and events.',
     path: '/timeline',
