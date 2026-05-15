@@ -3,3 +3,6 @@ portal/dist/
 portal/.env
 portal/.env.local
 .DS_Store
+
+# Attachments are too large for git — serve from Google Drive
+attachments/
