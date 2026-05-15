@@ -2,6 +2,7 @@ portal/node_modules/
 portal/dist/
 portal/.env
 portal/.env.local
+portal/package-lock.json
 .DS_Store
 
 # Attachments are too large for git — serve from Google Drive
