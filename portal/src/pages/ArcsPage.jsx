@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Layout from '@/components/Layout'
 import MarkdownRenderer from '@/components/MarkdownRenderer'
 import { getFilesInDir, getFile, getSlug, RF_NAMES } from '@/lib/content'
-import { Card, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
@@ -73,6 +73,9 @@ export default function ArcsPage() {
                           <CardTitle className="text-sm">{slug}</CardTitle>
                           {candidate && <Badge variant="secondary" className="text-xs">Candidate</Badge>}
                         </div>
+                        {RF_NAMES[rfKey] && (
+                          <CardDescription className="text-xs">{RF_NAMES[rfKey]}</CardDescription>
+                        )}
                       </CardHeader>
                     </Card>
                   )
