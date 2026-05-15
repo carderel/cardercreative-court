@@ -1,9 +1,16 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { clearSession } from '@/lib/auth'
 import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from '@/components/ui/breadcrumb'
 
-export default function Layout({ children }) {
+export default function Layout({ children, breadcrumbs = [] }) {
   const navigate = useNavigate()
 
   function handleLogout() {
@@ -25,6 +32,33 @@ export default function Layout({ children }) {
             Sign out
           </Button>
         </div>
+        {breadcrumbs.length > 0 && (
+          <div className="max-w-6xl mx-auto px-6 pb-3">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/" className="text-xs">Home</Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                {breadcrumbs.map((crumb, i) => (
+                  <span key={i} className="contents">
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                      {crumb.path ? (
+                        <BreadcrumbLink asChild>
+                          <Link to={crumb.path} className="text-xs">{crumb.label}</Link>
+                        </BreadcrumbLink>
+                      ) : (
+                        <BreadcrumbPage className="text-xs">{crumb.label}</BreadcrumbPage>
+                      )}
+                    </BreadcrumbItem>
+                  </span>
+                ))}
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
+        )}
       </header>
       <main className="max-w-6xl mx-auto px-6 py-8">
         {children}

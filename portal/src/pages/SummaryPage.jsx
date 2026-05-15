@@ -17,7 +17,7 @@ export default function SummaryPage() {
   const content = getFile(active)
 
   return (
-    <Layout>
+    <Layout breadcrumbs={[{ label: 'Executive Summary' }]}>
       <div className="flex items-center gap-2 mb-6">
         <h1 className="text-xl font-semibold text-foreground">Executive Summary</h1>
       </div>

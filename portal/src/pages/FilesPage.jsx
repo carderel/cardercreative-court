@@ -56,8 +56,12 @@ export default function FilesPage() {
   const category = categories.find(c => c.id === selected)
   const content = category ? getFile(category.doc) : null
 
+  const breadcrumbs = selected
+    ? [{ label: 'Files', path: '/files' }, { label: category.label }]
+    : [{ label: 'Files' }]
+
   return (
-    <Layout>
+    <Layout breadcrumbs={breadcrumbs}>
       <div className="flex items-center gap-3 mb-6">
         {selected && (
           <Button variant="ghost" size="sm" onClick={() => setSelected(null)} className="text-xs">

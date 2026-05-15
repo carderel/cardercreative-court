@@ -20,8 +20,12 @@ export default function PeoplePage() {
   const content = selected ? getFile(`entities/${selected}.md`) : null
   const person = people.find(p => p.id === selected)
 
+  const breadcrumbs = selected
+    ? [{ label: 'People', path: '/people' }, { label: person.label }]
+    : [{ label: 'People' }]
+
   return (
-    <Layout>
+    <Layout breadcrumbs={breadcrumbs}>
       <div className="flex items-center gap-3 mb-6">
         {selected && (
           <Button variant="ghost" size="sm" onClick={() => setSelected(null)} className="text-xs">

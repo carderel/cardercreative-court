@@ -29,8 +29,12 @@ export default function PatternsPage() {
   const [selected, setSelected] = useState(null)
   const content = selected ? getFile(`patterns/${selected}.md`) : null
 
+  const breadcrumbs = selected
+    ? [{ label: 'Behavioral Patterns', path: '/patterns' }, { label: `${selected} — ${patterns.find(p => p.id === selected)?.label}` }]
+    : [{ label: 'Behavioral Patterns' }]
+
   return (
-    <Layout>
+    <Layout breadcrumbs={breadcrumbs}>
       <div className="flex items-center gap-3 mb-6">
         {selected && (
           <Button variant="ghost" size="sm" onClick={() => setSelected(null)} className="text-xs">

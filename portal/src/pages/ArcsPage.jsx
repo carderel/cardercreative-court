@@ -26,8 +26,12 @@ export default function ArcsPage() {
     return acc
   }, {})
 
+  const breadcrumbs = selected
+    ? [{ label: 'Pattern Arcs', path: '/arcs' }, { label: selected }]
+    : [{ label: 'Pattern Arcs' }]
+
   return (
-    <Layout>
+    <Layout breadcrumbs={breadcrumbs}>
       <div className="flex items-center gap-3 mb-6">
         {selected && (
           <Button variant="ghost" size="sm" onClick={() => setSelected(null)} className="text-xs">

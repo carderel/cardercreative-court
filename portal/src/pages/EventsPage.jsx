@@ -15,8 +15,12 @@ export default function EventsPage() {
   const events = getFilesInDir('events').sort((a, b) => a.path.localeCompare(b.path))
   const content = selected ? getFile(`events/${selected}.md`) : null
 
+  const breadcrumbs = selected
+    ? [{ label: 'Key Events', path: '/events' }, { label: formatEventLabel(selected) }]
+    : [{ label: 'Key Events' }]
+
   return (
-    <Layout>
+    <Layout breadcrumbs={breadcrumbs}>
       <div className="flex items-center gap-3 mb-6">
         {selected && (
           <Button variant="ghost" size="sm" onClick={() => setSelected(null)} className="text-xs">
