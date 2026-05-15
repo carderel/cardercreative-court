@@ -1,17 +1,22 @@
 import { useState } from 'react'
 import Layout from '@/components/Layout'
 import MarkdownRenderer from '@/components/MarkdownRenderer'
-import { getFilesInDir, getFile, getSlug } from '@/lib/content'
+import { getFilesInDir, getFile, getSlug, RF_NAMES } from '@/lib/content'
 import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 
+function normalizeRf(raw) {
+  return raw.replace(/^RF(\d+)$/, (_, n) => `RF-${n.padStart(2, '0')}`)
+}
+
 function parseArcLabel(path) {
   const slug = getSlug(path)
   const match = slug.match(/^ARC-(RF\d+)-(\d+)(-CANDIDATE)?$/)
-  if (!match) return { rf: '?', num: slug, candidate: false }
-  return { rf: match[1], num: match[2], candidate: !!match[3] }
+  if (!match) return { rf: '?', rfKey: '?', num: slug, candidate: false }
+  const rfKey = normalizeRf(match[1])
+  return { rf: match[1], rfKey, num: match[2], candidate: !!match[3] }
 }
 
 export default function ArcsPage() {
@@ -20,9 +25,9 @@ export default function ArcsPage() {
   const content = selected ? getFile(`arcs/${selected}.md`) : null
 
   const grouped = arcs.reduce((acc, arc) => {
-    const { rf } = parseArcLabel(arc.path)
-    if (!acc[rf]) acc[rf] = []
-    acc[rf].push(arc)
+    const { rfKey } = parseArcLabel(arc.path)
+    if (!acc[rfKey]) acc[rfKey] = []
+    acc[rfKey].push(arc)
     return acc
   }, {})
 
@@ -49,11 +54,14 @@ export default function ArcsPage() {
             <div key={rf}>
               <div className="flex items-center gap-2 mb-3">
                 <Badge variant="outline" className="text-xs">{rf}</Badge>
+                {RF_NAMES[rf] && (
+                  <span className="text-sm text-muted-foreground">{RF_NAMES[rf]}</span>
+                )}
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {items.map((arc) => {
                   const slug = getSlug(arc.path)
-                  const { num, candidate } = parseArcLabel(arc.path)
+                  const { num, candidate, rfKey } = parseArcLabel(arc.path)
                   return (
                     <Card
                       key={arc.path}

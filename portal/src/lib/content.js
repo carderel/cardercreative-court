@@ -28,6 +28,24 @@ export function getSlug(path) {
   return path.replace(/\.md$/, '').split('/').pop()
 }
 
+export const RF_NAMES = {
+  'RF-01': 'Parental Alienation',
+  'RF-02': 'Gatekeeping / Access Denial',
+  'RF-03': 'Weaponized Logistics',
+  'RF-04': 'Emotional Manipulation (DARVO)',
+  'RF-05': 'Intimidation / Legal Threats',
+  'RF-06': 'Financial Coercion',
+  'RF-07': 'Boundary Violations',
+  'RF-08': 'Triangulation / Child Coaching',
+  'RF-09': 'Gaslighting',
+  'RF-10': 'Refusal to Co-Parent',
+  'RF-11': 'Inappropriate Child Involvement',
+  'RF-12': 'Strategic Communication',
+  'RF-13': 'Escalation Patterns',
+  'RF-14': 'Substance / Safety',
+  'RF-15': 'False Allegations / Projection',
+}
+
 function wikiPathToRoute(rawPath) {
   // Strip leading relative segments (../../, ../, etc)
   const cleaned = rawPath.trim().replace(/^(\.\.\/)+/, '').replace(/\/$/, '')
@@ -58,7 +76,10 @@ function wikiPathToLabel(rawPath) {
 export function preprocessWikiLinks(markdown) {
   return markdown.replace(/\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]/g, (_, path, display) => {
     const route = wikiPathToRoute(path)
-    const label = display?.trim() || wikiPathToLabel(path)
+    let label = display?.trim() || wikiPathToLabel(path)
+    if (/^RF-\d+$/.test(label) && RF_NAMES[label]) {
+      label = `${label} — ${RF_NAMES[label]}`
+    }
     return `[${label}](${route})`
   })
 }
