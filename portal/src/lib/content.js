@@ -73,6 +73,13 @@ function wikiPathToLabel(rawPath) {
   return cleaned.split('/').pop().replace(/-/g, ' ')
 }
 
+export function preprocessRfLabels(markdown) {
+  return markdown.replace(/(?<!\[)\bRF-(\d{2})\b(?! —)/g, (match, n) => {
+    const key = `RF-${n}`
+    return RF_NAMES[key] ? `${key} — ${RF_NAMES[key]}` : match
+  })
+}
+
 export function preprocessWikiLinks(markdown) {
   return markdown.replace(/\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]/g, (_, path, display) => {
     const route = wikiPathToRoute(path)

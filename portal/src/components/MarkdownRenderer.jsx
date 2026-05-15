@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
-import { preprocessWikiLinks } from '@/lib/content'
+import { preprocessWikiLinks, preprocessRfLabels } from '@/lib/content'
 
 function InternalLink({ href, children }) {
   if (href?.startsWith('/')) {
@@ -14,7 +14,7 @@ function InternalLink({ href, children }) {
 export default function MarkdownRenderer({ content }) {
   if (!content) return <p className="text-muted-foreground">Content not found.</p>
 
-  const processed = preprocessWikiLinks(content)
+  const processed = preprocessRfLabels(preprocessWikiLinks(content))
 
   return (
     <div className="prose prose-slate max-w-none
