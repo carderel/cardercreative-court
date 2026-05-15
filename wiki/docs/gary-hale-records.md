@@ -8,7 +8,7 @@ Gary Hale is Melissa's live-in boyfriend as of August 2025. Olivia is in his pre
 
 ### FCMC Case — 2023 CR B 008051
 **Franklin County Municipal Court**
-- **File:** `attachments/gary-hale/Gary-Hale-FCMC-Case-2023-CR-B-008051.pdf`
+- **File:** [Gary-Hale-FCMC-Case-2023-CR-B-008051.pdf](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — gary-hale folder)*
 - **Arrest date:** May 23, 2023
 - **Charges:** Domestic violence
 - **Disposition:** Charges dismissed September 19, 2023 at prosecutor request
@@ -19,10 +19,10 @@ Gary Hale is Melissa's live-in boyfriend as of August 2025. Olivia is in his pre
 
 ## Photos
 
-Three photos are on file — likely from public records or social media.
-- `attachments/gary-hale/Gary-Hale-photo-1.jpeg`
-- `attachments/gary-hale/Gary-Hale-photo-2.jpeg`
-- `attachments/gary-hale/Gary-Hale-photo-3.jpeg`
+Three photos on file — from public records or social media.
+- [Gary-Hale-photo-1.jpeg](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — gary-hale folder)*
+- [Gary-Hale-photo-2.jpeg](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — gary-hale folder)*
+- [Gary-Hale-photo-3.jpeg](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — gary-hale folder)*
 
 ---
 

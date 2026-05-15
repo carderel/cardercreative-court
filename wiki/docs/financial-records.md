@@ -6,17 +6,17 @@
 
 ### Childcare Receipt Log
 Running log of childcare payments made.
-- **File:** `attachments/financial/Childcare-Receipt-Log.xlsx`
+- **File:** [Childcare-Receipt-Log.xlsx](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — financial folder)*
 - **Relevance:** Documents childcare costs. Cross-reference against RF-06 signals where Melissa billed Eli for childcare on visits she denied — she created the childcare expense by refusing the visit, then charged Eli for it.
 
 ### Payment History
 Court payment history page.
-- **File:** `attachments/financial/Payment-History.pdf`
+- **File:** [Payment-History.pdf](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — financial folder)*
 - **Date:** March 2026
 
 ### Child Support Worksheet
 Ohio Guideline Child Support worksheet.
-- **File:** `attachments/financial/Child-Support-Worksheet.pdf`
+- **File:** [Child-Support-Worksheet.pdf](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — financial folder)*
 - **Date:** March 2026
 
 ---
@@ -35,7 +35,7 @@ This means Eli is financially penalized for asserting his parenting rights. The 
 ## Melissa's Public Salary Record
 
 Melissa is a Sheriff's Lieutenant with Franklin County — her salary is public record.
-- **File:** `attachments/evidence/Melissa-Moose-OpenGovPay-Salary-2026-03-19.jpg`
+- **File:** [Melissa-Moose-OpenGovPay-Salary-2026-03-19.jpg](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — evidence folder)*
 - **Date:** March 19, 2026
 - **Relevance:** Context for financial coercion / support arguments; establishes her income.
 

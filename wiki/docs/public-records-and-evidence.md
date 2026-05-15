@@ -4,7 +4,7 @@
 
 ## Police Report — Report #260140921
 
-- **File:** `attachments/evidence/Police-Report-260140921.pdf`
+- **File:** [Police-Report-260140921.pdf](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — evidence folder)*
 - **Date filed:** November 22, 2025
 - **Filed by:** Eli Carder
 - **Context:** Eli filed after Olivia refused to attend a scheduled custody weekend and Melissa was aware and compliant with the refusal. This is the first formal legal action in Phase C.
@@ -16,7 +16,7 @@
 
 ## Franklin County Auditor — Property Record
 
-- **File:** `attachments/evidence/Franklin-County-Auditor-2026-03-29.jpg`
+- **File:** [Franklin-County-Auditor-2026-03-29.jpg](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — evidence folder)*
 - **Date retrieved:** March 29, 2026
 - **Relevance:** Property ownership / address verification for Melissa's household. Relevant to relocation intent documentation (ARC-RF02-006) and Gary overnight presence.
 
@@ -24,7 +24,7 @@
 
 ## Melissa Moose — Public Salary Record (OpenGov)
 
-- **File:** `attachments/evidence/Melissa-Moose-OpenGovPay-Salary-2026-03-19.jpg`
+- **File:** [Melissa-Moose-OpenGovPay-Salary-2026-03-19.jpg](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — evidence folder)*
 - **Date retrieved:** March 19, 2026
 - **Source:** Franklin County OpenGovPay (public record)
 - **Role:** Sheriff's Lieutenant, Franklin County
@@ -34,7 +34,7 @@
 
 ## Eli's Google Location Timeline Export
 
-- **File:** `attachments/evidence/Eli-Google-Timeline-Export.csv`
+- **File:** [Eli-Google-Timeline-Export.csv](https://drive.google.com/file/d/1MwVaDppi99HHqpV9Doo5lJcjF_BIJ1Fn/view) *(Google Drive)*
 - **Source:** Google Takeout — location history
 - **Relevance:** Can corroborate Eli's presence at specific locations on specific dates. Useful counter-evidence if Melissa makes false claims about Eli's whereabouts. Also documents Eli's visit attempts that were denied.
 
@@ -42,9 +42,9 @@
 
 ## Medical — Family Allergy & Asthma Letter
 
-- **File:** `attachments/medical/Family-Allergy-Asthma-Letter.pdf`
+- **File:** [Family-Allergy-Asthma-Letter.pdf](https://drive.google.com/file/d/1VEcV4lRSc9_2Cly7P1XlvRjlJh0N9OYr/view) *(Google Drive)*
 - **Date:** March 2022
-- **Relevance:** Documents Olivia's (or household member's) medical needs. Relevant to co-parenting medical communication and RF-10 (medical exclusion) arguments.
+- **Relevance:** Documents Olivia's medical needs. Relevant to co-parenting medical communication and RF-10 (medical exclusion) arguments.
 
 ---
 

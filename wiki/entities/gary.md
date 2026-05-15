@@ -36,6 +36,19 @@ Gary-related signals are **compound RF-14/RF-02** candidates for Phase 2 synthes
 
 ---
 
+## Attachments
+
+| File | Description |
+|------|-------------|
+| [FCMC Case 2023-CR-B-008051](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) | Franklin County Municipal Court — domestic violence arrest (May 2023), dismissed Sep 2023 |
+| [Photo 1](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) | Gary Hale — identification photo |
+| [Photo 2](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) | Gary Hale — identification photo |
+| [Photo 3](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) | Gary Hale — identification photo |
+
+→ Full records detail: [[../docs/gary-hale-records|Gary Hale Records]]
+
+---
+
 ## Cross-Pattern Links
 
 | Pattern | Gary's Role |

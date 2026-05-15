@@ -1,6 +1,6 @@
 # Medical Records
 
-All files are in `attachments/medical/`. Organized into two subfolders by subject.
+Organized into two subjects: Eli's medical history and Olivia's medical documents.
 
 ---
 
@@ -8,31 +8,31 @@ All files are in `attachments/medical/`. Organized into two subfolders by subjec
 
 ### Family Doctor — Complete Chart
 Full medical chart from Eli's primary care physician documenting the treatment history.
-- **File:** `attachments/medical/Eli Medical History/Family Dr Medical History/ElijahCarder_CompleteChart.pdf.pdf`
-- **Relevance:** Documents the full treatment timeline for the chronic sinus condition that began June 2025 — pharmaceutical courses, referral to ENT, and ongoing care. Also likely contains the ENT referral documentation. Establishes the medical context for the February 2026 incident.
+- **File:** [ElijahCarder_CompleteChart.pdf](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
+- **Relevance:** Documents the full treatment timeline for the chronic sinus condition that began June 2025 — pharmaceutical courses, referral to ENT, and ongoing care. Establishes the medical context for the February 2026 incident.
 
 ### ER Visit — October 9, 2025
 After Visit Summary from ER, October 2025.
-- **File:** `attachments/medical/Eli Medical History/Hospital ER Visit/AVS Oct 9, 2025.PDF`
+- **File:** [AVS Oct 9, 2025.PDF](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
 - **Relevance:** Earliest documented ER visit in the sinus condition treatment record. Establishes the condition was ER-level by October 2025.
 
 ### ER Visit — February 1, 2026
 After Visit Summary from ER, February 1, 2026.
-- **File:** `attachments/medical/Eli Medical History/Hospital ER Visit/AVS Feb 1, 2026.PDF`
+- **File:** [AVS Feb 1, 2026.PDF](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
 
 ### ER Visit — February 14, 2026 ← KEY DOCUMENT
 After Visit Summary from ER, February 14, 2026.
-- **File:** `attachments/medical/Eli Medical History/Hospital ER Visit/AVS Feb 14, 2026.PDF`
+- **File:** [AVS Feb 14, 2026.PDF](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
 - **Relevance:** This is the ER visit the night before the February 15, 2026 household incident. Eli went to the ER because he could not breathe, returned home without sleeping, and the argument with Abby occurred the following morning. This document directly contextualizes the incident as occurring under acute medical duress — sleep-deprived, post-ER, 8+ months into a chronic condition.
 
 ### ER Visit Notes — February 14, 2026
 Care team notes from the February 14 ER visit.
-- **File:** `attachments/medical/Eli Medical History/Hospital ER Visit/AVS Notes From Care Team Feb 14, 2026.PDF`
+- **File:** [AVS Notes From Care Team Feb 14, 2026.PDF](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
 - **Relevance:** Supplementary detail to the Feb 14 AVS. Together these two documents establish the medical state Eli was in on the morning of the February 15 incident.
 
 ### ER Visit — March 8, 2026
 After Visit Summary from ER, March 8, 2026.
-- **File:** `attachments/medical/Eli Medical History/Hospital ER Visit/AVS Mar 8, 2026.PDF`
+- **File:** [AVS Mar 8, 2026.PDF](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
 - **Relevance:** Documents that the sinus condition continued to require ER-level care after the February incident, reinforcing that it is a genuine, ongoing medical issue rather than a one-time event.
 
 ---
@@ -41,7 +41,7 @@ After Visit Summary from ER, March 8, 2026.
 
 ### Family Allergy & Asthma Letter
 Physician letter documenting Olivia's allergy/asthma condition and care requirements.
-- **File:** `attachments/medical/Olivia Medical Related/Family-Allergy-Asthma-Letter.pdf`
+- **File:** [Family-Allergy-Asthma-Letter.pdf](https://drive.google.com/file/d/1VEcV4lRSc9_2Cly7P1XlvRjlJh0N9OYr/view) *(Google Drive)*
 - **Date:** March 2022
 - **Relevance:** Documents Olivia's medical needs. Relevant to co-parenting communication obligations and RF-10 (medical exclusion) arguments — Eli is excluded from Olivia's medical care despite being a party to the SPP.
 
@@ -49,19 +49,13 @@ Physician letter documenting Olivia's allergy/asthma condition and care requirem
 
 ## Ohio ENT — Visit Notes & Referral Documents
 
-Three documents from Ohio ENT, covering the period October–December 2025. These are the notes sent from the ENT to Eli's family doctor and visit records from the ENT evaluation period.
+Three documents from Ohio ENT, covering October–December 2025.
 
-- **File:** `attachments/medical/Eli Medical History/Ohio ENT/10-27-2025-2077172903561190.pdf` — October 27, 2025
-- **File:** `attachments/medical/Eli Medical History/Ohio ENT/11-11-2025-2078471590804780.pdf` — November 11, 2025
-- **File:** `attachments/medical/Eli Medical History/Ohio ENT/12-10-2025-2080974993098660.pdf` — December 10, 2025
-- **Relevance:** Documents the ENT evaluation process, findings, and the progression toward surgical recommendation. The October visit aligns with the ER visit of October 9, 2025, establishing continuity of care. These, combined with the complete family doctor chart and ER records, form a complete medical narrative.
+- [Ohio ENT — Oct 27, 2025](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
+- [Ohio ENT — Nov 11, 2025](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
+- [Ohio ENT — Dec 10, 2025](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — medical folder)*
 
----
-
-## Pending / To Be Added
-
-- [ ] Final ENT visit notes (surgery date to be set at this appointment)
-- [ ] Surgical scheduling records once date is confirmed
+**Relevance:** Documents the ENT evaluation process, findings, and the progression toward surgical recommendation. The October visit aligns with the ER visit of October 9, 2025, establishing continuity of care.
 
 ---
 
