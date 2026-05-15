@@ -1,9 +1,20 @@
+import { Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
+import { preprocessWikiLinks } from '@/lib/content'
+
+function InternalLink({ href, children }) {
+  if (href?.startsWith('/')) {
+    return <Link to={href} className="text-primary underline underline-offset-2">{children}</Link>
+  }
+  return <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+}
 
 export default function MarkdownRenderer({ content }) {
   if (!content) return <p className="text-muted-foreground">Content not found.</p>
+
+  const processed = preprocessWikiLinks(content)
 
   return (
     <div className="prose prose-slate max-w-none
@@ -22,10 +33,13 @@ export default function MarkdownRenderer({ content }) {
       [&_th]:text-left [&_th]:p-2 [&_th]:border [&_th]:border-border [&_th]:bg-muted [&_th]:font-semibold
       [&_td]:p-2 [&_td]:border [&_td]:border-border
       [&_hr]:border-border [&_hr]:my-4
-      [&_a]:text-primary [&_a]:underline [&_a]:underline-offset-2
     ">
-      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
-        {content}
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeRaw]}
+        components={{ a: InternalLink }}
+      >
+        {processed}
       </ReactMarkdown>
     </div>
   )
