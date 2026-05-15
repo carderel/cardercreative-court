@@ -215,7 +215,7 @@ Apr 3-12, 2026 → DATASET CLOSE
 |--------------------------|----------------------|
 | "Olivia doesn't want to go — I can't force her" | Olivia's stated preferences originate through the documented coaching mechanism (ROW-6819). Eli has **never** heard Olivia express Abby-exclusion preferences directly. Olivia's preferences appear only in Melissa's relays. |
 | "Eli's home is unsafe / not remedied" | "Safe environment" framing introduced Aug 28-30, 2025 — retroactively applied to prior visits that occurred without incident. No formal safety report was ever filed. |
-| "The Feb 15 incident shows Eli is abusive" | Eli admitted raising his voice — that is the entirety of the admitted conduct. The incident was (a) post-ER, sleep-deprived, 8+ months of acute sinus condition (documented: AVS Feb 14, 2026), (b) directed at Abby in an argument, not at Olivia, (c) followed by Olivia leaving the room, then hugging Eli and telling him she loved him. The "alcoholism" framing has no factual basis. |
+| "The Feb 15 incident shows Eli is abusive" | Eli admitted raising his voice — that is the entirety of the admitted conduct. The incident was (a) post-ER, sleep-deprived, 8+ months of acute sinus condition (documented: [AVS Feb 14, 2026](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn)), (b) directed at Abby in an argument, not at Olivia, (c) followed by Olivia leaving the room, then hugging Eli and telling him she loved him. The "alcoholism" framing has no factual basis. |
 | "Eli has a drinking problem" | No DUI, no substance record. Specific incident: one beer with dinner, pickup 30 minutes later. Breath odor ≠ intoxication. |
 | "Abby is harmful to Olivia" | Olivia makes handmade gifts for Abby at Eli's house to avoid Melissa finding out — documented genuine affection. Abby-as-harmful allegation appears only in Melissa's relays; Eli has never witnessed harm to Olivia by Abby. Abby-harm framing follows the same coaching-relay mechanism as other complaint relays. |
 | "I've been trying to co-parent; Eli is uncooperative" | 26 legal threats, zero executions. 104 RF-02 signals. The required-intermediary system requires Eli to petition Melissa for access to his own daughter. Melissa admitted controlling Olivia's calls to Eli (three separate admissions). |
@@ -232,10 +232,10 @@ Ohio courts evaluate custody modification under R.C. 3109.04. Relevant factors a
 |--------|---------------|---------|
 | **The wishes of the child** | Must be evaluated for coaching | ROW-6819 coaching admission; preference relays vs. Eli's direct experience; Olivia's genuine affection for Abby documented |
 | **The child's adjustment to home, school, and community** | Stable in both homes | No documented school or health issues attributable to Eli's home |
-| **The mental and physical health of all parties** | Eli: recovering sinus condition (surgery pending); Melissa: Percocet (Jul 2025), seizure (Feb 2026) | Medical records documented in `docs/medical-records.md` |
+| **The mental and physical health of all parties** | Eli: recovering sinus condition (surgery pending); Melissa: Percocet (Jul 2025), seizure (Feb 2026) | [[../docs/medical-records\|Medical Records]] |
 | **The parent who is more likely to honor and facilitate parenting time** | Melissa: 7+ months documented refusal; 104 RF-02 signals | Phase C cascade; police report Nov 22, 2025; SPP §III.A violations |
 | **Parental alienation** | Melissa: documented coaching, false allegations, required-intermediary system | ROW-6819; ARC-RF01-001; all 31 RF-01 signals |
-| **Domestic violence / safety concerns** | Gary Hale: DV record, homicide investigation, overnight presence | `docs/gary-hale-records.md`; ARC-RF14-002 |
+| **Domestic violence / safety concerns** | Gary Hale: DV record, homicide investigation, overnight presence | [[../docs/gary-hale-records\|Gary Hale Records]]; ARC-RF14-002 |
 | **Significant other introduction compliance** | Gary overnight confirmed Aug 2025 — SPP §III Significant Other rule violation | Section III SO violation page |
 | **Willingness to communicate** | Melissa's channel: single-mode, controlled, adversarial | RF-07 boundary violations; communication quality asymmetry |
 
@@ -251,13 +251,13 @@ Ranked by evidentiary weight, self-sufficiency, and courtroom utility:
 | 2 | Image `_2586.jpeg` + ROW-14295 | False allegation refuted | Smacking allegation confirmed false; phone surveillance confirmed; broken thumb on Melissa's watch |
 | 3 | ROW-1884 | Admission | "I shouldn't have called you a dumbass in front of her but you're such a shit dad that it slipped out" |
 | 4 | ROW-7461 | Admission | Explicit custody strategy admission — inadequacy narrative is deliberate, not organic |
-| 5 | AVS Feb 14, 2026 (ER records) | Medical | Night before Feb 15 incident; post-ER, sleep-deprived context for raised voice |
+| 5 | [AVS Feb 14, 2026](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) (ER records) | Medical | Night before Feb 15 incident; post-ER, sleep-deprived context for raised voice |
 | 6 | ROW-5309–5316 (May 2024) | False allegation | Rape narrative — most extreme false allegation; no filing, Abby denies, pre-dated by Melissa's own conduct |
 | 7 | ROW-3151 + ROW-7478 | Admissions | Call-control admissions — Melissa positions control as generosity; withdrawal is punitive |
 | 8 | Aug 31, 2025 urgent care texts | Projection context | Olivia's broken thumb on Melissa's watch; Melissa sends false smacking allegation 32 hours later |
-| 9 | Gary Hale records | Safety | DV record; homicide investigation; overnight presence per Aug 2025 SPP violation |
+| 9 | [[../docs/gary-hale-records\|Gary Hale records]] | Safety | DV record; homicide investigation; overnight presence per Aug 2025 SPP violation |
 | 10 | ROW-7481–7482 | Admission | "I don't have to do as much as I do to include you" — explicit gatekeeping-control admission |
-| 11 | Nov 22, 2025 police report | Legal action | Eli's first formal action; DARVO response by Melissa; documents visit refusal pattern |
+| 11 | [Nov 22, 2025 police report](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) | Legal action | Eli's first formal action; DARVO response by Melissa; documents visit refusal pattern |
 | 12 | Phase C cascade text sequence | Pattern | Aug 2025 – Apr 2026 consecutive visit refusals; each with stated justification in record |
 | 13 | ROW-937–938 (Nov 2022) | False allegation | Thanksgiving typo → predation framing in 60 seconds; establishes premeditated narrative |
 | 14 | ROW-7164 (Sep 2024) | False allegation | Choking claim arrives within days of Alice's birth; no injury, no prior occurrence, timing is strategic; refuted by Eli |

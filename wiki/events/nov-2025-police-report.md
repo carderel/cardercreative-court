@@ -3,6 +3,7 @@
 **Date:** November 22, 2025
 **Batch:** B-029/B-030
 **Patterns:** [[../patterns/RF-02|RF-02]] · [[../patterns/RF-04|RF-04]] · [[../patterns/RF-11|RF-11]] · [[../patterns/RF-05|RF-05]]
+**Document:** [Police Report #260140921](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) *(Google Drive — evidence folder)*
 
 ---
 

@@ -119,11 +119,12 @@ Eli has been under documented medical care for a chronic sinus condition since J
 
 The argument happened in the context of a man returning from an ER visit, running on no sleep, managing an 8-month medical condition, with a toddler (Alice, 17 months), a 7-year-old (Milo), and a visiting child (Olivia) in the house.
 
-### Medical records to gather and file in `attachments/medical/`
-- [ ] ER records from night before the February 2026 incident (exact date TBD)
-- [ ] Family doctor records showing treatment timeline since June 2025
-- [ ] ENT referral documentation
-- [ ] Surgical recommendation and scheduled surgery date
+### Medical Records ([Google Drive — medical folder](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn))
+- [AVS Feb 14, 2026](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) — ER records from the night before the incident
+- [AVS Notes From Care Team Feb 14, 2026](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) — supplementary ER care team notes
+- [ElijahCarder_CompleteChart.pdf](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) — family doctor records (treatment timeline since June 2025)
+- [Ohio ENT notes (Oct–Dec 2025)](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) — ENT referral documentation
+- [ ] Surgical recommendation and scheduled surgery date — pending
 
 ---
 

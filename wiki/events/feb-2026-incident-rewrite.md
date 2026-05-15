@@ -26,13 +26,12 @@ In February 2026, Eli raised his voice during an argument with Abby. Children (O
 
 **What it was not:** There was no alcohol involved. No physical contact. The argument was with Abby about household frustrations, not directed at Olivia. The children were in another room.
 
-**Medical documentation available:**
-- ER records from the night before the incident
-- Family doctor records showing treatment history since June 2025
-- ENT referral documentation
-- Surgical recommendation and scheduling records
-
-*All documents to be placed in `attachments/medical/`.*
+**Medical documentation ([Google Drive — medical folder](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn)):**
+- [AVS Feb 14, 2026](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) — ER records from the night before the incident
+- [AVS Notes From Care Team Feb 14, 2026](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) — supplementary ER care team notes
+- [ElijahCarder_CompleteChart.pdf](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) — family doctor records (treatment history since June 2025)
+- [Ohio ENT notes (Oct–Dec 2025)](https://drive.google.com/drive/folders/1-9EBZ3yrZFodWzMMJ0V1oc56oKGBVAAn) — ENT referral documentation
+- Surgical scheduling records — pending
 
 ---
 
