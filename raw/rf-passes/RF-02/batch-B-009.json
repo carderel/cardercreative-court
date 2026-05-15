@@ -1,0 +1,169 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-009",
+    "row_range": {"start": 2959, "end": 3342},
+    "date_range": {"start": "2023-07-16", "end": "2023-08-20"},
+    "episode_range": {"start": "EP-0402", "end": "EP-0443"},
+    "message_count": 384,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": "Batch covers Olivia's first cheerleading practices and school year start (Aug 16). Major discovery: ROW-3151 — 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days.' Melissa explicitly reveals she controls the initiation of Olivia-to-Eli calls in both directions — extending the CA-RF02-02 intermediary architecture to outgoing contacts. Fourth voluntary DND suspension (ROW-3006), confirming ongoing selective discretionary control. ROW-2961-2962 analytically clarifies that the DND/voicemail system operates on 'my phone' (Melissa's), not Olivia's device. Vaping conflict (late July) provides context for ROW-3135-3151 contact restriction cluster."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 384,
+    "primary_flags": 7,
+    "primary_severity_distribution": {"1": 6, "2": 1, "3": 0},
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": {"RF-05": 1, "RF-15": 1},
+    "no_flag_messages": 377,
+    "flag_rate": "1.8%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-2961-2962",
+      "date": "2023-07-16",
+      "direction": "Received",
+      "verbatim_message": "ROW-2961: 'No it's after 8:30' | ROW-2962: 'So my phone automatically sends you to vm'",
+      "severity": 1,
+      "rf_indicators": ["phone_access_control", "dnd_mechanism_clarified"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "ARC-RF02-001 signal with a new analytical detail: Melissa says 'my phone automatically sends you to vm' — specifying that the DND/voicemail redirect mechanism operates on MELISSA'S phone, not Olivia's. This clarifies the architecture: Eli's calls are intercepted at Melissa's device level before reaching Olivia. Context: Eli asked 'She sending me to vm?' (ROW-2960) — Eli attributed the voicemail to Olivia. Melissa corrects: it's her phone, it's automatic, it's the 8:30pm cutoff. Per CA-RF02-01: DND confirmed active, mechanism now clarified as phone-level interception on Melissa's device.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3009",
+      "date": "2023-07-18",
+      "direction": "Received",
+      "verbatim_message": "What time did you call? Cause it automatically goes to that but I turned it off like an hour ago",
+      "severity": 1,
+      "rf_indicators": ["dnd_active_call_blocked", "selective_enforcement"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "DND was active when Eli called; Melissa acknowledges it blocked the call and confirms she manually disabled it an hour prior. This is the fourth documented instance of Melissa real-time selectively controlling the DND state (previous: ROW-1186 B-004, ROW-2550 B-007, ROW-2899 B-008). Each instance confirms: (1) the DND blocks calls when active; (2) Melissa can disable it at will; (3) the choice of when to disable is discretionary. Note: ROW-3006 (same period) shows Melissa telling Eli 'there's no curfew cause I'm on vacation' — demonstrating the cutoff is suspended entirely at Melissa's discretion based on her schedule.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3031",
+      "date": "2023-07-19",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't want to talk right now",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Melissa was making slime with Olivia when Eli called. Melissa relays Olivia's preference not to talk. Per CA-RF02-02: preference cannot be independently verified under the DND/intermediary architecture.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-3135-3136",
+      "date": "2023-07-30",
+      "direction": "Received",
+      "verbatim_message": "ROW-3135: 'She said she doesn't want to look at you cause you hurt her feelings' | ROW-3136: 'She doesn't want to Google meet you'",
+      "severity": 1,
+      "rf_indicators": ["conflict_amplified_contact_refusal", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Melissa relays Olivia's hurt feelings from a dispute about vaping (Olivia believed Eli was vaping on a video call; Eli denies it) as a basis for blocking a Google Meet video call. 'She doesn't want to Google meet you' — the denial is specifically about the video call, not general communication. Eli was trying to resolve the situation; Melissa relays the refusal without facilitating resolution. The conflict-as-barrier pattern: child anger is relayed by Melissa as a contact blocker rather than being mediated toward resolution.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-3151",
+      "date": "2023-07-31",
+      "direction": "Received",
+      "verbatim_message": "I normally ask her if she wants a to call you in the am. I'm the reason she calls you most days. She didn't want to today. She's still mad at you",
+      "severity": 2,
+      "rf_indicators": ["bidirectional_communication_control", "call_facilitation_withheld", "intermediary_role_explicit"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "HIGHEST ANALYTICAL SIGNIFICANCE OF BATCH. Melissa explicitly reveals: (1) 'I normally ask her if she wants to call you in the am' — the morning calls from Olivia to Eli that appear to originate from Olivia are actually initiated by Melissa asking the question. (2) 'I'm the reason she calls you most days' — Melissa takes direct credit for facilitating the majority of Olivia-to-Eli contact. (3) 'She didn't want to today. She's still mad at you' — Melissa is now withholding this facilitation as a result of the vaping conflict. Together, these three elements reveal that Melissa controls the initiation of contact in both directions: outgoing calls from Olivia to Eli are mediated through Melissa's morning prompts. When Melissa chooses not to prompt (or when Olivia is angry), contact does not happen. This is the most explicit statement in the dataset of Melissa's comprehensive communication control architecture. Sev 2.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3171",
+      "date": "2023-08-02",
+      "direction": "Received",
+      "verbatim_message": "No she wants to swim",
+      "severity": 1,
+      "rf_indicators": ["visit_refusal_preference_relay", "access_denial"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Melissa relays Olivia's preference (swimming) as a reason to decline Eli's visit request for the following day. The preference relay functions as a visit refusal. Per CA-RF02-02: preference cannot be independently verified; Melissa's choice of whether to offer Eli a competing activity slot ('she can swim AND see you earlier') is not explored. The visit does not happen.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-3190",
+      "date": "2023-08-06",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't want to call",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Eli said 'she can call me after her movie thing' (ROW-3186); the movie thing was cancelled (ROW-3187-3188). Melissa relays Olivia's preference not to call. Immediately after (ROW-3192), Melissa offers Eli to take Olivia to swim in the morning — showing contact facilitation is still available when Melissa frames it as an activity invitation. The preference relay closes out the evening call.",
+      "confidence": "medium"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-3006",
+      "reason_noted": "Fourth voluntary cutoff suspension: 'I told you last week that there's no curfew cause I'm on vacation.' Melissa unilaterally suspending the 8:30pm rule for the vacation week. Analytically confirms selective discretionary control of the cutoff (CA-RF02-01). Cooperative gesture; notable for confirming the pattern. Not flagged as primary RF-02."
+    },
+    {
+      "message_id": "ROW-3076-3079",
+      "reason_noted": "Olivia refuses Eli's proposed activity and conditions her visit on Kalahari: 'She said she wants you to take her to kalahari. She said if she is going with you you're going to kalahari' (ROW-3076-3077). When Eli says Kalahari is not happening soon, Melissa relays 'She said then I'm not going to go with you' (ROW-3079). This is a preference relay that functions as a visit condition — Olivia will only attend if Eli takes her to a specific high-cost venue. Near ARC-RF02-005 territory (visit access conditioned on specific activities/demands), but this reads as genuine child preference rather than Melissa-managed gatekeeping. Not flagged as primary RF-02. Noting for ARC-RF02-005 context — the pattern of Olivia's preferences being relayed as visit conditions appears multiple times."
+    },
+    {
+      "message_id": "ROW-3094",
+      "reason_noted": "Melissa voluntarily relays that Olivia wanted to call Eli: 'She wanted to call ya' (ROW-3094). Eli had left his phone at home for an appointment. Melissa is proactively informing Eli that Olivia wanted contact — a cooperative relay. Analytically positive and worth noting as evidence that Melissa does facilitate contact when she chooses to."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-3240",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "'Abby pregnant or just fat?' — derogatory speculation about Abby's appearance/status. Consistent pattern of derogatory language about Eli's partner in co-parenting communications. Sev 1.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3271",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "'Abby preggers? If so I need to prep Olivia for a brother cousin' — 'brother cousin' framing reinvokes the incest/grooming narrative (Abby as relative of Olivia, therefore child would be Olivia's 'brother cousin'). Third deployment of this narrative in the dataset (B-004 ROW-1288: 'uncle/dad'; B-006 ROW-2168-2171: 'fucking his niece'; now B-009 ROW-3271: 'brother cousin'). Pattern of recurring incest framing in co-parenting communications is RF-15 (False Allegations/Projection). Sev 2.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 2,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 2,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": ["ROW-2961-2962", "ROW-3009"],
+      "ARC-RF02-002": ["ROW-3031", "ROW-3135-3136", "ROW-3151", "ROW-3171", "ROW-3190"],
+      "ARC-RF02-003": [],
+      "ARC-RF02-004": [],
+      "ARC-RF02-005": []
+    },
+    "arc_001_cumulative_signals": 17,
+    "arc_002_cumulative_signals": 16,
+    "arc_002_escalation_note": "ARC-RF02-002 receives first Sev 2 signal this batch (ROW-3151 — 'I'm the reason she calls you most days'). Arc pattern has escalated from objecting to direct scheduling conversations (2022) to comprehensive bidirectional communication control (2023). Max severity now 2.",
+    "arc_001_note": "ROW-2961-2962 analytically clarifies that the DND mechanism operates on Melissa's phone, not Olivia's — calls to Olivia are intercepted at Melissa's device. ROW-3006/3009 document 4th and 5th selective enforcement events."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

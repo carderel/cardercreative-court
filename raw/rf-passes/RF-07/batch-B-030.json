@@ -1,0 +1,78 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-030",
+    "row_range": {
+      "sequential_block": "ROW-8467–ROW-8595",
+      "parallel_block": "ROW-14922–ROW-15539",
+      "note": "Three-block data structure. Sequential block contains Dec 16 2025-Mar 18 2026 Eli/Sent messages; after ROW-8595 the sequential block contains Nov-Dec 2024 data appearing out of chronological order (ROW-8679 Dec 14 2024 assigned to B-020; ROW-8877 Jan 5 2025 assigned to B-021 as peripheral). Parallel block covers full Dec 16 2025-Apr 7 2026 range."
+    },
+    "date_range": { "start": "2025-12-16", "end": "2026-04-07" },
+    "phase": "C",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Phase C. Dec 2025-Apr 2026. Three-block data structure with out-of-order sequential block data. Contains S-010: ROW-15082 response-time blame attribution (Feb 11 2026). Dataset closing period."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": null,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": null,
+    "flag_rate": "see note"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF07-B030-001",
+      "flag_id": "ARC-RF07-001-S010",
+      "timestamp": "2026-02-11",
+      "direction": "received",
+      "phase": "C",
+      "row_ref": "ROW-15077–ROW-15082",
+      "message_text": "ROW-15077 (Received, Feb 11): 'I'll take your no response as a no' | ROW-15079 (Received, Feb 11): 'Lame excuse' | ROW-15082 (Received, Feb 11): 'Your idea that you don't need to answer me until you feel like it causes these issues'",
+      "primary_rf": "RF-07",
+      "primary_severity": 1,
+      "sub_pattern": "response_time_blame_attribution",
+      "primary_reasoning": "Feb 11 pickup coordination dispute. Context: Eli was sick (post-flu/pneumonia), asked if he could pick up Olivia if he felt well enough. He didn't respond promptly due to work meetings. Melissa escalates: ROW-15077 'I'll take your no response as a no' — unilateral scheduling assumption without confirmation (parallel to S-005 ROW-14188 mechanism). ROW-15079 'Lame excuse' — contemptuous dismissal of Eli's health/work explanation. ROW-15082 'Your idea that you don't need to answer me until you feel like it causes these issues' — response-time blame attribution. Mechanism: Melissa defines Eli's response timeline as the cause of scheduling problems, establishing a norm that Eli must respond on-demand or be held responsible for consequences. Per ADD-004: response-demand framing confirmed; Sev-1 assigned (single episode, non-parenting-time context). The 'I'll take your no response as a no' mechanism is a unilateral-assumption pressure tool — forcing Eli to respond or lose parenting opportunity. ARC-RF07-001-S010.",
+      "verbatim_key_messages": [
+        "ROW-15077 (Received, Feb 11): 'I'll take your no response as a no'",
+        "ROW-15079 (Received, Feb 11): 'Lame excuse'",
+        "ROW-15082 (Received, Feb 11): 'Your idea that you don't need to answer me until you feel like it causes these issues'"
+      ],
+      "pattern_tags": ["response_time_blame", "unilateral_assumption", "on_demand_response_norm", "contemptuous_dismissal"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": [],
+      "calibration_notes": "Sev-1: response-time blame attribution in a pickup-coordination context. Context note: Eli was ill — Melissa's 'lame excuse' dismissal of a health explanation while demanding on-demand response is the RF-07 component. ADD-004 response-demand framing confirmed."
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. S-010 added (ROW-15082, response-time blame, Sev-1). Arc now at 10 signals. Dataset closing period — B-031 is the final batch. Out-of-order sequential block data (ROW-8679, ROW-8877) assigned to their chronological batches (B-020 and B-021 respectively) with data structure notes."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Phase C — Dec 2025-Apr 2026. Variable conflict density. Feb 11 pickup dispute notable. Apr 7 dataset approaches closing. RF-04 continued: Feb 15 admitted-incident amplification; Mar 28 explicit alcoholism accusation; Apr 7 pre-closing contempt.",
+    "rf07_assessment": "One primary signal (Sev-1 response-time blame). S-010 reinforces the on-demand-response-norm sub-pattern: Melissa defines when Eli must respond and frames his failure to meet her timeline as causing scheduling problems. The 'I'll take your no response as a no' mechanism is a recurring pressure tool (parallel to S-005 Aug 21 'I'll assume you are not picking her up'). Phase C shows the pattern maintained without attenuation.",
+    "custodial_context": "Feb 11 is a pickup coordination scenario — Eli's parenting time is the context (Eli asking if he can pick up Olivia). Melissa's deployment of response-time blame during a parenting-time request elevates ADD-004 consideration but the primary mechanism is response-time norm-setting rather than custodial intrusion."
+  }
+}

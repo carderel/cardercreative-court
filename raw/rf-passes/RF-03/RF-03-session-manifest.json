@@ -1,0 +1,189 @@
+{
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "pass_complete": true,
+  "completed_date": "2026-05-05",
+  "batches_processed": 31,
+  "batches_with_flags": 8,
+  "total_messages_in_dataset": 15465,
+
+  "flag_summary": {
+    "primary_flags": 6,
+    "peripheral_flags": 3,
+    "severity_distribution": {
+      "Sev-1": 6,
+      "Sev-2": 0,
+      "Sev-3": 0
+    }
+  },
+
+  "primary_signals": [
+    {
+      "id": "S-001",
+      "batch": "B-016",
+      "date_range": "2024-06-17 to 2024-06-19",
+      "rows": ["ROW-5675", "ROW-5726", "ROW-5743"],
+      "classification": "RF-03 primary Sev-1",
+      "addendum": "ADD-004",
+      "arc": "ARC-RF03-001",
+      "arc_signal_number": 1,
+      "arc_state_after": "CANDIDATE",
+      "summary": "SPP transport misrepresentation — Melissa claims 'per court order' Eli must bring Olivia home, misrepresenting SPP which assigns transport obligation to Melissa. First documented SPP violation in dataset.",
+      "direction": "received"
+    },
+    {
+      "id": "S-002",
+      "batch": "B-024",
+      "date_range": "2025-03 to 2025-04",
+      "rows": ["ROW-9410", "ROW-9502"],
+      "classification": "RF-03 primary Sev-1",
+      "addendum": "ADD-004",
+      "arc": "ARC-RF03-001",
+      "arc_signal_number": 2,
+      "arc_state_after": "WATCHING",
+      "summary": "Transport offloading — Melissa imposes unilateral transport obligation on Eli, shifting her SPP-required duty without consent. Arc promotes CANDIDATE to WATCHING at this signal.",
+      "direction": "received"
+    },
+    {
+      "id": "S-003",
+      "batch": "B-028",
+      "date_range": "2025-09-03 to 2025-09-04",
+      "rows": ["ROW-14300", "ROW-14301", "ROW-14304", "ROW-14305"],
+      "classification": "RF-03 primary Sev-1 + RF-06 secondary",
+      "addendum": "ADD-006",
+      "arc": "ARC-RF03-001",
+      "arc_signal_number": 3,
+      "arc_state_after": "WATCHING",
+      "summary": "Dance enrollment schedule conflict — Melissa's unilateral enrollment in Thursday dance class creates standing scheduling conflict with Eli's parenting time. RF-03+RF-06 compound (enrollment conflict + compelled payment attempt).",
+      "direction": "received",
+      "compound": ["RF-06"]
+    },
+    {
+      "id": "S-004",
+      "batch": "B-029",
+      "date_range": "2025-10",
+      "rows": ["ROW-14511", "ROW-14516", "ROW-14631"],
+      "classification": "RF-03 primary Sev-1",
+      "addendum": "ADD-004",
+      "arc": "ARC-RF03-001",
+      "arc_signal_number": 4,
+      "arc_state_after": "WATCHING",
+      "summary": "Transport offloading cluster — multiple instances of Melissa shifting SPP transport obligations to Eli without consent. Part of sustained Phase C transport weaponization pattern.",
+      "direction": "received"
+    },
+    {
+      "id": "S-005",
+      "batch": "B-030",
+      "date_range": "2025-11 to 2025-12",
+      "rows": ["ROW-14743", "ROW-14897", "ROW-14899"],
+      "classification": "RF-03 primary Sev-1",
+      "addendum": "ADD-004",
+      "arc": "ARC-RF03-001",
+      "arc_signal_number": 5,
+      "arc_state_after": "ACTIVE",
+      "summary": "Transport offloading cluster — continuation of Phase C transport weaponization. ARC-RF03-001 promotes WATCHING to ACTIVE at this signal (5th confirmed instance of SPP transport manipulation).",
+      "direction": "received"
+    },
+    {
+      "id": "S-006",
+      "batch": "B-031",
+      "date_range": "2026-02-11",
+      "rows": ["ROW-15081", "ROW-8548"],
+      "classification": "RF-03 primary Sev-1",
+      "addendum": "ADD-004",
+      "arc": "ARC-RF03-001",
+      "arc_signal_number": 6,
+      "arc_state_after": "ACTIVE",
+      "summary": "Transport offloading — final dataset instance. Pattern unresolved at dataset close (April 12, 2026).",
+      "direction": "received"
+    }
+  ],
+
+  "peripheral_signals": [
+    {
+      "id": "P-001",
+      "batch": "B-014",
+      "date_range": "2024-03 to 2024-05",
+      "classification": "RF-03 peripheral",
+      "primary_pass": "RF-15 + RF-02",
+      "addendum": "ADD-001",
+      "summary": "Cat allergy scheme — RF-15 Category B + RF-02 primary; RF-03 peripheral (environmental logistics condition imposed as visitation prerequisite — cat removal demand).",
+      "direction": "received"
+    },
+    {
+      "id": "P-002",
+      "batch": "B-025",
+      "date_range": "2025-05",
+      "classification": "RF-03 peripheral",
+      "primary_pass": "RF-15 + RF-02",
+      "addendum": "ADD-001",
+      "summary": "Vaping/asthma scheme — RF-15+RF-02 primary; RF-03 peripheral (manufactured environmental health condition as visitation constraint mechanism).",
+      "direction": "received"
+    },
+    {
+      "id": "P-003",
+      "batch": "B-026",
+      "date_range": "2025-06",
+      "classification": "RF-03 peripheral",
+      "primary_pass": "RF-15 + RF-02",
+      "addendum": "ADD-001",
+      "summary": "Vaping/asthma scheme continuation — same mechanism as P-002; RF-03 peripheral compound.",
+      "direction": "received"
+    }
+  ],
+
+  "arc_states_final": {
+    "ARC-RF03-001": {
+      "name": "Weaponized Scheduling",
+      "state": "ACTIVE",
+      "signals": 6,
+      "watching_at": "B-024 (S-002)",
+      "active_at": "B-030 (S-005)",
+      "unresolved_at_dataset_close": true,
+      "direction": "received",
+      "note": "Transport offloading is the dominant mechanism — 5 of 6 signals are SPP obligation shifts (ADD-004). One signal is schedule conflict via unilateral enrollment (ADD-006). Father's Day location redirect (ADD-003) confirmed by Eli in CP2 but not discretely located in message record; event may predate dataset window or use different keyword. Urgent care prerequisite (ADD-005) also CP2-confirmed but specific event not keyword-identified in messages — likely in B-007/B-008 area."
+    },
+    "ARC-RF03-002": {
+      "name": "Activity Enrollment Obstruction",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "watching_at": null,
+      "active_at": null,
+      "unresolved_at_dataset_close": false,
+      "direction": "received",
+      "note": "No clear activity enrollment creating a standing visitation-time conflict was discretely documented beyond S-003 (dance — classified under ARC-RF03-001 as transport compound). Dance enrollment is RF-06 primary; scheduling conflict dimension is RF-03 compound. Arc closes at CANDIDATE — weak CP2 confirmation did not produce independent signals."
+    }
+  },
+
+  "methodology_notes": [
+    "ADD-004 (transport offloading / SPP obligation shift) is the primary signal type — 5 of 6 primary signals. Eli confirmed Melissa 'still tries it from time to time' at CP2 date, consistent with sustained Phase C signal production.",
+    "ADD-003 (Father's Day location redirect) confirmed by Eli at CP2 but not located with 'Father's Day' keyword in B-006/B-007/B-008 area — messages in that range show blame-shifting framing, not logistics redirect language. May require timestamp-sequence analysis rather than keyword search.",
+    "ADD-005 (urgent care prerequisite for family visit) confirmed at CP2 but not keyword-located; Jan 2024 urgent care context (ROW-4427-4428) reflected a genuine medical situation, not a conditional blockade.",
+    "Peripheral compound rule applied consistently: cat allergy and vaping/asthma schemes are RF-15+RF-02 primary; RF-03 flagged as peripheral only per ADD-001.",
+    "No Sev-2 or Sev-3 signals in this pass — all documented instances are Sev-1 (logistics manipulation without complete access denial). RF-03 is consistently compound with RF-02 in more severe instances."
+  ],
+
+  "cross_pass_compounds": [
+    {
+      "signal": "S-003",
+      "compound_with": "RF-06",
+      "mechanism": "Dance enrollment — RF-06 primary (compelled payment ADD-007); RF-03 secondary (scheduling conflict ADD-006)"
+    },
+    {
+      "signal": "P-001 through P-003",
+      "compound_with": "RF-15 + RF-02",
+      "mechanism": "Cat allergy and vaping/asthma schemes — conditional logistics imposed via manufactured medical pretext"
+    }
+  ],
+
+  "cp2_notes": {
+    "cp2_completed": "2026-05-05",
+    "addenda_count": 7,
+    "key_calibrations": [
+      "Transport offloading confirmed recurring at CP2 date — still occurring",
+      "Father's Day redirect example named by Eli — may predate dataset or use different language",
+      "Urgent care prerequisite confirmed — specific event not identified in messages",
+      "SPP citation required by Eli to enforce Melissa's transport obligation — confirms pattern"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-031",
+    "row_range": { "start": 15540, "end": 15599 },
+    "date_range": { "start": "2026-04-08", "end": "2026-04-12" },
+    "message_count": 60,
+    "phase": "C",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 60,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 60,
+    "flag_rate": "0.0%"
+  },
+  "flagged_messages": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE — DATASET CLOSE. No RF-05 signals in B-031. Final batch is 5 days (Apr 8-12, 2026); 60 messages. COMP-RF04-030 (Apr 12 DARVO bruise/abuse-reversal: RF-04+RF-09+RF-11) contains no legal threat or custody threat component. RF-05 arc closes with ARC-RF05-001 unresolved: the Sep 17 'agreement ready to sign' (S-022) and the Nov 25 'big contempt case' (S-025) were both declared with specificity and attorney engagement but have no documented execution in the text record. Paper tiger trajectory confirmed as the arc's defining characteristic — sustained legal threat activity without documented filing execution across the full 2022-2026 dataset. ARC-RF05-001 formal resolution requires confirmation of whether any custody or contempt filing was actually executed post-Sep 2025."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-031 (Apr 8-12, 2026): Dataset close. Zero RF-05 primary flags. The final batch's primary RF-04 event (COMP-RF04-030: DARVO bruise/abuse-reversal) is significant for RF-04/RF-09/RF-15 but contains no legal threat component. Visit-refusal pattern persists but resolves within hours (ROW-15553). The RF-05 arc closes in a low-signal mode — the major escalation events (B-027 through B-029) are in the rear-view, and the final documented RF-05 primary signal is S-026 from B-030 (Mar 21, 2026).",
+    "cross_rf_context": "RF-04 B-031: COMP-RF04-030 (RF-04+RF-09+RF-11 Apr 12 bruise DARVO). No RF-05 cross-tags confirmed. B-031 peripheral flags (visit-refusal framing ROW-15549-15550; passive-aggressive withholding ROW-15552; contempt characterization ROW-15576) contain no legal threat components."
+  }
+}

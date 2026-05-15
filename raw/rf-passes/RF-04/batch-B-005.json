@@ -1,0 +1,189 @@
+{
+  "batch_id": "B-005",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "analysis_date": "2026-04-23",
+
+  "date_range": {
+    "start": "2023-01-18",
+    "end": "2023-02-22"
+  },
+  "row_range": {
+    "start": 1462,
+    "end": 1839
+  },
+  "message_count": 378,
+  "phase": "A",
+
+  "analysis_summary": {
+    "conflict_density": "low",
+    "conflict_ratio_estimate": 0.07,
+    "dominant_theme": "Near-clean batch post-surgery. Two primary RF-04 clusters: (1) isolated illness-skepticism/Abby-as-obstacle relay (ROW-1683); (2) sustained Feb 15 car accident/scammer attack (ROW-1715-1789). Majority of batch is cooperative logistics and neutral communication.",
+    "surgery_contrast_note": "Cooperative, RF-04-free surgery period (Dec 29–Jan 15) ended before this batch. Jan 18 start shows return to baseline but conflict density remains low until Feb 10.",
+    "batch_flags_primary": 2,
+    "batch_flags_peripheral": 5,
+    "new_compound_patterns": 1,
+    "new_arc_signals": 2,
+    "arc_promotions": 0
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B005-001",
+      "date": "2023-02-10",
+      "row": "ROW-1683",
+      "severity": 1,
+      "arc": "ARC-RF04-001",
+      "arc_signal_number": 15,
+      "trigger": "Eli citing Abby's illness as reason for reduced time with Olivia during the week",
+      "exact_text": "You've been telling her all week you can't spend time with her cause Abby is sick and now she's magically better",
+      "analysis": "Illness-skepticism sub-pattern instance 4. 'Magically better' is contemptuous dismissal of Abby's illness as fabricated or conveniently resolved excuse. Structurally combines two ARC-RF04-001 sub-patterns: (1) illness-skepticism (Eli's stated health reason dismissed as deception/laziness) and (2) Abby-as-obstacle framing (Abby's illness recast as Eli prioritizing Abby over Olivia). Secondary ARC-RF04-002 element: 'telling her all week' deploys Olivia's experience as accusation vehicle. Assigned primarily to ARC-RF04-001 given contemptuous dismissal is the dominant mechanism. Sev 1 per ADD-001 (single-message, no sustained campaign). Illness-skepticism sub-pattern now 4 confirmed instances (ROW-978-983, ROW-1062-1065, ROW-1683; ROW-726 near-boundary excluded).",
+      "addenda_applied": ["ADD-001", "ADD-002", "ADD-005"],
+      "calibration_status": "analysis"
+    },
+    {
+      "flag_id": "RF04-B005-002",
+      "date": "2023-02-15",
+      "row": "ROW-1715-1789",
+      "severity": 2,
+      "arc": "ARC-RF04-001",
+      "arc_signal_number": 16,
+      "trigger": "Eli mentioned consulting lawyers after car accident; Melissa learned Eli was 'more hurt' after learning the other driver had insurance",
+      "exact_text_key_excerpts": [
+        "ROW-1715: I can't believe you're suing that poor lady. You just said you guys were fine. Then as soon as you found out she had insurance all of a sudden you're hurt.",
+        "ROW-1716: That seems suspect",
+        "ROW-1722: So nice try trying to gaslight and place blame",
+        "ROW-1731: Yeah. I just said I told her in a way that she knew everyone was safe. Are you dumb?",
+        "ROW-1733: I don't want you teaching her how to be a scammer",
+        "ROW-1734: That's not being a good person",
+        "ROW-1738: seems you always need me to answer the same question over and over cause you lack the ability to read or pay attention",
+        "ROW-1782: Maybe that wreck did fuck you up. You hit your head?",
+        "ROW-1783: Maybe you do need to get checked out.",
+        "ROW-1789: You just contradicted yourself. I think you have issues"
+      ],
+      "analysis": "Sustained ~74-message contemptuous campaign organized around moral character assassination (scammer accusation) with multiple RF-04 sub-mechanisms deployed. Severity 2: sustained multi-message campaign, multiple attack vectors, 'Are you dumb?' (4th instance), DARVO partial element, and moral character attacks. Structure: (1) Initial scammer accusation (ROW-1715-1716): Melissa frames Eli's injury claim as insurance fraud without knowing full facts. (2) Attack escalation (ROW-1722): Eli's legitimate counter that Melissa told Olivia first is reframed as 'gaslighting' — partial DARVO Reverse element. (3) Intelligence attack 'Are you dumb?' (ROW-1731) — 4th instance of this specific phrase, ADD-002 trigger. (4) Moral character attacks (ROW-1733-1734): scammer framing + child-modeling accusation ('teaching her how to be a scammer,' 'not being a good person'). (5) Competence/attention attack (ROW-1738): reading/attention deficit framing. (6) Partial de-escalation mid-exchange (ROW-1748-1752) after Eli's concession; Melissa acknowledges the specific comment and contextualizes. (7) Post-conflict tangent (ROW-1758-1789): Eli pivots to throat-punch counter-accusations; Melissa's responses in ROW-1781-1789 are within mutual-conflict zone (ADD-005 boundary). ROW-1782-1783 post-accident cognitive mockery ('Maybe that wreck did fuck you up. You hit your head?') noted as illness-skepticism-adjacent contempt but flagged as within mutual conflict zone. Primary RF-04 window assessed as ROW-1715-1752 with ROW-1782-1789 as secondary contemptuous tail. Compound: COMP-RF04-004. Cross-reference: RF-09 (ROW-1722), RF-01 (ROW-1733-1734).",
+      "add001_note": "DARVO partial: Attack ('Are you dumb?', 'scammer') + Reverse (ROW-1722 gaslighting accusation). Deny element absent — no explicit denial of her own role, but reframing via 'nice try trying to gaslight' functions as de facto reverse. Assessed as partial DARVO (ADD-001: Sev 1 structural) but elevated to Sev 2 on sustained campaign grounds (74 messages, multiple attack vectors).",
+      "add002_note": "'Are you dumb?' (ROW-1731) — 4th confirmed instance of this specific intelligence attack phrase. ADD-002 primary trigger. 'lacks the ability to read or pay attention' (ROW-1738) — intelligence/attention attack, ADD-002 adjacent.",
+      "add005_note": "ROW-1758-1789: Eli initiated throat-punch counter-accusations. Melissa's responses in this sub-section are partly reactive to Eli's escalation (ADD-005 applies). ROW-1782-1783 post-accident cognitive mockery noted but assessed within mutual conflict zone. Primary RF-04 window is ROW-1715-1752.",
+      "calibration_status": "analysis"
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B005-P001",
+      "date": "2023-02-01",
+      "row": "ROW-1599-1601",
+      "type": "near_boundary",
+      "primary_rf_candidate": "RF-04",
+      "arc_watch": "ARC-RF04-002",
+      "exact_text": [
+        "ROW-1599: You told olivia you were thinking of picking her up on Wednesday then never said anything else about it",
+        "ROW-1600: She is expecting you to pick her up tonight. You need to do better with communication",
+        "ROW-1601: Are you picking her up today? What time if so and what time will you have her home by?"
+      ],
+      "note": "Communication critique relayed through Olivia's expectation. Structurally similar to ARC-RF04-002 (child experience as accusation vehicle — Olivia expecting pickup = Eli's failure). However, tone is prescriptive ('need to do better') rather than contemptuous. No RF-04-defining contemptuous language. Near-boundary: communication-failure accusation using child's disappointment as pressure lever but not at primary-flag threshold. Watch for pattern recurrence. Not counted as ARC-RF04-002 signal."
+    },
+    {
+      "flag_id": "RF04-B005-P002",
+      "date": "2023-02-15",
+      "row": "ROW-1722",
+      "type": "cross_rf_candidate",
+      "primary_rf_candidate": "RF-09",
+      "exact_text": "So nice try trying to gaslight and place blame",
+      "note": "RF-09 cross-reference candidate. Melissa deploys 'gaslighting' accusation as DARVO Reverse element — Eli's legitimate counter (she told Olivia about the accident) is reframed as Eli attempting to gaslight and deflect blame. Melissa using the gaslighting label as an attack when Eli's point was factually grounded. Primary RF-09 candidate for Phase A when RF-09 pass runs. Also see ROW-937-938 (B-003) and ROW-632/634 (B-002 Halloween) as earlier RF-09 candidates."
+    },
+    {
+      "flag_id": "RF04-B005-P003",
+      "date": "2023-02-15",
+      "row": "ROW-1733-1734",
+      "type": "cross_rf_candidate",
+      "primary_rf_candidate": "RF-01",
+      "exact_text": [
+        "ROW-1733: I don't want you teaching her how to be a scammer",
+        "ROW-1734: That's not being a good person"
+      ],
+      "note": "RF-01 cross-reference. Scammer/bad-role-model framing extends the inadequate-father narrative (ARC-RF01-001). Melissa positions Eli as a morally deficient parent actively modeling fraud to Olivia. This feeds the broader parental-inadequacy construction that ARC-RF01-001 tracks as delivered to/about Olivia."
+    },
+    {
+      "flag_id": "RF04-B005-P004",
+      "date": "2023-02-15",
+      "row": "ROW-1782-1783",
+      "type": "pattern_note",
+      "exact_text": [
+        "ROW-1782: Maybe that wreck did fuck you up. You hit your head?",
+        "ROW-1783: Maybe you do need to get checked out."
+      ],
+      "note": "Illness-skepticism pattern adjacency — contemptuous mockery of Eli's cognitive state post-accident. Assessed within mutual-conflict zone (ADD-005) since Eli had pivoted to throat-punch counter-accusations at ROW-1758. Not counted as primary flag or ARC-RF04-001 signal. However, the cognitive/health-mockery pattern is consistent with illness-skepticism sub-pattern in ARC-RF04-001 (prior instances: ROW-978-983, ROW-1062-1065, ROW-1683). Watch for recurrence in future batches outside mutual-conflict context."
+    },
+    {
+      "flag_id": "RF04-B005-P005",
+      "date": "2023-02-22",
+      "row": "ROW-1839",
+      "type": "near_boundary",
+      "primary_rf_candidate": "RF-04",
+      "exact_text": "That was super rude and mean",
+      "note": "Standalone guilt statement. Preceding messages (ROW-1825-1838) are logistics and a photo share — no textual basis for what was 'rude and mean.' Likely refers to off-record phone/verbal exchange or something not captured in texts. Cannot assess intent or accuracy without context. Near-boundary: if referring to a legitimate grievance, it's reasonable communication; if deployed as unprovoked guilt delivery, it's RF-04 adjacent. Not counted as primary flag due to insufficient textual context."
+    }
+  ],
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-004",
+      "label": "Car Accident / Scammer Moral Character Attack",
+      "batch_detected": "B-005",
+      "date": "2023-02-15",
+      "rows": "ROW-1715-1789",
+      "rfs_active": ["RF-04", "RF-09", "RF-01", "RF-05"],
+      "description": "Fourth compound multi-RF episode in the record. RF-04 (primary, Sev 2 — sustained scammer moral character assassination, 'Are you dumb?' x4, partial DARVO, intelligence attacks) + RF-09 (ROW-1722 gaslighting accusation as DARVO Reverse — Eli's factual counter framed as gaslighting) + RF-01 (ROW-1733-1734 scammer/bad-role-model framing feeding inadequate-father narrative) + RF-05 (contemptuous language throughout, 'Are you dumb?', 'You have issues'). Triggered by Eli's cooperative disclosure of car accident and legal consultation."
+    }
+  ],
+
+  "arc_state_delta": {
+    "ARC-RF04-001": {
+      "status": "active",
+      "signals_added": 2,
+      "new_signal_count": 16,
+      "last_signal_date": "2023-02-15",
+      "last_signal_row": "ROW-1715-1789",
+      "illness_skepticism_note": "Sub-pattern now at 4 confirmed instances (ROW-978-983 B-003, ROW-1062-1065 B-003, ROW-1683 B-005, with ROW-726 B-003 near-boundary excluded). ROW-1782-1783 adjacent but within mutual conflict. Pattern active and recurring.",
+      "abby_framework_note": "Abby-as-obstacle appears in 5 of 16 signals: ROW-619-659 (prioritization, B-002), ROW-814-820 (domestic mockery, B-003), ROW-937-938 (false predation, B-003), ROW-1055-1058 (Abby-detour, B-003), ROW-1683 (illness excuse via Abby, B-005). Qualitative trajectory: prioritization → domestic mockery → false sexual crime → illness-as-excuse."
+    },
+    "ARC-RF04-002": {
+      "status": "active",
+      "signals_added": 0,
+      "signal_count_unchanged": 3,
+      "near_boundary_note": "ROW-1599-1601 (Feb 1) assessed as near-boundary — child expectation used as communication-failure accusation but tone not contemptuous enough for primary flag. No new arc signal added. Arc remains at 3 signals (last: ROW-791, B-003, Nov 12)."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF04-005",
+      "description": "COMP-RF04-004 detected — Feb 15 car accident/scammer attack (RF-04+RF-09+RF-01+RF-05). First compound pattern in B-005. 'Are you dumb?' reaches 4th confirmed instance — intelligence-attack phrase now recurring pattern within ARC-RF04-001. Illness-skepticism sub-pattern at 4 confirmed instances."
+    }
+  ],
+
+  "cumulative_statistics_after_batch": {
+    "batches_complete": 5,
+    "primary_flags_total": 19,
+    "severity_distribution": { "1": 14, "2": 5, "3": 0 },
+    "peripheral_flags_total": 34,
+    "active_arcs": 2,
+    "compound_patterns_total": 4,
+    "pending_cp3_items": 5
+  },
+
+  "calibration_addenda_applied": ["RF04-ADD-001", "RF04-ADD-002", "RF04-ADD-003", "RF04-ADD-004", "RF04-ADD-005"],
+
+  "cross_rf_notes": {
+    "RF-09": "ROW-1722 — 'So nice try trying to gaslight and place blame' — DARVO Reverse via gaslighting accusation. Eli's factual counter reframed as manipulation. Third RF-09 candidate in Phase A record (prior: ROW-938, ROW-983). See also ROW-632/634 (B-002).",
+    "RF-01": "ROW-1733-1734 — scammer/bad-role-model framing extends ARC-RF01-001's inadequate-father construct. Melissa positions Eli as actively modeling fraud to Olivia.",
+    "RF-05": "ROW-1731 'Are you dumb?' (4th instance), ROW-1789 'I think you have issues' — contemptuous dismissals. See RF-05 when that pass runs for full contemptuous language inventory.",
+    "RF-02": "No new RF-02 signals in B-005. Logistics primarily cooperative."
+  },
+
+  "next_batch": "B-006",
+  "next_batch_row_range": { "start": 1840, "end": 2228 },
+  "next_batch_date_range": { "start": "2023-02-22", "end": "2023-04-03" }
+}

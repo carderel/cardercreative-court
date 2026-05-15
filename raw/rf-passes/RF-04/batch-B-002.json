@@ -1,0 +1,189 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-04",
+    "batch_id": "B-002",
+    "row_range": { "start": 367, "end": 712 },
+    "date_range": { "start": "2022-10-03", "end": "2022-11-05" },
+    "message_count": 346,
+    "timezone_note": "All EDT (UTC-4). DST fall-back Nov 6, 2022 06:00 UTC occurs after the last message in this batch (ROW-712, Nov 5 19:25 EDT).",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF04-ADD-001", "RF04-ADD-002", "RF04-ADD-003", "RF04-ADD-004", "RF04-ADD-005"],
+    "note": "First post-CP2 batch. All calibration addenda active from session start. Halloween cluster (ROW-619–659, Oct 31) is the dominant RF-04 event: sustained multi-tactic campaign (DARVO + guilt + contempt + child-weaponized) over 6+ hours. ARC-RF04-001 promoted WATCHING → ACTIVE (3rd signal). ARC-RF04-002 promoted CANDIDATE → WATCHING (2nd signal)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 346,
+    "primary_flags": 4,
+    "primary_severity_distribution": { "1": 3, "2": 1, "3": 0 },
+    "peripheral_flags_total": 9,
+    "peripheral_rf_distribution": {
+      "RF-01": 5,
+      "RF-02": 1,
+      "RF-05": 2,
+      "RF-09": 1
+    },
+    "no_flag_messages": 342,
+    "flag_rate": "1.2%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-414 through ROW-416",
+      "timestamp": "2022-10-07 23:27–23:28 UTC (19:27–19:28 EDT)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-414: 'She deserves to have your full attention. Stop calling while you're at the store and half ass paying attention to her and talking to the clerk. It's rude. She said the noise was hurting her ears' | ROW-415: 'I didn't put it on speaker phone. She answered it. She prefers it that way' | ROW-416: 'Although it seems it needs to be on speaker since you keep making plans to pick her up with her and not me'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Contemptuous parenting attack with child-complaint relay and DARVO pivot. Trigger: Eli called Olivia while at the store. ROW-414 delivers a three-part attack: (1) 'She deserves to have your full attention' — guilt-tripping / inadequate-father framing; (2) 'Stop calling while you're at the store and half ass paying attention to her' — contemptuous competence attack (ADD-002: contemptuous attacks on parenting competence = RF-04 primary); (3) 'She said the noise was hurting her ears' — Olivia's complaint relayed without protective framing as ammunition (ADD-003 relay mechanism embedded within the attack). ROW-415 clarifies Melissa's non-role (speakerphone was Olivia's choice). ROW-416 executes a DARVO pivot: takes the phone call quality concern and converts it into an accusation against Eli ('you keep making plans to pick her up with her and not me') — the co-parenting concern about call quality becomes evidence of Eli's pattern of bypassing Melissa as required intermediary. ADD-001 partial DARVO (Attack + Reverse without explicit Deny) = Sev 1. The trigger (calling while at the store) is minor relative to the contemptuous response, the guilt frame, the child complaint relay, and the DARVO pivot. Severity 1: brief three-message cluster, not sustained; contempt and DARVO are present but not maximally escalated.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "ROW-414: Olivia's complaint ('She said the noise was hurting her ears') used to frame Eli's conduct as harmful/inadequate. Feeds inadequate-father sub-arc of ARC-RF01-001.",
+          "confidence": "medium"
+        },
+        {
+          "rf": "RF-02",
+          "severity": 1,
+          "note": "ROW-416: 'making plans to pick her up with her and not me' — required-intermediary framing; Eli coordinating with Olivia directly presented as a violation. Consistent with ARC-RF02-001.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "No prior exchange context for this episode — Melissa opens with the three-message attack without preamble following Eli's call to Olivia. ROW-417 (Melissa, same evening, 22:30 EDT): 'She's drawing a pic of her and Marshall for a contest' — topic shifts to a neutral child anecdote with no visible Eli response to the attack in the intervening window, suggesting the episode ended without Eli engaging the substance of the accusation.",
+      "pattern_tags": ["DARVO_partial", "contempt", "contemptuous_parenting_attack", "child_complaint_relay", "required_intermediary_framing"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'Stop calling while you're at the store and half ass paying attention to her' (ROW-414); 'it seems it needs to be on speaker since you keep making plans to pick her up with her and not me' (ROW-416)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-10-07"
+    },
+    {
+      "message_id": "ROW-545",
+      "timestamp": "2022-10-23 14:00 UTC (10:00 EDT)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-545: 'She said you were kissing her way too much on Friday'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Child-complaint relay without protective framing. Melissa transmits Olivia's complaint about Eli's physical affection ('kissing her way too much') directly to Eli without collaborative framing or joint-problem-solving context. Per ADD-003, the relay act is the manipulation — regardless of whether Olivia's statement was spontaneous or prompted, Melissa's choice to relay it positions Olivia's criticism as a directed communication to Eli. The 'way too much' framing carries an embedded inadequacy judgment (Eli is physically overbearing with his child). Context: inserted without preamble into a logistical exchange about swim class and Eli's possible illness (ROW-541-544) — this is not a continuation of a prior co-parenting discussion about physical boundaries. ADD-003 standard: brief relay without added pressure framing = Sev 1. ARC-RF04-002 second signal; promotes from CANDIDATE to WATCHING. Distinction from B-001 ROW-361-363 (Savage Love): Savage Love relay carried abandonment/emotional wound framing (Sev 2); this relay is a behavioral criticism relay (lighter emotional weight, Sev 1) but the delivery mechanism is the same.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "Olivia's statement relayed as criticism of Eli's parenting conduct (excessive physical affection = inappropriate or inadequate behavior). Feeds inadequate-father sub-arc of ARC-RF01-001.",
+          "confidence": "medium"
+        }
+      ],
+      "context_notes": "ROW-537-544: logistical exchange about pickup location and swim class, Eli noting a possible sore throat. ROW-545 is inserted without preamble into this logistical context. ROW-546 (Eli, Sent, 11:54 EDT): 'You home now?' — no visible response to ROW-545, consistent with Eli redirecting to logistics. No follow-up from Melissa in the immediate vicinity about the kissing complaint — it is delivered and not elaborated upon.",
+      "pattern_tags": ["child_complaint_relay", "child_as_guilt_vector", "inadequacy_framing"],
+      "arc_references": ["ARC-RF04-002"],
+      "image_reference": null,
+      "quote_excerpt": "'She said you were kissing her way too much on Friday' (ROW-545)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-10-23"
+    },
+    {
+      "message_id": "ROW-619 through ROW-659",
+      "timestamp": "2022-10-31 14:40–21:05 UTC (10:40–17:05 EDT)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-619: 'We don't need you' | ROW-620: 'It's sad that you'd rather take someone else's kid than your own' | ROW-621: 'She deserves a better dad' | ROW-623: 'It is' | ROW-624: 'It most definitely is' | ROW-625: 'You had to check \"your schedule\" aka look up trick or treat time in your area' | ROW-628: 'But you will have time to take Milo' | ROW-631: 'How do you have time to take her around your neighborhood and not hers' | ROW-632: 'You don't want to argue cause you know I'm right' | ROW-634: 'You know I'm right cause it would make no sense if you have no time to pick her up drive her to your house and then have to drive her back home. It would save time to trick or treat in her neighborhood. The only reason you offered your area is cause you're taking Milo' | ROW-635: 'I think it's clear who you prefer as you put him to bed every night and spend most of your time with him and spend your money on him rather than pay child support' | ROW-636: 'I also find it hilarious that you said you weren't going to be Abby's taxi and was going to make her clean but yet here you are still being the house bitch and taxi. How's that all working out for you?' | ROW-637: 'And you know that you were supposed to make that payment Friday. If you didn't it just comes out of your paycheck' | ROW-638: 'I just have to file the paperwork to do that' | ROW-639: 'You'd rather let Olivia down than make Abby mad and that's pathetic' | ROW-645: 'My biggest issue is that you don't prioritize Olivia.' | ROW-646: 'We both know that you aren't taking her tonight because it would make Abby mad cause she claims you don't treat Milo like yours cause he's not' | ROW-648: 'You'd rather not hear her bitch so you are not going with Olivia' | ROW-649: 'She wanted you to go. I didn't need you to go with her. I just said that if you did I would stay and hand out candy' | ROW-650: 'You know you weren't taking her so just tell her you can't if you can't. Don't string her along' | ROW-651: 'She doesn't deserve that' | ROW-652: 'She deserves a dad that prioritizes her but I know you won't so at least be honest and up front' | ROW-653: 'You'll regret treating her poorly and not making the time and effort for her.' | ROW-654: 'You'll regret it one day but it will be too late' | ROW-655: 'I prioritize her. I switched shifts weeks ago so I could take her.' | ROW-656: 'I don't know how you live with yourself. Your daughter is begging you to go with her and you tell her no so you can go with another kid' | ROW-657: 'That is beyond fucked up' | ROW-659: 'You don't think it's a big deal but she does'",
+      "primary_rf": "RF-04",
+      "primary_severity": 2,
+      "primary_reasoning": "Sustained multi-tactic RF-04 campaign spanning 6+ hours on Halloween (Oct 31, 10:40–17:05 EDT). Trigger: Eli asks whether Olivia wants to be picked up at 5 to trick-or-treat around his neighborhood (ROW-617 — simple logistics question). Melissa declines (ROW-618: 'No') and immediately launches the campaign. Multiple simultaneous RF-04 tactics active throughout:\n\n(1) DARVO — Full three-component sequence (ADD-001: full DARVO = Sev 2). Deny/dismiss: 'No / We don't need you' (ROW-618-619) — Eli's offer dismissed and his role rejected. Attack Eli's character across multiple vectors: Abby/Milo preference ('It's sad that you'd rather take someone else's kid than your own,' ROW-620; 'you put him to bed every night and spend most of your time with him and spend your money on him rather than pay child support,' ROW-635); contemptuous attacks ('house bitch and taxi,' ROW-636; 'that's pathetic,' ROW-639; 'I don't know how you live with yourself,' ROW-656; 'That is beyond fucked up,' ROW-657). Reverse Victim/Offender: Eli becomes the party who has wronged Olivia; Melissa positions herself as Olivia's protector ('I prioritize her. I switched shifts weeks ago so I could take her,' ROW-655).\n\n(2) Sustained guilt-tripping — 'She deserves a better dad' (ROW-621); 'My biggest issue is that you don't prioritize Olivia' (ROW-645); 'She deserves a dad that prioritizes her but I know you won't' (ROW-652); 'You'll regret treating her poorly and not making the time and effort for her. You'll regret it one day but it will be too late' (ROW-653-654) — future-regret guilt framing.\n\n(3) Contemptuous attacks (ADD-002) — 'We don't need you' (ROW-619); 'house bitch and taxi' (ROW-636); 'that's pathetic' (ROW-639); 'I don't know how you live with yourself' (ROW-656); 'That is beyond fucked up' (ROW-657). All triggered by a logistics scheduling question — grossly disproportionate.\n\n(4) Child's emotions weaponized (ADD-003 mechanism) — 'Your daughter is begging you to go with her and you tell her no so you can go with another kid' (ROW-656); 'She doesn't deserve that' (ROW-651); 'You don't think it's a big deal but she does' (ROW-659). Olivia's alleged desire and distress deployed as emotional leverage against Eli.\n\n(5) Martyrdom/victim-positioning — 'I prioritize her. I switched shifts weeks ago so I could take her' (ROW-655) — Melissa's sacrifice contrasted with Eli's alleged failure.\n\n(6) Abby-as-obstacle framework deployed for first time as major RF-04 lever — Melissa constructs a detailed causal chain: Eli won't take Olivia → because Abby would be mad → because Eli prioritizes Abby's household and Milo over Olivia (ROW-628, 634, 635, 639, 646, 648). This framework will recur.\n\nSeverity 2: sustained campaign (6+ hours, 20+ received messages forming the attack sequence); all three DARVO components present (ADD-001 = Sev 2 threshold); child's emotions weaponized; multiple contemptuous attacks; future-regret framing. This is the most RF-04-intensive episode in the record to date. ARC-RF04-001 third signal — promotes from WATCHING to ACTIVE. Child-weapon element (ROW-656, 659) noted as ARC-RF04-002 cross-signal but primary classification is ARC-RF04-001 given DARVO/contempt dominance.\n\nNote on factual accuracy: Melissa's child support payment claim (ROW-635, 637-638: Eli spending money on Milo instead of paying child support; wage garnishment threat) is factually incorrect — Eli confirms payment Friday at 7:05 PM (ROW-640-644, 647). The payment accusation is introduced during the campaign to destabilize Eli, not to resolve a genuine payment dispute.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 2,
+          "note": "ROW-620-621 ('It's sad that you'd rather take someone else's kid than your own / She deserves a better dad'), ROW-635 ('it's clear who you prefer'), ROW-656 ('you tell her no so you can go with another kid') — sustained inadequate/choosing-others-over-Olivia father narrative across the campaign. Abby/Milo prioritization framing introduced as major narrative lever. Feeds ARC-RF01-001 (inadequate-father and Abby-prioritization sub-arcs). Sev 2 (sustained cross-RF campaign within this cluster).",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-05",
+          "severity": 1,
+          "note": "ROW-636 ('house bitch and taxi') — contemptuous personal attack on Eli's domestic role; ROW-639 ('that's pathetic'); ROW-656-657 ('I don't know how you live with yourself / That is beyond fucked up') — aggressive/contemptuous language without direct threat. RF-05 Sev 1.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-09",
+          "severity": 1,
+          "note": "ROW-632 ('You don't want to argue cause you know I'm right') and ROW-634 (pseudo-logical trap: Eli's explanation reframed as proof of guilt — 'You know I'm right cause it would make no sense if you have no time to pick her up... The only reason you offered your area is cause you're taking Milo') — gaslighting-adjacent reality distortion. Eli's stated reason dismissed and his own logic used to confirm Melissa's accusation.",
+          "confidence": "medium"
+        }
+      ],
+      "context_notes": "ROW-617 (Eli, Sent, 10:15 EDT): 'Does she want me to pick her up about 5 and go around my neighborhood?' — simple logistics question. ROW-618 (Melissa, Received, 10:39 EDT): 'No' — refusal. ROW-619 (10:40 EDT) onward: campaign launches immediately. Eli's sent messages within the episode (ROW-622, 627, 629-630, 633, 640-644, 647) are defensive factual responses: denying he was taking Milo, defending his child support payment. Per ADD-005, these are Phase A reactive responses, not RF-04 from Eli's direction. ROW-660-662 (Eli, Sent, 18:53-19:08 EDT): Eli drove to Melissa's neighborhood Halloween evening ('came over / Drive through the and didn't see you guys') — suggests Eli ultimately attempted to go, consistent with his defensive position during the campaign. ROW-655 (Melissa, 17:01 EDT): 'I prioritize her. I switched shifts weeks ago so I could take her' — martyr positioning; the campaign ends at ROW-659 (17:05 EDT). The 6.5-hour campaign concludes before Eli arrives. Wage-garnishment threat (ROW-637-638) is factually baseless — Eli shows payment confirmation in ROW-640-644, 647.",
+      "pattern_tags": ["DARVO_full", "sustained_guilt_campaign", "contempt", "humiliation_attack", "child_emotions_weaponized", "martyrdom_positioning", "future_regret_framing", "abby_milo_comparison_attack", "abby_as_obstacle_introduced", "disproportionate_response", "false_financial_accusation"],
+      "arc_references": ["ARC-RF04-001", "ARC-RF04-002"],
+      "image_reference": null,
+      "quote_excerpt": "'She deserves a better dad' (ROW-621); 'I also find it hilarious that you said you weren't going to be Abby's taxi and was going to make her clean but yet here you are still being the house bitch and taxi. How's that all working out for you?' (ROW-636); 'You'd rather let Olivia down than make Abby mad and that's pathetic' (ROW-639); 'You'll regret it one day but it will be too late' (ROW-654); 'I don't know how you live with yourself. Your daughter is begging you to go with her and you tell her no so you can go with another kid' (ROW-656)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-10-31"
+    },
+    {
+      "message_id": "ROW-681",
+      "timestamp": "2022-11-02 15:02 UTC (10:02 EDT)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-681: 'You know that buying her things doesn't substitute spending time with her right?'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Unprompted guilt-tripping in the immediate aftermath of the Halloween campaign. Context: ROW-680 (Melissa, Nov 1, 21:10 EDT) closed the prior evening with 'She said good night.' ROW-681 is delivered fresh the next morning (Nov 2, 10:02 EDT) as a standalone guilt message with no preceding exchange that invites this topic. The 'you know that...' construction carries an embedded assumption of Eli's inadequacy (buying things instead of spending time). This targets the same inadequate-father / prioritization failure narrative activated across the Halloween campaign one day prior. The timing — morning after a 6+ hour sustained RF-04 campaign — indicates continued pressure rather than an isolated comment arising from a new trigger. Severity 1: single brief message, no escalation or sustained framing; direct guilt-tripping without child relay or contemptuous attack. RF-04 taxonomy: 'guilt-tripping and martyrdom/victim-positioning' indicator. Not Sev 2 because it lacks the sustained multi-message character of the Halloween cluster, but clearly above the near-boundary threshold given the explicit inadequacy framing and post-campaign context.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-680 (Melissa, Nov 1 21:10 EDT): 'She said good night' — end of the prior evening's exchange. ROW-682 (Melissa, Nov 2 10:03 EDT): 'Milo and Abby need to Covid test since you said they got really sick. I don't want Olivia exposed to it' — topic shifts immediately to COVID testing; ROW-681 is not integrated into any logistical discussion, confirming its standalone guilt-delivery character. The Nov 1 call-timing dispute (ROW-666-679) involved access control framing (analyzed as RF-02 territory) rather than RF-04 emotional manipulation — ROW-681 arrives after that dispute has closed.",
+      "pattern_tags": ["guilt_tripping", "inadequacy_framing", "post_campaign_pressure"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'You know that buying her things doesn't substitute spending time with her right?' (ROW-681)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-11-02"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-607",
+      "reason_noted": "Near-boundary RF-04: 'You literally had all day to call but waited past 8:30' (Oct 29, 22:04 EDT). Contemptuous/accusatory framing about Eli's call timing. Single brief message; excluded at primary threshold. Contact-access timing disputes tracked under RF-02; contempt here is mild and not disproportionate to the context (Eli did wait until after 8:30 to initiate calling)."
+    },
+    {
+      "message_id": "ROW-451",
+      "reason_noted": "Near-boundary RF-04: 'Ok. I'll take her. I thought you might want to take her since you won't see her much the weekend after' (Oct 12). Mild passive guilt-framing after Eli declines the fair invitation. Single brief message; passive implication rather than active guilt deployment. Excluded."
+    },
+    {
+      "message_id": "ROW-666 through ROW-679",
+      "reason_noted": "Call-timing dispute (Nov 1, 20:46–21:10 EDT): Melissa enforces 8:30 call cutoff after Eli's conference call ran over. Includes 'Your comment about her calling other nights past 8:30 just shows how much you don't respect boundaries.' Tone is accusatory and boundary-enforcement framing appears, but the dominant behavior is contact access control (RF-02), not emotional manipulation targeting Eli's guilt or identity. RF-04 flavor is secondary. Captured as RF-02 peripheral territory."
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [
+      "ARC-RF04-001 (WATCHING → ACTIVE: 3rd signal, ROW-619-659 Halloween sustained campaign)",
+      "ARC-RF04-002 (CANDIDATE → WATCHING: 2nd signal, ROW-545 kiss complaint relay)"
+    ],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "Halloween cluster (ROW-619-659): first compound RF event in the record — RF-04 (primary, Sev 2) + RF-01 (inadequate-father/Abby-prioritization narrative, Sev 2 peripheral) + RF-05 (contemptuous/aggressive language, Sev 1 peripheral) + RF-09 (reality distortion/gaslighting-adjacent, Sev 1 peripheral). Four RFs simultaneously active in one episode."
+    ],
+    "candidate_signals_held": 0
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": [
+      "CP3-RF04-001: ARC-RF04-001 ACTIVE — Halloween cluster establishes structural pattern at full campaign intensity. Abby/Milo comparison framework deployed for first time as major RF-04 lever (Oct 31). Track recurrence and escalation trajectory in subsequent batches — does the Abby-as-obstacle framing intensify, stabilize, or diminish as the relationship becomes established?"
+    ]
+  },
+
+  "batch_observations": {
+    "tone_assessment": "B-002 is predominantly cooperative-to-neutral (342/346 primary-flag events show no RF-04 signal). Oct 3–Oct 30: routine coordination (school, daycare, Olivia activities, logistics, photography sharing) with two brief pre-Halloween RF-04 signals (ROW-414-416 Oct 7; ROW-545 Oct 23). The Halloween cluster (Oct 31) is qualitatively different from any single episode in B-001 — it is the first time Melissa deploys multiple simultaneous RF-04 tactics (DARVO + guilt + contempt + child-weaponized) in a sustained multi-hour campaign. Post-Halloween, the record returns to routine with one brief post-campaign guilt message (ROW-681) and otherwise cooperative content through Nov 5.",
+    "direction_balance_note": "All 4 primary RF-04 flags in B-002 are Received (Melissa → Eli). Eli's Halloween defensive responses (ROW-622, 627, 629-630, 633, 640-644, 647) are factual and defensive — excluded per ADD-005 (Phase A reactive, not manipulation campaigns). Eli's drive to Melissa's neighborhood on Halloween evening (ROW-660-662) demonstrates Eli attempting to follow through on his offer despite the campaign.",
+    "pattern_development_note": "The Halloween cluster introduces the Abby-as-obstacle narrative as a major RF-04 lever for the first time. Prior RF-04 signals (B-001) did not invoke the Abby/Milo relationship. In B-002, Melissa constructs a detailed causal chain: Eli won't spend time with Olivia → because Abby objects → because Eli prioritizes Milo/Abby's household over Olivia. The pipeline-manifest context note ('Melissa repeatedly uses Abby relationship as attack vector') is confirmed active in Phase A. This framework will be tracked as a recurring compound RF-01/RF-04 pattern across subsequent batches. The future-regret framing ('You'll regret it one day but it will be too late,' ROW-654) also appears for the first time — a specific guilt subtype worth tracking for recurrence.",
+    "cross_rf_context": "RF-01 arc (read-only): ARC-RF01-001 ACTIVE — Halloween cluster adds substantially to the inadequate/choosing-others-over-Olivia father narrative and introduces the Abby-prioritization sub-arc (ROW-620, 621, 635, 656). RF-02 arc (read-only): ROW-666-679 (Nov 1 call-timing dispute) is RF-02 access-control territory; ROW-416 (required-intermediary framing) peripheral RF-02 signal. RF-05 peripheral: Halloween contemptuous language (ROW-636, 639, 656-657) cross-tagged at Sev 1. RF-09 peripheral: ROW-632 and ROW-634 logic-trap mechanism within Halloween cluster."
+  }
+}

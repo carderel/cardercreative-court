@@ -1,0 +1,55 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-024",
+    "row_range": { "start": 7774, "end": 7804 },
+    "date_range": { "start": "2025-03-04", "end": "2025-04-10" },
+    "message_count": 31,
+    "timezone_note": "Mixed EST/EDT. EST through ROW-7780 (Mar 7 13:30 EST = Mar 7 18:30 UTC). EDT from ROW-7781 (Mar 10 07:51 EDT = Mar 10 11:51 UTC). DST spring forward Mar 9, 2025 at 2:00 AM EST (07:00 UTC) occurred in the Mar 8-9 message gap (no messages cross the boundary ambiguously). RF-02 B-024 date_range.end states Apr 30; actual last message in extracted range is ROW-7804 Apr 10 — Apr 11-30 is a real gap in the messaging record.",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Sparse batch with two focal events: (1) Olivia birthday party discussion Mar 4; (2) Sick-child/surgery day Mar 10. Remainder (Mar 17, 24, Apr 10) is routine coordination. RF-01 indicators present but below primary threshold."
+  },
+
+  "primary_flags": [],
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B024-P001",
+      "row": "ROW-7776",
+      "date": "2025-03-04",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "March 4 — 'Sounds like the abster just doesn't want you going' (ROW-7776). ADD-001; 'abster' = Abby. Context: Melissa inviting Eli to Olivia's birthday party (ROW-7774-7775); Eli apparently expressing hesitation. Melissa immediately attributes Eli's hesitation to Abby's control ('the abster just doesn't want you going'), positioning Abby as blocking Eli from attending his daughter's birthday. ADD-001 single-message peripheral — consistent with prior Abby-as-obstacle framing (B-008 Olivia's birthday cluster, B-012 Christmas Eve 'you let Abby dictate everything'). Surrounding messages (ROW-7774-7775) are actually cooperative — Melissa is encouraging Eli to attend. ROW-7776 is the only ADD-001 trigger."
+    },
+    {
+      "flag_id": "RF01-B024-P002",
+      "row": "ROW-7785-7795",
+      "date": "2025-03-10",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "March 10 — ADD-002 adjacent cluster in sick-child/post-surgery context. Key nodes: ROW-7785 'Having surgery so you will need to be a parent to our child' (ADD-002 — 'be a parent' framing); ROW-7790 'This means you need to step up and actually be a parent for a bit' (ADD-002); ROW-7795 'The only thing that's frustrating is you and your lack of involvement with your first born' (ADD-002 + 'first born' framing implicitly contrasts with Alice). Peripheral threshold only — below primary because: (1) cluster is short (10 messages total); (2) Melissa literally just had kidney stone surgery and is directing from recovery — her requests that Eli 'be a parent' are in a genuine emergency context; (3) language does not reach the categorical inadequate-father characterizations of prior primary signals (no 'useless as a father,' no 'sperm donor,' no 'horrible father'); (4) ROW-7795 is a single statement at end of dispute, not a sustained multi-message cluster. Counter-indicators: ROW-7791 Eli de-escalates appropriately ('Let's focus on what Olivia needs today'); ROW-7786-7789 Melissa's criticism of Eli suggesting sick child go to school is partially contextually justified."
+    }
+  ],
+
+  "peripheral_flag_count": 2,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "signal_count": 25,
+      "notes": "B-024 produces no RF-01 primary signals. ADD-002 language present in Mar 10 sick-child cluster but does not reach primary threshold given short duration, genuine medical emergency context, and language below categorical inadequate-father threshold. Post-B-022 de-escalation pattern continues through Mar-Apr 2025. Apr 11-30 gap = no data."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Mixed batch with two conflict moments (Mar 4 birthday framing, Mar 10 sick-child dispute) surrounded by cooperative coordination. Mar 4: Melissa inviting Eli to Olivia's birthday party — overall cooperative framing with ADD-001 jab (ROW-7776 Abby framing). Mar 7: surgery coordination — entirely cooperative (ROW-7777-7780). Mar 10: sick-child management while Melissa in post-surgical recovery — short dispute (ROW-7785-7795), de-escalated by Eli (ROW-7791); ends cooperatively with Eli reporting Olivia's tylenol dose (ROW-7796). Mar 17: work schedule coordination, Melissa requests Apr 5 and May 3 childcare coverage — entirely routine. Mar 24: pickup confirmation — 2 messages. Apr 10: spring break notification — offers Eli Olivia for the Friday.",
+    "dst_transition": "DST spring forward Mar 9, 2025 at 2:00 AM EST (07:00 UTC) confirmed by timestamp shift. Last EST message: ROW-7780 (Mar 7 13:30 EST = 18:30 UTC). First EDT message: ROW-7781 (Mar 10 07:51 EDT = 11:51 UTC). Mar 8-9 is a 2-day gap spanning the transition — no messages cross ambiguously.",
+    "birthday_context": "ROW-7774-7776 (Mar 4) establishes that Olivia's birthday party was coming up. Melissa had put Eli on the invitation list and is encouraging him to attend. Eli's apparent hesitation is attributed to Abby (ADD-001). No further birthday party messages in this batch — unclear if Eli attended.",
+    "march10_surgery_context": "Melissa had kidney stone surgery Mar 10 (previously discussed Mar 7). Olivia was sick the same day (fever). Eli had Olivia but told Melissa he wouldn't bring Olivia back to his house after work due to Alice infection risk. Melissa disputes this response ('You could keep her in a separate room'). The dispute is real and contextually driven. Eli's de-escalation (ROW-7791) is notably measured."
+  }
+}

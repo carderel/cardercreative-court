@@ -1,0 +1,67 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-012",
+    "row_range": { "start": 4054, "end": 4448 },
+    "date_range": { "start": "2023-11-26", "end": "2024-01-31" },
+    "message_count": 395,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 395,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": { "RF-04": 2 },
+    "no_flag_messages": 394,
+    "flag_rate": "0.3%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B012-001",
+      "row_range": "ROW-4066 and ROW-4364",
+      "timestamp": "2023-11-30 and 2024-01-19",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-4066: 'If not paid by end of day I will file contempt' | ROW-4364: 'Your back child support is caught up so now you need to pay $1000/month for the next 3 months to cover the attorney fees. Due on the 15th of each month'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Two RF-05 signal elements. SIGNAL 1 — ROW-4066 (Nov 30): 'If not paid by end of day I will file contempt' — tenth contempt filing threat; first instance with explicit same-day deadline. The deadline addition makes the threat more concrete and immediate. ADD-002: Sev-1 (recurring category, paper tiger pattern). SIGNAL 2 — ROW-4364 (Jan 19): '$1000/month for the next 3 months to cover the attorney fees' — formal attorney fees collection demand specifying amount and due date. This appears to be a court-ordered or agreed attorney fees arrangement from a prior legal proceeding, not just a threat. However, the specificity of the demand ($1000/month ×3 = $3,000 total) and its deployment as a payment notice creates financial compliance pressure. Second instance of attorney-fees category (first threat was ROW-2181 B-006). ADD-002: Sev-1. Combined: B-012 advances both the contempt-with-deadline sub-pattern and the attorney-fees payment sub-pattern.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "ROW-4094: 'So if you and Abby get married my sister would have the same in hers. Daughter/sister in law  Gross' — 6th predation framing (COMP-RF04-011; RF-04+RF-15 primary, ADD-001 RF-05 peripheral).",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "ROW-4185: 'You let Abby dictate everything which is why your relationship with your daughter isn't very good' — Abby-causal attribution from RF-04 Christmas Eve cluster (COMP-RF04-011). RF-04 primary.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-4364 attorney fees demand: the phrasing 'Your back child support is caught up so NOW you need to pay $1000/month for attorney fees' sequences the financial obligations — child support arrears cleared, attorney fees payment now due. This sequencing suggests a prior court order or negotiated agreement. If court-ordered, this is a factual notification; if unilateral demand, it is compliance pressure. Either way, it functions as a financial-legal demand in the record.",
+      "pattern_tags": ["contempt_filing_threat", "deadline_contempt", "attorney_fees_demand", "financial_compliance"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'If not paid by end of day I will file contempt' (ROW-4066); '$1000/month for the next 3 months to cover the attorney fees' (ROW-4364)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. B-012 adds signals advancing the contempt-with-deadline and attorney-fees sub-patterns."
+  },
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+  "batch_observations": {
+    "tone_assessment": "B-012 (Nov 2023–Jan 2024): Contempt deadline threat plus attorney fees demand. The attorney fees collection ($3k over 3 months) adds financial weight to the legal-threat arc. RF-04 includes the 6th predation framing (marriage scenario) and Christmas Eve Abby-causation cluster.",
+    "cross_rf_context": "RF-04 B-012: COMP-RF04-011 Christmas Eve cluster (ROW-4175-4184). COMP-RF04-012 includes 'Such a worthless dick' (ROW-4793 is in B-013, not B-012) — confirmed B-013."
+  }
+}

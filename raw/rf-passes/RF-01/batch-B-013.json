@@ -1,0 +1,95 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-013",
+    "row_range": { "start": 4449, "end": 4863 },
+    "date_range": { "start": "2024-02-01", "end": "2024-03-27" },
+    "message_count": 415,
+    "timezone_note": "Crosses DST start Mar 10, 2024. Rows 4449-4724 are EST (UTC-5); DST starts Mar 10 at 2:00 AM local (7:00 AM UTC); rows 4725+ are EDT (UTC-4). DST transition confirmed at ROW-4725 (2024-03-10 13:19 UTC-04:00).",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B013-S001",
+      "row": "ROW-4792-4801",
+      "date": "2024-03-17",
+      "severity": 2,
+      "calibration_status": "confirmed",
+      "arc_ref": "ARC-RF01-001",
+      "addenda_triggered": ["RF01-ADD-002", "RF01-ADD-004"],
+      "summary": "Mar 17 phone call incident — Olivia upset Eli got off the phone; Melissa escalates into systemic inadequacy framing: 'Could you not here it in her voice and by telling you that you were only on the phone for two minutes' (ROW-4793); 'She tells me about how it hurts her that you don't have time for her' (ROW-4794) — systemic statement that Olivia regularly confides in Melissa about Eli's chronic unavailability; 'You hurt her feelings not me... your selfish self fucked up' (ROW-4795); 'Quit playing with her feelings' (ROW-4799); 'Such a worthless dick' (ROW-4801). Key: ROW-4794 is not about this single call — Melissa says Olivia tells her 'how it hurts her' (ongoing pattern) that Eli 'doesn't have time for her.' ADD-004 triggered (Olivia's emotional pain relayed as structural parental inadequacy evidence) + ADD-002 (inadequate/selfish/worthless father framing). Note: Eli states he was in the bathroom and had his phone in hand; missed calls apparently coming in while he was exiting (ROW-4802). No Abby attribution in this cluster — fifth thematic component (inadequate-father/no time) reinforced.",
+      "key_messages": [
+        { "row": "ROW-4792", "direction": "Received", "text": "She was upset that you were getting off the phone." },
+        { "row": "ROW-4793", "direction": "Received", "text": "Could you not here it in her voice and by telling you that you were only on the phone for two minutes" },
+        { "row": "ROW-4794", "direction": "Received", "text": "She tells me about how it hurts her that you don't have time for her" },
+        { "row": "ROW-4795", "direction": "Received", "text": "She was telling you that she wanted to talk to you and that she was upset that you wanted to get off the phone. You hurt her feelings not me. Nice try trying to turn it around on me because once again your selfish self fucked up." },
+        { "row": "ROW-4799", "direction": "Received", "text": "Quit playing with her feelings" },
+        { "row": "ROW-4800", "direction": "Received", "text": "Now you've upset her cause you said she could call and then didn't answer our phone calls" },
+        { "row": "ROW-4801", "direction": "Received", "text": "Such a worthless dick" }
+      ],
+      "cp3_item": "CP3-RF01-B013-001"
+    }
+  ],
+
+  "primary_flag_count": 1,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B013-P001",
+      "row": "ROW-4588-4589",
+      "date": "2024-02-21",
+      "rf_tags": ["RF-02", "RF-01"],
+      "severity": "peripheral",
+      "summary": "Feb 21 — 'You still good if we move to NC?' / 'I may be able to get into a job over there fairly easily' (ROW-4588-4589). Melissa inquires whether Eli is 'still good' with relocation to North Carolina. RF-02 primary (relocation intent; Melissa framing this as a settled plan requiring only Eli's confirmation). RF-01 peripheral — relocation would fundamentally curtail Eli's access to and relationship with Olivia. Requires tracking as Outer Banks vacation (May 2024) is already planned; NC move may be related."
+    },
+    {
+      "flag_id": "RF01-B013-P002",
+      "row": "ROW-4718-4724",
+      "date": "2024-03-09",
+      "rf_tags": ["RF-01", "RF-04"],
+      "severity": "peripheral-near-boundary",
+      "summary": "Mar 9 — Melissa relays: 'Olivia is upset. She said that you think your game is more important than her' (ROW-4718); reinforces: 'She said she hung up on you cause your game was more important than her' (ROW-4721). Eli provides corrective account (ROW-4719: told her he had to shower; she was being disrespectful). Balance: ROW-4724 Melissa acknowledges 'I think she was lashing out with disrespect because she felt hurt' — contextualizes Olivia's behavior without fully excusing it. ADD-004 triggered (Olivia's emotional state relayed as parental inadequacy evidence); partial balance prevents primary elevation. Near-boundary peripheral — compare to B-012 S001 where Melissa left Abby-framing unchallenged."
+    },
+    {
+      "flag_id": "RF01-B013-P003",
+      "row": "ROW-4773-4774",
+      "date": "2024-03-15",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "Mar 15 — Context: Eli accidentally hurt Olivia's feelings by explaining he plays Roblox because he loves her (implying he doesn't enjoy it; Olivia took this as diminishing something they share). Melissa responds: 'You really need to be more careful of what you say. Think before you speak. Some of the dumb shit that comes out of your mouth is hurtful. It was that way to me too. Don't do that to her' (ROW-4774). Key: 'It was that way to me too' aligns Melissa as co-victim of Eli's verbal harm alongside Olivia — broadening a genuine accidental misstep into a character pattern affecting both. ADD-002 adjacent; RF-04 (manipulation/emotional framing). Note Melissa also showed balance here (ROW-4771-4772: 'You were trying to show that you did something you don't like cause you love her so much / And wanted to make her happy')."
+    }
+  ],
+
+  "peripheral_flag_count": 3,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "add_signal",
+      "signals_added": 1,
+      "new_signal_refs": ["RF01-B013-S001"],
+      "new_total": 15,
+      "new_severity_distribution": { "1": 2, "2": 13 },
+      "notes": "B-013 adds 1 Sev-2 signal. ROW-4794 'She tells me about how it hurts her that you don't have time for her' is a significant systemic statement — Melissa positioning herself as the repository for Olivia's ongoing hurt about Eli's chronic unavailability. This adds a systemic dimension to the inadequate-father narrative (previously episodic: specific incidents reported; now: Melissa implying Olivia regularly confides this pattern). No Abby attribution this cluster — 'no time for her' framing is distinct from prior Abby-as-cause signals."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B013-001",
+      "row": "ROW-4794",
+      "date": "2024-03-17",
+      "description": "'She tells me about how it hurts her that you don't have time for her' — Melissa presenting herself as Olivia's confidante for ongoing hurt about Eli's chronic unavailability; systemic inadequate-father framing via Olivia's reported emotional pain."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "Mixed. February is mostly cooperative: Valentine's Day coordination (ROW-4502-4514), Eli's work trip to California (Melissa takes Olivia to airport to see him off, ROW-4575-4584), illness coordination (flu/strep, ROW-4552-4656), crochet class logistics. March escalates mid-batch with two RF-01 adjacent clusters (Mar 9 and Mar 17) bookending a period of otherwise warm exchanges.",
+    "cooperative_positive_indicators": "ROW-4575-4584: Melissa takes Olivia to airport at dawn to hold signs for Eli's departing flight — proactive facilitation of Eli-Olivia connection, even while sick with flu. ROW-4530: 'Her lil hand patting your back as she hugged you was so cute' — Melissa noting affectionate Olivia-Eli moment. ROW-4716: 'Sounded like she had a lot of fun and enjoyed it was just you and her.' These cooperative behaviors are significant counter-data in the arc.",
+    "relocation_note": "ROW-4588-4589 (Feb 21): First written inquiry about moving to NC. Melissa frames it as asking if Eli is 'still good' with it — implying prior discussion or settled inclination on her part. Combined with May 2024 Outer Banks vacation plans (ROW-3867-3871, B-011), there is a possible NC regional interest pattern developing. RF-02 primary tracking warranted.",
+    "three_consecutive_spring_holidays": "March 2024 contains both Easter-adjacent spring content and DST transition. No holiday-specific escalation detected this batch (unlike Halloween/Christmas clusters in prior batches).",
+    "mar_9_vs_mar_17_pattern": "Two phone-call related incidents in 8 days. Mar 9 (ROW-4718-4724): Melissa provides some balance (ROW-4724). Mar 17 (ROW-4792-4801): No balance — pure escalation including 'worthless dick.' The escalation intensity difference between these two similar incidents is consistent with the arc's pattern of context-dependent escalation intensity."
+  }
+}

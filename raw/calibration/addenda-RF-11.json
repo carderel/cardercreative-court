@@ -1,0 +1,58 @@
+{
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "generated_from_cp2": "2026-04-27",
+  "cp2_completed": "2026-04-28",
+  "status": "confirmed",
+  "cp2_answers_summary": {
+    "Q1_feb15_incident": "Confirmed Sev-2 bilateral RF-11 signal. Children (ages 10, 6, 1) home and directly affected by adult argument. Eli looked up 'verbal abuse' because kids were asking \u2014 responsive to children's question but still child-involvement in adult legal-framing. Out-of-character, health context, apology. Sev-2 (not Sev-3) per bilateral rule.",
+    "Q3_emotional_stabilizer": "Confirmed: 'Olivia is Melissa's stabilizer.' Parentification pattern behavioral indicator \u2014 informs severity context.",
+    "Q4_police_report": "Confirmed: Melissa told Olivia about police report. Olivia stopped talking to Eli for over a week. Documented emotional impact. Sev-2 primary flag in B-029.",
+    "Q5_visit_refusal": "Confirmed text-documented: 'It was her choice not to go.' Melissa explicitly framed court-order non-compliance as Olivia's autonomous choice in text. ADD-002 activated.",
+    "Q6_therapist": "Coaching probable but therapists not sustained. Pattern: Melissa drops therapists when called out. ROW-14097 counselor relay (B-027) is text-documented evidence. No standalone primary flag for unconfirmed coaching; ROW-14097 is primary flag."
+  },
+  "addenda": [
+    {
+      "id": "RF11-ADD-001",
+      "title": "Bilateral Analysis Rule",
+      "rule": "RF-11 is analyzed in both directions. Melissa-direction primary: parentification, emotional relay, legal-proceedings exposure, fear-framing as visit-refusal tool, counselor relay weaponization. Eli-direction primary: Feb 15 2026 \u2014 children (ages 10, 6, 1) directly present during adult domestic argument; Eli looking up 'verbal abuse' with children present because children were asking (Sev-2: responsive to children's question but still child-involvement in adult legal framing; mitigated by out-of-character, health context, apology). Both directions are primary flags \u2014 Eli-direction signals are NOT weighted differently. Eli-direction flag is identified with direction: 'sent' in flag record.",
+      "why": "Q1 confirmed: children were home, hiding; Eli confirmed he looked up verbal abuse with children present. Single out-of-character incident (sinus infection, steroids, sleep deprivation). Eli apologized. Still meets RF-11 threshold because children (including a 6-year-old) were directly exposed to adult conflict and then involved in adult legal-definitional conversation.",
+      "how_to_apply": "Process all batches for both directions. The only confirmed Eli-direction primary signal is B-030 (Feb 2026). For future batches (future-Eli signals), apply the same rigor \u2014 do not presuppose absence."
+    },
+    {
+      "id": "RF11-ADD-002",
+      "title": "Visit-Refusal Parentification Rule",
+      "rule": "When Melissa presents a court-ordered parenting schedule to Olivia as Olivia's autonomous choice, and Olivia's stated refusal is then deployed by Melissa as the compliance justification, flag as RF-11 Sev-2 parentification. Text-confirmed: 'It was her choice not to go and I am not expected to forcibly remove her from the home' (B-029 ROW-14841 area). This is the core parentification mechanism in the visit-refusal cascade: a child is placed in the role of deciding whether to comply with a court order, relieving the parent of enforcement responsibility while burdening the child with the adult decision. Compound with RF-02 (gatekeeping) for each visit-refusal parentification signal.",
+      "why": "Q5 confirmed: Melissa has explicitly stated this framing in text. Eli's observation: mixed genuine/directed \u2014 'sometimes Olivia's decision and other times Melissa directed her when it suited Melissa's needs.' The explicit 'her choice' framing in text documents the parentification mechanism regardless of whether the refusal was genuine or coached.",
+      "how_to_apply": "Primary flag: B-029 ROW-14841 area. Apply as compound RF-11+RF-02 for each visit-refusal batch where Melissa uses 'her choice' framing or equivalent. Note: the decision-burden on Olivia is a distinct harm from the gatekeeping mechanism (RF-02) \u2014 child is not just prevented from going but is made responsible for the prevention."
+    },
+    {
+      "id": "RF11-ADD-003",
+      "title": "Cross-RF Compound Rule",
+      "rule": "RF-11 primary signals generate compound flags as follows: RF-11+RF-08 when Olivia relay content directly exposes Olivia to adult conflict content (e.g., counselor relay weaponization = RF-08 relay + RF-11 child-therapeutic-context exposure); RF-11+RF-04 when Melissa uses Olivia's reported emotional state as DARVO leverage or emotional manipulation; RF-11+RF-02 when visit-refusal parentification is the mechanism; RF-11+RF-09 when the same cluster involves reality-distortion (Feb 2026 amplification = RF-09 S011 + RF-11 S005). The distinction from RF-08: RF-08 = Olivia as messenger/conduit; RF-11 = Olivia exposed to adult conflict content or burdened with adult decisions. A message can be both.",
+      "why": "RF-11 is structurally embedded in RF-02 (visit refusal), RF-04 (DARVO amplification), RF-08 (Olivia relay), and RF-09 (Feb 2026 amplification) across Phase C. ADD-003 prevents double-classification confusion by stating the compound rule explicitly.",
+      "how_to_apply": "For each RF-11 primary flag, identify which other RF pass has primary jurisdiction and note the compound. RF-11 may be primary OR secondary depending on which mechanism is most directly documented. In B-030 (bilateral), RF-11 is primary from Eli's direction (direct child exposure) and compound from Melissa's direction (amplification relay is RF-04/RF-09 primary)."
+    },
+    {
+      "id": "RF11-ADD-004",
+      "title": "Therapist Pattern \u2014 Coaching Context",
+      "rule": "No standalone primary RF-11 flag for unconfirmed therapist coaching. However: ROW-14097 (B-027) is text-documented counselor relay ('She's told the counselor before how she's afraid to talk to you') and is a primary flag on its own merits (counselor relay weaponization). The pattern that Melissa engages therapists and terminates the relationship when called out is a behavioral severity-elevating context note \u2014 applied to any flag involving therapeutic relationship references. If Eli confirms or text evidence emerges of specific coaching content, elevate to Sev-3.",
+      "why": "Q6: Eli believes coaching occurred but therapy was never sustained. Melissa drops therapists once called out \u2014 behavioral pattern consistent with strategic therapeutic engagement rather than genuine treatment. Therapist non-continuity is clinically significant for GAL analysis.",
+      "how_to_apply": "For each counselor/therapist reference in the text record: flag as RF-11 primary if Melissa is deploying Olivia's therapeutic statements as adult-conflict ammunition (ROW-14097 model). Add behavioral context note: 'therapist non-continuity pattern \u2014 Melissa terminates when called out.' Do NOT generate standalone flags for therapist-coaching inference alone."
+    },
+    {
+      "id": "RF11-ADD-005",
+      "title": "Police Report Child-Exposure Rule",
+      "rule": "When a parent involves a child in the awareness of police proceedings related to the custody case, flag as RF-11 Sev-2 (legal-proceedings exposure to child). Confirmed Q4: Melissa told Olivia about Eli's Nov 22 2025 police report filing. Documented emotional impact: Olivia was mad at Eli and did not speak to him for over a week. The mechanism: exposing a child to law-enforcement involvement in a parent's custody-compliance context places the child in the adult legal conflict and has documented impact on the child's relationship with the non-filing parent. Text evidence may exist per Eli ('I think its actually in the text somewhere').",
+      "why": "Q4 confirmed with documented emotional consequence. A 10-year-old being told 'your father filed a police report' about a visit refusal she was involved in places the child directly in the adult legal conflict. The week-long silent treatment toward Eli is documented behavioral impact.",
+      "how_to_apply": "Primary flag in B-029 for police report exposure. Search B-029 text for any Melissa references to the police report in context of Olivia's awareness. Compound RF-11+RF-02 (police involvement is a gatekeeping escalation tool)."
+    },
+    {
+      "id": "RF11-ADD-006",
+      "title": "Emotional-Stabilizer Parentification Context",
+      "rule": "Eli confirmed (Q3) that 'Olivia is Melissa's stabilizer' \u2014 Olivia serves as Melissa's primary emotional support system. This is not directly documentable from the text record between Eli and Melissa but applies as a behavioral severity-context note across all Phase C signals. It elevates the significance of each documented parentification signal: the stabilizer role is the structural backdrop. Apply as: 'CP2 Q3 confirmed emotional-stabilizer parentification \u2014 Olivia serves as Melissa's primary stabilizer. This text-record signal is documented evidence of the broader pattern.' Do NOT generate standalone primary flags from this behavioral observation alone.",
+      "why": "Q3: 'Yes and probably. It seems to me that Olivia is Melissa's stabilizer.' Emotional stabilizer = child used as parent's primary emotional support, which is the definitional core of parentification. Confirmed at CP2 as a sustained behavioral pattern across the co-parenting relationship.",
+      "how_to_apply": "Add severity-context note to each RF-11 primary flag from Melissa's direction: 'ADD-006 context: Olivia serves as Melissa's emotional stabilizer (CP2 Q3 confirmed) \u2014 each documented parentification signal reflects a sustained behavioral pattern, not isolated incidents.'"
+    }
+  ]
+}

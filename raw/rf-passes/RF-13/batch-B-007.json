@@ -1,0 +1,70 @@
+{
+  "batch_id": "B-007",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2023-04-03",
+    "end": "2023-06-02"
+  },
+  "row_range": {
+    "start": 2027,
+    "end": 2393
+  },
+  "message_count": 502,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "WATCHING",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 5,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 1,
+    "note": "One hostile episode: EP-0298 Apr 22 2023 (8 msgs). Small Sev-1 episode. Apr-Jun 2023 is relatively low-conflict compared to Feb-Mar 2023. Role consistency and de-escalation resistance arcs both continue at ACTIVE."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B007-001",
+      "episode_id": "EP-0298",
+      "date": "2023-04-22",
+      "message_count": 8,
+      "phase": "A",
+      "flooding_detected": false,
+      "severity": 1,
+      "escalation_shape": "spike \u2014 brief hostile exchange",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "brief measured response",
+        "received_direction": "hostile initiation; brief exchange without sustained escalation",
+        "net_escalation": "low-moderate (Sev-1: 8-msg episode; asymmetric but brief)",
+        "de_escalation_resistance": "Eli responds briefly; exchange ends \u2014 de-escalation resistance minimal at episode level"
+      },
+      "cycle_classification": "CYC-002 content-correlated \u2014 likely logistics/scheduling trigger context",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 6,
+      "cross_rf_note": "B-007 contains RF-04 primary flags (3 flags). Apr-Jun 2023 period has moderate RF-04 density despite low hostile episode count."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Apr 2023: reduced hostile episode count after Feb-Mar cluster. Trajectory: still elevated but episode frequency temporarily lower.",
+      "state": "WATCHING"
+    }
+  ]
+}

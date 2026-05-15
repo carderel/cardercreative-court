@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-016",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2024-06-14",
+    "end": "2024-07-15"
+  },
+  "row_range": {
+    "start": 5626,
+    "end": 6012
+  },
+  "message_count": 518,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jun\u2013Jul 2024: court order reference in dispute about dropoff obligations (RF-04 context). No RF-11 primary signals \u2014 Olivia not referenced as aware of/involved in the court-order dispute."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

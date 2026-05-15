@@ -1,0 +1,1897 @@
+{
+  "checkpoint": 1,
+  "type": "post_triage_review",
+  "generated_at": "2026-04-20T22:22:27.245609",
+  "status": "pending_eli_review",
+  "review_sections": {
+    "1a_episode_segmentation": {
+      "description": "Review 12 sample episodes across all phases and tone types. Confirm the 6-hour gap threshold is creating sensible conversation boundaries.",
+      "total_episodes_in_dataset": 1375,
+      "samples": [
+        {
+          "episode_id": "EP-0001",
+          "date_range": "2022-01-11 23:56 - 23:56",
+          "message_count": 1,
+          "duration_minutes": 0,
+          "tone": "neutral",
+          "topic_summary": "general communication",
+          "phase": "A",
+          "flooding_detected": false,
+          "gap_before_hours": null,
+          "gap_after_hours": 5329.6,
+          "first_messages": [
+            {
+              "row": 2,
+              "direction": "Sent",
+              "text": "You can come earlier than 8 if you get done early"
+            }
+          ],
+          "last_messages": [],
+          "review_question": "Does this look like one complete conversation? Should it be split or merged?"
+        },
+        {
+          "episode_id": "EP-0002",
+          "date_range": "2022-08-22 01:30 - 01:59",
+          "message_count": 4,
+          "duration_minutes": 28,
+          "tone": "neutral",
+          "topic_summary": "general communication",
+          "phase": "A",
+          "flooding_detected": false,
+          "gap_before_hours": 5329.6,
+          "gap_after_hours": 10.2,
+          "first_messages": [
+            {
+              "row": 3,
+              "direction": "Received",
+              "text": "25.97 for payschool +15 rx = 40.97 due "
+            },
+            {
+              "row": 4,
+              "direction": "Received",
+              "text": "Laptop is charged, watch is charged, outfit and shoes picked out, lunch mostly packed, letters placed in lunchbox, nails painted "
+            }
+          ],
+          "last_messages": [
+            {
+              "row": 4,
+              "direction": "Received",
+              "text": "Laptop is charged, watch is charged, outfit and shoes picked out, lunch mostly packed, letters placed in lunchbox, nails painted "
+            },
+            {
+              "row": 5,
+              "direction": "Received",
+              "text": "She should be ready "
+            }
+          ],
+          "review_question": "Does this look like one complete conversation? Should it be split or merged?"
+        },
+        {
+          "episode_id": "EP-0008",
+          "date_range": "2022-08-27 13:04 - 03:01",
+          "message_count": 13,
+          "duration_minutes": 837,
+          "tone": "neutral",
+          "topic_summary": "general communication",
+          "phase": "A",
+          "flooding_detected": true,
+          "gap_before_hours": 13.7,
+          "gap_after_hours": 11.2,
+          "first_messages": [
+            {
+              "row": 25,
+              "direction": "Received",
+              "text": "Are you able to take her to swim lessons tomorrow "
+            },
+            {
+              "row": 26,
+              "direction": "Sent",
+              "text": "Yup"
+            }
+          ],
+          "last_messages": [
+            {
+              "row": 34,
+              "direction": "Received",
+              "text": "8:15?"
+            },
+            {
+              "row": 35,
+              "direction": "Sent",
+              "text": "8:20"
+            }
+          ],
+          "review_question": "Flooding detected (5+ messages from one sender in <10 min). Does this represent a genuine flood pattern or rapid-fire normal exchange?"
+        },
+        {
+          "episode_id": "EP-0093",
+          "date_range": "2022-10-31 14:15 - 23:08",
+          "message_count": 48,
+          "duration_minutes": 533,
+          "tone": "hostile",
+          "topic_summary": "general communication",
+          "phase": "A",
+          "flooding_detected": true,
+          "gap_before_hours": 13.8,
+          "gap_after_hours": 13.6,
+          "first_messages": [
+            {
+              "row": 617,
+              "direction": "Sent",
+              "text": "Does she want me to pick her up about 5 and go around my neighborhood?  "
+            },
+            {
+              "row": 618,
+              "direction": "Received",
+              "text": "No"
+            }
+          ],
+          "last_messages": [
+            {
+              "row": 661,
+              "direction": "Sent",
+              "text": "About ten or 15  mins away"
+            },
+            {
+              "row": 662,
+              "direction": "Sent",
+              "text": "Alright well came over.  Drive through the and didn't see you guys.  "
+            }
+          ],
+          "review_question": "Flooding detected (5+ messages from one sender in <10 min). Does this represent a genuine flood pattern or rapid-fire normal exchange?"
+        },
+        {
+          "episode_id": "EP-0111",
+          "date_range": "2022-11-13 15:24 - 15:59",
+          "message_count": 27,
+          "duration_minutes": 34,
+          "tone": "hostile",
+          "topic_summary": "general communication",
+          "phase": "A",
+          "flooding_detected": true,
+          "gap_before_hours": 16.6,
+          "gap_after_hours": 6.1,
+          "first_messages": [
+            {
+              "row": 794,
+              "direction": "Sent",
+              "text": "I'll call you back."
+            },
+            {
+              "row": 795,
+              "direction": "Received",
+              "text": "She wants you to go to swim"
+            }
+          ],
+          "last_messages": [
+            {
+              "row": 819,
+              "direction": "Received",
+              "text": "This was a simple she wanted to call and ask if you were coming cause she wanted you there. It appears you are all up in your feelings today. "
+            },
+            {
+              "row": 820,
+              "direction": "Received",
+              "text": "Being a house bitch, taxi and working two jobs while taking care of two kids at your house must be exhausting you "
+            }
+          ],
+          "review_question": "Flooding detected (5+ messages from one sender in <10 min). Does this represent a genuine flood pattern or rapid-fire normal exchange?"
+        },
+        {
+          "episode_id": "EP-0112",
+          "date_range": "2022-11-13 22:05 - 01:02",
+          "message_count": 5,
+          "duration_minutes": 176,
+          "tone": "hostile",
+          "topic_summary": "conflict/communication",
+          "phase": "A",
+          "flooding_detected": false,
+          "gap_before_hours": 6.1,
+          "gap_after_hours": 13.5,
+          "first_messages": [
+            {
+              "row": 821,
+              "direction": "Received",
+              "text": "Also you said this like I don't know what it means. \"That's what \"I hadn't planned on it\" means I hadn't planned on it and made other plans or arrange"
+            },
+            {
+              "row": 822,
+              "direction": "Received",
+              "text": "Had to disguise the turkey for school "
+            }
+          ],
+          "last_messages": [
+            {
+              "row": 822,
+              "direction": "Received",
+              "text": "Had to disguise the turkey for school "
+            },
+            {
+              "row": 823,
+              "direction": "Sent",
+              "text": "Wow!!  Amazing job Olivia!"
+            }
+          ],
+          "review_question": "Does this look like one complete conversation? Should it be split or merged?"
+        },
+        {
+          "episode_id": "EP-0854",
+          "date_range": "2024-08-04 13:23 - 03:03",
+          "message_count": 311,
+          "duration_minutes": 820,
+          "tone": "hostile",
+          "topic_summary": "general communication",
+          "phase": "A",
+          "flooding_detected": true,
+          "gap_before_hours": 11.2,
+          "gap_after_hours": 22.0,
+          "first_messages": [
+            {
+              "row": 6254,
+              "direction": "Received",
+              "text": "https://www.facebook.com/share/r/YAwSaNxKDYn2uNFc/?mibextid=eBqqwY"
+            },
+            {
+              "row": 6255,
+              "direction": "Received",
+              "text": "https://www.facebook.com/share/v/8kxThm8v8mXLkrKA/?mibextid=WC7FNe"
+            }
+          ],
+          "last_messages": [
+            {
+              "row": 6556,
+              "direction": "Received",
+              "text": "My room and bathroom "
+            },
+            {
+              "row": 6557,
+              "direction": "Received",
+              "text": "Hallway and stairs in light gray "
+            }
+          ],
+          "review_question": "Large episode (311 messages). The algorithm kept this as one episode. Should it be broken into sub-episodes based on topic shifts?"
+        },
+        {
+          "episode_id": "EP-1105",
+          "date_range": "2025-06-01 21:59 - 01:34",
+          "message_count": 15,
+          "duration_minutes": 214,
+          "tone": "mixed",
+          "topic_summary": "general communication",
+          "phase": "B",
+          "flooding_detected": true,
+          "gap_before_hours": 30.5,
+          "gap_after_hours": 16.9,
+          "first_messages": [],
+          "last_messages": [],
+          "review_question": "Flooding detected (5+ messages from one sender in <10 min). Does this represent a genuine flood pattern or rapid-fire normal exchange?"
+        },
+        {
+          "episode_id": "EP-1227",
+          "date_range": "2025-10-01 00:30 - 02:56",
+          "message_count": 4,
+          "duration_minutes": 145,
+          "tone": "neutral",
+          "topic_summary": "child welfare",
+          "phase": "C",
+          "flooding_detected": false,
+          "gap_before_hours": 8.2,
+          "gap_after_hours": 8.8,
+          "first_messages": [],
+          "last_messages": [],
+          "review_question": "Does this look like one complete conversation? Should it be split or merged?"
+        },
+        {
+          "episode_id": "EP-1374",
+          "date_range": "2026-04-11 17:21 - 17:28",
+          "message_count": 2,
+          "duration_minutes": 6,
+          "tone": "neutral",
+          "topic_summary": "general communication",
+          "phase": "C",
+          "flooding_detected": false,
+          "gap_before_hours": 16.9,
+          "gap_after_hours": 20.9,
+          "first_messages": [
+            {
+              "row": 15587,
+              "direction": "Sent",
+              "text": "I have Olivia covered.  I will take her and bring her home to my house.  No need to worry about it at all. "
+            },
+            {
+              "row": 15588,
+              "direction": "Received",
+              "text": "Ok "
+            }
+          ],
+          "last_messages": [],
+          "review_question": "Does this look like one complete conversation? Should it be split or merged?"
+        },
+        {
+          "episode_id": "EP-1375",
+          "date_range": "2026-04-12 14:24 - 22:03",
+          "message_count": 12,
+          "duration_minutes": 458,
+          "tone": "neutral",
+          "topic_summary": "scheduling/calendar",
+          "phase": "C",
+          "flooding_detected": true,
+          "gap_before_hours": 20.9,
+          "gap_after_hours": null,
+          "first_messages": [
+            {
+              "row": 15589,
+              "direction": "Received",
+              "text": "Why do you keep trying to make Olivia think I\u2019m abusing her?   "
+            },
+            {
+              "row": 15590,
+              "direction": "Received",
+              "text": "She said she has a bruise on her arm and you said it looked like a finger mark "
+            }
+          ],
+          "last_messages": [
+            {
+              "row": 15599,
+              "direction": "Sent",
+              "text": "Just send a text I am dealing with a situation"
+            },
+            {
+              "row": 15600,
+              "direction": "Received",
+              "text": "Olivia wanted to talk to you about this guinea pig "
+            }
+          ],
+          "review_question": "Flooding detected (5+ messages from one sender in <10 min). Does this represent a genuine flood pattern or rapid-fire normal exchange?"
+        }
+      ]
+    },
+    "1b_inflection_points": {
+      "description": "Review 9 detected inflection points. Confirm or dismiss each. The most analytically significant are INF-003 (Aug 2024 spike), INF-007 (May 2025 major spike \u2014 dataset peak), and INF-005 (Oct 2024 sudden drop).",
+      "inflection_points": [
+        {
+          "inflection_id": "INF-001",
+          "date": "2022-09-15",
+          "type": "topic_emergence",
+          "description": "First reference to new romantic partner in messages",
+          "evidence": "Row 215 \u2014 \"She gets all mad if you ask\" (partner-related context)",
+          "confidence": "medium",
+          "proposed_phase_boundary": false,
+          "significance": "Introduction of third-party relationship dynamic",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        },
+        {
+          "inflection_id": "INF-002",
+          "date": "2022-11-11",
+          "type": "topic_emergence",
+          "description": "First possible legal/court reference in messages",
+          "evidence": "Row 790 \u2014 context includes legal language",
+          "confidence": "low",
+          "proposed_phase_boundary": false,
+          "significance": "Early legal awareness \u2014 needs CP1 confirmation",
+          "note": "Keyword match may be incidental \u2014 Eli should confirm actual context",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        },
+        {
+          "inflection_id": "INF-003",
+          "date": "2024-08-04",
+          "type": "density_shift",
+          "description": "Major communication density spike \u2014 14-day avg: 15.0 \u2192 28.6 msg/day",
+          "evidence": "Batch B-017 (582 msgs, Jul-Aug 2024) is one of the highest-density batches",
+          "confidence": "high",
+          "proposed_phase_boundary": false,
+          "significance": "Significant escalation event \u2014 likely a major conflict or triggering event; corresponds to early conflict period",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        },
+        {
+          "inflection_id": "INF-004",
+          "date": "2024-10-03",
+          "type": "density_shift",
+          "description": "Density spike: 10.6 \u2192 23.8 msg/day",
+          "evidence": "Batch B-019 (574 msgs, Sep-Oct 2024)",
+          "confidence": "high",
+          "proposed_phase_boundary": false,
+          "significance": "Second escalation period \u2014 two major spikes within 2 months",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        },
+        {
+          "inflection_id": "INF-005",
+          "date": "2024-10-18",
+          "type": "density_shift",
+          "description": "Sharp density drop: 30.5 \u2192 5.9 msg/day (sudden de-escalation or silence)",
+          "evidence": "Rapid transition from high-conflict Oct period to relative quiet",
+          "confidence": "high",
+          "proposed_phase_boundary": false,
+          "significance": "Possible court date, legal intervention, or external event causing communication reduction",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        },
+        {
+          "inflection_id": "INF-006",
+          "date": "2024-11-18",
+          "type": "density_shift",
+          "description": "Density spike: 5.0 \u2192 10.1 msg/day (resumption after Oct drop)",
+          "evidence": "Communication resumes at moderate level after Oct silence",
+          "confidence": "medium",
+          "proposed_phase_boundary": false,
+          "significance": "Pattern of escalation, sudden silence, resumption \u2014 possible legal timeline correlation",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        },
+        {
+          "inflection_id": "INF-007",
+          "date": "2025-05-04",
+          "type": "density_shift",
+          "description": "LARGEST density spike in dataset: 12.9 \u2192 37.0 msg/day",
+          "evidence": "Batch B-025 (501 msgs, May-Jun 2025) spans Phase A/B boundary; this spike triggers near Phase B start",
+          "confidence": "high",
+          "proposed_phase_boundary": true,
+          "significance": "Major escalation event at or near start of Phase B (Eli's early-awareness period); likely significant triggering event",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        },
+        {
+          "inflection_id": "INF-008",
+          "date": "2025-05-19",
+          "type": "density_shift",
+          "description": "Density drop after May spike: 39.1 \u2192 16.2 msg/day",
+          "evidence": "Moderate de-escalation following the Phase B transition spike",
+          "confidence": "high",
+          "proposed_phase_boundary": false,
+          "significance": "Pattern mirrors Oct 2024 \u2014 spike followed by partial pullback",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        },
+        {
+          "inflection_id": "INF-009",
+          "date": "2025-08-14",
+          "type": "density_shift",
+          "description": "Density spike in Phase B: 10.1 \u2192 21.2 msg/day",
+          "evidence": "Batch B-027 (503 msgs, Jul-Aug 2025) shows elevated conflict ratio",
+          "confidence": "medium",
+          "proposed_phase_boundary": false,
+          "significance": "Phase B escalation \u2014 during period when Eli was actively applying new communication strategies",
+          "review_question": "Is this a real dynamic shift? What was happening around this date?"
+        }
+      ]
+    },
+    "1c_additional_inflection_points": {
+      "description": "Please provide any dates the algorithm missed that were significant turning points.",
+      "prompt": [
+        "Filing dates, court dates, order dates",
+        "Specific incidents that changed the communication dynamic",
+        "Introduction of new partners (algorithm flagged one around Sep 2022 \u2014 please confirm)",
+        "Moves, job changes, school transitions",
+        "Any interventions: therapy, mediation, family involvement",
+        "Context for the Oct 2024 sudden communication drop (density went from 30 to 6 msg/day in 2 weeks \u2014 what happened?)",
+        "Context for the May 2025 communication spike (largest in dataset at 37 msg/day \u2014 what triggered this?)"
+      ],
+      "eli_response": null
+    },
+    "1d_rf_heatmap": {
+      "description": "Review the RF signal estimates. NOTE: These are keyword-only estimates \u2014 primary passes do the actual analysis. A \"medium\" here means 15-60 keyword hits; \"high\" means 60+ hits. RF-04 (Emotional Manipulation) scored 57 hits \u2014 right at the medium/high boundary; analyst suspects actual behavioral signal is HIGH.",
+      "critical_findings": [
+        "RF-01 (Parental Alienation): HIGH signal, 92% Received \u2014 if representative, alienating language is heavily unidirectional",
+        "RF-04 (Emotional Manipulation): MEDIUM by keyword count (57 hits) but likely HIGH by behavioral analysis \u2014 indirect manipulation is hard to keyword-scan",
+        "RF-05 (Intimidation/Threats): HIGH signal (127 hits), 82% Received",
+        "RF-07 (Boundary Violations): HIGH signal (111 hits), 35% Sent \u2014 meaningful bidirectional signal",
+        "RF-09 (Gaslighting): MEDIUM, notably 54% Sent / 46% Received \u2014 unusually balanced; may reflect defensive denials on both sides",
+        "RF-10 (Refusal to Co-Parent): LOW by keywords (2 hits) \u2014 THIS IS A METHODOLOGY ARTIFACT. RF-10 requires gap/response-pattern analysis, not keywords. Upgraded to full pass.",
+        "RF-13 (Escalation Patterns): HIGH signal (125 hits), 31% Sent / 69% Received"
+      ],
+      "heatmap": [
+        {
+          "rf_id": "RF-01",
+          "name": "Parental Alienation",
+          "signal_strength": "high",
+          "keyword_hits": 63,
+          "direction": "Sent: 4, Received: 59 (94% Received)",
+          "months_with_signal": 24,
+          "phase_distribution": {
+            "A": 47,
+            "B": 8,
+            "C": 8
+          },
+          "hot_periods": [
+            "2025-02",
+            "2025-01",
+            "2025-08"
+          ],
+          "analyst_notes": "Very high Received signal (62/66 hits); critical for GAL evaluation; distinct from RF-04",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-02",
+          "name": "Gatekeeping",
+          "signal_strength": "medium",
+          "keyword_hits": 21,
+          "direction": "Sent: 10, Received: 11 (52% Received)",
+          "months_with_signal": 16,
+          "phase_distribution": {
+            "A": 15,
+            "B": 2,
+            "C": 4
+          },
+          "hot_periods": [
+            "2022-10",
+            "2023-03",
+            "2024-08"
+          ],
+          "analyst_notes": "Medium signal; gatekeeping is core GAL factor",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-03",
+          "name": "Weaponized Logistics",
+          "signal_strength": "medium",
+          "keyword_hits": 30,
+          "direction": "Sent: 8, Received: 22 (73% Received)",
+          "months_with_signal": 14,
+          "phase_distribution": {
+            "A": 21,
+            "B": 3,
+            "C": 6
+          },
+          "hot_periods": [
+            "2025-05",
+            "2024-08",
+            "2025-10"
+          ],
+          "analyst_notes": "Medium signal; weaponized logistics often pairs with RF-02",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-04",
+          "name": "Emotional Manipulation",
+          "signal_strength": "medium",
+          "keyword_hits": 57,
+          "direction": "Sent: 9, Received: 48 (84% Received)",
+          "months_with_signal": 25,
+          "phase_distribution": {
+            "A": 45,
+            "B": 6,
+            "C": 6
+          },
+          "hot_periods": [
+            "2024-08",
+            "2025-01",
+            "2024-10"
+          ],
+          "analyst_notes": "Highest signal density, spread across all phases; primary context anchor for subsequent passes",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-05",
+          "name": "Intimidation/Threats",
+          "signal_strength": "high",
+          "keyword_hits": 127,
+          "direction": "Sent: 23, Received: 104 (82% Received)",
+          "months_with_signal": 38,
+          "phase_distribution": {
+            "A": 87,
+            "B": 29,
+            "C": 11
+          },
+          "hot_periods": [
+            "2025-07",
+            "2023-02",
+            "2025-06"
+          ],
+          "analyst_notes": "High signal (127 hits), heavily Received; complements RF-04 emotional pressure pattern",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-06",
+          "name": "Financial Coercion",
+          "signal_strength": "medium",
+          "keyword_hits": 36,
+          "direction": "Sent: 5, Received: 31 (86% Received)",
+          "months_with_signal": 18,
+          "phase_distribution": {
+            "A": 29,
+            "B": 2,
+            "C": 5
+          },
+          "hot_periods": [
+            "2024-08",
+            "2024-06",
+            "2023-09"
+          ],
+          "analyst_notes": "Medium signal; financial dynamics relevant to GAL",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-07",
+          "name": "Boundary Violations",
+          "signal_strength": "high",
+          "keyword_hits": 111,
+          "direction": "Sent: 39, Received: 72 (65% Received)",
+          "months_with_signal": 36,
+          "phase_distribution": {
+            "A": 79,
+            "B": 19,
+            "C": 13
+          },
+          "hot_periods": [
+            "2025-05",
+            "2024-08",
+            "2025-08"
+          ],
+          "analyst_notes": "High signal (111 hits), meaningful Sent component; structural flooding data available",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-08",
+          "name": "Triangulation",
+          "signal_strength": "low",
+          "keyword_hits": 5,
+          "direction": "Sent: 3, Received: 2 (40% Received)",
+          "months_with_signal": 3,
+          "phase_distribution": {
+            "A": 5,
+            "B": 0,
+            "C": 0
+          },
+          "hot_periods": [
+            "2025-03",
+            "2025-04",
+            "2022-08"
+          ],
+          "analyst_notes": "Low signal (5 hits); abbreviated pass",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-09",
+          "name": "Gaslighting",
+          "signal_strength": "medium",
+          "keyword_hits": 37,
+          "direction": "Sent: 20, Received: 17 (46% Received)",
+          "months_with_signal": 17,
+          "phase_distribution": {
+            "A": 24,
+            "B": 11,
+            "C": 2
+          },
+          "hot_periods": [
+            "2025-08",
+            "2024-08",
+            "2025-01"
+          ],
+          "analyst_notes": "Medium signal but analytically critical; benefits from RF-04 context per RC-PIPELINE",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-10",
+          "name": "Refusal to Co-Parent",
+          "signal_strength": "low",
+          "keyword_hits": 2,
+          "direction": "Sent: 1, Received: 1 (50% Received)",
+          "months_with_signal": 2,
+          "phase_distribution": {
+            "A": 2,
+            "B": 0,
+            "C": 0
+          },
+          "hot_periods": [
+            "2023-02",
+            "2024-08"
+          ],
+          "analyst_notes": "LOW keyword signal \u2014 UPGRADE to full pass; RF-10 requires structural gap analysis, not keywords",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-11",
+          "name": "Inappropriate Child Involvement",
+          "signal_strength": "low",
+          "keyword_hits": 2,
+          "direction": "Sent: 1, Received: 1 (50% Received)",
+          "months_with_signal": 1,
+          "phase_distribution": {
+            "A": 0,
+            "B": 0,
+            "C": 2
+          },
+          "hot_periods": [
+            "2026-02"
+          ],
+          "analyst_notes": "Low keyword signal \u2014 behavioral context required; abbreviated pass",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-12",
+          "name": "Strategic Communication",
+          "signal_strength": "low",
+          "keyword_hits": 3,
+          "direction": "Sent: 1, Received: 2 (67% Received)",
+          "months_with_signal": 2,
+          "phase_distribution": {
+            "A": 2,
+            "B": 1,
+            "C": 0
+          },
+          "hot_periods": [
+            "2025-02",
+            "2025-08"
+          ],
+          "analyst_notes": "Low keyword signal but run second-half Tier 1; needs behavioral baselines per RC-PIPELINE",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-13",
+          "name": "Escalation Patterns",
+          "signal_strength": "high",
+          "keyword_hits": 125,
+          "direction": "Sent: 39, Received: 86 (69% Received)",
+          "months_with_signal": 38,
+          "phase_distribution": {
+            "A": 99,
+            "B": 15,
+            "C": 11
+          },
+          "hot_periods": [
+            "2025-08",
+            "2024-08",
+            "2022-11"
+          ],
+          "analyst_notes": "High signal (125 hits); run LAST Tier 1 per RC-PIPELINE \u2014 needs full cross-RF picture",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-14",
+          "name": "Substance/Safety",
+          "signal_strength": "medium",
+          "keyword_hits": 43,
+          "direction": "Sent: 12, Received: 31 (72% Received)",
+          "months_with_signal": 21,
+          "phase_distribution": {
+            "A": 35,
+            "B": 4,
+            "C": 4
+          },
+          "hot_periods": [
+            "2022-10",
+            "2024-08",
+            "2023-01"
+          ],
+          "analyst_notes": "Medium signal; safety allegations are high-weight GAL factors",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        },
+        {
+          "rf_id": "RF-15",
+          "name": "False Allegations/Projection",
+          "signal_strength": "medium",
+          "keyword_hits": 15,
+          "direction": "Sent: 1, Received: 14 (93% Received)",
+          "months_with_signal": 8,
+          "phase_distribution": {
+            "A": 8,
+            "B": 7,
+            "C": 0
+          },
+          "hot_periods": [
+            "2025-06",
+            "2024-06",
+            "2023-09"
+          ],
+          "analyst_notes": "Medium signal; run after RF-09/RF-04 per RC-PIPELINE sequencing",
+          "review_question": "Does this signal strength match your experience? Any context we should know before the primary pass?"
+        }
+      ]
+    },
+    "1e_batch_plan": {
+      "description": "Review the proposed 31-batch plan.",
+      "summary": {
+        "total_batches": 31,
+        "total_messages": 15599,
+        "avg_batch_size": 503,
+        "min_max": "61 - 642",
+        "phase_boundary_batches": [
+          "B-025",
+          "B-028"
+        ],
+        "largest_batch": {
+          "batch_id": "B-022",
+          "row_range": {
+            "start": 8928,
+            "end": 13008
+          },
+          "date_range": {
+            "start": "2025-01-14",
+            "end": "2025-02-15"
+          },
+          "message_count": 642,
+          "episode_range": {
+            "start": "EP-0995",
+            "end": "EP-1018"
+          },
+          "episode_count": 24,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.29,
+          "notes": ""
+        },
+        "top_conflict_batches": [
+          {
+            "batch_id": "B-022",
+            "row_range": {
+              "start": 8928,
+              "end": 13008
+            },
+            "date_range": {
+              "start": "2025-01-14",
+              "end": "2025-02-15"
+            },
+            "message_count": 642,
+            "episode_range": {
+              "start": "EP-0995",
+              "end": "EP-1018"
+            },
+            "episode_count": 24,
+            "phase": "A",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.29,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-028",
+            "row_range": {
+              "start": 14236,
+              "end": 8332
+            },
+            "date_range": {
+              "start": "2025-08-28",
+              "end": "2025-10-16"
+            },
+            "message_count": 502,
+            "episode_range": {
+              "start": "EP-1190",
+              "end": "EP-1238"
+            },
+            "episode_count": 49,
+            "phase": "B/C",
+            "phase_boundary": true,
+            "estimated_density": "high",
+            "conflict_ratio": 0.29,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-021",
+            "row_range": {
+              "start": 12455,
+              "end": 12711
+            },
+            "date_range": {
+              "start": "2024-12-17",
+              "end": "2025-01-08"
+            },
+            "message_count": 518,
+            "episode_range": {
+              "start": "EP-0972",
+              "end": "EP-0994"
+            },
+            "episode_count": 23,
+            "phase": "A",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.26,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-027",
+            "row_range": {
+              "start": 9917,
+              "end": 14235
+            },
+            "date_range": {
+              "start": "2025-07-17",
+              "end": "2025-08-28"
+            },
+            "message_count": 503,
+            "episode_range": {
+              "start": "EP-1156",
+              "end": "EP-1189"
+            },
+            "episode_count": 34,
+            "phase": "B",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.26,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-017",
+            "row_range": {
+              "start": 6013,
+              "end": 6557
+            },
+            "date_range": {
+              "start": "2024-07-15",
+              "end": "2024-08-05"
+            },
+            "message_count": 582,
+            "episode_range": {
+              "start": "EP-0826",
+              "end": "EP-0854"
+            },
+            "episode_count": 29,
+            "phase": "A",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.24,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-029",
+            "row_range": {
+              "start": 14547,
+              "end": 14920
+            },
+            "date_range": {
+              "start": "2025-10-16",
+              "end": "2025-12-16"
+            },
+            "message_count": 505,
+            "episode_range": {
+              "start": "EP-1239",
+              "end": "EP-1288"
+            },
+            "episode_count": 50,
+            "phase": "C",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.24,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-015",
+            "row_range": {
+              "start": 5239,
+              "end": 5625
+            },
+            "date_range": {
+              "start": "2024-05-11",
+              "end": "2024-06-13"
+            },
+            "message_count": 514,
+            "episode_range": {
+              "start": "EP-0750",
+              "end": "EP-0789"
+            },
+            "episode_count": 40,
+            "phase": "A",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.23,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-004",
+            "row_range": {
+              "start": 1093,
+              "end": 1461
+            },
+            "date_range": {
+              "start": "2022-12-12",
+              "end": "2023-01-17"
+            },
+            "message_count": 507,
+            "episode_range": {
+              "start": "EP-0146",
+              "end": "EP-0187"
+            },
+            "episode_count": 42,
+            "phase": "A",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.21,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-019",
+            "row_range": {
+              "start": 6945,
+              "end": 7491
+            },
+            "date_range": {
+              "start": "2024-09-05",
+              "end": "2024-10-03"
+            },
+            "message_count": 574,
+            "episode_range": {
+              "start": "EP-0889",
+              "end": "EP-0917"
+            },
+            "episode_count": 29,
+            "phase": "A",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.21,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-025",
+            "row_range": {
+              "start": 9605,
+              "end": 7867
+            },
+            "date_range": {
+              "start": "2025-05-04",
+              "end": "2025-06-10"
+            },
+            "message_count": 501,
+            "episode_range": {
+              "start": "EP-1080",
+              "end": "EP-1114"
+            },
+            "episode_count": 35,
+            "phase": "A/B",
+            "phase_boundary": true,
+            "estimated_density": "high",
+            "conflict_ratio": 0.2,
+            "notes": ""
+          },
+          {
+            "batch_id": "B-026",
+            "row_range": {
+              "start": 7868,
+              "end": 13911
+            },
+            "date_range": {
+              "start": "2025-06-11",
+              "end": "2025-07-16"
+            },
+            "message_count": 510,
+            "episode_range": {
+              "start": "EP-1115",
+              "end": "EP-1155"
+            },
+            "episode_count": 41,
+            "phase": "B",
+            "phase_boundary": false,
+            "estimated_density": "high",
+            "conflict_ratio": 0.2,
+            "notes": ""
+          }
+        ],
+        "review_question": "Approve batch plan? Any batches that should be split or merged?"
+      },
+      "all_batches": [
+        {
+          "batch_id": "B-001",
+          "row_range": {
+            "start": 2,
+            "end": 366
+          },
+          "date_range": {
+            "start": "2022-01-11",
+            "end": "2022-10-03"
+          },
+          "message_count": 501,
+          "episode_range": {
+            "start": "EP-0001",
+            "end": "EP-0053"
+          },
+          "episode_count": 53,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.09,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-002",
+          "row_range": {
+            "start": 367,
+            "end": 712
+          },
+          "date_range": {
+            "start": "2022-10-03",
+            "end": "2022-11-05"
+          },
+          "message_count": 508,
+          "episode_range": {
+            "start": "EP-0054",
+            "end": "EP-0101"
+          },
+          "episode_count": 48,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.17,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-003",
+          "row_range": {
+            "start": 713,
+            "end": 1092
+          },
+          "date_range": {
+            "start": "2022-11-06",
+            "end": "2022-12-12"
+          },
+          "message_count": 504,
+          "episode_range": {
+            "start": "EP-0102",
+            "end": "EP-0145"
+          },
+          "episode_count": 44,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.18,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-004",
+          "row_range": {
+            "start": 1093,
+            "end": 1461
+          },
+          "date_range": {
+            "start": "2022-12-12",
+            "end": "2023-01-17"
+          },
+          "message_count": 507,
+          "episode_range": {
+            "start": "EP-0146",
+            "end": "EP-0187"
+          },
+          "episode_count": 42,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.21,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-005",
+          "row_range": {
+            "start": 10525,
+            "end": 1839
+          },
+          "date_range": {
+            "start": "2023-01-18",
+            "end": "2023-02-21"
+          },
+          "message_count": 505,
+          "episode_range": {
+            "start": "EP-0188",
+            "end": "EP-0228"
+          },
+          "episode_count": 41,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.07,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-006",
+          "row_range": {
+            "start": 1840,
+            "end": 2228
+          },
+          "date_range": {
+            "start": "2023-02-22",
+            "end": "2023-04-03"
+          },
+          "message_count": 514,
+          "episode_range": {
+            "start": "EP-0229",
+            "end": "EP-0277"
+          },
+          "episode_count": 49,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.08,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-007",
+          "row_range": {
+            "start": 2229,
+            "end": 10927
+          },
+          "date_range": {
+            "start": "2023-04-03",
+            "end": "2023-06-02"
+          },
+          "message_count": 502,
+          "episode_range": {
+            "start": "EP-0278",
+            "end": "EP-0350"
+          },
+          "episode_count": 73,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.07,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-008",
+          "row_range": {
+            "start": 2580,
+            "end": 11061
+          },
+          "date_range": {
+            "start": "2023-06-02",
+            "end": "2023-07-15"
+          },
+          "message_count": 509,
+          "episode_range": {
+            "start": "EP-0351",
+            "end": "EP-0401"
+          },
+          "episode_count": 51,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.06,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-009",
+          "row_range": {
+            "start": 2955,
+            "end": 3343
+          },
+          "date_range": {
+            "start": "2023-07-15",
+            "end": "2023-08-20"
+          },
+          "message_count": 508,
+          "episode_range": {
+            "start": "EP-0402",
+            "end": "EP-0443"
+          },
+          "episode_count": 42,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.1,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-010",
+          "row_range": {
+            "start": 3344,
+            "end": 3723
+          },
+          "date_range": {
+            "start": "2023-08-21",
+            "end": "2023-10-04"
+          },
+          "message_count": 500,
+          "episode_range": {
+            "start": "EP-0444",
+            "end": "EP-0504"
+          },
+          "episode_count": 61,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.1,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-011",
+          "row_range": {
+            "start": 11301,
+            "end": 4053
+          },
+          "date_range": {
+            "start": "2023-10-05",
+            "end": "2023-11-25"
+          },
+          "message_count": 500,
+          "episode_range": {
+            "start": "EP-0505",
+            "end": "EP-0563"
+          },
+          "episode_count": 59,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.07,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-012",
+          "row_range": {
+            "start": 11471,
+            "end": 4448
+          },
+          "date_range": {
+            "start": "2023-11-26",
+            "end": "2024-01-31"
+          },
+          "message_count": 504,
+          "episode_range": {
+            "start": "EP-0564",
+            "end": "EP-0634"
+          },
+          "episode_count": 71,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.08,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-013",
+          "row_range": {
+            "start": 4449,
+            "end": 4860
+          },
+          "date_range": {
+            "start": "2024-02-01",
+            "end": "2024-03-27"
+          },
+          "message_count": 516,
+          "episode_range": {
+            "start": "EP-0635",
+            "end": "EP-0699"
+          },
+          "episode_count": 65,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.09,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-014",
+          "row_range": {
+            "start": 4861,
+            "end": 5238
+          },
+          "date_range": {
+            "start": "2024-03-27",
+            "end": "2024-05-09"
+          },
+          "message_count": 506,
+          "episode_range": {
+            "start": "EP-0700",
+            "end": "EP-0749"
+          },
+          "episode_count": 50,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.12,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-015",
+          "row_range": {
+            "start": 5239,
+            "end": 5625
+          },
+          "date_range": {
+            "start": "2024-05-11",
+            "end": "2024-06-13"
+          },
+          "message_count": 514,
+          "episode_range": {
+            "start": "EP-0750",
+            "end": "EP-0789"
+          },
+          "episode_count": 40,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.23,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-016",
+          "row_range": {
+            "start": 11939,
+            "end": 12069
+          },
+          "date_range": {
+            "start": "2024-06-14",
+            "end": "2024-07-15"
+          },
+          "message_count": 518,
+          "episode_range": {
+            "start": "EP-0790",
+            "end": "EP-0825"
+          },
+          "episode_count": 36,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.11,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-017",
+          "row_range": {
+            "start": 6013,
+            "end": 6557
+          },
+          "date_range": {
+            "start": "2024-07-15",
+            "end": "2024-08-05"
+          },
+          "message_count": 582,
+          "episode_range": {
+            "start": "EP-0826",
+            "end": "EP-0854"
+          },
+          "episode_count": 29,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.24,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-018",
+          "row_range": {
+            "start": 12107,
+            "end": 6944
+          },
+          "date_range": {
+            "start": "2024-08-06",
+            "end": "2024-09-03"
+          },
+          "message_count": 527,
+          "episode_range": {
+            "start": "EP-0855",
+            "end": "EP-0888"
+          },
+          "episode_count": 34,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.15,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-019",
+          "row_range": {
+            "start": 6945,
+            "end": 7491
+          },
+          "date_range": {
+            "start": "2024-09-05",
+            "end": "2024-10-03"
+          },
+          "message_count": 574,
+          "episode_range": {
+            "start": "EP-0889",
+            "end": "EP-0917"
+          },
+          "episode_count": 29,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.21,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-020",
+          "row_range": {
+            "start": 12274,
+            "end": 12454
+          },
+          "date_range": {
+            "start": "2024-10-03",
+            "end": "2024-12-15"
+          },
+          "message_count": 521,
+          "episode_range": {
+            "start": "EP-0918",
+            "end": "EP-0971"
+          },
+          "episode_count": 54,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.07,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-021",
+          "row_range": {
+            "start": 12455,
+            "end": 12711
+          },
+          "date_range": {
+            "start": "2024-12-17",
+            "end": "2025-01-08"
+          },
+          "message_count": 518,
+          "episode_range": {
+            "start": "EP-0972",
+            "end": "EP-0994"
+          },
+          "episode_count": 23,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.26,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-022",
+          "row_range": {
+            "start": 8928,
+            "end": 13008
+          },
+          "date_range": {
+            "start": "2025-01-14",
+            "end": "2025-02-15"
+          },
+          "message_count": 642,
+          "episode_range": {
+            "start": "EP-0995",
+            "end": "EP-1018"
+          },
+          "episode_count": 24,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.29,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-023",
+          "row_range": {
+            "start": 9182,
+            "end": 13248
+          },
+          "date_range": {
+            "start": "2025-02-21",
+            "end": "2025-03-11"
+          },
+          "message_count": 514,
+          "episode_range": {
+            "start": "EP-1019",
+            "end": "EP-1040"
+          },
+          "episode_count": 22,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.18,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-024",
+          "row_range": {
+            "start": 9386,
+            "end": 13505
+          },
+          "date_range": {
+            "start": "2025-03-12",
+            "end": "2025-05-04"
+          },
+          "message_count": 522,
+          "episode_range": {
+            "start": "EP-1041",
+            "end": "EP-1079"
+          },
+          "episode_count": 39,
+          "phase": "A",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.05,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-025",
+          "row_range": {
+            "start": 9605,
+            "end": 7867
+          },
+          "date_range": {
+            "start": "2025-05-04",
+            "end": "2025-06-10"
+          },
+          "message_count": 501,
+          "episode_range": {
+            "start": "EP-1080",
+            "end": "EP-1114"
+          },
+          "episode_count": 35,
+          "phase": "A/B",
+          "phase_boundary": true,
+          "estimated_density": "high",
+          "conflict_ratio": 0.2,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-026",
+          "row_range": {
+            "start": 7868,
+            "end": 13911
+          },
+          "date_range": {
+            "start": "2025-06-11",
+            "end": "2025-07-16"
+          },
+          "message_count": 510,
+          "episode_range": {
+            "start": "EP-1115",
+            "end": "EP-1155"
+          },
+          "episode_count": 41,
+          "phase": "B",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.2,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-027",
+          "row_range": {
+            "start": 9917,
+            "end": 14235
+          },
+          "date_range": {
+            "start": "2025-07-17",
+            "end": "2025-08-28"
+          },
+          "message_count": 503,
+          "episode_range": {
+            "start": "EP-1156",
+            "end": "EP-1189"
+          },
+          "episode_count": 34,
+          "phase": "B",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.26,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-028",
+          "row_range": {
+            "start": 14236,
+            "end": 8332
+          },
+          "date_range": {
+            "start": "2025-08-28",
+            "end": "2025-10-16"
+          },
+          "message_count": 502,
+          "episode_range": {
+            "start": "EP-1190",
+            "end": "EP-1238"
+          },
+          "episode_count": 49,
+          "phase": "B/C",
+          "phase_boundary": true,
+          "estimated_density": "high",
+          "conflict_ratio": 0.29,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-029",
+          "row_range": {
+            "start": 14547,
+            "end": 14920
+          },
+          "date_range": {
+            "start": "2025-10-16",
+            "end": "2025-12-16"
+          },
+          "message_count": 505,
+          "episode_range": {
+            "start": "EP-1239",
+            "end": "EP-1288"
+          },
+          "episode_count": 50,
+          "phase": "C",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.24,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-030",
+          "row_range": {
+            "start": 14921,
+            "end": 15539
+          },
+          "date_range": {
+            "start": "2025-12-16",
+            "end": "2026-04-07"
+          },
+          "message_count": 501,
+          "episode_range": {
+            "start": "EP-1289",
+            "end": "EP-1369"
+          },
+          "episode_count": 81,
+          "phase": "C",
+          "phase_boundary": false,
+          "estimated_density": "high",
+          "conflict_ratio": 0.1,
+          "notes": ""
+        },
+        {
+          "batch_id": "B-031",
+          "row_range": {
+            "start": 15540,
+            "end": 15600
+          },
+          "date_range": {
+            "start": "2026-04-08",
+            "end": "2026-04-12"
+          },
+          "message_count": 61,
+          "episode_range": {
+            "start": "EP-1370",
+            "end": "EP-1375"
+          },
+          "episode_count": 6,
+          "phase": "C",
+          "phase_boundary": false,
+          "estimated_density": "low",
+          "conflict_ratio": 0.17,
+          "notes": ""
+        }
+      ]
+    }
+  },
+  "eli_response_format": {
+    "options": [
+      "Approve",
+      "Adjust",
+      "Flag",
+      "Context"
+    ],
+    "instructions": "For each section, respond with Approve/Adjust/Flag/Context. For adjustments, specify exactly what to change. For context, provide any background that should inform the analysis."
+  },
+  "processing_priority_preview": [
+    {
+      "priority": 1,
+      "rf": "RF-04",
+      "name": "Emotional Manipulation",
+      "tier": "Tier 1",
+      "reason": "Highest signal density, spread across all phases; primary context anchor for subsequent passes",
+      "batches_to_process": "all",
+      "estimated_sessions": "4-6"
+    },
+    {
+      "priority": 2,
+      "rf": "RF-01",
+      "name": "Parental Alienation",
+      "tier": "Tier 1",
+      "reason": "Very high Received signal (62/66 hits); critical for GAL evaluation; distinct from RF-04",
+      "batches_to_process": "all",
+      "estimated_sessions": "4-6"
+    },
+    {
+      "priority": 3,
+      "rf": "RF-05",
+      "name": "Intimidation/Threats",
+      "tier": "Tier 1",
+      "reason": "High signal (127 hits), heavily Received; complements RF-04 emotional pressure pattern",
+      "batches_to_process": "all",
+      "estimated_sessions": "4-6"
+    },
+    {
+      "priority": 4,
+      "rf": "RF-07",
+      "name": "Boundary Violations",
+      "tier": "Tier 1",
+      "reason": "High signal (111 hits), meaningful Sent component; structural flooding data available",
+      "batches_to_process": "all",
+      "estimated_sessions": "4-6"
+    },
+    {
+      "priority": 5,
+      "rf": "RF-09",
+      "name": "Gaslighting",
+      "tier": "Tier 1",
+      "reason": "Medium signal but analytically critical; benefits from RF-04 context per RC-PIPELINE",
+      "batches_to_process": "all",
+      "estimated_sessions": "4-6"
+    },
+    {
+      "priority": 6,
+      "rf": "RF-12",
+      "name": "Strategic Communication",
+      "tier": "Tier 1",
+      "reason": "Low keyword signal but run second-half Tier 1; needs behavioral baselines per RC-PIPELINE",
+      "batches_to_process": "all",
+      "estimated_sessions": "4-6"
+    },
+    {
+      "priority": 7,
+      "rf": "RF-13",
+      "name": "Escalation Patterns",
+      "tier": "Tier 1",
+      "reason": "High signal (125 hits); run LAST Tier 1 per RC-PIPELINE \u2014 needs full cross-RF picture",
+      "batches_to_process": "all",
+      "estimated_sessions": "4-6"
+    },
+    {
+      "priority": 8,
+      "rf": "RF-02",
+      "name": "Gatekeeping",
+      "tier": "Tier 2",
+      "reason": "Medium signal; gatekeeping is core GAL factor",
+      "batches_to_process": "all",
+      "estimated_sessions": "3-4"
+    },
+    {
+      "priority": 9,
+      "rf": "RF-03",
+      "name": "Weaponized Logistics",
+      "tier": "Tier 2",
+      "reason": "Medium signal; weaponized logistics often pairs with RF-02",
+      "batches_to_process": "all",
+      "estimated_sessions": "3-4"
+    },
+    {
+      "priority": 10,
+      "rf": "RF-06",
+      "name": "Financial Coercion",
+      "tier": "Tier 2",
+      "reason": "Medium signal; financial dynamics relevant to GAL",
+      "batches_to_process": "all",
+      "estimated_sessions": "3-4"
+    },
+    {
+      "priority": 11,
+      "rf": "RF-10",
+      "name": "Refusal to Co-Parent",
+      "tier": "Tier 2",
+      "reason": "LOW keyword signal \u2014 UPGRADE to full pass; RF-10 requires structural gap analysis, not keywords",
+      "batches_to_process": "all",
+      "estimated_sessions": "3-4"
+    },
+    {
+      "priority": 12,
+      "rf": "RF-14",
+      "name": "Substance/Safety",
+      "tier": "Tier 2",
+      "reason": "Medium signal; safety allegations are high-weight GAL factors",
+      "batches_to_process": "all",
+      "estimated_sessions": "3-4"
+    },
+    {
+      "priority": 13,
+      "rf": "RF-15",
+      "name": "False Allegations/Projection",
+      "tier": "Tier 2",
+      "reason": "Medium signal; run after RF-09/RF-04 per RC-PIPELINE sequencing",
+      "batches_to_process": "all",
+      "estimated_sessions": "3-4"
+    },
+    {
+      "priority": 14,
+      "rf": "RF-08",
+      "name": "Triangulation",
+      "tier": "Tier 3",
+      "reason": "Low signal (5 hits); abbreviated pass",
+      "batches_to_process": "abbreviated",
+      "estimated_sessions": "1-2"
+    },
+    {
+      "priority": 15,
+      "rf": "RF-11",
+      "name": "Inappropriate Child Involvement",
+      "tier": "Tier 3",
+      "reason": "Low keyword signal \u2014 behavioral context required; abbreviated pass",
+      "batches_to_process": "abbreviated",
+      "estimated_sessions": "1-2"
+    }
+  ],
+  "analyst_observations": [
+    "Phase A covers 82% of messages over 3.3 years (Jan 2022 - May 2025). Phase B and C cover 10% and 7% respectively, representing only 18 months total. Phase A will dominate all pass outputs.",
+    "Two major density spikes in 2024 (Aug and Oct) and one massive spike in May 2025 (37 msg/day, the dataset peak) suggest three significant escalation events. Eli should contextualize these.",
+    "The Oct 2024 spike-and-drop pattern (density went from 30 to 6 msg/day in 2 weeks) is unusual and suggests a possible external intervention, legal filing, or significant boundary event.",
+    "RF-01 (Parental Alienation) shows very strong Received dominance (62/66 hits from Melissa). If keyword scanning is representative, alienation-related language is heavily unidirectional.",
+    "RF-07 (Boundary Violations) shows meaningful Sent signal (39/111) \u2014 this is an important finding that both parties show boundary-related language. Primary pass will distinguish legitimate boundary-setting from violations.",
+    "RF-09 (Gaslighting) shows relatively balanced Sent/Received (20/17 by keywords) \u2014 this unusual bidirectional pattern warrants careful analysis. May reflect defensive denials on both sides.",
+    "B-031 is very small (61 messages, 4 days of data through Apr 12 2026) \u2014 may want to verify this is truly the most recent data."
+  ]
+}

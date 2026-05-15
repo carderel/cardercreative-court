@@ -1,0 +1,105 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-011",
+    "row_range": {"start": 3724, "end": 4053},
+    "date_range": {"start": "2023-10-05", "end": "2023-11-25"},
+    "episode_range": {"start": "EP-0505", "end": "EP-0563"},
+    "message_count": 330,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": "Quiet RF-02 batch. October–November 2023 covers fall school season, Halloween, and Thanksgiving lead-up. No DND enforcement events, no preference relays that close out contact, no visit refusals. Multiple cooperative facilitation instances: Melissa facilitates Olivia-initiated contact (ROW-3728-3729 daycare distress call; ROW-3755 show-and-tell relay; ROW-3793 Olivia wants Eli). Halloween coordination (ROW-3933-3942) was broadly cooperative — Olivia's preference to start at Melissa's then go to Eli's relayed and followed. Visits arranged smoothly (ROW-3814, ROW-3942). This batch serves as an analytical contrast baseline: the relative absence of RF-02 signals here makes the pattern periods in surrounding batches more analytically significant. Single RF-02 signal: ROW-3780 — cutoff framing language ('you treat the cut off time as the target time to call') demonstrating the DND's continued behavioral influence even when not actively enforced. Note: triage estimated 500 messages for this batch; date-based extraction yields 330 actual messages, consistent with anomalous triage row ranges for B-011."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 330,
+    "primary_flags": 1,
+    "primary_severity_distribution": {"1": 1, "2": 0, "3": 0},
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": {"RF-05": 1, "RF-04": 1},
+    "no_flag_messages": 329,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-3780",
+      "date": "2023-10-11",
+      "direction": "Received",
+      "verbatim_message": "Cause you treat the cut off time as the target time to call",
+      "severity": 1,
+      "rf_indicators": ["cutoff_as_normative_ceiling", "dnd_behavioral_influence"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "Weakest signal type for ARC-RF02-001 — not a blocking event, but a framing statement that reveals the DND cutoff's continued behavioral influence in the co-parenting dynamic. Context: Eli said he didn't call because he thought they were at the fair (ROW-3777); Melissa disputes this and accuses him of calling near the cutoff by habit (ROW-3779: 'You didn't call because you forgot to call per usual'; ROW-3780: 'Cause you treat the cut off time as the target time to call'). Analytically, Melissa's framing assigns Eli behavioral blame via the cutoff structure — the DND cutoff shapes expectations, blame attribution, and Eli's calling patterns even when not actively blocking. This is a subtle but real expression of the gatekeeping architecture: the cutoff functions as a normative scheduling structure that Melissa monitors and polices. Per CA-RF02-01. Sev 1.",
+      "confidence": "medium"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-3728-3732",
+      "reason_noted": "Melissa facilitates Olivia-initiated contact: 'Olivia's calling cause she's crying not wanting to go to daycare tomorrow. She wants to know if you can pick her up early.' (ROW-3728-3729). Melissa also offers a lunch alternative (ROW-3731-3732). Olivia's emotional distress about daycare prompted both parties to coordinate around Olivia's needs. Strongly cooperative facilitation; noted as counter-pattern evidence."
+    },
+    {
+      "message_id": "ROW-3755",
+      "reason_noted": "Melissa proactively relays that 'Olivia wants to tell you about show and tell' — facilitating contact initiated by Olivia's enthusiasm. Cooperative relay. Noted as counter-pattern."
+    },
+    {
+      "message_id": "ROW-3793",
+      "reason_noted": "'Olivia wants ya' — Melissa proactively texting Eli to relay that Olivia wants him. Cooperative facilitation of Olivia-initiated contact. Counter-pattern evidence."
+    },
+    {
+      "message_id": "ROW-3933-3942",
+      "reason_noted": "Halloween coordination: Melissa invites Eli to trick-or-treat (ROW-3933), Eli proposes his neighborhood (ROW-3934), Melissa relays Olivia's preference to start at Melissa's then go to Eli's (ROW-3935), Eli shows up and participates. The visit happened. Broadly cooperative. ROW-3936 contains Abby-insertion criticism ('You're not trying to get her more candy. You're trying to not fight with Abby.') — flagged as peripheral RF-05 — but the overall Halloween visit was facilitated."
+    },
+    {
+      "message_id": "ROW-3966-3969",
+      "reason_noted": "Olivia was in tears when leaving Eli after a school lunch visit (ROW-3966-3967: 'She was in tears again. It's hard leaving and coming back.'). Melissa responds: 'She doesn't cry with me anymore' (ROW-3969). Melissa's comparison functions as a subtle delegitimizer — Olivia cries leaving Eli but not Melissa, framing the Eli-Olivia attachment as distressing rather than strong. Flagged as peripheral RF-04. Noted here for context."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-3936",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "'You're not trying to get her more candy. You're trying to not fight with Abby. Olivia is more important.' Context: Eli suggested trick-or-treating in his neighborhood for more candy. Melissa projects Abby-conflict avoidance as Eli's true motive, framing Abby as a controlling factor in his parenting decisions. Consistent with ARC-RF02-005 pattern (systematic Abby insertion as a negative force). RF-05 (derogatory about partner; projecting partner's control over Eli's parenting). Sev 1.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3969",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "'She doesn't cry with me anymore.' In response to Eli's report that Olivia cried at the end of their school lunch visit. Melissa's comparison inverts the emotional significance — framing Olivia's distress at leaving Eli as evidence of something problematic rather than strong attachment. Delegitimizing comparison (RF-04). Sev 1.",
+      "confidence": "medium"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 2,
+    "watching_arc_count": 2,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": ["ROW-3780"],
+      "ARC-RF02-002": [],
+      "ARC-RF02-003": [],
+      "ARC-RF02-004": [],
+      "ARC-RF02-005": []
+    },
+    "arc_001_cumulative_signals": 21,
+    "arc_002_cumulative_signals": 19,
+    "arc_001_note": "ROW-3780 is the weakest ARC-RF02-001 signal to date — a framing statement rather than a blocking event, but documenting the DND's ongoing behavioral influence. No active blocking in this batch.",
+    "arc_002_note": "Zero ARC-RF02-002 signals this batch. No preference relays that closed contact. Multiple Melissa-facilitated contacts. Analytically significant as a contrast period — the systematic relay pattern visible in B-007 through B-010 is absent here."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

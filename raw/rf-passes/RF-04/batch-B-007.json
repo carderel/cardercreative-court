@@ -1,0 +1,230 @@
+{
+  "batch_id": "B-007",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "analysis_date": "2026-04-23",
+
+  "date_range": {
+    "start": "2023-04-03",
+    "end": "2023-06-02"
+  },
+  "row_range": {
+    "start": 2229,
+    "end": 2580
+  },
+  "message_count": 352,
+  "phase": "A",
+
+  "analysis_summary": {
+    "conflict_density": "moderate",
+    "dominant_theme": "Three primary RF-04 events in the April window; May through early June cooperative. Apr 16 dementia clock contempt (ROW-2334). Apr 22 extreme Abby attack with 'bitch' and 'fucking whore mouth' sexual slurs + legal threat + inadequacy attack (ROW-2373-2379). Apr 28 follow-up Abby exclusion campaign via child relay (ROW-2395-2409). ARC-RF04-002 significantly activated: two new signals as Olivia's distress and preferences about Abby are used as sustained pressure instruments.",
+    "abby_framework_escalation": "Abby framework reaches new severity peak. Apr 22: 'bitch can shut her fucking whore mouth' — most extreme sexual-character language used against Abby in record to date. Qualitative arc: predation allegation (B-003) → uncle/niece incest framing (B-004, B-006) → casual 'slut McGee' slur (B-006) → extreme 'fucking whore' attack (B-007). Framework is accelerating and intensifying.",
+    "arc_rf04_002_activation": "ARC-RF04-002 receives two new signals in B-007, both structured around Olivia's distress/preferences about Abby. New mechanism: child-relay being used not just for general parenting guilt but as specific Abby exclusion lever — Olivia's stated wishes weaponized to pressure Eli into removing his partner from his home.",
+    "batch_flags_primary": 3,
+    "batch_flags_peripheral": 5,
+    "new_compound_patterns": 1,
+    "new_arc_rf04_001_signals": 3,
+    "new_arc_rf04_002_signals": 2
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B007-001",
+      "date": "2023-04-16",
+      "row": "ROW-2330-2334",
+      "severity": 1,
+      "arc": "ARC-RF04-001",
+      "arc_signal_number": 19,
+      "trigger": "Eli missed calling Olivia at the regular time, explained he lost track of time and acknowledged difficulty with time management.",
+      "exact_text": [
+        "ROW-2330: You've literally had all day",
+        "ROW-2331: She didn't cross your mind at all?",
+        "ROW-2332 (Eli): She did I just imagined she was out having fun",
+        "ROW-2333 (Eli): You know I have trouble keeping track of time.",
+        "ROW-2334: Véfaîî Newest,Dementia Clock 2.0 with 15 Custom Reminders and Remote Control, Day Clock with Sun/Moon Icons Helps with Memory Loss, A... [product link]"
+      ],
+      "analysis": "Two-mechanism cluster: (1) Guilt delivery via Olivia (ROW-2330-2331) — 'She didn't cross your mind at all?' frames Eli's time-management lapse as evidence of Olivia's irrelevance to him; ARC-RF04-002 overlap (Olivia's importance weaponized as guilt lever). (2) Targeted cognitive contempt (ROW-2334) — after Eli disclosed a genuine difficulty ('You know I have trouble keeping track of time'), Melissa responded by sending a product link for a 'Dementia Clock 2.0' designed for people with dementia/memory loss. This is a weaponized self-disclosure contemptuous attack: Eli's vulnerability is immediately converted into cognitive-impairment mockery. ADD-002 adjacent (capacity/intelligence attack). The dementia product link is more calculated than most ADD-002 triggers — it's targeted at a specific disclosed weakness rather than a reactive insult. Sev 1: brief exchange, but the targeted precision of the dementia product makes this qualitatively notable.",
+      "add002_note": "Dementia clock product link = capacity contempt. Pattern note: cognitive/capacity attack sub-pattern in ARC-RF04-001 now includes: ROW-334 'Are you stupid?' (B-001), ROW-1167 'Are you dumb?' (B-004), ROW-1731 'Are you dumb?' (B-005), ROW-1738 'lacks ability to read or pay attention' (B-005), ROW-2334 dementia clock (B-007). Increasingly varied and targeted.",
+      "calibration_status": "analysis"
+    },
+    {
+      "flag_id": "RF04-B007-002",
+      "date": "2023-04-22",
+      "row": "ROW-2373-2379",
+      "severity": 2,
+      "arc": "ARC-RF04-001",
+      "arc_signal_number": 20,
+      "trigger": "Eli apparently left Olivia alone in the car briefly during a visit; Abby also present. Olivia apparently told Melissa. Melissa claims Abby told Olivia she couldn't have a treat if she told Melissa.",
+      "exact_text_key_excerpts": [
+        "ROW-2372: Don't be leaving Olivia in the car by herself. Cars are getting stolen all the time. It's not safe",
+        "ROW-2373: And Abby doesn't need to tell her that she can't have a treat if she tells me what's going on. That bitch can shut her fucking whore mouth",
+        "ROW-2374: You both shouldn't be telling her not to tell me stuff. That's shady",
+        "ROW-2375: And don't be leaving her in the car with Abby alone either. That's contempt of court",
+        "ROW-2376: Don't ever leave olivia in the car by herself or with just Abby. I will file contempt charges",
+        "ROW-2377: Don't teach her to lie or keep things from me and check your bitch when she's being mean to Olivia",
+        "ROW-2378: She was only with you for three hours. There is no reason she should be left alone. You can't handle three hours a week? Wtf. You are a fuck[ing...]",
+        "ROW-2379: Olivia was crying saying Abby was mean to her and wants me to tell you not to bring her around much anymore"
+      ],
+      "analysis": "Highest-severity Abby-framework attack in the record to date. Multi-vector attack with five distinct RF-04 mechanisms active: (1) Extreme sexual character slur against Abby: ROW-2373 'bitch can shut her fucking whore mouth' — most severe language directed at Abby in the record. RF-04 (contemptuous attack) and RF-15 (sexual character slur, 'whore'). Escalation from 'slut McGee' (casual banter register, B-006) to direct 'fucking whore' attack (confrontational register, B-007). (2) Deception/coaching accusation: ROW-2374 'telling her not to tell me stuff. That's shady' + ROW-2377 'Don't teach her to lie or keep things from me' — alleges coordinated deception by Eli and Abby. (3) Legal threats: ROW-2375-2376 'contempt of court' and 'I will file contempt charges' — RF-05 (intimidation via legal threat). (4) Inadequacy attack: ROW-2378 'You can't handle three hours a week? Wtf. You are a fuck[ing...]' — 'three hours a week' framing returns (last used Feb 23 'horrible father' cluster), truncated severe contemptuous label. (5) Child-mediated relay: ROW-2379 Olivia crying + Abby exclusion demand relayed via Olivia's distress — ARC-RF04-002 signal 4, and RF-02 (access conditioning: Abby excluded from Eli's time with Olivia). Sev 2: extreme contemptuous language, multiple attack vectors, legal threats, child relay. COMP-RF04-007.",
+      "rf15_note": "ROW-2373 'fucking whore mouth' = most severe sexual-character attack on Abby in record. Abby-framework trajectory: predation allegation (B-003) → incest framing (B-004, B-006) → 'slut McGee' casual slur (B-006) → 'fucking whore' confrontational attack (B-007). RF-15 anchor event for Phase A mid-period.",
+      "calibration_status": "analysis"
+    },
+    {
+      "flag_id": "RF04-B007-003",
+      "date": "2023-04-28",
+      "row": "ROW-2395-2409",
+      "severity": 1,
+      "arc": "ARC-RF04-001",
+      "arc_signal_number": 21,
+      "trigger": "Eli requested to pick up Olivia (Apr 28); Melissa continued pressing Abby exclusion conditions and relaying Olivia's stated preferences about Abby.",
+      "exact_text_key_excerpts": [
+        "ROW-2395: Will you be leaving her in the car by herself?",
+        "ROW-2396: She said she doesn't want Abby around",
+        "ROW-2398: She said she doesn't want Abby around cause Abby was mean to her last time",
+        "ROW-2399: She said that she doesn't want to go if Abby is there",
+        "ROW-2401: Olivia was crying after you dropped her off. She said that after she said she was going to tell me that you left her in the car unsupervise[d...]",
+        "ROW-2402: You shouldn't have left her in the car unsupervised",
+        "ROW-2403: You shouldn't then try to teach her to keep things from me.",
+        "ROW-2404: Abby shouldn't punish her by not including her",
+        "ROW-2405: You guys are incapable of making good choices",
+        "ROW-2406: Instead of trying to argue about it why don't you just listen to your daughters requests.",
+        "ROW-2407: She actually told me this morning that she wants me to pick her up from primrose and that you can pick her up from here and if Abby's in the [car...]",
+        "ROW-2408: That was her making that plan all on her own.",
+        "ROW-2409: She is adamant that she doesn't want to go with you if Abby is with you. She says milo can come"
+      ],
+      "analysis": "Continued Abby exclusion pressure campaign via child relay. Two primary RF-04 elements: (1) Contemptuous inadequacy attack: ROW-2405 'You guys are incapable of making good choices' — broad incapacity characterization applied to Eli and Abby together. Mild contempt compared to Apr 22 cluster but ADD-002 adjacent. (2) Persistent deception accusation: ROW-2403 'try to teach her to keep things from me' — carries forward the coaching/deception narrative from Apr 22. ARC-RF04-002 mechanism: ROW-2396-2409 deploys Olivia's stated wishes about Abby as sustained pressure instrument across 14+ messages. ROW-2407-2409 presents Olivia's 'own plan' to avoid Abby — Olivia's apparent agency is being relayed/amplified as absolute authority over Eli's domestic arrangements. This framing positions Eli as overriding his daughter's own clearly expressed wishes if he brings Abby — making compliance with Abby exclusion a child-welfare imperative. RF-02 element: ROW-2406-2409 function as access-conditioning (Olivia won't go unless Abby absent). ARC-RF04-002 signal 5 (sustained Olivia-preference relay about Abby). Sev 1 given the language is less extreme than Apr 22; the mechanism is the sustained child-relay pressure rather than contemptuous language.",
+      "calibration_status": "analysis"
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B007-P001",
+      "date": "2023-04-10",
+      "row": "ROW-2293-2295",
+      "type": "cross_rf_candidate",
+      "primary_rf_candidate": "RF-02",
+      "exact_text": [
+        "ROW-2293: We're not playing wait and see",
+        "ROW-2294: I'll just pick her up since you are going back on your promise to her",
+        "ROW-2295: You want to at least pick her up and take her to lunch then take her back?"
+      ],
+      "note": "Access threat tied to Eli's schedule conflict (PT appointment discovered late). 'Going back on your promise to her' deploys Olivia as guilt vehicle alongside access threat. Near-boundary RF-04/RF-02. The backing-off at ROW-2295 (offering a shorter visit) softens the overall exchange. Not primary RF-04; note for RF-02 pass."
+    },
+    {
+      "flag_id": "RF04-B007-P002",
+      "date": "2023-04-22",
+      "row": "ROW-2460-2468",
+      "type": "cross_rf_candidate",
+      "primary_rf_candidate": "RF-15",
+      "exact_text": [
+        "ROW-2460: She's screaming when she pees cause you did something to her vagina when you picked her up",
+        "ROW-2463: For clarity she said you hurt it because you picked her up and her outfit went up and gave her a wedgie in the front and she screamed and yo[u set her down]",
+        "ROW-2464: She is not saying you touched it or anything",
+        "ROW-2468: Still hurting but not screaming when she pees. You need to be more careful with her. She's always getting hurt by you"
+      ],
+      "note": "ROW-2460 initial framing — 'you did something to her vagina when you picked her up' — is alarming language that could imply sexual contact before ROW-2463-2464 clarify (wedgie/outfit). The immediate clarification reduces deliberate-false-allegation interpretation but the initial framing remains noteworthy. ROW-2468 'She's always getting hurt by you' introduces an unsafe-parent pattern claim. RF-04 element: unsafe-parent inadequacy framing ('always getting hurt'). RF-15 note: initial ambiguous framing consistent with broader Abby-framework and predation narrative pattern; may be relevant context when RF-15 pass runs."
+    },
+    {
+      "flag_id": "RF04-B007-P003",
+      "date": "2023-05-10",
+      "row": "ROW-2468",
+      "type": "near_boundary",
+      "primary_rf_candidate": "RF-04",
+      "exact_text": "She's always getting hurt by you",
+      "note": "Unsafe-parent pattern claim — 'always' suggests pattern of Eli causing Olivia physical harm. Parenting-adequacy attack adjacent to ARC-RF04-001's inadequacy-framing sub-pattern. Near-boundary: stated in context of a genuine minor injury and legitimate safety concern. Not primary flag on its own; captured in RF04-B007-P002 note."
+    },
+    {
+      "flag_id": "RF04-B007-P004",
+      "date": "2023-06-01",
+      "row": "ROW-2574-2577",
+      "type": "cross_rf_candidate",
+      "primary_rf_candidate": "RF-15",
+      "exact_text": [
+        "ROW-2574: You got an std?",
+        "ROW-2575: Eww do you",
+        "ROW-2576 (Eli): No",
+        "ROW-2577: Well if you have something weird I don't want you in the pool anyhow"
+      ],
+      "note": "STD implication when Eli explains he cannot swim due to healing skin. Contemptuous sexual insinuation — immediate assumption of STD as explanation for skin healing. RF-04 (contemptuous insinuation) + RF-15 (sexual character attack, STD implication extending Abby-as-promiscuous framework). Brief exchange, possibly banter-adjacent, but consistent with broader sexual-character-attack pattern in record. Note for RF-15 pass."
+    },
+    {
+      "flag_id": "RF04-B007-P005",
+      "date": "2023-04-28",
+      "row": "ROW-2379",
+      "type": "arc_signal_note",
+      "primary_rf_candidate": "RF-02",
+      "exact_text": "Olivia was crying saying Abby was mean to her and wants me to tell you not to bring her around much anymore",
+      "note": "ARC-RF04-002 signal 4 (child distress + child preference relayed as Abby exclusion demand). This message is primarily captured in RF04-B007-002 primary flag but merits separate arc-signal notation: Olivia's crying and expressed preference are weaponized simultaneously as (1) guilt about Abby's behavior (inadequacy: Eli can't protect Olivia from mean Abby), (2) pressure to exclude Abby from Eli's life. RF-02 element: Olivia's wish framed as visitation condition. New mechanism in ARC-RF04-002: child's preferences used to control Eli's domestic partner access rather than just general parenting critique."
+    }
+  ],
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-007",
+      "label": "Apr 22 Extreme Abby Attack + Legal Threat + Child Relay",
+      "batch_detected": "B-007",
+      "date": "2023-04-22",
+      "rows": "ROW-2372-2379",
+      "rfs_active": ["RF-04", "RF-15", "RF-05", "RF-02", "RF-01"],
+      "description": "Seventh compound multi-RF episode — highest RF-count compound so far. RF-04 (primary, Sev 2 — extreme contemptuous language, deception accusation, inadequacy 'three hours a week,' truncated severe label) + RF-15 (ROW-2373: 'fucking whore mouth' = most severe sexual character slur against Abby to date; Abby-framework escalation peak) + RF-05 (ROW-2375-2376: contempt-of-court threats, 'I will file contempt charges') + RF-02 (ROW-2376-2379: Abby exclusion conditions on Olivia's visit + child-relay as access-control lever) + RF-01 (ROW-2378: 'can't handle three hours a week?' — inadequate-father narrative). Triggered by Eli leaving Olivia briefly in car and Abby allegedly discouraging Olivia from reporting."
+    }
+  ],
+
+  "arc_state_delta": {
+    "ARC-RF04-001": {
+      "status": "active",
+      "signals_added": 3,
+      "new_signal_count": 21,
+      "last_signal_date": "2023-04-28",
+      "last_signal_row": "ROW-2395-2409",
+      "abby_framework_note": "Abby-as-obstacle framework reaches new severity peak. B-007 adds: ROW-2373 'fucking whore mouth' (extreme sexual slur, Sev 2 signal) + ROW-2395-2409 (sustained exclusion campaign via child relay). Framework now spans: prioritization (B-002) → domestic mockery (B-003) → predation allegation (B-003) → uncle/dad framing (B-004) → illness-excuse (B-005) → incest framing x2 (B-006) → 'slut McGee' casual slur (B-006) → 'fucking whore' extreme attack (B-007) → sustained exclusion demand via child (B-007). Multi-register attack: calculated allegations, casual contempt, extreme confrontational attacks.",
+      "cognitive_attack_pattern_note": "ROW-2334 dementia clock adds to cognitive-contempt sub-pattern: 'Are you stupid?' (B-001), 'Are you dumb?' x3 (B-004, B-005), 'lacks ability to read/pay attention' (B-005), dementia clock (B-007). Pattern shows increasing sophistication — moves from reactive insults to targeted mockery of disclosed vulnerabilities."
+    },
+    "ARC-RF04-002": {
+      "status": "active",
+      "signals_added": 2,
+      "new_signal_count": 5,
+      "last_signal_date": "2023-04-28",
+      "last_signal_row": "ROW-2395-2409",
+      "new_mechanism_note": "B-007 introduces new ARC-RF04-002 mechanism: child-relay no longer limited to parenting-adequacy guilt (complaint relay, hunger, emotional distress) — now deployed as Abby exclusion lever. Olivia's distress about Abby and Olivia's stated preferences weaponized to pressure Eli about his domestic partner. Signal 4 (ROW-2379): Olivia's distress + exclusion wish. Signal 5 (ROW-2395-2409): sustained relay of Olivia's preferences as absolute authority over Eli's domestic arrangements.",
+      "signals": [
+        { "signal_ref": "RF04-B007-ARC002-S01", "row": "ROW-2379", "date": "2023-04-22", "summary": "Olivia was crying saying Abby was mean to her and wants me to tell you not to bring her around much anymore. Child distress + exclusion wish relayed as pressure instrument." },
+        { "signal_ref": "RF04-B007-ARC002-S02", "row": "ROW-2395-2409", "date": "2023-04-28", "summary": "Sustained relay of Olivia's stated preferences about Abby ('she doesn't want Abby around,' 'she's adamant,' 'she says milo can come') as absolute authority framing. 14-message campaign." }
+      ]
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF04-007",
+      "description": "ROW-2373 (Apr 22) — 'bitch can shut her fucking whore mouth' — Abby-framework reaches new severity peak. Qualitative arc: casual 'slut McGee' (B-006 banter) → confrontational 'fucking whore' (B-007 attack). First extreme sexual slur deployed in confrontational register. ARC-RF04-002 signals 4-5 represent new mechanism: child relay used as Abby exclusion lever rather than general parenting guilt. COMP-RF04-007."
+    }
+  ],
+
+  "cumulative_statistics_after_batch": {
+    "batches_complete": 7,
+    "primary_flags_total": 24,
+    "severity_distribution": { "1": 16, "2": 8, "3": 0 },
+    "arc_rf04_001_signals": 21,
+    "arc_rf04_002_signals": 5,
+    "peripheral_flags_total": 45,
+    "active_arcs": 2,
+    "compound_patterns_total": 7,
+    "pending_cp3_items": 7
+  },
+
+  "calibration_addenda_applied": ["RF04-ADD-001", "RF04-ADD-002", "RF04-ADD-003", "RF04-ADD-004", "RF04-ADD-005"],
+
+  "cross_rf_notes": {
+    "RF-15": "ROW-2373 'fucking whore mouth' (Abby) — highest-severity sexual slur in Phase A record to date. ROW-2574-2575 STD implication. ROW-2460 ambiguous 'did something to her vagina' initial framing (clarified by ROW-2464). Three RF-15 cross-references in B-007.",
+    "RF-02": "ROW-2376/2379 Abby exclusion + contempt threat. ROW-2395-2409 sustained Abby exclusion conditions on visitation. ROW-2293-2294 access threat over schedule conflict. Three RF-02 cross-references in B-007.",
+    "RF-05": "ROW-2375-2376 contempt-of-court threats. RF-05 intimidation via legal threat.",
+    "RF-01": "ROW-2378 'can't handle three hours a week' — inadequate-father framing. ROW-2405 'incapable of making good choices.' Two RF-01 contributions in B-007.",
+    "RF-09": "ROW-2334 dementia clock — cognitive mockery of disclosed vulnerability; reality-distortion adjacent (implies Eli's perception of his own time-management difficulty is being pathologized/weaponized). Minor RF-09 note."
+  },
+
+  "next_batch": "B-008",
+  "next_batch_row_range": { "start": 2581 },
+  "next_batch_date_range": { "start": "2023-06-03" }
+}

@@ -1,0 +1,166 @@
+{
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "pass_complete": true,
+  "completed_date": "2026-05-05",
+  "batches_processed": 31,
+  "batches_with_flags": 5,
+  "total_messages_in_dataset": 15465,
+
+  "flag_summary": {
+    "primary_flags": 5,
+    "peripheral_flags": 0,
+    "severity_distribution": {
+      "Sev-1": 1,
+      "Sev-2": 4,
+      "Sev-3": 0
+    },
+    "direction_distribution": {
+      "received": 5,
+      "sent": 0
+    }
+  },
+
+  "primary_signals": [
+    {
+      "id": "S-001",
+      "batch": "B-020",
+      "date_range": "2024-11-17 to 2024-11-18",
+      "rows": ["ROW-7627"],
+      "classification": "RF-12 primary Sev-2",
+      "addendum": "ADD-006",
+      "arc": "ARC-RF12-002",
+      "arc_signal_number": 1,
+      "arc_state_after": "WATCHING",
+      "summary": "Stop-texting performative boundary manufacture — Melissa says 'stop texting me' then immediately sends 7+ more messages; when Eli responds to her new texts she repeats 'stop texting me.' Classic ADD-006 manufactured boundary-violation cycle creating false court evidence of Eli violating her requests. Sev-2: deliberate evidence manufacturing. ARC-RF12-002 promotes CANDIDATE to WATCHING.",
+      "direction": "received"
+    },
+    {
+      "id": "S-002",
+      "batch": "B-023",
+      "date_range": "2025-02-15",
+      "rows": ["ROW-9149"],
+      "classification": "RF-12 primary Sev-1",
+      "addendum": "ADD-005",
+      "arc": "ARC-RF12-001",
+      "arc_signal_number": 1,
+      "arc_state_after": "WATCHING",
+      "summary": "'For the record' — explicit court-documentation language in message text. This is a direct instance of Melissa naming her documentation intent in the message itself (ADD-005 partial analog — explicit documentation language per ADD-002 exception). ARC-RF12-001 promotes CANDIDATE to WATCHING. Note: Sev-1 (documentation language present but not the full explicit 'documenting your responses for my court case' admission — that statement is confirmed by Eli at CP2 but not yet keyword-located as its own message).",
+      "direction": "received"
+    },
+    {
+      "id": "S-003",
+      "batch": "B-025",
+      "date_range": "2025-05-04",
+      "rows": ["ROW-13430", "ROW-13431", "ROW-13432", "ROW-13433", "ROW-13434", "ROW-13435", "ROW-13436", "ROW-13437", "ROW-13438", "ROW-13439", "ROW-13440"],
+      "classification": "RF-12 primary Sev-2",
+      "addendum": "ADD-006",
+      "arc": "ARC-RF12-002",
+      "arc_signal_number": 2,
+      "arc_state_after": "WATCHING",
+      "summary": "Stop-contacting + harassment threat then 9+ messages — Melissa demands Eli stop contacting her, threatens harassment claim, then immediately sends 9+ messages. Intensified ADD-006 pattern with RF-05 legal threat (harassment) added as escalation mechanism. Sev-2: manufactured harassment pretext + immediate continuation.",
+      "direction": "received",
+      "compound": ["RF-05 secondary", "RF-07 compound (manufactured flooding per RF-07 XREF)"]
+    },
+    {
+      "id": "S-004",
+      "batch": "B-029",
+      "date_range": "2025-09-17",
+      "rows": ["ROW-14367"],
+      "classification": "RF-12 primary Sev-2",
+      "addendum": "ADD-005",
+      "arc": "ARC-RF12-001",
+      "arc_signal_number": 2,
+      "arc_state_after": "WATCHING",
+      "summary": "'My lawyer already said I had a strong case this further demonstrates that' — explicit documentation-for-court framing tied to a specific legal strategy. Melissa acknowledges the exchange is being collected as legal evidence in real time. Sev-2: active court-record framing within the message itself.",
+      "direction": "received"
+    },
+    {
+      "id": "S-005",
+      "batch": "B-030",
+      "date_range": "2025-11",
+      "rows": [],
+      "classification": "RF-12 primary Sev-2",
+      "addendum": "ADD-004",
+      "arc": "ARC-RF12-001",
+      "arc_signal_number": 3,
+      "arc_state_after": "ACTIVE",
+      "summary": "Post-police-report probe tone shift (Nov 22 2025 anchor) — Melissa shifts to warm, concerned, information-seeking register after Eli's first police report. CP2-confirmed ADD-004 pattern: 'What's going on with you? You seem different. If you want to talk' — intelligence-gathering disguised as care. Legal correlation: high (within 30 days of police report Nov 22 2025). ARC-RF12-001 promotes WATCHING to ACTIVE. NOTE: Specific message not keyword-located — signal confirmed by CP2 Q2(a)/(b); manual verification recommended in B-030 area.",
+      "direction": "received",
+      "manual_verification_required": true
+    }
+  ],
+
+  "peripheral_signals": [],
+
+  "arc_states_final": {
+    "ARC-RF12-001": {
+      "name": "Strategic Campaign",
+      "state": "ACTIVE",
+      "signals": 3,
+      "watching_at": "B-023 (S-002)",
+      "active_at": "B-030 (S-005)",
+      "unresolved_at_dataset_close": true,
+      "direction": "received",
+      "note": "Three signals: 'For the record' documentation language (S-002), lawyer-case framing (S-004), post-police-report tone probe (S-005). Explicit documentation admission confirmed by Eli at CP2 ('She has said she mentioned she is documenting my responses for her court case') — the specific message containing this statement was not keyword-located in B-001 through B-031; if found, classify as RF-12 primary Sev-2 additional signal. Jun 2022 contempt summons window (B-004/B-005) was identified as a legal-event anchor to check (ADD-001) but no tone-shift signal documented there — contempt summons is RF-06 primary domain. GAL appointment April 2026 (B-031 area) is the final legal event anchor — S-005's police-report arc likely continues through this window."
+    },
+    "ARC-RF12-002": {
+      "name": "Bait-and-Switch Cycle",
+      "state": "WATCHING",
+      "signals": 2,
+      "watching_at": "B-020 (S-001)",
+      "active_at": null,
+      "unresolved_at_dataset_close": true,
+      "direction": "received",
+      "note": "Two confirmed signals (S-001 B-020, S-003 B-025) — both are stop-texting manufactured boundary violations (ADD-006). Never promoted to ACTIVE (requires clearer bait-switch cycle sequence or additional stop-texting pattern). Bait-switch cycle per ADD-007 (reasonable entry → de-escalation by Eli → Melissa escalates) is CP2-confirmed as the structural dynamic but no discrete bait-switch sequence was keyword-identifiable as a standalone arc signal separate from the RF-04 DARVO compounds. ARC-RF12-002 closes at WATCHING — the bait-switch cycle is a modality confirmed by CP2 and evidenced through RF-04 compounds rather than independent RF-12 signals."
+    }
+  },
+
+  "special_output": {
+    "bait_switch_index": {
+      "file": "bait-switch-index.json",
+      "status": "NOT_GENERATED",
+      "note": "Per RF-12-SUPPLEMENT.md: generate bait-switch-index.json tracking each identified bait-and-switch sequence. Deferred to Phase 2 pattern synthesis — the index requires cross-pass RF-04/RF-09 review to identify which compounds were RF-12 bait-switch constructions. The index should be generated during RC-PATTERN-SYNTHESIS.md execution, not as a standalone RF-12 batch output."
+    }
+  },
+
+  "eli_phase_b_c_note": {
+    "per_addendum": "ADD-002",
+    "classification_applied": "Eli's Phase B/C communication evolution was NOT flagged as RF-12 throughout this pass. His AI-guided communication (EP-1078, May 2025 onward) is genuine improvement — not court-record management. Only flagged Eli if explicit documentation language or performative baiting present (none found)."
+  },
+
+  "methodology_notes": [
+    "Low keyword yield correctly anticipated: most RF-12 signals are structural (tone shifts, absence of escalation, probe patterns) rather than keyword-identifiable. The 5 primary signals represent the clearest keyword-anchored or CP2-confirmed instances.",
+    "ADD-006 stop-texting pattern produced 2 of 5 signals (S-001, S-003) — this is the most readily keyword-identifiable RF-12 sub-type.",
+    "ADD-005 explicit documentation language produced 2 signals (S-002 'for the record'; S-004 'my lawyer already said I had a strong case') — the full explicit documentation admission Eli described at CP2 ('She has said she mentioned she is documenting my responses for her court case') was not located as a discrete message. If found in manual review, adds a Sev-2 signal.",
+    "ADD-004 police-report tone shift (S-005) is the only CP2-confirmed-but-not-keyword-located signal. Manual verification recommended before Phase 3 evidence compilation.",
+    "ADD-001 legal timeline applied to all signals: Jun 2022 summons (B-004/B-005) produced no RF-12 tone-shift signals; Nov 22 2025 police report (B-030) produced S-005; Apr 2026 GAL appointment window is in dataset close period.",
+    "RF-04 DARVO compounds are candidates for RF-12 bait-switch peripheral notes per ADD-008 projection pattern rule — those compounds should be reviewed during Phase 2 synthesis for strategic accusation timing."
+  ],
+
+  "unresolved_items": [
+    {
+      "item": "Explicit documentation admission message",
+      "description": "Eli confirmed Melissa stated she is 'documenting my responses for her court case.' Message not keyword-located. May exist in B-001 through B-031 with different phrasing.",
+      "action": "Manual review recommended — check for 'document,' 'documenting,' 'record,' 'case' combinations"
+    },
+    {
+      "item": "Post-police-report probe message (S-005)",
+      "description": "'You seem different. What's going on with you. If you want to talk' — specific phrasing not keyword-located in B-030.",
+      "action": "Manual verification in B-030 (Nov 2025 messages) recommended"
+    }
+  ],
+
+  "cp2_notes": {
+    "cp2_completed": "2026-05-05",
+    "addenda_count": 8,
+    "key_calibrations": [
+      "Police report tone shift confirmed — probe pattern ('you seem different') documented by Eli",
+      "Explicit documentation admission confirmed — Melissa stated she is building a record",
+      "Stop-texting pattern confirmed as performative for court",
+      "Eli Phase B/C = genuine improvement, NOT RF-12",
+      "Psychopathic mirroring traits confirmed; projection pattern ('every accusation is an admission') noted",
+      "'On paper she seems cooperative' — confirming performative reasonableness dynamic"
+    ]
+  }
+}

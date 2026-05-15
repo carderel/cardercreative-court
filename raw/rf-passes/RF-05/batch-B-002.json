@@ -1,0 +1,93 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-002",
+    "row_range": { "start": 367, "end": 712 },
+    "date_range": { "start": "2022-10-03", "end": "2022-11-05" },
+    "message_count": 346,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 346,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 3,
+    "peripheral_rf_distribution": {
+      "RF-04": 3
+    },
+    "no_flag_messages": 345,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B002-001",
+      "row_range": "ROW-619 through ROW-659",
+      "timestamp": "2022-10-31 (Halloween evening EDT)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-619: 'We don't need you' | ROW-620: 'It's sad that you'd rather take someone else's kid than your own' | ROW-621: 'She deserves a better dad' | ROW-636: 'I also find it hilarious that you said you weren't going to be Abby's taxi and was going to make her clean but yet here you are still being the house bitch and taxi. How's that all working out for you?' | ROW-637: 'And you know that you were supposed to make that payment Friday. If you didn't it just comes out of your paycheck' | ROW-638: 'I just have to file the paperwork to do that' | ROW-639: 'You'd rather let Olivia down than make Abby mad and that's pathetic' | ROW-645: 'My biggest issue is that you don't prioritize Olivia.' | ROW-646: 'We both know that you aren't taking her tonight because it would make Abby mad cause she claims you don't treat Milo like yours cause he's not' | ROW-648: 'You'd rather not hear her bitch so you are not going with Olivia' | ROW-652: 'She deserves a dad that prioritizes her but I know you won't' | ROW-653: 'You'll regret treating her poorly and not making the time and effort for her.' | ROW-654: 'You'll regret it one day but it will be too late' | ROW-656: 'I don't know how you live with yourself. Your daughter is begging you to go with her and you tell her no so you can go with another kid' | ROW-657: 'That is beyond fucked up'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Two RF-05 signal elements within the Oct 31 Halloween escalation cluster. SIGNAL 1 — ROW-637-638: Wage garnishment filing threat. Context: Melissa raised the child support payment mid-escalation ('you know that you were supposed to make that payment Friday. If you didn't it just comes out of your paycheck' / 'I just have to file the paperwork to do that'). Eli confirmed payment on Friday (ROW-640-647 confirms payment at 7:05pm Friday). The legal-filing threat was deployed BEFORE Melissa verified payment status, in the middle of an unrelated parenting dispute — functioning as additional pressure during the emotional escalation rather than as a genuine legal-status update. ADD-002 temporal rule: wage garnishment is a routine enforcement mechanism (not the custody/lawfare category that Eli identified as primary fear); classified Sev-1 (routine legal-mechanism deployment in escalation context). SIGNAL 2 — ROW-653-654: 'You'll regret treating her poorly and not making the time and effort for her. / You'll regret it one day but it will be too late.' Explicit implied-threat language; the taxonomy directly lists 'you'll regret this' as an RF-05 behavioral indicator. The framing asserts an inevitable future negative consequence for Eli's conduct — designed to create compliance pressure or punitive anticipation. The 'it will be too late' element adds temporal urgency. ADD-002: this type of implied consequence language is not custody-specific but creates a diffuse threat environment; Sev-1. Both signals operate within the same sustained escalation cluster and reinforce each other: the legal filing threat establishes a concrete compliance mechanism (I will act) while the 'you'll regret it' framing establishes an implied punitive future — together these constitute a mild intimidation pattern. Cross-ref RF-04: this cluster is ARC-RF04-001-S004 (first Sev-2 instance in RF-04 pass; full DARVO + contempt campaign). RF-05 signals are secondary elements within the larger RF-04 primary cluster.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "ROW-619-659 Halloween escalation is ARC-RF04-001-S004 — full DARVO, sustained inadequate-father campaign, child-emotions weaponized, Abby-causation framing. RF-04 is primary. RF-05 signals (ROW-637-638 and ROW-653-654) are secondary elements within the RF-04 primary cluster.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-636: 'house bitch and taxi' Abby-framework attack — RF-04 contempt + ADD-001 Abby-attack peripheral RF-05 (aggressive tone only; no legal/formal-reporting element; not RF-05 primary per ADD-001).",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-668-679: 'I've told you long ago that no calls after 8:30' / 'you need to respect boundaries' — RF-02 primary (phone blocking enforcement) + RF-05 peripheral (compliance-demand framing 'you've been told over and over'; no threat, consistent with B-001 ROW-124-125 pattern).",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Trigger: Eli was working nights and there was a dispute about whether he would take Olivia trick-or-treating in her neighborhood or his (Milo also involved). Melissa escalated from the scheduling disagreement to a full inadequate-father campaign (ROW-619-659 = 40+ message sustained cluster). Eli confirmed he then drove to Melissa's neighborhood (ROW-662: 'came over. Drive through the and didn't see you guys') suggesting he did attempt to participate. The escalation partially defuses after ROW-660 when Eli asks if Olivia is still in costume — Melissa's responses turn logistical. RF-05 signals appear mid-escalation (ROW-638, legal filing) and at the emotional peak (ROW-653-654, regret framing) before de-escalation.",
+      "pattern_tags": ["implied_threat", "legal_filing_threat", "regret_framing", "escalation_pressure", "compliance_demand"],
+      "arc_references": ["ARC-RF05-001-CANDIDATE"],
+      "image_reference": null,
+      "quote_excerpt": "'You'll regret it one day but it will be too late' (ROW-654); 'I just have to file the paperwork to do that' (ROW-638)"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-414",
+      "reason_noted": "Near-boundary RF-05: 'Stop calling while you're at the store and half ass paying attention to her and talking to the clerk' — directive/contemptuous but not threatening. RF-04 contempt. Excluded from RF-05.",
+      "cp2_flag": false
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": ["ARC-RF05-001 initialized as CANDIDATE — first RF-05 primary signal: implied threat ('you'll regret it') + legal-filing deployment in escalation context. Single episode; threshold for WATCHING = second distinct episode primary signal."],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 1
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "B-002 (Oct-Nov 2022) introduces the first RF-05 primary signals in the dataset — both within the Oct 31 Halloween escalation cluster. The rest of the batch is cooperative-to-neutral logistics. The Halloween cluster (ROW-619-659) is a sustained multi-vector attack with RF-04 as primary but RF-05 implied-threat and legal-threat elements. The 'you'll regret it' framing (ROW-653-654) is the first explicit implied-threat language in the record.",
+    "cross_rf_context": "RF-04 B-002 (ARC-RF04-001-S004): Oct 31 Halloween cluster is the RF-04 pass's first Sev-2 event and the signal that promoted ARC-RF04-001 from WATCHING to ACTIVE. The RF-05 signals are embedded within the RF-04 primary cluster — the intimidation elements augment but do not dominate the manipulation pattern at this stage."
+  }
+}

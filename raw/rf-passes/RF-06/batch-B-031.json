@@ -1,0 +1,65 @@
+{
+  "batch_id": "B-031",
+  "date_range": {
+    "start": "2026-01-08",
+    "end": "2026-04-12",
+    "note": "date-filtered batch"
+  },
+  "message_count": 464,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-010: contempt filing with execution date Mar 21 2026 (ROW-15480). 'Just going to file contempt on Monday... court costs and lawyer fees.' ARC-RF06-001 Signal 10. Dataset closes ACTIVE."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-010",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 10,
+      "date_range": "2026-02-14 to 2026-03-21",
+      "orig_rows": [
+        "15096",
+        "15480"
+      ],
+      "messages": [
+        {
+          "orig_row": "15096",
+          "direction": "Received",
+          "date": "2026-02-14",
+          "text": "Plus you need to pay daycare. It's late."
+        },
+        {
+          "orig_row": "15480",
+          "direction": "Received",
+          "date": "2026-03-21",
+          "text": "I'm not going to keep asking. I'm just going to file contempt on Monday. You made your choice that you'd like to pay what you owe plus the court costs and lawyer fees so that's what's going to happen"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 ROW-15096: continued daycare billing (Valentine's Day context \u2014 note RF-11 proximity). ROW-15480: explicit contempt filing threat with execution date ('Monday') and cost projection ('court costs and lawyer fees'). This is ADD-004 (war-of-attrition threat with financial burden framing \u2014 explicitly naming the financial consequences Eli will face). Escalated from prior threats to a specific stated action date. ARC-RF06-001 Signal 10. Dataset closes with arc ACTIVE and contempt threat unresolved.",
+      "addendum_applied": "ADD-002 (executed court action \u2014 threat with execution date is credible). ADD-004 (war of attrition \u2014 'court costs and lawyer fees' financial burden explicitly named)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "ACTIVE",
+      "signals_cumulative": 10
+    }
+  ]
+}

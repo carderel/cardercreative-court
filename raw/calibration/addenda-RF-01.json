@@ -1,0 +1,82 @@
+{
+  "rf_pass": "RF-01",
+  "generated_from": "CP2 calibration review — B-001",
+  "generated_date": "2026-04-23",
+  "addenda_count": 5,
+
+  "addenda": [
+    {
+      "addendum_id": "RF01-ADD-001",
+      "title": "Behavior Attribution — Context Filter: Inside Joke Exclusion",
+      "type": "exclusion_with_qualifier",
+      "applies_to": "Any instance of Melissa attributing Olivia's behavior to Eli's influence ('you taught her that,' 'that's from you,' 'she learned that from you,' etc.)",
+      "rule": "Flag behavior attribution language at Sev 1 UNLESS the attributed behavior is a confirmed family in-joke or clearly benign activity. The Sep 27 2022 instance (ROW-292-293) involved Olivia twerking — confirmed by Eli as a family inside joke that has been ongoing since Olivia was approximately 2 years old. That specific instance is dismissed. The pattern type (blame attribution for negative behaviors) remains a valid RF-01 flag in all other contexts.",
+      "severity_guidance": "Sev 1 for isolated attribution of genuinely negative behaviors. Sev 2 when attribution becomes a recurring theme across multiple batches. Sev 3 if attribution language is used in front of Olivia or directed at Olivia about Eli.",
+      "b001_impact": "RF01-B001-S002 dismissed. ARC-RF01-001 signal count reduced from 3 to 2.",
+      "source": "CP2-RF01-A1 response: 'she was twerking. I did it once in front of Olivia when she was 2 and she has not stopped doing it — its more of an inside joke at this point than an issue.'"
+    },
+
+    {
+      "addendum_id": "RF01-ADD-002",
+      "title": "Abandonment Narrative — Confirmed Coached Narrative, Elevated Severity Threshold",
+      "type": "elevation",
+      "applies_to": "Any instance of abandonment language attributed to Olivia or relayed by Melissa: 'daddy left,' 'left me,' 'left to start a new family,' 'my dad when he left me,' or equivalent framing casting Eli's departure from the marriage as abandonment of Olivia",
+      "rule": "This is a CONFIRMED deliberately coached narrative. Eli confirms: Melissa has repeatedly stated in front of Olivia since the beginning of the divorce that Eli 'left to start a new family.' Olivia has used abandonment language directly to Eli in person, over the phone, and as relayed through Melissa. This is not organic child processing of divorce — it is a deliberate narrative that Melissa has maintained and reinforced since the divorce filing (Jul 2021). All future instances of abandonment language should be flagged at Sev 2 minimum, not Sev 1.",
+      "severity_guidance": "Sev 2 baseline for any abandonment language from Olivia (regardless of how Melissa frames the relay). Sev 3 if Melissa is directly overheard or confirmed to be stating abandonment narrative to Olivia in current batches.",
+      "b001_impact": "RF01-B001-S003 elevated from Sev 1 to Sev 2.",
+      "arc_impact": "ARC-RF01-001 elevation trigger — the confirmed coached nature of this narrative combined with its duration ('since day one') is a significant arc-promotion factor.",
+      "source": "CP2-RF01-B1 responses: 'Melissa has been proclaiming the narrative since we split that I left to start a new family despite all my efforts to show that isn't so. She has said this multiple times in front of Olivia. This was guilt not cooperative.' / 'Yes but I do not have any notes on when, I feel like this was discussed at the beginning of the divorce and Melissa has been subtly reinforcing it over the years.'"
+    },
+
+    {
+      "addendum_id": "RF01-ADD-003",
+      "title": "Cross-Household Authority Override — Confirmed Recurring Pattern",
+      "type": "pattern_confirmation",
+      "applies_to": "Any instance where Olivia invokes Melissa's rules, statements, or authority to override or resist Eli's parenting decisions during Eli's custodial time ('my mom said,' 'mom says I don't have to,' 'mom lets me,' etc.)",
+      "rule": "This is a CONFIRMED recurring pattern. Eli reports: 'Its happened multiple times. I have had to say multiple times that my rules are different at my house and in my care — just like her mom's house. I don't enforce my rules there — her mom shouldn't try to enforce her rules on me.' The pattern indicates Olivia has been equipped with cross-household authority framing that allows her to resist Eli's parenting by invoking Melissa's parallel authority. Flag all instances at Sev 1. Elevate to Sev 2 if invocation is used to refuse participation in activities, outings, or contact.",
+      "severity_guidance": "Sev 1 for general 'my mom said' overrides of routine decisions. Sev 2 for refusal of scheduled activities, visits, or phone calls justified by 'mom said.' Sev 3 if Melissa is directly coaching Olivia to invoke this authority in messages to Eli.",
+      "b001_impact": "RF01-B001-S001 confirmed at Sev 1. No severity change, but arc weight elevated.",
+      "source": "CP2-RF01-B2 response: 'Its happened multiple times. I have had to say multiple times that my rules are different at my house.'"
+    },
+
+    {
+      "addendum_id": "RF01-ADD-004",
+      "title": "Melissa Crediting Olivia's Account Over Eli's — Confirmed Systematic Pattern",
+      "type": "pattern_confirmation",
+      "applies_to": "Any instance where Melissa uses Olivia's reported account of events to validate criticism of Eli's conduct, without independently verifying or supporting Eli's account",
+      "rule": "Eli confirms: 'Olivia's word is taken above mine unless it serves Melissa's purpose not to.' This is a confirmed systematic pattern where Melissa treats Olivia's reported account as authoritative over Eli's when the account reflects negatively on Eli. This is RF-01 relevant because it (a) validates Olivia's complaints about Eli without critical examination, (b) reinforces the child's perception that her negative feelings toward Eli are accurate/justified, and (c) uses the child as a credible witness against the other parent. Flag instances where Melissa explicitly relies on Olivia's account to challenge Eli's conduct at Sev 1.",
+      "severity_guidance": "Sev 1 for using Olivia's account as the basis for criticism. Sev 2 if Melissa explicitly tells Eli that Olivia's account is more credible than his. Sev 3 if Melissa repeats Olivia's account to third parties (teachers, doctors, court officers) to build a case against Eli.",
+      "b001_impact": "No retroactive flag change — context enrichment for existing S001 and future batches.",
+      "source": "CP2-RF01-B2 response: 'Olivia's word is taken above mine unless it serves Melissa's purpose not to.'"
+    },
+
+    {
+      "addendum_id": "RF01-ADD-005",
+      "title": "RF-02 Supplement: Active Non-Facilitation of Contact (ROW-365 Context)",
+      "type": "cross_rf_supplement",
+      "applies_to": "RF-02 arc ARC-RF02-001 — phone blocking pattern",
+      "rule": "Eli confirms that Melissa observed Olivia sending Eli to voicemail and did not encourage Olivia to answer. Eli's response: 'I hadn't thought of it as a bragging thing but it is inline with her level of pettiness. This is Melissa passing the buck and not taking accountability — yes Olivia did send me but Melissa should be encouraging Olivia to answer the phone.' This confirms that ARC-RF02-001 involves not just passive DND blocking but also active non-facilitation: Melissa is aware when Olivia sends Eli to voicemail and chooses not to intervene. Flag future instances where Melissa observes or reports Olivia's contact avoidance without actively encouraging contact as Sev 1 RF-02 supplementary signals.",
+      "applies_to_arc": "ARC-RF02-001",
+      "b001_impact": "Context addendum to RF-02 B-001 — no severity changes to that pass, which is already complete. Applied to RF-01 pass analysis going forward when compound RF-01/RF-02 patterns appear.",
+      "source": "CP2-RF01-C2 response: 'yes Olivia did send me but Melissa should be encouraging Olivia to answer the phone.'"
+    }
+  ],
+
+  "b001_corrected_statistics": {
+    "primary_flags_original": 3,
+    "primary_flags_post_calibration": 2,
+    "dismissed": ["RF01-B001-S002 (twerking — inside joke context, not genuine negative behavior attribution)"],
+    "elevated": ["RF01-B001-S003 (Sev 1 → Sev 2: confirmed coached abandonment narrative)"],
+    "confirmed_unchanged": ["RF01-B001-S001 (Sev 1: church / cross-household authority override, confirmed recurring pattern)"],
+    "severity_distribution_corrected": {"1": 1, "2": 1, "3": 0}
+  },
+
+  "arc_calibration_outcome": {
+    "arc_id": "ARC-RF01-001",
+    "previous_status": "candidate",
+    "new_status": "watching",
+    "promotion_rationale": "Promoted CANDIDATE → WATCHING based on CP2 calibration: (1) Eli confirms pattern is 'ongoing since day one'; (2) RF01-B001-S003 elevated to Sev 2 (confirmed coached narrative, not ambiguous relay); (3) cross-household authority override confirmed as recurring multi-occurrence pattern; (4) abandonment language confirmed to have been expressed by Olivia directly to Eli in person, by phone, and through Melissa. The pattern is not emerging — it is established and confirmed. Two confirmed signals in B-001 (Sev 1 + Sev 2) with documented background history justifies WATCHING.",
+    "signals_post_calibration": 2,
+    "dismissed_signals": ["RF01-B001-S002"]
+  }
+}

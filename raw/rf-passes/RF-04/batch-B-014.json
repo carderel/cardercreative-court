@@ -1,0 +1,195 @@
+{
+  "batch_id": "B-014",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2024-03-28", "end": "2024-05-09" },
+  "row_range": { "start": 4863, "end": 5237 },
+  "message_count": 375,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "cooperative/administrative with four Sev-1 RF-04 clusters; no Sev-2 events",
+    "conflict_ratio": "~0.06",
+    "rf04_activity": "low-moderate — 4 primary flags, all Sev-1; batch otherwise cooperative",
+    "notable_context": "Cat dander/Tahko death allergy dispute (Mar 31 – Apr 1). Solar eclipse (Apr 8). ROW-4949 adult-language child relay ('what the fuck is he going on about?'). Olivia's 6 cavities (Apr 9). Finding Nemo school choir (Apr 24-25 — cooperative). Payment disputes (court-ordered daycare + $1k). Milo's birthday visit (May 4). May 8 tornado warnings (cooperative). Cat allergy restriction on Olivia visits to Eli's house ongoing (Tahko died Apr 1; 6-month dander claim asserted). ROW-4990-4993 (Apr 8) child emotional relay 'Your daughter is upset that you hung up on her.'"
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B014-001",
+      "severity": 1,
+      "date": "2024-03-31",
+      "row_ref": "ROW-4906-4914",
+      "type": "sustained_inadequate_father_attack + contemptuous_dismissal",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Mar 31 cat allergy blame cluster. Context: Melissa initiated a comparison framing — Eli said he couldn't attend church due to flower allergen exposure; Melissa deploys this to attack his cat-dander handling. ROW-4906: 'You're like I can't go to church and unnecessarily expose myself to allergens with flowers but you were fine exposing her to cat dander' — false equivalence + contemptuous framing. ROW-4909: 'You didn't respect her allergies. You agreed to things then didn't do them. You took her into your house with the cats and made no...' — false character attribution: agreement-reneging + negligence framing. ROW-4910: 'I had to have my lawyer send you a letter to get you to stop subjecting her to them' — lawyer-letter framing positions Eli as so negligent he required legal compulsion to protect his own child. ROW-4911: 'You were fine subjecting her to it even though she needed her inhaler. Didn't stop until my lawyer sent you a letter' — repetition reinforces inadequate-father narrative. ROW-4912-4913: Eli declines to argue ('Ok.' / 'I am not going to argue with you.'). ROW-4914: 'Cause you know I'm right' — contemptuous dismissal; Eli's refusal to engage reframed as admission of guilt. Structure: sustained inadequate-father attack via historical medical grievance → contemptuous dismissal of Eli's boundary as proof of his guilt. ARC-RF04-001-S35.",
+      "verbatim_key_messages": [
+        "ROW-4906 (Received): \"You're like I can't go to church and unnecessarily expose myself to allergens with flowers but you were fine exposing her to cat dander\"",
+        "ROW-4909 (Received): \"You didn't respect her allergies.  You agreed to things then didn't do them. You took her into your house with the cats and made no...\"",
+        "ROW-4910 (Received): \"You didn't respect her allergies. I had to have my lawyer send you a letter to get you to stop subjecting her to them\"",
+        "ROW-4911 (Received): \"You were fine subjecting her to it even though she needed her inhaler. Didn't stop until my lawyer sent you a letter\"",
+        "ROW-4913 (Sent): \"I am not going to argue with you.\"",
+        "ROW-4914 (Received): \"Cause you know I'm right\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B014-002",
+      "severity": 1,
+      "date": "2024-04-05",
+      "row_ref": "ROW-4966",
+      "type": "contemptuous_slur",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "summary": "ROW-4966: 'Thanks for getting back with me about picking her up, asshat' — contemptuous slur deployed when Eli did not respond to pickup time inquiries (ROW-4963: 'Are you picking her up tonight or not'; ROW-4965: 'Are you picking her up at 5:30 or not'). Context: Eli had communicated he was on back-to-back calls until 3pm (ROW-4964). By ROW-4967, Eli explains he had to stay out of area anyway and couldn't have picked her up regardless. 'Asshat' is ADD-002 contemptuous labeling pattern — same family as 'dumbass' (×4), 'worthless dick,' 'bitch what'; deployed against Eli's communication gap with no acknowledgment of his earlier explanation of calls. ARC-RF04-001-S36.",
+      "verbatim_key_messages": [
+        "ROW-4964 (Sent): \"On calls for the next couple of hours - I have back to back calls until 3\"",
+        "ROW-4966 (Received): \"Thanks for getting back with me about picking her up, asshat\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B014-003",
+      "severity": 1,
+      "date": "2024-04-28",
+      "row_ref": "ROW-5126",
+      "type": "predation_framing_seventh_instance",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "compound": "COMP-RF04-013",
+      "summary": "7th predation framing deployment. ROW-5126: 'Abby preggers?' — inserted without contextual transition after ROW-5122-5125 (casual pleasant conversation: steak preferences, Olivia thumb-up relay). The pregnancy query implies Abby is carrying Eli's child, reinforcing the ongoing-sexual-relationship-with-niece narrative. Mechanism: covert/suggestive (same class as ROW-3240 B-009 'Abby pregnant or just fat?') rather than explicit ('banging your niece'). Prior instances: ROW-937-938 (B-003), ROW-1287 (B-004), ROW-2167/2173 (B-006), ROW-3271 (B-009), ROW-3388 (B-010), ROW-4093 (B-012 — marriage scenario). RF-15 cross-tag. Pattern note: 7 confirmed deployments across 7 batches; pregnancy framing now confirmed as second covert deployment mechanism alongside marriage-scenario framing. ARC-RF04-001-S37. COMP-RF04-013 (RF-04+RF-15).",
+      "verbatim_key_messages": [
+        "ROW-5124 (Sent): \"Medium rare?\"",
+        "ROW-5125 (Received): \"Well done like her mom does\"",
+        "ROW-5126 (Received): \"Abby preggers?\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B014-004",
+      "severity": 1,
+      "date": "2024-05-08",
+      "row_ref": "ROW-5201-5212",
+      "type": "contemptuous_dismissal_parenting_concern + condescending_labeling",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "May 8 contemptuous dismissal cascade. Context: Eli raises a legitimate parenting concern — Olivia was impersonating a YouTube character and Eli expressed that she gets worse when Melissa laughs/eggs her on (ROW-5206: 'I notice that she gets worse the more you laugh - quit egging her on, please. She is going to...'). Melissa's response: ROW-5205: 'Calm down cupcake' — condescending pet-name dismissal of Eli's parenting input. ROW-5207: 'What are you going on about?' — contemptuous reframing of Eli's concern as incoherent. ROW-5209: 'You are waaaaay too sensitive.' — contemptuous dismissal of Eli's parenting concern as emotional over-reaction. ROW-5212: 'Y are you so sensitive?' — repeated contemptuous dismissal. Structure: Eli raises specific parenting concern (behavior pattern) → 'calm down cupcake' + 'what are you going on about' + 'waaaaay too sensitive' ×2 — four-message dismissal cascade that deploys condescension, incoherence-framing, and sensitivity-pathologizing to extinguish Eli's parenting input without engagement. ARC-RF04-001-S38.",
+      "verbatim_key_messages": [
+        "ROW-5206 (Sent): \"I notice that she gets worse the more you laugh - quit egging her on, please.  She is going to...\"",
+        "ROW-5205 (Received): \"Calm down cupcake\"",
+        "ROW-5207 (Received): \"What are you going on about?\"",
+        "ROW-5209 (Received): \"You are waaaaay too sensitive.\"",
+        "ROW-5212 (Received): \"Y are you so sensitive?\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B014-P01",
+      "row_ref": "ROW-4949",
+      "date": "2024-04-04",
+      "type": "child_relay_adult_language_contempt",
+      "note": "ROW-4949: 'Ahe said \"what the fuck is he going on about? He hasn't called me\"' — Melissa relays Olivia's alleged statement using adult profanity to cast Eli as confused/wrong about whether he called. RF-11 cross-tag (adult language attributed to child). ARC-RF04-002 peripheral — child's voice deployed to undercut Eli's factual account."
+    },
+    {
+      "flag_id": "RF04-B014-P02",
+      "row_ref": "ROW-4990-4993",
+      "date": "2024-04-08",
+      "type": "child_relay_guilt_mild",
+      "note": "ROW-4990: 'Your daughter is upset that you hung up on her' — child emotional relay as inadequate-father lever. ROW-4993: 'She said you hung up' — reaffirmation of child's alleged accusation. Eli denies hanging up (ROW-4991-4992). Mild ARC-RF04-002 pattern; no escalation. ARC-RF04-002-S11 (peripheral-level)."
+    },
+    {
+      "flag_id": "RF04-B014-P03",
+      "row_ref": "ROW-5184",
+      "date": "2024-05-05",
+      "type": "inadequate_father_jab_unreliability",
+      "note": "ROW-5184: 'You're unreliable' — contemptuous character jab delivered after Eli explains he cannot afford plane tickets for a trip due to car breakdown. Brief; no escalation. Inadequate-father framing deployed against financial constraint."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S35",
+          "batch": "B-014",
+          "date": "2024-03-31",
+          "row": "ROW-4906-4914",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Mar 31 allergen-blame inadequate-father sustained attack. 'You didn't respect her allergies / I had to have my lawyer send you a letter' + 'Cause you know I'm right' contemptuous dismissal of Eli's refusal to argue."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S36",
+          "batch": "B-014",
+          "date": "2024-04-05",
+          "row": "ROW-4966",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'Thanks for getting back with me about picking her up, asshat' — ADD-002 contemptuous slur when Eli didn't respond during stated call period."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S37",
+          "batch": "B-014",
+          "date": "2024-04-28",
+          "row": "ROW-5126",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'Abby preggers?' — 7th predation framing; covert pregnancy-implies-relationship mechanism; mid-stream casual conversation insertion. COMP-RF04-013 (RF-04+RF-15)."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S38",
+          "batch": "B-014",
+          "date": "2024-05-08",
+          "row": "ROW-5201-5212",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "May 8 contemptuous dismissal cascade: 'Calm down cupcake' + 'What are you going on about?' + 'You are waaaaay too sensitive.' + 'Y are you so sensitive?' — four-message dismissal of Eli's parenting concern as incoherent/hypersensitive."
+        }
+      ],
+      "signal_count_after": 38
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S11",
+          "batch": "B-014",
+          "date": "2024-04-08",
+          "row": "ROW-4990-4993",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'Your daughter is upset that you hung up on her' — mild child-relay inadequate-father guilt lever; ARC-RF04-002 peripheral-level signal. Eli denies hanging up; Melissa reaffirms child's accusation without resolution."
+        }
+      ],
+      "signal_count_after": 11
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-013",
+      "batch": "B-014",
+      "date": "2024-04-28",
+      "row_ref": "ROW-5126",
+      "rf_tags": ["RF-04", "RF-15"],
+      "summary": "Thirteenth compound multi-RF episode. RF-04 (7th predation framing — 'Abby preggers?' covert pregnancy mechanism, ARC-RF04-001-S37) + RF-15 (pregnancy query implies ongoing sexual relationship with niece). Covert deployment mechanism: casual-context pregnancy inquiry without explicit allegation language. Pattern: 7 confirmed predation-framing deployments across 7 batches; covert mechanisms now confirmed alongside explicit mechanisms."
+    }
+  ],
+
+  "cp3_item": {
+    "id": "CP3-RF04-014",
+    "batch": "B-014",
+    "summary": "ROW-5126 (Apr 28 B-014) — 7th predation framing 'Abby preggers?' covert pregnancy mechanism; COMP-RF04-013 (RF-04+RF-15); ARC-RF04-001-S37. Predation framing pattern now spans 7 batches (B-003, B-004, B-006, B-009, B-010, B-012, B-014) with two confirmed covert mechanisms (pregnancy framing, marriage-scenario framing) and two explicit mechanisms. Notable also: ROW-4906-4914 (Mar 31) allergen-blame inadequate-father attack + 'Cause you know I'm right' contemptuous dismissal; ROW-5201-5212 (May 8) 'Calm down cupcake' / 'waaaaay too sensitive' ×2 parenting-concern dismissal cascade."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 4,
+    "severity_1": 4,
+    "severity_2": 0,
+    "peripheral_flags": 3,
+    "compound_patterns": 1,
+    "arc_rf04_001_signals_added": 4,
+    "arc_rf04_002_signals_added": 1
+  }
+}

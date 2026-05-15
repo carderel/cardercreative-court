@@ -1,0 +1,80 @@
+{
+  "batch_id": "B-030",
+  "date_range": {
+    "start": "2025-11-02",
+    "end": "2026-01-02"
+  },
+  "row_range": {
+    "orig_row_min": 8405,
+    "orig_row_max": 14957,
+    "note": "Date-filtered batch; orig_row range reflects unsorted Excel order within date window"
+  },
+  "message_count": 401,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": {
+    "ARC-RF14-001": "ACTIVE",
+    "ARC-RF14-002": "ACTIVE"
+  },
+  "arc_signals_cumulative_at_batch_start": {
+    "ARC-RF14-001": 8,
+    "ARC-RF14-002": 9
+  },
+  "calibration_addenda_active": [
+    "RF14-ADD-001", "RF14-ADD-002", "RF14-ADD-003", "RF14-ADD-004",
+    "RF14-ADD-005", "RF14-ADD-006", "RF14-ADD-007", "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "arc_signals_this_batch": {
+      "ARC-RF14-001": 0,
+      "ARC-RF14-002": 1
+    },
+    "note": "B-030 primary signal: ROW-14744 (Nov 5, 2025) — Eli explicitly invokes parenting plan provisions regarding Gary's access, stating Gary does not qualify as an exception under the 9-month clause, and 'I don't think having Gary around her is wise.' First direct parenting-plan-grounded challenge to Gary's presence, citing the 9-month new partner protective clause. This is a genuine (Sent direction) RF-14 Sev-1 signal under ADD-003. Dec 23 follow-up references (ROW-14951/8483) confirm Gary's presence in Melissa's household persists despite Eli's Nov 5 challenge — contextual note, not additional primary flags."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-017",
+      "severity": "Sev-1",
+      "direction": "Sent",
+      "arc": "ARC-RF14-002",
+      "arc_signal_number": 10,
+      "date": "2025-11-05",
+      "orig_rows": ["14744"],
+      "messages": [
+        {
+          "orig_row": "14744",
+          "direction": "Sent",
+          "text": "I don't think Gary or whoever is coming over qualifies as one of the exceptions in our parenting plan it's not school, an extracurricular, or any significant prior commitment for Olivia. Especially since those \"plans\" were made within about 20 minutes of you offering the time, that isn't something established or important enough to override a reasonable request.\n\nAnd honestly, I don't think having Gary around her is wise. The 9-month clause is there for a reason: to protect her and keep her from getting caught in adult relationship stuff."
+        }
+      ],
+      "classification": "RF-14 primary Sev-1 (Sent direction) — Eli documents genuine safety/welfare concern about Gary's access to Olivia, grounded in: (1) parenting plan provisions (9-month new partner clause); (2) explicit statement 'I don't think having Gary around her is wise'; (3) awareness of Gary's DV arrest history (per ADD-003). This is appropriate parenting behavior — Eli raising a documented concern through appropriate channels (direct communication). ARC-RF14-002 Genuine Safety Documentation Signal 10.",
+      "addendum_applied": "ADD-003 (Gary DV arrest — Eli's concern about Gary's access is a genuine RF-14 signal, not manufactured). ADD-006 (Eli's communications are appropriate parenting documentation, not admissions).",
+      "cross_rf_note": "Potential RF-02 cross-reference (parenting plan violation context). Standalone RF-14 primary. Note: Melissa's response (ROW-14746) is a crude personal attack — RF-15 Category A territory but separate from RF-14 classification.",
+      "contextual_notes": [
+        {
+          "orig_rows": ["14951", "8483"],
+          "date": "2025-12-23",
+          "note": "Gary's presence in Melissa's household confirmed ongoing Dec 23, 2025: 'I gotta take Gary to get his rental car in a bit' and 'I'll let you know after we found out what Gary had going on.' Eli's Nov 5 challenge did not result in Gary being excluded. Contextual arc continuity note — no additional primary flag needed for these references alone."
+        }
+      ]
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals in B-030. ACTIVE state holds. 8 cumulative signals.",
+      "state": "ACTIVE",
+      "signals_cumulative": 8
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "S-017: Eli raises parenting plan/9-month clause concern about Gary Nov 5, 2025 — explicitly states 'I don't think having Gary around her is wise.' Signal 10. Dec 23 context confirms Gary presence ongoing despite challenge.",
+      "state": "ACTIVE",
+      "signals_cumulative": 10
+    }
+  ]
+}

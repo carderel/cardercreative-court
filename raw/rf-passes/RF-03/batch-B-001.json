@@ -1,0 +1,66 @@
+{
+  "batch_id": "B-001",
+  "date_range": {
+    "start": "2022-01-11",
+    "end": "2022-10-02"
+  },
+  "row_range": {
+    "start": 2,
+    "end": 366
+  },
+  "message_count": 365,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [],
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "pass_context": {
+    "rf03_definition": "RF-03 flags: using scheduling, transportation, activities, or daily logistics as instruments of control, punishment, or leverage. Key indicators: last-minute changes designed to disrupt; activity enrollment conflicts; pickup/dropoff as confrontation; logistical compliance contingent on unrelated demands; strategic unavailability during other parent's time; over-scheduling; logistical obstacles (wrong location, changed times).",
+    "cross_rf_foundation": {
+      "rf02_context": "RF-02 pass complete (101 flags, 4 arcs). Gatekeeping and weaponized logistics share a boundary: RF-02 is about ACCESS denial; RF-03 is about PROCESS manipulation. Many RF-02 signals likely have RF-03 logistics components. Key RF-02 events to cross-check: cat allergy gatekeeping scheme (ADD-006 RF-15 + RF-02), visit refusal cascade B-028-B-031, required-intermediary pattern (64 signals).",
+      "rf04_context": "RF-04 complete (93 flags). DARVO mechanism often includes logistical DARVO \u2014 Melissa creates impossible logistics then claims Eli is the obstructionist. COMP-RF04-028/029/030 are compound DARVO events that may have RF-03 components.",
+      "rf15_context": "Cat allergy manufactured pretext (ADD-006): Melissa took Olivia to allergy specialist \u2192 documented cat allergy + asthma \u2192 used to deny visitation because Eli would not remove cats. This is RF-02 primary + RF-15 compound; watch for RF-03 logistics weaponization in the same cluster (B-025 area).",
+      "known_signal_areas": [
+        "B-025 area (Jun 2025): cat allergy/asthma documentation weaponized as logistical gatekeeping pretext",
+        "Phase B/C visit refusal cascade: watch for logistical pretexts layered on top of RF-02 refusals",
+        "B-031 (Apr 12 2026): pickup context with bruise report \u2014 possible pickup confrontation staging",
+        "Hot periods per triage: 2025-05, 2024-08, 2025-10 \u2014 logistics escalation in Phase B"
+      ]
+    },
+    "anticipated_arcs": [
+      "ARC-RF03-001: Weaponized Scheduling Pattern \u2014 last-minute changes, logistical pretexts for access denial",
+      "ARC-RF03-002: Activity Enrollment Obstruction \u2014 enrolling Olivia in activities conflicting with Eli's time"
+    ],
+    "not_this_boundaries": [
+      "Genuine emergencies requiring schedule changes",
+      "Legitimate activity enrollment with advance notice",
+      "RF-02 pure access denial without logistical manipulation element",
+      "Miscommunication without strategic intent"
+    ]
+  },
+  "calibration_episode": {
+    "batch_tone": "Cooperative baseline Jan-Oct 2022. Pre-escalation period. Logistics communication expected to be neutral and functional. No weaponized logistics anticipated. Triage shows RF-03 Phase A dominant (21/30 hits) but concentrated in later Phase A batches (B-006+). B-001 expected to be zero-flag baseline.",
+    "rf03_flag": false,
+    "reason_not_flagged": "Jan-Oct 2022 is the cooperative pre-escalation baseline confirmed across all 10 Tier 1 passes. RF-03 triage signal is concentrated in later Phase A batches (hot periods 2024-08, 2025-05, 2025-10). Confirming zero RF-03 primary flags for B-001."
+  },
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jan-Oct 2022 calibration batch. Zero RF-03 primary flags. Cooperative baseline confirmed \u2014 logistics communication functional and non-strategic in pre-escalation period. RF-03 signal concentration expected in Phase A late (B-006+) and Phase B/C (B-025+) based on triage hot periods (2024-08, 2025-05, 2025-10). Arc ARC-RF03-001 and ARC-RF03-002 initialized at CANDIDATE."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF03-001",
+      "event": "Weaponized Scheduling arc initialized \u2014 B-001 baseline: cooperative logistics period, zero signals",
+      "state": "CANDIDATE"
+    },
+    {
+      "arc": "ARC-RF03-002",
+      "event": "Activity Enrollment Obstruction arc initialized \u2014 B-001 baseline: no activity enrollment conflicts documented",
+      "state": "CANDIDATE"
+    }
+  ]
+}

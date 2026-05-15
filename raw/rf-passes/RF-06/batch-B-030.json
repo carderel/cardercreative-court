@@ -1,0 +1,72 @@
+{
+  "batch_id": "B-030",
+  "date_range": {
+    "start": "2025-11-02",
+    "end": "2026-01-02",
+    "note": "date-filtered batch"
+  },
+  "message_count": 401,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-009: childcare billing on refused visitation Nov-Dec 2025 (ROW-14840/14849/14954). 'Not my fault she doesn't want to go with you.' RF-06+RF-02 compound. ARC-RF06-001 Signal 9."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-009",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 9,
+      "date_range": "2025-11-24 to 2025-12-23",
+      "orig_rows": [
+        "14840",
+        "14849",
+        "14954"
+      ],
+      "messages": [
+        {
+          "orig_row": "14840",
+          "direction": "Received",
+          "date": "2025-11-24",
+          "text": "Don't forget you owe $300 for childcare by end of day"
+        },
+        {
+          "orig_row": "14849",
+          "direction": "Received",
+          "date": "2025-11-25",
+          "text": "That $30 is for work related childcare which you're required to pay. Not my fault she doesn't want to go with you. You need to fix the things she says she's upset about so she wants to go"
+        },
+        {
+          "orig_row": "14954",
+          "direction": "Received",
+          "date": "2025-12-23",
+          "text": "Also do I need to contempt you for not paying your half of daycare?"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 Clearest ADD-003 instance in the dataset: Melissa bills Eli for childcare on his scheduled parenting time when Olivia refused to go (Nov 2025 visit refusal cascade). ROW-14849 explicitly: 'Not my fault she doesn't want to go with you' \u2014 framing the childcare cost as Eli's problem to solve, not a consequence of Melissa's facilitation failure. ROW-14954: renewed contempt threat. This is RF-06+RF-02 compound: childcare exists only because Melissa failed to facilitate the exchange; she then bills Eli for it. ARC-RF06-001 Signal 9.",
+      "addendum_applied": "ADD-003 (childcare billing on refused visitation \u2014 Phase C confirmed pattern). ADD-002 (contempt threat). Cross-ref RF-02 (visit refusal cascade \u2014 facilitation failure)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "ACTIVE",
+      "signals_cumulative": 9
+    }
+  ]
+}

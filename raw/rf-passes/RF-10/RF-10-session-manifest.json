@@ -1,0 +1,103 @@
+{
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "pass_complete": true,
+  "completed_date": "2026-05-05",
+  "batches_processed": 31,
+  "batches_with_flags": 1,
+  "total_messages_in_dataset": 15465,
+
+  "flag_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "severity_distribution": {
+      "Sev-1": 1,
+      "Sev-2": 0,
+      "Sev-3": 0
+    },
+    "direction_distribution": {
+      "received": 1,
+      "sent": 0
+    }
+  },
+
+  "primary_signals": [
+    {
+      "id": "S-001",
+      "batch": "B-028",
+      "date_range": "2025-08 to 2025-09",
+      "rows": ["ROW-14056", "ROW-8089", "ROW-8107", "ROW-14263", "ROW-14300", "ROW-14301"],
+      "classification": "RF-10 primary Sev-1",
+      "addendum": "ADD-003",
+      "arc": "ARC-RF10-001",
+      "arc_signal_number": 1,
+      "arc_state_after": "CANDIDATE",
+      "summary": "Dance enrollment unilateral decision with simulated cooperation — Melissa unilaterally enrolls Olivia in dance program and presents it to Eli as fait accompli. Pre-committed Olivia to the activity before consulting Eli (ADD-004 vacation pre-commitment trap structure applied to activity enrollment). When Eli objects or defers on tap add-on, she proceeds regardless (ADD-003 simulated cooperation: cooperative if it agrees). Cross-reference RF-06 S-003 (compelled payment for same enrollment).",
+      "direction": "received",
+      "compound": ["RF-06 S-003"]
+    }
+  ],
+
+  "peripheral_signals": [],
+
+  "arc_states_final": {
+    "ARC-RF10-001": {
+      "name": "Co-Parenting Refusal",
+      "state": "CANDIDATE",
+      "signals": 1,
+      "watching_at": null,
+      "active_at": null,
+      "unresolved_at_dataset_close": true,
+      "arc_never_promoted": true,
+      "direction": "received",
+      "note": "Never promoted beyond CANDIDATE — required 2+ discrete signals for WATCHING promotion. Only 1 primary signal discretely located. This does NOT mean the pattern is absent: CP2 Q2(a) confirms Melissa 'is cooperative as long as it agrees with what she wants' as an established behavioral rule. The low keyword yield (2 triage hits) was correctly predicted at CP2 — structural gaps and zero-keyword patterns are the dominant mechanism. Promoted to CANDIDATE state but synthesis-phase review recommended."
+    },
+    "ARC-RF10-002": {
+      "name": "Information Blackout",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "watching_at": null,
+      "active_at": null,
+      "unresolved_at_dataset_close": false,
+      "direction": "received",
+      "note": "Zero signals discretely documented in message record. Eli confirmed at CP2 he has NO access to Olivia's medical records or files (ADD-007) — this is a structural denial operating below the message-text layer, not a specific refusal event. Single-disclosure friction (ADD-006) and curated/editorialized sharing are CP2-confirmed patterns but produce no keyword-identifiable events in a keyword-driven pass. Arc closes at CANDIDATE. The structural information blackout (ADD-007) is a standing finding requiring GAL interview / document discovery to evidence, not message analysis."
+    }
+  },
+
+  "methodology_notes": [
+    "RF-10 is fundamentally a gap-analysis pass per ADD-001: absence of response to legitimate co-parenting requests IS the signal. Only 2 triage keyword hits were returned across 15,465 messages — the near-absence of keyword signals was correctly anticipated at CP2.",
+    "The low primary signal count (1) reflects the nature of the evidence, not the absence of the pattern. Melissa's co-parenting refusal manifests as: (1) unilateral decisions after simulated consultation (not documentable from message text alone without knowing the decision outcome); (2) structural information exclusion (no medical record access — not a message-level event); (3) single-disclosure friction (needs follow-up pattern across messages to document).",
+    "Structural patterns confirmed by CP2 but not keyword-documentable: (a) Medical record exclusion — ADD-007, ongoing; (b) Therapist gatekeeping — ADD-008, confirmed; (c) Vacation pre-commitment trap — ADD-004, confirmed; (d) Single-disclosure friction — ADD-006, confirmed. These are Phase 2 synthesis findings, not message-pass findings.",
+    "The one documented signal (S-001 dance enrollment) captures simulated consultation + pre-commitment combined. It is an ADD-003/ADD-004 compound but logged as a single primary flag since both addenda apply to the same event.",
+    "ARC-RF10-001 closing at CANDIDATE is an honest finding. The pattern is behaviorally confirmed but not discretely evidenced at message-text level. Phase 2 synthesis should treat CP2 Q2(a) as a direct statement of the pattern (admissible GAL interview content)."
+  ],
+
+  "synthesis_phase_notes": {
+    "recommended_for_synthesis": true,
+    "synthesis_anchors": [
+      "CP2 Q2(a): 'She's cooperative as long as it agrees with what she wants' — direct behavioral admission",
+      "CP2 Q1(b): Therapist gatekeeping — narrative control motive confirmed",
+      "CP2 ADD-007: Medical record exclusion — structural ongoing denial",
+      "S-001 dance enrollment — the only message-documented instance of simulated cooperation pattern",
+      "RF-02 compound: visit-refusal cascade has RF-10 dimension (Melissa refuses to facilitate exchange and frames as Olivia's choice — parentification RF-11 + co-parenting refusal RF-10)"
+    ],
+    "cross_pass_compounds": [
+      "RF-02 (access gatekeeping) frequently has RF-10 dimension — Melissa's unilateral decisions about Olivia's participation compound access denial with co-parenting refusal",
+      "RF-11 (parentification — Olivia as decision-maker re visit compliance) is the child-facing manifestation of RF-10",
+      "RF-08 (coaching / triangulation) enables co-parenting refusal by controlling information Olivia receives about each parent"
+    ]
+  },
+
+  "cp2_notes": {
+    "cp2_completed": "2026-05-05",
+    "addenda_count": 8,
+    "key_calibrations": [
+      "Simulated cooperation confirmed — 'cooperative if it agrees' behavioral rule",
+      "Vacation pre-commitment trap confirmed — tells Olivia first, then asks Eli",
+      "Medical record exclusion confirmed — Eli has zero access",
+      "Therapist gatekeeping confirmed — narrative control motive",
+      "Single-disclosure friction confirmed — annoyed at follow-up questions",
+      "Low keyword yield correctly predicted — structural gap analysis is the required method"
+    ]
+  }
+}

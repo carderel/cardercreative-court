@@ -1,0 +1,135 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-004",
+    "row_range": {"start": 1094, "end": 1462},
+    "date_range": {"start": "2022-12-12", "end": "2023-01-17"},
+    "message_count": 369,
+    "mms_note": "MMS for this date range exist on a separate MMS sheet (row numbering 10000+) and are not separately analyzed in this batch; SMS-only analysis.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "timezone_note": "All source timestamps are UTC. Entire B-004 date range is EST (UTC-5). All local times in this file are EST.",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. Dominant event: Olivia's tonsil/adenoid surgery on Dec 28, 2022. Batch is high cooperative content overall — Melissa provides detailed surgery recovery updates; both parents coordinate on logistics; Eli has lunch with Olivia post-recovery (Jan 6). One primary RF-01 flag (Sev 2): Dec 28 surgery morning cluster (ROW-1285-1288) — Melissa explicitly states 'she is your kid and he's not' on surgery day, combined with 'Milo need to go to a specialist cause he has an uncle/dad' (sarcastic use of the uncle/dad inappropriate-relationship framing). This is the most explicit written statement of the 'real daughter vs. not-your-child' abandonment narrative to date. ARC-RF01-001 ACTIVE, +1 Sev-2 signal (total 6: 2 Sev-1, 4 Sev-2)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 369,
+    "primary_flags": 1,
+    "primary_severity_distribution": {"1": 0, "2": 1, "3": 0},
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {"RF-02": 1, "RF-04": 2, "RF-15": 1},
+    "no_flag_messages": 368,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "signal_id": "RF01-B004-S001",
+      "message_id": "ROW-1285",
+      "timestamp": "2022-12-28 15:15:00 UTC",
+      "local_time": "2022-12-28 10:15 EST",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "Nobody gives a shit what you're doing",
+      "primary_rf": "RF-01",
+      "primary_severity": 2,
+      "primary_reasoning": "Four-message cluster on Olivia's surgery morning (ROW-1285–1288): Eli texted that Milo has a specialist appointment at 7:45 AM that runs until ~9:00, giving him time to make it to Olivia's surgery center by 9:30 (ROW-1284). Melissa's response: ROW-1285 ('Nobody gives a shit what you're doing'); ROW-1286 ('This appointment was made months ago and should take priority over milos anyhow since she is your kid and he's not and hers is sur[gery]'); ROW-1287 ('Abby could reschedule, take a taxi, Uber, Lyft or bus or get off her lazy ass and get a license'); ROW-1288 ('Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic'). Severity 2 per RF01-ADD-002 (abandonment/inadequate-father narrative, Sev 2 minimum) because: (1) ROW-1286 is the most explicit written statement of the 'she is your real kid / he is not' framing in the entire record to date — delivered on the morning of Olivia's surgery; (2) the 'she is your kid and he's not' language directly instantiates the coached abandonment narrative ('chose someone else's child over his own daughter'); (3) ROW-1288 uses the 'uncle/dad' framing sarcastically — referencing the false allegation that Eli's relationship with Milo is inappropriate because Eli is Milo's 'uncle/dad,' making Milo's medical needs illegitimate; (4) the surgery context amplifies the narrative: Melissa frames the question as 'whose needs matter more — your real daughter's surgery or someone else's child's doctor appointment.' Note: Eli was in fact trying to attend the surgery (ROW-1284 shows him planning to rush over after Milo's appointment) — his intent was to be at the surgery, directly contradicting the framing that he was choosing Milo over Olivia.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "ROW-1285-1287: Surgery morning emotional attack — 'Nobody gives a shit what you're doing' / 'Abby could... get off her lazy ass.' Contemptuous attack on Olivia's surgery day, a high-stakes medical event. The emotional aggression and contempt directed at Eli on the morning of his daughter's surgery is a sustained RF-04 pattern.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-15",
+          "severity": 1,
+          "note": "ROW-1288: 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic.' Melissa sarcastically invokes the uncle/dad inappropriate-relationship framing established in ROW-939 (Nov 23 'anniversary' message). This is the second written use of this framing — first as a direct allegation (ROW-939), now as sarcastic mockery. The repetition reinforces the false narrative. RF-15 peripheral candidate.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Full sequence context: ROW-1283 [10:09 EST, 12/28]: 'We have to be at surgery center at 9:30. Surgery at 11:30.' ROW-1284 [10:09 EST] S: 'Where is the surgery center? This works out. Milo has a specialist apt at 7:45 supposed to go until 9 or so. Gives me time to r[ush over].' ROW-1285-1288 [10:15-10:18 EST] R: Melissa's response cluster. Key analytic note: Eli was planning to attend the surgery — he explicitly says 'gives me time to rush over.' The surgery conflict is about scheduling logistics, not about Eli choosing not to attend. Melissa's framing — that Milo's appointment represents Eli choosing Milo over Olivia — is therefore a false narrative. This mirrors the Halloween pattern: Melissa constructs the narrative of Eli's abandonment while Eli's stated intent (and in Halloween, physical arrival) contradicts it. Post-surgery recovery (ROW-1289-1321): Melissa provides detailed medication logs every 2-4 hours across Dec 29 - Jan 2. Eli responds positively and asks for updates. The conflict on surgery morning (ROW-1285-1288) is followed by cooperative recovery co-parenting — the attack cluster is temporally isolated to the morning logistics dispute.",
+      "pattern_tags": ["inadequate_father_narrative", "abby_attack_vector", "milo_comparison", "abandonment_framing", "your_kid_vs_not_your_kid", "uncle_dad_framing", "surgery_day_context", "false_narrative_documented"],
+      "arc_references": ["ARC-RF01-001"],
+      "image_reference": null,
+      "quote_excerpt": "she is your kid and he's not / Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic",
+      "calibration_status": "confirmed",
+      "journal_crossref_date": "2022-12-28"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-1244",
+      "reason_noted": "Dec 23: 'If you were involved in her life in any way you would know that the daycare was never going to be open today.' Melissa asserts Eli is so uninvolved he doesn't even know the daycare's holiday closure schedule. Near-boundary RF-01: 'not involved in her life' framing positions Eli as an absent/disconnected parent. Second instance in two batches of this type (B-003 ROW-736: 'You don't have any clue what is going on with her'). NOT flagged RF-01 primary: single statement in context of a scheduling misunderstanding; contemptuous characterization rather than sustained narrative. Pattern watch: Melissa invoking Eli's supposed ignorance of Olivia's schedule/activities as evidence of non-involvement is a recurring framing strategy. If this becomes frequent, it warrants escalation."
+    },
+    {
+      "message_id": "ROW-1263",
+      "reason_noted": "Dec 25: 'I guess you're not dropping anything off to her since you've not been able to communicate anything.' Melissa implies Eli is absent on Christmas Day without communicating. Context: ROW-1265 (Eli) clarifies he didn't know what time he had to take Abby to meet her mom. Melissa's framing positions Christmas Day silence as Eli failing his daughter. Near-boundary RF-01: absence-on-holiday framing, consistent with the broader 'doesn't prioritize Olivia' narrative. NOT flagged RF-01 primary because the complaint is logistical and Eli does drop gifts off later."
+    },
+    {
+      "message_id": "ROW-1217-1221",
+      "reason_noted": "Dec 22: 'She's not going over there with the cat / You've had 11 months to get rid of that damn cat / I don't trust your cleaning and you lie.' Melissa categorically refuses to allow Olivia to visit Eli's home due to cat allergy. This is the primary mechanism preventing home visits (see RF-02 flag below). From RF-01 perspective: Melissa's 'you've had 11 months' framing positions the cat as evidence of Eli's willful failure to create a safe home for Olivia, reinforcing the inadequate-father narrative. Noted: Olivia's visits to Eli's home have been structurally prevented throughout this phase. This will become more significant as the pattern accumulates."
+    },
+    {
+      "message_id": "ROW-1392",
+      "reason_noted": "Jan 12: 'She said she loves you too / I asked if she wanted to call but she wants to play instead.' Cooperative data: Melissa conveys Olivia's affection for Eli and transparently explains why Olivia chose not to call. Contrasts sharply with the 'your daughter is begging you' framing in Halloween and surgery day messages — here Melissa is accurate and transparent about Olivia's preference."
+    },
+    {
+      "message_id": "ROW-1397-1401",
+      "reason_noted": "Jan 12-13: Melissa coordinates an Eli-Olivia movie night outing, provides ticket stub, attends to logistics, offers to lend chairs. Cooperative co-parenting: Melissa actively facilitates Eli-Olivia time at a community event. Strongest cooperative data point in this batch — Melissa not only allows but organizes Eli's access to a significant child activity."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-1217-1221",
+      "peripheral_rf": "RF-02",
+      "severity": 2,
+      "note": "Dec 22: 'She's not going over there with the cat / You've had 11 months to get rid of that damn cat and make your home safe for her / I don't trust your cleaning and you lie.' Melissa categorically bars Olivia from Eli's home due to cat allergy. The medical basis is legitimate (Olivia has documented allergies and upcoming surgery), but the framing — 'you lie,' 'I don't trust your cleaning,' and '11 months' — goes beyond medical caution into gatekeeping characterized by distrust and blame. This is the primary structural mechanism preventing home visits throughout this phase. High confidence for RF-02 pass.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1244",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Dec 23: 'If you were involved in her life in any way you would know that the daycare was never going to be open today.' Contemptuous characterization of Eli as an uninvolved parent over a scheduling miscommunication. RF-04 primary for this message; RF-01 peripheral (uninvolved-father framing).",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1287",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Dec 28: 'Abby could reschedule, take a taxi, Uber, Lyft or bus or get off her lazy ass and get a license.' Contemptuous attack on Abby's transportation situation on Olivia's surgery day. RF-04: sustained contempt directed at Abby (and by extension at Eli's household/priorities) in a high-stakes moment.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1288",
+      "peripheral_rf": "RF-15",
+      "severity": 1,
+      "note": "Dec 28: 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic.' Second written use of the uncle/dad framing (first: ROW-939, Nov 23). Melissa sarcastically invokes the inappropriate-relationship allegation to dismiss Milo's medical appointment. Supports RF-15 false allegation pattern for RF-15 pass. Note: this framing — that Eli's role in Milo's life is inherently illegitimate/inappropriate — also feeds the coached RF-01 narrative that Eli is embedded in a 'new family' that is inappropriate, not just chosen.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_continuation_note": "ARC-RF01-001 (Abandonment/Blame Attribution Narrative): remains ACTIVE. +1 signal this batch (RF01-B004-S001, Sev 2, Dec 28 surgery morning). Total signals: 6. Severity distribution: 2 Sev-1, 4 Sev-2. The surgery day signal is the most explicit written instantiation of the 'she is your real kid / he is not' framing. Pattern continues to activate in high-stakes moments (Halloween, surgery day)."
+  },
+
+  "batch_narrative_note": "B-004 is dominated by Olivia's tonsil/adenoid surgery (Dec 28, 2022) and the recovery period (Dec 29 – Jan 2). Despite the single Sev-2 RF-01 flag, the batch contains substantially more cooperative content than any prior batch: Melissa provides meticulous medication logs every few hours, both parents coordinate on surgery logistics, and Melissa actively facilitates multiple Eli-Olivia interactions including a lunch outing (Jan 6) and a coordinated movie night (Jan 12-13). The RF-01 flag is temporally isolated to the surgery morning logistics dispute (ROW-1285-1288). The analytically significant element of this batch is the explicitness of ROW-1286 — 'she is your kid and he's not' — which is the clearest written formulation of the coached abandonment narrative in the record to date. The pattern: the abandonment narrative is most explicitly articulated in moments of logistical conflict over Eli's scheduling around Abby/Milo, not in calm communication. This gives Melissa a mechanism to invoke the narrative whenever a specific incident can be framed as Eli choosing the 'new family.'",
+
+  "cooperative_data_notes": "Strongest cooperative batch since B-001. Melissa: provides surgery recovery medication logs every 2-4 hours across 5 days (ROW-1289-1321); shares Olivia recovery milestones ('ate a whole bowl of noodles'); shares Olivia's creative projects and humor (art class, taco review); arranges and coordinates Eli-Olivia movie night (ROW-1397-1421); facilitates Olivia's lunch outing with Eli (Jan 6-7); relays Olivia's affection ('she said she loves you too,' ROW-1392). Eli: attends surgery day, asks for recovery updates, has lunch with Olivia post-recovery, attends movie night.",
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

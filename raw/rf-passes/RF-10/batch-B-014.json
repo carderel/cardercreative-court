@@ -1,0 +1,41 @@
+{
+  "batch_id": "B-014",
+  "date_range": {
+    "start": "2024-03-28",
+    "end": "2024-05-09",
+    "note": "date-filtered batch"
+  },
+  "message_count": 488,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "calibration_addenda_active": [
+    "RF10-ADD-001",
+    "RF10-ADD-002",
+    "RF10-ADD-003",
+    "RF10-ADD-004",
+    "RF10-ADD-005",
+    "RF10-ADD-006",
+    "RF10-ADD-007",
+    "RF10-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "B-014 structural gap note: cat allergy specialist visit (ROW-4912 area, Mar-May 2024) is the primary RF-10 constructed-irrefusability event (ADD-005) \u2014 RF-15+RF-02 primary with RF-10 compound. No standalone RF-10 primary flag because the primary classification resides in RF-15 and RF-02 records."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF10-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    },
+    {
+      "arc": "ARC-RF10-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    }
+  ]
+}

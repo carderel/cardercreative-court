@@ -1,0 +1,71 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-011",
+    "row_range": { "start": 3724, "end": 4053 },
+    "date_range": { "start": "2023-10-05", "end": "2023-11-25" },
+    "message_count": 330,
+    "timezone_note": "Mixed EDT/EST. Rows 3724-3956 are EDT (UTC-4); DST ends Nov 5, 2023 at 2:00 AM local (6:00 AM UTC); rows 3957-4053 are EST (UTC-5). DST transition confirmed at ROW-3957 (2023-11-05 20:43 UTC-05:00).",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [],
+
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B011-P001",
+      "row": "ROW-3768",
+      "date": "2023-10-09",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "Oct 9 — Melissa relays Olivia's characterization of Eli's phone availability: 'She said that\\'s common' (referring to him not answering). Melissa presenting Olivia's negative assessment of Eli's contact reliability as objective fact. RF-04 (weaponizing Olivia's reactions as parental inadequacy evidence). ADD-004 adjacent — child's negative emotional reaction relayed to reinforce inadequacy narrative."
+    },
+    {
+      "flag_id": "RF01-B011-P002",
+      "row": "ROW-3778-3790",
+      "date": "2023-10-10",
+      "rf_tags": ["RF-09"],
+      "severity": "peripheral",
+      "summary": "Oct 10 fair confusion cluster — Eli believed Melissa/Olivia were going to the fair that Tuesday evening; Melissa denies it ('You didn't call because you forgot to call per usual' ROW-3779; 'I don't think anyone was listening to you if you said it' ROW-3790). Denying Eli's stated recollection and substituting habitual-neglect explanation. RF-09 (gaslighting via denial of shared events + recasting motivation as pattern of failure)."
+    },
+    {
+      "flag_id": "RF01-B011-P003",
+      "row": "ROW-3936",
+      "date": "2023-10-31",
+      "rf_tags": ["RF-01", "RF-04"],
+      "severity": "peripheral-near-boundary",
+      "summary": "Halloween 2023 — Eli suggests trick-or-treating in his neighborhood for more candy; Melissa responds: 'You're not trying to get her more candy. You're trying to not fight with Abby. Olivia is more important' (ROW-3936). Triggers ADD-001 (Abby attack vector — attributes Eli's parenting preference to Abby-management) and ADD-002 (inadequate-father framing — implies Eli subordinates Olivia's interests to Abby relationship). Directed at Eli in text (not through Olivia), single sentence, lacks the sustained cluster quality of prior primary signals. Near-boundary — continues the Abby-as-obstacle/Eli-choosing-Abby-over-Olivia narrative from B-007/B-008 but does not rise to primary threshold independently. Second consecutive Halloween with Abby attack vector deployed (compare B-002 S001/S002, Oct 31 2022)."
+    },
+    {
+      "flag_id": "RF01-B011-P004",
+      "row": "ROW-3969",
+      "date": "2023-11-07",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "Nov 7 — Eli reports Olivia 'in tears again' returning from his lunch visit (ROW-3966-3967: 'She was in tears again / It's hard leaving and coming back.'). Melissa responds: 'She doesn't cry with me anymore' (ROW-3969). Comparative framing: Olivia's emotional distress is indexed to transitions from Eli's time, while Melissa presents her home as emotionally stable. Positions Eli's presence as a source of distress rather than the natural grief of separation. RF-04/RF-01 compound peripheral — inadequate-father narrative through child's emotional state."
+    }
+  ],
+
+  "peripheral_flag_count": 4,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "notes": "0 primary signals this batch. ARC-RF01-001 remains ACTIVE with 12 total signals (2 Sev-1, 10 Sev-2). ROW-3936 (Halloween Abby attribution) is the nearest near-boundary but lacks sustained cluster quality for primary elevation. Quiet-batch pattern confirmed: B-011 follows B-010's predatory-implication primary signal with 0 primaries, consistent with established post-conflict de-escalation pattern (same observed after B-004→B-005, B-008→B-009, B-009→B-010 partial)."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Moderate cooperative content. Halloween coordination (ROW-3933-3942) cooperative at logistics level, with ROW-3936 exception. November content includes Christmas gift coordination (ROW-4007-4012), parent-teacher conference logistics (ROW-3962-3993), and Thanksgiving-adjacent holiday activity sharing (ROW-4044-4053). Notable cooperative elements: Melissa shares Outer Banks vacation plans with address (ROW-3867-3871), consults Eli on guitar lessons (ROW-3863), coordinates school pick-up and activities.",
+    "halloween_2023_note": "Second consecutive Halloween documented. ROW-3933-3942: Olivia wants to start at Melissa's neighborhood then go to Eli's. Eli arrives (ROW-3942 'Here' at 17:37 EDT = approx. 5:37 PM). ROW-3936 Abby attribution is the notable departure from otherwise cooperative Halloween logistics. Compare to Halloween 2022 (B-002 S001/S002 — two primary flags). 2023 Halloween: 1 near-boundary peripheral only.",
+    "emotional_distress_pattern": "ROW-3966-3969 documents Olivia in tears when returning from Eli's lunch visit. Melissa's 'She doesn't cry with me anymore' frames this as Eli-specific distress rather than normal transition emotions. This is the inverse of the B-009 pattern where Melissa mediated Olivia's anger at Eli — here she's noting Olivia's sadness in a way that implicitly positions Eli's time as destabilizing.",
+    "passport_note": "ROW-3961 (Nov 6): 'If you don't want to get the passport with us you'll need to fill out a form and give us' — Melissa references passport application process, noting co-parent consent form option if Eli declines to participate jointly. Outer Banks trip (May 2024) is domestic; this may indicate separate international travel planning or just general passport acquisition. Monitoring for RF-02 implications.",
+    "gatekeeping_absence": "No gatekeeping-adjacent content this batch beyond ROW-3878 ('I don't know why that's your business but...') re Scene 75 Halloween event — mild dismissal of Eli's parenting curiosity. No phone-refusal clusters. Olivia appears to have regular contact."
+  }
+}

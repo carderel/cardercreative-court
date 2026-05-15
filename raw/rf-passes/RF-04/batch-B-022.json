@@ -1,0 +1,121 @@
+{
+  "batch_id": "B-022",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2025-01-15", "end": "2025-02-14" },
+  "row_range": { "start": 7714, "end": 7761 },
+  "message_count": 48,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "low-moderate conflict — Phase A late period (Jan-Feb 2025); one major contempt/DARVO cluster Jan 15 (ROW-7714-7749) with inadequate-father peak ('You are completely useless as a father. I stand by that.'); child guilt relay mid-cluster; ADD-002 slur ('stupid ass' ROW-7722); Feb 4 child abandonment relay peripheral; remainder cooperative logistics",
+    "conflict_ratio": "~0.75 within Jan 15 cluster; ~0.10 batch overall",
+    "rf04_activity": "moderate — 1 Sev-2 primary (Jan 15 mega-cluster); ADD-002 new slur instance; peak inadequate-father characterization in dataset to date; DARVO gaslight-inversion pattern; ARC-RF04-002 child guilt weapon; COMP-RF04-019 (RF-04+RF-09)",
+    "notable_context": "Jan 15 cluster (ROW-7714-7749): triggered by scheduling dispute; escalates to peak inadequate-father statement ('completely useless as a father'); multiple 'gaslight' accusations deployed as DARVO mechanism to reframe Eli's communication as manipulation; 'Stop your behavior and act like a dad and responsible adult and I won't be so frustrated with you that I snap back' (ROW-7744) — victim-posture DARVO resolution; 'Olivia is currently at Janette's house crying cause you cancelled last minute' (ROW-7748) — child deployed as guilt weapon mid-cluster. Feb 4 (ROW-7751-7752): Melissa relays child asking 'why you used to visit everyday and now you barely do' — abandonment framing through child, no escalation."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B022-001",
+      "severity": 2,
+      "date": "2025-01-15",
+      "row_ref": "ROW-7714-7749",
+      "type": "peak_inadequate_father_characterization + ADD-002_slur + DARVO_gaslight_inversion + victim_posture_resolution + child_guilt_weapon",
+      "arc_ref": "ARC-RF04-001, ARC-RF04-002",
+      "addenda_applied": ["ADD-002"],
+      "compound_pattern": "COMP-RF04-019",
+      "summary": "Jan 15 mega-cluster: scheduling dispute escalates to sustained contempt/DARVO attack. ROW-7722: 'I don't need to hear anything else from your stupid ass' — ADD-002 slur. ROW-7724-7725: first gaslight accusations deployed ('You gaslight everything'). ROW-7726: 'You are completely useless as a father. I stand by that.' — peak inadequate-father characterization; most extreme formulation in dataset to date. ROW-7730: additional gaslight accusation. ROW-7740: 'You gaslight, deflect and place blame on everyone else disappointing Olivia' — DARVO: Eli's responses reframed as gaslighting to neutralize legitimate communication. ROW-7744: 'Stop your behavior and act like a dad and responsible adult and I won't be so frustrated with you that I snap back' — DARVO resolution: Melissa's contempt attack reframed as Eli's fault; victim posture. ROW-7748: 'Olivia is currently at Janette's house crying cause you cancelled last minute.' — child deployed as guilt/shame weapon; ARC-RF04-002-S16. COMP-RF04-019 (RF-04+RF-09): gaslight accusations function as DARVO mechanism — accusing Eli of gaslighting while deploying contempt attack and reframing conflict source. ARC-RF04-001-S54; ARC-RF04-002-S16.",
+      "verbatim_key_messages": [
+        "ROW-7722 (Received): \"I don't need to hear anything else from your stupid ass\"",
+        "ROW-7726 (Received): \"You are completely useless as a father. I stand by that.\"",
+        "ROW-7740 (Received): \"You gaslight, deflect and place blame on everyone else disappointing Olivia\"",
+        "ROW-7744 (Received): \"Stop your behavior and act like a dad and responsible adult and I won't be so frustrated with you that I snap back\"",
+        "ROW-7748 (Received): \"Olivia is currently at Janette's house crying cause you cancelled last minute.\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B022-P01",
+      "row_ref": "ROW-7751-7752",
+      "date": "2025-02-04",
+      "type": "child_abandonment_relay",
+      "arc_ref": "ARC-RF04-002-S17",
+      "note": "ROW-7751-7752: Melissa relays that Olivia asked 'why you used to visit everyday and now you barely do' — child-mediated abandonment framing; child's expressed confusion weaponized as passive guilt/shame mechanism. No escalation in surrounding messages. ARC-RF04-002-S17."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S54",
+          "batch": "B-022",
+          "date": "2025-01-15",
+          "row": "ROW-7714-7749",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Jan 15 mega-cluster: peak inadequate-father characterization ('You are completely useless as a father. I stand by that.' ROW-7726) + ADD-002 slur 'stupid ass' (ROW-7722) + DARVO gaslight-inversion ('You gaslight, deflect and place blame on everyone else disappointing Olivia' ROW-7740) + victim-posture DARVO resolution 'Stop your behavior... and I won't be so frustrated with you that I snap back' (ROW-7744) + child guilt weapon (ROW-7748). COMP-RF04-019 (RF-04+RF-09)."
+        }
+      ],
+      "signal_count_after": 54
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S16",
+          "batch": "B-022",
+          "date": "2025-01-15",
+          "row": "ROW-7748",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Child guilt weapon mid-cluster: 'Olivia is currently at Janette's house crying cause you cancelled last minute.' — child's distress deployed as direct guilt/shame mechanism during contempt attack."
+        },
+        {
+          "signal_ref": "ARC-RF04-002-S17",
+          "batch": "B-022",
+          "date": "2025-02-04",
+          "row": "ROW-7751-7752",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Child abandonment relay (peripheral): Melissa relays Olivia asked 'why you used to visit everyday and now you barely do' — child's expressed confusion weaponized as passive abandonment-framing guilt mechanism."
+        }
+      ],
+      "signal_count_after": 17
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-019",
+      "date": "2025-01-15",
+      "row_ref": "ROW-7714-7749",
+      "rf_combination": ["RF-04", "RF-09"],
+      "summary": "RF-04 (Emotional Manipulation) + RF-09 (Gaslighting): Melissa's repeated gaslight accusations ('You gaslight everything,' 'You gaslight, deflect and place blame on everyone else') function as a DARVO mechanism — accusing Eli of gaslighting while deploying contempt/inadequate-father attack and reframing the conflict as his behavioral fault. The gaslight accusation is itself the manipulation vector, inverting who is gaslighting whom.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001-S54", "ARC-RF04-002-S16"]
+    }
+  ],
+
+  "cp3_item": {
+    "cp3_id": "CP3-RF04-022",
+    "batch": "B-022",
+    "type": "pattern_cluster",
+    "priority": "medium",
+    "summary": "Jan 15 Sev-2 cluster: peak inadequate-father characterization ('completely useless as a father') + DARVO gaslight-inversion mechanism + child guilt weapon. Notable for: (1) most extreme inadequate-father phrasing in dataset to date; (2) gaslight accusations as DARVO tool — systematically inverts who is manipulating whom; (3) victim-posture resolution ('Stop your behavior... and I won't snap back') — Melissa explicitly conditions her contempt as Eli's responsibility. COMP-RF04-019 cross-reference to RF-09 for synthesis."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 1,
+    "severity_1": 0,
+    "severity_2": 1,
+    "severity_3": 0,
+    "peripheral_flags": 1,
+    "compound_patterns": 1,
+    "arc_rf04_001_signals_added": 1,
+    "arc_rf04_002_signals_added": 2
+  }
+}

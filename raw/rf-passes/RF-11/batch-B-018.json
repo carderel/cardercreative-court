@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-018",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2024-08-06",
+    "end": "2024-09-08"
+  },
+  "row_range": {
+    "start": 6557,
+    "end": 7055
+  },
+  "message_count": 499,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Aug\u2013Sep 2024: ROW-6819 coaching admission (RF-08 Sev-3 arc anchor). RF-11 contextual: ROW-6819 confirms Melissa scripting Olivia's conversations \u2014 RF-08 primary; RF-11 compound context (coaching = inappropriate child involvement in adult conflict relay). No standalone RF-11 primary flag this batch \u2014 ROW-6819 is RF-08 primary. Behavioral ADD-006 context: coaching pattern confirms Olivia's ongoing role as Melissa's conflict conduit."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

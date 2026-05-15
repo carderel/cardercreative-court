@@ -1,0 +1,458 @@
+{
+  "arc_state_metadata": {
+    "rf_pass": "RF-05",
+    "last_updated_batch": "B-031",
+    "last_updated_timestamp": "2026-04-24",
+    "pass_status": "complete",
+    "total_active_arcs": 1,
+    "total_watching_arcs": 0,
+    "total_candidate_arcs": 0,
+    "total_resolved_arcs": 0,
+    "total_compound_patterns": 8,
+    "total_signals": 26,
+    "severity_distribution": { "1": 14, "2": 12, "3": 0 },
+    "dataset_coverage": "B-001 through B-031 (2022-10-02 through 2026-04-12)",
+    "total_messages_analyzed": 10637
+  },
+
+  "active_arcs": [
+    {
+      "arc_id": "ARC-RF05-001",
+      "arc_name": "Legal and Compliance-Demand Threat Pattern",
+      "status": "ACTIVE — DATASET CLOSE",
+      "formation_batch": "B-002",
+      "formation_date": "2022-10-31",
+      "formation_signal": "ARC-RF05-001-S001",
+      "last_signal_batch": "B-030",
+      "last_signal_date": "2026-03-21",
+      "last_signal": "ARC-RF05-001-S026",
+      "description": "Sustained pattern of legal threat deployment as compliance mechanism across the full 2022-2026 dataset. Encompasses: contempt filing threats (financial compliance), custody filing threats (parenting conduct), court-order weaponization, 'see you in court' direct confrontation, harassment filing threat (communication suppression), DARVO-denial-of-threat mechanism, confirmed attorney engagement, relocation threats, access withdrawal threats, and gatekeeping-converted-to-contempt inversion. The arc follows a paper-tiger trajectory — early legal threats generated genuine compliance fear (Sev-2); subsequent repetition without execution created a recognized pattern (Sev-1) — but the compliance mechanism remained effective throughout due to structural advantage (retainer-free legal access confirmed S-010) and escalating legal specificity (S-022: consultation complete + agreement ready to sign). No physical threats (Sev-3) detected in the 2022-2026 dataset period.",
+      "trajectory": "paper_tiger_with_escalating_specificity",
+      "resolution_status": "unresolved — whether Sep 17 2025 'agreement ready to sign' (S-022) or Nov 25 2025 'big contempt case' (S-025) resulted in actual filings is unknown from the text record. Attorney must verify.",
+      "sub_pattern_catalog": {
+        "compliance_demand_financial": ["S-001", "S-003", "S-004", "S-006", "S-007", "S-008", "S-009", "S-012", "S-015", "S-017", "S-023", "S-026"],
+        "custody_filing_threat": ["S-016", "S-018", "S-020", "S-021", "S-022", "S-024"],
+        "communication_suppression_legal_threat": ["S-019"],
+        "darvo_wrapped_legal_threat": ["S-020"],
+        "confirmed_attorney_engagement": ["S-021", "S-022", "S-025"],
+        "gatekeeping_to_contempt_inversion": ["S-025"],
+        "court_access_structural_advantage_disclosure": ["S-010"],
+        "extreme_allegation_rf05_boundary": ["S-013"],
+        "see_you_in_court": ["S-014"],
+        "court_narrative_pre_construction": ["S-020"],
+        "evidence_accumulation_framing": ["S-024"]
+      },
+      "arc_milestones": [
+        { "signal": "S-002", "date": "2022-11-11", "milestone": "Arc formation: first formal contempt filing threat" },
+        { "signal": "S-010", "date": "2024-02-23", "milestone": "Structural advantage disclosed: retainer-free court access via employer benefit" },
+        { "signal": "S-013", "date": "2024-05-14", "milestone": "Extreme allegation: rape/sexual assault accusation as compliance weapon" },
+        { "signal": "S-014", "date": "2024-06-16", "milestone": "First explicit 'see you in court' confrontation phrase" },
+        { "signal": "S-016", "date": "2024-08-04", "milestone": "First explicit sole custody filing threat with stated mechanism" },
+        { "signal": "S-019", "date": "2025-05-04", "milestone": "New sub-category: communication suppression via harassment filing threat" },
+        { "signal": "S-020", "date": "2025-07-19", "milestone": "New sophistication: DARVO denial of threat ('There's no threats. Just stating my plan of action')" },
+        { "signal": "S-021", "date": "2025-08-14", "milestone": "First confirmed ongoing attorney engagement + access withdrawal + relocation signal convergence" },
+        { "signal": "S-022", "date": "2025-09-17", "milestone": "Peak legal threat: consultation complete + agreement ready to sign" },
+        { "signal": "S-025", "date": "2025-11-25", "milestone": "Gatekeeping-to-contempt inversion: Melissa's documented visit obstruction weaponized as contempt grounds against Eli" }
+      ],
+      "add_005_impact_finding": "Eli maintained a documented vigilance posture throughout the 2022-2026 dataset: consistent parenting plan citation, professional tone maintenance under sustained legal threat, contemporaneous documentation strategy (ROW-6315 'lawfare' on-record), and no documented capitulation to threat-based coercion. This vigilance posture is itself an RF-05 impact finding — the sustained threat environment required Eli to treat all co-parenting communication as potentially legally consequential. Per ADD-005, this pattern should be presented to the GAL as evidence of the compliance environment created by ARC-RF05-001.",
+      "signals": [
+        {
+          "signal_id": "ARC-RF05-001-S001",
+          "batch": "B-002",
+          "message_id": "RF05-B002-001",
+          "date": "2022-10-31",
+          "row_range": "ROW-619 through ROW-659",
+          "severity": 1,
+          "sub_category": "implicit_threat_regret_framing",
+          "summary": "Halloween evening: 'You'll regret it one day but it will be too late' — first implicit threat in dataset; compliance environment signal"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S002",
+          "batch": "B-003",
+          "message_id": "RF05-B003-001",
+          "date": "2022-11-11 through 2022-11-14",
+          "row_range": "ROW-783 through ROW-828",
+          "severity": 2,
+          "sub_category": "first_contempt_filing_threat",
+          "summary": "FIRST FORMAL CONTEMPT FILING THREAT: 'You gonna pay or do I file contempt?' — arc formation signal; court-order weaponization; financial compliance demand"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S003",
+          "batch": "B-004",
+          "message_id": "RF05-B004-001",
+          "date": "2023-01-01 through 2023-01-03",
+          "row_range": "ROW-1325 through ROW-1341",
+          "severity": 1,
+          "sub_category": "contempt_filing_automatic_withholding",
+          "summary": "Contempt filing repeat + automatic withholding threat; financial compliance; paper tiger trajectory begins"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S004",
+          "batch": "B-006",
+          "message_id": "RF05-B006-001",
+          "date": "2023-03-05 through 2023-03-31",
+          "row_range": "ROW-1929 through ROW-2181",
+          "severity": 1,
+          "sub_category": "attorney_fees_threat",
+          "summary": "'You're gonna need it to pay my attorney fees' — legal cost framing; 'See you in court' cluster precursor"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S005",
+          "batch": "B-007",
+          "message_id": "RF05-B007-001",
+          "date": "2023-04-22",
+          "row_range": "ROW-2374 through ROW-2379",
+          "severity": 2,
+          "sub_category": "child_safety_threat",
+          "summary": "FIRST CHILD SAFETY THREAT: 'Don't ever leave olivia in the car by herself' — implication of CPS-level complaint; ADD-003 adjacent"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S006",
+          "batch": "B-007",
+          "message_id": "RF05-B007-002",
+          "date": "2023-05-15",
+          "row_range": "ROW-2479",
+          "severity": 1,
+          "sub_category": "contempt_filing_repeat",
+          "summary": "'Or do I need to file another contempt?' — repeat contempt; 'getting old' framing suggests accumulated history"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S007",
+          "batch": "B-008",
+          "message_id": "RF05-B008-001",
+          "date": "2023-06-16 and 2023-06-30",
+          "row_range": "ROW-2724 and ROW-2821",
+          "severity": 1,
+          "sub_category": "contempt_filing_repeat_financial",
+          "summary": "'I'm going to hit you with a contempt of you don't pay' — financial compliance contempt; two incidents"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S008",
+          "batch": "B-010",
+          "message_id": "RF05-B010-001",
+          "date": "2023-09-25 through 2023-10-04",
+          "row_range": "ROW-3593 through ROW-3719",
+          "severity": 1,
+          "sub_category": "lawyer_call_threat",
+          "summary": "'Ok. I'm calling the lawyer' — attorney engagement threat; financial compliance context"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S009",
+          "batch": "B-012",
+          "message_id": "RF05-B012-001",
+          "date": "2023-11-30 and 2024-01-19",
+          "row_range": "ROW-4066 and ROW-4364",
+          "severity": 1,
+          "sub_category": "contempt_filing_deadline",
+          "summary": "'If not paid by end of day I will file contempt' — deadline-deadline compliance demand; two incidents spanning Nov 2023-Jan 2024"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S010",
+          "batch": "B-013",
+          "message_id": "RF05-B013-001",
+          "date": "2024-02-23",
+          "row_range": "ROW-4613",
+          "severity": 2,
+          "sub_category": "court_access_structural_advantage_disclosure",
+          "summary": "RETAINER-FREE COURT ACCESS DISCLOSED: 'Beginning this year through my work I'm no longer required to pay a retainer' — structural threat: financial barrier to legal action removed. CP3-RF05-001"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S011",
+          "batch": "B-013",
+          "message_id": "RF05-B013-002",
+          "date": "2024-02-28",
+          "row_range": "ROW-4663",
+          "severity": 2,
+          "sub_category": "contempt_deadline_high_stakes",
+          "summary": "'Remember to pay the $1000 by end of today. Otherwise you fall into contempt' — $1000 financial deadline; same batch as retainer-free disclosure (structural advantage + financial threat in same period)"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S012",
+          "batch": "B-014",
+          "message_id": "RF05-B014-001",
+          "date": "2024-03-31 through 2024-04-15",
+          "row_range": "ROW-4911 through ROW-5037",
+          "severity": 1,
+          "sub_category": "lawyer_letter_served",
+          "summary": "'I had to have my lawyer send you a letter to get you to stop' — attorney letter confirmed executed; pattern: threat → execution → citation of execution"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S013",
+          "batch": "B-015",
+          "message_id": "RF05-B015-001",
+          "date": "2024-05-14",
+          "row_range": "ROW-5307 through ROW-5317",
+          "severity": 2,
+          "sub_category": "extreme_allegation_rape_assault",
+          "summary": "RAPE/SEXUAL ASSAULT ALLEGATION: 'I wonder if you were that guy' + 'I've got quite a few reservations about Olivia staying with you' — extreme RF-05 via ADD-001 exception; Abby rape allegation as compliance weapon + child-safety threat framing. CP3-RF05-002 HIGH. COMP-RF04-014 (RF-04+RF-15+RF-05+RF-01 Sev-3)"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S014",
+          "batch": "B-016",
+          "message_id": "RF05-B016-001",
+          "date": "2024-06-16",
+          "row_range": "ROW-5668 through ROW-5729",
+          "severity": 2,
+          "sub_category": "first_see_you_in_court",
+          "summary": "FIRST 'SEE YOU IN COURT': 'See you in court' (ROW-5699) + contempt framing + 'I will get everything my way' — direct court-confrontation phrase first instance. COMP-RF04-015"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S015",
+          "batch": "B-016",
+          "message_id": "RF05-B016-002",
+          "date": "2024-07-06",
+          "row_range": "ROW-5922",
+          "severity": 1,
+          "sub_category": "contempt_midnight_deadline",
+          "summary": "'You owe me $300 by midnight or you're in contempt' — midnight financial compliance deadline; same batch as 'See you in court' (S-014)"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S016",
+          "batch": "B-017",
+          "message_id": "RF05-B017-001",
+          "date": "2024-08-04",
+          "row_range": "ROW-6279 through ROW-6524",
+          "severity": 2,
+          "sub_category": "first_sole_custody_filing_threat",
+          "summary": "FIRST EXPLICIT SOLE CUSTODY FILING THREAT: 'I'm going to show these messages to the lawyer and file for sole custody so they can see how unreliable you are' — major escalation; evidence-framing + specific relief sought. CP3-RF05-003 HIGH. COMP-RF04-016"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S017",
+          "batch": "B-018",
+          "message_id": "RF05-B018-001",
+          "date": "2024-09-08",
+          "row_range": "ROW-7047",
+          "severity": 1,
+          "sub_category": "contempt_declaration_daycare",
+          "summary": "'So... you're in contempt for that' — daycare payment contempt declaration; DARVO framing"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S018",
+          "batch": "B-019",
+          "message_id": "RF05-B019-001",
+          "date": "2024-10-03",
+          "row_range": "ROW-7461 and ROW-7481 through ROW-7482",
+          "severity": 1,
+          "sub_category": "implicit_custody_viability_claim",
+          "summary": "'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody' — implicit custody viability claim; access withdrawal framing. COMP-RF04-018"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S019",
+          "batch": "B-024",
+          "message_id": "RF05-B024-001",
+          "date": "2025-05-04",
+          "row_range": "ROW-9536",
+          "severity": 2,
+          "sub_category": "first_harassment_filing_threat_communication_suppression",
+          "summary": "FIRST HARASSMENT FILING THREAT: 'Otherwise it's harassment and I will file harassment' — new sub-category: legal threat to suppress co-parenting communication itself. Communication-suppression mechanism. COMP-RF04-020"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S020",
+          "batch": "B-027",
+          "message_id": "RF05-B027-001",
+          "date": "2025-07-19",
+          "row_range": "ROW-9943-9964",
+          "severity": 2,
+          "sub_category": "darvo_wrapped_full_custody_threat_court_narrative",
+          "summary": "DARVO-WRAPPED CUSTODY THREAT + PRE-CONSTRUCTED COURT NARRATIVE: 'I'll screenshot this and file for full custody' (ROW-9957) + 100-word pre-constructed judge narrative (ROW-9958) + 'There's no threats. Just stating my plan of action' (ROW-9964). New sub-category: DARVO denial of threat immediately after making threat. COMP-RF04-023"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S021",
+          "batch": "B-027",
+          "message_id": "RF05-B027-002",
+          "date": "2025-08-14",
+          "row_range": "ROW-8105 + ROW-14063-14162",
+          "severity": 2,
+          "sub_category": "first_confirmed_attorney_engagement_plus_access_withdrawal_relocation",
+          "summary": "FIRST CONFIRMED ONGOING ATTORNEY ENGAGEMENT: 'Already been talking to the lawyer about it' (ROW-14155) + access withdrawal ('the weekends don't restart. She's better off with me full time' ROW-14080) + relocation signal ('may move soon' ROW-14083) + medical credentialing ('My Dr actually told me that I shouldn't have her around you' ROW-14145). Highest RF-05 compound intensity in dataset to this point. COMP-RF04-024"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S022",
+          "batch": "B-028",
+          "message_id": "RF05-B028-001",
+          "date": "2025-09-17",
+          "row_range": "ROW-14276 + ROW-14343-14344 + ROW-14362-14372",
+          "severity": 2,
+          "sub_category": "peak_consultation_complete_agreement_ready",
+          "summary": "PEAK LEGAL THREAT IN DATASET: 'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started' (ROW-14371) + attorney-validated case ('My lawyer already said I had a strong case' ROW-14367) + shared parenting termination demand (ROW-14366). First instance of 'actionable-ready' legal action state. CP3-RF05-004 HIGH. COMP-RF04-025"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S023",
+          "batch": "B-028",
+          "message_id": "RF05-B028-002",
+          "date": "2025-09-28",
+          "row_range": "ROW-14419-14421 + ROW-14447-14451",
+          "severity": 1,
+          "sub_category": "repeat_contempt_filing_cluster_high_density",
+          "summary": "Two contempt threat incidents within nine days: 'Have fun paying contempt charges, court costs and lawyer fees' (ROW-14421, Sep 19) + 'Too late. I'm filing cause I'm tired of your shit' (ROW-14451, Sep 28). Highest per-batch contempt threat frequency in dataset"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S024",
+          "batch": "B-029",
+          "message_id": "RF05-B029-001",
+          "date": "2025-11-06",
+          "row_range": "ROW-14752-14753",
+          "severity": 1,
+          "sub_category": "evidence_accumulation_framing",
+          "summary": "'This is the exact shit that makes it easy to get full custody because you don't respond to questions. / Keep it up. It's great evidence' — legal threat as consequence for minor response latency; passive evidence accumulation framing"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S025",
+          "batch": "B-029",
+          "message_id": "RF05-B029-002",
+          "date": "2025-11-25",
+          "row_range": "ROW-14841-14853",
+          "severity": 2,
+          "sub_category": "gatekeeping_converted_to_contempt_inversion",
+          "summary": "GATEKEEPING-TO-CONTEMPT INVERSION: 'I also found out that you can be in contempt for all the times you chose not to have visitation with her' (ROW-14851) — Melissa's documented visit obstruction (Nov 18/21/24 refusals) reframed as Eli's voluntary non-visitation, weaponized as contempt grounds. 'So this will be a big contempt case' (ROW-14852). Most legally perverse mechanism in arc. COMP-RF04-028"
+        },
+        {
+          "signal_id": "ARC-RF05-001-S026",
+          "batch": "B-030",
+          "message_id": "RF05-B030-001",
+          "date": "2026-03-21",
+          "row_range": "ROW-15097 + ROW-15480",
+          "severity": 1,
+          "sub_category": "repeat_financial_contempt_attorney_delegation",
+          "summary": "'I'm not going to keep asking. I'm just going to file contempt on Monday...I'll let my lawyer handle it...You're just getting yourself further in debt with bad choices but you do you boo' (ROW-15480). Final RF-05 signal in dataset; 'do you boo' 5th instance in legal-threat context; attorney delegation framing"
+        }
+      ]
+    }
+  ],
+
+  "watching_arcs": [],
+  "candidate_arcs": [],
+  "resolved_arcs": [],
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-015",
+      "batch": "B-016",
+      "rfs": ["RF-04", "RF-05"],
+      "rf05_signal": "ARC-RF05-001-S014",
+      "summary": "Jun 2024 'See you in court' cluster — S-014 Sev-2 RF-05 primary component"
+    },
+    {
+      "compound_id": "COMP-RF04-016",
+      "batch": "B-017",
+      "rfs": ["RF-04", "RF-05"],
+      "rf05_signal": "ARC-RF05-001-S016",
+      "summary": "Aug 2024 first sole-custody filing threat — S-016 Sev-2 RF-05 primary component"
+    },
+    {
+      "compound_id": "COMP-RF04-018",
+      "batch": "B-019",
+      "rfs": ["RF-04", "RF-15", "RF-01", "RF-05"],
+      "rf05_signal": "ARC-RF05-001-S018",
+      "summary": "Oct 2024 implicit custody viability claim — S-018 Sev-1 RF-05 primary component"
+    },
+    {
+      "compound_id": "COMP-RF04-020",
+      "batch": "B-024",
+      "rfs": ["RF-04", "RF-05"],
+      "rf05_signal": "ARC-RF05-001-S019",
+      "summary": "May 2025 COSI cluster — S-019 Sev-2 harassment filing threat RF-05 primary component"
+    },
+    {
+      "compound_id": "COMP-RF04-023",
+      "batch": "B-027",
+      "rfs": ["RF-04", "RF-05"],
+      "rf05_signal": "ARC-RF05-001-S020",
+      "summary": "Jul 2025 ER-triggered custody threat — S-020 Sev-2 DARVO-wrapped full-custody threat RF-05 primary component"
+    },
+    {
+      "compound_id": "COMP-RF04-024",
+      "batch": "B-027",
+      "rfs": ["RF-04", "RF-05", "RF-11"],
+      "rf05_signal": "ARC-RF05-001-S021",
+      "summary": "Aug 2025 dance-studio mega-cluster — S-021 Sev-2 confirmed attorney engagement RF-05 primary component"
+    },
+    {
+      "compound_id": "COMP-RF04-025",
+      "batch": "B-028",
+      "rfs": ["RF-04", "RF-05"],
+      "rf05_signal": "ARC-RF05-001-S022",
+      "summary": "Sep 2025 'agreement ready to sign' — S-022 Sev-2 peak legal threat RF-05 primary component"
+    },
+    {
+      "compound_id": "COMP-RF04-028",
+      "batch": "B-029",
+      "rfs": ["RF-04", "RF-05", "RF-02"],
+      "rf05_signal": "ARC-RF05-001-S025",
+      "summary": "Nov 2025 'big contempt case' — S-025 Sev-2 gatekeeping-to-contempt inversion RF-05 primary component"
+    }
+  ],
+
+  "checkpoint_items": [
+    {
+      "item_id": "CP3-RF05-001",
+      "batch": "B-013",
+      "priority": "MEDIUM",
+      "signal": "ARC-RF05-001-S010",
+      "title": "Retainer-free court access structural advantage confirmed",
+      "description": "ROW-4613 (Feb 23, 2024): Melissa discloses employer benefit providing retainer-free legal access. Attorney should verify whether this benefit is confirmed in any other record. If confirmed, it is a structural change in the threat environment elevating all Phase B and C legal threats to higher credibility."
+    },
+    {
+      "item_id": "CP3-RF05-002",
+      "batch": "B-015",
+      "priority": "HIGH",
+      "signal": "ARC-RF05-001-S013",
+      "title": "Rape/sexual assault allegation cluster — ATTORNEY MUST REVIEW",
+      "description": "ROW-5307-5317 (May 14, 2024): Melissa makes explicit criminal accusations — alleging Eli deliberately got Abby drunk, witnessed assault, and is Abby's prior rapist. Framed as safety reservations about Olivia staying with Eli. If this allegation has been repeated to Olivia, the counselor, third parties, or in any formal proceeding, attorney needs to know. Cross-ref: COMP-RF04-014."
+    },
+    {
+      "item_id": "CP3-RF05-003",
+      "batch": "B-017",
+      "priority": "HIGH",
+      "signal": "ARC-RF05-001-S016",
+      "title": "First explicit sole-custody filing threat — ATTORNEY MUST REVIEW",
+      "description": "ROW-6312 (Aug 4, 2024): 'I'm going to show these messages to the lawyer and file for sole custody so they can see how unreliable you are.' Explicit filing intent with specific mechanism and relief sought. Eli named this 'lawfare' on record (ROW-6315 Sent). Later escalations in B-027/B-028 build on this foundation. Cross-ref: COMP-RF04-016."
+    },
+    {
+      "item_id": "CP3-RF05-004",
+      "batch": "B-028",
+      "priority": "HIGH",
+      "signal": "ARC-RF05-001-S022",
+      "title": "Peak legal custody threat — Confirmed attorney consultation + agreement ready to sign",
+      "description": "ROW-14371 (Sep 17, 2025): 'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started.' Most legally specific custody threat in dataset — past-completed consultation, present-ready agreement. Attorney review required: (1) Was a custody filing actually made near Sep 17, 2025? (2) Does the 'agreement ready to sign' describe a formal custody agreement or retainer? (3) How does confirmed consultation interact with the Nov 2025 police report context? Cross-ref: COMP-RF04-025, CP3-RF05-003."
+    }
+  ],
+
+  "cross_rf_references": {
+    "completed_passes": {
+      "RF-01": {
+        "status": "complete",
+        "arc_state_file": "analysis-output/arc-states/RF-01-arc-state.json",
+        "active_arcs": ["ARC-RF01-001"],
+        "relevance": "RF-01 alienation arc co-occurs with RF-05 in COMP-RF04-018 (B-019: custody viability claim embedded in alienation context). RF-01 Olivia-mediated alienation language and RF-05 custody threats are functionally linked: alienation prepares Olivia to support custody change; RF-05 threatens legal enforcement of the outcome."
+      },
+      "RF-02": {
+        "status": "complete",
+        "arc_state_file": "analysis-output/arc-states/RF-02-arc-state-final.json",
+        "active_arcs": ["ARC-RF02-001", "ARC-RF02-002", "ARC-RF02-004", "ARC-RF02-006"],
+        "relevance": "RF-02 gatekeeping and RF-05 legal threats are deeply linked in Phase B/C. The Nov 2025 gatekeeping-to-contempt inversion (S-025/COMP-RF04-028) is the clearest example: RF-02 documented visit obstruction directly weaponized as RF-05 contempt grounds. Phase C visit-refusal cascade (B-028 through B-031) occurs in parallel with the RF-05 arc's peak escalation period."
+      },
+      "RF-04": {
+        "status": "complete",
+        "arc_state_file": "analysis-output/arc-states/RF-04-arc-state-B003.json",
+        "active_arcs": ["ARC-RF04-001", "ARC-RF04-002"],
+        "relevance": "Primary compound source for RF-05. 8 of 26 RF-05 signals occur as primary components of RF-04 compound patterns. The RF-04 arc's emotional manipulation attacks consistently co-occur with RF-05 legal threat deployments at peak escalation nodes. ARC-RF04-001 (contempt/DARVO) and ARC-RF04-002 (child welfare instrumentalization) are the structural complement to ARC-RF05-001."
+      }
+    }
+  },
+
+  "add_004_dataset_gap_note": "Per ADD-004: The pre-2022 iPhone record is an unprocessed dataset gap. Eli characterized the pre-2022 period as 'MORE dangerous' than the 2022-2026 record analyzed here. The RF-05 arc as documented spans the reduced-threat phase. Attorney and GAL should understand that the 26 signals in ARC-RF05-001 represent the floor, not the ceiling, of the full behavioral pattern. This should be flagged in the synthesis deliverable.",
+
+  "session_log": [
+    {
+      "batch": "B-001",
+      "date": "2026-04-24",
+      "action": "RF-05 pass initialized. B-001 calibration batch processed. Zero primary RF-05 flags confirmed. Arc state initialized at zero. CP2 protocol completed — 5 addenda confirmed (ADD-001 through ADD-005)."
+    },
+    {
+      "batch_range": "B-002 through B-031",
+      "date": "2026-04-24",
+      "action": "Full RF-05 pass completed across all 31 batches. ARC-RF05-001 active: 26 signals (Sev-1:14, Sev-2:12, Sev-3:0), 8 compound patterns, 4 CP3 items. Arc state final update reflects complete dataset coverage."
+    }
+  ]
+}

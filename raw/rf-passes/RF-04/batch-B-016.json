@@ -1,0 +1,163 @@
+{
+  "batch_id": "B-016",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2024-06-14", "end": "2024-07-15" },
+  "row_range": { "start": 5625, "end": 6012 },
+  "message_count": 388,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "mixed — cooperative periods (Melissa's father hospitalized, Olivia's birthday/Canada trip planning) punctuated by three RF-04 clusters",
+    "conflict_ratio": "~0.10",
+    "rf04_activity": "moderate — 1 Sev-2, 2 Sev-1 primaries; 'Dumbass' 5th instance confirmed",
+    "notable_context": "Melissa's father hospitalized (ventilator, late June). Olivia's Canada vacation (Jul 12-15 — cooperative, birthday context). Olivia birthday prep (Jul 13 — 10th birthday). Jun 17 work-address contempt cluster (court threats, 'Dumbass,' financial mockery). Jun 28 callback dispute ('asshole' slur). Jun 30 Milo-character attack to dismiss Eli's parenting input. ROW-5734-5735 (Jun 17) Milo bruise relay complaint. ROW-5887 (Jul 2) 'You got her crying' mild child relay."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B016-001",
+      "severity": 2,
+      "date": "2024-06-16",
+      "row_ref": "ROW-5668-5729",
+      "type": "sustained_contempt_cluster + legal_threat_compound + DARVO_adjacent_dismissal + dumbass_5th_instance",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "compound": "COMP-RF04-015",
+      "summary": "Jun 16-17 work-address contempt cluster — Sev-2. Context: Eli brought Olivia home from outing; Melissa disputed whether this was Eli's obligation under the court order. Exchange escalated into a sustained contempt cluster spanning two evenings. ROW-5668: 'Don't be an ass' — contemptuous opening. ROW-5669: 'I can contemot [contempt] you for paying late all those times and for not updating me with your work address and phone number' — simultaneous RF-04 contempt + RF-05 legal threat. ROW-5689: 'Dumbass' — 5th ADD-002 'dumbass' instance; delivered in the middle of the factual dispute about work address notification. ROW-5691: 'You've never showed me you liar' — contemptuous false accusation. ROW-5694: 'So you are in contempt.' ROW-5699: 'See you in court.' ROW-5715: 'It's laughable that you think the law doesn't apply to you.' ROW-5716-5718: 'Has that ever worked in real life? Doesn't work that way but I guess you'll never learn seeing as how you almost got ev[icted]... Two years in a row 👏 / Will he go for three?' — contemptuous financial failure mockery; clapping-hands emoji frames Eli's struggles as entertaining scorecard. ROW-5726: 'I'm sorry if that feels like lashing out to your fragile ego.' ROW-5727: 'Nice try deflecting but that doesn't work on me' — DARVO-adjacent (Eli's question about her wellbeing reframed as deflection). ROW-5728: 'You must be a little sensitive today. Get some rest. Maybe that will help.' Pattern: contemptuous legal threats → ADD-002 slur → false accusation → financial mockery → DARVO-adjacent dismissal ('fragile ego,' 'sensitive'). COMP-RF04-015 (RF-04+RF-05). ARC-RF04-001-S42.",
+      "verbatim_key_messages": [
+        "ROW-5668 (Received): \"Don't be an ass\"",
+        "ROW-5669 (Received): \"I can contemot you for paying late all those times and for not updating me with your work address and phone number\"",
+        "ROW-5689 (Received): \"Dumbass\"",
+        "ROW-5691 (Received): \"You've never showed me you liar\"",
+        "ROW-5699 (Received): \"See you in court\"",
+        "ROW-5715 (Received): \"It's laughable that you think the law doesn't apply to you\"",
+        "ROW-5717 (Received): \"Two years in a row 👏\"",
+        "ROW-5718 (Received): \"Will he go for three?\"",
+        "ROW-5726 (Received): \"I'm sorry if that feels like lashing out to your fragile ego.\"",
+        "ROW-5728 (Received): \"Stating facts does not equal lashing out.  You must be a little sensitive today. Get some rest.  Maybe that will help\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B016-002",
+      "severity": 1,
+      "date": "2024-06-28",
+      "row_ref": "ROW-5796-5808",
+      "type": "contemptuous_slur_cluster + inadequate_father",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "summary": "Jun 28 callback/access slur cluster. Context: Eli asked to pick up Olivia; Melissa says Olivia is at Roger/Kara's swimming. ROW-5796: 'Should've answered the phone last night asshole then we could have made plans if you wanted to see her' — 'asshole' ADD-002 slur + inadequate-father framing ('if you wanted to see her' implies Eli doesn't care about access). Eli explains he didn't know what Melissa's call was about since no message was left (ROW-5797). ROW-5806: 'I don't need your dumb shit right now' — contemptuous dismissal of Eli's explanation. ROW-5808: 'Now shut the fuck up and leave me alone' — contemptuous command with profanity. Structure: 'asshole' + inadequate-father framing → dismissal of explanation as 'dumb shit' → contemptuous command to silence. ARC-RF04-001-S43.",
+      "verbatim_key_messages": [
+        "ROW-5796 (Received): \"Should've answered the phone last night asshole then we could have made plans if you wanted to see her\"",
+        "ROW-5806 (Received): \"I don't need your dumb shit right now\"",
+        "ROW-5808 (Received): \"Now shut the fuck up and leave me alone\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B016-003",
+      "severity": 1,
+      "date": "2024-06-30",
+      "row_ref": "ROW-5862",
+      "type": "contemptuous_parenting_dismissal + attack_through_child_proxy",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Jun 30 Milo-character-attack parenting dismissal. Context: Eli expressed concern about bringing Olivia to visit Melissa's seriously ill father in hospital (ROW-5853: 'Kristi said he is still really rough and thinks might be a bad idea'). Melissa's response: ROW-5862: 'I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong,' — contemptuous dismissal of Eli's parenting input via character attack on Milo (Eli's son from another relationship); uses Milo's alleged moral failings as proof-by-proxy of Eli's parenting incompetence. Structure: Eli raises legitimate parental concern → Melissa attacks Eli's fitness to offer any parenting input by attacking Milo. This is a new mechanism: parenting-dismissal via third-party character attack (Milo as proxy for Eli's fitness). ARC-RF04-001-S44.",
+      "verbatim_key_messages": [
+        "ROW-5853 (Sent): \"Are you taking Olivia up to see your dad?  Kristi said he is still really rough and thinks might be a bad idea\"",
+        "ROW-5862 (Received): \"I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong,\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B016-P01",
+      "row_ref": "ROW-5734-5735",
+      "date": "2024-06-17",
+      "type": "child_safety_blame_relay",
+      "note": "ROW-5734: 'Olivia came home with bruises on her legs from Milo throwing water balloons at her and hitting her really hard' + ROW-5735: 'Make sure you watch him better' — incident blame attributed to Eli's household via Milo's behavior during Eli's parenting time. RF-11 cross-tag (inappropriate child involvement in adult blame). ARC-RF04-002 peripheral (Olivia's physical state relayed as parenting criticism)."
+    },
+    {
+      "flag_id": "RF04-B016-P02",
+      "row_ref": "ROW-5887",
+      "date": "2024-07-02",
+      "type": "child_relay_mild",
+      "note": "ROW-5887: 'You got her crying' — brief child emotional state relay; context unclear from surrounding messages (miscommunication about Becky's schedule). Mild ARC-RF04-002 adjacent; no escalation."
+    },
+    {
+      "flag_id": "RF04-B016-P03",
+      "row_ref": "ROW-5922",
+      "date": "2024-07-06",
+      "type": "cross_rf_legal_threat",
+      "note": "ROW-5922: 'You owe me $300 by midnight or you're in contempt' — RF-05 primary (legal threat re: payment). RF-04 peripheral (intimidation framing around financial obligation). Brief; Eli acknowledges forgetting (ROW-5923)."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S42",
+          "batch": "B-016",
+          "date": "2024-06-16",
+          "row": "ROW-5668-5729",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Jun 16-17 work-address contempt cluster: 'Dumbass' (5th ADD-002) + 'liar' false accusation + 'See you in court' + financial mockery 'Two years in a row 👏 / Will he go for three?' + 'fragile ego' + 'sensitive today' DARVO-adjacent dismissal. COMP-RF04-015 (RF-04+RF-05)."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S43",
+          "batch": "B-016",
+          "date": "2024-06-28",
+          "row": "ROW-5796-5808",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'Should've answered the phone last night asshole then we could have made plans if you wanted to see her' + 'dumb shit' + 'shut the fuck up' — slur cluster; 'if you wanted to see her' inadequate-father framing."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S44",
+          "batch": "B-016",
+          "date": "2024-06-30",
+          "row": "ROW-5862",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong' — contemptuous parenting dismissal via Milo-character attack; new mechanism: proxy character attack to disqualify Eli from offering parenting input."
+        }
+      ],
+      "signal_count_after": 44
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [],
+      "signal_count_after": 12
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-015",
+      "batch": "B-016",
+      "date": "2024-06-16",
+      "row_ref": "ROW-5668-5729",
+      "rf_tags": ["RF-04", "RF-05"],
+      "summary": "Fifteenth compound multi-RF episode. RF-04 (Sev-2: 'Dumbass' 5th ADD-002 + 'liar' false accusation + financial failure mockery + DARVO-adjacent dismissal 'fragile ego'/'sensitive today'; ARC-RF04-001-S42) + RF-05 ('I can contempt you' + 'See you in court' legal threat in context of administrative dispute over work address notification). Sustained two-evening cluster triggered by Eli's bringing Olivia home from dinner."
+    }
+  ],
+
+  "cp3_item": {
+    "id": "CP3-RF04-016",
+    "batch": "B-016",
+    "summary": "ROW-5668-5729 (Jun 16-17 B-016) — Jun 16-17 work-address contempt cluster Sev-2: 'Dumbass' 5th ADD-002 instance (ROW-5689); 'You've never showed me you liar' (ROW-5691); 'Two years in a row 👏 / Will he go for three?' financial failure mockery (ROW-5717-5718); 'fragile ego' / 'sensitive today' DARVO-adjacent dismissal (ROW-5726-5728); COMP-RF04-015 (RF-04+RF-05); ARC-RF04-001-S42. Notable also: ROW-5862 (Jun 30) 'I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong' — Milo-character-attack parenting dismissal; new proxy-attack mechanism."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 3,
+    "severity_1": 2,
+    "severity_2": 1,
+    "peripheral_flags": 3,
+    "compound_patterns": 1,
+    "arc_rf04_001_signals_added": 3,
+    "arc_rf04_002_signals_added": 0
+  }
+}

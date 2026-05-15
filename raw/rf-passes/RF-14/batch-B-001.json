@@ -1,0 +1,68 @@
+{
+  "batch_id": "B-001",
+  "date_range": {
+    "start": "2022-01-11",
+    "end": "2022-10-02"
+  },
+  "row_range": {
+    "start": 2,
+    "end": 366
+  },
+  "message_count": 365,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "pass_context": {
+    "rf14_definition": "RF-14 flags: references to substance use, unsafe environments, neglect indicators, or safety issues involving the children. CRITICAL CALIBRATION: RF-14 must distinguish genuine safety documentation from false allegations. The RF-15 record documents Melissa's systematic false allegation pattern \u2014 many 'received' RF-14 hits are RF-15 Category B/C false allegations (alcoholism, vaping/asthma, harm relay) and must be compound-flagged, not standalone RF-14.",
+    "cross_rf_foundation": {
+      "rf15_critical_cross_ref": "RF-15 complete. ALL of the following are already documented as RF-15 false allegations: (1) Alcoholism accusation (B-030 ROW-15498) \u2014 one beer at dinner distorted to 'drinking problem'; Category B RF-15. (2) Vaping/asthma allegation (B-025) \u2014 partially true but weaponized in cat-allergy gatekeeping scheme; Category B RF-15 + RF-02 compound. (3) Pinching threat (B-025) \u2014 unconfirmed by Eli; Category A RF-15. (4) Bruise welfare check DARVO (B-031) \u2014 Eli's protective behavior reframed as planting abuse suspicion; Category D RF-15. All four appear in the triage RF-14 hit count. RF-14 primary flag = only if there is genuine safety content not already captured by RF-15. For false allegation content: RF-15 primary, RF-14 secondary (peripheral).",
+      "rf09_context": "RF-09 S011: Feb 2026 amplification \u2014 raised voice \u2192 verbal abuse \u2192 traumatized. This is a Level C event rewrite (RF-09 primary). It may generate an RF-14 peripheral flag if the verbal abuse allegation is treated as a safety concern, but RF-09 is primary.",
+      "rf11_context": "RF-11 B-030 bilateral signal: children (ages 10, 6, 1) hiding during Eli/Abby argument Feb 2026. This is a genuine safety observation in BOTH directions \u2014 Eli confirmed he and Abby argued with children present. RF-11 primary, RF-14 secondary.",
+      "known_signal_areas": [
+        "B-030 (Feb/Mar 2026): alcoholism accusation + Feb 2026 argument bilateral \u2014 RF-14 Received (false) + RF-14 Sent (bilateral, mitigated)",
+        "B-025 (Jun 2025): vaping/asthma allegation \u2014 RF-14 Received (false, RF-15 primary)",
+        "B-031 (Apr 2026): bruise welfare check \u2014 NOT RF-14 (this is RF-15 DARVO inversion; bruise = welfare check, not Eli safety concern)",
+        "Triage hot period 2022-10: early safety signals at end of B-001 range \u2014 watch",
+        "43 keyword hits, 72% received: dominant Received direction suggests Melissa is primary safety-allegation source"
+      ]
+    },
+    "direction_aware_note": "Direction-aware analysis is especially important for RF-14. Received RF-14 signals from Melissa are primarily false allegations (RF-15 compound). Sent RF-14 signals from Eli may represent legitimate safety observations. Feb 2026 bilateral (B-030 RF-11) is the clearest genuine bi-directional safety event. Assess all directions with equal rigor but apply appropriate RF-15 compound tagging for known false allegations.",
+    "anticipated_arcs": [
+      "ARC-RF14-001: Safety Allegation Pattern \u2014 Melissa's ongoing false safety narrative (RF-15 compound); distinct from genuine concerns",
+      "ARC-RF14-002: Genuine Safety Documentation \u2014 legitimate bi-directional safety observations"
+    ],
+    "not_this_boundaries": [
+      "Unsubstantiated accusations made to gain leverage \u2192 RF-15 primary, RF-14 peripheral only",
+      "Social drinking without children present \u2192 not flaggable",
+      "Mental health treatment (positive indicator)",
+      "General lifestyle disagreements"
+    ]
+  },
+  "calibration_episode": {
+    "batch_tone": "Cooperative baseline Jan-Oct 2022. Triage hot period 2022-10 (Oct 2022) is at the very end of B-001 range. EP-0093 (Oct 31 2022 Halloween) is the first hostile episode \u2014 may carry early safety-adjacent language. Bulk of B-001 is cooperative; any RF-14 signal would be at the tail end.",
+    "rf14_flag": false,
+    "reason_not_flagged": "Jan-Oct 2022 is the cooperative pre-escalation baseline. Safety allegations concentrated in Phase A later batches and Phase B/C per triage (hot periods 2024-08, 2022-10 at edge, 2023-01 at start of B-003 area). Oct 2022 tail of B-001 may show first precursor safety language \u2014 if found it would be cross-referenced with RF-04 B-007 (first Abby-attack, Apr 2023) and RF-01 alienation arc. Confirming zero primary flags for B-001. CP2 critical for calibrating genuine vs. false safety allegations."
+  },
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jan-Oct 2022 calibration batch. Zero RF-14 primary flags. Cooperative baseline \u2014 no safety allegations or substance concerns in pre-escalation period. Critical CP2 calibration needed: (1) distinguish genuine safety concerns from documented RF-15 false allegations; (2) any genuine substance/safety concerns in Melissa's household; (3) context for 2022-10 triage hot period. Arc ARC-RF14-001 and ARC-RF14-002 initialized at CANDIDATE."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "Safety Allegation arc initialized \u2014 B-001 baseline: no safety allegations in cooperative period; RF-15 cross-reference critical for compound classification",
+      "state": "CANDIDATE"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "Genuine Safety Documentation arc initialized \u2014 B-001 baseline: no genuine safety events documented in cooperative period",
+      "state": "CANDIDATE"
+    }
+  ]
+}

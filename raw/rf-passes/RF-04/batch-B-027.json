@@ -1,0 +1,231 @@
+{
+  "batch_id": "B-027",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2025-07-17", "end": "2025-08-28" },
+  "row_range": { "start": 8014, "end": 14235 },
+  "message_count": 503,
+  "phase": "B",
+  "analysis_date": "2026-04-24",
+
+  "batch_notes": "Three-block data structure: (1) Sequential block ROW-8014–8200+ (Jul 17–Aug 28, mixed Sent/Received); (2) Second parallel block ROW-9917–9964 (Jul 17–19 Received only — ends at ROW-9964 then jumps to 2022 media archive); (3) Third parallel block ROW-13800–14235 (Jul–Aug 2025 Received, covering full batch period). Unique messages ~450 after de-duplication. Note: triage row_range 9917–14235 is partially corrupt (includes media archive section 9965–13799); authoritative date range is Jul 17–Aug 28. Triage conflict_ratio: 0.26 (elevated). Phase B.",
+
+  "batch_summary": {
+    "dominant_tone": "mixed — elevated conflict ratio with four primary RF-04 events; Jul 17-19 cooperative then Jul 19 escalation triggered by Melissa's ER visit; Aug 2-13 largely cooperative; Aug 14 major sustained attack cluster; Aug 17-24 cooperative; Aug 25-28 contempt cluster leading into Labor Day visit refusal",
+    "conflict_ratio": "~0.60+ within Jul 19 and Aug 14 clusters; ~0.26 batch overall (triage)",
+    "rf04_activity": "high — 4 primary flags (2 Sev-2, 2 Sev-1): Jul 19 full-custody threat mega-cluster (COMP-RF04-023); Aug 8-9 'dingus' contempt; Aug 14-15 sustained mega-cluster 'shit father' + 'dumbass' 8th + 'asshole' ADD-002 + custody threats + access withdrawal + Dr advice framing + counselor relay (COMP-RF04-024); Aug 25-26 contempt cluster 'do you boo' 3rd + beer-spend framing + 'laughable'",
+    "notable_context": "Jul 19: Melissa in ER; Eli has Olivia and requests more time; Melissa escalates to full custody threat cluster. Aug 2: contemptuous inadequate-father instruction 'Now look up some articles on what effects a dad barely being around has on kids' (ROW-14021). Aug 8-9: Running late to custody exchange triggers 'dingus' (ROW-8071); next day parenting judgment questions about hair/teeth brushing (ROW-14036-14037). Aug 14: Major sustained attack (~80+ message cluster) triggered by dance studio open house dispute; 'shit father' second dataset instance; 'you are a shit father and she doesn't need to be around that' (ROW-14072); first 'you didn't even want her' framing (ROW-14162); relocation signal 'may move soon' (ROW-14083); Dr advice framing (ROW-14145); counselor relay (ROW-14097); access withdrawal threat 'the weekends don't restart' (ROW-14080); full custody filing threats (ROW-14154-14155). Aug 25-26: dance cost contempt 'less than you pay for beer per week' (ROW-14203) + 'do you boo' third instance (ROW-14207). Aug 26-28: Labor Day visit refusal cascade initiates (primarily RF-02 territory; RF-04 supplementary)."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B027-001",
+      "severity": 2,
+      "date": "2025-07-19",
+      "row_ref": "ROW-9943-9964",
+      "type": "full_custody_threat + inadequate_father + DARVO_denial + martyrdom + legal_weaponization",
+      "arc_ref": "ARC-RF04-001, ARC-RF04-002",
+      "addenda_applied": [],
+      "compound_pattern": "COMP-RF04-023",
+      "summary": "Jul 19 full-custody threat mega-cluster. Context: Melissa was in the ER (medical emergency); Eli had Olivia and wanted to keep her rather than drop her off with Melissa on medication. Melissa escalated into major contempt attack. ROW-9943: 'I mean technically aren't you supposed to have her from Friday to Sunday' — inverts the situation (Eli keeping Olivia more per plan; framed as obligation violation). ROW-9947: 'I parent her every single day except the 2.5 hours every week or two weeks that you decide to spend time with her. I don't say this parenting thing shouldn't fall solely on me even though it shouldn't. I'm happy to parent her and spend time with her. I don't know why you fight so hard to not spend time with her. It's really sad and says a lot about your character and priorities.' — sustained inadequate-father attack; DARVO (Eli was keeping Olivia, not avoiding her). ROW-9948: 'You think you are doing favors by parenting your child.' — contemptuous dismissal of Eli's parenting effort. ROW-9952: 'She deserves so much better' — child welfare deployed as inadequacy indictment. ROW-9957: 'I'll screenshot this and file for full custody because you obviously aren't worried about what is best for her' — legal threat weaponized to end dispute. ROW-9958: 'When the judge sees that her own father can't be bothered to spend time with her on a regular weekend schedule that he hasn't done in 4 years and can't be bothered to watch her for a remainder of a day while her mother tries to get better from a medical illness and would rather drop her off while someone is under the influence of Percocet than to rearrange his schedule for one weekend I think he will see what I'm saying' — 100-word legal threat construction deploying inadequate-father narrative as future court evidence. ROW-9960: 'I'll be contacting my lawyer' — second legal threat. ROW-9963: 'Like the last time you dropped her off right after my surgery while I was still under the influence of anesthesia' — martyrdom comparison invoking prior surgery episode as proof of pattern. ROW-9964: 'There's no threats. It is and has been very clear that you don't put her best interest first. Instead you put whatever is more convenient for you first. With that being your mindset you shouldn't be included in the decision making process with her. Full custody doesn't take away visitation just means you aren't involved with decision making. So no threat. Just stating my plan of action' — DARVO denial: 'There's no threats' immediately after two explicit custody filing threats; reframes full custody demand as non-threatening 'plan of action.' COMP-RF04-023 (RF-04+RF-05). ARC-RF04-001-S64 (DARVO + contempt + inadequate-father); ARC-RF04-002-S20 (child welfare deployed as inadequacy vehicle: 'She deserves so much better' ROW-9952).",
+      "verbatim_key_messages": [
+        "ROW-9947 (Received): \"I parent her every single day except the 2.5 hours every week or two weeks that you decide to spend time with her...I don't know why you fight so hard to not spend time with her. It's really sad and says a lot about your character and priorities.\"",
+        "ROW-9948 (Received): \"You think you are doing favors by parenting your child.\"",
+        "ROW-9952 (Received): \"She deserves so much better\"",
+        "ROW-9957 (Received): \"I'll screenshot this and file for full custody because you obviously aren't worried about what is best for her\"",
+        "ROW-9958 (Received): \"When the judge sees that her own father can't be bothered to spend time with her on a regular weekend schedule that he hasn't done in 4 years...I think he will see what I'm saying\"",
+        "ROW-9960 (Received): \"I'll be contacting my lawyer\"",
+        "ROW-9964 (Received): \"There's no threats. It is and has been very clear that you don't put her best interest first...Full custody doesn't take away visitation just means you aren't involved with decision making. So no threat. Just stating my plan of action\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B027-002",
+      "severity": 1,
+      "date": "2025-08-08",
+      "row_ref": "ROW-8071 + ROW-14035-14037",
+      "type": "ADD-002_adjacent_slur + contemptuous_dismissal + parenting_judgment_attack",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Aug 8-9 contempt cluster. Context: Eli running ~15 minutes late to custody exchange (traffic accident; Eli communicated in advance). ROW-8071 (Received, sequential): 'Should've left earlier. You worked from home dingus' — 'dingus' ADD-002 adjacent contempt slur; second 'dingus' instance (first: B-026 ROW-9857 Jul 12). ROW-14035: 'That's on you bruh' — contemptuous attribution of blame. Next-day parenting judgment follow-up (Aug 9): ROW-14036: 'So you didn't brush her hair?' — ROW-14037: 'Or make sure she brushed her teeth this morning?' — parenting adequacy questions triggered by Olivia's post-custody-exchange appearance; deploys child's grooming as inadequacy evidence. Four-message cluster: contemptuous slur + attribution + next-day parenting judgment pair. ARC-RF04-001-S65.",
+      "verbatim_key_messages": [
+        "ROW-8071 (Received): \"Should've left earlier. You worked from home dingus\"",
+        "ROW-14035 (Received): \"That's on you bruh\"",
+        "ROW-14036 (Received): \"So you didn't brush her hair?\"",
+        "ROW-14037 (Received): \"Or make sure she brushed her teeth this morning?\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B027-003",
+      "severity": 2,
+      "date": "2025-08-14",
+      "row_ref": "ROW-8105 + ROW-14063-14162",
+      "type": "sustained_mega_cluster + ADD-002_slur_dumbass_8th + ADD-002_slur_asshole + shit_father_2nd + access_withdrawal_threat + full_custody_threat + inadequate_father + DARVO + dr_advice_framing + child_counselor_relay + family_displacement_framing + relocation_signal",
+      "arc_ref": "ARC-RF04-001, ARC-RF04-002",
+      "addenda_applied": ["ADD-002"],
+      "compound_pattern": "COMP-RF04-024",
+      "summary": "Aug 14-15 sustained mega-cluster (~80+ messages). Trigger: dispute over dance studio open house attendance (Eli questioning cost and weekend logistics). ROW-8105 (sequential): 'I said she asked it. Can your dumbass not read?' — 8th confirmed 'dumbass' ADD-002 instance; contemptuous intelligence attack in administrative exchange. ROW-14065: 'You obviously don't know how coparenting works because you haven't been a coparent in 5 years' — contemptuous parenting-competence attack. ROW-14072: 'Your lack of parenting and being there for her is causing a lot of sadness to her. Your gaslighting and yelling at her the other night was unacceptable. On one hand I'm happy you don't have her on the weekends cause you are a shit father and she doesn't need to be around that.' — 'shit father' second dataset instance (first: B-017 ROW-6483 Aug 2024); 'she doesn't need to be around that' extends inadequate-father framing to harm-avoidance territory; also includes DARVO gaslight accusation ('your gaslighting'). ROW-14074: 'I don't understand why you fight so hard not to spend time with your daughter. She is amazing and I've love every minute I have with her.' — inadequate-father framing with martyrdom comparison. ROW-14075: 'This is the shit you do.' — contemptuous character pattern attribution. ROW-14080: 'Seeing how disinterested you are I think it's best the weekends don't restart. She's better off with me full time.' — access withdrawal threat: weekends not restarting; full-time sole custody framing. ROW-14083: 'Also I've been looking at houses and may move soon' — relocation signal; cross-reference RF-02 (relocation arc). ROW-14097: 'She's told the counselor before how she's afraid to talk to you about things and how she feels cause you would just yell at her and not listen' — child counselor relay: third-party professional used to validate inadequate-father narrative; Olivia's alleged fear of Eli corroborated by counselor context. ARC-RF04-002-S21. ROW-14112: 'Nice father making her miss out on things for 4 years. What kind of shit is that' — contemptuous sarcastic inadequate-father attack. ROW-14128: 'You're not going to gaslight me' — DARVO accusation during Eli's factual challenge. ROW-14145: 'My Dr actually told me that I shouldn't have her around you but that was after I had already been talking to you about it.' — medical professional invoked to imply Eli is unsuitable parent; third-party credentialing mechanism (parallel to Oct 3 B-019 doctor-directed predation framing ROW-7367). ROW-14146: 'I've been very conflicted on whether I push that you spend more time with her so she doesn't feel left out so she doesn't feel like you started another family and pushed her out' — new 'started another family' family-displacement narrative; frames Alice and Milo's presence as Olivia being displaced from Eli's affection. ROW-14154: 'Just more reasons why I'm filing for full custody' — legal threat within contempt sequence. ROW-14155: 'Already been talking to the lawyer about it' — legal threat escalation. ROW-14162 (Aug 15): 'You didn't even want her and now your upset that I want to take her to something for 2 hours so we can get info and make her happy. I don't know why you insist on being a constant asshole but you do you boo.' — (1) 'You didn't even want her' — extreme new inadequate-father allegation (implies Eli wanted abortion/adoption); (2) 'constant asshole' ADD-002 new context; (3) 'do you boo' second appearance in dataset Aug 14 cluster (first Aug 26; third instance overall). COMP-RF04-024 (RF-04+RF-05+RF-11). ARC-RF04-001-S66; ARC-RF04-002-S21.",
+      "verbatim_key_messages": [
+        "ROW-8105 (Received): \"I said she asked it. Can your dumbass not read?\"",
+        "ROW-14072 (Received): \"Your lack of parenting and being there for her is causing a lot of sadness to her...On one hand I'm happy you don't have her on the weekends cause you are a shit father and she doesn't need to be around that.\"",
+        "ROW-14075 (Received): \"This is the shit you do.\"",
+        "ROW-14080 (Received): \"Seeing how disinterested you are I think it's best the weekends don't restart. She's better off with me full time.\"",
+        "ROW-14083 (Received): \"Also I've been looking at houses and may move soon\"",
+        "ROW-14097 (Received): \"She's told the counselor before how she's afraid to talk to you about things and how she feels cause you would just yell at her and not listen\"",
+        "ROW-14145 (Received): \"My Dr actually told me that I shouldn't have her around you but that was after I had already been talking to you about it.\"",
+        "ROW-14146 (Received): \"I've been very conflicted on whether I push that you spend more time with her so she doesn't feel left out so she doesn't feel like you started another family and pushed her out\"",
+        "ROW-14154 (Received): \"Just more reasons why I'm filing for full custody\"",
+        "ROW-14155 (Received): \"Already been talking to the lawyer about it\"",
+        "ROW-14162 (Received): \"You didn't even want her and now your upset that I want to take her to something for 2 hours...I don't know why you insist on being a constant asshole but you do you boo.\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B027-004",
+      "severity": 1,
+      "date": "2025-08-25",
+      "row_ref": "ROW-14203-14224",
+      "type": "contemptuous_financial_attack + ADD-002_phrase + do_you_boo_3rd + inadequate_father_contempt + parenting_plan_mockery",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Aug 25-26 contempt cluster in dance cost dispute. Context: Eli raises total dance activity cost ($780/season); Melissa dismisses with contempt. ROW-14203: 'That's less than you pay for beer per week but ok.' — contemptuous financial characterization with alcoholism insinuation (unprovoked characterization of Eli as spending heavily on beer). ROW-14207: 'But it's only half of that but you do you boo. She sees who supports her' — 'do you boo' third confirmed dataset instance (B-025 ROW-9655 first; B-027 ROW-14162 second; B-027 ROW-14207 third); child instrumentalized as witness to relative parental support ('She sees who supports her'). ROW-14216: 'Fun doesn't equal love. Showing care and making effort to spend time with her shows love but you've barely spent time with her over the last 5 years' — inadequate-father framing with 5-year absence characterization. ROW-14217: 'When have you shown consistency or stability? It's laughable that you try to tell me what parenting and love is when you can't do any of the things you say it is' — contemptuous dismissal with mockery ('laughable'). ROW-14218: 'It's always hilarious when you try to quote the parenting plan but get it wrong. That really makes me laugh so thanks for that chuckle. I needed that' — contemptuous mockery of Eli's parenting plan invocation; escalates contempt register to ridicule. ROW-14224: 'Give never been consistent and stable for her' — inadequate-father characterization as closing statement. ARC-RF04-001-S67.",
+      "verbatim_key_messages": [
+        "ROW-14203 (Received): \"That's less than you pay for beer per week but ok.\"",
+        "ROW-14207 (Received): \"But it's only half of that but you do you boo. She sees who supports her\"",
+        "ROW-14217 (Received): \"When have you shown consistency or stability? It's laughable that you try to tell me what parenting and love is when you can't do any of the things you say it is\"",
+        "ROW-14218 (Received): \"It's always hilarious when you try to quote the parenting plan but get it wrong. That really makes me laugh so thanks for that chuckle. I needed that\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B027-P01",
+      "row_ref": "ROW-14021",
+      "date": "2025-08-02",
+      "type": "contemptuous_inadequate_father_instruction",
+      "note": "ROW-14021: 'Now look up some articles on what effects a dad barely being around has on kids' — contemptuous instruction to Eli to research his own inadequacy; implies Eli is unaware of harm he causes. Single-message standalone; low-severity; no escalation."
+    },
+    {
+      "flag_id": "RF04-B027-P02",
+      "row_ref": "ROW-14188-14190",
+      "date": "2025-08-21",
+      "type": "passive_aggressive_read_receipt_pressure",
+      "note": "ROW-14188: 'I'll assume you are not picking her up since I haven't heard back from you' — unilateral scheduling assumption without confirmation. ROW-14189: 'You read that message at 3:11' — message read-receipt deployed as accountability pressure. ROW-14190: 'Could've responded when you read it' — contemptuous implied accusation of deliberate non-response. Three-message passive-aggressive read-receipt pressure sequence; peripheral."
+    },
+    {
+      "flag_id": "RF04-B027-P03",
+      "row_ref": "ROW-14232-14233",
+      "date": "2025-08-28",
+      "type": "festival_tradition_framing_visit_refusal_context",
+      "note": "ROW-14232: 'Every year for the last 5 years we have went to these festivals and taken her. It's a tradition' — tradition framing deployed as justification for Labor Day visit refusal; primarily RF-02 territory. ROW-14233: 'That's what she doesn't want to miss out on. It was never about you not seeing her' — DARVO-adjacent: framing visit refusal as child's interest, not Melissa's obstruction. RF-04 peripheral; primary analysis RF-02."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S64",
+          "batch": "B-027",
+          "date": "2025-07-19",
+          "row": "ROW-9943-9964",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Jul 19 full-custody threat cluster during Melissa's ER visit: '2.5 hours every week or two weeks' inadequate-father attack (ROW-9947) + 'You think you are doing favors by parenting your child' (ROW-9948) + full custody filing threat (ROW-9957-9960) + DARVO denial 'There's no threats / just stating my plan of action' (ROW-9964). COMP-RF04-023 (RF-04+RF-05). Context: Eli appropriately keeping Olivia while Melissa recovers on Percocet; framed as refusal to parent."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S65",
+          "batch": "B-027",
+          "date": "2025-08-08",
+          "row": "ROW-8071 + ROW-14035-14037",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'Should've left earlier. You worked from home dingus' (ROW-8071) — 2nd 'dingus' ADD-002 adjacent instance + 'That's on you bruh' (ROW-14035) + next-day parenting judgment 'So you didn't brush her hair? / Or make sure she brushed her teeth this morning?' (ROW-14036-14037). Contempt triggered by Eli being 15 minutes late to exchange."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S66",
+          "batch": "B-027",
+          "date": "2025-08-14",
+          "row": "ROW-8105 + ROW-14063-14162",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Aug 14-15 mega-cluster: 'Can your dumbass not read?' 8th dumbass instance (ROW-8105) + 'you are a shit father' 2nd dataset instance (ROW-14072) + access withdrawal 'the weekends don't restart / better off with me full time' (ROW-14080) + relocation signal 'may move soon' (ROW-14083) + Dr advice framing 'my Dr told me I shouldn't have her around you' (ROW-14145) + 'started another family and pushed her out' family-displacement framing (ROW-14146) + full custody threats (ROW-14154-14155) + 'You didn't even want her' extreme allegation (ROW-14162) + 'constant asshole' ADD-002 (ROW-14162). COMP-RF04-024 (RF-04+RF-05+RF-11)."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S67",
+          "batch": "B-027",
+          "date": "2025-08-26",
+          "row": "ROW-14203-14224",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'less than you pay for beer per week' alcoholism insinuation (ROW-14203) + 'do you boo' 3rd instance (ROW-14207) + 'It's laughable that you try to tell me what parenting is' (ROW-14217) + 'It's always hilarious when you try to quote the parenting plan' contemptuous mockery (ROW-14218). Dance cost contempt cluster."
+        }
+      ],
+      "signal_count_after": 67
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S20",
+          "batch": "B-027",
+          "date": "2025-07-19",
+          "row": "ROW-9952",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "'She deserves so much better' (ROW-9952) — child welfare framing deployed as inadequacy indictment in custody threat context. Part of Jul 19 full-custody cluster; child's deserved wellbeing weaponized to justify custody filing threat. ARC-RF04-001-S64 overlap."
+        },
+        {
+          "signal_ref": "ARC-RF04-002-S21",
+          "batch": "B-027",
+          "date": "2025-08-14",
+          "row": "ROW-14097 + ROW-14146",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Child counselor relay as guilt/inadequacy weapon: ROW-14097 'She's told the counselor before how she's afraid to talk to you about things and how she feels cause you would just yell at her and not listen' — third-party professional validation of child's fear of Eli; positions counselor as corroborating source. ROW-14146 'so she doesn't feel like you started another family and pushed her out' — child's alleged emotional displacement deployed as inadequacy frame. ARC-RF04-001-S66 overlap."
+        }
+      ],
+      "signal_count_after": 21
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-023",
+      "date": "2025-07-19",
+      "row_ref": "ROW-9943-9964",
+      "rf_combination": ["RF-04", "RF-05"],
+      "summary": "RF-04 (Emotional Manipulation) + RF-05 (Intimidation/Threats): Jul 19 escalation during Melissa's ER hospitalization. RF-04 (Sev-2: sustained inadequate-father attack 'fight so hard to not spend time with her' ROW-9947; 'doing favors by parenting your child' ROW-9948; 'She deserves so much better' ROW-9952; child welfare deployed as inadequacy indictment; DARVO: Eli holding Olivia appropriately framed as abandonment; ARC-RF04-001-S64; ARC-RF04-002-S20) + RF-05 ('I'll screenshot this and file for full custody' ROW-9957; 100-word legal threat narrative ROW-9958; 'I'll be contacting my lawyer' ROW-9960; 'There's no threats...just stating my plan of action' DARVO-denial of threats ROW-9964). Context: Melissa in ER, under Percocet, asking Eli to return Olivia; Eli's reasonable reluctance reframed as evidence of inadequate parenting. DARVO structural note: Eli performing more parenting than usual (keeping Olivia while primary caregiver is hospitalized) becomes the basis for inadequate-father accusation.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001-S64", "ARC-RF04-002-S20"]
+    },
+    {
+      "compound_id": "COMP-RF04-024",
+      "date": "2025-08-14",
+      "row_ref": "ROW-8105 + ROW-14063-14162",
+      "rf_combination": ["RF-04", "RF-05", "RF-11"],
+      "summary": "RF-04 (Emotional Manipulation) + RF-05 (Intimidation/Threats) + RF-11 (Inappropriate Child Involvement): Aug 14-15 sustained mega-cluster triggered by dance studio open house dispute. RF-04 (Sev-2: 'you are a shit father' ROW-14072 — 2nd dataset instance; 'dumbass' 8th ADD-002 ROW-8105; 'What kind of shit is that' ROW-14112; access withdrawal 'the weekends don't restart' ROW-14080; contemptuous dismissal cascade ROW-14075/14128/14217-14218; family-displacement framing 'started another family and pushed her out' ROW-14146; 'You didn't even want her' extreme inadequacy allegation ROW-14162; ARC-RF04-001-S66) + RF-05 (full custody threats ROW-14154-14155: 'Just more reasons why I'm filing for full custody / Already been talking to the lawyer'; Dr advice framing ROW-14145: 'My Dr actually told me that I shouldn't have her around you'; access withdrawal threat as intimidation ROW-14080; relocation signal ROW-14083 'may move soon') + RF-11 (child counselor relay ROW-14097: 'She's told the counselor before how she's afraid to talk to you' — Olivia's counseling deployed as third-party validation of Eli's harmful conduct; 'She sees who supports her' ROW-14207 — child positioned as parental support referee; ARC-RF04-002-S21). Structural note: three-RF compound represents Phase B escalation in pattern sophistication — same core inadequate-father mechanism augmented with professional credentialing (counselor, doctor) and legal weaponization within single sustained cluster.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001-S66", "ARC-RF04-002-S21"]
+    }
+  ],
+
+  "cp3_item": {
+    "cp3_id": "CP3-RF04-027",
+    "batch": "B-027",
+    "type": "pattern_escalation",
+    "priority": "high",
+    "summary": "B-027 major Phase B escalation events: (1) Jul 19 COMP-RF04-023: full-custody threat cluster activated by Melissa's medical emergency; DARVO inversion — Eli keeping Olivia appropriately reframed as inadequate parenting; 'She deserves so much better' child-welfare lever; 'There's no threats / just stating my plan of action' DARVO denial; (2) Aug 14 COMP-RF04-024: 'shit father' second dataset instance (first: B-017 Aug 2024); 'You didn't even want her' — new extreme inadequacy allegation; Dr advice framing 'My Dr told me I shouldn't have her around you' — medical professional invoked as implied harm evidence (parallel to Oct 3 B-019 doctor-directed mechanism ROW-7367); child counselor relay 'afraid to talk to you' — counselor used as third-party validator of Melissa's inadequate-father narrative; relocation signal 'may move soon' (cross-ref RF-02 relocation arc); (3) 'do you boo' phrase confirmed at 3 instances: B-025 ROW-9655, B-027 ROW-14162, B-027 ROW-14207; (4) 'dumbass' ADD-002 at 8th confirmed instance; (5) Aug 26 beer-spend framing: unprovoked alcoholism insinuation; (6) Aug 25-28 Labor Day visit refusal initiates (RF-02 primary; Phase B visit-refusal cascade beginning — see RF-01 B-028 anchor event documentation)."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 4,
+    "severity_1": 2,
+    "severity_2": 2,
+    "severity_3": 0,
+    "peripheral_flags": 3,
+    "compound_patterns": 2,
+    "arc_rf04_001_signals_added": 4,
+    "arc_rf04_002_signals_added": 2
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-028",
+    "row_range": {
+      "start": 8197,
+      "end": 14546
+    },
+    "date_range": {
+      "start": "2025-08-28",
+      "end": "2025-10-16"
+    },
+    "message_count": 502,
+    "phase": "B",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 502,
+    "primary_flags": 1,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 501,
+    "flag_rate": "0.20%"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B028-S009",
+      "arc_signal_ref": "ARC-RF08-001-S009",
+      "rows": "ROW-8127-8132",
+      "date": "2025-08-24 to 2025-08-28",
+      "severity": 2,
+      "rf_tags": [
+        "RF-08",
+        "RF-01",
+        "RF-02"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "ACTIVE: 9 signals",
+      "compound_id": "COMP-RF08-009",
+      "summary": "Visit refusal cascade relay \u2014 Olivia positioned as proxy in gatekeeping dispute. Context: Eli's scheduled Labor Day weekend; Olivia refused to attend. Melissa relays Olivia's position in escalating stages: ROW-8127 (Aug 24): 'Olivia said she wants to stay home with me Labor Day weekend because she knows we normally go and do fun things' \u2014 initial relay framing Olivia's preference as information. ROW-8131-8132 (Aug 27): 'I tried talking to her and she is very adamant that she's not going. I told her I would ask about switching and I did / So you need to talk to her before Friday so that she understands she needs to go.' Melissa relays Olivia's refusal while also directing Eli to convince Olivia himself \u2014 positioning Olivia as the decision-maker in a court-ordered parenting schedule dispute. Cross-reference RF-01 ADD-004 (RF01-B028-F001). Cross-reference RF-02 ARC-RF02-006 (visit refusal cascade / relocation context).",
+      "exact_quotes": [
+        "ROW-8127 (Received): 'Olivia said she wants to stay home with me Labor Day weekend because she knows we normally go and do fun things'",
+        "ROW-8131 (Received): 'I tried talking to her and she is very adamant that she\\'s not going. I told her I would ask about switching and I did'",
+        "ROW-8132 (Received): 'So you need to talk to her before Friday so that she understands she needs to go'"
+      ],
+      "rf08_mechanism": "Visit refusal relay: Olivia's stated preference relayed to justify non-compliance with court-ordered parenting schedule. Olivia positioned as the decision-maker (Eli must 'convince' her to comply with the parenting plan). Combines relay mechanism with gatekeeping."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-009"
+    ],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 ACTIVE: 9 signals. Phase B/C transition batch. S009 introduces the visit-refusal-relay sub-pattern \u2014 Olivia used as proxy to justify gatekeeping. Continues through B-029+ (Nov 2025 visit refusals)."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-009",
+      "rf_passes": [
+        "RF-08",
+        "RF-01",
+        "RF-02"
+      ],
+      "rf01_ref": "RF01-B028-F001",
+      "rf02_note": "ARC-RF02-001 (required-intermediary) + visit refusal cascade",
+      "description": "Visit refusal cascade relay: RF-08 (Olivia positioned as decision-maker and proxy in gatekeeping dispute), RF-01 ADD-004 (child relay in parental alienation context), RF-02 (gatekeeping through child-preference framing \u2014 Olivia's stated preference used to justify non-compliance with court-ordered parenting plan). Triple compound."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase B/C. Aug-Oct 2025. S009 begins the visit-refusal-relay pattern that escalates through Phase C.",
+    "rf08_assessment": "One Sev-2 primary flag. The visit refusal cascade uses the relay mechanism in a gatekeeping context: Olivia's stated preference is the justification for non-compliance with the parenting plan, and Eli is redirected to 'convince' Olivia \u2014 positioning the child as the authority over court-ordered access.",
+    "cross_rf_context": "Triple compound (RF-08 + RF-01 + RF-02). The visit refusal cascade is the Phase C dominant pattern; RF-08 contributes the triangulation mechanism by which Olivia's stated preferences are used to frame the refusal as child-driven rather than parent-facilitated."
+  }
+}

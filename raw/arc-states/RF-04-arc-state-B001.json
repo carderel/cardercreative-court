@@ -1,0 +1,141 @@
+{
+  "arc_state_metadata": {
+    "rf_pass": "RF-04",
+    "last_updated_batch": "B-002",
+    "last_updated_timestamp": "2026-04-23",
+    "total_active_arcs": 1,
+    "total_watching_arcs": 1,
+    "total_candidate_arcs": 0,
+    "total_resolved_arcs": 0,
+    "total_compound_patterns": 1
+  },
+
+  "active_arcs": [
+    {
+      "arc_id": "ARC-RF04-001",
+      "arc_name": "DARVO and Contempt Response Pattern",
+      "status": "active",
+      "primary_rf": "RF-04",
+      "promoted_to_watching_batch": "B-001",
+      "promoted_to_watching_reason": "Two signals in calibration batch: Aug 28 DARVO pivot on church etiquette discussion; Oct 1 contemptuous humiliation ('Are you stupid?' + brother cognitive comparison). Both show same structural pattern: Eli's legitimate communication met with contemptuous counter-attack rather than engagement.",
+      "promoted_to_active_batch": "B-002",
+      "promoted_to_active_reason": "Halloween cluster (ROW-619-659, Oct 31) is 3rd signal and first Sev 2 instance — sustained 6+ hour campaign deploying full DARVO sequence, sustained guilt, contemptuous attacks, child-emotions weaponized, martyrdom positioning. Pattern confirmed as structural and recurring (ADD-001). Threshold met: 3 signals + escalation to Sev 2 sustained campaign.",
+      "signal_count": 5,
+      "last_signal_batch": "B-002",
+      "last_signal_date": "2022-11-02",
+      "first_signal_date": "2022-08-28",
+      "decay_countdown": null,
+      "signals": [
+        {
+          "signal_ref": "RF04-B001-S001",
+          "batch": "B-001",
+          "date": "2022-08-28",
+          "row": "ROW-50-61",
+          "severity": 1,
+          "calibration_status": "calibrated",
+          "summary": "DARVO pivot on church etiquette discussion. Eli raises co-parenting concern → Melissa attacks Eli's own church conduct ('text me while church is going on / sit and draw') → 'Check your own etiquette' reverses the frame. Partial DARVO (ADD-001 partial = Sev 1)."
+        },
+        {
+          "signal_ref": "RF04-B001-S002",
+          "batch": "B-001",
+          "date": "2022-10-01",
+          "row": "ROW-334-336",
+          "severity": 1,
+          "calibration_status": "calibrated",
+          "summary": "Contemptuous humiliation following Eli's scheduling error: 'Are you stupid?' + brother cognitive comparison. ADD-002 applied: brother reference was general intelligence insult, not targeted trauma weaponization. Disproportionate contempt attack."
+        },
+        {
+          "signal_ref": "RF04-B002-S001",
+          "batch": "B-002",
+          "date": "2022-10-07",
+          "row": "ROW-414-416",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Contemptuous parenting attack with child-complaint relay and DARVO pivot. 'Half ass paying attention to her' (contempt, ADD-002) + Olivia's noise complaint relayed as ammunition (ADD-003 embedded) + pivot to required-intermediary accusation (ROW-416). Partial DARVO."
+        },
+        {
+          "signal_ref": "RF04-B002-S002",
+          "batch": "B-002",
+          "date": "2022-10-31",
+          "row": "ROW-619-659",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Halloween cluster — sustained multi-tactic campaign (6+ hours). Full DARVO (ADD-001 Sev 2) + sustained guilt + contempt ('house bitch and taxi'; 'pathetic'; 'I don't know how you live with yourself') + child-emotions weaponized + martyrdom positioning + Abby-as-obstacle framework introduced. ACTIVE promotion event."
+        },
+        {
+          "signal_ref": "RF04-B002-S003",
+          "batch": "B-002",
+          "date": "2022-11-02",
+          "row": "ROW-681",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Post-Halloween standalone guilt message: 'You know that buying her things doesn't substitute spending time with her right?' Continued inadequacy framing one day after Halloween campaign."
+        }
+      ],
+      "pattern_tags": ["DARVO_full", "DARVO_partial", "contempt", "humiliation_attack", "reframing_requests_as_attacks", "disproportionate_response", "sustained_guilt_campaign", "future_regret_framing", "martyrdom_positioning", "abby_as_obstacle_introduced"],
+      "abby_framework_note": "Abby-as-obstacle narrative first deployed as major RF-04 lever Oct 31 (B-002). Track recurrence across subsequent batches — this framework likely intensifies as the relationship becomes established."
+    }
+  ],
+
+  "watching_arcs": [
+    {
+      "arc_id": "ARC-RF04-002",
+      "arc_name": "Child-Mediated Guilt and Emotional Leverage",
+      "status": "watching",
+      "primary_rf": "RF-04",
+      "first_signal_batch": "B-001",
+      "first_signal_date": "2022-10-02",
+      "promoted_to_watching_batch": "B-002",
+      "promoted_to_watching_reason": "Second signal ROW-545 (Oct 23): 'She said you were kissing her way too much on Friday' — child complaint relayed without protective framing. Two signals across two separate episodes confirm the mechanism is not isolated. CANDIDATE → WATCHING.",
+      "signal_count": 2,
+      "last_signal_batch": "B-002",
+      "last_signal_date": "2022-10-23",
+      "decay_countdown": null,
+      "signals": [
+        {
+          "signal_ref": "RF04-B001-S004",
+          "batch": "B-001",
+          "date": "2022-10-02",
+          "row": "ROW-361-363",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Savage Love car relay: Melissa sang 'did somebody break your heart?' to Olivia; Olivia said 'yeah. My dad when he left me'; Melissa immediately relayed this to Eli. Child's expressed grief about abandonment transmitted as guilt delivery. Sev 2 (abandonment framing, emotional weight). Text-record sufficiency confirmed (ADD-003)."
+        },
+        {
+          "signal_ref": "RF04-B002-S004",
+          "batch": "B-002",
+          "date": "2022-10-23",
+          "row": "ROW-545",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Kiss complaint relay: 'She said you were kissing her way too much on Friday.' Child behavioral complaint relayed without protective framing. Embedded adequacy judgment (Eli is overbearing). Sev 1 (brief relay, no added pressure framing, lighter emotional weight than Savage Love)."
+        }
+      ],
+      "promotion_threshold": "ACTIVE requires 3rd signal OR a relay that involves extended pressure framing ('she cried,' 'she's devastated,' 'she's begging you') per ADD-003. Watch for relay pattern in subsequent batches.",
+      "pattern_tags": ["child_as_guilt_vector", "child_emotions_weaponized", "child_complaint_relay", "abandonment_guilt_delivery", "inadequacy_framing"],
+      "rf01_crossref_note": "This arc overlaps structurally with ARC-RF01-001 (abandonment narrative). The RF-04 arc tracks the guilt-delivery mechanism to Eli; the RF-01 arc tracks the narrative-building to/through Olivia. Both can be active simultaneously. Halloween cluster ROW-656/659 ('Your daughter is begging you') noted as cross-signal element but subsumed under ARC-RF04-001 primary classification.",
+      "cross_signal_note": "Halloween cluster (ROW-619-659) contains child-emotions-weaponized elements (ROW-656, 659) that overlap with this arc's mechanism. These are credited to ARC-RF04-001 as the primary arc for that episode given DARVO/contempt dominance. ARC-RF04-002 credit accrues from the distinct relay episodes (ROW-545 etc.) rather than from compound-campaign episodes."
+    }
+  ],
+
+  "resolved_arcs": [],
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-001",
+      "label": "Halloween 2022 Multi-RF Campaign",
+      "batch_detected": "B-002",
+      "date": "2022-10-31",
+      "rows": "ROW-619-659",
+      "rfs_active": ["RF-04", "RF-01", "RF-05", "RF-09"],
+      "description": "First instance of simultaneous multi-RF activation in one episode. RF-04 (primary, Sev 2 — DARVO/guilt/contempt/child-weaponized) + RF-01 (inadequate-father/Abby-prioritization narrative, Sev 2 peripheral) + RF-05 (contemptuous/aggressive language, Sev 1 peripheral) + RF-09 (reality distortion/logic-trap, Sev 1 peripheral). The Abby-as-obstacle framework introduced here serves both RF-04 (guilt delivery) and RF-01 (alienating narrative) simultaneously."
+    }
+  ],
+
+  "calibration_addenda_active": ["RF04-ADD-001", "RF04-ADD-002", "RF04-ADD-003", "RF04-ADD-004", "RF04-ADD-005"],
+
+  "cross_rf_arc_notes": {
+    "RF-01": "ARC-RF01-001 ACTIVE (27 signals, all 31 batches complete). Structural overlap with ARC-RF04-002: the same child-relay mechanism serves BOTH RF-01 (inadequate-father narrative delivery) and RF-04 (guilt delivery to Eli). Each RF pass tracks its distinct aspect. Halloween cluster reinforces ARC-RF01-001 with Abby/Milo prioritization sub-arc.",
+    "RF-02": "ARC-RF02-001 ACTIVE (required-intermediary arc). ROW-416 (B-002) is a peripheral RF-02 signal — Eli coordinating with Olivia directly framed as a violation. Structural adjacency: RF-04 emotional campaigns frequently co-occur with gatekeeping enforcement context."
+  }
+}

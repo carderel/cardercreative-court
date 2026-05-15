@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-006",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2023-02-22",
+    "end": "2023-04-03"
+  },
+  "row_range": {
+    "start": 1840,
+    "end": 2228
+  },
+  "message_count": 514,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Feb\u2013Apr 2023: child support reference in context of co-parenting logistics (RF-04 analysis). No RF-11 primary signals."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

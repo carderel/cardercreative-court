@@ -1,0 +1,59 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-018",
+    "row_range": { "start": 6557, "end": 7055 },
+    "date_range": { "start": "2024-08-06", "end": "2024-09-08" },
+    "message_count": 499,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 499,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 498,
+    "flag_rate": "0.2%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B018-001",
+      "row_range": "ROW-7047",
+      "timestamp": "2024-09-08",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-7047 (Received): 'So... you're in contempt for that'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Contempt threat re: daycare payment obligation — thirteenth instance in arc. ADD-002: Sev-1 (recurring contempt category, paper tiger trajectory, no new sub-category). RF-04 pass (RF04-B018-P05) explicitly designated this as RF-05 primary. The 'So...' opening with the ellipsis conveys contemptuous matter-of-fact framing — presenting the contempt finding as obvious and foregone rather than as a warning. Context: daycare payment non-compliance. Pattern note: B-018 follows immediately after the B-017 sole-custody filing threat (Aug 4-5) — the return to financial contempt threats within weeks of the custody escalation confirms that both financial-compliance and custody-elimination threats coexist in the arc.",
+      "peripheral_flags": [],
+      "context_notes": "RF04-B018-P05 noted ROW-7051-7055 as an adjacent cluster: 'why didn't you think to invite Olivia?' + 'You guys went to a festival and the movies. Why was there not a thought about your daughter?' — inadequate-father questioning deployed around the contempt threat. B-018 is predominantly cooperative (Olivia's staph recovery, school prep, lemonade stand) punctuated by the Sep 5-6 bike incident (RF-04 primary: 'dumbass' 6th instance, 4th pregnancy weaponization) — no additional RF-05 content in those clusters.",
+      "pattern_tags": ["contempt_threat_recurring", "daycare_payment_contempt"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'So... you're in contempt for that' (ROW-7047)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. B-018 adds S-017: routine contempt threat (daycare payment). No new sub-categories. Arc continues at maintenance level following B-017's major Sev-2 escalation."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-018 (Aug-Sep 2024): Low-signal RF-05 batch. Single contempt threat (daycare). Following the major B-017 sole-custody escalation, the arc returns to Sev-1 maintenance level. The ROW-6819 coaching admission in this batch (RF-04 primary) is significant for RF-01 cross-reference but does not affect RF-05 analysis.",
+    "cross_rf_context": "RF-04 B-018: Two primaries — Aug 20-21 inadequate-father cluster (ROW-6783-6831, coaching admission ROW-6819) + Sep 5-6 bike incident ('dumbass' 6th, 4th pregnancy weaponization ROW-6971/6976). No RF-04 compound in B-018. RF-05 is peripheral aggressive-tone only in those clusters."
+  }
+}

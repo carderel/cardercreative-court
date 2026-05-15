@@ -1,0 +1,38 @@
+{
+  "batch_id": "B-021",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2024-12-17",
+    "end": "2025-01-08"
+  },
+  "row_range": {
+    "start": 7626,
+    "end": 8052
+  },
+  "message_count": 518,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "ACTIVE",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 12,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "hostile_episodes": 0,
+    "note": "Zero hostile episodes Dec 2024-Jan 2025. Transitional period before Phase B escalation cluster."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

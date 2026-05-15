@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-007",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2023-04-03",
+    "end": "2023-06-02"
+  },
+  "row_range": {
+    "start": 2027,
+    "end": 2393
+  },
+  "message_count": 502,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "CANDIDATE",
+    "ARC-RF15-002": "CANDIDATE"
+  },
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B007-001",
+      "date": "2023-04-22",
+      "row_ref": "ROW-2373-2374",
+      "severity": 2,
+      "rf15_category": "C",
+      "direction": "received",
+      "summary": "First explicit false allegation cluster. Apr 22 2023. ROW-2373: 'And Abby doesn't need to tell her that she can't have a treat if she tells me what's going on. That bitch can shut her fucking whore mouth' \u2014 sexual character slur against Abby + false suppression allegation (Abby told Olivia not to share with Melissa). ROW-2374: 'You both shouldn't be telling her not to tell me stuff. That's shady.' Category C (incest-framing character attack against Abby/Eli unit) + PROJ-003 candidate (Melissa accuses Eli/Abby of coaching suppression while coaching admission ROW-6819 is in record). ARC-RF15-001 WATCHING confirmed.",
+      "exact_quote": "ROW-2373: 'That bitch can shut her fucking whore mouth' | ROW-2374: 'You both shouldn't be telling her not to tell me stuff'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 2,
+      "compound_patterns": [
+        "RF-04+RF-15",
+        "RF-08+RF-15"
+      ],
+      "cross_rf_note": "RF-04 B-007 RF04-B007-002 (Sev-2) is the primary RF-04 flag for this cluster. RF-15 primary promoted from RF-04 compound. Context: Eli left Olivia briefly in car; Melissa claims Abby coached Olivia's reporting.",
+      "projection_pair_id": "PROJ-003_candidate"
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

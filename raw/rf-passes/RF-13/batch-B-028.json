@@ -1,0 +1,75 @@
+{
+  "batch_id": "B-028",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2025-08-28",
+    "end": "2025-10-16"
+  },
+  "row_range": {
+    "start": 10431,
+    "end": 10784
+  },
+  "message_count": 502,
+  "phase": "B",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "ACTIVE",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 17,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 4,
+    "note": "Phase B closing: EP-1189 Aug 28 (24 msgs, FLOOD) + EP-1190 Aug 28 (71 msgs, FLOOD) + EP-1196 Sep 3 (11 msgs) + EP-1234 Oct 7 (23 msgs, FLOOD). 129 hostile msgs. RF-05 S-022 PEAK in B-028 window (Sep 2025 'agreement ready to sign'). Phase B highest legal-threat density. ADD-002 active."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B028-001",
+      "episode_cluster": [
+        "EP-1189",
+        "EP-1190",
+        "EP-1196",
+        "EP-1234"
+      ],
+      "dates": "2025-08-28 through 2025-10-07",
+      "total_messages": 129,
+      "phase": "B",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "sustained Phase B closing \u2014 4 hostile episodes; RF-05 peak in same window",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "AI-guided measured responses (ADD-002)",
+        "received_direction": "4 hostile episodes; two on same day (Aug 28); RF-05 legal peak adjacent",
+        "net_escalation": "elevated Sev-2 (ADD-002 elevated weight; legal peak co-occurrence)",
+        "de_escalation_resistance": "AI-guided baseline: Melissa initiates 4 hostile episodes over AI-guided measured communication"
+      },
+      "cycle_classification": "CYC-004 legal-ceiling PEAK (RF-05 S-022 Sep 2025) + Phase B hostile closing",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 18,
+      "cross_rf_note": "RF-05 S-022 (Sep 2025 PEAK: 'agreement ready to sign') in this batch window. RF-07 S-003 context (May 2025 flooding) and S-004 (Aug 2025 flooding candidate) both documented in Phase B. Phase B is highest cross-RF compound density."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Phase B close: hostile episodes continue through Oct 2025 despite AI-guided communication and legal-peak pressure.",
+      "state": "ACTIVE"
+    }
+  ]
+}

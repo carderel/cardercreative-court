@@ -1,0 +1,75 @@
+{
+  "batch_id": "B-016",
+  "date_range": {
+    "start": "2024-06-14",
+    "end": "2024-07-15",
+    "note": "date-filtered batch"
+  },
+  "message_count": 480,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "calibration_addenda_active": [
+    "RF03-ADD-001",
+    "RF03-ADD-002",
+    "RF03-ADD-003",
+    "RF03-ADD-004",
+    "RF03-ADD-005",
+    "RF03-ADD-006",
+    "RF03-ADD-007"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-001: SPP transport misrepresentation Jun 17 2024 (ROW-5675). Melissa misrepresents court order to shift transport obligation to Eli. ARC-RF03-001 Signal 1."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-001",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF03-001",
+      "arc_signal": 1,
+      "date": "2024-06-17",
+      "orig_rows": [
+        "5675",
+        "5726",
+        "5743"
+      ],
+      "messages": [
+        {
+          "orig_row": "5675",
+          "direction": "Received",
+          "text": "And once she comes over to your house on weekends it's up to you to bring her home per court order"
+        },
+        {
+          "orig_row": "5726",
+          "direction": "Received",
+          "text": "Im not lashing out. You were acting like a baby cause you had to bring her home. You then stated things that were untrue so I had to school you on it"
+        },
+        {
+          "orig_row": "5743",
+          "direction": "Received",
+          "text": "So you will pick her up 1:15 and take her to the movie. And then you will bring her home to my house when you are done, sometime before 9pm"
+        }
+      ],
+      "classification": "RF-03 primary Sev-1 \u2014 Melissa misrepresents the SPP to shift transport obligations to Eli: 'it's up to you to bring her home per court order' (ROW-5675). Eli challenged this; Melissa doubled down and mocked him for objecting (ROW-5726: 'acting like a baby cause you had to bring her home'). ROW-5743 further unilaterally directs Eli to bring Olivia home after the movie. Per ADD-004: this is the documented pattern of Melissa imposing conditions that transfer her court-required transport obligations. ARC-RF03-001 Signal 1.",
+      "addendum_applied": "ADD-004 (SPP transport offloading \u2014 Melissa unilaterally shifts court-ordered transport obligation)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF03-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 1,
+      "event": "No new signals in B-016. CANDIDATE state holds."
+    },
+    {
+      "arc": "ARC-RF03-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0,
+      "event": "No Activity Enrollment Obstruction signals."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-016",
+    "row_range": { "start": 5625, "end": 6012 },
+    "date_range": { "start": "2024-06-14", "end": "2024-07-15" },
+    "message_count": 388,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 388,
+    "primary_flags": 2,
+    "primary_severity_distribution": { "1": 1, "2": 1, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 386,
+    "flag_rate": "0.5%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B016-001",
+      "row_range": "ROW-5668 through ROW-5729",
+      "timestamp": "2024-06-16",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-5669 (Received): 'I can contemot you for paying late all those times and for not updating me with your work address and phone number' | ROW-5689 (Received): 'Dumbass' | ROW-5694 (Received): 'So you are in contempt.' | ROW-5699 (Received): 'See you in court' | ROW-5715 (Received): 'It's laughable that you think the law doesn't apply to you' | ROW-5717 (Received): 'Two years in a row 👏' | ROW-5718 (Received): 'Will he go for three?'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST EXPLICIT COURT-CONFRONTATION PHRASE. ADD-002 temporal rule: first instance of 'See you in court' direct court-challenge framing = Sev-2. Context: Jun 16-17 work-address contempt cluster (COMP-RF04-015: RF-04+RF-05 per RF-04 pass). Trigger: Eli brought Olivia home from dinner; Melissa disputed whether this was Eli's obligation. Cluster spans two evenings and includes three distinct legal-threat elements: (1) ROW-5669 'I can contempt you for paying late all those times and for not updating me with your work address and phone number' — dual-count contempt threat invoking prior payment history AND administrative non-compliance simultaneously; (2) ROW-5694 'So you are in contempt' — unilateral contempt declaration; (3) ROW-5699 'See you in court' — direct court-confrontation phrase; FIRST instance of this specific formulation in the dataset. Prior legal threats used future-tense filing language ('I will file contempt,' 'I'm filing contempt'); this phrase moves from filing intent to court-confrontation direct challenge. Qualitative distinction: 'See you in court' presupposes filed proceedings and invites the confrontation rather than warning of it. The phrase is also embedded in a cluster that includes financial mockery ('Two years in a row 👏 / Will he go for three?' — contemptuous eviction scorecard at ROW-5717-5718) and ADD-002 slur deployment (ROW-5689 'Dumbass' 5th instance). ADD-002: per temporal calibration, this is not the first contempt threat (that was B-003) — severity is Sev-2 for the new sub-category ('See you in court' court-confrontation framing) rather than for contempt filing category itself. DARVO-adjacent close: ROW-5726 'I'm sorry if that feels like lashing out to your fragile ego' + ROW-5728 'You must be a little sensitive today. Get some rest.' — Eli's response to the threat sequence reframed as emotional fragility.",
+      "peripheral_flags": [],
+      "context_notes": "COMP-RF04-015 (RF-04+RF-05) per RF-04 pass. Jun 16-17 cluster spans two evenings; triggered by what appears to be a routine post-dinner logistics dispute. The financial mockery sub-sequence (ROW-5716-5718 eviction reference) demonstrates the contempt-legal threat fusion pattern: legal threat used to demean rather than just enforce. ROW-5722 context from B-016 RF-04 analysis: the cluster includes 'Dumbass' (5th ADD-002 instance), false accusation ('liar' ROW-5691), and DARVO-adjacent dismissal. Jun 28 ROW-5796 cluster ('asshole') is RF-04 primary, not RF-05.",
+      "pattern_tags": ["see_you_in_court", "first_court_confrontation_phrase", "dual_count_contempt_threat", "financial_mockery_legal_fusion", "COMP_RF04_015"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'See you in court' (ROW-5699); 'I can contemot you for paying late all those times and for not updating me with your work address and phone number' (ROW-5669); 'Two years in a row 👏 / Will he go for three?' (ROW-5717-5718)"
+    },
+    {
+      "message_id": "RF05-B016-002",
+      "row_range": "ROW-5922",
+      "timestamp": "2024-07-06",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-5922 (Received): 'You owe me $300 by midnight or you're in contempt'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Midnight payment deadline + contempt threat. Twelfth contempt threat in arc (second with explicit same-day/overnight deadline; first was B-012 ROW-4066 'end of day'). ADD-002: Sev-1 (recurring contempt category, paper tiger trajectory; no new sub-category established). Context: Eli acknowledges forgetting the $300 obligation in the immediate response sequence. The midnight deadline is the most aggressive time constraint in the financial-contempt sub-pattern to date — 'end of day' (B-012) vs. 'by midnight' represents a compressed compliance window. RF-04 pass flagged this as RF-05 primary (RF04-B016-P03).",
+      "peripheral_flags": [],
+      "context_notes": "Eli's response to ROW-5922 acknowledges the obligation. This is separate from the Jun 16-17 cluster (RF05-B016-001) — the two flags in B-016 represent distinct episodes (Jun 16-17 administrative contempt cluster vs. Jul 6 payment deadline). The $300 amount is not identified in surrounding context; likely a financial obligation under the court order.",
+      "pattern_tags": ["midnight_contempt_deadline", "financial_contempt_recurring", "payment_deadline_compressed"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'You owe me $300 by midnight or you're in contempt' (ROW-5922)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF04-015 (RF-04+RF-05 per RF-04 pass)"],
+    "note": "ARC-RF05-001 ACTIVE. B-016 adds S-014 ('See you in court' court-confrontation phrase — new sub-category) and S-015 (midnight contempt deadline). 'See you in court' is the first explicit court-confrontation phrase in the arc; prior language was filing-intent ('I will file,' 'I'm filing'). The arc sub-pattern catalog now includes: wage garnishment threat, contempt filing, jail consequence framing, attorney fees, retainer-free disclosure, explicit imprisonment duration, prior lawyer letter citation, court order compliance, parenting conduct contempt, rape allegation, 'See you in court' direct confrontation, midnight deadline."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-016 (Jun-Jul 2024): Two distinct RF-05 episodes. The 'See you in court' phrasing in the Jun 16-17 cluster represents a qualitative shift in legal-threat language — moving from declaratory filing intent to direct court-confrontation framing. The midnight contempt deadline (Jul 6) confirms the pattern of using compressed deadlines to maximize compliance pressure. RF-04 B-016 had three primary flags (Jun 16-17 cluster Sev-2, Jun 28 asshole Sev-1, Jun 30 Milo proxy Sev-1) confirming elevated conflict in this batch.",
+    "cross_rf_context": "RF-04 B-016: COMP-RF04-015 (Jun 16-17 cluster: RF-04+RF-05 per RF-04 pass). RF-05 compound component confirmed in RF-04 record. Jun 28 'asshole' cluster (RF04-B016-002) is RF-04 primary; Jun 30 'I'm not taking parenting advice from someone who raised a kid that has no morals' (RF04-B016-003) is RF-04 primary — neither constitutes RF-05 primary."
+  }
+}

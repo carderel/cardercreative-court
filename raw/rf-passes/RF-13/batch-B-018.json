@@ -1,0 +1,75 @@
+{
+  "batch_id": "B-018",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2024-08-06",
+    "end": "2024-09-03"
+  },
+  "row_range": {
+    "start": 6300,
+    "end": 6736
+  },
+  "message_count": 527,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "ACTIVE",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 10,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 4,
+    "note": "Aug 2024 continuation: EP-0857 Aug 8 (4 msgs) + EP-0861 Aug 10 (50 msgs, FLOOD) + EP-0871 Aug 19 (36 msgs) + EP-0873 Aug 20 (49 msgs). 139 hostile msgs in 14 days post-EP-0854. Coaching admission ROW-6819 (Aug 19-20) arrives within EP-0871/EP-0873 period."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B018-001",
+      "episode_cluster": [
+        "EP-0857",
+        "EP-0861",
+        "EP-0871",
+        "EP-0873"
+      ],
+      "dates": "2024-08-08 through 2024-08-20",
+      "total_messages": 139,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "sustained post-peak hostile period \u2014 4 episodes in 14 days following EP-0854",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured responses; Eli does not respond in kind after EP-0854",
+        "received_direction": "4 hostile episodes in 14 days following mega-cluster; flooding EP-0861/EP-0871/EP-0873",
+        "net_escalation": "elevated Sev-2 (post-mega-cluster continuation)",
+        "de_escalation_resistance": "Post-mega-cluster: Eli disengages; Melissa initiates 4 more hostile episodes within 16 days"
+      },
+      "cycle_classification": "CYC-001 (Abby content \u2014 ROW-6819 coaching admission in this window); sustained August hostile period",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 11,
+      "cross_rf_note": "ROW-6819 coaching admission arrives Aug 19-20 within EP-0871/EP-0873 cluster. RF-04 flags: ROW-6783-6831, ROW-6953-7023."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Aug 2024: 4 more hostile episodes in 14 days post-EP-0854. No attenuation after mega-cluster.",
+      "state": "ACTIVE"
+    }
+  ]
+}

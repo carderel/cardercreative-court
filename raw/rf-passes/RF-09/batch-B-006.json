@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-006",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2023-02-22",
+    "end": "2023-04-03"
+  },
+  "row_range": {
+    "start": 1840,
+    "end": 2228
+  },
+  "message_count": 514,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 1,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Feb\u2013Apr 2023: S001 arc signaled in prior batch. No new RF-09 primary signals this batch. General accusatory language present but no documentable denial claims meeting Level B-E threshold."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

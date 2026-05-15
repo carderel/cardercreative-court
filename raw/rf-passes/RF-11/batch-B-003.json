@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-003",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2022-11-06",
+    "end": "2022-12-12"
+  },
+  "row_range": {
+    "start": 713,
+    "end": 1092
+  },
+  "message_count": 504,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Nov\u2013Dec 2022: DARVO-adjacent conflict begins (RF-04 active). No RF-11 primary signals \u2014 no parentification indicators, no legal-proceedings disclosure to Olivia, no emotional-confidant language in text record."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

@@ -1,0 +1,167 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-006",
+    "row_range": {"start": 1841, "end": 2229},
+    "date_range": {"start": "2023-02-22", "end": "2023-04-03"},
+    "message_count": 389,
+    "mms_note": "MMS for this date range exist on a separate MMS sheet and are not separately analyzed in this batch; SMS-only analysis.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "timezone_note": "All source timestamps are UTC. Feb 22 – Mar 11: EST (UTC-5). Mar 12 (DST starts): EDT (UTC-4) for remainder of batch.",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. Two primary RF-01 flags (both Sev 2). S001 (Feb 23): 'News flash. You're a horrible father' + written admission that Melissa called Eli 'dumbass' in front of Olivia, justified because 'you're such a shit dad it slipped out.' S002 (Mar 31): Extended late-night escalation — 'I choose to be single because I have a daughter to take care of. Something you wouldn't know about' + 'You're not a good father. You won't even make your home safe for her and you make little effort to see her' + third written false allegation invocation (uncle/niece/met-when-7). Arc escalates: total 8 signals (2 Sev-1, 6 Sev-2). CP3 item generated: ROW-1884 written admission of in-front-of-Olivia disparagement."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 389,
+    "primary_flags": 2,
+    "primary_severity_distribution": {"1": 0, "2": 2, "3": 0},
+    "peripheral_flags_total": 5,
+    "peripheral_rf_distribution": {"RF-02": 1, "RF-04": 2, "RF-15": 2},
+    "no_flag_messages": 387,
+    "flag_rate": "0.5%"
+  },
+
+  "flagged_messages": [
+    {
+      "signal_id": "RF01-B006-S001",
+      "message_id": "ROW-1881",
+      "timestamp": "2023-02-23 01:59:00 UTC",
+      "local_time": "2023-02-22 20:59 EST",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "You take no responsibility in being a parent",
+      "primary_rf": "RF-01",
+      "primary_severity": 2,
+      "primary_reasoning": "Four-message cluster (ROW-1881–1884): triggered by Eli failing to complete Olivia's math homework during his 2.5-hour pickup. Melissa responds with a sustained inadequate-father narrative. ROW-1881 ('You take no responsibility in being a parent'); ROW-1882 ('You waltz in and pick her up for 2.5 hours a week and think that you're a great dad'); ROW-1883 ('News flash. You're a horrible father'); ROW-1884 ('I shouldn't have called you a dumbass in front of her but you're such a shit dad that it slipped out. I can do better on that but...'). Severity 2 per RF01-ADD-002 because: (1) ROW-1883 is the most explicit written 'horrible/bad father' statement in the record to date — a direct, unambiguous character judgment with no qualifying context; (2) ROW-1882 deliberately minimizes Eli's entire parenting contribution to '2.5 hours a week,' framing it as token and insufficient — the quantification of Eli's involvement as negligible is a key coached-narrative element; (3) ROW-1884 is a written admission that Melissa called Eli names in front of Olivia, justified by the 'shit dad' characterization. This is documented evidence of in-child's-presence disparagement of the other parent. The pattern: inadequate-father narrative language activated by a specific parenting failure incident, escalating to explicit character judgment ('horrible father') and self-reported behavior in front of the child.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "ROW-1881-1884: Sustained contemptuous attack on Eli's parenting identity following a homework omission. 'Horrible father' / 'shit dad' / 'waltz in 2.5 hours a week' — multi-message character assault. RF-04 primary framing; RF-01 is the pattern layer.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Sequence context: ROW-1869 (Feb 22, 20:42 EST): Melissa discovers Eli didn't do Olivia's math homework during his pickup and threatens to restrict access ('If you don't ensure her homework is done when you take her she won't go with you. Per the disso[lution order]'). ROW-1871 (Feb 22, 20:44 EST): Eli asks Melissa to 'refrain from calling him names in front of her.' ROW-1874 (Feb 22, 20:55 EST): Melissa responds 'You've called me a cunt.' ROW-1881-1884 (Feb 22, 20:59-21:01 EST): Melissa's escalating response. ROW-1884 key admission: 'I shouldn't have called you a dumbass in front of her but you're such a shit dad that it slipped out.' This is Melissa (a) acknowledging she called Eli names in front of Olivia, and (b) framing it as Eli's fault for being a 'shit dad.' ROW-1889 (Feb 23, 08:30 EST): Melissa later adds: 'And then you blamed her saying she didn't tell you and saying see I told you to her. Then she asked if it was her fault.' — Melissa documents that Eli's response to the homework confrontation caused Olivia to feel she was at fault. This cluster represents the homework conflict as a vehicle for two separate documented harms: Melissa's in-child's-presence name-calling (ROW-1884) and Olivia's guilt response (ROW-1889).",
+      "pattern_tags": ["inadequate_father_narrative", "horrible_father_explicit", "in_front_of_child_disparagement", "2.5_hours_minimization", "homework_incident"],
+      "arc_references": ["ARC-RF01-001"],
+      "image_reference": null,
+      "quote_excerpt": "You take no responsibility in being a parent / You waltz in and pick her up for 2.5 hours a week and think that you're a great dad / News flash. You're a horrible father / such a shit dad that it slipped out",
+      "calibration_status": "confirmed",
+      "journal_crossref_date": "2023-02-23"
+    },
+    {
+      "signal_id": "RF01-B006-S002",
+      "message_id": "ROW-2168",
+      "timestamp": "2023-03-31 01:51:00 UTC",
+      "local_time": "2023-03-30 21:51 EDT",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "You are a dumbass and look like one too. Who's the dumbass that's fucking his niece? A girl he met when she was 7. That's some du[mb shit]",
+      "primary_rf": "RF-01",
+      "primary_severity": 2,
+      "primary_reasoning": "Extended cluster spanning two hours of escalation on the night of Mar 30-31 (ROW-2168–2192). What begins as a scheduling/financial dispute escalates into sustained inadequate-father narrative with explicit character attacks and false allegation invocations. Key RF-01 messages: ROW-2171 ('I choose to be single because I have a daughter to take care of. Something you wouldn't know about') — explicit statement that Eli doesn't know what it means to take care of his daughter; ROW-2187 ('You're not a good Christian. You committed adultery and continue to do so... You're not a good example for her') — positions Eli's relationship as morally corrupting for Olivia; ROW-2189 ('You're not a good father. You won't even make your home safe for her and you make little effort to see her') — direct 'not a good father' statement with two specific justifications (cat allergy/home bar; minimal visitation effort). Severity 2 per RF01-ADD-002 because: (1) ROW-2171 is the starkest written statement of the 'Eli doesn't know what it means to parent his daughter' narrative — contrasting Melissa's self-sacrifice ('I choose to be single') with Eli's ignorance ('something you wouldn't know about'); (2) ROW-2189 'not a good father' directly matches RF01-B006-S001's 'horrible father' pattern — both are explicit character judgments; (3) the 'not a good example for her' framing positions Eli as an active negative influence on Olivia, not merely an absent/insufficient father; (4) the false allegation cluster (ROW-2168, 2174) feeding into the RF-01 narrative: Eli chose an inappropriate relationship over his real family. Note: ROW-2168/2174 are RF-15 primary (false allegations); they are included here because they function as the foundation of Melissa's 'Eli chose wrong/corrupt path' narrative that feeds the RF-01 'chose new family over daughter' framing.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-15",
+          "severity": 2,
+          "note": "ROW-2168: 'Who's the dumbass that's fucking his niece? A girl he met when she was 7.' ROW-2174: 'I have basic understanding of you shouldn't be picking up people from a family reunion.' Third written use of the false allegation that Eli's relationship with Abby began when she was 7-8 and is incestuous. Sev 2: repetition across three separate dates (ROW-939 Nov 23, ROW-1288 Dec 28, ROW-2168 Mar 31) confirms this is a sustained false narrative, not a heat-of-moment comment. Primary candidate for RF-15 pass anchor event.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-15",
+          "severity": 1,
+          "note": "ROW-2187: 'You're not a good Christian. You committed adultery and continue to do so.' Melissa frames Eli's relationship with Abby as adultery (implying it began before divorce finalization) and characterizes it as ongoing moral failure. This feeds into the false narrative that the relationship is both incestuous (RF-15) and constitutes adultery (moral corruption allegation).",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Full escalation sequence: The Mar 30 evening begins with scheduling logistics (ROW-2135-2152: Eli requesting to pick Olivia up, Melissa demanding specifics by 9 PM). Melissa calls Eli 'dumbass' (ROW-2159, 2164). Eli responds with AI-generated comebacks (ROW-2167, 2170, 2172, 2177, 2179), which appears to infuriate Melissa. ROW-2168: Melissa escalates to 'fucking his niece / met when she was 7.' ROW-2171: 'I choose to be single because I have a daughter to take care of. Something you wouldn't know about.' Then ~50-minute pause before ROW-2183-2192 (22:40-23:00 EDT): Melissa returns with a more measured but sustained attack covering finances, religion, parenting quality, and character. Key: ROW-2189 'You're not a good father. You won't even make your home safe for her and you make little effort to see her' — this connects the cat allergy home bar (structural barrier to visits) directly to the 'not a good father' verdict. Melissa's logic: (1) you chose Abby/relationship over making home safe; (2) therefore you deprive Olivia of home visits; (3) this is proof you're not a good father. The structural barrier (cat) and the moral judgment (bad father) are explicitly connected in writing.",
+      "pattern_tags": ["inadequate_father_narrative", "not_a_good_father_explicit", "i_have_a_daughter_to_take_care_of", "you_wouldnt_know_about", "adultery_allegation", "moral_corruption_narrative", "not_good_example", "false_allegation_invocation"],
+      "arc_references": ["ARC-RF01-001"],
+      "image_reference": null,
+      "quote_excerpt": "I choose to be single because I have a daughter to take care of. Something you wouldn't know about / You're not a good father. You won't even make your home safe for her and you make little effort to see her / You're not a good example for her",
+      "calibration_status": "confirmed",
+      "journal_crossref_date": "2023-03-31"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-1841-1844",
+      "reason_noted": "Feb 22: 'The first thing she asked me when I picked her up is if her missing tooth made her look bad and ugly / Then there's her dad making fun of her calling her gummy.' Melissa relays Olivia's self-consciousness about her missing tooth and frames Eli's 'gummy' nickname as the cause/exacerbation. Near-boundary RF-01: Melissa uses Olivia's emotional state (self-consciousness about appearance) as evidence that Eli's behavior was harmful. Eli acknowledges the misstep (ROW-1845-1846). NOT flagged RF-01 primary: isolated teasing incident; Eli apologizes; Melissa concedes she 'hopes she didn't pick up on it.' RF-04 peripheral (contemptuous framing of Eli's parenting). Noted: Melissa's pattern of relaying Olivia's negative emotional responses to Eli's behavior (RF01-ADD-004) is consistent."
+    },
+    {
+      "message_id": "ROW-1889",
+      "reason_noted": "Feb 23: 'And then you blamed her saying she didn't tell you and saying see I told you to her. Then she asked if it was her fault.' Melissa describes Eli saying 'see, I told you' to Olivia during the homework confrontation, causing Olivia to ask if the situation was her fault. Near-boundary RF-01 / RF-08: Olivia is made to feel responsible for an adult communication failure. NOT flagged RF-01 primary: the incident appears to be poor in-the-moment communication by Eli rather than systematic coaching. RF-04 peripheral. Notable: this is a documented instance where Olivia experienced guilt as a result of the conflict between her parents."
+    },
+    {
+      "message_id": "ROW-1935",
+      "reason_noted": "Mar 5: 'You don't get to prioritize everything over Olivia.' In context of child support payment dispute. The 'prioritize everything over Olivia' language is the abandonment/inadequate-father framing applied to financial responsibility. In isolation this is RF-07/RF-04 territory (financial pressure + contempt). NOT flagged RF-01 primary because the context is entirely financial; the phrase does not rise above the general pattern in this specific instance. Pattern watch: 'prioritize everything over Olivia' is consistent with the broader narrative."
+    },
+    {
+      "message_id": "ROW-2171",
+      "reason_noted": "Mar 31: 'I choose to be single because I have a daughter to take care of. Something you wouldn't know about.' Captured as part of RF01-B006-S002 primary flag (ROW-2168 cluster). Noted separately because this specific framing — Melissa's self-sacrifice as single parent vs. Eli's ignorance of what it means to parent Olivia — is the most analytically significant single sentence in B-006 for RF-01. It explicitly states that Eli 'wouldn't know about' taking care of his daughter. If this message (or this sentiment) is communicated to Olivia, it would be a direct coaching of the 'your dad doesn't know what it means to take care of you' narrative."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-1841-1843",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Feb 22: 'The first thing she asked me when I picked her up is if her missing tooth made her look bad and ugly / Then there's her dad making fun of her calling her gummy.' Contemptuous framing of Eli's 'gummy' nickname as harmful to Olivia's self-image. RF-04: exaggerated characterization of teasing as damaging parenting. Eli acknowledges the misstep.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1889",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Feb 23: 'Then she asked if it was her fault.' Melissa documents that Olivia was made to feel responsible for the homework communication failure due to Eli's 'see I told you' comment. RF-04 peripheral: inappropriate blame in child's presence. RF-08 candidate: child involved in adult dispute.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2022",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "note": "Mar 16: 'Then you're taking her to the dentist without Abby since Abby is sick and you said she has a lot of Covid symptoms.' Melissa specifies that Eli must take Olivia to the dentist without Abby as a condition of the appointment. RF-02: Melissa policing who accompanies Eli during Olivia time. The explicit 'without Abby' condition extends Melissa's gatekeeping from Eli's home (cat allergy) to Eli's companions.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2168",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "Mar 31: 'Who's the dumbass that's fucking his niece? A girl he met when she was 7. That's some du[mb shit]' + ROW-2174 'I have basic understanding of you shouldn't be picking up people from a family reunion.' Third written invocation of the uncle/niece/met-at-7 false allegation. Sev 2: three occurrences across separate dates confirm this is a deliberate, sustained false narrative. Primary RF-15 anchor event. Also: ROW-2187 'You committed adultery and continue to do so' — separate false allegation layer (adultery characterization).",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2187",
+      "peripheral_rf": "RF-15",
+      "severity": 1,
+      "note": "Mar 31: 'You're not a good Christian. You committed adultery and continue to do so. You can ask for forgiveness and change that but you ar[en't a good example for her].' Melissa frames Eli's relationship with Abby as ongoing adultery and characterizes Eli as a bad moral example for Olivia. RF-15 peripheral (false moral characterization feeding the incestuous/adulterous false narrative). RF-01 adjacent: 'not a good example for her' positions Eli as an active negative influence on Olivia.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_continuation_note": "ARC-RF01-001 (Abandonment/Blame Attribution Narrative): remains ACTIVE. +2 Sev-2 signals this batch. Total signals: 8 (2 Sev-1, 6 Sev-2). Pattern escalating: two explicit 'horrible father / not a good father' written statements in one batch, triggered by different incidents (homework dispute Feb 23; scheduling/financial argument Mar 31). Written admission of in-front-of-Olivia disparagement (ROW-1884). The narrative is no longer emerging — it is a documented, repeated pattern activated by a wide range of conflict triggers."
+  },
+
+  "batch_narrative_note": "B-006 marks an escalation in the explicitness of the RF-01 pattern. The two primary flags contain the most direct 'bad father' language in the record: 'You're a horrible father' (ROW-1883) and 'You're not a good father' (ROW-2189). Both are triggered by different conflict types — the first by a specific parenting failure (homework), the second by a late-night scheduling/financial argument. This demonstrates that the inadequate-father narrative is not situationally contingent: it activates as a rhetorical weapon across multiple types of conflict. ROW-1884's written admission of calling Eli 'dumbass in front of her' is particularly significant because it documents, in Melissa's own words, that she disparages Eli in Olivia's presence, and that she considers it justified by Eli's parenting failures. The Mar 31 cluster (S002) adds the explicit moral corruption layer: Eli is 'not a good example for her,' 'committed adultery,' 'not a good Christian' — a religious/moral framing of Eli's unfitness as a father-figure. This framing, if communicated to Olivia through church influence (Melissa explicitly uses church as a positive influence she provides), would be a significant coaching mechanism.",
+
+  "cooperative_data_notes": "B-006 has moderate cooperative content interspersed with the conflict periods. Melissa: signs Olivia up for cheerleading with Eli's agreement (ROW-2053-2059); coordinates dentist appointment for Eli to take (ROW-2015); shares illness updates (ROW-2085-2113); involves Eli in birthday party planning including Airbnb and invitations (ROW-2217-2224); shares Olivia's baptism wish (ROW-2114). Eli: takes Olivia to dentist (Mar 16), picks up cake from Melissa's house (Mar 29), agrees to cheerleading and birthday party plans. The cooperative content primarily involves logistics and child activities; the two conflict clusters (Feb 23, Mar 31) are temporally isolated.",
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": [
+      "CP3-RF01-B006-001: ROW-1884 — Written admission of in-front-of-Olivia disparagement. Melissa states: 'I shouldn't have called you a dumbass in front of her but you're such a shit dad that it slipped out.' This is documentary proof of Melissa disparaging Eli in Olivia's presence, with the explicit justification that Eli is a 'shit dad.' Combined with RF01-ADD-002 (coached abandonment narrative confirmed) and the pattern of 'horrible father' / 'not a good father' language across B-002 through B-006, this written admission supports the inference that Olivia is routinely exposed to negative characterizations of her father by her mother. Attorney flag: use ROW-1884 as anchor evidence for in-child's-presence disparagement."
+    ]
+  }
+}

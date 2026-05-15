@@ -1,0 +1,78 @@
+{
+  "batch_id": "B-004",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2022-12-12",
+    "end": "2023-01-17"
+  },
+  "row_range": {
+    "start": 1379,
+    "end": 1461
+  },
+  "message_count": 507,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "WATCHING",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "WATCHING"
+  },
+  "arc_signals_cumulative": 2,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 2,
+    "note": "Christmas hostile cluster: EP-0160 Dec 22 (22 msgs, FLOOD) + EP-0161 Dec 23 (12 msgs, FLOOD). ADD-003 Christmas temporal window confirmed (Dec 22-27). Two consecutive holiday-adjacent hostile episodes. CYC-003 holiday pattern now confirmed across two distinct holiday periods (Halloween, Thanksgiving, Christmas \u2014 all within 8 weeks)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B004-001",
+      "episode_cluster": [
+        "EP-0160",
+        "EP-0161"
+      ],
+      "dates": "2022-12-22 through 2022-12-23",
+      "total_messages": 34,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 1,
+      "escalation_shape": "cluster \u2014 two consecutive days, Christmas Eve period",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured responses",
+        "received_direction": "hostile episodes on Dec 22 and 23; flooding both days",
+        "net_escalation": "moderate Sev-1 (smaller scale than B-003 cluster but temporally significant \u2014 Christmas holiday period)",
+        "de_escalation_resistance": "Between-episode resistance pattern: Eli disengages Dec 22; Melissa re-initiates Dec 23"
+      },
+      "cycle_classification": "CYC-003 \u2014 Christmas temporal window (Dec 22-27). Third holiday window confirmed across 8-week period.",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 3,
+      "cross_rf_note": "Christmas hostile episodes consistent with holiday-trigger pattern. Combined with B-002 (Halloween) and B-003 (Nov cluster) confirms three holiday windows in first 3 months of Tier 1 conflict period."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Christmas cluster adds 3rd hostile episode cluster in 2 months. Trajectory: worsening confirmed.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "Between-episode resistance again: Eli disengages after Dec 22 episode; Melissa re-initiates Dec 23. Pattern: 3 instances of between-episode re-initiation after Eli disengagement.",
+      "state": "WATCHING"
+    }
+  ]
+}

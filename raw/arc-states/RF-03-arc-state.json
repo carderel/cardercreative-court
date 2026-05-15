@@ -1,0 +1,37 @@
+{
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "arc_state_version": "initial",
+  "last_updated": "2026-04-28",
+  "dataset_close": "2026-04-12",
+  "arcs": [
+    {
+      "arc_id": "ARC-RF03-001",
+      "arc_name": "Weaponized Scheduling Pattern",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 cooperative logistics baseline; no weaponized scheduling in pre-escalation period."
+        }
+      ]
+    },
+    {
+      "arc_id": "ARC-RF03-002",
+      "arc_name": "Activity Enrollment Obstruction",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 no activity enrollment conflicts in cooperative baseline."
+        }
+      ]
+    }
+  ]
+}

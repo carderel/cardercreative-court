@@ -1,0 +1,57 @@
+{
+  "batch_id": "B-025",
+  "date_range": {
+    "start": "2025-05-04",
+    "end": "2025-05-29"
+  },
+  "message_count": "~507",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 14,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 2,
+    "note": "May 2025. KNOWN EVENT: Vaping/asthma/pinching allegation cluster (Jun 7-8 = B-026 range). ROW-9660/12945-12964 area. Per ADD-001: RF-15 Category B primary (vaping/asthma weaponized as gatekeeping pretext) + RF-02 compound. RF-14 PERIPHERAL ONLY \u2014 no standalone RF-14 primary flag for this known false allegation. Eli admits to briefly vaping (per CP2, stopped immediately); Melissa deploys as safety justification to stop visits. 0 RF-14 primary flags."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [
+    {
+      "row_ref": "ROW-9660",
+      "date": "2025-05-21",
+      "direction": "Received",
+      "type": "RF-15 Category B primary / RF-14 peripheral",
+      "note": "Part of vaping/asthma scheme. Per ADD-001: RF-15 primary. RF-14 peripheral."
+    },
+    {
+      "row_ref": "ROW-9735-9744",
+      "date": "2025-06-07/08",
+      "direction": "Received",
+      "type": "RF-15 Category A primary / RF-14 peripheral",
+      "note": "Pinching allegation via Olivia relay. Per ADD-001: RF-15 primary. RF-14 peripheral."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "Vaping/asthma and pinching allegations: RF-15 primary per ADD-001. RF-14 peripheral only. No new standalone RF-14-001 signal.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 ACTIVE (6 signals)",
+      "state": "ACTIVE"
+    }
+  ]
+}

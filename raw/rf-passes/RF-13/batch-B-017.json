@@ -1,0 +1,80 @@
+{
+  "batch_id": "B-017",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2024-07-15",
+    "end": "2024-08-05"
+  },
+  "row_range": {
+    "start": 5967,
+    "end": 6299
+  },
+  "message_count": 582,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "WATCHING",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 9,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 1,
+    "note": "EP-0854 Aug 4 2024 (311 msgs, FLOOD) \u2014 LARGEST HOSTILE EPISODE IN DATASET. Sev-3. ARC-RF13-001 ACTIVE. RF-04 (ROW-6279-6524 Sev-2), RF-05 (S-016), RF-07 (flooding). CYC-001/004/005 all active."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B017-001",
+      "episode_id": "EP-0854",
+      "date": "2024-08-04",
+      "message_count": 311,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 3,
+      "escalation_shape": "ramp-to-plateau \u2014 sustained extreme hostile exchange across 311 messages",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "Eli measured throughout; significantly outnumbered",
+        "received_direction": "extreme hostile escalation; 311 msgs; multiple DARVO sequences; legal threats; child welfare allegations",
+        "net_escalation": "extreme Sev-3 (311-msg episode exceeds any prior episode by 3x)",
+        "de_escalation_resistance": "CONFIRMED EXTREME: Eli measured throughout 311 msgs; zero de-escalatory effect on Melissa"
+      },
+      "cycle_classification": "CYC-001 + CYC-004 + CYC-005 compound \u2014 Abby content, legal ceiling (S-016 sole-custody threat), child welfare allegations",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 10,
+      "cross_rf_note": "RF-04: ROW-6210-6216 (Sev-1), ROW-6279-6524 (Sev-2). RF-05: S-016 first sole-custody threat. RF-07: flooding primary. RF-08: pre-coaching-admission context (ROW-6819 arrives B-018)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "EP-0854 (311 msgs Aug 4 2024): worsening trajectory confirmed beyond doubt. ARC-RF13-001 ACTIVE.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF13-002",
+      "event": "EP-0854: role analysis at extreme scale \u2014 Melissa escalator across 311 msgs; Eli de-escalator throughout. Role consistency confirmed at maximum scale.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "311-msg exchange: Eli measured throughout; zero de-escalatory effect. Maximum-scale de-escalation resistance confirmed.",
+      "state": "ACTIVE"
+    }
+  ]
+}

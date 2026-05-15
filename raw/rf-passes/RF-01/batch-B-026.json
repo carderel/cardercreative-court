@@ -1,0 +1,78 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-026",
+    "row_range": { "start": 7832, "end": 7942 },
+    "date_range": { "start": "2025-05-30", "end": "2025-06-29" },
+    "message_count": 111,
+    "timezone_note": "Entirely EDT (UTC-4). RF-02 B-026 sms_secondary_section states ROW-7833-7943; RF-01 starts at ROW-7832 (off-by-one pattern consistent with B-021+). RF-02 reports 481 messages total for this batch — anomalous row convention from B-007+ accounts for discrepancy; actual SMS count is 111.",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Phase B — INF-007 period (Eli holding communication boundaries). Predominantly Eli-sent messages; Received messages sparse. Primary RF-01 signal: June 13 incest-framing cluster in response to Eli's parenting plan boundary enforcement. Notable cross-RF event: ROW-7927 (Jun 27) Abby reportedly called Melissa's mom and apologized for 'lying about her' — RF-09/RF-15 territory."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B026-F001",
+      "arc_signal_ref": "RF01-B026-S001",
+      "row": "ROW-7873-7878",
+      "date": "2025-06-13",
+      "rf_tags": ["RF-01"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-001", "RF01-ADD-005", "RF01-ADD-004"],
+      "arc": "ARC-RF01-001",
+      "summary": "June 13 — Incest-framing cluster triggered by Eli enforcing the parenting plan's 9-month significant-other introduction rule. Context: Eli sent ROW-7872 asserting the parenting plan clause ('new partners aren't to be introduced for nine months... Whether Olivia is asking or not, we're the ones responsible for honoring that structure'). Melissa's response: ROW-7873: 'How was that different than you and Abby besides it being more fucked uo that it's her niece' (ADD-001 — Abby incest attack as deflection from parenting plan issue); ROW-7874: 'And to be clear I'm not asking'; ROW-7875: 'She wants to hang with him and the kids' (Olivia's stated preference weaponized to bypass Eli's parenting plan assertion); ROW-7877: 'You haven't respected that. She wants to meet him and like I said she has already been introduced so there's no introducing. It's more fucked uo to see your dad dating your cousin. That's more confusing. That's my dad and my cousin why are they making out' (ADD-001 + ADD-005 — incest characterization of Eli/Abby; ADD-004 — Olivia's imagined perspective invoked in first-person: 'That's my dad and my cousin why are they making out' is Melissa attributing Olivia's internal reaction to Eli/Abby relationship in Olivia's voice); ROW-7878: 'Like I said I'm not asking for permission. Just letting you know. Have a great night' (dismissive close). Qualitative escalation from prior incest-framing iterations (B-004, B-006, B-016): this is the first use of Olivia's imagined first-person voice to deliver the incest characterization — Melissa attributes to Olivia the perspective that watching her dad date her cousin is actively confusing/inappropriate. Prior instances were Melissa's own characterizations; this instance implicates Olivia as the observer of harm. ADD-005 component: 'it's her niece / her cousin.' Counter-indicator: Eli's response (ROW-7876) is measured and appropriate — re-asserts parenting plan boundary without engaging with incest attack."
+    }
+  ],
+
+  "primary_flag_count": 1,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B026-P001",
+      "row": "ROW-7891",
+      "date": "2025-06-15",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "June 15 — 'I know you don't have anything on your schedule for next year cause you didn't even know what you were doing today' (ROW-7891). ADD-002 adjacent — characterizes Eli as disorganized/unplanned as a parent. Context: Melissa proposing a vacation week and noting Eli gets first dibs for next year; Eli was apparently uncertain about his own schedule for the current day. Single message; peripheral threshold. Not primary because the comment is passing and episodic rather than a categorical attack on parenting capacity."
+    },
+    {
+      "flag_id": "RF01-B026-P002",
+      "row": "ROW-7927",
+      "date": "2025-06-27",
+      "rf_tags": ["RF-09", "RF-15"],
+      "severity": "peripheral",
+      "summary": "June 27 — 'Abby called mom and apologized gif lying about her' (ROW-7927). Cross-RF peripheral. Melissa reports that Abby called Melissa's mother and apologized for 'lying about her.' Ambiguous: 'lying about her' could mean Abby made false allegations about Melissa (which Abby now recants) or Melissa's characterization of Abby's statements as lies. RF-15 (false allegations) territory: if Abby made allegations about Melissa and subsequently retracted them, this is relevant to the RF-15 false-allegation dynamic. RF-09 territory: if Melissa is characterizing legitimate Abby disclosures as 'lying,' this fits a gaslighting/projection pattern. Context insufficient to assess direction. Attorney cross-reference warranted. Not RF-01 primary."
+    }
+  ],
+
+  "peripheral_flag_count": 2,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": "RF01-B026-S001",
+      "signal_count_before": 25,
+      "signal_count_after": 26,
+      "severity": 2,
+      "notes": "B-026 adds 1 Sev-2 signal. Total: 26 signals (2 Sev-1, 24 Sev-2). RF01-B026-S001 (Jun 13): incest-framing cluster in response to parenting plan enforcement; first use of Olivia's imagined first-person voice to deliver incest characterization. Escalation in ADD-004 component noted. Last signal date updated: 2025-02-04 → 2025-06-13."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B026-001",
+      "row": "ROW-7877",
+      "date": "2025-06-13",
+      "summary": "ROW-7877: 'It's more fucked uo to see your dad dating your cousin. That's more confusing. That's my dad and my cousin why are they making out.' First use of Olivia's imagined first-person voice to deliver incest-framing of Eli/Abby relationship — Melissa attributes to Olivia the perspective that watching her dad date her cousin is confusing/inappropriate. Verbatim attorney review item. Note juxtaposition with parenting plan enforcement context: Eli was asserting Melissa's compliance with 9-month partner introduction rule when Melissa deflected with this attack."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "Predominantly cooperative and Eli-sent. Received messages are sparse. Key date clusters: May 30-Jun 1 (routine coordination), Jun 7 (pickup logistics — Eli takes Olivia bike riding), Jun 8-9 (phone coordination), Jun 13 (parenting plan dispute → incest-framing spike), Jun 14-15 (vacation planning — cooperative), Jun 20-27 (summer logistics including pool hotel, Olivia sleepover, soccer game request). Post-Jun-13 returns to cooperative baseline.",
+    "june13_context": "Eli's Jun 13 message (ROW-7872) re-asserts the 9-month parenting plan rule after raising it cooperatively on May 28 (B-025). The escalation in tone between May 28 (cooperative) and Jun 13 (firmer, citing 'I've reviewed the shared parenting plan') suggests Melissa's partner continued to be present with Olivia between those dates. Melissa's deflection to incest-framing is consistent with prior pattern: parenting plan challenges trigger maximum-intensity attacks on Eli/Abby relationship.",
+    "summer_dynamics": "Summer 2025 pattern: Eli increasing contact requests (Jun 20 'can she come over?' Jun 27 soccer game request). Melissa generally cooperative on extended time. Pickup logistics focus on Becky's daycare schedule. No RF-01 signals outside Jun 13 cluster.",
+    "abby_apology_note": "ROW-7927 (Jun 27): 'Abby called mom and apologized gif lying about her' — likely means 'gif = for.' Context insufficient; attorney should investigate what allegations Abby made and whether this represents a real retraction or Melissa's characterization. RF-15/RF-09 cross-reference warranted."
+  }
+}

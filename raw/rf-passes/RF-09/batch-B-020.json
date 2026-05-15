@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-020",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2024-10-19",
+    "end": "2024-12-15"
+  },
+  "row_range": {
+    "start": 7558,
+    "end": 7705
+  },
+  "message_count": 521,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 5,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Oct\u2013Dec 2024: Behavioral silence period \u2014 Melissa reduced communication volume significantly after Oct 2024 conflict peak. No RF-09 primary signals. Very low message count (148 per RF-04) confirms the silence window."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

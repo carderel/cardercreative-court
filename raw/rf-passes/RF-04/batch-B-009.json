@@ -1,0 +1,280 @@
+{
+  "batch_id": "B-009",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "analysis_date": "2026-04-23",
+
+  "batch_metadata": {
+    "row_range": { "start": 2959, "end": 3342 },
+    "message_count": 384,
+    "date_range": { "start": "2023-07-16", "end": "2023-08-20" },
+    "phase": "Phase_A",
+    "batch_character": "Mostly cooperative/administrative. Olivia joins cheerleading squad (Tomahawks), first practice, first game Aug 13. School year preparation (supply drop-off, first day photos, teacher meeting). Medical coordination (illness, eye appointment). Recurring payment disputes. Three discrete RF-04 events in an otherwise administrative record."
+  },
+
+  "cumulative_statistics": {
+    "messages_analyzed_this_batch": 384,
+    "primary_flags_this_batch": 3,
+    "severity_distribution_this_batch": { "1": 3, "2": 0, "3": 0 },
+    "peripheral_flags_this_batch": 6,
+    "compound_patterns_this_batch": 1
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B009-001",
+      "severity": 1,
+      "date": "2023-07-17",
+      "row_range": "ROW-2987-2997",
+      "type": "contemptuous_judgment_attack_cluster_with_false_darvo_accusation",
+      "arc_signals": ["ARC-RF04-001-S24"],
+      "compound_pattern": null,
+      "cross_rf_note": "ROW-2992 'your gaslighting doesn't work on me' is RF-09 primary cross-reference candidate — same false-DARVO-accusation structure as ROW-1722 B-005.",
+      "messages": [
+        {
+          "row": "ROW-2981",
+          "timestamp": "2023-07-17 01:22:13",
+          "direction": "Sent",
+          "text": "It doesnt really matter that it has one or not.  It's designed by Apple for Apple.  You really think they're going to release a peripheral p[roduct that damages the screen]"
+        },
+        {
+          "row": "ROW-2982",
+          "timestamp": "2023-07-17 01:23:15",
+          "direction": "Sent",
+          "text": "I don't agree with your requirements but am respecting it"
+        },
+        {
+          "row": "ROW-2987",
+          "timestamp": "2023-07-17 01:24:43",
+          "direction": "Received",
+          "text": "Look at your phone. You obviously don't know how to do that"
+        },
+        {
+          "row": "ROW-2988",
+          "timestamp": "2023-07-17 01:25:26",
+          "direction": "Received",
+          "text": "I don't give a shit if you agree with it or not it's the rule.  You were made aware of it and that's what it is"
+        },
+        {
+          "row": "ROW-2991",
+          "timestamp": "2023-07-17 01:26:16",
+          "direction": "Received",
+          "text": "You can't sit there and say you didn't know it was a requirement when I told your ass it was which is why you bought one."
+        },
+        {
+          "row": "ROW-2992",
+          "timestamp": "2023-07-17 01:26:25",
+          "direction": "Received",
+          "text": "Your gaslighting doesn't work on me"
+        },
+        {
+          "row": "ROW-2993",
+          "timestamp": "2023-07-17 01:26:55",
+          "direction": "Sent",
+          "text": "I have a screen protector and case on it.  It fell from 10ft up."
+        },
+        {
+          "row": "ROW-2997",
+          "timestamp": "2023-07-17 01:37:06",
+          "direction": "Received",
+          "text": "I don't care if you like them or agree with them as you are someone unable to make good decisions"
+        },
+        {
+          "row": "ROW-2998",
+          "timestamp": "2023-07-17 01:37:49",
+          "direction": "Received",
+          "text": "Also I don't think it concerns you with who is using the iPad"
+        },
+        {
+          "row": "ROW-2999",
+          "timestamp": "2023-07-17 01:38:00",
+          "direction": "Received",
+          "text": "Simply not your business."
+        }
+      ],
+      "analysis": "iPad screen protector dispute escalates when Eli states he disagrees with Melissa's requirement but is respecting it (ROW-2982). Triggered three contemptuous attacks: (1) ROW-2987 'Look at your phone. You obviously don't know how to do that' — contemptuous intelligence attack via implication that Eli doesn't know how to protect his own phone (ADD-002). (2) ROW-2992 'Your gaslighting doesn't work on me' — false-DARVO accusation; Eli's factual statement about the screen protector he actually purchased is reframed as gaslighting. This is the same structural pattern as ROW-1722 (B-005): Eli's legitimate counter is relabeled as a manipulation tactic to avoid engaging with its content (primary RF-09 cross-reference candidate). (3) ROW-2997 'as you are someone unable to make good decisions' — contemptuous judgment attack on Eli's decision-making capacity (ADD-002 territory). ROW-2998-2999 dismissal ('not your business') as close. Sev 1 per ADD-001: multiple contemptuous attacks in same episode, no full DARVO structure. ARC-RF04-001 signal."
+    },
+    {
+      "flag_id": "RF04-B009-002",
+      "severity": 1,
+      "date": "2023-07-30",
+      "row_range": "ROW-3127-3158",
+      "type": "vaping_incident_child_distress_relay_cascade_plus_apology_demand",
+      "arc_signals": ["ARC-RF04-002-S07"],
+      "compound_pattern": null,
+      "messages": [
+        {
+          "row": "ROW-3127",
+          "timestamp": "2023-07-30 01:53:54",
+          "direction": "Received",
+          "text": "Olivia is over here crying"
+        },
+        {
+          "row": "ROW-3131",
+          "timestamp": "2023-07-30 01:55:25",
+          "direction": "Received",
+          "text": "Shes crying cause you upset her"
+        },
+        {
+          "row": "ROW-3135",
+          "timestamp": "2023-07-30 01:56:42",
+          "direction": "Received",
+          "text": "She said she doesn't want to look at you cause you hurt her feelings"
+        },
+        {
+          "row": "ROW-3136",
+          "timestamp": "2023-07-30 01:56:50",
+          "direction": "Received",
+          "text": "She doesn't want to Google  meet you"
+        },
+        {
+          "row": "ROW-3137",
+          "timestamp": "2023-07-30 02:10:20",
+          "direction": "Received",
+          "text": "Don't lie to her. She doesn't deserve that"
+        },
+        {
+          "row": "ROW-3140",
+          "timestamp": "2023-07-30 02:25:54",
+          "direction": "Received",
+          "text": "Why would she make up in detail it having a green light and smoke coming out. That makes no sense"
+        },
+        {
+          "row": "ROW-3141",
+          "timestamp": "2023-07-30 02:26:16",
+          "direction": "Received",
+          "text": "And again. I don't care what you do in your house while she isn't with you. Just don't lie to her"
+        },
+        {
+          "row": "ROW-3143",
+          "timestamp": "2023-07-30 02:26:49",
+          "direction": "Received",
+          "text": "And you forgot this time"
+        },
+        {
+          "row": "ROW-3144",
+          "timestamp": "2023-07-30 02:27:03",
+          "direction": "Received",
+          "text": "I've seen you do it on FaceTime with her before"
+        },
+        {
+          "row": "ROW-3149",
+          "timestamp": "2023-07-30 02:37:17",
+          "direction": "Received",
+          "text": "So you want us to believe that she didn't see you vape. Instead while you were on video to talk to her you decided to put a pen in your mouth..."
+        },
+        {
+          "row": "ROW-3151",
+          "timestamp": "2023-07-31 11:36:26",
+          "direction": "Received",
+          "text": "I normally ask her if she wants a to call you in the am. I'm the reason she calls you most days.  She didn't want to today. She's still mad"
+        },
+        {
+          "row": "ROW-3158",
+          "timestamp": "2023-07-31 21:50:28",
+          "direction": "Received",
+          "text": "Olivia said you need to give an apology right now  and not a fake one either.   A real one"
+        }
+      ],
+      "analysis": "Incident: Olivia saw what she believed was Eli vaping on a video call. Eli denies he was vaping and offers an alternate explanation. Melissa does not believe him. RF-04 mechanism: Melissa sequences four child-distress relay messages in rapid succession (ROW-3127, 3131, 3135, 3136 — within approximately 3 minutes) designed to maximize the guilt-delivery impact of Olivia's emotional state. Each message escalates: crying → 'cause you upset her' → 'doesn't want to look at you' → 'doesn't want to Google meet you.' This is the ARC-RF04-002 pattern: child's emotional state relayed as guilt instrument rather than communicated once and allowing Eli to address directly with Olivia. ROW-3137 'Don't lie to her. She doesn't deserve that' establishes a pre-conviction frame before the factual dispute is resolved. ROW-3151 (Jul 31) adds an implicit gatekeeping threat: 'I'm the reason she calls you most days. She didn't want to today. She's still mad' — positions Melissa as the facilitator whose cooperation determines whether Eli has a relationship with Olivia; Olivia's anger is presented as a consequence Eli caused. ROW-3158: 'Olivia said you need to give an apology right now and not a fake one either. A real one' — child's demand relayed as authority directive with added qualification ('not a fake one') framing Eli as someone who would give a performative apology unless instructed otherwise. ARC-RF04-002 signal 7. Sev 1 per ADD-001 (child-mediated guilt; no full DARVO or extreme language)."
+    },
+    {
+      "flag_id": "RF04-B009-003",
+      "severity": 1,
+      "date": "2023-08-13",
+      "row_range": "ROW-3240 + ROW-3271",
+      "type": "two_day_abby_body_shame_and_fourth_predation_framing_at_first_cheer_game",
+      "arc_signals": ["ARC-RF04-001-S25"],
+      "compound_pattern": "COMP-RF04-009",
+      "messages": [
+        {
+          "row": "ROW-3240",
+          "timestamp": "2023-08-13 21:11:12",
+          "direction": "Received",
+          "text": "Abby pregnant or just fat?"
+        },
+        {
+          "row": "ROW-3271",
+          "timestamp": "2023-08-14 23:40:19",
+          "direction": "Received",
+          "text": "Abby preggers? If so I need to prep Olivia for a brother cousin"
+        }
+      ],
+      "analysis": "Two-day Abby-attack cluster anchored to Olivia's first cheer game (Aug 13) — context in which Melissa and Eli (and likely Abby) are in the same public environment. Day 1 (ROW-3240): 'Abby pregnant or just fat?' — direct body-shaming attack on Abby, framed as a question; contemptuous and degrading. Day 2 (ROW-3271): 'Abby preggers? If so I need to prep Olivia for a brother cousin.' This is the fourth deployment of the predation/incest framing: the hypothetical child of Eli + Abby would be Olivia's 'brother cousin' — meaning Olivia's sibling by father yet cousin by Abby's family relationship. The 'brother cousin' framing implies the relationship is incestuous without using explicit predation language. New mechanism from prior deployments: packaged as parental concern for Olivia ('I need to prep Olivia') rather than as a direct accusation — the incest framing is embedded in an apparent act of good co-parenting concern. Prior predation framings (B-003, B-004, B-006) were explicit attacks. This deployment is more calculated: Melissa presents as a conscientious parent while delivering the same narrative. Predation framing confirmed at 4 instances. COMP-RF04-009: RF-04 (contemptuous Abby attack, body-shaming) + RF-15 (predation narrative revival, fourth instance). Sev 1 — contemptuous but not sustained multi-hour campaign; elevated by fourth-instance predation framing and new concealment mechanism."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "row": "ROW-2966-2967",
+      "date": "2023-07-16",
+      "text": "Don't be bossing me around / Check yourself on how you talk to me",
+      "note": "Contemptuous dismissal triggered by Eli's co-parenting suggestion ('have her get a snack or something'). Same contemptuous-defiance pattern as B-008 ROW-2625. Peripheral — consistent with pattern but below primary threshold."
+    },
+    {
+      "row": "ROW-3079",
+      "date": "2023-07-22",
+      "text": "She said 'then I'm not going to go with you'",
+      "note": "Melissa relays Olivia's conditional refusal to go with Eli unless he takes her to Kalahari. Child preference relay as leverage. Borderline ARC-RF04-002 — kept peripheral given preference (not distress) as the vehicle."
+    },
+    {
+      "row": "ROW-3151",
+      "date": "2023-07-31",
+      "text": "I normally ask her if she wants a to call you in the am. I'm the reason she calls you most days.",
+      "note": "Implicit gatekeeping claim embedded in distress relay context. RF-02 primary; RF-04 secondary (positioning Eli's relationship as mediated by Melissa's ongoing facilitation, which can be withdrawn)."
+    },
+    {
+      "row": "ROW-3231",
+      "date": "2023-08-10",
+      "text": "You make her look weird with all the adjustments you make",
+      "note": "Contemptuous parenting criticism. Context unclear (possibly cheer uniform adjustments). Peripheral RF-04."
+    },
+    {
+      "row": "ROW-3292",
+      "date": "2023-08-15",
+      "text": "We don't care, fool",
+      "note": "Casual contemptuous label ('fool') in response to Eli's traffic update. Brief, isolated. Peripheral."
+    },
+    {
+      "row": "ROW-3085",
+      "date": "2023-07-23",
+      "text": "Ok. I'll assume no and take her myself",
+      "note": "Passive-aggressive framing — Eli had not yet responded to a swim request and Melissa escalated to assumption of refusal before the deadline. Minor contempt/pressure. Peripheral."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "signals_added": 2,
+      "new_signal_refs": ["ARC-RF04-001-S24", "ARC-RF04-001-S25"],
+      "signal_summary": "S24: ROW-2987-2997 (Jul 17) — contemptuous judgment attacks in iPad dispute: 'obviously don't know how to do that' + false-DARVO 'your gaslighting doesn't work on me' + 'someone unable to make good decisions.' S25: ROW-3240+3271 (Aug 13-14) — two-day Abby body-shame + fourth predation framing ('brother cousin').",
+      "new_total": 25
+    },
+    "ARC-RF04-002": {
+      "signals_added": 1,
+      "new_signal_refs": ["ARC-RF04-002-S07"],
+      "signal_summary": "S07: ROW-3127-3158 (Jul 30-31) — vaping incident child distress relay cascade (four rapid-sequence messages ROW-3127-3136) + ROW-3151 implicit gatekeeping claim + ROW-3158 apology demand relayed as authority directive ('not a fake one either. A real one').",
+      "new_total": 7
+    }
+  },
+
+  "compound_pattern_detected": {
+    "compound_id": "COMP-RF04-009",
+    "label": "Aug 13-14 Abby Body-Shame + Fourth Predation Framing at First Cheer Game",
+    "date": "2023-08-13",
+    "rows": "ROW-3240 + ROW-3271",
+    "rfs_active": ["RF-04", "RF-15"],
+    "description": "RF-04 (primary, Sev 1 — contemptuous body-shaming attack on Abby ROW-3240 'pregnant or just fat?'; Abby-as-obstacle attack in public/co-parenting event context) + RF-15 (ROW-3271: fourth predation-framing deployment 'brother cousin' — invokes incest narrative via concern-for-Olivia packaging; RF-15 signal for Phase 2 synthesis). Notable: new predation-framing delivery mechanism — prior instances were explicit attack ('fucking his niece'); this instance conceals the narrative inside apparent co-parenting concern ('need to prep Olivia')."
+  },
+
+  "cp3_items_generated": [
+    "CP3-RF04-009: ROW-3240+3271 (Aug 13-14 2023) — fourth predation-framing deployment; 'Abby pregnant or just fat?' + 'If so I need to prep Olivia for a brother cousin'; new mechanism: incest framing concealed in parental-concern packaging; first cheer game context; COMP-RF04-009 (RF-04+RF-15). Predation pattern now 4 confirmed instances across B-003/B-004/B-006/B-009."
+  ],
+
+  "notable_observations": {
+    "predation_framing_evolution": "The 'brother cousin' formulation (ROW-3271) represents qualitative evolution in the predation-framing pattern. Prior deployments (ROW-937-938, ROW-1287, ROW-2167+2173) all used explicit attack language. ROW-3271 deploys the same narrative structure but wraps it in co-parenting concern: 'I need to prep Olivia.' This concealment mechanism is more sophisticated and harder to call out directly. The incest claim is now embedded in apparently responsible parenting behavior.",
+    "false_darvo_accusation_pattern": "ROW-2992 'Your gaslighting doesn't work on me' is the second false-DARVO accusation in the record (first: ROW-1722 B-005 'So nice try trying to gaslight and place blame'). Pattern: Eli provides a factual defense or counter → Melissa reframes the factual defense as gaslighting. This is a meta-manipulation tactic: by pre-labeling factual pushback as 'gaslighting,' Melissa forecloses legitimate dispute resolution. RF-09 primary; watch for further instances.",
+    "gatekeeping_signal": "ROW-3151 'I'm the reason she calls you most days' explicitly claims credit for facilitating Eli's relationship with Olivia. Embedded in a message about Olivia's anger (still mad, didn't want to call). The implicit message: Melissa's facilitation is what maintains the phone-call relationship, and that facilitation is now at risk. RF-02 cross-reference.",
+    "cooperative_content_note": "First cheer game (Aug 13) and school first-day prep (Aug 15-16) show Melissa and Eli functioning cooperatively in shared child-events contexts. The Abby attacks (ROW-3240, ROW-3271) are notable for occurring in or adjacent to these cooperative moments."
+  }
+}

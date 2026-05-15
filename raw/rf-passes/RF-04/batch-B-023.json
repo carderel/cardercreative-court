@@ -1,0 +1,107 @@
+{
+  "batch_id": "B-023",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2025-02-21", "end": "2025-03-10" },
+  "row_range": { "start": 7763, "end": 7797 },
+  "message_count": 35,
+  "analysis_date": "2026-04-24",
+
+  "batch_notes": "Data structure note: Feb 21-23 messages appear in secondary row block (ROW-9182+) with cooperative logistics content; core sequential block for this batch is ROW-7763-7797. Source data has parallel duplicate export blocks starting at ROW-9182+ and ROW-13009+; unique messages analyzed from primary sequential block.",
+
+  "batch_summary": {
+    "dominant_tone": "mixed — predominantly cooperative with two low-moderate RF-04 episodes; Mar 3 medical context (Melissa kidney stone/surgery) generates cooperative childcare coordination; Mar 4 birthday party context yields single Abby-causal-attribution; Mar 10 surgery-context parenting judgment cluster with DARVO-adjacent flip",
+    "conflict_ratio": "~0.40 within Mar 10 cluster; ~0.15 batch overall",
+    "rf04_activity": "low-moderate — 2 Sev-1 primary flags: Mar 4 Abby-causal-attribution (birthday party context, single message) + Mar 10 surgery-context parenting judgment cluster (DARVO-adjacent, inadequate-father culmination)",
+    "notable_context": "Mar 3: Melissa goes to hospital with kidney stone (ROW-7767-7774) — cooperative; Eli agrees to take Olivia. Mar 4: birthday party discussion; Eli apparently declines attendance → ROW-7775-7776 cooperative invitations → ROW-7777 Abby-causal-attribution. Mar 7: surgery scheduled for Monday; Eli cooperatively agrees to pick up Olivia (ROW-7781). Mar 10: Olivia has fever; Eli suggests keeping her or sending to school; Melissa launches parenting judgment cluster: 'Who sends their kid who has a fever to school' (ROW-7788) + DARVO flip of Eli's own prior parenting standards (ROW-7789) + 'you need to step up and actually be a parent for a bit' (ROW-7791) + 'lack of involvement with your first born' (ROW-7796). Feb 21-23 cooperative block (ROW-9182+): scheduling logistics + food discussion — no RF-04 content."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B023-001",
+      "severity": 1,
+      "date": "2025-03-04",
+      "row_ref": "ROW-7777",
+      "type": "abby_causal_attribution + abby_as_obstacle",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Birthday party context — Eli apparently declined to attend Olivia's birthday party. ROW-7775-7776: Melissa sends two cooperative messages inviting Eli ('She had you on her invitation list' / 'You could still do something for her birthday and go to her party'). ROW-7777: 'Sounds like the abster just doesn't want you going' — Abby-causal-attribution; Eli's decision not to attend reframed as Abby's control over his behavior rather than his own autonomous choice. Single-message deployment following cooperative invitation sequence; consistent with ARC-RF04-001 Abby-as-obstacle causal attribution sub-pattern. ARC-RF04-001-S55.",
+      "verbatim_key_messages": [
+        "ROW-7777 (Received): \"Sounds like the abster just doesn't want you going\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B023-002",
+      "severity": 1,
+      "date": "2025-03-10",
+      "row_ref": "ROW-7786-7796",
+      "type": "surgery_context_parenting_judgment + DARVO_adjacent_standard_flip + inadequate_father + martyrdom",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Mar 10 surgery-context parenting judgment cluster. Context: Melissa recovering from kidney stone surgery; Olivia has fever; dispute over childcare responsibility. ROW-7786: 'Having surgery so you will need to be a parent to our child' — instrumental use of surgery to issue parenting demand. ROW-7787: 'I can't believe you saying \"that's not going to work cause I have to work\" this morning. Do you not think I have to call off work when she is sick?' — false equivalence contemptuous accusation. ROW-7788: 'Then telling me to send her to school. Who sends their kid who has a fever to school' — contemptuous parenting judgment. ROW-7789: 'Aren't you the one that's always accusing me of sending her to school sick and saying you expect me to be following school protocol to keep others from getting sick' — DARVO-adjacent standard flip: Eli's own prior parenting standards deployed back against him to invalidate his current position. ROW-7790: 'And to send a child with a fever to school where her temp isn't going to be monitored. What the hell' — contemptuous escalation. ROW-7791: 'I'm having a surgery and I'm going to take the time I need to recover...This means you need to step up and actually be a parent for a bit.' — martyrdom framing + parenting inadequacy accusation. ROW-7793: 'I'm not arguing. I'm saying you need to handle it' — dismissal of Eli's reasonable response (ROW-7792). ROW-7794: 'I take care of Olivia everyday while balancing things.' — martyrdom contrast positioning. ROW-7795: 'If you truly focused on her needs you would have her at your house resting' — inadequate-father framing. ROW-7796: 'The only thing that's frustrating is you and your lack of involvement with your first born' — inadequate-father culmination statement. ARC-RF04-001-S56.",
+      "verbatim_key_messages": [
+        "ROW-7787 (Received): \"I can't believe you saying 'that's not going to work cause I have to work' this morning.  Do you not think I have to call off work when she is sick?\"",
+        "ROW-7789 (Received): \"Aren't you the one that's always accusing me of sending her to school sick and saying you expect me to be following school protocol to keep others from getting sick\"",
+        "ROW-7791 (Received): \"I'm having a surgery and I'm going to take the time I need to recover so I can parent when she returns home. This means you need to step up and actually be a parent for a bit.\"",
+        "ROW-7796 (Received): \"The only thing that's frustrating is you and your lack of involvement with your first born\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B023-P01",
+      "row_ref": "ROW-7775-7776",
+      "date": "2025-03-04",
+      "type": "child_as_invitation_vehicle",
+      "note": "ROW-7775: 'She had you on her invitation list' — child's expressed wish used as vehicle to pressure Eli's attendance at birthday party; follows cooperative framing but deploys child's feelings to leverage decision. ROW-7776: 'You could still do something for her birthday and go to her party' — mild invitation framing. Neither rises to primary flag; immediate context for ROW-7777 Abby-causal-attribution."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S55",
+          "batch": "B-023",
+          "date": "2025-03-04",
+          "row": "ROW-7777",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Single-message Abby-causal-attribution in birthday party context: 'Sounds like the abster just doesn't want you going' — Eli's decision not to attend reframed as Abby controlling his behavior. Part of recurring Abby-as-obstacle sub-pattern."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S56",
+          "batch": "B-023",
+          "date": "2025-03-10",
+          "row": "ROW-7786-7796",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Surgery-context parenting judgment cluster: 'Who sends their kid who has a fever to school' (ROW-7788) + DARVO-adjacent standard flip ROW-7789 + martyrdom 'step up and actually be a parent for a bit' (ROW-7791) + inadequate-father culmination 'lack of involvement with your first born' (ROW-7796). Moderate cluster; Sev-1 (context of legitimate surgical recovery)."
+        }
+      ],
+      "signal_count_after": 56
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [],
+      "signal_count_after": 17
+    }
+  },
+
+  "compound_patterns": [],
+
+  "cp3_item": null,
+
+  "batch_statistics": {
+    "primary_flags": 2,
+    "severity_1": 2,
+    "severity_2": 0,
+    "severity_3": 0,
+    "peripheral_flags": 1,
+    "compound_patterns": 0,
+    "arc_rf04_001_signals_added": 2,
+    "arc_rf04_002_signals_added": 0
+  }
+}

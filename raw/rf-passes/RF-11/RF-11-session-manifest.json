@@ -1,0 +1,80 @@
+{
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "pass_status": "complete",
+  "priority": 8,
+  "tier": 1,
+  "eli_signal": "confirmed",
+  "progress": {
+    "total_batches": 31,
+    "batches_completed": 31,
+    "batches_remaining": 0,
+    "last_batch_completed": "B-031",
+    "next_batch": null,
+    "halt_reason": null
+  },
+  "date_coverage": {
+    "covered_through": "2026-04-12",
+    "remaining_from": null
+  },
+  "cumulative_statistics": {
+    "messages_analyzed": 10637,
+    "primary_flags": 5,
+    "severity_distribution": {
+      "1": 0,
+      "2": 5,
+      "3": 0
+    },
+    "peripheral_flags": 1,
+    "active_arcs": 1,
+    "compound_patterns": 5,
+    "bilateral_flags": 1
+  },
+  "calibration_addenda": [
+    "RF11-ADD-001",
+    "RF11-ADD-002",
+    "RF11-ADD-003",
+    "RF11-ADD-004",
+    "RF11-ADD-005",
+    "RF11-ADD-006"
+  ],
+  "calibration_addenda_file": "analysis-output/calibration/addenda-RF-11.json",
+  "cp2_status": "complete",
+  "cp2_completed": "2026-04-28",
+  "cp2_file": "analysis-output/checkpoints/cp2-RF-11-review.json",
+  "arc_state_file": "analysis-output/arc-states/RF-11-arc-state.json",
+  "key_findings": {
+    "dominant_mechanism": "Parentification of visit-compliance decisions \u2014 'It was her choice not to go' (ROW-14841). Court-ordered visit compliance placed on Olivia's decision-making across the Phase C visit-refusal cascade.",
+    "highest_consequence_signal": "S003 (B-029): Police report disclosure to Olivia \u2014 Melissa told 10-year-old that her father filed a police report about her visit refusal. Documented behavioral impact: Olivia stopped talking to Eli for over a week.",
+    "bilateral_signal": "S005 (B-030): Feb 2026 domestic argument \u2014 children ages 10, 6, 1 hiding during adult argument; Eli confirmed children asked about verbal abuse and he explained it. Eli-direction Sev-2 (mitigated but confirmed); Melissa-direction amplification deployment compound.",
+    "stabilizer_pattern": "CP2 Q3 confirmed: 'Olivia is Melissa's stabilizer' \u2014 emotional parentification as behavioral backdrop. Counselor relay S001 (B-027) is the most direct text-record evidence.",
+    "therapist_pattern": "Melissa drops therapists when called out (Q6). Clinically significant context for GAL analysis of Olivia's therapeutic history \u2014 may indicate strategic therapeutic engagement.",
+    "structural_note": "All 5 signals are Phase B/C. Zero Phase A signals \u2014 pattern activates with the visit-refusal cascade. RF-11 is structurally embedded in RF-02 (gatekeeping): parentification is the child-facing dimension of the gatekeeping mechanism."
+  },
+  "session_log": [
+    {
+      "session": 1,
+      "date": "2026-04-27",
+      "batches_processed": [
+        "B-001"
+      ],
+      "primary_flags_added": 0,
+      "peripheral_flags_added": 0,
+      "notes": "RF-11 pass initialized. B-001 calibration batch \u2014 zero primary flags, cooperative baseline confirmed. CP2 generated. 6 calibration questions covering Feb 2026 incident (bilateral), police report, parentification, emotional stabilizer, therapist coaching, GAL coaching."
+    },
+    {
+      "session": 2,
+      "date": "2026-04-28",
+      "batches_processed": [
+        "B-002 through B-031"
+      ],
+      "primary_flags_added": 5,
+      "peripheral_flags_added": 1,
+      "arcs_updated": [
+        "ARC-RF11-001 initialized CANDIDATE (B-027 S001); CANDIDATE\u2192WATCHING (B-028 S002); WATCHING\u2192ACTIVE (B-029 S003+S004); 5 signals total"
+      ],
+      "compounds_added": 5,
+      "notes": "CP2 answers confirmed all 6 addenda. Key confirmations: Q1 (children hiding, Eli confirmed verbal abuse lookup with children present \u2014 Sev-2 bilateral); Q3 (Olivia as stabilizer confirmed); Q4 (police report disclosure to Olivia confirmed, week-long behavioral impact); Q5 ('her choice' text-documented in B-029); Q6 (therapist coaching probable, therapy non-continuity pattern). 5 primary signals: all Sev-2, concentrated in Phase C (B-027-B-030). 1 bilateral signal (B-030). 5 compound patterns. ARC-RF11-001 unresolved at dataset close."
+    }
+  ]
+}

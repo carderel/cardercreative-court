@@ -1,0 +1,244 @@
+{
+  "arc_id": "ARC-RF07-001",
+  "arc_name": "Communication Boundary Violation Pattern",
+  "rf_pass": "RF-07",
+  "rf_name": "Boundary Violations",
+  "status": "ACTIVE",
+  "resolution": "UNRESOLVED at dataset close",
+
+  "arc_summary": "Melissa's sustained pattern of communication boundary violations across the full dataset: message flooding (volume-based coercion), response-demand pressure (demanding immediate responses with consequences for non-compliance), continuation-after-stop (continuing into Eli's silence after conflict limits are set), and custodial-time contact overstepping (non-urgent contact during Eli's parenting time). The arc spans Aug 2024 through Apr 2026, concentrating in three triage hot periods (Aug 2024, May 2025, Aug 2025) with continued Phase C maintenance. Sub-pattern trajectory: early signals are mega-cluster flooding candidates; Phase B signals add response-demand, continuation-after-self-demand, and read-receipt-as-surveillance mechanisms; Phase C signals confirm the response-time-norm-setting and punitive-non-disclosure sub-patterns as baseline behavior. The Apr 2026 confirmed flooding event (S-012) provides the dataset's only ADD-001-verified flooding instance, retroactively supporting the flooding-candidate classification of the larger Aug 2024 and Aug 2025 mega-clusters.",
+
+  "arc_initialization": {
+    "batch": "B-002",
+    "date": "2022-10-03",
+    "basis": "Triage heatmap projects RF-07 hot periods in Phase B. Phase A baseline (B-001) confirms zero signals in low-conflict period. Arc initialized to watching state in B-002 as forward-tracking placeholder."
+  },
+
+  "arc_promotion": {
+    "from": "watching",
+    "to": "ACTIVE",
+    "batch": "B-017",
+    "date": "2024-08-04",
+    "trigger": "S-001 — Aug 4-5 2024 mega-cluster (~80 messages); first RF-07 primary signal; confirmed hot-period anchor for Aug 2024 triage hot period"
+  },
+
+  "signal_count": 12,
+  "severity_distribution": { "1": 8, "2": 4, "3": 0 },
+
+  "signals": [
+    {
+      "signal_id": "S-001",
+      "flag_id": "ARC-RF07-001-S001",
+      "batch": "B-017",
+      "date": "2024-08-04 through 2024-08-05",
+      "row_ref": "ROW-6279–ROW-6524",
+      "severity": 2,
+      "sub_pattern": "sustained_dense_cluster_flooding_candidate",
+      "summary": "Aug 4-5 2024 mega-cluster (~80 messages); rapid-pair opener ROW-6279-6280; flooding candidate pending synthesis timestamp confirmation. Aug 2024 hot-period anchor. Compound: COMP-RF07-001 (RF-04+RF-05+RF-07).",
+      "verbatim_anchor": "'I'll contempt your sss' (ROW-6279); 'Ass' (ROW-6280)"
+    },
+    {
+      "signal_id": "S-002",
+      "flag_id": "ARC-RF07-001-S002",
+      "batch": "B-020",
+      "date": "2024-12-14",
+      "row_ref": "ROW-8679",
+      "severity": 1,
+      "sub_pattern": "response_demand_with_contempt",
+      "summary": "Response-demand with contempt slur. Dec 14 (out-of-order row; gap between B-020 and B-021). Sunday parenting-time context probable.",
+      "verbatim_anchor": "'Bitch answer yo phone'"
+    },
+    {
+      "signal_id": "S-003",
+      "flag_id": "ARC-RF07-001-S003",
+      "batch": "B-024",
+      "date": "2025-05-04",
+      "row_ref": "ROW-9536–ROW-9568",
+      "severity": 2,
+      "sub_pattern": "continuation_after_self_demand",
+      "summary": "Continuation-after-self-demand: Melissa issues 'stop texting me / harassment' stop command then immediately continues messaging. May 2025 hot-period anchor. Compound: COMP-RF07-002 (RF-04+RF-05+RF-07).",
+      "verbatim_anchor": "'If you don't have anything constructive or a solution stop texting me. Otherwise it's harassment and I will file harassment' (ROW-9536)"
+    },
+    {
+      "signal_id": "S-004",
+      "flag_id": "ARC-RF07-001-S004",
+      "batch": "B-027",
+      "date": "2025-08-14 through 2025-08-15",
+      "row_ref": "ROW-14000–ROW-14187 (approximate)",
+      "severity": 2,
+      "sub_pattern": "sustained_dense_cluster_flooding_candidate",
+      "summary": "Aug 14-15 2025 mega-cluster (~80+ messages). Aug 2025 hot-period anchor. Compound: COMP-RF07-003 (RF-04+RF-07). Flooding candidate parallel to S-001.",
+      "verbatim_anchor": "'shit father' + 'dumbass' + 'asshole' slur cluster within dense messaging episode"
+    },
+    {
+      "signal_id": "S-005",
+      "flag_id": "ARC-RF07-001-S005",
+      "batch": "B-027",
+      "date": "2025-08-21",
+      "row_ref": "ROW-14188–ROW-14190",
+      "severity": 1,
+      "sub_pattern": "read_receipt_pressure_response_demand",
+      "summary": "Three-message read-receipt surveillance sequence: 'I'll assume you are not picking her up' / read-receipt cited / 'Could've responded when you read it'.",
+      "verbatim_anchor": "'I'll assume you are not picking her up since I haven't heard back from you' (ROW-14188)"
+    },
+    {
+      "signal_id": "S-006",
+      "flag_id": "ARC-RF07-001-S006",
+      "batch": "B-028",
+      "date": "2025-10-04 through 2025-10-07",
+      "row_ref": "ROW-14490–ROW-14517",
+      "severity": 1,
+      "sub_pattern": "custodial_time_contact_overstepping",
+      "summary": "ADD-004 confirmed: Melissa maintained contact with Olivia during Eli's parenting weekend; weaponized Olivia's distress signals as evidence against Eli. Contempt threat for interfering with child's contact.",
+      "verbatim_anchor": "'She doesn't feel safe and supported as evidenced by the texts I got' (ROW-14508)"
+    },
+    {
+      "signal_id": "S-007",
+      "flag_id": "ARC-RF07-001-S007",
+      "batch": "B-029",
+      "date": "2025-10-25 through 2025-10-26",
+      "row_ref": "ROW-14611, ROW-14618",
+      "severity": 1,
+      "sub_pattern": "response_demand_with_contempt",
+      "summary": "Contemptuous compliance demand: 'Drop her off at the party and quit being a bitch' + 'You're such a dipshit'.",
+      "verbatim_anchor": "'Drop her off at the party and quit being a bitch' (ROW-14611)"
+    },
+    {
+      "signal_id": "S-008",
+      "flag_id": "ARC-RF07-001-S008",
+      "batch": "B-029",
+      "date": "2025-11-06",
+      "row_ref": "ROW-14752–ROW-14753",
+      "severity": 1,
+      "sub_pattern": "response_demand_as_legal_evidence_threat",
+      "summary": "Legal-evidence threat as response coercion: 'This is the exact shit that makes it easy to get full custody' / 'Keep it up. It's great evidence'. Cross-ref RF-05 S-024.",
+      "verbatim_anchor": "'Keep it up. It's great evidence' (ROW-14753)"
+    },
+    {
+      "signal_id": "S-009",
+      "flag_id": "ARC-RF07-001-S009",
+      "batch": "B-029",
+      "date": "2025-11-24",
+      "row_ref": "ROW-14839",
+      "severity": 1,
+      "sub_pattern": "continuation_after_silence_with_responsibility_deflection",
+      "summary": "Melissa explicitly states she made multiple contact attempts (text + call) after Eli's silence, then reframes his boundary-holding as co-parenting failure.",
+      "verbatim_anchor": "'I've tried to text you more recently and call but you don't respond' (ROW-14839)"
+    },
+    {
+      "signal_id": "S-010",
+      "flag_id": "ARC-RF07-001-S010",
+      "batch": "B-030",
+      "date": "2026-02-11",
+      "row_ref": "ROW-15077–ROW-15082",
+      "severity": 1,
+      "sub_pattern": "response_time_blame_attribution",
+      "summary": "Response-time norm-setting: 'Your idea that you don't need to answer me until you feel like it causes these issues'. Context: Eli was ill; Melissa dismisses health explanation as 'lame excuse'.",
+      "verbatim_anchor": "'Your idea that you don't need to answer me until you feel like it causes these issues' (ROW-15082)"
+    },
+    {
+      "signal_id": "S-011",
+      "flag_id": "ARC-RF07-001-S011",
+      "batch": "B-031",
+      "date": "2026-04-09",
+      "row_ref": "ROW-15552",
+      "severity": 1,
+      "sub_pattern": "punitive_non_disclosure",
+      "summary": "Information withholding as punishment for non-immediate response: 'Well I was going to share some info but since you won't answer nevermind'.",
+      "verbatim_anchor": "'Well I was going to share some info but since you won't answer nevermind' (ROW-15552)"
+    },
+    {
+      "signal_id": "S-012",
+      "flag_id": "ARC-RF07-001-S012",
+      "batch": "B-031",
+      "date": "2026-04-12",
+      "row_ref": "ROW-15588–ROW-15592",
+      "severity": 2,
+      "sub_pattern": "confirmed_flooding",
+      "summary": "CONFIRMED FLOODING — ADD-001 threshold met with exact timestamps. 5 Received messages in 3 minutes 14 seconds (14:24:25–14:27:39 UTC). Eli's first response at 18:08:07 (ROW-15593) — 3h 41min later. Dataset's only confirmed flooding event. Compound: COMP-RF07-004 (RF-04 DARVO bruise/abuse reversal).",
+      "verbatim_anchor": "ROW-15588 (14:24:25): 'Why do you keep trying to make Olivia think I'm abusing her?'; ROW-15592 (14:27:39): 'Also Naomi was telling her dad yesterday...'",
+      "timestamp_verification": {
+        "ROW-15588": "2026-04-12 14:24:25",
+        "ROW-15589": "2026-04-12 14:24:41",
+        "ROW-15592": "2026-04-12 14:27:39",
+        "first_eli_response": "2026-04-12 18:08:07 (ROW-15593)",
+        "window_duration": "3 minutes 14 seconds",
+        "threshold_status": "CONFIRMED — 5 messages in under 10 minutes"
+      }
+    }
+  ],
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF07-001",
+      "batch": "B-017",
+      "date": "2024-08-04",
+      "rf_tags": ["RF-04", "RF-05", "RF-07"],
+      "signals": ["ARC-RF07-001-S001", "ARC-RF04-001-S46", "ARC-RF05-001-S007"],
+      "summary": "Aug 4-5 2024 triple compound. RF-07 flooding candidate + RF-04 sustained inadequate-father mega-cluster + RF-05 contempt legal threats."
+    },
+    {
+      "compound_id": "COMP-RF07-002",
+      "batch": "B-024",
+      "date": "2025-05-04",
+      "rf_tags": ["RF-04", "RF-05", "RF-07"],
+      "signals": ["ARC-RF07-001-S003", "ARC-RF05-001", "ARC-RF04-001"],
+      "summary": "May 2025 triple compound. RF-07 continuation-after-self-demand + RF-05 harassment legal threat to suppress co-parenting + RF-04 inadequate-father/Abby threat."
+    },
+    {
+      "compound_id": "COMP-RF07-003",
+      "batch": "B-027",
+      "date": "2025-08-14",
+      "rf_tags": ["RF-04", "RF-07"],
+      "signals": ["ARC-RF07-001-S004", "ARC-RF04-001"],
+      "summary": "Aug 2025 compound. RF-07 flooding candidate + RF-04 Sev-3 mega-cluster (COMP-RF04-024)."
+    },
+    {
+      "compound_id": "COMP-RF07-004",
+      "batch": "B-031",
+      "date": "2026-04-12",
+      "rf_tags": ["RF-04", "RF-07"],
+      "signals": ["ARC-RF07-001-S012", "ARC-RF04-001-S89"],
+      "summary": "Dataset-closing compound. RF-07 CONFIRMED FLOODING (5 msgs in 3:14) + RF-04 DARVO bruise/abuse reversal (COMP-RF04-030). Flooding mechanism delivers DARVO content."
+    }
+  ],
+
+  "sub_pattern_summary": {
+    "confirmed_flooding": ["S-012"],
+    "flooding_candidate": ["S-001", "S-004"],
+    "response_demand_with_contempt": ["S-002", "S-007"],
+    "continuation_after_self_demand": ["S-003"],
+    "read_receipt_pressure_response_demand": ["S-005"],
+    "custodial_time_contact_overstepping": ["S-006"],
+    "response_demand_as_legal_evidence_threat": ["S-008"],
+    "continuation_after_silence_with_responsibility_deflection": ["S-009"],
+    "response_time_blame_attribution": ["S-010"],
+    "punitive_non_disclosure": ["S-011"]
+  },
+
+  "hot_period_mapping": {
+    "aug_2024": { "signals": ["S-001"], "anchor": "S-001" },
+    "may_2025": { "signals": ["S-003"], "anchor": "S-003" },
+    "aug_2025": { "signals": ["S-004", "S-005"], "anchor": "S-004" }
+  },
+
+  "arc_trajectory": "Arc spans 20 months (Aug 2024–Apr 2026). Phase A (B-017): flooding candidate establishes arc. Phase B (B-020 through B-027): response-demand, read-receipt-surveillance, continuation-after-self-demand sub-patterns emerge. Phase C (B-028–B-031): custodial-time overstepping, legal-evidence coercion, response-time norm-setting, punitive non-disclosure — the pattern diversifies and maintains without attenuation. Final event (S-012 Apr 12 2026) provides confirmed flooding, completing the arc's evidentiary base.",
+
+  "synthesis_flags": [
+    "S-001 Aug 2024 flooding candidate requires raw Excel timestamp review to confirm ADD-001 threshold",
+    "S-004 Aug 2025 flooding candidate requires raw Excel timestamp review to confirm ADD-001 threshold",
+    "S-012 Apr 2026 is timestamp-confirmed — use as baseline for flooding sub-pattern characterization",
+    "S-002 Dec 14 2024 Sunday context — if confirmed as Eli's parenting time, elevate to Sev-2 (ADD-004)",
+    "S-007 Oct 25-26 Saturday-Sunday context — if confirmed as Eli's parenting time, consider ADD-004 compound"
+  ],
+
+  "cross_rf_notes": {
+    "RF-04": "RF-07 signals compound with RF-04 in all 4 compound patterns. Flooding episodes (S-001, S-004, S-012) deliver RF-04 inadequate-father/DARVO content. RF-07 adds the volume/timing dimension to what RF-04 documents as content.",
+    "RF-05": "S-003 and S-008 compound with RF-05 (legal threats as response-demand coercion). RF-05 'contempt your ass' / 'great evidence' / 'harassment' framing functions as RF-07 communication pressure.",
+    "RF-02": "RF-07 custodial-time overstepping (S-006) is the inverse of RF-02 phone-blocking: RF-02 = Melissa blocks Eli's contact during her time; RF-07 = Melissa intrudes into Eli's time. Separate mechanisms, same control dynamic.",
+    "RF-09": "Response-time blame (S-010) and continuation-after-silence reframing (S-009) have RF-09 (gaslighting) components — Eli's boundary-holding is recharacterized as failure/neglect."
+  },
+
+  "last_updated": "2026-04-24",
+  "pass_complete": true
+}

@@ -1,0 +1,71 @@
+{
+  "batch_id": "B-024",
+  "date_range": {
+    "start": "2025-03-04",
+    "end": "2025-04-30",
+    "note": "date-filtered batch"
+  },
+  "message_count": 303,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "calibration_addenda_active": [
+    "RF03-ADD-001",
+    "RF03-ADD-002",
+    "RF03-ADD-003",
+    "RF03-ADD-004",
+    "RF03-ADD-005",
+    "RF03-ADD-006",
+    "RF03-ADD-007"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-002: transport offloading Mar-Apr 2025 (ROW-9410/9502). ARC-RF03-001 promotes to WATCHING at Signal 2."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-002",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF03-001",
+      "arc_signal": 2,
+      "date_range": "2025-03-24 to 2025-04-30",
+      "orig_rows": [
+        "9410",
+        "9502"
+      ],
+      "messages": [
+        {
+          "orig_row": "9410",
+          "direction": "Received",
+          "date": "2025-03-24",
+          "text": "She said sure but pick her up first. I'm not going back out though so you'd have to bring her home cause I'm getting groceries after work and whatnot"
+        },
+        {
+          "orig_row": "9502",
+          "direction": "Received",
+          "date": "2025-04-30",
+          "text": "If you could bring her home"
+        }
+      ],
+      "classification": "RF-03 primary Sev-1 \u2014 two transport offloading instances in same batch. ROW-9410: Melissa conditions visit on Eli doing full round-trip (pick up AND return) because she doesn't want to go back out \u2014 unilateral SPP obligation shift. ROW-9502: casual transport demand without stated reason. ARC-RF03-001 Signal 2. ARC-RF03-001 promotes to WATCHING.",
+      "addendum_applied": "ADD-004 (transport offloading / SPP obligation shift \u2014 recurring pattern)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF03-001",
+      "state": "WATCHING",
+      "signals_cumulative": 2,
+      "event": "No new signals in B-024. WATCHING state holds."
+    },
+    {
+      "arc": "ARC-RF03-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0,
+      "event": "No Activity Enrollment Obstruction signals."
+    }
+  ]
+}

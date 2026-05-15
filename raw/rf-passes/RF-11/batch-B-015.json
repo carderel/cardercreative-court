@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-015",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2024-05-11",
+    "end": "2024-06-13"
+  },
+  "row_range": {
+    "start": 5239,
+    "end": 5625
+  },
+  "message_count": 514,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "May\u2013Jun 2024: court/GAL references in RF-04 flag analysis context. No RF-11 primary signals."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

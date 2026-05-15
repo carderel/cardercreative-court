@@ -1,0 +1,38 @@
+{
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "arc_state_version": "initial",
+  "last_updated": "2026-04-28",
+  "dataset_close": "2026-04-12",
+  "rf15_cross_reference": "CRITICAL: RF-15 documents Melissa's systematic false allegation pattern. Many RF-14 'received' hits are likely Category B/C RF-15 false allegations (alcoholism, vaping/asthma, harm relay). RF-14 must distinguish genuine safety documentation from manufactured allegation. RF-15 addenda-RF-15.json provides calibration context for each known false allegation.",
+  "arcs": [
+    {
+      "arc_id": "ARC-RF14-001",
+      "arc_name": "Safety Allegation Pattern",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 no safety allegations in cooperative baseline. Triage hot period 2022-10 at end of B-001 range \u2014 watch for early signals."
+        }
+      ]
+    },
+    {
+      "arc_id": "ARC-RF14-002",
+      "arc_name": "Genuine Safety Documentation",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 track any genuine bi-directional safety concerns per direction-aware analysis protocol."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "batch_id": "B-026",
+  "date_range": {
+    "start": "2025-05-30",
+    "end": "2025-06-29"
+  },
+  "message_count": "~418",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 14,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 2,
+    "note": "Jun 2025. Vaping/asthma/pinching allegation event (Jun 7-8, 2025) falls in this batch window per date range. ROW-12945-12964: Melissa relays Olivia's report of vaping and pinching. Eli partially admits brief vaping (ROW-12953). Per ADD-001: RF-15 Category B primary (vaping as gatekeeping pretext) + RF-02 compound. RF-14 PERIPHERAL ONLY per compound boundary rule. No standalone RF-14 primary flags. Both arcs ACTIVE stable."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [
+    {
+      "row_ref": "ROW-12945-12964",
+      "date": "2025-06-07/08",
+      "direction": "Received",
+      "type": "RF-15 Category B primary / RF-14 peripheral",
+      "note": "Vaping/asthma allegation \u2014 Melissa stops visits citing doctor's advice re: asthma safety. RF-15 Category B primary per ADD-001. RF-14 peripheral: legitimate asthma concern weaponized as gatekeeping pretext. Eli admission: 'Yes, I did briefly start to vape and stopped immediately' (ROW-12953)."
+    },
+    {
+      "row_ref": "ROW-13810",
+      "date": "2025-08-14",
+      "direction": "Received",
+      "type": "RF-15/RF-02 compound / RF-14 peripheral",
+      "note": "'I stopped the weekends per the doctors advice until you could provide a safe environment for her to breathe in.' Vaping/asthma scheme deployed to unilaterally stop visitation. RF-15 Category B primary + RF-02. RF-14 peripheral."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "Vaping/asthma scheme active: RF-15 primary. RF-14-001 peripheral note only \u2014 no new standalone signal.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 ACTIVE (6 signals)",
+      "state": "ACTIVE"
+    }
+  ]
+}

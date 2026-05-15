@@ -1,0 +1,42 @@
+{
+  "batch_id": "B-018",
+  "date_range": {
+    "start": "2024-08-06",
+    "end": "2024-09-03"
+  },
+  "message_count": "~527",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 8,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Aug-Sep 2024. Medication coordination (Aug 2): Melissa coordinates antibiotic handoff for Olivia (3x/day cream and oral meds, needs refrigeration) \u2014 cooperative medical parenting, not a compliance failure. No primary RF-14 flags. ARC-RF14-001 WATCHING, ARC-RF14-002 ACTIVE."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals \u2014 WATCHING (5 signals)",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 ACTIVE (3 signals)",
+      "state": "ACTIVE"
+    }
+  ]
+}

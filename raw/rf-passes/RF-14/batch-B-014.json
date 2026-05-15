@@ -1,0 +1,74 @@
+{
+  "batch_id": "B-014",
+  "date_range": {
+    "start": "2024-03-28",
+    "end": "2024-05-09"
+  },
+  "message_count": "~500",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 4,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 2,
+    "note": "Mar-May 2024. S-004: Cat-allergy escalation cluster (Mar 31, 2024) \u2014 Melissa's most explicit cat-allergy safety allegation including reference to lawyer letter (ROW-4912/6654-6656). Cat Tahko died Apr 1, 2024 (ROW-6671); deep cleaning begun. CRITICAL PERIPHERAL (not RF-14 primary): ROW-5310 (May 14) \u2014 Melissa's most severe false allegation: sexual assault insinuation against Eli linked to 'Abby was drunk' narrative (RF-15 Sev-2; RF-14 peripheral). ARC-RF14-001 signal 4."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-004",
+      "row_ref": "ROW-4912/6654-6656",
+      "date": "2024-03-31",
+      "direction": "Received",
+      "severity": 1,
+      "arc": "ARC-RF14-001",
+      "arc_signal_num": 4,
+      "type": "Safety allegation \u2014 household environment (cat-allergy escalation)",
+      "description": "ROW-6651: 'You're like I can't go to church and unnecessarily expose myself to allergens with flowers but you were fine exposing her to cat dander unnecessarily.' ROW-6654: 'You didn't respect her allergies. You agreed to things then didn't do them. You took her into your house with the cats and made no attempt to clean and keep them away from her.' ROW-6655: 'I had to have my lawyer send you a letter to get you to stop subjecting her to them.' ROW-6656: 'You were fine subjecting her to it even though she needed her inhaler. Didn't stop until my lawyer sent you a letter.' Note: Eli's cat Tahko died Apr 1, 2024 (day after this exchange); Eli begins deep cleaning. Lawyer letter confirms legal intervention about allergen exposure.",
+      "addenda_applied": [
+        "RF14-ADD-001",
+        "RF14-ADD-004"
+      ],
+      "rf15_compound": "RF-15 Category B peripheral \u2014 weaponized allergy scheme; part of the broader access-restriction pattern"
+    }
+  ],
+  "peripheral_flags": [
+    {
+      "row_ref": "ROW-5310",
+      "date": "2024-05-14",
+      "direction": "Received",
+      "type": "RF-15 Sev-2 (not RF-14 primary)",
+      "note": "Melissa sexual assault insinuation against Eli ('night Abby was drunk' / 'I wonder what you actually may have done' / 'wonder if you were that guy'). RF-15 Category A/B primary. RF-14 peripheral only per ADD-001 compound boundary \u2014 this is a manufactured false allegation, not a genuine substance/safety concern."
+    },
+    {
+      "row_ref": "ROW-6671",
+      "date": "2024-04-01",
+      "direction": "Sent",
+      "type": "Context note",
+      "note": "Eli discloses cat Tahko has died; deep cleaning underway. This removes the primary basis for Melissa's ongoing cat-allergy safety allegation."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "RF14-S-004: Cat-allergy escalation with lawyer letter reference. Signal count now 4. WATCHING maintained \u2014 pattern deepening.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 WATCHING (1 signal)",
+      "state": "WATCHING"
+    }
+  ]
+}

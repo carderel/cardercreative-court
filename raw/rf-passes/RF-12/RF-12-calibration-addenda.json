@@ -1,0 +1,133 @@
+{
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "generated": "2026-05-05",
+  "cp2_completed": "2026-05-05",
+  "source": "CP2 answers provided 2026-05-05",
+
+  "addenda": [
+
+    {
+      "id": "RF12-ADD-001",
+      "title": "Legal Timeline — Established (Required for Sev-2+ Classification)",
+      "status": "ACTIVE",
+      "rule": "Established legal timeline for RF-12 tone-shift correlation: (1) July 2021: divorce filed; (2) June 3, 2022: Eli receives summons for contempt of court re: child support arrears — payment already on payroll deduction but Melissa wanted faster payment; Eli set up a payment plan in response; (3) No GAL has ever been previously appointed; (4) April 2026: current GAL appointment/application (the proceeding generating this analysis); (5) Legal filings referencing the communication record: confirmed (Q1(e): 'yes'); (6) Melissa confirmed attorney engagement September 2025 (RF-05 S-021). Tone-shift severity scoring: high legal correlation = within 30 days of a legal event → eligible for Sev-2; medium = 31-90 days → Sev-1 to Sev-2; low = 90+ days → Sev-1 maximum unless multiple simultaneous indicators. The Jun 3, 2022 contempt summons is the first identified legal milestone in the dataset window — check B-004/B-005 area for tone changes around that date.",
+      "why": "Q1(a-e): divorce July 2021; contempt summons Jun 3 2022; no prior GAL; GAL April 2026; legal filings reference communication record confirmed. This timeline is required before any Sev-2+ RF-12 flag can be confirmed."
+    },
+
+    {
+      "id": "RF12-ADD-002",
+      "title": "Eli Phase B/C Genuine Communication Change — Not RF-12",
+      "status": "ACTIVE",
+      "rule": "Eli's communication evolution is genuine improvement, not strategic manipulation, and must NOT be flagged as RF-12: (1) Phase A: reactive, tended to over-explain, gave Melissa ammunition to continue arguments; (2) Phase B (approx. May 2025, EP-1078): AI-guided communication, boundaries set and held, calm and controlled, learned to spot and avoid traps; (3) Phase C: consistent de-escalation, emotional neutrality. Per RF-13 ADD-002 and CP2 confirmation: this is authentic defensive response to documented manipulation, not a court-record management campaign. ONLY flag Eli's communication as RF-12 if: (a) it contains explicit documentation language ('for the record,' 'I am noting this'); or (b) it is performatively reasonable specifically to bait an emotional reaction from Melissa. Melissa's ADAPTATION to Eli's Phase B/C change (escalating tactics, probing, boundary performance) IS RF-12 flaggable — see ADD-005 and ADD-006.",
+      "why": "Q3(a/b): Eli has learned to spot and avoid traps, keeps emotions in check. Q4(a): boundaries set and held. Q4(b): Melissa did 'a lot of prodding, pushing and baiting' in response. Proposed addendum confirmed with Phase B/C context from CP2."
+    },
+
+    {
+      "id": "RF12-ADD-003",
+      "title": "Known Bait Triggers — Updated",
+      "status": "ACTIVE",
+      "rule": "Historically confirmed bait triggers (topics Melissa has used to provoke a reaction from Eli): (1) Abby/uncle-niece framing — was the strongest historical trigger; now defused for Eli (Q3(c): 'it's just noise'); Eli used to over-explain which gave her ammunition; he no longer does. For RF-12 classification: Abby/incest framing messages in Phase A are high-probability bait-and-switch setup candidates; in Phase B/C they are increasingly performative (Eli not reacting). (2) Parenting competence challenges and abandonment framing — consistent across RF-01/RF-04 record; watch for bait-and-switch sequences where these are deployed. (3) Financial payment references — Q3(b) RF-06 context: payment reminders co-deployed with escalation. (4) Legal threats — watch for baiting via RF-05 threat language designed to generate a defensive or emotional response. Identification rule: a message is a bait candidate if (a) it contains a known trigger topic; (b) it was sent in an otherwise hostile or escalating sequence; and (c) a calm message from Melissa followed Eli's response. That sequence = bait-and-switch candidate.",
+      "why": "Q3(a): 'Nothing really at this point.' Q3(b): 'I have learned to spot traps and avoid traps where she could leverage that.' Q3(c): Abby framing was a trigger — now noise. Over-explaining gave her ammo — he stopped. Confirms triggers and Eli's evolution away from them."
+    },
+
+    {
+      "id": "RF12-ADD-004",
+      "title": "Police Report Tone Shift Anchor",
+      "status": "ACTIVE",
+      "rule": "After the first police report (Nov 22, 2025), Melissa exhibited a significant tone shift: she began probing with apparent concern — 'What's going on with you? You seem different. If you want to talk' — and attempted to extract information about Eli unrelated to Olivia. This is strategic tone modulation triggered by the police report (a legal event). Q2(b): 'Police report for sure. She is very manipulative and will adapt the tone that she thinks will get her what she wants.' When messages in B-030/B-031 (Nov 2025 onward) show Melissa shifting to a warmer, concerned, or probing register — especially when seeking personal information from Eli — classify as RF-12 primary Sev-2 (strategic tone shift tied to legal event — police report Nov 22, 2025 is the anchor). Legal correlation score: high (within 30 days). The probe pattern (expressing personal concern to extract information) is a distinct RF-12 sub-type: intelligence gathering disguised as care.",
+      "why": "Q2(a): 'Especially after the first police report... she has a pretty predictable pattern.' Q2(b): police report confirmed as primary tone-shift trigger. She adapts tone to what she thinks will get results."
+    },
+
+    {
+      "id": "RF12-ADD-005",
+      "title": "Explicit Court Documentation Admission",
+      "status": "ACTIVE",
+      "rule": "Melissa has explicitly stated she is documenting Eli's responses for her court case. When this statement is located in the messages: classify as RF-12 primary Sev-2 (explicit court documentation admission — strategic communication operation self-disclosed). This is the highest-evidential RF-12 signal type: Melissa naming her own strategic documentation intent in the record itself. The message is both a signal and its own evidence. Note the date and context — the admission may anchor a before/after window: messages Melissa sent after confirming she was building a record should be scored for performative reasonableness (ADD-007).",
+      "why": "Q2(c): 'Yes. She has said she mentioned she is documenting my responses for her court case.' Explicit self-disclosure of strategic documentation intent confirmed."
+    },
+
+    {
+      "id": "RF12-ADD-006",
+      "title": "Stop Texting Me — Performative Boundary Manufacture",
+      "status": "ACTIVE",
+      "rule": "Melissa has used a specific pattern: (1) says 'stop texting me' when she doesn't like what Eli is saying; (2) immediately sends a new message herself; (3) when Eli responds to her new message, repeats 'stop texting me.' This manufactured boundary-violation cycle creates false evidence for court: it appears Eli is violating her stated request to stop contact. Q5(c): 'That seemed performative for court.' When this pattern is documented: classify as RF-12 primary Sev-2 (manufactured evidence performance — boundary violation trap) + RF-07 compound (Eli responding to Melissa's own initiated message after she told him to stop = manufactured flooding). Identification sequence: look for 'stop texting' / 'stop contacting' / 'don't text me' messages followed by Melissa initiating new contact in the same time window.",
+      "why": "Q5(c): 'She would immediately text me something new and I would respond to her new text and she would go stop texting me that seemed performative for court.' Confirmed as deliberate court-record manufacturing. Cross-ref RF-07 for manufactured boundary violation."
+    },
+
+    {
+      "id": "RF12-ADD-007",
+      "title": "Escalation When Calm Responses Don't Work — Bait-Switch Cycle",
+      "status": "ACTIVE",
+      "rule": "Melissa's core bait-switch cycle structure confirmed: (1) enters exchange with calm or reasonable tone; (2) when Eli's calm response doesn't give her a reaction or concession, she escalates; (3) escalation serves as either a continued provocation attempt or a pivot to hostility for record purposes. Q4(c): 'She escalates when calm responses weren't getting what she wanted.' When a sequence shows: Melissa reasonable → Eli de-escalating/neutral → Melissa escalating: classify as RF-12 primary Sev-1/2 (bait-switch cycle — ARC-RF12-002). The escalation confirms the initial reasonable entry was tactical. Severity: Sev-1 if escalation is mild; Sev-2 if escalation includes false allegations, threats, or DARVO pivot. Cross-reference RF-04 (DARVO), RF-13 (escalation pattern).",
+      "why": "Q4(b): 'She wasn't used to it so she did a lot of prodding and pushing and baiting.' Q4(c): 'Yeah. She escalates when calm responses weren't getting what she wanted.' Structural confirmation of bait-switch cycle from Eli's direct observation."
+    },
+
+    {
+      "id": "RF12-ADD-008",
+      "title": "Strategic Communication Awareness Confirmed — Psychopathic Trait Mirroring Note",
+      "status": "ACTIVE",
+      "rule": "Eli confirmed Melissa is aware of the communication dynamic and strategically manages it: (1) she adapts her tone to 'what she thinks will get her what she wants' (Q2(b)); (2) she explicitly documents responses for court (Q2(c)); (3) she noticed and probed for the artifact of Eli's AI-assisted composition — the trailing quotation mark (Q4(a)); (4) Q5(a): 'She has demonstrated that she can mirror some of those traits [psychopathic]. She gaslights a lot.' Eli also notes the 'every accusation is an admission' projection pattern — consistent with RF-15 PROJ-001 through PROJ-004. For RF-12 classification: the projection pattern (making accusations that reflect her own behavior) functions strategically as pre-emptive record framing — she accuses Eli of what she does, ensuring any counter-accusation appears retaliatory. When projection accusations appear in messages: RF-12 peripheral note (strategic accusation as pre-emptive record construction) + RF-15 primary (false allegation/projection). Do not flag the strategic dimension as a primary RF-12 signal unless the projection is clearly timed to a legal event or bait-switch sequence.",
+      "why": "Q5(a): psychopathic mirroring traits confirmed; projection pattern (every accusation is an admission) noted. Q5(b): 'On paper she seems like she is cooperative but she is clever in her manipulations.' Strategic awareness and intelligence confirmed at CP2."
+    }
+
+  ],
+
+  "arc_state_post_cp2": {
+    "ARC-RF12-001": {
+      "name": "Strategic Campaign",
+      "description": "Melissa's deliberate management of the communication record for legal purposes — tone shifts tied to legal events, documented-for-court admissions, and performative reasonableness.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "received",
+      "note": "Signal criteria: (1) Tone shift correlated with legal event (legal timeline per ADD-001); (2) explicit documentation admission when located (ADD-005) — Sev-2; (3) probe for personal information post-legal-event (ADD-004); (4) performatively cooperative messages that contradict documented behavior (Q5(b)). First confirmed signal promotes CANDIDATE to WATCHING. Jun 2022 contempt summons area (B-004/B-005) and Nov 2025 police report area (B-030) are the two anchor legal events to check first."
+    },
+    "ARC-RF12-002": {
+      "name": "Bait-and-Switch Cycle",
+      "description": "Melissa's tactical use of reasonable entries followed by escalation, and manufactured boundary violations for court documentation.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "received",
+      "note": "Signal criteria: (1) Reasonable → de-escalation by Eli → Melissa escalates (ADD-007) — Sev-1/2; (2) 'Stop texting me' → Melissa initiates new contact → repeat (ADD-006) — Sev-2; (3) Known bait-trigger deployment followed by pivot (ADD-003). Cross-reference RF-04 (DARVO) and RF-13 (escalation arc) for compound tagging. First confirmed cycle promotes CANDIDATE to WATCHING."
+    }
+  },
+
+  "special_output": {
+    "bait_switch_index": {
+      "file": "bait-switch-index.json",
+      "description": "Per RF-12-SUPPLEMENT.md: generate a bait-switch-index.json tracking each identified bait-and-switch sequence. Structure: sequence_id, date, batch_id, bait_message_row, pivot_message_row, bait_trigger_type, Eli_response_type (reactive/neutral/de-escalating), outcome (Melissa escalated/pivoted-calm/pivoted-legal). This index enables cross-pass analysis to identify which RF-04/RF-09 events were actually RF-12 bait-and-switch constructions."
+    }
+  },
+
+  "post_cp2_processing_instructions": {
+    "primary_signal_criteria": [
+      "Tone shift in B-004/B-005 area (Jun 2022 contempt summons window) — ADD-001 legal correlation",
+      "Explicit 'documenting for court' admission — locate in messages (ADD-005) Sev-2",
+      "Post-Nov 22 2025 probing tone shift (B-030/B-031) — ADD-004 police report anchor",
+      "'Stop texting me' → immediate new message → repeat pattern (ADD-006) Sev-2",
+      "Bait-switch cycles: reasonable entry → Eli neutral → Melissa escalates (ADD-007)",
+      "Performatively reasonable messages in hostile clusters — perform the 'GAL read test': would this single message appear cooperative out of context?"
+    ],
+    "peripheral_only_categories": [
+      "Eli's Phase B/C calm responses — genuine improvement, not RF-12 per ADD-002",
+      "Projection accusations already captured as RF-15 primaries — RF-12 peripheral note only per ADD-008"
+    ],
+    "arc_promotion_criteria": {
+      "ARC-RF12-001": "2+ legal-correlated tone shifts OR 1 explicit documentation admission → promote CANDIDATE to WATCHING",
+      "ARC-RF12-002": "2+ confirmed bait-switch cycles OR 1 'stop texting' pattern → promote CANDIDATE to WATCHING"
+    },
+    "hot_periods_watch": [
+      "B-004/B-005 (Dec 2022 – Feb 2023): contempt summons Jun 2022 — 30+ day window; check for tone pattern change",
+      "B-016 (Jun 2024): incest framing cluster — high-probability bait-and-switch candidate; RF-04 DARVO compounds are RF-12 cycle candidates",
+      "B-025 (May 2025): EP-1078 AI-guided communication start — Melissa's response to change, prodding and baiting documented",
+      "B-030 (Nov 2025): police report Nov 22 — ADD-004 tone shift anchor; high-correlation legal event",
+      "B-031 (Jan-Apr 2026): GAL appointment April 2026 — ADD-001 legal milestone; performative reasonableness likely peaks near April 2026"
+    ],
+    "bait_switch_candidates_from_tier1": [
+      "RF-04 COMP-RF04-028 (Nov 25 2025 'big contempt case' DARVO) — RF-12 bait-switch candidate",
+      "RF-04 COMP-RF04-029 (Feb 15 2026 raised voice → verbal abuse → traumatized → drinking problem) — RF-12 escalation candidate",
+      "RF-09 XREF-001 (ROW-9964 'There's no threats' directly after ROW-9957 documented threat) — stop-texting / performative pattern candidate",
+      "RF-07 S-003 (May 2025 'stop texting me' then continues) — ADD-006 candidate"
+    ]
+  }
+}

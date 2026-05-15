@@ -1,0 +1,60 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-023",
+    "row_range": {
+      "start": 7763,
+      "end": 7797
+    },
+    "date_range": {
+      "start": "2025-02-21",
+      "end": "2025-03-10"
+    },
+    "message_count": 35,
+    "phase": "B",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 35,
+    "primary_flags": 0,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 35,
+    "flag_rate": "0.0%"
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 ACTIVE. 7 signals (through S007 from B-022). Feb-Mar 2025; no new relay signals."
+  },
+  "compound_patterns": [],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase B batch. No RF-08 primary signals. Pattern watch active.",
+    "rf08_assessment": "No triangulation signals at RF-08 primary threshold. Cross-RF context from RF-01 and RF-04 passes reviewed \u2014 no relay-through-Olivia or third-party-triangulation events identified at this batch level.",
+    "cross_rf_context": "RF-01 ADD-004 relay pattern is the primary cross-RF anchor. No ADD-004 compound candidates in this batch."
+  }
+}

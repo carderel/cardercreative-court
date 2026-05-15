@@ -1,0 +1,58 @@
+{
+  "batch_id": "B-019",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2024-09-05",
+    "end": "2024-10-03"
+  },
+  "row_range": {
+    "start": 6737,
+    "end": 7164
+  },
+  "message_count": 574,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 8,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B019-001",
+      "date": "2024-09-15",
+      "row_ref": "ROW-7071-7170_range",
+      "severity": 2,
+      "rf15_category": "A_relay",
+      "direction": "received",
+      "summary": "Physical harm allegations via Olivia relay. Sep-Oct 2024 period. RF-04 B-019 flags ROW-7071-7091 (Sev-1) and ROW-7161-7170 (Sev-2) include harm allegation content delivered through Olivia. Category A relay (allegations attributed to Olivia that cannot be Eli-side confirmed). Compound RF-15+RF-08. Sev-2 (pattern: third instance of harm-via-relay mechanism in B-019 window).",
+      "exact_quote": "Sep-Oct 2024 harm relay content \u2014 see RF-04 B-019 ROW-7071-7170 for exact text.",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 9,
+      "compound_patterns": [
+        "RF-04+RF-15",
+        "RF-08+RF-15"
+      ],
+      "cross_rf_note": "RF-04 B-019 has 4 primary flags. RF-08 B-019 also has signal in this window (S005 harm allegations via Olivia). RF-15 primary identifies the false-allegation content of the relay."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

@@ -1,0 +1,63 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "generated": "2026-04-28",
+  "status": "pending",
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "tone_assessment": "Cooperative baseline. Zero RF-03 primary signals. Logistics communication functional and non-strategic in pre-escalation period. Signal concentration expected in Phase A late (hot periods 2024-08) and Phase B/C (2025-05, 2025-10). Cross-RF foundation available: RF-02 (101 flags, gatekeeping) provides context for logistics-gatekeeping compound; cat allergy manufactured pretext (RF-15 ADD-006) is the clearest anticipated RF-03+RF-02 compound."
+  },
+  "calibration_questions": [
+    {
+      "id": "CP2-RF03-Q1",
+      "topic": "Scheduling as a control mechanism",
+      "question": "RF-03 is about using logistics as a weapon, not just gatekeeping access. (a) Are there recurring patterns where Melissa changed pickup/dropoff times, locations, or conditions at the last minute in ways that felt deliberate? (b) Has she ever created 'impossible' logistics \u2014 giving you information too late to respond, or setting conditions she knew you couldn't meet? (c) How does the logistics of custody exchanges typically go \u2014 is there a pattern of confrontation at pickups or dropoffs?",
+      "why_asked": "The RF-02 record documents 101 access denial signals. RF-03 asks about the PROCESS \u2014 does she manipulate the logistics itself to control or punish, beyond simply denying access?",
+      "classification_impact": "High \u2014 establishes whether RF-03 is a primary pattern (logistics-as-weapon) or primarily RF-02 with logistics components"
+    },
+    {
+      "id": "CP2-RF03-Q2",
+      "topic": "Activity enrollment and scheduling conflicts",
+      "question": "(a) Has Melissa ever enrolled Olivia in recurring activities (sports, classes, events) that specifically conflict with your scheduled parenting time, without discussing it with you first? (b) If yes \u2014 is there a pattern of this, or was it a one-time situation? (c) Are there activities Olivia is currently in that conflict with your time that you feel you had no input on?",
+      "why_asked": "Activity enrollment conflicts are a classic RF-03 mechanism \u2014 creating standing conflicts that make 'normal' visitation impossible without the other parent appearing unreasonable for objecting.",
+      "classification_impact": "High \u2014 if confirmed, establishes ARC-RF03-002 (Activity Enrollment Obstruction)"
+    },
+    {
+      "id": "CP2-RF03-Q3",
+      "topic": "Logistical compliance tied to unrelated demands",
+      "question": "(a) Has Melissa ever made logistical cooperation contingent on something unrelated \u2014 e.g., 'I'll share the school schedule once you do X' or 'pickup won't work unless you agree to Y'? (b) The cat allergy scheme (RF-15 ADD-006) tied Olivia's visitation to Eli removing his cats \u2014 is that the clearest example, or are there others? (c) Any examples where she created a situation where complying with logistics meant agreeing to something else?",
+      "why_asked": "Conditional logistics is an RF-03 primary pattern. The cat allergy scheme is already documented as RF-15+RF-02 compound; this question identifies if there are additional standalone RF-03 conditional compliance patterns.",
+      "classification_impact": "High \u2014 each confirmed conditional logistics event is an RF-03 primary flag"
+    },
+    {
+      "id": "CP2-RF03-Q4",
+      "topic": "Hot periods 2024-08 and 2025-05 \u2014 logistical conflicts",
+      "question": "The triage identifies August 2024 and May 2025 as RF-03 hot periods. (a) August 2024 was the EP-0854 mega-cluster (311 messages). Was logistics manipulation part of that conflict? (b) May 2025 is around when you started using AI-guided communication. Were there specific logistical maneuvers during that transition? (c) October 2025 is also a hot period \u2014 any logistical conflicts around the time of the police report (Nov 22 2025)?",
+      "why_asked": "Correlating hot periods with known conflict clusters ensures RF-03 flags align with the broader behavioral record rather than being isolated incidents.",
+      "classification_impact": "Medium \u2014 confirms hot period timing and severity context for Phase A/B/C arc progression"
+    }
+  ],
+  "addenda_proposed": [
+    {
+      "id": "RF03-ADD-001-PROPOSED",
+      "title": "Cat Allergy Scheme as RF-03 Compound",
+      "rule_draft": "[PENDING CP2] The cat allergy/asthma documentation scheme (Melissa took Olivia to allergy specialist \u2192 documented cat allergy + asthma \u2192 required Eli to remove cats as condition of visitation) is already classified as RF-15 Category B + RF-02 primary. Add RF-03 secondary compound when the logistical obstruction mechanism is evident: denying visitation by creating a logistics condition (cat removal) that Eli could not or would not meet. Flag: RF-03 peripheral (Category: logistical compliance contingent on unrelated demands).",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF03-ADD-002-PROPOSED",
+      "title": "Logistics vs. Access Denial Boundary Rule",
+      "rule_draft": "[PENDING CP2] RF-02 flags access DENIAL. RF-03 flags logistical MANIPULATION of that denial. When Melissa denies access: (1) simple denial = RF-02 only; (2) denial with manufactured logistical pretext = RF-02 primary + RF-03 secondary; (3) denial through impossible logistics = RF-03 primary + RF-02 secondary. Apply this boundary consistently to avoid double-counting.",
+      "status": "pending_cp2"
+    }
+  ],
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda. Initialize ARC-RF03-001 and ARC-RF03-002 at CANDIDATE. Resume B-002. Cross-reference RF-02 batch outputs at each batch for RF-03 compound candidates. Primary signal concentration expected B-006 onward (Phase A late). Cat allergy scheme area (B-025) should yield RF-03+RF-02+RF-15 triple compound.",
+    "signal_sourcing_note": "RF-03 signals are partially embedded in RF-02 flags. Run full pass independently \u2014 do not rely solely on RF-02 cross-references. B-001 through B-005 likely zero or minimal flags. Phase A hot periods (2024-06, 2024-08, 2023-09 per RF-06 heatmap overlap) may yield RF-03 alongside financial coercion. Phase B/C visit refusal cascade area should be checked for logistical weaponization layered on access denial."
+  }
+}

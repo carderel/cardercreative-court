@@ -1,0 +1,78 @@
+{
+  "batch_id": "B-012",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2023-11-26",
+    "end": "2024-01-31"
+  },
+  "row_range": {
+    "start": 4004,
+    "end": 4398
+  },
+  "message_count": 504,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "WATCHING",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 6,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 2,
+    "note": "Christmas 2023 cluster: EP-0589 Dec 22 2023 (24 msgs, FLOOD) + EP-0591 Dec 24 2023 (23 msgs, FLOOD). Second year Christmas hostile cluster. CYC-003 confirmed across two calendar years (2022: B-004; 2023: B-012)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B012-001",
+      "episode_cluster": [
+        "EP-0589",
+        "EP-0591"
+      ],
+      "dates": "2023-12-22 through 2023-12-24",
+      "total_messages": 47,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 1,
+      "escalation_shape": "cluster \u2014 two consecutive holiday-adjacent hostile episodes",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured responses; Eli disengages between episodes",
+        "received_direction": "hostile initiation Dec 22 and Dec 24; flooding both episodes",
+        "net_escalation": "moderate Sev-1",
+        "de_escalation_resistance": "Between-episode: Eli disengages Dec 22; Melissa re-initiates Dec 24"
+      },
+      "cycle_classification": "CYC-003 CONFIRMED ACROSS 2 YEARS \u2014 Christmas temporal window 2022 and 2023",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 7,
+      "cross_rf_note": "B-012 contains RF-04 flags. Annual Christmas hostile recurrence confirmed."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Christmas 2023 mirrors Christmas 2022. Annual holiday escalation now multi-year structural pattern.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "Dec 22 disengage then Dec 24 re-initiation. 7th between-episode resistance instance.",
+      "state": "ACTIVE"
+    }
+  ]
+}

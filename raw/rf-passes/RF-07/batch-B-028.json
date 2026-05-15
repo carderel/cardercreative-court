@@ -1,0 +1,75 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-028",
+    "row_range": { "start": 8197, "end": 14546 },
+    "date_range": { "start": "2025-08-28", "end": "2025-10-16" },
+    "message_count": 502,
+    "phase": "B/C",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Phase B/C transition. Sep-Oct 2025. Three-block data structure. Oct 4-7 'so afraid of you' child-fear relay cluster (COMP-RF04-026, RF-04+RF-05). Sep 17 'agreement ready to sign' RF-05 peak event. Contains S-006: ROW-14499+14508 custodial-time contact during Eli's parenting time."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 502,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 501,
+    "flag_rate": "0.2%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF07-B028-001",
+      "flag_id": "ARC-RF07-001-S006",
+      "timestamp": "2025-10-04 through 2025-10-07",
+      "direction": "received",
+      "phase": "C",
+      "row_ref": "ROW-14490–ROW-14517",
+      "message_text": "ROW-14499 (Received): 'you better not stop her from contacting me next time...I'm still contemplating contempt charges' | ROW-14508 (Received): 'She doesn't feel safe and supported as evidenced by the texts I got' | ROW-14517 (Received): 'the feedback I got in text the last weekend she was with you was very alarming. Also the conversation I had with her while she was crying in her room and begging me not to say anything to you'",
+      "primary_rf": "RF-07",
+      "primary_severity": 1,
+      "sub_pattern": "custodial_time_contact_overstepping",
+      "primary_reasoning": "Custodial-time contact overstepping per ADD-004. Oct 4-7 cluster: Melissa contacts Eli during his parenting weekend with messages referencing Olivia's texts to Melissa 'the last weekend she was with you' — deploying Olivia's contact with Melissa during Eli's parenting time as evidence against Eli ('She doesn't feel safe and supported as evidenced by the texts I got'). Mechanism: (1) Melissa maintained contact with Olivia during Eli's parenting time; (2) Olivia's distress signals during Eli's time were captured and weaponized as evidence; (3) ROW-14499 adds a contempt threat for interfering with Olivia's contact with Melissa. ADD-004: contact during Eli's parenting time for non-urgent reasons (character attack, legal threats) constitutes custodial-time overstepping. Content is not emergency logistics — it is retrospective character attack using child-mediated evidence. ROW-14517: 'crying in her room and begging me not to say anything to you' — this communication occurred during Eli's parenting time. Sev-1: cluster context; contempt threat + child-mediated concern. Sev-2 would require explicit response-demand ('why aren't you answering?') during identified parenting time. ARC-RF07-001-S006.",
+      "verbatim_key_messages": [
+        "ROW-14499 (Received): 'you better not stop her from contacting me next time...I'm still contemplating contempt charges'",
+        "ROW-14508 (Received): 'She doesn't feel safe and supported as evidenced by the texts I got'",
+        "ROW-14517 (Received): 'the feedback I got in text the last weekend she was with you was very alarming. Also the conversation I had with her while she was crying in her room and begging me not to say anything to you'"
+      ],
+      "pattern_tags": ["custodial_time_overstepping", "child_mediated_contact", "contempt_threat", "parenting_time_intrusion"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": ["COMP-RF04-026"],
+      "calibration_notes": "Sev-1: custodial-time overstepping confirmed by ADD-004 mechanism (Melissa maintaining Olivia contact during Eli's parenting time and weaponizing that contact as evidence). Compound with COMP-RF04-026 (RF-04 child-fear relay primary). RF-07 custodial-time-overstepping is the ADD-004 mechanism; the RF-04 character-attack content is the compound component."
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. S-006 added (ROW-14499+14508, custodial-time overstepping, Sev-1). Arc now at 6 signals. Sub-pattern: custodial_time_contact_overstepping (ADD-004) confirmed as arc component alongside flooding_candidate, response_demand, continuation_after_self_demand, read_receipt_pressure."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "High escalation — Aug 28-Oct 16 2025. Sep 17 'agreement ready to sign' RF-05 peak. Aug 28-29 Labor Day visit refusal. Oct 4-7 'so afraid of you' child-fear relay. The dataset's most severe RF-04+RF-05 compound periods cluster in this batch.",
+    "rf07_assessment": "One primary signal (Sev-1 custodial-time overstepping). The Oct 4-7 cluster documents Melissa's contact with Olivia during Eli's parenting time and deployment of that contact as character-attack evidence — ADD-004 mechanism confirmed. The 'so afraid of you' framing, while primarily RF-04+RF-05, is delivered through custodial-time contact, making it RF-07 as well.",
+    "custodial_context": "S-006 directly addresses custodial-time contact: Melissa was in contact with Olivia during Eli's parenting weekend, and that contact was then weaponized in messages to Eli. ADD-004 confirmed: Melissa's contact with Olivia during Eli's parenting time served non-urgent purpose (character documentation and legal threat) rather than genuine safety need."
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "batch_id": "B-020",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2024-10-04",
+    "end": "2024-12-17"
+  },
+  "row_range": {
+    "sms_start": "ROW-7524",
+    "sms_end": "ROW-8716",
+    "mms_start": "ROW-12274",
+    "mms_end": "ROW-15230"
+  },
+  "message_count": 523,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B020-PF-001",
+      "row_ref": "ROW-7581",
+      "date": "2024-10-24",
+      "direction": "Sent",
+      "type": "SMS",
+      "arc": "ARC-RF02-001",
+      "arc_signal_number": 26,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "Yeah. That's why I answered and told her that otherwise cutoff is 9:30",
+      "context": "Eli explaining to Melissa why he answered a late call, referencing a 9:30 PM cutoff rule. ROW-7582 (Melissa, Received): 'So she should call at 9:29 like you did all the time' — sarcastic confirmation that the cutoff has been consistently enforced and is known to both parties. Prior cutoff references established 8:30 PM (B-001 through B-003); this represents a shift to 9:30 PM while the enforcement structure remains intact. ARC-RF02-001 DND mechanism confirmed operational Oct 2024 — now at 26 signals spanning Dec 2022–Oct 2024 (21+ month continuity).",
+      "analytical_note": "The 9:30 cutoff is an upward adjustment from the 8:30 cutoff documented in earlier batches, but the enforcement structure is identical. Melissa's sarcastic 'call at 9:29' response confirms both parties are aware of and operating under the cutoff norm. DND arc remains active and unresolved.",
+      "arc_promotion": null
+    },
+    {
+      "flag_id": "B020-PF-002",
+      "row_ref": "ROW-8672",
+      "date": "2024-12-14",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 42,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "She asked me to call you",
+      "context": "Melissa relaying Olivia's request to contact Eli. Preceding exchange: ROW-12418 (Eli): 'If I don't answer I will call you back. Unless it's an emergency.' ROW-12420 (Melissa): 'She said you said to call her.' ROW-12421 (Melissa): 'She's so excited.' ROW-12422 (Eli): 'Ok. I am now able to call.' ROW-8672 / ROW-12423 MMS duplicate (Melissa): 'She asked me to call you.' Olivia's desire to contact her father is not executed directly by the child but routed through Melissa as intermediary. This is the foundational access-mediation mechanism of ARC-RF02-002 operating in routine form.",
+      "analytical_note": "Distinct from the contact-conflict relay sub-pattern (which involves emotional distress being reported). This is plain access mediation: Olivia's call initiative routes through Melissa rather than directly to Eli. Lower salience than the explicit bidirectional control confirmations but consistent with the established three-dimensional arc model. The preceding context (Eli notifying Melissa he can receive calls, Melissa managing Olivia's communication timing) illustrates the intermediary position operating in real time.",
+      "arc_promotion": null
+    },
+    {
+      "flag_id": "B020-PF-003",
+      "row_ref": "ROW-8685",
+      "date": "2024-12-15",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 43,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "Sounds like I have to be. Stop talking to her about it before you talk to me but yeah we're just cleaning",
+      "context": "Eli asked (ROW-12435-12436, MMS, Dec 15 at 3:27 AM): 'You cool if I get her for a bit tomorrow? / Maybe like 2 ish to 6 or 7?' Melissa responds with reluctant agreement framed as obligation ('Sounds like I have to be') followed by explicit enforcement of the required-intermediary rule: 'Stop talking to her about it before you talk to me.' Eli had apparently mentioned the potential pickup to Olivia prior to securing Melissa's approval. ROW-12439 (Eli): 'I told her I was going to talk to you first. I made it clear that you have to be ok with it.' — Eli asserts he communicated Melissa's gatekeeper role to Olivia. Also appears as ROW-12437 in MMS dataset (same message, confirmed duplicate).",
+      "analytical_note": "Direct structural parallel to ROW-7214-7215 (B-019, Sep 19): 'I tell you that you need to make these plans the night before and instead you made them with her.' Both instances explicitly state Eli must route plans through Melissa before communicating with Olivia — confirming the required-intermediary norm as an actively enforced behavioral rule. Eli's acknowledgment in ROW-12439 ('I made it clear that you have to be ok with it') confirms he has internalized and now pre-enforces the norm with Olivia. The phrase 'Sounds like I have to be' is notably grudging — compliance framed as reluctant obligation rather than cooperative facilitation. This is the sixth explicit required-intermediary enforcement instance in the dataset and among the clearest structural articulations outside the five formal bidirectional control confirmations.",
+      "arc_promotion": null
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B020-PERIPH-001",
+      "row_ref": "ROW-7553",
+      "date": "2024-10-18",
+      "rf_category": "RF-05",
+      "severity": 1,
+      "verbatim": "Abby throwing a fit. Is that why it went from you could have her spend the night to having car issues all of a sudden",
+      "note": "Melissa attributes visit cancellation to Abby's behavior ('throwing a fit'), implying Abby caused Eli to fabricate a car excuse to avoid a sleepover. Derogatory framing of Eli's partner as a disruptive influence on visit access. RF-05 Sev 1."
+    },
+    {
+      "flag_id": "B020-PERIPH-002",
+      "row_ref": "ROW-7703",
+      "date": "2024-11-26",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "You were huffy with Olivia that night. Acting all irritated and talking to Abby. Next time pay attention",
+      "note": "Melissa critiques Eli's conduct during a visit: characterizes him as inattentive and irritable, with Abby implicated as the distraction. RF-04 parental delegitimizing (visit quality and attentiveness); RF-05 adjacent (Eli's partner blamed for diminished Olivia time)."
+    },
+    {
+      "flag_id": "B020-PERIPH-003",
+      "row_ref": "ROW-12344-ROW-12353",
+      "date": "2024-11-26",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "Yeah, I don't know how you act like you don't know that is so annoying. We had a conversation on the phone regarding what happened... So apparently you weren't listening to the conversation we were having and just giving blanket answers so I need you to pay attention when we are having serious discussions so that you are able to give a good opinion on what is going on [ROW-12344-12345] / You act like you're new [ROW-12352]",
+      "note": "Sustained dismissal of Eli's engagement during a discussion about a childcare dispute (Jeanette/Harley situation). Melissa attributes his confusion about the outcome to inattentiveness and blanket responses rather than legitimate ambiguity. 'You act like you're new' is contemptuous summary. RF-04 parental delegitimizing (competence and engagement attack)."
+    },
+    {
+      "flag_id": "B020-PERIPH-004",
+      "row_ref": "ROW-12356",
+      "date": "2024-11-27",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "You are in the top 10 zip codes with highest crime rate",
+      "note": "Melissa sends crime statistics for Eli's zip code unprompted, with accompanying image (ROW-12357). Home environment attack; consistent with prior safety-concern narratives used to delegitimize Eli's residence as appropriate for Olivia. RF-04 Sev 1."
+    },
+    {
+      "flag_id": "B020-PERIPH-005",
+      "row_ref": "ROW-8678",
+      "date": "2024-12-14",
+      "rf_category": "RF-05",
+      "severity": 1,
+      "verbatim": "Bitch answer yo phone",
+      "note": "Derogatory language directed at Eli. Also appears as ROW-12430 in MMS dataset (confirmed duplicate). RF-05 Sev 1."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-12337",
+      "date": "2024-11-26",
+      "description": "Melissa proactively offers two visit coordination options: pick Olivia up from Becky's or 'Friday is wide open' — responsive access facilitation with flexibility."
+    },
+    {
+      "row_ref": "ROW-12385",
+      "date": "2024-12-08",
+      "description": "Melissa offers to switch her work shift so Olivia can attend a drone event with Eli: 'If you can't take her I'll switch shifts.' (She later withdrew when Eli's car broke down and it became last-minute.)"
+    },
+    {
+      "row_ref": "ROW-12391-ROW-12392",
+      "date": "2024-12-11",
+      "description": "Melissa consults Eli on HPV vaccine decision and solicits his consent: 'Olivia is at the age she should get the hpv vaccine / Yay or nay?' — co-parenting on medical decision."
+    },
+    {
+      "row_ref": "ROW-12455-ROW-12469",
+      "date": "2024-12-17",
+      "description": "Detailed illness update shared: wheezing, sore throat, cough, runny nose; doctor visit confirmed. Also provides weight (76 lbs) and height (4'5 3/4\") — proactive health information sharing."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-12409",
+      "date": "2024-12-11",
+      "consideration": "ARC-RF02-004 near-miss. Melissa declines to switch shifts after Eli's car breaks down: 'It's a little late now. She's just not going to be able to go' — Olivia misses drone event. Not flagged: Eli's car trouble was genuine, the situation became genuinely last-minute, and Melissa had previously offered to switch shifts preemptively (ROW-12385). Pragmatically defensible given changed circumstances."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "signal_count now 26; DND/cutoff pattern confirmed operational Oct 2024 (21+ month continuity Dec 2022–Oct 2024); cutoff shifted from 8:30 PM to 9:30 PM but enforcement structure unchanged; Melissa's sarcastic confirmation (ROW-7582) shows both parties are operating under the norm",
+    "ARC-RF02-002": "signal_count now 43; two signals this batch — ROW-8672 (call relay mechanism, Dec 14, signal 42) and ROW-8685 (explicit required-intermediary enforcement, Dec 15, signal 43); six explicit enforcement instances now documented; required-intermediary norm confirmed internalized by Eli (ROW-12439: 'I made it clear that you have to be ok with it')",
+    "ARC-RF02-004": "no new signals this batch; last signal B-016; remains ACTIVE",
+    "ARC-RF02-005": "no new signals this batch; remains WATCHING",
+    "ARC-RF02-006": "no new signals this batch; remains WATCHING"
+  },
+
+  "batch_notes": "Quieter RF-02 batch (3 primary flags) but analytically significant on two fronts: (1) ARC-RF02-002 gains its sixth direct required-intermediary enforcement instance (ROW-8685), and Eli's normalization of the requirement continues — he now proactively explains the intermediary rule to Olivia herself (ROW-12439); (2) ARC-RF02-001 gains its 26th signal with a cutoff shift from 8:30 to 9:30 PM, the mechanism unchanged. Cooperative density is high (4 data points). Peripheral pattern: RF-04 attacks on Eli's home environment (crime stats ROW-12356) and parenting competence (Jeanette dispute dismissal ROW-12344-12353) continue; RF-05 (Abby-blame framing, derogatory language) continues. No arc lifecycle transitions this batch."
+}

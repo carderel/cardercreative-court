@@ -1,0 +1,63 @@
+{
+  "batch_id": "B-029",
+  "date_range": {
+    "start": "2025-09-14",
+    "end": "2025-10-31",
+    "note": "date-filtered batch"
+  },
+  "message_count": 482,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "calibration_addenda_active": [
+    "RF12-ADD-001",
+    "RF12-ADD-002",
+    "RF12-ADD-003",
+    "RF12-ADD-004",
+    "RF12-ADD-005",
+    "RF12-ADD-006",
+    "RF12-ADD-007",
+    "RF12-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-004: explicit court documentation admission Sep 17 2025 (ROW-14367). 'My lawyer said strong case, this further demonstrates that.' Sev-2. ARC-RF12-001 Signal 2."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-004",
+      "severity": "Sev-2",
+      "direction": "Received",
+      "arc": "ARC-RF12-001",
+      "arc_signal": 2,
+      "date": "2025-09-17",
+      "orig_rows": [
+        "14367"
+      ],
+      "messages": [
+        {
+          "orig_row": "14367",
+          "direction": "Received",
+          "date": "2025-09-17",
+          "text": "My lawyer already said I had a strong case this further demonstrates that"
+        }
+      ],
+      "classification": "RF-12 primary Sev-2 \u2014 Melissa explicitly states she has an active legal strategy ('My lawyer already said I had a strong case') and declares the current exchange 'further demonstrates' it. This is the ADD-005 explicit court documentation admission: Melissa is documenting Eli's responses for her case and telling him so. High legal correlation per ADD-001: Melissa's confirmed attorney engagement (Sep 2025, RF-05 S-021) is in this same batch window. The statement is strategically placed to pressure Eli into a defensive response while simultaneously recording the exchange for legal use. ARC-RF12-001 Signal 2. ARC-RF12-001 promotes to WATCHING still (needs 3 for ACTIVE).",
+      "addendum_applied": "ADD-001 (legal timeline \u2014 Sep 2025 attorney engagement confirmed; Sev-2). ADD-005 (explicit court documentation admission \u2014 'strong case, further demonstrates')."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF12-001",
+      "state": "WATCHING",
+      "signals_cumulative": 2
+    },
+    {
+      "arc": "ARC-RF12-002",
+      "state": "WATCHING",
+      "signals_cumulative": 2
+    }
+  ]
+}

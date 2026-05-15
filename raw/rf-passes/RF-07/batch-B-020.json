@@ -1,0 +1,73 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-020",
+    "row_range": { "start": 7558, "end": 7705 },
+    "date_range": { "start": "2024-10-19", "end": "2024-12-06" },
+    "message_count": 148,
+    "phase": "A/B",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Oct drop (INF-005) batch — Melissa largely silent after Oct conflict. 148 messages over ~7 weeks reflects reduced contact. ROW-8679 (Dec 14, 2024) appears in the dataset's three-block sequential data out of chronological order (discovered in B-030 sequential block). Chronologically belongs to Dec 14 — the gap between B-020 (ends Dec 6) and B-021 (starts Dec 19). Assigned to B-020 as the closest pre-gap batch."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 148,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 147,
+    "flag_rate": "0.7%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF07-B020-001",
+      "flag_id": "ARC-RF07-001-S002",
+      "timestamp": "2024-12-14 (out-of-sequence; gap between B-020 and B-021)",
+      "direction": "received",
+      "phase": "A/B",
+      "row_ref": "ROW-8679",
+      "message_text": "ROW-8679 (Received): 'Bitch answer yo phone'",
+      "primary_rf": "RF-07",
+      "primary_severity": 1,
+      "sub_pattern": "response_demand_with_contempt",
+      "primary_reasoning": "Response-demand message with escalating contempt — demanding immediate response to a phone call. ADD-002 slur ('Bitch') combined with explicit demand for immediate contact compliance. Mechanism: Eli's non-response to a call triggers a contemptuous response-demand text, coercing communication. Per ADD-004: demanding immediate response ('why aren't you answering?' response-demand framing) qualifies as RF-07. Sev-1 assigned: single message, no flooding cluster, no confirmation of custodial-time context from available data (Dec 14 2024 is a Sunday — likely Eli's parenting time; weekend parenting schedule per ADD-004, but Dec 14 specific custody status not confirmed). Data structure note: ROW-8679 appears in the three-block sequential data out of chronological order (discovered in B-030 sequential block but dated Dec 14 2024). Assigned to this batch as closest pre-gap batch.",
+      "verbatim_key_messages": [
+        "ROW-8679 (Received): 'Bitch answer yo phone'"
+      ],
+      "pattern_tags": ["response_demand", "contempt_slur", "phone_non_response_punishment", "out_of_order_row"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": [],
+      "calibration_notes": "Sev-1 assigned (single response-demand message). Sev-2 would require confirmation of custodial-time context (Dec 14 is Sunday; likely Eli's parenting time but not confirmed from available data). ADD-001 flooding threshold not met — single message. ADD-004 response-demand framing confirmed."
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. S-002 added (ROW-8679, Sev-1). Arc now has 2 signals total: S-001 (Aug 4-5 2024 mega-cluster, Sev-2) and S-002 (Dec 14 2024 response-demand, Sev-1). Sub-patterns now confirmed: flooding_candidate (S-001), response_demand_with_contempt (S-002). Oct behavioral silence (INF-005) context: Melissa's reduced contact Oct 19-Dec 6 makes ROW-8679 (Dec 14) notable as a sharp re-emergence of contemptuous demand behavior after the silence period."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Low volume — Melissa's post-October behavioral silence (INF-005) dominates this batch. 148 messages over ~7 weeks is well below normal communication density. Cooperative necessity-only communication pattern during this period.",
+    "rf07_assessment": "One primary signal: ROW-8679 (Sev-1, response-demand with contempt). This message marks re-emergence of contemptuous demand behavior after the Oct silence. Single message does not constitute flooding. Dec 14 Sunday timing raises ADD-004 custodial-time-overstepping question (unconfirmed). Arc second signal added.",
+    "custodial_context": "Oct-Dec 2024 covers standard parenting-time weekends. Oct silence suggests Melissa was not overstepping during this period. Dec 14 (Sunday) is likely Eli's parenting time — if confirmed, ROW-8679 would be Sev-2 (ADD-004 response-demand during parenting time). Held at Sev-1 pending synthesis confirmation."
+  }
+}

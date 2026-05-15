@@ -1,0 +1,48 @@
+{
+  "batch_id": "B-021",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2024-12-19", "end": "2025-01-08" },
+  "row_range": { "start": 7706, "end": 7713 },
+  "message_count": 8,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "fully cooperative — logistics only; extreme low-density period (late December 2024 / early January 2025 gap); no RF-04 activity",
+    "conflict_ratio": "0",
+    "rf04_activity": "none",
+    "notable_context": "ROW-7706-7709 Dec 19: childcare logistics (Becky sick/pink eye; Ha backup confirmed). ROW-7710 Dec 23: $25 daycare payment. ROW-7711 Dec 25: casual 'Meta quest is cool as hell' — fully cooperative. ROW-7712 Jan 7: 'They had a Dr appointment and she was still able to watch Olivia. She is the best help ever' — cooperative. ROW-7713 Jan 8: 'Are you picking her up tonight or not?' — mild pressure but no escalation."
+  },
+
+  "primary_flags": [],
+
+  "peripheral_flags": [],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [],
+      "signal_count_after": 53
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [],
+      "signal_count_after": 15
+    }
+  },
+
+  "compound_patterns": [],
+
+  "cp3_item": null,
+
+  "batch_statistics": {
+    "primary_flags": 0,
+    "severity_1": 0,
+    "severity_2": 0,
+    "severity_3": 0,
+    "peripheral_flags": 0,
+    "compound_patterns": 0,
+    "arc_rf04_001_signals_added": 0,
+    "arc_rf04_002_signals_added": 0
+  }
+}

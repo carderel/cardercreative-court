@@ -1,0 +1,120 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-029",
+    "row_range": {
+      "sequential_block": "ROW-8334–ROW-8466",
+      "parallel_block": "ROW-14548–ROW-14920"
+    },
+    "date_range": { "start": "2025-10-16", "end": "2025-12-16" },
+    "message_count": null,
+    "phase": "B/C",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Three-block data structure. Oct-Dec 2025. Nov 22 police report period (RF-02/RF-11 anchor). Three primary RF-07 signals: S-007 (Oct 25-26 hostile demands), S-008 (Nov 6 read-receipt/evidence threat), S-009 (Nov 24 continuation-after-silence mega-message). Nov 25 'big contempt case' (COMP-RF04-027)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": null,
+    "primary_flags": 3,
+    "primary_severity_distribution": { "1": 3, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": null,
+    "flag_rate": "see note"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF07-B029-001",
+      "flag_id": "ARC-RF07-001-S007",
+      "timestamp": "2025-10-25 through 2025-10-26",
+      "direction": "received",
+      "phase": "C",
+      "row_ref": "ROW-14611, ROW-14618",
+      "message_text": "ROW-14611 (Received, Oct 25): 'Drop her off at the party and quit being a bitch' | ROW-14618 (Received, Oct 26): [additional contemptuous demand in same cluster; ROW-14615: 'You're such a dipshit']",
+      "primary_rf": "RF-07",
+      "primary_severity": 1,
+      "sub_pattern": "response_demand_with_contempt",
+      "primary_reasoning": "Oct 25-26 contemptuous demand cluster. ROW-14611: 'Drop her off at the party and quit being a bitch' — directive command with contempt slur. ROW-14615: 'You're such a dipshit' — contempt escalation within 24 hours. ROW-14618: continued contemptuous messaging in same episode. Mechanism: demanding immediate compliance with a parenting action ('Drop her off at the party') combined with contemptuous slur deployment. Per ADD-004: response-demand framing with contempt language. Sev-1: isolated demand cluster without flooding volume. The 'quit being a bitch' framing combined with the action demand ('drop her off') constitutes a compliance-demand with boundary-overstepping communication. ARC-RF07-001-S007.",
+      "verbatim_key_messages": [
+        "ROW-14611 (Received, Oct 25): 'Drop her off at the party and quit being a bitch'",
+        "ROW-14615 (Received, Oct 26): 'You're such a dipshit'",
+        "ROW-14618 (Received, Oct 26): [continued contemptuous demand]"
+      ],
+      "pattern_tags": ["response_demand", "contempt_slur", "compliance_demand", "oct_2025"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": [],
+      "calibration_notes": "Sev-1: demand cluster without flooding. RF-04 primary (ADD-002 contempt slur cluster). RF-07 Sev-1 for the compliance-demand-with-contempt sub-pattern."
+    },
+    {
+      "message_id": "RF07-B029-002",
+      "flag_id": "ARC-RF07-001-S008",
+      "timestamp": "2025-11-06",
+      "direction": "received",
+      "phase": "C",
+      "row_ref": "ROW-14752–ROW-14753",
+      "message_text": "ROW-14752 (Received, Nov 6): 'This is the exact shit that makes it easy to get full custody because you don't...' | ROW-14753 (Received, Nov 6): 'Keep it up. It's great evidence'",
+      "primary_rf": "RF-07",
+      "primary_severity": 1,
+      "sub_pattern": "response_demand_as_legal_evidence_threat",
+      "primary_reasoning": "Two-message sequence Nov 6 following Eli's non-response to a movie-night coordination request. ROW-14752: 'This is the exact shit that makes it easy to get full custody because you don't...' — Eli's communication behavior (non-response) characterized as legal evidence supporting custody change. ROW-14753: 'Keep it up. It's great evidence' — non-response explicitly labeled as accumulating legal evidence against Eli. Mechanism: deploying the legal-evidence frame as a response-demand pressure tool — Eli must respond or his silence becomes courtroom evidence. This directly coerces communication by creating consequences for non-response. Per ADD-004 Sev-2 threshold (demanding immediate response); Sev-1 assigned here as trigger context is routine co-parenting communication (movie night), not urgent logistics. Cross-reference RF-05 S-024 (this message is also an RF-05 legal-threat signal). ARC-RF07-001-S008.",
+      "verbatim_key_messages": [
+        "ROW-14752 (Received, Nov 6): 'This is the exact shit that makes it easy to get full custody because you don't...'",
+        "ROW-14753 (Received, Nov 6): 'Keep it up. It's great evidence'"
+      ],
+      "pattern_tags": ["response_demand", "legal_evidence_threat", "non_response_punishment", "rf05_compound"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": ["ARC-RF05-001"],
+      "calibration_notes": "Sev-1: legal-evidence threat as response-demand pressure. Cross-reference RF-05 S-024. The 'great evidence' mechanism simultaneously threatens legal consequences and demands communication — pure response-demand coercion."
+    },
+    {
+      "message_id": "RF07-B029-003",
+      "flag_id": "ARC-RF07-001-S009",
+      "timestamp": "2025-11-24",
+      "direction": "received",
+      "phase": "C",
+      "row_ref": "ROW-14839",
+      "message_text": "ROW-14839 (Received, Nov 24): [Mega-message including]: 'I've tried to text you more recently and call but you don't respond' | 'I can't keep trying on my own'",
+      "primary_rf": "RF-07",
+      "primary_severity": 1,
+      "sub_pattern": "continuation_after_silence_with_responsibility_deflection",
+      "primary_reasoning": "Nov 24 mega-message continuation. ROW-14839 is the dataset's most comprehensive inadequate-father/Abby-harmful-actor/family-displacement child relay (COMP-RF04-027). Within this message: 'I've tried to text you more recently and call but you don't respond' — Melissa positions herself as having made multiple contact attempts that Eli refused. Per ADD-003: Eli's practice when conflict escalated was to wait and let Melissa re-initiate. Melissa's framing of Eli's non-response as failure/abandonment, combined with her explicit statement that she 'tried' multiple times (text + call), confirms the continuation-after-silence pattern. The additional framing 'I can't keep trying on my own' converts Eli's boundary-holding into a shared-parenting abdication accusation. Mechanism: Melissa continued communication attempts after Eli held his communication limit, then reframed his limit as neglect. Sev-1: single message; the 'tried to text and call' statement references the pattern without documenting a specific flooding episode. ARC-RF07-001-S009.",
+      "verbatim_key_messages": [
+        "ROW-14839 (Received, Nov 24): 'I've tried to text you more recently and call but you don't respond'",
+        "ROW-14839 (Received, Nov 24): 'I can't keep trying on my own'"
+      ],
+      "pattern_tags": ["continuation_after_silence", "boundary_holding_reframed_as_neglect", "responsibility_deflection", "multi_channel_reference"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": ["COMP-RF04-027"],
+      "calibration_notes": "Sev-1: continuation-after-silence referenced within a mega-message; the continuation itself is confirmed (text + call attempts) but individual message density not documentable from single message. ADD-003 mechanism confirmed."
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. S-007, S-008, S-009 added. Arc now at 9 signals total: S-001 (Sev-2), S-002 (Sev-1), S-003 (Sev-2), S-004 (Sev-2), S-005 (Sev-1), S-006 (Sev-1), S-007 (Sev-1), S-008 (Sev-1), S-009 (Sev-1). Sub-patterns now include all four ADD mechanisms: flooding_candidate, response_demand, continuation_after_stop/self_demand, read_receipt_pressure, custodial_time_overstepping, legal_evidence_pressure, continuation_after_silence."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "High escalation — Oct-Dec 2025. Oct 25-26 contempt cluster. Nov 6 legal-evidence threat. Nov 22 police report (RF-02/RF-11). Nov 24 mega-message (COMP-RF04-027: most comprehensive single-message inadequate-father/Abby-harmful-actor/family-displacement relay). Nov 25 'big contempt case' (COMP-RF04-027).",
+    "rf07_assessment": "Three primary RF-07 signals in one batch — the highest signal density batch so far. S-007 (contemptuous compliance demand), S-008 (evidence-threat as response demand), S-009 (continuation-after-silence with responsibility deflection). All three are Sev-1. The clustering of these signals in Oct-Nov 2025 reflects the Phase C escalation trajectory. Nov 24 ROW-14839 introduces the 'continuation-after-silence explicitly stated' mechanism — Melissa openly acknowledging she tried to reach Eli multiple times after he held his communication limit, and reframing that limit as failure.",
+    "custodial_context": "Oct 25-26 (S-007): weekend parenting period (Saturday-Sunday) likely Eli's parenting time — 'Drop her off at the party' demand during his custody time elevates ADD-004 consideration. Held at Sev-1 pending parenting schedule confirmation."
+  }
+}

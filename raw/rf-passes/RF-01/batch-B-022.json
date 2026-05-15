@@ -1,0 +1,104 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-022",
+    "row_range": { "start": 7714, "end": 7761 },
+    "date_range": { "start": "2025-01-15", "end": "2025-02-14" },
+    "message_count": 48,
+    "timezone_note": "Entirely EST (UTC-5). DST spring forward Mar 9, 2025 at 2:00 AM EST (07:00 UTC) is still ahead. RF-02 B-022 date_range.start states Jan 14, 2025, but actual first message is ROW-7714 on Jan 15 — no Jan 14 messages exist in the extracted range. RF-02 sms_start ROW-7715 reflects anomalous row convention from B-007+; RF-01 starts at ROW-7714 to maintain sequential coverage.",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Phase B — Jan 2025 hot period. B-022 opens with a 36-message escalation on Jan 15 (pickup cancellation). Remaining messages (Jan 29–Feb 14) are cooperative to neutral. Jan 15 cluster is the first major escalation of Phase B. Notable: Eli communicated pickup conditions directly to Olivia (not Melissa) — ROW-7742 confirms; Eli also told Olivia the visit wasn't happening because 'you didn't call me last night' — ROW-7739."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B022-F001",
+      "arc_signal_ref": "RF01-B022-S001",
+      "row": "ROW-7714-7749",
+      "date": "2025-01-15",
+      "rf_tags": ["RF-01"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-002", "RF01-ADD-004", "RF01-ADD-001"],
+      "arc": "ARC-RF01-001",
+      "summary": "January 15 — 36-message escalation cascade triggered by Eli cancelling Olivia's pickup (or failing to communicate conditions to Melissa). Context: Olivia called Eli to confirm pickup; Eli told Olivia he wasn't coming because she hadn't called him the night before (ROW-7718/7739). Eli separately communicated visit was dependent on Alice's condition directly to Olivia, not Melissa (ROW-7742). Melissa's response constitutes a sustained inadequate-father attack cluster. ADD-002 nodes: ROW-7726 'You are completely useless as a father. I stand by that. I'm not sorry for saying that nor will I ever be until you become an actual father and not a soerm donor cause that's mostly what you are at this point. You have no fatherly instincts as it comes to your own daughter' — most explicit 'sperm donor' framing in the record; new language escalating the abandonment arc from 'inadequate father' to 'not a father at all'; ROW-7727 'That's sad. She deserves so much better. She is such a sweet person.' (ADD-002 extension — Olivia framed as deserving better father); ROW-7731 'Also why is it that for the short time you see her you tell her and milk to go play Roblox? You only see her for a couple hours every week or every other week and you tell her to go play Roblox with Milo instead of spending time with her' (ADD-002 recurring time-quantification + ADD-001 Milo framing); ROW-7741 'if you make my daughter feel like your inadequacies are her fault'; ROW-7745-7747 'I don't wish death upon you / That would make Olivia sad / I'd never want her heart to be broken which is why I get so upset at you for breaking her heart all the time' (ADD-002 — characterizes Eli as someone who chronically breaks Olivia's heart). ADD-004 node: ROW-7748 'Olivia is currently at Janette's house crying cause you cancelled last minute.' (ROW-7749: '👏 good job') — relaying Olivia's emotional state (crying at babysitter's) as direct evidence of Eli's parental failure; sarcastic punctuation. Context counter-indicators: (1) Real access conflict existed — Eli did cancel/fail to follow through on pickup, with communication breakdown (conditions communicated to Olivia not Melissa, ROW-7742); (2) ROW-7724 Melissa alleges 'told Olivia I'm crazy' — counter-allegation that Eli disparages Melissa to Olivia (not verifiable from text record alone). Response remains disproportionate to trigger; ADD-002 content is categorical (sperm donor, no fatherly instincts) rather than episodic critique."
+    },
+    {
+      "flag_id": "RF01-B022-F002",
+      "arc_signal_ref": "RF01-B022-S002",
+      "row": "ROW-7751-7753",
+      "date": "2025-02-04",
+      "rf_tags": ["RF-01"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-004", "RF01-ADD-001"],
+      "arc": "ARC-RF01-001",
+      "summary": "February 4 — Abandonment arc relay delivered via Olivia's reported question. ROW-7751: 'Olivia has been asking a lot of questions' — setup framing. ROW-7752: 'Last night as we are going to bed she asked why you used to visit everyday and now you barely do' — ADD-004 core; Olivia's question relays the abandonment narrative ('used to visit everyday / now you barely do') through the child's own voice. This is the most direct relay of the abandonment arc's central premise — Eli once present, now absent — delivered in Olivia's framing. Structurally suspicious given ROW-6819 coaching admission ('I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me'); question may be scripted or cued rather than spontaneous. Whether spontaneous or coached, Melissa's act of relaying it to Eli is ADD-004 (delivering Olivia's negative perception of Eli's presence as parenting information). ROW-7753: 'She hates being compared to Milo. When they eat she says it's always a competition and she doesn't like that' — ADD-001; Milo/Olivia eating-competition friction relayed via Olivia's voice; extends Abby/Milo household as source of Olivia's distress during Eli's custodial time."
+    }
+  ],
+
+  "primary_flag_count": 2,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B022-P001",
+      "row": "ROW-7717",
+      "date": "2025-01-15",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "January 15 — 'She knows how you are' (ROW-7717). ADD-002 adjacent — characterizes Olivia as having internalized a standing understanding of Eli's unreliability. Framing implies Olivia and Melissa share a shared narrative about Eli's pattern of behavior. Peripheral — single message, but notable as a Phase B marker of the abandonment narrative's integration into the parent-child dyad."
+    },
+    {
+      "flag_id": "RF01-B022-P002",
+      "row": "ROW-7724",
+      "date": "2025-01-15",
+      "rf_tags": ["RF-09", "RF-15"],
+      "severity": "peripheral",
+      "summary": "January 15 — 'You've called me a chng and told Olivia I'm crazy so stop acting like your innocent' (ROW-7724). Cross-RF peripheral. Melissa alleges Eli disparaged her to Olivia ('told Olivia I'm crazy'). If accurate, this is a counter-indicator (Eli also engaging in disparagement to child). Not verifiable from text record alone; Melissa's unsubstantiated allegation. RF-09 territory (gaslighting/projection dynamic) — Melissa may be projecting her own behavior pattern onto Eli, or Eli may have in fact made this statement. RF-15 (false allegation vector) also potentially implicated. Attorney cross-reference warranted. Not flagged as RF-01 primary — context is Melissa's allegation, not a documented RF-01 pattern."
+    },
+    {
+      "flag_id": "RF01-B022-P003",
+      "row": "ROW-7739",
+      "date": "2025-01-15",
+      "rf_tags": ["RF-08"],
+      "severity": "peripheral",
+      "summary": "January 15 — 'Then your first thing is to tell her it's her fault cause she didn't call you last night. wtf is that?' (ROW-7739). Melissa relays that when Olivia called Eli to confirm pickup, Eli told Olivia the visit wasn't happening because she (Olivia) hadn't called the night before — placing scheduling responsibility on the child. RF-08 (Triangulation) peripheral: Eli used Olivia as communication intermediary for scheduling conditions that should have been communicated between the adults. Also relevant to ROW-7742 (Eli made visit dependent on Alice's condition and communicated this to Olivia directly, not Melissa). Pattern: Eli channeled parenting logistics through Olivia rather than adult-to-adult communication. Not a RF-01 primary signal against Melissa; flagged for RF-08 cross-reference."
+    }
+  ],
+
+  "peripheral_flag_count": 3,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": ["RF01-B022-S001", "RF01-B022-S002"],
+      "signal_count_before": 23,
+      "signal_count_after": 25,
+      "severity": 2,
+      "notes": "B-022 adds 2 Sev-2 signals. Total: 25 signals (2 Sev-1, 23 Sev-2). Phase B opening escalation. RF01-B022-S001 (Jan 15): 'sperm donor' language is a new escalation in the abandonment-arc lexicon — moves from inadequate-father framing to not-a-father characterization. RF01-B022-S002 (Feb 4): first explicit relay of Olivia's abandonment-arc question ('why you used to visit everyday and now you barely do') using Olivia's own reported voice. Last signal date updated: 2024-11-18 → 2025-02-04."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B022-001",
+      "row": "ROW-7726",
+      "date": "2025-01-15",
+      "summary": "ROW-7726: 'You are completely useless as a father. I stand by that. I'm not sorry for saying that nor will I ever be until you become an actual father and not a soerm donor cause that's mostly what you are at this point. You have no fatherly instincts as it comes to your own daughter.' First 'sperm donor' characterization in the record — escalates inadequate-father framing to not-a-father characterization. Verbatim attorney review item."
+    },
+    {
+      "cp3_id": "CP3-RF01-B022-002",
+      "row": "ROW-7752",
+      "date": "2025-02-04",
+      "summary": "ROW-7752: 'Last night as we are going to bed she asked why you used to visit everyday and now you barely do.' Abandonment-arc question relayed via Olivia's voice; structurally suspicious given coaching admission ROW-6819. Attorney should note the juxtaposition between this relay and ROW-6819 (Melissa admitted scripting Olivia's conversations with Eli)."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "Bimodal batch. Jan 15 (ROW-7714-7749) is a 36-message escalation — highest message density in a single day since B-019. Jan 29-Feb 14 (ROW-7750-7761) is cooperative to neutral: routine pickup (ROW-7750 Jan 29), Valentine's bag preparation including one for Milo (ROW-7754-7755 Feb 5), asthma appointment scheduling (ROW-7756 Feb 5), Valentine's Day pickup coordination (ROW-7757-7761 Feb 14). Feb 5 message about making a Valentine's bag for Milo is notably warm and cooperative.",
+    "jan15_context": "Pickup cancellation/failure on Jan 15. Olivia called Eli to confirm (she shouldn't have had to — ROW-7738); Eli told Olivia the visit wasn't happening because she didn't call the night before (ROW-7718/7739 Melissa's relay). Eli separately communicated to Olivia that the visit was dependent on Alice's condition (ROW-7742 Melissa's relay). Neither condition was communicated to Melissa. Communication breakdown real — Eli used Olivia as intermediary for scheduling conditions. Melissa's response is disproportionate (36 messages, sperm donor/useless-father framing). ROW-7748 confirms Olivia ended up crying at Janette's house.",
+    "sperm_donor_escalation": "ROW-7726 introduces 'sperm donor' language for the first time in the record. This escalates from prior 'shit dad / horrible father / worthless dick' characterizations to a categorical denial of Eli's parental status — 'not a father at all, just a sperm donor.' This is the sharpest written iteration of the abandonment arc's father-absence premise. The modifier 'that's mostly what you are at this point' also implies temporal deterioration — Eli was once more present, now has been reduced to mere biology.",
+    "feb4_coaching_context": "ROW-7752 ('she asked why you used to visit everyday and now you barely do') must be read against ROW-6819 (Aug 20, 2024): 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me.' The coaching admission means any relay of Olivia's questions or perceptions about Eli should be evaluated as potentially scripted or cued. Whether spontaneous or coached, the relay extends the abandonment arc via Olivia's voice — the most powerful delivery mechanism because it positions Olivia as independently observing Eli's absence.",
+    "phase_b_entry": "B-022 is the effective start of the Jan 2025 hot period identified in triage. The escalation density (36 messages in one day on Jan 15) is consistent with triage predictions. B-022's 2 primary signals bring Phase B's opening batch into the same signal range as typical Phase A batches (B-018-B-020 averaged 1 signal each). The abandonment-arc language has escalated with the 'sperm donor' framing."
+  }
+}

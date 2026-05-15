@@ -1,0 +1,128 @@
+{
+  "batch_id": "B-026",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-05-30",
+    "end": "2025-06-29"
+  },
+  "row_range": {
+    "sms_start": "ROW-9705",
+    "sms_end": "ROW-9829",
+    "sms_secondary_section": "ROW-7833 to ROW-7943 (secondary SMS table section, May 30 – Jun 29 — Eli-sent entries)",
+    "mms_start": "ROW-13645",
+    "mms_end": "ROW-15442"
+  },
+  "message_count": 418,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B026-PF-001",
+      "row_ref": "ROW-9743",
+      "date": "2025-06-08",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 51,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "She told me she wanted me to talk to you about it which is what I'm doing.",
+      "context": "Jun 7: Eli took Olivia to the art festival. That evening Melissa sent a cluster (ROW-9735-9738): 'Olivia said you vaped in front of her and threatened to pinch her / She said that Abby laughed at her for coughing / And you didn't give her dinner / And Abby pinches Milo.' Jun 8 continuation (ROW-9739): 'I'm just telling you what she told me. She said she felt like you were going to hurt her cause I asked if you were just going to threaten her' — Melissa reveals she asked Olivia a leading question ('I asked if you were just going to threaten her') before relaying the result. ROW-9743: 'She told me she wanted me to talk to you about it which is what I'm doing.' ROW-9744: 'Normal parenting choices should not involve threatening to hurt her and making her scared or vaping around her when she expressed she felt unsafe.' Eli responds via MMS (ROW-13700, ROW-13709): acknowledges briefly starting to vape and stopping immediately after realizing, disputes the threat/fear framing entirely. Also appears in MMS as ROW-13705.",
+      "analytical_note": "Signal 51 extends the required-intermediary framework into the safety/harm-reporting domain. Melissa asserts that Olivia directed her to relay safety concerns to Eli ('She told me she wanted me to talk to you about it') — the same structural claim as signal 48 (affective domain, B-023: 'She asked me to talk to you') and signal 50 (therapeutic domain, B-025: 'she told me to call'). The domain escalation is analytically significant: safety-reporting intermediary creates the most consequential gatekeeping context because Olivia's harm allegations, if accepted, could provide substantive grounds for restricting Eli's access. CA-RF02-02 applicable with a new element: ROW-9739 reveals Melissa's triggering question — 'I asked if you were just going to threaten her' — which is a leading question that may have shaped Olivia's response before it was relayed as Olivia's independent expression of fear. This is the clearest documentary instance of possible narrative priming in the dataset: Melissa provides the harm-framing ('going to threaten her'), then relays the child's response to that frame as the child's organic safety concern. Required-intermediary pattern now documented in scheduling, affective, therapeutic, and safety domains.",
+      "arc_promotion": null
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B026-PERIPH-001",
+      "row_ref": "ROW-9735 / ROW-9736 / ROW-9738 / ROW-9750",
+      "date": "2025-06-07 to 2025-06-08",
+      "rf_category": "RF-05",
+      "severity": 1,
+      "verbatim": "Olivia said you vaped in front of her and threatened to pinch her [ROW-9735] / She said that Abby laughed at her for coughing [ROW-9736] / And Abby pinches Milo [ROW-9738] / You and Abby must be arguing cause you act like an asshole everytime you are [ROW-9750]",
+      "note": "RF-05 Sev 1. Jun 7-8 art festival aftermath. Three-part Abby-delegitimization: (1) Abby laughed at Olivia coughing from vape; (2) Abby-as-child-abuser inference ('Abby pinches Milo' — introduced as parallel to Eli's alleged threat); (3) Abby-as-cause-of-Eli's-behavior ('you act like an asshole everytime you are [arguing with Abby]'). Consistent with prior RF-05 Abby-delegitimization pattern. Also: ROW-9817-9819 (Jun 27): 'Heard Abby finally apologized for lying about mom / Told you she was a liar / The false accusations she made' — Melissa frames Abby's apology to Melissa's mother as a vindication of her prior 'liar' characterizations of Abby. RF-05 Sev 1 combined notation. Also appears in MMS as ROW-13697-13699, ROW-13713, ROW-13785-13787."
+    },
+    {
+      "flag_id": "B026-PERIPH-002",
+      "row_ref": "ROW-9735 / ROW-9739 / ROW-9743-ROW-9744",
+      "date": "2025-06-07 to 2025-06-08",
+      "rf_category": "RF-15",
+      "severity": 1,
+      "verbatim": "Olivia said you vaped in front of her and threatened to pinch her [ROW-9735] / She said she felt like you were going to hurt her cause I asked if you were just going to threaten her [ROW-9739] / Normal parenting choices should not involve threatening to hurt her and making her scared [ROW-9744]",
+      "note": "RF-15 Sev 1. New RF-15 instance — physical harm insinuation with child-as-relay-source. Eli allegedly 'threatened to pinch' Olivia and she 'felt like you were going to hurt her.' Distinguishable from prior RF-15 instances (all Melissa-as-source or Melissa-citing-sister/family): here Melissa claims Olivia is the source of the harm allegation. However, ROW-9739 reveals Melissa's triggering question — 'I asked if you were just going to threaten her' — suggesting the harm frame originated from Melissa's questioning before being relayed back as Olivia's organic safety concern. Eli acknowledges vaping briefly and stopping (MMS ROW-13700) but disputes the threat/fear narrative entirely. Sev 1 (child-relay-source, leading question dynamic visible, physical harm claim rather than sexual harm). Cross-pass priority RF-15 arc. Also appears in MMS as ROW-13696, ROW-13701, ROW-13705-13706."
+    },
+    {
+      "flag_id": "B026-PERIPH-003",
+      "row_ref": "ROW-9765-ROW-9768 / ROW-7873-ROW-7879",
+      "date": "2025-06-13 to 2025-06-14",
+      "rf_category": "RF-07",
+      "severity": 1,
+      "verbatim": "I was looking at the dissolution it says can't introduce for 9 months but she's already been introduced before we started dating officially... [ROW-9765] / So I don't know that it will apply here either [ROW-9766] / He's a really good guy and we're giving. I think he'd be a great influence on her to be honest [ROW-9767] / And to be clear I'm not asking [ROW-7875] / Like I said I'm not asking for permission. Just letting you know. Have a great night [ROW-7879]",
+      "note": "RF-07 Sev 1. Melissa introduces new boyfriend to Olivia over Eli's parenting plan objection, rationalizing that the introduction preceded the 'official' start of dating. Eli (ROW-7873): 'I've reviewed the shared parenting plan and it clearly states that new partners aren't to be introduced for nine months.' Melissa: 'I'm not asking for permission.' Parenting plan (9-month new-partner restriction) override. Also appears in MMS as ROW-13730-13732. Context: Melissa disclosed new relationship May 28 2025 (B-025 batch notes); Jun 1 (ROW-9710/13652) Melissa asks Eli to pick up Olivia 'I have a date after work' — active dating; by Jun 13 Melissa has already introduced the boyfriend to Olivia before the 9-month window. RF-07 Sev 1 (unilateral parenting plan modification)."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-9716-ROW-9720 / ROW-7843",
+      "date": "2025-06-03 to 2025-06-04",
+      "description": "Becky childcare logistics: Melissa coordinates Olivia's dropoff at Roger's house (Becky's son), provides address, confirms Eli's role in pickup/dropoff. Eli confirms the 7:25 AM office meeting time. Smooth childcare coordination."
+    },
+    {
+      "row_ref": "ROW-9787-ROW-9789",
+      "date": "2025-06-18",
+      "description": "Melissa proactively offers contact facilitation: 'When she comes down I can ask her to call you real quick if you want' — unsolicited offer to enable Eli-Olivia phone contact after Olivia finishes with her gecko."
+    },
+    {
+      "row_ref": "ROW-9775 / ROW-7893",
+      "date": "2025-06-15 to 2025-06-16",
+      "description": "OBX vacation coordination: Melissa asks Eli for approval on May 2026 OBX vacation dates. Eli responds cooperatively ('I am ok with that time I suppose') while noting he wants to see Olivia on her birthday next year. Good-faith vacation planning coordination."
+    },
+    {
+      "row_ref": "ROW-9820 / ROW-7916-ROW-7917",
+      "date": "2025-06-26 to 2025-06-27",
+      "description": "Health and logistics coordination during Eli's illness (upper respiratory infection, HVAC outage): Melissa picks up Olivia's steroids; Eli books hotel with pool for Olivia during HVAC-outage visit; Melissa cooperatively adjusts pickup time based on Eli's hotel situation ('if you're at a hotel she can swim at she would love that')."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-7838",
+      "date": "2025-06-02",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-7838): 'Why is her phone gone to vm all day.' Melissa (ROW-9712-9714): 'She's been outside playing. She's on her phone now / Watching YouTube / She's been at Rory's a lot of the day.' Natural explanation (child outside/active). Not flagged."
+    },
+    {
+      "row_ref": "ROW-7856-ROW-7858",
+      "date": "2025-06-09",
+      "consideration": "ARC-RF02-002 near-miss. Eli (ROW-7856-7858): 'Is Olivia's phone dead or off? / It goes to voicemail when I call / Can you ask her to call.' Melissa (ROW-9753-9755): 'Idk / Ok / When she comes back down.' Standard relay mechanism — Eli routes contact request through Melissa. Not flagged: facilitative context, consistent with baseline relay mechanism well-documented in arc."
+    },
+    {
+      "row_ref": "ROW-7906 / ROW-7909",
+      "date": "2025-06-22",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-7906): 'Her phone been sending me to VM all day.' Eli (ROW-7909): 'Why does her phone keep going to vm.' Melissa (ROW-9795-9796): 'She's had it a good chunk of the day. It's not dead / She's outside in a water gun fight right now.' Later (ROW-9801): 'She said her phone is dead. That's why she used mine.' Mild internal contradiction (not dead early in day, dead later) but plausible natural progression. No DND or blocking mechanism implicated. Not flagged."
+    },
+    {
+      "row_ref": "ROW-9782",
+      "date": "2025-06-16",
+      "consideration": "ARC-RF02-006 near-miss. Melissa (ROW-9782): '751 West Willet Court, Corolla, NC 27927' — specific OBX vacation address in North Carolina (May 16-23 2026). Fourth NC reference overall. Vacation context; no relocation intent statements. Signal count for ARC-RF02-006 remains 3 (WATCHING). Not flagged as primary — all four NC references are vacation/sentiment, no action steps or firm relocation intent documented."
+    },
+    {
+      "row_ref": "ROW-7932",
+      "date": "2025-06-28",
+      "consideration": "ARC-RF02-002 near-miss. Eli (ROW-7932): 'I said I would ask. If she is allowed to go then I would pick her up and drop her off.' Eli seeking Melissa's authorization for Olivia to attend Milo's soccer game — internalized required-intermediary norm. Not flagged: consistent with baseline norm; facilitative context (Eli making the access request, not being denied without justification). Melissa denies citing cleaning responsibilities and existing sleepover plans — stated reasons present."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; near-misses: ROW-7838 (Jun 2, phone to VM — outdoor activity), ROW-7906/7909 (Jun 22, phone to VM all day — outdoor/dead battery); signal_count remains 26",
+    "ARC-RF02-002": "signal_count now 51; one signal — ROW-9743 (Jun 8, safety-domain relay, signal 51); Melissa asserts Olivia requested she relay safety concerns to Eli ('She told me she wanted me to talk to you about it'); CA-RF02-02 applicable with notable narrative-priming element: ROW-9739 reveals Melissa's triggering question was 'I asked if you were just going to threaten her' — leading question precedes the relay; required-intermediary pattern now documented in scheduling, affective, therapeutic, and safety domains",
+    "ARC-RF02-004": "no new signals; remains ACTIVE",
+    "ARC-RF02-005": "no new signals; remains WATCHING; Jun 7-8 Abby-laughed/Abby-pinches content (ROW-9736-9738) does not implicate exclusion mechanism",
+    "ARC-RF02-006": "no new primary signals; fourth NC reference (ROW-9782 Jun 16 — OBX vacation address Corolla NC 27927, May 16-23 2026); vacation context consistent with prior three signals; no action steps or relocation intent; signal_count remains 3; WATCHING"
+  },
+
+  "batch_notes": "Analytically dense batch dominated by the Jun 7-8 art festival aftermath. The primary flag (signal 51) is the most analytically complex required-intermediary extension yet: safety-domain relay combined with visible narrative-priming mechanism (Melissa's leading question 'I asked if you were just going to threaten her' before relaying Olivia's 'felt unsafe' response). This is the first instance in the dataset where the mechanism that shapes Olivia's relay content is documented within the same message exchange that delivers the relay — a significant CA-RF02-02 data point. Jun 13-14 boyfriend-introduction dispute is analytically noteworthy as RF-07 (parenting plan override, 'I'm not asking for permission') and reveals escalating unilateral decision-making in the post-May relationship context. ARC-RF02-006 fourth NC reference (OBX vacation address Jun 16) extends the NC-context pattern but remains vacation-only. Jun 26-27 health/logistics coordination (Olivia steroids, HVAC hotel) demonstrates cooperative co-parenting under adverse circumstances. Eli continues internalized required-intermediary norm for access requests (ROW-7932, Jun 28: 'I said I would ask. If she is allowed to go')."
+}

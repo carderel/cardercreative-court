@@ -1,0 +1,58 @@
+{
+  "batch_id": "B-015",
+  "date_range": {
+    "start": "2024-05-11",
+    "end": "2024-06-13"
+  },
+  "message_count": "~507",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 5,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "May-Jun 2024. S-005: Eli proactively advises Melissa about allergy meds when pollen count is elevated (Jun 9, 2024) \u2014 genuine medical compliance documentation per ADD-004. ARC-RF14-002 signal 2. Cat-allergy scheme: ROW-8482 (Aug 4) is in B-017 range \u2014 'The fact that you knew she was allergic to cats and chose to not have her visit...' continues the RF-15 primary allergy-weaponization pattern. No new primary household safety flags beyond S-005."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-005",
+      "row_ref": "ROW-5570",
+      "date": "2024-06-09",
+      "direction": "Sent",
+      "severity": 1,
+      "arc": "ARC-RF14-002",
+      "arc_signal_num": 2,
+      "type": "Medical compliance \u2014 allergy medication (Eli documenting concern)",
+      "description": "ROW-5570: 'I saw the pollen count was up a bit. Might be good idea to make sure she has allergy meds.' Eli proactively advising Melissa to administer Olivia's allergy medication during high-pollen period. Per ADD-004: allergy medication inconsistently administered at Melissa's household (CP2 confirmed). This is Eli documenting genuine medical compliance concern. Appropriate parenting behavior \u2014 flagged as ARC-RF14-002 signal (genuine safety documentation, Sent direction).",
+      "addenda_applied": [
+        "RF14-ADD-004",
+        "RF14-ADD-006"
+      ]
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals \u2014 WATCHING (4 signals)",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "RF14-S-005: Allergy meds compliance reminder. Signal count now 2. WATCHING maintained \u2014 genuine safety documentation pattern developing.",
+      "state": "WATCHING"
+    }
+  ]
+}

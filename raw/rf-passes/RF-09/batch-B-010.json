@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-010",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2023-08-21",
+    "end": "2023-10-04"
+  },
+  "row_range": {
+    "start": 3344,
+    "end": 3723
+  },
+  "message_count": 500,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 3,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Aug\u2013Oct 2023: arc ACTIVE from B-009. No additional RF-09 primary signals this batch. Accusatory language present (RF-04 ARC-RF04-001 signals) but no documentable reality-denial with cross-reference."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

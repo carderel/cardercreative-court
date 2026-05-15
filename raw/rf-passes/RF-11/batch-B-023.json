@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-023",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2025-02-21",
+    "end": "2025-03-11"
+  },
+  "row_range": {
+    "start": 7762,
+    "end": 7797
+  },
+  "message_count": 514,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Feb\u2013Mar 2025: Low message volume. No RF-11 primary signals."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

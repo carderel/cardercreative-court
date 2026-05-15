@@ -1,0 +1,111 @@
+{
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "generated": "2026-05-05",
+  "cp2_completed": "2026-05-05",
+  "source": "CP2 answers provided 2026-05-05",
+
+  "addenda": [
+
+    {
+      "id": "RF03-ADD-001",
+      "title": "Cat Allergy Scheme — RF-03 Peripheral Compound Rule",
+      "status": "ACTIVE",
+      "rule": "The cat allergy/asthma documentation scheme (Melissa took Olivia to allergy specialist → documented cat allergy → required Eli to remove cats as condition of visitation) is already classified as RF-15 Category B + RF-02 primary compound. Add RF-03 peripheral when the logistical obstruction mechanism is the operative element: visitation denied by creating an environmental logistics condition (cat removal) Eli could not or chose not to meet. Apply to cat-allergy events in B-014 area and B-025/B-026. Classification: RF-15 primary + RF-02 primary + RF-03 peripheral (conditional logistics).",
+      "why": "Q3(a): Eli confirmed logistical conditions tied to unrelated demands. The cat allergy scheme is the clearest pre-existing example: medical pretext used to impose a household requirement as a visit precondition. CP2 addendum proposed confirmed."
+    },
+
+    {
+      "id": "RF03-ADD-002",
+      "title": "RF-02 / RF-03 Boundary Rule",
+      "status": "ACTIVE",
+      "rule": "RF-02 flags access DENIAL. RF-03 flags logistical MANIPULATION of that denial. Apply as follows: (1) Simple refusal to allow visitation = RF-02 only; (2) Refusal with manufactured logistical pretext (a made-up condition, excuse, or framing that justifies the denial) = RF-02 primary + RF-03 secondary; (3) Impossible logistics actively created to ensure the exchange fails without Melissa explicitly saying no = RF-03 primary + RF-02 secondary. Apply consistently to prevent double-counting and to correctly weight RF-03 standalone vs. compound signals.",
+      "why": "CP2 confirms both gatekeeping (RF-02, 101 flags) and logistical manipulation (RF-03, new) exist as distinct mechanisms. The boundary ensures RF-03 flags add analytical value beyond RF-02 rather than re-flagging access denials."
+    },
+
+    {
+      "id": "RF03-ADD-003",
+      "title": "Last-Minute Location Redirect Pattern",
+      "status": "ACTIVE",
+      "rule": "CP2 Q1(a) confirmed: Melissa has redirected pickup locations mid-coordination — she has said 'meet me at location X,' then left before Eli arrived. Father's Day is a noted example (search B-006/B-007/B-008 area for Father's Day location exchanges). When documented in messages: classify as RF-03 primary Sev-1 (logistics ambush — deliberate last-minute redirect designed to ensure Eli misses the exchange window or wastes a trip). Note: the switch must be observable from message timing/context — a genuine change with adequate notice is not RF-03.",
+      "why": "Q1(a): 'There have been multiple times where she has said meet me at location x and am almost there and she has left and went somewhere else.' Confirmed recurring pattern with named example."
+    },
+
+    {
+      "id": "RF03-ADD-004",
+      "title": "Transport Offloading / SPP Obligation Shift",
+      "status": "ACTIVE",
+      "rule": "CP2 Q1(b) and Q3(b) confirmed a recurring pattern: Melissa unilaterally shifts her SPP-required transport obligations to Eli with conditions like 'I'm not saying you can't see her but I don't feel like leaving the house again so you'll have to bring her home.' She also offloads pickup and dropoff generally when she doesn't want to do them. Eli had to cite the SPP to enforce her obligation; she still attempts this 'from time to time' as of CP2 date. When documented in messages: classify as RF-03 primary Sev-1 (logistical condition imposition that transfers court obligations). Do NOT flag: (1) Eli requesting reasonable transport adjustments; (2) mutual agreed transport trades; (3) one-time accommodation requests. Flag: Melissa's unilateral demands that shift her court-ordered transport obligations without consent.",
+      "why": "Q1(b): 'She has imposed conditions like I'm not saying you can't see her but I don't feel like leaving the house again so you'll have to bring her home. She has done that a lot.' Q3(b): 'She will put pick up and drop off on me... I had to cite the SPP that she is required to, even now she still tries it from time to time.' Confirmed recurring, cited SPP violation."
+    },
+
+    {
+      "id": "RF03-ADD-005",
+      "title": "Conditional Visit — Urgent Care Prerequisite",
+      "status": "ACTIVE",
+      "rule": "CP2 Q3(a) confirmed a specific event: Olivia was not allowed to go with Eli to visit his family unless Eli first took Olivia to urgent care. This is a concrete RF-03 primary Sev-1 example: logistical compliance conditioned on an unrelated medical action. When this event is located in the messages: classify as RF-03 primary Sev-1 (conditional logistics — family visit access contingent on medical prerequisite). Cross-reference: if the urgent care requirement was framed as a safety concern, add RF-14 peripheral. If framed as Melissa asserting medical authority over Eli's parenting decisions, add RF-04 compound.",
+      "why": "Q3(a): 'Olivia wasn't allowed to go with me to see my family unless I took Olivia to urgent care.' Clear conditional logistics — visit access contingent on unrelated demand. Locate in messages for exact date and context."
+    },
+
+    {
+      "id": "RF03-ADD-006",
+      "title": "Dance Lesson Forced Payment — RF-03/RF-06 Compound",
+      "status": "ACTIVE",
+      "rule": "Melissa enrolled Olivia in dance lessons and attempted to compel Eli to pay additional costs (tap dance add-on) against his objection. When documented in messages: classify as RF-06 primary Sev-1 (compelled payment for discretionary activity outside court-ordered expense sharing) + RF-03 secondary if the enrollment also created a scheduling conflict affecting Eli's parenting time. Per ADD-001 financial baseline (RF-06): external/supplemental activity costs are each parent's discretion — Melissa cannot unilaterally obligate Eli to fund supplemental activities he objects to. Do NOT flag as standalone RF-03 unless a scheduling conflict is documented.",
+      "why": "Q2(a): 'She wanted to sign her up for dance lessons and I didn't want to pay the extra and she tried to force me.' Confirmed coerced-payment attempt for discretionary activity. Primary home is RF-06; RF-03 secondary if scheduling impact found."
+    },
+
+    {
+      "id": "RF03-ADD-007",
+      "title": "Aug 2024 Hot Period — Work Conflict Context",
+      "status": "ACTIVE",
+      "rule": "CP2 Q4(a) confirmed: the Aug 2024 311-message cluster (EP-0854) included a logistics dimension — Eli had a work-related conflict that prevented him from watching Olivia as planned. The RF-03 signal in this period is Melissa's RESPONSE to Eli's work conflict: whether she used it as leverage, imposed conditions, refused to accommodate, or manufactured an impossible logistics situation. Eli's work obligation is factual context, NOT an RF-03 flag. When analyzing B-018 for RF-03: focus on Melissa's framing and demands in response to the scheduling change, not on Eli's inability to keep the original plan.",
+      "why": "Q4(a): 'There was some work related stuff and I ended up not being able to watch her like I was going to.' Logistics disruption confirmed for Aug 2024 hot period. Melissa's weaponization of that disruption is the RF-03 signal."
+    }
+
+  ],
+
+  "arc_state_post_cp2": {
+    "ARC-RF03-001": {
+      "name": "Weaponized Scheduling",
+      "description": "Melissa's use of logistics as a control mechanism — location redirects, transport offloading, impossible conditions, and conditional visit prerequisites.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "received",
+      "note": "Signal criteria: (1) Last-minute location redirect (ADD-003); (2) unilateral transport offloading in violation of SPP (ADD-004); (3) conditional visit with unrelated prerequisite (ADD-005); (4) any manufactured logistics obstacle designed to frustrate exchange. First confirmed signal promotes CANDIDATE to WATCHING. CP2 confirms pattern is real and recurring — strong signal expected once messages are processed."
+    },
+    "ARC-RF03-002": {
+      "name": "Activity Enrollment Obstruction",
+      "description": "Use of activity enrollment or scheduling to create obligations or conflicts without Eli's meaningful input.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "received",
+      "note": "Weak confirmation from CP2 — Melissa informs Eli of activities and he doesn't feel objection would matter, but no clear visitation-conflict enrollment documented. Dance lesson is RF-06 primary (forced payment), not RF-03 unless scheduling conflict documented. Promote to WATCHING only on evidence of enrollment that creates a standing conflict with Eli's scheduled parenting time. If not found in pass, arc may remain CANDIDATE and close without WATCHING promotion."
+    }
+  },
+
+  "post_cp2_processing_instructions": {
+    "primary_signal_criteria": [
+      "Last-minute location redirect documented in messages (ADD-003) — search Father's Day area B-006/B-007/B-008",
+      "Melissa imposing unilateral transport conditions violating SPP — 'bring her home' or equivalent (ADD-004)",
+      "Urgent care prerequisite for family visit (ADD-005) — locate specific event in messages",
+      "Any conditional logistics: visit/exchange access conditioned on Eli completing unrelated action",
+      "Aug 2024 EP-0854: Melissa's response to Eli's work conflict — any logistics weaponization"
+    ],
+    "peripheral_only_categories": [
+      "Cat allergy scheme events (B-014, B-025/B-026) — RF-15+RF-02 primary, RF-03 peripheral per ADD-001",
+      "Dance lesson forced payment — RF-06 primary, RF-03 secondary only if scheduling conflict documented"
+    ],
+    "arc_promotion_criteria": {
+      "ARC-RF03-001": "2+ weaponized scheduling signals (any type per ADD-003/ADD-004/ADD-005) → promote CANDIDATE to WATCHING",
+      "ARC-RF03-002": "1+ clear activity enrollment creating scheduling conflict with Eli's time → promote CANDIDATE to WATCHING"
+    },
+    "hot_periods_watch": [
+      "B-006/B-007 (Apr-Jun 2023): Father's Day location redirect — ADD-003 candidate",
+      "B-014 (Mar-May 2024): cat allergy lawyer letter area — RF-03 peripheral compound",
+      "B-018 (Aug 2024): EP-0854 311-message cluster — work conflict logistics",
+      "B-025/B-026 (May-Jun 2025): vaping/asthma/cat-allergy scheme — RF-03 peripheral compound",
+      "B-028 onward (Aug-Sep 2025): visit refusal cascade — check for logistical weaponization layered on RF-02"
+    ]
+  }
+}

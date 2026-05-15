@@ -1,0 +1,78 @@
+{
+  "batch_id": "B-029",
+  "date_range": {
+    "start": "2025-09-14",
+    "end": "2025-10-31",
+    "note": "date-filtered batch"
+  },
+  "message_count": 482,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "calibration_addenda_active": [
+    "RF03-ADD-001",
+    "RF03-ADD-002",
+    "RF03-ADD-003",
+    "RF03-ADD-004",
+    "RF03-ADD-005",
+    "RF03-ADD-006",
+    "RF03-ADD-007"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-004: transport offloading cluster Oct 2025 (ROW-14511/14516/14631). ARC-RF03-001 Signal 4."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-004",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF03-001",
+      "arc_signal": 4,
+      "date_range": "2025-10-07 to 2025-10-29",
+      "orig_rows": [
+        "14511",
+        "14516",
+        "14631"
+      ],
+      "messages": [
+        {
+          "orig_row": "14511",
+          "direction": "Received",
+          "date": "2025-10-07",
+          "text": "However I'm not committing to picking up at 8:30 at this time. I may be watching some kids tonight and I don't know what time I'd have them until. So if she doesn't [come] you might need to be flexible with my pick up time or need to bring her home"
+        },
+        {
+          "orig_row": "14516",
+          "direction": "Received",
+          "date": "2025-10-07",
+          "text": "Which I never said no to. It's just that you might need to be flexible with my pick up time or need to bring her home which isn't outrageous given that your last few..."
+        },
+        {
+          "orig_row": "14631",
+          "direction": "Received",
+          "date": "2025-10-29",
+          "text": "If I am to pick her up tomorrow I won't have availability until 9:30 don't would be better for you to bring her home."
+        }
+      ],
+      "classification": "RF-03 primary Sev-1 \u2014 Three transport offloading instances in same batch window. ROW-14511/14516: Melissa makes her pickup conditional on personal plans (watching other children), expects Eli to bring Olivia home instead. ROW-14631: pre-empts pickup entirely \u2014 states she won't be available until 9:30, so 'better for you to bring her home.' Per ADD-004: recurring pattern of shifting SPP-required transport to Eli. ARC-RF03-001 Signal 4.",
+      "addendum_applied": "ADD-004 (transport offloading \u2014 unilateral shifting of court-required transport obligations)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF03-001",
+      "state": "WATCHING",
+      "signals_cumulative": 4,
+      "event": "No new signals in B-029. WATCHING state holds."
+    },
+    {
+      "arc": "ARC-RF03-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0,
+      "event": "No Activity Enrollment Obstruction signals."
+    }
+  ]
+}

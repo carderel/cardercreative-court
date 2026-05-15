@@ -1,0 +1,87 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-016",
+    "row_range": { "start": 5625, "end": 6012 },
+    "date_range": { "start": "2024-06-14", "end": "2024-07-15" },
+    "message_count": 388,
+    "timezone_note": "Entirely EDT (UTC-4). Note: RF-02 B-016 lists sms_start ROW-5626; ROW-5625 ('175 due', Jun 14 10:32 EDT) included here as first message of this date range — falls after B-015 endpoint (ROW-5624, Jun 13).",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B016-F001",
+      "arc_signal_ref": "RF01-B016-S001",
+      "row": "ROW-5862",
+      "date": "2024-06-30",
+      "rf_tags": ["RF-01", "RF-15"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-001", "RF01-ADD-005"],
+      "arc": "ARC-RF01-001",
+      "summary": "June 30 — Most explicit incest-framing of Eli/Abby relationship in the record. Context: Eli expressed concern about Olivia visiting Melissa's seriously ill father in the hospital. Melissa's response (ROW-5861) addresses the parenting decision, then immediately launches: 'I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong, seeks attention without regard for others, is a liar, makes false allegations and doesn't know that she shouldn't fuck her uncle' (ROW-5862). Structure: (1) Frames refusal to accept Eli's co-parenting input by characterizing his parenting judgment as disqualified by his association with Abby — 'raised a kid'; (2) Full character assassination of Abby: no morals, no right/wrong, attention-seeking, liar, false allegations; (3) 'doesn't know that she shouldn't fuck her uncle' — most sexually explicit iteration of the uncle/niece incest framing in the record; prior iterations: ROW-2168 ('his niece'), ROW-3388 ('Banging your niece'), ROW-619-621 ('uncle/dad'). ADD-001 (Abby attack vector — full character assassination using 'raised a kid' to tie Eli's parenting judgment to Abby's alleged moral failures, thereby disqualifying Eli's parental authority); ADD-005 (false allegation vector — uncle/niece incest characterization as explicit sexual language). Irony: Melissa characterizes Abby as someone who 'makes false allegations' in the same batch window as B-015's rape narrative construction (ROW-5309-5316). RF-01 primary; RF-15 heavily implicated."
+    }
+  ],
+
+  "primary_flag_count": 1,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B016-P001",
+      "row": "ROW-5734-5735",
+      "date": "2024-06-16",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "June 16 — Bruise complaint after Olivia's visit: 'Also Olivia came home with bruises on her legs from Milo throwing water balloons at her and hitting her really hard with them / Make sure you watch him better' (ROW-5734-5735). Frames Eli's household (specifically Milo — Eli's son with Abby) as a danger to Olivia's physical safety; instructs Eli to better supervise Abby's child. ADD-002 adjacent (inadequate supervision). RF-04 peripheral; RF-01 adjacent (household-as-unsafe framing)."
+    },
+    {
+      "flag_id": "RF01-B016-P002",
+      "row": "ROW-5830-5831",
+      "date": "2024-06-29",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "June 29 — Bug inquiry: 'What kind of bugs do you have at your house? / Bed bugs?' (ROW-5830-5831); followed by ROW-5841: 'What kind of bugs you got? Any bed bugs or roaches?' Surveillance of Eli's home hygiene; implies potentially unsafe/unsanitary living conditions for Olivia. Eli explains: occasional ants and basement bugs, never roaches or bedbugs. Melissa accepts (ROW-5848: 'Ants happen'). RF-04 peripheral (home-safety characterization). Eli answers fully and without escalation."
+    },
+    {
+      "flag_id": "RF01-B016-P003",
+      "row": "ROW-5887",
+      "date": "2024-07-02",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "July 2 — 'You got her crying' (ROW-5887). Context: scheduling confusion about which days Eli would take Olivia to Becky's (Eli thought Mon/Fri, Melissa meant Mon/Tue). Melissa attributes Olivia's emotional distress to Eli's logistics error. ADD-004 adjacent. RF-04 peripheral."
+    }
+  ],
+
+  "peripheral_flag_count": 3,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": "RF01-B016-S001",
+      "signal_count_before": 16,
+      "signal_count_after": 17,
+      "severity": 2,
+      "notes": "B-016 adds 1 Sev-2 signal (ROW-5862, June 30). Total: 17 signals (2 Sev-1, 15 Sev-2). Last signal date updated: 2024-05-14 → 2024-06-30. Signal is the most sexually explicit iteration of the ADD-001/ADD-005 Abby attack vector in the record — full character assassination + incest framing ('fuck her uncle'). Pattern: second consecutive batch with a primary signal (B-015 ROW-5301-5316, B-016 ROW-5862), both ADD-005 false allegation activation. ROW-5862 further notable for irony: Melissa characterizes Abby as 'makes false allegations' within weeks of constructing the rape narrative in B-015."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B016-001",
+      "row": "ROW-5862",
+      "date": "2024-06-30",
+      "priority": "high",
+      "summary": "Most sexually explicit incest characterization of Eli/Abby relationship in the record: 'doesn't know that she shouldn't fuck her uncle.' Full written character assassination of Abby tied to disqualification of Eli's parenting judgment ('I'm not taking parenting advice from someone who raised a kid that has no morals...'). ADD-001 + ADD-005. Document for RF-15 primary analysis; cross-reference RF-01 arc signal RF01-B016-S001. Note irony: Abby characterized as 'makes false allegations' within weeks of B-015 rape narrative (ROW-5309-5316). Context: triggered by Eli's reasonable hospital-visit concern for Olivia."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "Mixed-high cooperative with two notable escalations. Cooperative content: June 29-July 6 Melissa's father hospitalization produces genuine co-parenting cooperation — Eli offers to take Olivia so Melissa can visit unencumbered (ROW-5821), Melissa thanks Eli (ROW-5951-5957: 'I appreciate you guys'); July 4 Melissa proactively offers to hide Eli's birthday gift for Olivia on Canada vacation (ROW-5908-5910); Canada trip July 12-13 positive photo sharing; Olivia's birthday coordination. Escalations: June 16 contempt/child support cluster (ROW-5669-5733); June 30 ROW-5862 attack triggered by Eli's hospital-visit input.",
+    "cooperative_indicators": "ROW-5908-5910 (July 4): Melissa proactively offers to hide Eli's birthday gift for Olivia to open on Canada vacation — 'I know you will want to be with her to see her open presents but if you want to send something with us on vacation you can.' Significant counter-indicator for the record. ROW-5951-5957 (July 7): Melissa thanks Eli for his support during her father's hospitalization ('Thank you / I appreciate you guys'). ROW-5861: Melissa explains her parenting decision re: Olivia visiting sick grandfather with care and sensitivity.",
+    "abby_attack_irony": "ROW-5862 characterizes Abby as someone who 'makes false allegations' — occurring approximately 6 weeks after Melissa's own written rape allegation construction against Eli in B-015 (ROW-5309-5316). The characterization of Abby as a false-allegation-maker is projection in the documented written record.",
+    "olivia_birthday": "Olivia's birthday July 14 (9th birthday). On vacation in Canada with Melissa (departed July 12). Eli sends birthday gift (ROW-5990-5997) and arranges for it to be presented on vacation. Melissa shares vacation photos and birthday celebration. Cooperative.",
+    "mellissas_father_illness": "Melissa's father on ventilator June 29 (ROW-5817-5819), seriously ill. Eli offers June 29 to take Olivia so Melissa can visit hospital unencumbered (ROW-5821). ROW-5862 attack on June 30 stands in direct contrast to Eli's supportive behavior during the family crisis."
+  }
+}

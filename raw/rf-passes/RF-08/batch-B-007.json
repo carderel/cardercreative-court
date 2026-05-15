@@ -1,0 +1,99 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-007",
+    "row_range": {
+      "start": 2229,
+      "end": 2580
+    },
+    "date_range": {
+      "start": "2023-04-03",
+      "end": "2023-06-02"
+    },
+    "message_count": 352,
+    "phase": "A",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 352,
+    "primary_flags": 1,
+    "primary_severity_distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 351,
+    "flag_rate": "0.28%"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B007-S001",
+      "arc_signal_ref": "ARC-RF08-001-S001",
+      "rows": "ROW-2373-2375",
+      "date": "2023-04-03 to 2023-06-02",
+      "severity": 1,
+      "rf_tags": [
+        "RF-08",
+        "RF-01"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001",
+        "RF08-ADD-002"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "CANDIDATE: 1 signal held",
+      "compound_id": "COMP-RF08-001",
+      "summary": "Pre-signal \u2014 intelligence-channel framing. ROW-2373: 'And Abby doesn't need to tell her that she can't have a treat if she tells me what's going on. That bitch can shut her fucking whore mouth.' ROW-2374: 'You both shouldn't be telling her not to tell me stuff. That's shady.' ROW-2375: 'And don't be leaving her in the car with Abby alone either. That's contempt of court.' Melissa asserts that Olivia is her information source about Eli's household \u2014 framing any instruction from Eli or Abby to Olivia to maintain appropriate privacy as 'shady' and obstructive. This is an early assertion of the intelligence-channel claim: Melissa positions herself as entitled to receive Olivia's reports about Eli's household without any filter. Compound with RF-01 (ROW-2373-2375 is RF01-B007-S001 ADD-004). Note: pre-signal per ADD-002 \u2014 precedes confirmed coaching admission (ROW-6819, B-018).",
+      "exact_quotes": [
+        "ROW-2373: 'And Abby doesn't need to tell her that she can't have a treat if she tells me what's going on. That bitch can shut her fucking whore mouth'",
+        "ROW-2374: 'You both shouldn't be telling her not to tell me stuff. That's shady'",
+        "ROW-2375: 'And don't be leaving her in the car with Abby alone either. That's contempt of court'"
+      ],
+      "rf08_mechanism": "Intelligence-channel assertion: Melissa explicitly frames Olivia as her information pipeline from Eli's household, and characterizes any household privacy instruction as obstruction.",
+      "abby_add004_note": "ROW-2373 implicates Abby in Olivia's information gatekeeping \u2014 consistent with CP2 ADD-004 Abby behavioral loyalty coaching context. Melissa's reaction to Abby's instruction to Olivia suggests Abby is perceived as a threat to Melissa's intelligence channel."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-001"
+    ],
+    "candidate_signals_held": 1,
+    "note": "ARC-RF08-001 CANDIDATE: 1 signal. S001 establishes the intelligence-channel sub-pattern. Arc requires second signal to promote to WATCHING."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-001",
+      "rf_passes": [
+        "RF-08",
+        "RF-01"
+      ],
+      "rf01_ref": "RF01-B007-S001",
+      "description": "Intelligence-channel framing compounds with RF-01 ADD-004 relay: ROW-2373-2375 both establishes Melissa's claim to Olivia's intelligence pipeline (RF-08) and delivers an Abby-attack within a parental alienation cluster (RF-01)."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase A. Pre-Abby-escalation early period. S001 is the first RF-08 primary signal in the dataset.",
+    "rf08_assessment": "One Sev-1 pre-signal: ROW-2373-2375 documents Melissa's assertion of her right to receive intelligence from Olivia about Eli's household. This is the earliest documented triangulation mechanism in the dataset \u2014 predates the confirmed coaching admission by 15+ months.",
+    "cross_rf_context": "RF-01 ADD-004 compound. The intelligence-channel framing in ROW-2374 ('shouldn't be telling her not to tell me stuff') is structurally the mirror of ROW-6819's coaching admission: where ROW-6819 shows Melissa scripting Olivia's outbound reports TO Eli, ROW-2374 shows Melissa asserting her claim to Olivia's inbound reports FROM Eli's household."
+  }
+}

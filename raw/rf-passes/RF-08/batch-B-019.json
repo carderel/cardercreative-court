@@ -1,0 +1,131 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-019",
+    "row_range": {
+      "start": 7056,
+      "end": 7557
+    },
+    "date_range": {
+      "start": "2024-09-09",
+      "end": "2024-10-18"
+    },
+    "message_count": 502,
+    "phase": "A",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 502,
+    "primary_flags": 2,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 2,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 500,
+    "flag_rate": "0.40%"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B019-S005",
+      "arc_signal_ref": "ARC-RF08-001-S005",
+      "rows": "ROW-7161-7164",
+      "date": "2024-09-14",
+      "severity": 2,
+      "rf_tags": [
+        "RF-08",
+        "RF-01",
+        "RF-15"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "ACTIVE: 5 signals",
+      "compound_id": "COMP-RF08-005",
+      "summary": "Physical harm allegations relayed via Olivia. Context: Eli took Olivia to visit family during a medical crisis (ROW-7151-7158). Approximately 9 hours later, Melissa delivers a cluster of allegations attributed to Olivia: ROW-7161: 'Be more gentle with Olivia'; ROW-7162: 'She said you tickle too hard and she doesn't like it'; ROW-7163: 'She said that you kept twisting her arm and it hurt and you'd say sorry but kept doing it'; ROW-7164: follows with further characterizations. Post-ROW-6819 context: these allegations are delivered with the confirmed coaching framework active \u2014 Melissa is scripting Olivia's experiential accounts and relaying them as physical harm allegations. Cross-reference RF-01 ADD-004 (RF01-B019-F002). Cross-reference RF-15 (false allegations via coached child report).",
+      "exact_quotes": [
+        "ROW-7161 (Received): 'Be more gentle with Olivia'",
+        "ROW-7162 (Received): 'She said you tickle too hard and she doesn't like it'",
+        "ROW-7163 (Received): 'She said that you kept twisting her arm and it hurt and you\\'d say sorry but kept doing it'"
+      ],
+      "rf08_mechanism": "Post-coaching physical harm relay: Olivia's reported physical experience delivered as allegations 9 hours after the visit. The coaching context (ROW-6819: Melissa scripts content for Olivia to report) is active for all post-B-018 relay instances."
+    },
+    {
+      "flag_id": "RF08-B019-S006",
+      "arc_signal_ref": "ARC-RF08-001-S006",
+      "rows": "ROW-7332",
+      "date": "2024-10-02",
+      "severity": 2,
+      "rf_tags": [
+        "RF-08",
+        "RF-01"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "ACTIVE: 6 signals",
+      "compound_id": "COMP-RF08-006",
+      "summary": "Olivia's contrary account relayed to rebut Eli's direct testimony. Context: Eli reported Olivia was disrespectful at a doctor's visit. Melissa's response: ROW-7332: 'She said she didn't say anything disrespectful at the dr and you are lying.' Melissa deploys Olivia's reported account to directly contradict Eli's firsthand account of Olivia's behavior. Post-ROW-6819 context: Melissa is positioned as the relay channel for Olivia's account, which is used to label Eli a liar. Cross-reference RF-01 ADD-004 (RF01-B019-F003, ADD-003 \u2014 Olivia's account positioned as definitive over Eli's direct experience).",
+      "exact_quotes": [
+        "ROW-7332 (Received): 'She said she didn\\'t say anything disrespectful at the dr and you are lying'"
+      ],
+      "rf08_mechanism": "Contrary account relay: Olivia's reported version of events relayed to override Eli's firsthand account and assign liar characterization."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-005",
+      "COMP-RF08-006"
+    ],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 ACTIVE: 6 signals (S001-S006). Post-activation batch. Two distinct relay mechanisms documented: harm allegation relay (S005) and contrary-account relay (S006)."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-005",
+      "rf_passes": [
+        "RF-08",
+        "RF-01",
+        "RF-15"
+      ],
+      "rf01_ref": "RF01-B019-F002",
+      "description": "Physical harm allegations via Olivia: RF-08 (relay mechanism), RF-01 ADD-004 (parental alienation content via child), RF-15 (false allegations). Triple compound."
+    },
+    {
+      "id": "COMP-RF08-006",
+      "rf_passes": [
+        "RF-08",
+        "RF-01"
+      ],
+      "rf01_ref": "RF01-B019-F003",
+      "description": "Contrary account relay: RF-08 (Olivia triangulated as witness against Eli) + RF-01 ADD-004 (Olivia positioned as definitive authority over Eli's direct account)."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase A (post-coaching admission). Sep-Oct 2024. Two post-activation relay signals in first batch after ROW-6819.",
+    "rf08_assessment": "Two Sev-2 primary flags. The harm-allegations relay (S005) is the first post-activation signal and represents the coaching mechanism in direct action: allegations delivered 9 hours after a visit, framed as Olivia's reported experience. S006 introduces the contrary-account relay sub-pattern.",
+    "cross_rf_context": "Both signals are RF-01 ADD-004 compounds. S005 is also RF-15 (false allegations via coached child report \u2014 see RF-15 pass for full classification). The coaching admission at ROW-6819 is the structural anchor for both: Melissa's scripting of Olivia's content makes these post-coaching relays presumptively coached."
+  }
+}

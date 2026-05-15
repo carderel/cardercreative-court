@@ -1,0 +1,139 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-010",
+    "row_range": {"start": 3343, "end": 3723},
+    "date_range": {"start": "2023-08-21", "end": "2023-10-04"},
+    "message_count": 381,
+    "mms_note": "MMS for this date range exist on a separate MMS sheet and are not separately analyzed in this batch; SMS-only analysis. Note: B-010 starts at row 3343 (one row before RF-02 B-010's start at 3344) to capture a boundary row not included in RF-02 B-010.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "timezone_note": "All source timestamps are UTC. Entire B-010 date range is EDT (UTC-4). DST does not end until Nov 5, 2023.",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. One primary RF-01 flag (Sev 2). Primary: ROW-3629-3630 (Sep 26) — 'You miss out on seeing her all the time' + 'I really hope you weren't just making yourself available because there were young girls there' — abandonment framing combined with predatory-implication framing about Eli's motive for attending Olivia's cheer practices. New and most serious false allegation variant to date. Key peripherals: (1) ROW-3353-3355 explicit re-affirmation of gatekeeping ('I usually do / Because I ask / I try hard to foster a relationship between you two'); (2) ROW-3388 most explicit false allegation formulation ('banging your niece...while your daughter and wife are upstairs asleep') — RF-15 primary; (3) ROW-3545-3546 Abby deleted from school pickup list ('I deleted her off of pickup. Abby. Lol.') — Abby exclusion continuing. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 12 signals (2 Sev-1, 10 Sev-2)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 381,
+    "primary_flags": 1,
+    "primary_severity_distribution": {"1": 0, "2": 1, "3": 0},
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {"RF-02": 1, "RF-15": 1, "RF-04": 2},
+    "no_flag_messages": 380,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "flag_id": "RF01-B010-S001",
+      "message_ids": ["ROW-3627", "ROW-3628", "ROW-3629", "ROW-3630"],
+      "date": "2023-09-26",
+      "severity": 2,
+      "flag_type": "primary",
+      "rf_category": "RF-01",
+      "calibration_addenda_triggered": ["RF01-ADD-002", "RF01-ADD-004"],
+      "arc_signal": true,
+      "arc_ref": "ARC-RF01-001",
+      "cp3_item": true,
+      "cp3_ref": "CP3-RF01-B010-001",
+      "confidence": "high",
+
+      "message_texts": {
+        "ROW-3627": "[Eli]: I was looking forward to seeing her. I don't know where you're head is at but what happens between us has nothing to do with Olivia. I would never miss out on an opportunity to see her just because I was mad at you.",
+        "ROW-3628": "You miss out on seeing her all the time.",
+        "ROW-3629": "You did better while she was in cheerleading the. Quit when she quit. I really hope you weren't just making yourself available because there were young girls there.",
+        "ROW-3630": "They don't quarantine people that have had contact with someone who is ill unless it's Covid so that is a lie"
+      },
+
+      "context_notes": "Sep 26: Eli notified Melissa that he couldn't take Olivia to the dentist because someone in his household was quarantined with an illness. Melissa immediately disbelieved him ('I don't believe you,' ROW-3605), accused him of lying and making excuses to avoid seeing Olivia. After an extended dispute (ROW-3605-3658) in which Melissa persistently accused Eli of fabricating illness, Eli wrote: 'I was looking forward to seeing her. I don't know where your head is at but what happens between us has nothing to do with Olivia. I would never miss out on an opportunity to see her just because I was mad at you.' Melissa responded: 'You miss out on seeing her all the time. You did better while she was in cheerleading then. Quit when she quit. I really hope you weren't just making yourself available because there were young girls there.' Context: Olivia had recently quit cheerleading (ROW-3390, Aug 27). Eli had been attending her practices for several weeks.",
+
+      "rf01_analysis": "This cluster has two components: (1) Abandonment framing (ROW-3628): 'You miss out on seeing her all the time' — categorical statement that Eli consistently fails to be present for Olivia, in response to Eli explicitly saying he would never miss out on seeing her. RF01-ADD-002: Sev 2 minimum. (2) Predatory-implication framing (ROW-3629): 'You did better while she was in cheerleading. Quit when she quit. I really hope you weren't just making yourself available because there were young girls there.' This is the most dangerous false allegation in the record to date: Melissa implies Eli's motivation for attending Olivia's cheer practices was not Olivia but access to other young girls (predatory/inappropriate motivation). This framing, if communicated to Olivia, would transform Eli's most visible period of engaged fathering (attending 6-8 weeks of cheer practices) into evidence of predatory behavior — destroying his motives entirely and positioning him as having used Olivia as cover for inappropriate access to children. For RF-01: if Olivia is told or infers that 'daddy only came to your practices because of the other girls, not you,' this is a profound alienation delivery at a moment of high engaged-parenting visibility. RF-15 primary (false allegation / predatory implication). Near-boundary RF-01: the logical corollary is 'Eli's apparent engagement with Olivia was not genuine.' The 'I really hope' framing gives Melissa deniability ('I was just expressing concern') while planting the suggestion.",
+
+      "arc_note": "ARC-RF01-001 +1 Sev-2 signal. The predatory-implication framing (ROW-3629) is a new and more serious false allegation variant: prior false allegations targeted Eli's relationship with Abby; this targets Eli's behavior in the presence of Olivia's peer group. The arc now includes five thematic components: (1) abandonment/inadequate-father narrative, (2) Abby-prioritization framing, (3) Abby-as-obstacle framing, (4) untrustworthy/dishonest-father framing, (5) predatory-father framing."
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-3353-3355",
+      "reason_noted": "Aug 22: Following the B-009 vaping incident (ROW-3151 gatekeeping admission), Eli asks Melissa to 'see if she wants to call on the way.' Melissa: 'I usually do. That's why you are called most mornings. Because I ask. Despite what you think I try hard to foster a relationship between you two.' This is a direct reaffirmation and expansion of the ROW-3151 admission — Melissa explicitly confirms she is the primary driver of Olivia's morning calls to Eli. The addition of 'Despite what you think I try hard to foster a relationship between you two' reframes gatekeeping as benevolent facilitation: Melissa positions herself as the positive force in Eli's relationship with Olivia, while implicitly establishing that this relationship depends on Melissa's willingness to 'ask.' RF-02 primary + near-boundary RF-01: the framing converts the gatekeeping admission into a good-parent claim."
+    },
+    {
+      "message_id": "ROW-3388",
+      "reason_noted": "Aug 27: In response to Eli questioning the appropriateness of a sleepover ('After this year do you really think it appropriate for her to be spending the night there?'), Melissa: 'Also who are you to talk about what's appropriate? Banging your niece, that you met when you were 30 and she was getting ready to turn 8, while your daughter and wife are upstairs asleep.' This is the most explicit and complete false allegation formulation in the record to date: (1) characterizes Eli as having started a sexual relationship with Abby when she was 7-8 years old; (2) places it explicitly in the house where Olivia was sleeping (as a toddler/infant); (3) frames it as the reason Eli has no standing to question 'appropriateness.' RF-15 primary candidate. For RF-01: if this narrative reaches Olivia, it positions Eli's behavior in her earliest home as a betrayal that occurred while she was asleep nearby."
+    },
+    {
+      "message_id": "ROW-3397-3403",
+      "reason_noted": "Aug 27: Olivia hung up on Eli. Melissa relays: ROW-3397 'She said cause you're a jerk'; ROW-3398 'And she said yes in the second one cause you keep yelling at her'; ROW-3403 'She said to tell you not everything in life goes your way.' Melissa relays Olivia's characterization of Eli as a 'jerk' and 'yeller.' Whether these are Olivia's genuine words or Melissa's paraphrase/amplification, typing 'she said cause you're a jerk' and sending it to Eli is a choice that delivers Olivia's negative characterization of Eli in maximally blunt form. RF-04 peripheral; RF01-ADD-004 active."
+    },
+    {
+      "message_id": "ROW-3545-3546",
+      "reason_noted": "Sep 19-20: 'I deleted her off of pickup. Abby. Lol.' Melissa announces she has removed Abby from Olivia's school pickup authorization, followed by 'Lol.' This continues the B-007 Abby exclusion pattern in a new venue — school pickup. Melissa has now (a) conditioned custodial pickups on Abby's absence (B-007), and (b) removed Abby from school pickup authorization. RF-02 primary. The 'Lol' framing is triumphant/contemptuous. RF-01 adjacent: if Olivia was told 'I took Abby off your pickup list so she can't get you at school,' this is Melissa actively restructuring Olivia's school environment to exclude Abby."
+    },
+    {
+      "message_id": "ROW-3520",
+      "reason_noted": "Sep 10: Eli missed the beginning of Olivia's cheer game. Melissa: 'She kept looking for you. First thing she said when she sat back down was dad missed all of it.' RF01-ADD-004 near-boundary: Melissa relays Olivia's disappointment at Eli missing the game. Not primary flag: this is a specific, real event (Eli did miss part of the game); Melissa's communication of Olivia's reaction is factual. Contextually significant: this event occurred two weeks before ROW-3629's 'you did better while she was in cheerleading then' claim, which implies Eli did NOT do well after she quit — suggesting the Sep 10 missed game may have fed into the abandonment narrative in the Sep 26 cluster."
+    },
+    {
+      "message_id": "ROW-3522",
+      "reason_noted": "Sep 10: 'You did good making time for her yesterday.' After the apple/farm outing Sep 9 (where Eli joined Melissa, Olivia, and Milo for a farm event), Melissa sent unprompted positive feedback to Eli. Significant cooperative data: this is Melissa explicitly praising Eli's engaged parenting. Contrast with ROW-3629 (Sep 26, 16 days later): 'You miss out on seeing her all the time' and the predatory-implication framing."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-3353-3355",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "note": "Aug 22: 'I usually do. That's why you are called most mornings. Because I ask. Despite what you think I try hard to foster a relationship between you two.' RF-02: explicit re-affirmation of Melissa's role as the primary initiator of Olivia's calls to Eli. Near-boundary RF-01: converts gatekeeping control into a good-parent claim, positioning Melissa as the reason Eli has any morning phone relationship with Olivia.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3388",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "Aug 27: 'Also who are you to talk about what's appropriate? Banging your niece, that you met when you were 30 and she was getting ready to turn 8, while your daughter and wife are upstairs asleep.' RF-15: most explicit and complete false allegation formulation in the record — sexual relationship with Abby when she was 7-8, in the home, while Olivia was present as a baby/toddler. Near-boundary RF-01: the logical extension of this narrative to Olivia would position Eli's behavior in her earliest home as a betrayal. Used explicitly to delegitimize Eli's parental judgment ('who are you to talk about what's appropriate').",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3397-3403",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Aug 27: Melissa relays Olivia's characterization of Eli: 'She said cause you're a jerk' / 'She said yes in the second one cause you keep yelling at her.' RF-04: relaying Olivia's negative characterization of Eli in blunt, unmediated form. RF01-ADD-004: Olivia's critical characterization of Eli relayed as evidence of his parenting failure.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3545-3546",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "note": "Sep 19-20: 'I deleted her off of pickup. Abby. Lol.' Melissa removes Abby from school pickup authorization. RF-02: extends the Abby exclusion from custodial pickup (B-007) to school pickup authorization. The 'Lol' framing is contemptuous. RF-01 adjacent: if Olivia is aware Melissa removed Abby from pickup, this reinforces the 'Abby is excluded from your life' framing.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_continuation_note": "ARC-RF01-001 (Abandonment/Blame Attribution Narrative): ACTIVE, +1 Sev-2 signal (RF01-B010-S001). Total signals: 12 (2 Sev-1, 10 Sev-2). The Sep 26 cluster introduces the 'predatory-father' framing — Eli attending Olivia's activities was motivated by inappropriate access to young girls rather than Olivia. This is the most destructive false allegation variant to date because it targets Eli's motive during the period of his most visible engaged parenting (cheer practices), retroactively poisoning those memories. If communicated to Olivia, this transforms her positive memory of Eli coming to her practices into a source of doubt about his genuine interest in her."
+  },
+
+  "batch_narrative_note": "B-010 has a strongly cooperative early period (Aug 21 – Sep 10) marked by: Eli attending cheer practices, waiting at the school bus stop with Olivia, participating in glasses selection at the eye appointment, joining Melissa and Olivia at an apple farm (Sep 9), Melissa explicitly praising Eli's effort ('You did good making time for her yesterday,' Sep 10). The batch then transitions through a mid-September period of logistics and minor friction, culminating in the Sep 26 quarantine-dispute-plus-predatory-allegation cluster. The cooperative-to-escalation pattern continues: extended cooperation → sudden explosive false allegation (Aug 27 ROW-3388 after cooperative first-day-of-school period) → cooperative recovery → Sep 26 predatory implication. The ROW-3629 'young girls' allegation was delivered in the context of Melissa consistently accusing Eli of lying about a quarantine. The allegation is embedded within a broader gaslighting pattern (repeated 'you're a liar,' 'no one is quarantined') that contextualizes Melissa's willingness to make extreme accusations when she believes she has caught Eli in a lie.",
+
+  "cooperative_data_notes": "Strong cooperative content early in batch: Eli attends cheer practices multiple times (Aug 21, Aug 23, Aug 26, Aug 28, Aug 31); waits at bus stop (Aug 24); Melissa asks Eli to write letter for first day of school — already captured in B-009; eye appointment coordination with Eli inputting on glasses selection (Aug 28); farm outing Sep 9 where both parents and Milo attend; Melissa tells Eli 'You did good making time for her yesterday' (Sep 10); Melissa asks if Eli can take Olivia to dentist (Sep 8, 11 — schedules appointment around his availability); Eli takes Olivia to dentist Sep 27; Melissa offers to let Eli take Olivia on Oct 2 (ROW-3713-3714). Notable: ROW-3405 (Aug 27) — Melissa asks if Eli is okay with Outer Banks vacation May 2024 — a positive, forward-planning cooperative exchange on the same day as ROW-3388's explosive false allegation.",
+
+  "checkpoint_items_generated": {
+    "cp3_count": 1,
+    "cp3_items": [
+      {
+        "cp3_ref": "CP3-RF01-B010-001",
+        "message_ids": ["ROW-3629"],
+        "date": "2023-09-26",
+        "attorney_flag": "ROW-3629: 'I really hope you weren't just making yourself available because there were young girls there.' Attorney relevance: Melissa suggests in writing that Eli's motivation for attending Olivia's cheerleading practices was predatory interest in other children rather than Olivia. This is a written false allegation of predatory behavior that: (1) retroactively poisons the period of Eli's most engaged recent parenting (6-8 weeks of attending cheer practices); (2) if communicated to Olivia, suggests her father's presence at her activities was not for her; (3) carries potential child-protection-allegation implications if repeated to school personnel or others in Olivia's community. Combined with ROW-3388 (Aug 27) in the same batch ('banging your niece...while your daughter and wife are upstairs asleep'), Melissa is making increasingly serious false allegations across the record — the 'young girls' allegation is qualitatively more serious than prior instances because it concerns behavior in Olivia's presence rather than before Olivia's awareness."
+      }
+    ],
+    "cp4_count": 0
+  }
+}

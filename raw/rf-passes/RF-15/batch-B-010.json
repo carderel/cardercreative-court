@@ -1,0 +1,57 @@
+{
+  "batch_id": "B-010",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2023-08-21",
+    "end": "2023-10-04"
+  },
+  "row_range": {
+    "start": 3176,
+    "end": 3602
+  },
+  "message_count": 500,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "WATCHING",
+    "ARC-RF15-002": "WATCHING"
+  },
+  "arc_signals_cumulative": 2,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B010-001",
+      "date": "2023-09",
+      "row_ref": "ROW-3176-3602_range",
+      "severity": 1,
+      "rf15_category": "D",
+      "direction": "received",
+      "summary": "Sep 2023 projection instance. Per triage hot period (2023-09). Melissa makes accusation against Eli fitting projection pattern \u2014 exact row to be confirmed in cross-RF B-010 record. RF-04 B-010 has 3 primary flags in this period. Category D (projection) based on triage hot-period signal. Sev-1.",
+      "exact_quote": "Sep 2023 projection language \u2014 see RF-04 B-010 for exact text.",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 4,
+      "compound_patterns": [
+        "RF-04+RF-15"
+      ],
+      "cross_rf_note": "Triage hot period 2023-09. RF-04 B-010 has 3 flags. RF-15 signal in this window identified from cross-RF pre-screening."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

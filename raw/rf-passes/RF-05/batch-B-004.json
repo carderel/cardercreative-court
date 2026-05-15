@@ -1,0 +1,73 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-004",
+    "row_range": { "start": 1093, "end": 1461 },
+    "date_range": { "start": "2022-12-12", "end": "2023-01-17" },
+    "message_count": 369,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 369,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": { "RF-04": 2 },
+    "no_flag_messages": 368,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B004-001",
+      "row_range": "ROW-1325 through ROW-1341",
+      "timestamp": "2023-01-01 through 2023-01-03",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-1325: 'You going to pay or do I need to file contempt?' | ROW-1326: 'I'm tired of this conversation. If you don't start paying stuff when you're supposed to I'm filing contempt again and moving forward with automatically taking daycare out of your check' | ROW-1338: 'That's late which means in contempt' | ROW-1341: 'You gotta pay this stuff. I don't get what is so hard about it. If I have to take you to court again that's going to be more lawyer fees for you.'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Second contempt filing threat cluster (same category as B-003 ROW-783). ADD-002 temporal rule: second instance in same category = Sev-1 (paper tiger trajectory beginning). ROW-1326 introduces 'I'm filing contempt AGAIN' — explicit reference to prior contempt filing, confirming this is a repeated pattern, not a novel threat. 'Moving forward with automatically taking daycare out of your check' adds wage-garnishment mechanism. ROW-1341 adds lawyer-fees-for-court-return threat: 'going to be more lawyer fees for you' — financial consequence framing. The pattern is establishing: Eli is late → Melissa threatens contempt → Eli pays → cycle repeats. The threat is recurring and has not yet been executed (no evidence of new contempt filing in the record). ADD-002: Sev-1 for repeat instance.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-1168: 'School gets out at 1:30 dumbass. I just told you that over and over' — RF04-ADD-002 contemptuous intelligence attack. RF-04 primary.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-1288: 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic' — second predation framing (RF-04+RF-15 primary per ADD-001; RF-05 peripheral aggressive-tone only).",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Pattern establishment: this is the second contempt-filing threat cluster in three batches. The 'filing contempt AGAIN' language confirms a prior contempt filing (the child support hearing referenced in CP1 context). The compliance mechanism is forming: Eli has paid after each prior threat (ROW-784-785 in B-003 confirms he was waiting for payday; ROW-1340/1347 confirm eventual payment). The legal threat produces eventual compliance.",
+      "pattern_tags": ["contempt_filing_threat", "repeat_contempt", "wage_garnishment", "lawyer_fees_threat", "compliance_mechanism"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'I'm filing contempt again and moving forward with automatically taking daycare out of your check' (ROW-1326)"
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": ["ARC-RF05-001: WATCHING → ACTIVE. Third distinct episode (B-002, B-003, B-004). Prior Sev-2 in B-003. Pattern confirmed as structural/recurring — compliance mechanism established."],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0
+  },
+
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+
+  "batch_observations": {
+    "tone_assessment": "B-004 (Dec 2022–Jan 2023) marks ARC-RF05-001 promotion to ACTIVE. Three distinct episodes establish the legal-compliance-pressure pattern as structural. The 'filing contempt again' phrasing confirms the pattern predates this dataset (the prior contempt filing from the divorce/support proceedings). The arc is active with a clear compliance cycle: Eli delayed → Melissa threatens → Eli pays.",
+    "cross_rf_context": "RF-04 B-004: second predation framing (ROW-1288). Per ADD-001: not RF-05 primary. B-004 conflict_ratio 0.21 — highest in early Phase A, consistent with the payment-dispute escalations."
+  }
+}

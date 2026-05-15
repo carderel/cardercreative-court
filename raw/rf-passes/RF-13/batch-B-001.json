@@ -1,0 +1,167 @@
+{
+  "batch_id": "B-001",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2022-01-11",
+    "end": "2022-10-02"
+  },
+  "row_range": {
+    "start": 2,
+    "end": 366
+  },
+  "message_count": 365,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [],
+  "pass_context": {
+    "methodology": "RF-13 is a META pass \u2014 analyzes the SHAPE of exchanges (delta scoring, cycle detection, trajectory analysis) rather than individual message content. Uses RF-13-SUPPLEMENT.md Section 1 (delta scale), Section 2 (escalation shapes), Section 3 (cycle detection), Section 4 (temporal correlation).",
+    "triage_profile": {
+      "keyword_hit_count": 125,
+      "phase_distribution": {
+        "A": 99,
+        "B": 15,
+        "C": 11
+      },
+      "hot_periods": [
+        "2025-08",
+        "2024-08",
+        "2022-11"
+      ],
+      "tier": "Tier 1",
+      "priority_rank": 7,
+      "note": "'Run LAST Tier 1 \u2014 needs full cross-RF picture.' Full cross-RF picture now available (8 prior passes complete)."
+    },
+    "cross_rf_foundation": {
+      "rf04_arc": "ARC-RF04-001 (89 signals, full dataset span) provides the primary escalation episode map. RF-04 flags are concentrated in received direction \u2014 Melissa is the dominant initiator/escalator across the dataset.",
+      "rf05_arc": "ARC-RF05-001 (26 signals) documents legal threats as peak-escalation mechanisms \u2014 threats are the ceiling of the escalation scale in this dataset.",
+      "rf07_arc": "ARC-RF07-001 (12 signals) documents flooding patterns \u2014 rapid-sequence messages are temporal escalation indicators.",
+      "direction_imbalance": "Triage: 86 received / 39 sent RF-13 keyword hits (69% received). Combined with RF-04 directionality (93 flags majority received), consistent-escalator pattern is pre-confirmed."
+    },
+    "hostile_episode_inventory": {
+      "total_hostile": 46,
+      "total_tense": 144,
+      "mega_clusters_over_100_msgs": [
+        {
+          "ep": "EP-0854",
+          "date": "2024-08-04",
+          "msgs": 311,
+          "phase": "A"
+        },
+        {
+          "ep": "EP-0917",
+          "date": "2024-10-02",
+          "msgs": 173,
+          "phase": "A"
+        },
+        {
+          "ep": "EP-1078",
+          "date": "2025-05-04",
+          "msgs": 170,
+          "phase": "A"
+        },
+        {
+          "ep": "EP-1018",
+          "date": "2025-02-15",
+          "msgs": 164,
+          "phase": "A"
+        },
+        {
+          "ep": "EP-1180",
+          "date": "2025-08-14",
+          "msgs": 121,
+          "phase": "B"
+        },
+        {
+          "ep": "EP-0793",
+          "date": "2024-06-16",
+          "msgs": 107,
+          "phase": "A"
+        },
+        {
+          "ep": "EP-0996",
+          "date": "2025-01-15",
+          "msgs": 106,
+          "phase": "A"
+        },
+        {
+          "ep": "EP-0219",
+          "date": "2023-02-14",
+          "msgs": 104,
+          "phase": "A"
+        }
+      ],
+      "temporal_patterns_observed": [
+        "Holiday cluster: Nov 2022 (3 hostile eps in 3 days); Dec 2022, Dec 2023 (Christmas hostile eps)",
+        "February pattern: Feb 14 2023 (104 msgs), Feb 9 2025 (68 msgs), Feb 15 2025 (164 msgs) \u2014 repeated Feb escalation",
+        "June 2024 sustained cluster: 4 hostile episodes over 3 weeks (EP-0793, EP-0808, EP-0809, EP-0810)",
+        "Aug 2024 mega-period: EP-0854 (311 msgs Aug 4) + EP-0861, EP-0871, EP-0873 all hostile same month",
+        "Jan-Feb 2025 cluster: EP-0996 (106 msgs Jan 15) + EP-1018 (164 msgs Feb 15)",
+        "Phase C sparse (4 hostile eps) despite being the most legally consequential period \u2014 structural shift from direct-exchange conflict to visit-refusal/legal-proceedings conflict"
+      ]
+    },
+    "anticipated_arcs": [
+      "ARC-RF13-001: Escalation Trajectory (expected ACTIVE \u2014 clearly worsening Phase A\u2192C)",
+      "ARC-RF13-002: Role Consistency (Melissa = consistent initiator/escalator; Eli = de-escalator)",
+      "ARC-RF13-003: De-Escalation Resistance (Melissa consistently ignores Eli's de-escalation attempts)"
+    ],
+    "anticipated_cycles": [
+      "CYC-001: Abby-trigger cycle \u2014 any Abby reference triggers Melissa escalation",
+      "CYC-002: Schedule/logistics spike \u2014 minor logistical request \u2192 rapid hostility",
+      "CYC-003: Holiday escalation \u2014 Dec/Feb periods reliably hostile",
+      "CYC-004: Legal-threat ceiling \u2014 disputes reach peak \u2192 legal threat deployed as escalation ceiling",
+      "CYC-005: Child-welfare allegation \u2014 conflict climax \u2192 harm allegation deployment"
+    ]
+  },
+  "calibration_episode": {
+    "episode_id": "EP-0009",
+    "date": "2022-08-28",
+    "message_count": 32,
+    "tone": "tense",
+    "row_range": {
+      "start": 36,
+      "end": 61
+    },
+    "description": "Aug 28 2022 church etiquette dispute (ROW-50-61). Documented in RF-04 as the B-001 DARVO signal and in RF-09 as peripheral. Eli raises concern about Olivia's behavior at church (disrespectful); Melissa pivots to attacking Eli's own church behavior ('I've seen you draw in your notebook'). This is the baseline escalation event in the dataset.",
+    "escalation_delta_profile": {
+      "baseline_intensity": 0,
+      "sent_total_delta": -0.5,
+      "received_total_delta": 2.0,
+      "net_escalation": 1.5,
+      "escalation_shape": "asymmetric",
+      "primary_escalator": "received",
+      "de_escalation_attempts": {
+        "sent": 1,
+        "received": 0
+      },
+      "peak_delta": "+1 (received) \u2014 DARVO pivot + 'Check your own etiquette' (ROW-61)"
+    },
+    "rf13_flag": false,
+    "reason_not_flagged": "Net escalation 1.5 is below Sev-1 threshold (>3.0). Single tense episode in an otherwise cooperative baseline period. Establishes the fundamental asymmetric dynamic (Eli attempts mild de-escalation; Melissa escalates with DARVO pivot) but one instance does not constitute a primary RF-13 flag. Noted as CANDIDATE arc signal only."
+  },
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jan\u2013Oct 2022 calibration batch. Zero RF-13 primary flags. This is the cooperative baseline period \u2014 32 episodes, predominantly neutral. EP-0009 (Aug 28, 32 msgs, tense) is the only non-neutral episode and establishes the baseline asymmetric dynamic: Melissa escalates with DARVO pivot when Eli raises a concern, but the net escalation (1.5) is below primary threshold. The asymmetric pattern (Eli de-escalates, Melissa does not) is already visible in the first conflict episode but not flaggable at one instance. Arc ARC-RF13-002 (role consistency) initialized at CANDIDATE: baseline data point 1/N collected."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Trajectory arc initialized \u2014 Phase A cooperative baseline established",
+      "state": "CANDIDATE"
+    },
+    {
+      "arc": "ARC-RF13-002",
+      "event": "Role consistency arc initialized \u2014 EP-0009 establishes baseline: Melissa = escalator, Eli = de-escalator in the first tense episode",
+      "state": "CANDIDATE"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "De-escalation resistance arc initialized \u2014 EP-0009: Eli de-escalation attempt not acknowledged by Melissa",
+      "state": "CANDIDATE"
+    }
+  ]
+}

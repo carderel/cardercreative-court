@@ -1,0 +1,86 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-004",
+    "row_range": {"start": 1093, "end": 1461},
+    "date_range": {"start": "2022-12-12", "end": "2023-01-17"},
+    "episode_range": {"start": "EP-0146", "end": "EP-0187"},
+    "message_count": 369,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": "Olivia's tonsil surgery Dec 28-29 2022 is the central event. Pre-surgery health restrictions and post-surgery recovery dominate the tone. Phone-blocking arc is quiet this batch — no 8:30pm enforcement events."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 369,
+    "primary_flags": 0,
+    "primary_severity_distribution": {"1": 0, "2": 0, "3": 0},
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": {"RF-05": 1, "RF-15": 1},
+    "no_flag_messages": 369,
+    "flag_rate": "0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-1133",
+      "reason_noted": "Melissa grants access for Olivia's school early dismissal (Dec 21) but specifies 'Not to your house' (ROW-1133) and 'not to your house' again in the summary (ROW-1176) and 'Better not be your house' when Eli grabbed a change of clothes (ROW-1202). Three instances in the same day cluster. The cat/allergy restriction is the stated basis (Olivia had asthma/allergy documented; surgery Dec 28-29). Medical context provides strong mitigation — restriction on Eli's home is plausible health-protective. Not flagged as primary RF-02 this batch. WATCHING: if 'not to your house' restrictions persist post-surgery, without medical justification, flag as primary RF-02 and open candidate arc ARC-RF02-004."
+    },
+    {
+      "message_id": "ROW-1186",
+      "reason_noted": "Melissa voluntarily takes the DND off: 'I'll take the do. It disturb off of you wanna call her in 5 minutes.' This is the clearest on-record demonstration that Melissa has full real-time control over the DND system — she can lift it instantly when she chooses. Analytically significant as confirmatory evidence for CA-RF02-01 selective enforcement finding. When Melissa wants contact to happen, she removes the restriction; when she does not, the restriction stands. This cooperative gesture does not diminish ARC-RF02-001 — it confirms the gatekeeping architecture."
+    },
+    {
+      "message_id": "ROW-1217-1221",
+      "reason_noted": "Melissa refuses to allow Olivia at Eli's home due to cat: 'She's not going over there with the cat' (ROW-1217), 'You've had 11 months to get rid of that damn cat' (ROW-1218), 'I don't trust your cleaning and you lie' (ROW-1220). Eli proposed a mitigation plan (thorough cleaning, cat in basement per ROW-1216); Melissa rejected it without proposing an alternative. Medical context (documented allergy, surgery in 10 days, hospital overload) provides legitimate basis for the immediate refusal. However: the blanket 'not to your house' restriction on Olivia visiting Eli's home is a significant long-term access issue that must be tracked across batches. If this restriction continues well past surgery recovery, it becomes primary RF-02."
+    },
+    {
+      "message_id": "ROW-1393",
+      "reason_noted": "Melissa offered Olivia the choice to call Eli: 'I asked if she wanted to call but she wants to play instead.' Olivia's expressed preference (play over phone call) was honored. This is a cooperative, appropriate relay — Melissa offered access, child declined. Analytically distinct from the ROW-122/185/365 pattern where Melissa relayed refusal as a justification without context. Noting as a positive co-parenting data point."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-1285-1288",
+      "peripheral_rf": "RF-05",
+      "severity": 2,
+      "note": "Surgery day attack cluster. ROW-1285: 'Nobody gives a shit what you're doing.' ROW-1286: 'This appointment was made months ago and should take priority over milos anyhow since she is your kid and he's not.' ROW-1287: 'Abby could reschedule, take a taxi, Uber, Lyft or bus or get off her lazy ass and get a license.' ROW-1288: 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic.' On the day of Olivia's surgery, Melissa launched a sustained attack using Abby/Milo as the attack vector — 'since she is your kid and he's not' (delegitimizing Eli's care relationship with Milo), 'uncle/dad' framing (repeating the grooming insinuation). High-severity intimidation and derogatory language.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1288",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic' — explicit invocation of the grooming/incest narrative (Eli as Milo's 'uncle/dad' because of his relationship with Abby, Milo's mother). This is a false allegation framing embedded in a sarcastic attack. Per cp1-context.json: Abby is Eli's girlfriend who is also Olivia's cousin — Melissa's 'uncle/dad' framing is attack language, not a substantiated allegation. This is RF-15 (False Allegations/Projection).",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": [],
+      "ARC-RF02-002": [],
+      "ARC-RF02-003": []
+    },
+    "arc_001_cumulative_signals": 10,
+    "arc_quiet_note": "Phone-blocking arc (ARC-RF02-001) is quiet this batch. Surgery recovery period likely explains the absence of 8:30pm enforcement events — Eli's calls during the recovery period were not flagged. Watch for arc resumption in B-005 (post-surgery, post-recovery).",
+    "candidate_watching": "ROW-1133/1176/1202 'not to your house' pattern begins — if restriction persists post-surgery, open ARC-RF02-004 in B-005."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

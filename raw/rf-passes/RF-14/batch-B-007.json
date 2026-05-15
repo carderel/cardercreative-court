@@ -1,0 +1,84 @@
+{
+  "batch_id": "B-007",
+  "date_range": {
+    "start": "2023-04-02",
+    "end": "2023-06-03"
+  },
+  "row_range": {
+    "start": 2222,
+    "end": 2592
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 1,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 2,
+    "peripheral_flags": 1,
+    "note": "Apr-Jun 2023. Two RF-14 primary flags: S-001 car unattended safety allegation (Apr 22-28) and S-002 injury relay with pattern claim (May 10). Both delivered in hostile context alongside Abby-targeting. ARC-RF14-001 advances to signal count 3. RF-01 Abby-attack pattern onset in this batch (B-007, per RF-01 record)."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-001",
+      "row_ref": "ROW-2373/2402-2403",
+      "date": "2023-04-22/2023-04-28",
+      "direction": "Received",
+      "severity": 1,
+      "arc": "ARC-RF14-001",
+      "arc_signal_num": 2,
+      "type": "Safety allegation \u2014 child supervision",
+      "description": "ROW-2373: 'Don't be leaving Olivia in the car by herself. Cars are getting stolen all the time.' Melissa issues safety directive about Eli leaving Olivia unattended in car. ROW-2402-2403 (Apr 28): 'Olivia was crying after you dropped her off. She said that after she said she was...You shouldn't have left her in the car unsupervised.' Follow-up reinforcing the allegation. Delivered in hostile context alongside Abby-targeting (RF-04 compound). Per ADD-007: consistent with manufactured safety allegation pattern.",
+      "addenda_applied": [
+        "RF14-ADD-001",
+        "RF14-ADD-007"
+      ],
+      "rf15_compound": "RF-15 peripheral \u2014 safety allegation in hostile context; part of manufactured safety narrative (ADD-007)"
+    },
+    {
+      "signal_id": "RF14-S-002",
+      "row_ref": "ROW-2464-2465/2469",
+      "date": "2023-05-10",
+      "direction": "Received",
+      "severity": 1,
+      "arc": "ARC-RF14-001",
+      "arc_signal_num": 3,
+      "type": "Injury relay \u2014 harm allegation",
+      "description": "ROW-2464: 'For clarity she said you hurt it because you picked her up and her outfit went u[p]...' \u2014 Olivia relay about genital area injury from Eli picking her up. ROW-2469: 'Still hurting but not screaming when she pees. You need to be more careful with her.' Pattern claim included. Delivered via Olivia relay. Genuine minor injury possible (clothing-related), but framing implies ongoing harm from Eli ('you hurt it').",
+      "addenda_applied": [
+        "RF14-ADD-001"
+      ],
+      "rf15_compound": "RF-15 Category A peripheral \u2014 harm relay allegation via Olivia as messenger"
+    }
+  ],
+  "peripheral_flags": [
+    {
+      "row_ref": "ROW-2464-2469",
+      "type": "RF-15 Category A",
+      "note": "Harm relay \u2014 injury attributed to Eli via Olivia relay. RF-15 primary for relay mechanism; RF-14 primary for physical safety content."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "RF14-S-001 + RF14-S-002: car unsupervised + injury relay. ARC-RF14-001 signal count now 3. Pattern confirmed: Melissa deploying safety allegations against Eli's household. State remains WATCHING (promotion to ACTIVE requires 5+ confirmed signals or pattern escalation).",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No signals \u2014 CANDIDATE",
+      "state": "CANDIDATE"
+    }
+  ]
+}

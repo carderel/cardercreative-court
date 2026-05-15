@@ -1,0 +1,73 @@
+{
+  "batch_id": "B-029",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2025-10-16",
+    "end": "2025-12-16"
+  },
+  "row_range": {
+    "start": 10785,
+    "end": 11100
+  },
+  "message_count": 505,
+  "phase": "C",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "ACTIVE",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 18,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 2,
+    "note": "Phase C hostile episodes: EP-1244 Oct 24 (57 msgs, FLOOD) + EP-1254 Nov 4 (52 msgs, FLOOD). 109 hostile msgs. Phase C is characterized by fewer direct-exchange hostile episodes but qualitatively different escalation (legal proceedings, visit refusal, police report, harm allegations). Nov 22 2025 police report in this period (no text exchange \u2014 gap in record). ADD-002 active."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B029-001",
+      "episode_cluster": [
+        "EP-1244",
+        "EP-1254"
+      ],
+      "dates": "2025-10-24 and 2025-11-04",
+      "total_messages": 109,
+      "phase": "C",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "Phase C cluster \u2014 reduced direct-exchange hostile episodes but elevated legal/child-welfare stakes",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "AI-guided measured responses (ADD-002)",
+        "received_direction": "2 hostile episodes with flooding; Phase C legal/visit-refusal context active",
+        "net_escalation": "elevated Sev-2 (ADD-002 elevated weight; Phase C qualitative escalation \u2014 legal proceedings active)",
+        "de_escalation_resistance": "ADD-002 applies: AI-guided measured communication; Melissa initiates hostile episodes in Phase C"
+      },
+      "cycle_classification": "CYC-005 child-welfare deployment (Phase C visit refusal cascade, police report, harm allegations via RF-01/RF-11)",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 19,
+      "cross_rf_note": "B-029 contains RF-02 visit-refusal cascade signals, RF-05 S-025 gatekeeping-to-contempt inversion, RF-08 comprehensive complaint relay, RF-11 police report disclosure to Olivia. Phase C escalation is multi-RF compound."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Phase C: fewer direct hostile episodes but qualitatively more significant \u2014 legal proceedings active, visit refusal, police report. Structural shift documented.",
+      "state": "ACTIVE"
+    }
+  ]
+}

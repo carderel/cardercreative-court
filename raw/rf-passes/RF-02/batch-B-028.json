@@ -1,0 +1,144 @@
+{
+  "batch_id": "B-028",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-08-03",
+    "end": "2025-09-12"
+  },
+  "row_range": {
+    "sms_start": "ROW-9965",
+    "sms_end": "ROW-10107",
+    "sms_secondary_section": "ROW-8063 to ROW-8190 (secondary SMS table section, Aug 3 – Sep 12 — Eli-sent and some Received entries)",
+    "mms_start": "ROW-14006",
+    "mms_end": "ROW-14341"
+  },
+  "message_count": 487,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B028-PF-001",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 52,
+      "row_ref": "ROW-14208",
+      "date": "2025-08-26",
+      "severity": 1,
+      "verbatim": "She says she's not going",
+      "note": "ARC-RF02-002 Signal 52. Visit-refusal relay, Aug 26. Melissa relays Olivia's refusal to attend a scheduled visit with Eli — 'She says she's not going' — without documented child-direct contact attempt by Eli. First shot in what becomes a six-day visit-refusal cascade (Aug 26–Sep 5). Required-intermediary mechanism operating in the visit-access domain: Melissa positions herself as the exclusive gatekeeper of Olivia's willingness to visit, with no mechanism for Eli to confirm or challenge Olivia's stated unwillingness through direct contact. Eli's access to Olivia for scheduled parenting time is fully mediated through Melissa's relay of Olivia's preferences. Also appears in secondary SMS at corresponding rows."
+    },
+    {
+      "flag_id": "B028-PF-002",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 53,
+      "row_ref": "ROW-8173",
+      "date": "2025-08-29",
+      "severity": 2,
+      "verbatim": "That's why I helped facilitate a conversation between you two about how she feels since she is afraid to talk to you about things",
+      "note": "ARC-RF02-002 Signal 53, Sev 2. Aug 29. Melissa explicitly frames herself as the required intermediary between Eli and Olivia: 'That's why I helped facilitate a conversation between you two about how she feels since she is afraid to talk to you about things.' First explicit first-person self-characterization of the facilitator role in the dataset — Melissa articulates the required-intermediary position in the first person, framing it as protective necessity (Olivia's fear of direct communication with Eli). Directly parallels ROW-14097 (Aug 14): 'She's told the counselor before how she has been afraid to talk to you about things and how she feels cause you would just yell' — Melissa has now cited both the counselor and herself as required intermediaries for Olivia's fear-based communication. Sev 2: explicit self-characterization of the required-intermediary role, not merely acting as relay without comment. Analytically among the most significant ARC-RF02-002 signals in the dataset — moves from behavioral pattern to stated identity."
+    },
+    {
+      "flag_id": "B028-PF-003",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 54,
+      "row_ref": "ROW-14310 / ROW-14311 / ROW-14312 / ROW-14313 / ROW-14314 / ROW-14315",
+      "date": "2025-09-03 to 2025-09-05",
+      "severity": 1,
+      "verbatim": "Olivia said she doesn't want to go to your house tomorrow night [ROW-14310] / She said she's not going [ROW-14312] / She doesn't want to go [ROW-14314]",
+      "note": "ARC-RF02-002 Signal 54. Sep 3-5 visit-refusal cascade continuation. Melissa relays Olivia's refusal to visit across multiple sequential messages over three days, each a fresh relay assertion without documentation of any direct Eli-Olivia access attempt intervening. Pattern: Eli proposes or inquires about scheduled visit → Melissa relays Olivia's stated unwillingness (multiple iterations over multiple days) → visit does not occur. Six-day visit-refusal cascade (Aug 26–Sep 5) produces three ARC-RF02-002 primary signals (52, 53, 54). The cascade represents the clearest sustained instance in the dataset of Eli's parenting time access being entirely mediated through Melissa's relay of Olivia's preferences, with no independent access channel available to Eli to verify or engage Olivia's stated wishes directly."
+    },
+    {
+      "flag_id": "B028-PF-004",
+      "arc_id": "ARC-RF02-006",
+      "signal_number": 4,
+      "row_ref": "ROW-14083",
+      "date": "2025-08-14",
+      "severity": 2,
+      "verbatim": "Also I've been looking at houses and may move soon",
+      "note": "ARC-RF02-006 Signal 4, Sev 2. Aug 14. First action-step language in the relocation arc: 'I've been looking at houses' is concrete present-tense activity (not hypothetical or conditional), and 'may move soon' introduces a near-term timeline. All three prior signals (B-013, B-015, B-017) were attitudinal or preference statements — an inquiry with employment rationale, a vacation sentiment, and a child preference relay. This is the first documentation of active house-searching behavior. Embedded in the Aug 14 escalation exchange (119 messages), immediately following 'I think it's best the weekends don't restart. She's better off with me full time' (ROW-14080) — relocation disclosure appears in a custody-threat context, pairing geographic access elimination with full custody framing. No court notification of relocation intent documented in the dataset to this point. Arc promotion to ACTIVE warranted per stated threshold: 'action step (job application, housing inquiry, school enrollment inquiry)' — active house-searching satisfies the housing inquiry criterion."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B028-PERIPH-001",
+      "row_ref": "ROW-14154 / ROW-14155",
+      "date": "2025-08-14",
+      "rf_category": "RF-11",
+      "severity": 2,
+      "verbatim": "Just more reasons why I'm filing for full custody [ROW-14154] / Already been talking to the lawyer about it [ROW-14155]",
+      "note": "RF-11 Sev 2. Aug 14 escalation cascade (119 messages). Third full custody / lawyer-contact threat cluster in recent batches (prior: B-027 ROW-9957-9960 Jul 19, B-017 ROW-6313). The 'Already been talking to the lawyer about it' formulation is analytically significant: prior instances were conditional or future-tense ('I'll contact my lawyer,' 'I'll file for full custody'); this is past-tense, framing legal action as already initiated rather than threatened. Embedded in the same exchange that contains the ARC-RF02-006 relocation disclosure (ROW-14083) and the custody elimination framing 'She's better off with me full time' (ROW-14080) — three legally significant co-occurring statements in one exchange. Cross-reference: B-017 ROW-6313 Sev 2 (sole custody explicitly to eliminate required consultation with Eli)."
+    },
+    {
+      "flag_id": "B028-PERIPH-002",
+      "row_ref": "ROW-14080 / ROW-14097 / ROW-14157",
+      "date": "2025-08-14",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "Seeing how disinterested you are I think it's best the weekends don't restart. She's better off with me full time [ROW-14080] / She's told the counselor before how she has been afraid to talk to you about things and how she feels cause you would just yell [ROW-14097] / You obviously don't know how coparenting works because you haven't been a coparent in 5 years [ROW-14157]",
+      "note": "RF-04 Sev 1 cluster, Aug 14. Three-element fitness-attack cluster embedded in the Aug 14 escalation: (1) 'disinterested' / 'better off with me full time' — unilateral custody modification framing grounded in parental fitness judgment; (2) counselor-reported fear claim — invokes therapeutic intermediary to attribute Olivia's fear of direct communication to Eli; (3) '5 years without co-parenting' — longitudinal fitness denial spanning the co-parenting relationship. ROW-14097 carries ARC-RF02-002 valence: Melissa invokes the counselor as an intermediary reporter of Olivia's fear of Eli, extending the required-intermediary pattern into therapeutic-reporting territory (consistent with B-025 Signal 50, ROW-9660). Cross-reference: B-027 PERIPH-002/003 for the '2.5 hours' and 'barely around' parenting-minimization language from Jul 19 and Aug 2 — RF-04 cluster is intensifying across recent batches with new quantification and longitudinal framing."
+    },
+    {
+      "flag_id": "B028-PERIPH-003",
+      "row_ref": "ROW-14295",
+      "date": "2025-09-02",
+      "rf_category": "RF-15",
+      "severity": 1,
+      "verbatim": "Why are you smacking her?",
+      "note": "RF-15 Sev 1. Sep 2. Melissa texts 'Why are you smacking her?' during or immediately following an Eli-Olivia visit. Physical discipline / harm insinuation via accusatory question — Melissa introduces a physical harm framing without documented child-reported complaint in surrounding context. Consistent with B-026 PERIPH-002 (RF-15 Sev 1, Olivia-source physical harm insinuation with leading question). Not escalated to primary given single-message context and absence of documented formal complaint or escalation sequence. Monitor for recurrence — third physical-harm register entry in recent batches (B-019, B-026, B-028)."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-8063 to ROW-8077 / ROW-14006-14020",
+      "date": "2025-08-03 to 2025-08-10",
+      "description": "Tap dance class logistics coordination: Melissa and Eli coordinate Iron House open house attendance (Aug 16) and initial class scheduling. Eli communicates class timing preferences; Melissa provides enrollment confirmation and schedule details. Functional cooperative extracurricular logistics."
+    },
+    {
+      "row_ref": "ROW-14050 to ROW-14065 / ROW-8090-8095",
+      "date": "2025-08-11 to 2025-08-13",
+      "description": "Olivia broken thumb: Melissa provides medical updates in real time (x-ray confirmation, splint, follow-up appointment), communicates treatment plan, and notifies Eli promptly. Eli responds with concern and coordinates accordingly. Cooperative medical communication without escalation — consistent with the illness-coordination quality seen in B-027 (Jul 16 vacation fever event)."
+    },
+    {
+      "row_ref": "ROW-14206 / ROW-14207",
+      "date": "2025-08-25",
+      "description": "Dance class milestone notification: Melissa proactively communicates that Olivia's first real tap class is Sep 4, ensuring Eli is aware of the milestone event. Inclusive facilitation consistent with B-027 open house invitation."
+    },
+    {
+      "row_ref": "ROW-8186 to ROW-8190 / ROW-14330-14341",
+      "date": "2025-09-04",
+      "description": "First tap class: Melissa conditions Eli's pickup of Olivia on Olivia attending dance class first; Eli accommodates. Olivia attends first tap class. Melissa communicates timing and logistics. Cooperative scheduling, though the conditioning structure is noted."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-8078",
+      "date": "2025-08-12",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-8078): 'Is her phone dead? I have texted and called.' Phone going to voicemail / unanswered. Natural explanation provided in surrounding context (Olivia was outside). Not flagged: consistent with prior near-miss pattern; no deliberate blocking mechanism documented. ARC-RF02-001 extends quiet streak to 11 consecutive batches (B-021 through B-028)."
+    },
+    {
+      "row_ref": "ROW-8084",
+      "date": "2025-08-13",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-8084): 'Been calling since around 4.' Sustained unanswered call attempt. Natural context provided. Not flagged: signal count remains 26."
+    },
+    {
+      "row_ref": "ROW-14080",
+      "date": "2025-08-14",
+      "consideration": "ARC-RF02-004 near-miss. Melissa (ROW-14080): 'Seeing how disinterested you are I think it's best the weekends don't restart. She's better off with me full time.' Unilateral elimination of parenting time expressed, but as rhetorical framing within a high-intensity escalation exchange — not documented as an implemented restriction. Flagged as RF-11 Sev 2 (B028-PERIPH-001) and RF-04 Sev 1 (B028-PERIPH-002); not flagged as ARC-RF02-004 primary (no documented implementation of access restriction)."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; ARC-RF02-001 quiet for 11 consecutive batches (B-021 through B-028, Dec 2024 – Sep 2025); near-misses: ROW-8078 (Aug 12, calls/texts unreturned — outdoor context), ROW-8084 (Aug 13, calling since 4 — same context); signal_count remains 26",
+    "ARC-RF02-002": "3 new primary signals (52-54); visit-refusal cascade Aug 26–Sep 5 produces all three: Signal 52 (ROW-14208, Aug 26, Sev 1): relay of Olivia's refusal to attend scheduled visit; Signal 53 (ROW-8173, Aug 29, Sev 2): explicit first-person self-characterization of required-intermediary role ('That's why I helped facilitate a conversation between you two about how she feels'); Signal 54 (ROW-14310-14315, Sep 3-5, Sev 1): multi-day visit-refusal relay cascade; required-intermediary domain extension trajectory now spans scheduling, affective, therapeutic, safety, and visit-access control domains; signal_count advances to 54; last_signal_batch=B-028; last_signal_date=2025-09-05",
+    "ARC-RF02-004": "no new primary signals; remains ACTIVE; ROW-14080 near-miss (unilateral weekend-suspension threat — rhetorical, not implemented); signal_count remains 4",
+    "ARC-RF02-005": "no new signals; remains WATCHING; signal_count remains 2",
+    "ARC-RF02-006": "1 new signal (Signal 4, ROW-14083, Aug 14, Sev 2): 'Also I've been looking at houses and may move soon' — first action-step language in arc; active house-searching satisfies housing-inquiry promotion criterion; arc promoted WATCHING → ACTIVE; no court notification of relocation intent documented; signal_count=4; last_signal_batch=B-028; last_signal_date=2025-08-14",
+    "ARC-RF02-003": "no new signals; remains CANDIDATE; signal_count remains 1"
+  },
+
+  "batch_notes": "B-028 produces the highest primary-flag density since B-020: 4 primary flags across two arcs. Analytically dominated by two events: (1) The Aug 14 escalation (119 messages) generating ARC-RF02-006 Signal 4 ('looking at houses and may move soon'), RF-11 Sev 2 (custody-threat already lawyered up), and RF-04 Sev 1 cluster — three legally significant statements in a single exchange. ROW-14083 is the first action-step evidence in the relocation arc, meeting the promotion threshold and moving ARC-RF02-006 from WATCHING to ACTIVE — first arc promotion since ARC-RF02-004 reached ACTIVE status. (2) The Aug 26–Sep 5 visit-refusal cascade: six days, three ARC-RF02-002 primary signals. ROW-8173 (Aug 29) is analytically among the most significant ARC-RF02-002 signals in the dataset — Melissa's first explicit first-person self-characterization of the required-intermediary role ('That's why I helped facilitate a conversation between you two'). Required-intermediary domain extension trajectory now spans five domains: scheduling → affective (B-023) → therapeutic/counseling (B-025) → safety/harm-reporting (B-026) → visit-access control (B-028). ARC-RF02-001 extends quiet streak to 11 consecutive batches. Cooperative density is modest compared to B-027 but present: broken thumb coordination, dance class facilitation, first tap class milestone."
+}

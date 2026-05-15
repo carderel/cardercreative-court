@@ -1,0 +1,66 @@
+{
+  "batch_id": "B-008",
+  "date_range": {
+    "start": "2023-06-03",
+    "end": "2023-07-16",
+    "orig_row_start": 2593,
+    "orig_row_end": 2963
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-004: payment pressure Jun-Jul 2023 (ROW-2772/2906). 'Way behind' + lifestyle differential framing. ARC-RF06-001 Signal 4."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-004",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 4,
+      "date_range": "2023-06-27 to 2023-07-12",
+      "orig_rows": [
+        "2772",
+        "2906"
+      ],
+      "messages": [
+        {
+          "orig_row": "2772",
+          "direction": "Received",
+          "date": "2023-06-27",
+          "text": "You're a bit behind on daycare. You gonna pay the one that was due last Thursday?"
+        },
+        {
+          "orig_row": "2906",
+          "direction": "Received",
+          "date": "2023-07-12",
+          "text": "Speaking of you working and making money you are way behind on paying the daycare and swim"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 Two payment pressure instances in same batch. ROW-2772: routine pressure with implied contempt threat context. ROW-2906: 'speaking of you working and making money' \u2014 financial disparity framing introduced (per ADD-006: subtle lifestyle differential leverage). The parenthetical 'you working and making money' juxtaposes against unpaid obligations, implying Eli's financial priorities are wrong. ARC-RF06-001 Signal 4.",
+      "addendum_applied": "ADD-005 (payment pressure in established coercion context). ADD-006 (lifestyle differential \u2014 subtle financial leverage)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "WATCHING",
+      "signals_cumulative": 4
+    }
+  ]
+}

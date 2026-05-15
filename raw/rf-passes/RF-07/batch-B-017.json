@@ -1,0 +1,97 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-017",
+    "row_range": { "start": 6013, "end": 6556 },
+    "date_range": { "start": "2024-07-16", "end": "2024-08-05" },
+    "message_count": 544,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "August 2024 triage hot period. Aug 4-5 mega-cluster (COMP-RF04-016) is the primary flooding candidate for this hot period."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 544,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 0, "2": 1, "3": 0 },
+    "peripheral_flags_total": 1,
+    "no_flag_messages": 543,
+    "flag_rate": "0.2%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF07-B017-001",
+      "flag_id": "ARC-RF07-001-S001",
+      "timestamp": "2024-08-04 evening through 2024-08-05 night",
+      "direction": "received",
+      "phase": "A",
+      "row_ref": "ROW-6279–ROW-6524",
+      "message_text": "ROW-6279 (Received): 'I'll contempt your sss' | ROW-6280 (Received): 'Ass' [rapid pair opener, then continued cascade across ~80 messages through Aug 5 night]",
+      "primary_rf": "RF-07",
+      "primary_severity": 2,
+      "sub_pattern": "sustained_dense_cluster_flooding_candidate",
+      "primary_reasoning": "Aug 4-5 sustained mega-cluster — ~80 messages spanning Aug 4 evening through Aug 5 night. Triage hot period for RF-07 is August 2024, anchored in this cluster. ROW-6279-6280 open with two rapid consecutive messages ('I'll contempt your sss' / 'Ass'), followed by ROW-6287, 6290, 6296, 6297, 6298 — five additional Received messages addressing the same inadequate-father theme. Without individual message-level timestamps in the RF-04 batch record, the 5+/10-minute threshold cannot be confirmed from this source. However: (1) Aug 2024 is a confirmed RF-07 triage hot period, establishing this cluster as the primary hot-period anchor; (2) the cluster spans ~80 messages over two days with confirmed rapid-pair openers; (3) the ADD-001 threshold is met if any 10-minute window contains the ROW-6279-6298 sequence, which the rapid-pair opener (ROW-6279-6280, sent consecutively) suggests is likely. Classification: Sev-2 (dense cluster in confirmed hot period; flooding threshold probable but pending timestamp confirmation from raw data at synthesis). Compound with COMP-RF04-016 (RF-04+RF-05). ARC-RF07-001-S001.",
+      "verbatim_key_messages": [
+        "ROW-6279 (Received): 'I'll contempt your sss'",
+        "ROW-6280 (Received): 'Ass'",
+        "ROW-6287 (Received): 'I can't understand why you have shared custody since you do nothing for her'",
+        "ROW-6290 (Received): 'Your answers are good evidence to show the court as to why you shouldn't have custody'",
+        "ROW-6296 (Received): 'She is also your daughter even though you don't act like it'",
+        "ROW-6297 (Received): 'You don't act like a father at all'"
+      ],
+      "pattern_tags": ["flooding_candidate", "rapid_pair_opener", "hot_period_anchor", "sustained_dense_episode"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": ["COMP-RF04-016", "COMP-RF07-001"],
+      "calibration_notes": "Timestamp confirmation required from raw Excel data at synthesis. Sev-2 assigned based on hot-period anchor designation and probable flooding given rapid-pair opener and ~80-message density."
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-6582 through ROW-6585",
+      "timestamp": "2024-08-08",
+      "direction": "received",
+      "message_text": "ROW-6582: 'I don't want to hear about me being off work cause frankly my use of time is not your business but secondly you never take off work for her' | ROW-6583: 'If I don't take off she has no one to care for her' | ROW-6585: 'I don't have the opportunity to be an absent parent and just be like no I'm not doing anything. You do it'",
+      "assessment": "Aug 8 re-opening of Aug 4-5 dispute — 4 messages, 4 days after the mega-cluster. RF-07 near-boundary: Melissa reopening a closed episode (continuation of prior conflict); however, 4 days post-closure exceeds the 'continuation-after-stop' window. This is more re-initiation than continuation. Not RF-07 primary. RF-04 peripheral (absent-parent framing continuation).",
+      "cp2_flag": false
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": ["ARC-RF07-001 promoted from watching to ACTIVE"],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF07-001"],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 (Communication Boundary Violation Pattern) promoted to ACTIVE. S-001 is the first primary RF-07 signal in the dataset, anchored in the Aug 2024 hot period. Arc was in watching state from B-002 (Phase A patterns insufficient for promotion but consistent with eventual arc). Arc sub-patterns now tracking: flooding (primary in this batch), continuation-after-stop, response-demand, custodial-time-overstepping."
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF07-001",
+      "date": "2024-08-04",
+      "row_ref": "ROW-6279–ROW-6524",
+      "rf_tags": ["RF-04", "RF-05", "RF-07"],
+      "summary": "RF-04+RF-05+RF-07 triple compound. RF-04 (Sev-2: sustained inadequate-father mega-cluster; ARC-RF04-001-S46; 'shit father' new slur; financial false accusation; DARVO resolution) + RF-05 (contempt legal threats: 'contempt your ass' ROW-6279-6280; 'show the court' ROW-6290; 'file for sole custody' ROW-6312; ARC-RF05-001-S007) + RF-07 (Sev-2: ~80-message dense cluster in Aug 2024 hot period; flooding candidate; ARC-RF07-001-S001). Triggered by scheduling dispute over morning childcare; escalated into comprehensive character attack + parallel legal and flooding mechanisms.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001-S46", "ARC-RF05-001-S007", "ARC-RF07-001-S001"]
+    }
+  ],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Mixed — predominantly cooperative Jul 16-Aug 3 (Canada trip return, illness logistics, birthday context), then two RF-04 clusters Aug 2 and Aug 4-5. The Aug 4-5 mega-cluster is the batch's defining event: ~80 messages spanning two days triggered by a scheduling dispute that escalated into sustained inadequate-father, financial, and legal-threat content. From RF-07 perspective, this is the Aug 2024 hot-period anchor.",
+    "rf07_assessment": "B-017 contains the primary RF-07 hot-period event for Aug 2024. The mega-cluster density (~80 messages, Aug 4-5) is the flooding candidate. Phase A context: this batch falls in the transition from Phase A baseline toward Phase B escalation; the mega-cluster pattern here is early evidence of the communication-flooding dynamic that intensifies in Phase B.",
+    "custodial_context": "Aug 4-5 dispute begins as a scheduling dispute over morning childcare — Eli was watching Olivia but work meetings arose. The dispute escalates while Eli is in his parenting role; Melissa's sustained messaging during this period constitutes contact into Eli's parenting time. Combined with ADD-004 confirmed sub-pattern."
+  }
+}

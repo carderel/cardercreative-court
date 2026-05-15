@@ -1,0 +1,173 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-008",
+    "row_range": {"start": 2581, "end": 2958},
+    "date_range": {"start": "2023-06-03", "end": "2023-07-15"},
+    "episode_range": {"start": "EP-0351", "end": "EP-0401"},
+    "message_count": 378,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": "Olivia's birthday (July 15) and baptism (July 14) are the central events. Major analytical finding: ROW-2639 — Melissa directly admits she sent Eli to voicemail ('No I did'), the most explicit on-record confirmation of Melissa personally controlling call access without relying on DND or child preference. ROW-2899 is the third documented instance of Melissa unilaterally suspending the 8:30pm cutoff, further confirming selective discretionary control. 'Not to your house' returns with air quality justification (ROW-2807) — ARC-RF02-004 signal with mitigation. Four CA-RF02-02 preference relays this batch."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 378,
+    "primary_flags": 6,
+    "primary_severity_distribution": {"1": 6, "2": 0, "3": 0},
+    "peripheral_flags_total": 3,
+    "peripheral_rf_distribution": {"RF-04": 2, "RF-05": 1},
+    "no_flag_messages": 372,
+    "flag_rate": "1.6%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-2604",
+      "date": "2023-06-04",
+      "direction": "Received",
+      "verbatim_message": "She sent you to voicemail",
+      "severity": 1,
+      "rf_indicators": ["phone_access_control", "voicemail_blocking"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "Melissa reports Olivia sent Eli to voicemail. ARC-RF02-001 signal. Context: Olivia was recovering from illness (stomach virus, ER visit June 3). The voicemail block may be Olivia's own action or DND infrastructure. Note: the following day (ROW-2639) Melissa admits to personally sending Eli to voicemail while playing Roblox — the distinction between Olivia-initiated and Melissa-initiated voicemail redirection is analytically significant.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2627",
+      "date": "2023-06-05",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't want to right now",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Eli said 'If she wants to call I am still available' (ROW-2620); Melissa first deflects with 'All day?' (ROW-2621), then relays 'She said she doesn't want to right now' (ROW-2627). The deflection question ('All day?') creates a guilt-laden context before the relay, suggesting the relay functions to compound the deflection rather than neutrally report Olivia's preference.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2639",
+      "date": "2023-06-06",
+      "direction": "Received",
+      "verbatim_message": "No I did. We were in the middle of playing Roblox",
+      "severity": 1,
+      "rf_indicators": ["phone_access_control", "direct_call_blocking", "melissa_personal_action"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "Melissa directly admits she sent Eli to voicemail herself — 'No I did.' This is the most explicit on-record confirmation of Melissa personally blocking a call, without relying on the DND infrastructure or relaying a child preference. The reason (playing Roblox) is mundane. Analytically, this confirms that call blocking is not limited to the DND system — Melissa exercises direct, real-time personal control over whether Eli's calls connect. This is distinct from and in addition to the DND architecture documented in ARC-RF02-001.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2673",
+      "date": "2023-06-08",
+      "direction": "Received",
+      "verbatim_message": "She said she don't want to talk right now",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Eli texted 'What the what?' (ROW-2672) — suggesting he noticed a missed call or unexpected situation. Melissa relays Olivia's preference not to talk. Per CA-RF02-02: preference cannot be independently verified under the DND architecture.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2828",
+      "date": "2023-07-01",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't want to call back",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Eli had attempted to call Olivia. Melissa relays Olivia's preference not to call back. Night 1 of consecutive two-night preference relay pattern (see ROW-2832).",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2832",
+      "date": "2023-07-03",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't want to call back right now",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Melissa was on the phone with her mom when Eli called; relays Olivia's preference not to call back right now. Second preference relay within 48 hours. Context: ROW-2835 (the next day) Melissa invites Eli to come swim — showing she can facilitate contact when she chooses. The preference relay the prior two nights did not preclude Melissa's willingness to offer contact the following day.",
+      "confidence": "medium"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-2803-2805",
+      "reason_noted": "Eli asks: 'Olivia want me to pick her up tomorrow' (ROW-2802). Melissa relays: 'She said I guess' (ROW-2803). Eli responds 'She don't have to' (ROW-2804). Melissa then relays: 'She said she will go' (ROW-2805). The initial relay of a lukewarm 'I guess' functions to dampen visit enthusiasm — signaling ambivalence before Olivia ultimately agrees. Not flagged as primary RF-02 because Olivia affirmed the visit; but the initial lukewarm relay is noted as part of the preference-as-access-management pattern."
+    },
+    {
+      "message_id": "ROW-2807-2808",
+      "reason_noted": "Melissa invokes 'not at your house' restriction for the June 30 visit: 'Remember that she can't be outside though or at your house. The air quality alert was extended through tomorrow' (ROW-2807-2808). This is ARC-RF02-004 signal #3, but with significant mitigation — the Canadian wildfire smoke events of June 2023 created genuine Air Quality Alerts across the Midwest. The restriction pairs 'outside' with 'your house' under the same health concern. Not flagged as primary RF-02 because the air quality justification is legitimate and specific. ARC-RF02-004 signal logged in arc state. If 'not to your house' recurs post-air quality event without justification, that will be the next threshold."
+    },
+    {
+      "message_id": "ROW-2899",
+      "reason_noted": "ANALYTICALLY SIGNIFICANT: Melissa unilaterally lifts the 8:30pm call cutoff for the week: 'Yeah. I don't care what time you call this week or next. Just not late tomorrow night cause we gotta get up early Thursday.' This is the third documented instance of Melissa voluntarily suspending the 8:30pm cutoff rule (first: ROW-1186 B-004 DND lift; second: ROW-2550 B-007 DND offer; third: this). All three confirm CA-RF02-01's selective enforcement finding — the cutoff is a discretionary tool under Melissa's full control, not an automated or fixed system. Positive cooperative gesture, but analytically confirms the architecture."
+    },
+    {
+      "message_id": "ROW-2719-2720",
+      "reason_noted": "Melissa states on June 15: 'It's been over a week since I told you about how Olivia was feeling and that you need to do better... you still have made no effort to see her' (ROW-2719). 'You actually haven't seen her since May 23 except to take her to a doctors appointment when I was sick' (ROW-2720). June 15 is approximately 3.5 weeks since Eli's last visit (May 23). The dataset does not show visit requests being denied during this window — the gap appears attributable to Eli's infrequent visit requests during this period rather than Melissa's gatekeeping. Noting for completeness; RF-02 analysis cannot substantiate a blocking finding for this gap."
+    },
+    {
+      "message_id": "ROW-2924-2940",
+      "reason_noted": "Birthday conflict (July 14): Melissa texts 'Can't even eat dinner with your daughter on her bday as she's begging you' (ROW-2924). Eli explains 'It's not appropriate for us to be hanging out like a family' (ROW-2925). Melissa escalates: 'We all know it's Abby that's not letting you go because she is insecure and immature. You should dump her' (ROW-2935-2936). Melissa reports Olivia invited Eli to dinner and she approved (ROW-2937). Eli declines. Ends with 'You're a shit dad' (ROW-2940). This is RF-04/RF-05 behavior captured in peripheral flags — not RF-02 since Eli is declining contact, not being blocked."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-2719",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "'It's been over a week since I told you about how Olivia was feeling and that you need to do better to make sure that she knows you love her and you still have made no effort to see her.' Melissa positioning herself as the arbiter of Eli's parenting adequacy and publicly stating he has 'made no effort' to see Olivia. Delegitimizing pattern (RF-04). Sev 1.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2935-2936",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "'We all know it's Abby that's not letting you go because she is insecure and immature. You should dump her and date an honest person that will support your relationship with your daughter.' Melissa attributing Eli's decision about birthday dinner to Abby's control over him, combined with relationship advice ('dump her'). Derogatory about Abby; also functions as an attempt to interfere in Eli's personal relationship (RF-11 adjacent). Sev 1.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2924-2940",
+      "peripheral_rf": "RF-04",
+      "severity": 2,
+      "note": "Birthday attack cluster: 'Can't even eat dinner with your daughter on her bday as she's begging you' (ROW-2924) escalating to 'You're a shit dad' (ROW-2940). The guilt framing (daughter begging, birthday context) combined with direct parent delegitimization on a significant occasion. Sev 2 — the birthday context and 'shit dad' declaration elevate beyond individual comment to a sustained attack on Eli's parental identity.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 2,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 2,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": ["ROW-2604", "ROW-2639"],
+      "ARC-RF02-002": ["ROW-2627", "ROW-2673", "ROW-2828", "ROW-2832"],
+      "ARC-RF02-003": [],
+      "ARC-RF02-004": ["ROW-2807"],
+      "ARC-RF02-005": []
+    },
+    "arc_001_cumulative_signals": 15,
+    "arc_002_cumulative_signals": 11,
+    "arc_004_cumulative_signals": 3,
+    "arc_001_note": "ROW-2639 is analytically the most significant signal in this batch: Melissa directly admitting she sent Eli to voicemail herself ('No I did') while playing Roblox. This documents a third mechanism of call blocking beyond DND infrastructure and child preference relay — Melissa's direct personal call interception. ROW-2899 (Melissa voluntarily lifting the cutoff for the week) is the third documented instance of selective enforcement control, further cementing CA-RF02-01.",
+    "arc_004_note": "ROW-2807 adds a third instance of the 'not to your house' restriction, with air quality justification (Canadian wildfire smoke, June 2023 AQI events). Mitigation is strong. Watch for recurrence post-air quality resolution."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

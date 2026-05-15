@@ -1,0 +1,112 @@
+{
+  "batch_id": "B-027",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-07-01",
+    "end": "2025-08-02"
+  },
+  "row_range": {
+    "sms_start": "ROW-9830",
+    "sms_end": "ROW-9964",
+    "sms_secondary_section": "ROW-7944 to ROW-8062 (secondary SMS table section, Jul 1 – Aug 2 — Eli-sent and some Received entries)",
+    "mms_start": "ROW-13801",
+    "mms_end": "ROW-15465"
+  },
+  "message_count": 498,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B027-PERIPH-001",
+      "row_ref": "ROW-9947 / ROW-9952 / ROW-9953 / ROW-9957-ROW-9960 / ROW-9964",
+      "date": "2025-07-19",
+      "rf_category": "RF-11",
+      "severity": 2,
+      "verbatim": "I parent her every single day except the 2.5 hours every week or two weeks that you decide to spend time with her. I don't think you understand what it means to parent or be a parent [ROW-9947] / She deserves so much better [ROW-9952] / I'll screenshot this and file for full custody because you obviously aren't worried about what is best for her [ROW-9957] / When the judge sees that her own father can't be bothered to spend time with her on a regular weekend schedule that he himself chose for himself... [ROW-9958] / The judge will also be able to see how you lie. [ROW-9959] / I'll be contacting my lawyer [ROW-9960] / It has been very clear that you don't put her best interest first [ROW-9964]",
+      "note": "RF-11 Sev 2. Jul 19 escalation cascade during Melissa's ER visit (kidney/urinary issue — CT scan, potassium IV, Percocet). Context: Eli had Olivia from Tennessee return; Melissa asked from the ER if Olivia could stay later (ROW-9939); Eli declined, citing last-minute nature of request and offered a different time (ROW-8024-8027). Melissa escalated to: full custody filing threat (ROW-9957), judge-appeal framing (ROW-9958-9959), lawyer-contact threat (ROW-9960). Eli responds (ROW-8027): 'I'll return Olivia at 8:30 not because of any threats, but because I don't want to put Olivia in the middle of more tension.' RF-11 Sev 2 (explicit full custody threat + lawyer threat, directly connected to Eli declining a same-evening extension). Cross-reference: B-017 ROW-6313 Sev 2 (sole custody threat to eliminate co-parenting consultation). Also appears in MMS as ROW-13945-13960. Irony: Melissa argues Olivia is 'better with a parent not under the influence of medication' (ROW-9962) — Melissa is on Percocet and cannot drive or make legal decisions while simultaneously threatening full custody proceedings."
+    },
+    {
+      "flag_id": "B027-PERIPH-002",
+      "row_ref": "ROW-9947 / ROW-9952 / ROW-9953 / ROW-9964",
+      "date": "2025-07-19",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "I parent her every single day except the 2.5 hours every week or two weeks that you decide to spend time with her [ROW-9947] / She deserves so much better [ROW-9952] / I don't sit and bitch at you every other weekend when you don't pick her up [ROW-9953] / It has been very clear that you don't put her best interest first [ROW-9964]",
+      "note": "RF-04 Sev 1 cluster embedded in the Jul 19 escalation. Key elements: (1) '2.5 hours every week or two weeks' — gross minimization of Eli's parenting time across the batch; (2) 'She deserves so much better' — permanence judgment on parental quality; (3) 'every other weekend when you don't pick her up' — framing Eli as chronically absent. The '2.5 hours' characterization is analytically notable as a new quantification of Eli's involvement that will likely appear in future fitness attacks. Also appears in MMS as ROW-13945-13953."
+    },
+    {
+      "flag_id": "B027-PERIPH-003",
+      "row_ref": "ROW-14021",
+      "date": "2025-08-02",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "Now look up some articles on what effects a dad barely being around has on kids",
+      "note": "RF-04 Sev 1. Melissa (ROW-14021) sends a child smartphone article (ROW-8062: Eli sends Melissa the article first) and then responds: 'Now look up some articles on what effects a dad barely being around has on kids' — parental-absence counter-attack in response to Eli's child-smartphone concern. Quick-shot RF-04 consistent with the Jul 19 'barely around' theme. Also appears in MMS as ROW-14021."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-9835 / ROW-9867-ROW-9884 / ROW-7971-ROW-7980 / ROW-13843-13875",
+      "date": "2025-07-15",
+      "description": "Olivia's birthday facilitation: Melissa shares vacation photos from TN in real time; Eli tracks Olivia's float plane flight via tail number (ROW-7977-7979: 'N396BA / [FlightAware link]'); Melissa watches from the ground and shares live updates ('They are doing preflight check / I'm watching in real life / They keep passing by / Should be 1/2 hr flight'). High-quality birthday facilitation — Eli included in the float plane experience remotely. Melissa was apologetic when she forgot to text before Olivia's birthday call (ROW-9875: 'Sorry I forgot to text you. I really wasn't trying to be a turd')."
+    },
+    {
+      "row_ref": "ROW-9885-ROW-9916 / ROW-7982-ROW-8013 / ROW-13877-13911",
+      "date": "2025-07-16",
+      "description": "Olivia illness during TN vacation: Melissa provides detailed and frequent symptom updates (temperature readings, vomiting, headache severity, medication given); Eli provides substantive medical guidance (suggesting Rocky Mountain spotted fever check, explaining alternating ibuprofen/Tylenol, hydration management). Both parents engaged in sustained cooperative medical co-parenting through a multi-hour fever/illness event. Highest-quality health cooperation in recent dataset."
+    },
+    {
+      "row_ref": "ROW-8048-ROW-8051 / ROW-13963-13964",
+      "date": "2025-07-28",
+      "description": "Tap dancing open house invitation: Melissa informs Eli that Olivia wants to do tap dancing and invites him to the Aug 16 open house at Iron House: 'Did you want to go? / Open house.' Proactive inclusive invitation for Eli to participate in Olivia's extracurricular exploration."
+    },
+    {
+      "row_ref": "ROW-13981-ROW-13990 / ROW-13993-ROW-13998",
+      "date": "2025-07-27 to 2025-07-30",
+      "description": "School supply coordination: Melissa shares itemized receipts for school supplies (backpack, clothes, supplies), calculates reimbursement owed by Eli, and proactively communicates what's covered ('School supplies taken care of. Forms all filled out / School clothes bought. Just need shoes'). Transparent and organized school-year preparation coordination."
+    },
+    {
+      "row_ref": "ROW-7947-ROW-7950 / ROW-9830-ROW-9835",
+      "date": "2025-07-02",
+      "description": "Eli requests to pick up Olivia for a visit; Melissa facilitates: 'She's free. She said sure' / offers dropoff logistics options ('Would you rather I drop Olivia off at your house on my way home'). Smooth access facilitation."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-7952",
+      "date": "2025-07-05",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-7952): 'Her phone dead?' Melissa (ROW-9836-9837): 'Idk / She's been sleeping.' Natural explanation (child sleeping). Not flagged."
+    },
+    {
+      "row_ref": "ROW-7968",
+      "date": "2025-07-15",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-7968): 'Olivia phone goes directly to vm' — on Olivia's birthday during TN vacation. Melissa (ROW-9875-9878): 'Sorry I forgot to text you. I really wasn't trying to be a turd. I had a phone call and wasn't thinking / I reminded her to call you but forgot the text part.' Contact restored within minutes (ROW-9879-9880: Olivia called). Melissa was apologetic and had prompted Olivia to call; forgot Eli's text-first request due to distraction. Not flagged: natural context, quick resolution, Melissa actively facilitated."
+    },
+    {
+      "row_ref": "ROW-8000",
+      "date": "2025-07-16",
+      "consideration": "ARC-RF02-002 near-miss. Eli (ROW-7999): 'She want me to call.' Melissa (ROW-8000): 'She don't feel like talking.' Olivia is sick with fever (101.3) during TN vacation. Child-preference relay via Melissa in clearly natural health context. Not flagged: genuine illness context provides clear explanation."
+    },
+    {
+      "row_ref": "ROW-9830",
+      "date": "2025-07-02",
+      "consideration": "ARC-RF02-002 near-miss. Melissa (ROW-9830): 'She's free. She said sure' — Melissa relays Olivia's willingness for Eli's access request. Relay mechanism present but access facilitated. Consistent with baseline relay norm; facilitative context. Not flagged."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; ARC-RF02-001 quiet for 10 consecutive batches (B-021 through B-027, Dec 2024 – Aug 2025); last primary signal ROW-7581 (B-020, Oct 24 2024, DND cutoff shift to 9:30 PM); near-misses: ROW-7952 (Jul 5, phone dead — sleeping), ROW-7968 (Jul 15, birthday VM — Melissa apologetic, quickly restored); signal_count remains 26",
+    "ARC-RF02-002": "no new primary signals; signal_count remains 51; near-misses: ROW-8000 (Jul 16, 'She don't feel like talking' — child sick), ROW-9830 (Jul 2, facilitative relay); Melissa unilaterally cancelled Olivia's contact preference relay on birthday when practical (ROW-9878: 'I reminded her to call you'); Eli continues internalized relay norm (ROW-8033: 'Can I pick her up tomorrow after work?')",
+    "ARC-RF02-004": "no new signals; remains ACTIVE",
+    "ARC-RF02-005": "no new signals; remains WATCHING",
+    "ARC-RF02-006": "no new signals; remains WATCHING; TN vacation (Jul 12-19) is Sevierville TN — consistent with ARC-RF02-006 monitoring note from B-019 (TN Sevierville vacation booked for Jul 2025)"
+  },
+
+  "batch_notes": "Quietest RF-02 batch to date — 0 primary flags. Analytically dominated by extremely high cooperative density: Olivia's 10th birthday facilitation (float plane flight, real-time tracking), sustained vacation illness coordination (100+ messages Jul 16), tap dance open house invitation, and school supply transparency. The Jul 19 escalation (Melissa's ER visit / full custody threat) produces the batch's most analytically significant content but as RF-11 Sev 2 and RF-04 Sev 1 peripheral flags, not RF-02. ARC-RF02-001 has now been quiet for 10 consecutive batches — no DND mechanism documented since B-020 (Oct 24, 2024). The Aug 2 RF-04 quick-shot ('Now look up some articles on what effects a dad barely being around has on kids') picks up the '2.5 hours' parenting-time minimization language introduced on Jul 19, suggesting this framing will continue. ARC-RF02-006: TN vacation is Sevierville (anticipated per B-019 monitor note) — not a new NC signal. Eli continues internalized required-intermediary norm (ROW-8033: 'Can I pick her up tomorrow after work?')."
+}

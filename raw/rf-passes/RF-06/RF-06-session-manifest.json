@@ -1,0 +1,218 @@
+{
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "pass_complete": true,
+  "completed_date": "2026-05-05",
+  "batches_processed": 31,
+  "batches_with_flags": 10,
+  "total_messages_in_dataset": 15465,
+
+  "flag_summary": {
+    "primary_flags": 10,
+    "peripheral_flags": 0,
+    "severity_distribution": {
+      "Sev-1": 8,
+      "Sev-2": 2,
+      "Sev-3": 0
+    },
+    "direction_distribution": {
+      "received": 10,
+      "sent": 0
+    }
+  },
+
+  "financial_baseline": {
+    "source": "ADD-001",
+    "child_support": "Eli pays to state",
+    "childcare": "Eli pays directly to Melissa on receipt of receipts",
+    "shared_expenses": ["medical", "school activities", "childcare"],
+    "discretionary_activities": "each parent's own responsibility — Melissa cannot compel Eli to fund activities he did not agree to"
+  },
+
+  "primary_signals": [
+    {
+      "id": "S-001",
+      "batch": "B-003",
+      "date_range": "2022-11-11 to 2022-11-14",
+      "rows": ["ROW-783", "ROW-789", "ROW-790", "ROW-824", "ROW-828"],
+      "classification": "RF-06 primary Sev-1",
+      "addendum": "ADD-002",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 1,
+      "arc_state_after": "CANDIDATE",
+      "summary": "First contempt threat cluster — Melissa threatens to take Eli to court over child support payment timing. Precursor to executed court action (contempt summons Jun 3 2022 already executed; ADD-002 confirms court action was carried out).",
+      "direction": "received"
+    },
+    {
+      "id": "S-002",
+      "batch": "B-004",
+      "date_range": "2023-01-01",
+      "rows": ["ROW-1326"],
+      "classification": "RF-06 primary Sev-1",
+      "addendum": "ADD-002",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 2,
+      "arc_state_after": "WATCHING",
+      "summary": "'Filing contempt again' — references Jun 2022 summons, demonstrates pattern of using contempt threat as ongoing lever. Arc promotes CANDIDATE to WATCHING at this signal.",
+      "direction": "received"
+    },
+    {
+      "id": "S-003",
+      "batch": "B-007",
+      "date_range": "2023-05-15",
+      "rows": ["ROW-2478"],
+      "classification": "RF-06 primary Sev-1",
+      "addendum": "ADD-005",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 3,
+      "arc_state_after": "WATCHING",
+      "summary": "Payment pressure — financial demand co-deployed with escalation in exchange. Consistent with ADD-005 co-deployment pattern (payment reminders alongside emotional escalation).",
+      "direction": "received"
+    },
+    {
+      "id": "S-004",
+      "batch": "B-008",
+      "date_range": "2023-06 to 2023-07",
+      "rows": ["ROW-2772", "ROW-2906"],
+      "classification": "RF-06 primary Sev-1",
+      "addendum": "ADD-002",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 4,
+      "arc_state_after": "WATCHING",
+      "summary": "'Way behind on paying daycare and swim' — sustained payment pressure framing. Compounds childcare and activity obligations into a unified financial grievance.",
+      "direction": "received"
+    },
+    {
+      "id": "S-005",
+      "batch": "B-009",
+      "date_range": "2023-08 to 2023-09",
+      "rows": ["ROW-3378"],
+      "classification": "RF-06 primary Sev-1",
+      "addendum": "ADD-008",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 5,
+      "arc_state_after": "WATCHING",
+      "summary": "Sep 2023 hot period — payment deferral context (Eli deferred childcare to payday per CP2 Q3(c)). Evaluate Melissa's response for leverage use; deferral acknowledged, assess for escalation to contempt framing.",
+      "direction": "received"
+    },
+    {
+      "id": "S-006",
+      "batch": "B-017",
+      "date_range": "2024-07 to 2024-08",
+      "rows": ["ROW-6077", "ROW-6334"],
+      "classification": "RF-06 primary Sev-2",
+      "addendum": "ADD-004",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 6,
+      "arc_state_after": "ACTIVE",
+      "summary": "'Show all the times you've paid daycare late, not paid child support' — explicit evidence-compilation framing around payment history. War-of-attrition context invoked (ADD-004). Arc promotes WATCHING to ACTIVE at this signal. Sev-2: explicit financial documentation threat.",
+      "direction": "received"
+    },
+    {
+      "id": "S-007",
+      "batch": "B-028",
+      "date_range": "2025-08",
+      "rows": ["ROW-14263", "ROW-14276"],
+      "classification": "RF-06 primary Sev-1",
+      "addendum": "ADD-006",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 7,
+      "arc_state_after": "ACTIVE",
+      "summary": "Dance lifestyle leverage — Melissa tells Olivia Eli 'couldn't afford tap' (ROW-14263), framing Eli's financial limitations to the child. Subtle lifestyle differential leverage (ADD-006) deployed via child intermediary.",
+      "direction": "received",
+      "compound": ["RF-08 peripheral"]
+    },
+    {
+      "id": "S-008",
+      "batch": "B-029",
+      "date_range": "2025-09-14",
+      "rows": ["ROW-14343"],
+      "classification": "RF-06 primary Sev-1",
+      "addendum": "ADD-002",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 8,
+      "arc_state_after": "ACTIVE",
+      "summary": "'You're in contempt for not paying daycare' — direct contempt allegation tied to childcare payment. Part of Phase C financial escalation pattern alongside RF-02 visit-refusal cascade.",
+      "direction": "received"
+    },
+    {
+      "id": "S-009",
+      "batch": "B-030",
+      "date_range": "2025-11 to 2025-12",
+      "rows": ["ROW-14840", "ROW-14849", "ROW-14954"],
+      "classification": "RF-06 primary Sev-1",
+      "addendum": "ADD-003",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 9,
+      "arc_state_after": "ACTIVE",
+      "summary": "Childcare billing on refused visitation — Melissa bills Eli for childcare costs incurred during weekends Olivia refused to go with Eli. 'Not my fault she doesn't want to go with you.' Melissa slips it into other expenses (ADD-003 deceptive bundling). Eli has no obligation to pay childcare costs that exist only because of Melissa's facilitation failure.",
+      "direction": "received"
+    },
+    {
+      "id": "S-010",
+      "batch": "B-031",
+      "date_range": "2026-02 to 2026-03",
+      "rows": ["ROW-15480"],
+      "classification": "RF-06 primary Sev-2",
+      "addendum": "ADD-002",
+      "arc": "ARC-RF06-001",
+      "arc_signal_number": 10,
+      "arc_state_after": "ACTIVE",
+      "summary": "'Filing contempt on Monday' — specific execution date named. Most concrete contempt threat in dataset; demonstrates escalation from general threat to specific scheduled action. Pattern unresolved at dataset close.",
+      "direction": "received"
+    }
+  ],
+
+  "peripheral_signals": [],
+
+  "arc_states_final": {
+    "ARC-RF06-001": {
+      "name": "Financial Leverage Pattern",
+      "state": "ACTIVE",
+      "signals": 10,
+      "watching_at": "B-004 (S-002)",
+      "active_at": "B-017 (S-006)",
+      "unresolved_at_dataset_close": true,
+      "direction": "received",
+      "note": "Dominant mechanism is contempt threat / payment pressure (signals 1-5, 8, 10). Secondary mechanisms: financial documentation threat (S-006), lifestyle differential via child (S-007), childcare billing on refused visitation (S-009). Phase A has highest density (S-001 through S-005, 2022-2023) consistent with contempt summons period. Phase C maintains pattern: S-007 through S-010 demonstrate financial coercion continuing through 2025-2026 alongside RF-02 visit-refusal cascade. Jun 3 2022 contempt summons (CP2 confirmation) precedes dataset window but establishes the executed-not-just-threatened baseline (ADD-002)."
+    }
+  },
+
+  "methodology_notes": [
+    "Financial baseline (ADD-001) applied consistently: supplemental activity payments are discretionary; only court-ordered shared expenses (medical/school/childcare) flagged when disputed.",
+    "86% received direction confirmed in triage — all 10 primary signals are Melissa-to-Eli. Eli's payment deferral (B-009 area) is factual context; Melissa's response to it is the signal.",
+    "Dance lesson forced payment (ADD-007) overlaps with RF-03 S-003 (scheduling conflict); classified as RF-06 primary / RF-03 secondary per cross-pass compound rule.",
+    "S-007 (lifestyle differential via Olivia) is the subtlest signal — requires child-intermediary framing to classify. Single data point; add RF-08 peripheral note.",
+    "Childcare billing on refused visitation (S-009, ADD-003) is confirmed at CP2 as Phase C pattern. Eli's refusal to pay is appropriate response per ADD-003 baseline.",
+    "War-of-attrition framing (ADD-004) — Eli confirmed Melissa uses financial asymmetry deliberately. S-006 is the clearest message-level manifestation."
+  ],
+
+  "cross_pass_compounds": [
+    {
+      "signal": "S-001 through S-006, S-008, S-010",
+      "compound_with": "RF-05",
+      "mechanism": "Contempt threats and legal action as financial coercion mechanism (RF-05+RF-06 compound per ADD-002/ADD-004)"
+    },
+    {
+      "signal": "S-003 through S-005",
+      "compound_with": "RF-04",
+      "mechanism": "Payment pressure co-deployed with emotional escalation per ADD-005"
+    },
+    {
+      "signal": "S-007",
+      "compound_with": "RF-08",
+      "mechanism": "Financial leverage deployed through Olivia (child triangulation peripheral)"
+    }
+  ],
+
+  "cp2_notes": {
+    "cp2_completed": "2026-05-05",
+    "addenda_count": 8,
+    "key_calibrations": [
+      "Court action EXECUTED — 'wasn't paying fast enough'; confirms ADD-002 applied to all contempt references",
+      "Childcare billing on refused visitation confirmed Phase C pattern — Eli's refusal to pay appropriate",
+      "Lifestyle differential confirmed as subtle leverage — watch for comparisons and resource framing",
+      "Sep 2023 payment deferral event identified in transcript review by Eli"
+    ]
+  }
+}

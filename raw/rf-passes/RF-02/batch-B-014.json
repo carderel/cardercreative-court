@@ -1,0 +1,166 @@
+{
+  "batch_id": "B-014",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "batch_status": "complete",
+
+  "source_rows": {
+    "first_row": "ROW-4864",
+    "last_row": "ROW-11811",
+    "total_messages": 503,
+    "sms_messages": 375,
+    "mms_messages": 128,
+    "date_start": "2024-03-28",
+    "date_end": "2024-05-09",
+    "extraction_method": "date_based",
+    "row_anomaly_note": "MMS rows follow anomalous numbering sequence (ROW-11684–ROW-11811) interleaved with sequential SMS rows (ROW-4864–ROW-5238). Both segments cover same date range. MMS messages are predominantly images/videos — analyzed for textual content where present."
+  },
+
+  "batch_summary": {
+    "primary_flags": 3,
+    "severity_distribution": {"1": 3, "2": 0, "3": 0},
+    "peripheral_flags": 3,
+    "arc_signals_added": {"ARC-RF02-002": 3},
+    "new_arcs_opened": [],
+    "arcs_promoted": [],
+    "cooperative_data_points": 5,
+    "analytical_character": "Low RF-02 signal density — second-quietest batch after B-011. ARC-RF02-001 quiet (no new blocking events). ARC-RF02-004 naturally suspended: Eli's cat (Tahko) died Apr 1 and Eli voluntarily delayed Olivia's house visits pending deep clean — both parties concur, no gatekeeping dispute. ARC-RF02-002 contributes 3 contact-conflict relay signals. Significant cooperative behavior documented: Melissa proactively offered Eli time with Olivia multiple times, purchased Finding Nemo tickets to accommodate schedule conflict, and facilitated practical logistics. Eli directly raises co-parenting respect request (ROW-5203) — Melissa dismisses it as oversensitivity."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "B014-PF-001",
+      "row_range": "ROW-4947–4952",
+      "date": "2024-04-04",
+      "severity": 1,
+      "arc": "ARC-RF02-002",
+      "signal_type": "contact_claim_challenged_via_intermediary",
+      "title": "Melissa Relays Olivia Denying Eli Called — Contact Claim Disputed",
+      "messages": [
+        {"row": "ROW-4947", "dir": "Sent", "text": "How come she not answering when I called?"},
+        {"row": "ROW-4948", "dir": "Received", "text": "Idk"},
+        {"row": "ROW-4949", "dir": "Received", "text": "When did you call"},
+        {"row": "ROW-4950", "dir": "Received", "text": "Ahe said 'what the fuck is he going on about? He hasn't called me'"},
+        {"row": "ROW-4951", "dir": "Sent", "text": "I will take a screenshot after I get off the phone with her.  I can see the history while takking"},
+        {"row": "ROW-4952", "dir": "Sent", "text": "Her iPad die?"}
+      ],
+      "analysis": "Eli reports Olivia not answering his call. Melissa relays Olivia's denial that any call occurred, including Olivia's profane dismissal ('what the fuck is he going on about? He hasn't called me'). Eli states he can document the call in his call history. Eli appears to eventually reach Olivia (ROW-4951 references being 'on the phone with her'). The mechanism here is Melissa as the intermediary through which Olivia's denial is communicated, challenging Eli's access claim. Whether the call technically reached Olivia is unclear; what is clear is that Melissa relays a message that frames Eli as lying about attempting contact.",
+      "arc_notes": "Consistent with ARC-RF02-002 contact-challenge pattern. Third such 'she said you didn't/hung up' relay in two batches (B-014 adds two more below). The profane language attributed to Olivia ('what the fuck is he going on about') is notable — may indicate escalating alignment between child and custodial parent's adversarial framing."
+    },
+    {
+      "flag_id": "B014-PF-002",
+      "row_range": "ROW-4991–4994",
+      "date": "2024-04-08",
+      "severity": 1,
+      "arc": "ARC-RF02-002",
+      "signal_type": "conflict_amplified_contact_framing",
+      "title": "Melissa Relays Olivia's 'Hung Up On Her' Grievance — Escalated Framing",
+      "messages": [
+        {"row": "ROW-4991", "dir": "Received", "text": "Your daughter is upset that you hung up on her"},
+        {"row": "ROW-4992", "dir": "Sent", "text": "I didn't answer?"},
+        {"row": "ROW-4993", "dir": "Sent", "text": "I didn't hang up.  I will call her but can't talk."},
+        {"row": "ROW-4994", "dir": "Received", "text": "She said you hung up"}
+      ],
+      "analysis": "Melissa relays Olivia's claim that Eli hung up on her. Eli disputes this, stating he did not answer (different from hanging up), and that he cannot currently talk. Melissa doubles down: 'She said you hung up.' The escalation from 'didn't answer' (Eli's account) to 'hung up' (Melissa/Olivia's account) is meaningful — hanging up implies deliberate rejection, while not answering does not. Melissa positions herself as the relay for Olivia's grievance in a way that characterizes Eli's unavailability as an active rejection. This is the second contact-conflict relay event in this batch.",
+      "arc_notes": "Pattern: Melissa relays contact failures as Olivia's emotional hurt, framing Eli as the cause of broken contact rather than technical/timing issues. Accumulating with B-013 ROW-4718-4724 (gaming call) and B-014 ROW-4947-4952 above — three contact-conflict relay events in approximately 30 days."
+    },
+    {
+      "flag_id": "B014-PF-003",
+      "row_range": "ROW-5155–5158",
+      "date": "2024-05-01",
+      "severity": 1,
+      "arc": "ARC-RF02-002",
+      "signal_type": "contact_barrier_via_child_anger_relay",
+      "title": "Melissa Relays Child Refusing Call-Back Due to Perceived Hang Up",
+      "messages": [
+        {"row": "ROW-5155", "dir": "Sent", "text": "Why didn't she call back?"},
+        {"row": "ROW-5156", "dir": "Received", "text": "She was mad because you hung up on her"},
+        {"row": "ROW-5157", "dir": "Sent", "text": "I didn't. I started to drop the phone and hung up."},
+        {"row": "ROW-5158", "dir": "Received", "text": "She said she don't care"}
+      ],
+      "analysis": "After a phone drop caused a hang-up, Olivia did not call back. Melissa relays that Olivia is mad (ROW-5156), that Eli hung up on her. Eli explains the accidental drop. Melissa relays Olivia's closure of the matter: 'She said she don't care.' This closes the contact loop through the intermediary — Olivia's refusal to call back is communicated by Melissa rather than by Olivia directly, and Melissa's relay of 'she don't care' functions as a final statement that ends the contact attempt. The intermediary role here directly maintains the contact barrier.",
+      "arc_notes": "Third contact-conflict relay event in B-014. All three involve Melissa relaying Olivia's anger or denial about Eli's contact attempts (Apr 4, Apr 8, May 1). The frequency of this sub-pattern — child anger used as contact barrier, communicated through Melissa — is analytically significant within ARC-RF02-002."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B014-PF-P01",
+      "row_range": "ROW-4907–4912",
+      "date": "2024-03-31",
+      "severity": 1,
+      "primary_rf": "RF-04",
+      "signal_type": "historical_accusation_weaponized",
+      "title": "Cat Allergy Accusation — 'Had to Have My Lawyer Send You a Letter'",
+      "excerpt": "You didn't respect her allergies. I had to have my lawyer send you a letter to get you to stop subjecting her to them / You were fine subjecting her to it even though she needed her inhaler. Didn't stop until my lawyer sent you a letter",
+      "analysis": "Melissa weaponizes Olivia's past cat allergy exposure as evidence of Eli's parental irresponsibility. The attorney letter reference ('I had to have my lawyer send you a letter') frames legal escalation as the only tool that brought compliance. This is a historical accusation being re-deployed in a current conversation (Melissa's Easter allergy comment). RF-04: uses past incident to delegitimize Eli's parenting in present tense."
+    },
+    {
+      "flag_id": "B014-PF-P02",
+      "row_range": "ROW-5184–5185",
+      "date": "2024-05-05",
+      "severity": 1,
+      "primary_rf": "RF-04",
+      "signal_type": "parental_competence_attack",
+      "title": "Reliability Attack — 'You're Unreliable'",
+      "excerpt": "And that's why I was trying to get my brother as a back up / You're unreliable",
+      "analysis": "In context of discussing a trip where Eli couldn't afford to take Olivia by plane, Melissa asserts he is 'unreliable' and that she lined up a backup (her brother) because she anticipated his failure. Framing Eli's financial constraint as character failure (unreliability). RF-04."
+    },
+    {
+      "flag_id": "B014-PF-P03",
+      "row_range": "ROW-5203–5213",
+      "date": "2024-05-08",
+      "severity": 1,
+      "primary_rf": "RF-04",
+      "signal_type": "legitimate_parenting_concern_invalidated",
+      "title": "Eli's Co-Parenting Respect Request Dismissed as Oversensitivity",
+      "excerpt": "I make sure she is respectful about and to you. I never talk about you around her and discourage any negative talk regarding you. You're her mom and I make sure she is respectful of you. I need you to do the same. [Melissa: 'You are waaaaay too sensitive.']",
+      "analysis": "Eli makes an explicit, measured request for reciprocal parenting respect. He states directly that he actively protects Melissa's image with Olivia ('I never talk about you around her and discourage any negative talk') and asks Melissa to do the same. Melissa dismisses this as emotional oversensitivity ('waaaaay too sensitive,' 'calm down cupcake,' 'Y are you so sensitive?') — invalidating the concern without engaging it substantively. Analytically significant: Eli is explicitly naming the alienation dynamic, and Melissa's response pattern is consistent with RF-04 (dismissal of parental concerns to preserve custodial authority)."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_range": "ROW-4886–4898",
+      "date": "2024-03-28",
+      "type": "proactive_time_offering",
+      "description": "Melissa proactively offered Eli to take Olivia on school's day off while Melissa worked: 'Are you able to do lunch with Olivia tomorrow? Like a switch off thing cause school is out but I work?' and alternative: 'Or can you go to the water thing they have at 3:30? Easter thing.' Coordinated logistics cooperatively."
+    },
+    {
+      "row_range": "ROW-4936–4938",
+      "date": "2024-04-03",
+      "type": "proactive_time_offering",
+      "description": "Melissa proactively asked if Eli wanted to take Olivia for a fun day: 'Do you want to come get her and do something fun with her?' Eli couldn't due to work. Offer was genuine."
+    },
+    {
+      "row_range": "ROW-5086–5093",
+      "date": "2024-04-21–22",
+      "type": "schedule_accommodation",
+      "description": "When Finding Nemo tickets were for the wrong night, Melissa bought a second Friday ticket to accommodate schedule. Also proactively asked Eli to take Olivia to Wednesday rehearsal: 'Do you want to take her to practice Wednesday night?' Eli agreed. Cooperative logistics coordination for child's activity."
+    },
+    {
+      "row_range": "ROW-5162–5167",
+      "date": "2024-05-02",
+      "type": "access_facilitation",
+      "description": "Melissa called Eli to pick up Olivia while she finished training at work. Eli picked up Olivia and waited; logistics handled cooperatively."
+    },
+    {
+      "row_range": "ROW-5220–5224",
+      "date": "2024-05-08",
+      "type": "practical_coordination",
+      "description": "Melissa asked Eli to bring Olivia's forgotten snack to the bus stop. Eli complied (confirmed snack delivered, waited with Olivia until bus came). Routine practical co-parenting coordination."
+    }
+  ],
+
+  "arc_state_changes": [
+    {
+      "arc_id": "ARC-RF02-002",
+      "change": "signals_added",
+      "signals_added": ["ROW-4947-4952", "ROW-4991-4994", "ROW-5155-5158"],
+      "new_signal_count": 32,
+      "notes": "Three contact-conflict relay signals in approximately 30 days (Apr 4 – May 1). Sub-pattern: Melissa relays child's anger/denial about Eli's contact attempts, maintaining contact barriers through intermediary role. ARC-RF02-004 quiet — cat allergy situation temporarily naturalizes house restriction (both parties agree to delay). ARC-RF02-001, 005, 006 quiet."
+    }
+  ],
+
+  "batch_notes": "B-014 is the second-quietest RF-02 batch (after B-011). The Tahko death (Apr 1) and clean-up period naturally suspend the ARC-RF02-004 house restriction arc — both parties agree Olivia should not visit Eli's house until cleaning is complete, making this restriction non-contested during this period. ARC-RF02-001 is quiet for the second consecutive batch. The three ARC-RF02-002 signals cluster around a recurring pattern: Melissa relaying Olivia's anger about perceived phone hang-ups as contact barriers. This 'hang up' sub-pattern (Apr 4, Apr 8, May 1) is analytically notable — all three within 30 days — and should be watched for continuation. The ROW-5203 exchange (Eli explicitly asking for co-parenting respect; Melissa dismissing it as oversensitivity) is the most analytically significant content in the batch: Eli directly names the alienation dynamic, establishing that he is aware of it and has asked for change. Multiple cooperative data points support characterization of B-014 as a transitional batch with unusually high facilitation activity — consistent with the post-cat-death dynamics and spring activity planning."
+}

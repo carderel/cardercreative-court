@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-017",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2024-07-16",
+    "end": "2024-08-05"
+  },
+  "row_range": {
+    "start": 6013,
+    "end": 6556
+  },
+  "message_count": 544,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jul\u2013Aug 2024: Aug 4-5 mega-cluster (RF-04 Sev-2). Court/GAL/child support/lawyer keywords in RF-04 analysis context. ROW-6436 'new baby coming' reference is pregnancy weaponization (RF-04), not adult-conflict disclosure to Olivia. No RF-11 primary signals."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

@@ -1,0 +1,208 @@
+{
+  "arc_id": "ARC-RF08-001",
+  "arc_name": "Relay-Through-Olivia Pattern",
+  "rf_pass": "RF-08",
+  "status": "ACTIVE",
+  "status_at_dataset_close": "ACTIVE — unresolved",
+  "activation_event": "ROW-6819 (B-018, Aug 19-20 2024)",
+  "arc_span": {
+    "first_pre_signal": "B-007 (Apr-Jun 2023)",
+    "arc_activation": "B-018 (Aug 2024)",
+    "last_signal": "B-031 (Apr 12 2026)",
+    "dataset_close_status": "Active and unresolved"
+  },
+
+  "signal_count": 11,
+  "severity_distribution": {"1": 4, "2": 6, "3": 1},
+  "compound_patterns": 11,
+
+  "arc_progression": [
+    {"state": "CANDIDATE", "trigger": "Initialized B-001", "signal_count": 0},
+    {"state": "CANDIDATE", "trigger": "S001 (B-007)", "signal_count": 1},
+    {"state": "WATCHING", "trigger": "S002 (B-009) — 2 signals reached", "signal_count": 2},
+    {"state": "WATCHING", "trigger": "S003 (B-010) — numerical ACTIVE threshold met; activation deferred to ROW-6819 per ADD-002", "signal_count": 3},
+    {"state": "ACTIVE", "trigger": "S004 (B-018) — ROW-6819 explicit coaching admission", "signal_count": 4}
+  ],
+
+  "signals": [
+    {
+      "signal_id": "ARC-RF08-001-S001",
+      "batch": "B-007",
+      "date": "2023-04-03 to 2023-06-02",
+      "severity": 1,
+      "classification": "Pre-signal",
+      "rows": "ROW-2373-2375",
+      "verbatim_anchor": "ROW-2374: 'You both shouldn't be telling her not to tell me stuff. That's shady'",
+      "mechanism": "Intelligence-channel assertion",
+      "compound": "COMP-RF08-001 (RF-08+RF-01)",
+      "note": "Earliest documented intelligence-channel claim. Melissa frames any household privacy instruction as obstruction of her right to receive Olivia's reports."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S002",
+      "batch": "B-009",
+      "date": "2023-07-16 to 2023-08-20",
+      "severity": 1,
+      "classification": "Pre-signal",
+      "rows": "ROW-3127",
+      "verbatim_anchor": "ROW-3127: 'Olivia is over here crying'",
+      "mechanism": "Emotional state relay",
+      "compound": "COMP-RF08-002 (RF-08+RF-01)",
+      "note": "First emotional-state relay: Olivia's distress delivered as co-parenting pressure. Arc promoted to WATCHING."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S003",
+      "batch": "B-010",
+      "date": "2023-09-26",
+      "severity": 1,
+      "classification": "Pre-signal",
+      "rows": "ROW-3627-3630",
+      "verbatim_anchor": "ROW-3628: 'You miss out on seeing her all the time.' ROW-3629: 'You did better while she was in cheerleading then.'",
+      "mechanism": "Availability/loyalty relay",
+      "compound": "COMP-RF08-003 (RF-08+RF-01)",
+      "note": "Abandonment arc delivered via Olivia's reported schedule and engagement — the same narrative delivered explicitly in Olivia's voice at ROW-7752 (S007, B-022, Feb 2025). Numerical ACTIVE threshold met; activation deferred per ADD-002."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S004",
+      "batch": "B-018",
+      "date": "2024-08-19-20",
+      "severity": 3,
+      "classification": "ARC ACTIVATION — explicit coaching admission",
+      "rows": "ROW-6783-6831 (anchor: ROW-6819)",
+      "verbatim_anchor": "ROW-6819: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so get off your high horse'",
+      "mechanism": "Explicit written coaching admission (outbound scripting + inbound intelligence-gathering)",
+      "compound": "COMP-RF08-004 (RF-08+RF-01)",
+      "note": "Only Sev-3 in the RF-08 pass. Confirms: (1) Melissa scripts Olivia's conversations with Eli; (2) Melissa mines Olivia's reports about Eli's household. Arc activated."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S005",
+      "batch": "B-019",
+      "date": "2024-09-14",
+      "severity": 2,
+      "classification": "Post-activation",
+      "rows": "ROW-7161-7164",
+      "verbatim_anchor": "ROW-7163: 'She said that you kept twisting her arm and it hurt and you'd say sorry but kept doing it'",
+      "mechanism": "Physical harm allegations via Olivia",
+      "compound": "COMP-RF08-005 (RF-08+RF-01+RF-15)",
+      "note": "Harm allegations delivered 9 hours after the visit. Post-ROW-6819 context makes these presumptively coached."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S006",
+      "batch": "B-019",
+      "date": "2024-10-02",
+      "severity": 2,
+      "classification": "Post-activation",
+      "rows": "ROW-7332",
+      "verbatim_anchor": "ROW-7332: 'She said she didn't say anything disrespectful at the dr and you are lying'",
+      "mechanism": "Contrary account relay — Olivia's reported account used to rebut Eli's direct testimony",
+      "compound": "COMP-RF08-006 (RF-08+RF-01)",
+      "note": "Olivia positioned as the definitive authority over Eli's firsthand experience of her behavior."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S007",
+      "batch": "B-022",
+      "date": "2025-02-04",
+      "severity": 2,
+      "classification": "Post-activation",
+      "rows": "ROW-7751-7752",
+      "verbatim_anchor": "ROW-7752: 'Last night as we are going to bed she asked why you used to visit everyday and now you barely do'",
+      "mechanism": "Coached narrative relay in child's voice — abandonment arc delivered as Olivia's spontaneous question",
+      "compound": "COMP-RF08-007 (RF-08+RF-01)",
+      "note": "Clearest post-coaching relay of core abandonment arc premise delivered in Olivia's reported voice. Structurally confirms the coaching mechanism: the same narrative from S003 (Sep 2023) now appears as Olivia's own question."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S008",
+      "batch": "B-026",
+      "date": "2025-06-13",
+      "severity": 1,
+      "classification": "Post-activation",
+      "rows": "ROW-7875+",
+      "verbatim_anchor": "ROW-7875: 'She wants...' [Olivia preference relay in parenting-plan dispute]",
+      "mechanism": "Preference relay — Olivia's stated preference used as leverage in adult dispute",
+      "compound": "COMP-RF08-008 (RF-08+RF-01)",
+      "note": "Lower severity; preference relay in incest-framing context."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S009",
+      "batch": "B-028",
+      "date": "2025-08-24 to 2025-08-28",
+      "severity": 2,
+      "classification": "Post-activation",
+      "rows": "ROW-8127-8132",
+      "verbatim_anchor": "ROW-8127: 'Olivia said she wants to stay home with me Labor Day weekend' / ROW-8132: 'So you need to talk to her before Friday so that she understands she needs to go'",
+      "mechanism": "Visit refusal relay — Olivia positioned as decision-maker in court-ordered schedule dispute",
+      "compound": "COMP-RF08-009 (RF-08+RF-01+RF-02)",
+      "note": "Gatekeeping through child-preference framing: Olivia's stated preference used to justify non-compliance with parenting plan, and Eli redirected to 'convince' Olivia."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S010",
+      "batch": "B-029",
+      "date": "2025-11-24",
+      "severity": 2,
+      "classification": "Post-activation",
+      "rows": "ROW-14839",
+      "verbatim_anchor": "ROW-14839: 'She's communicated to you that she doesn't not like to constantly fight with Milo, felt bad about Abby calling her a bad sister and you a bad dad... Unless you change something and make her feel better she's probably not going to change how she feels about going'",
+      "mechanism": "Comprehensive complaint relay — Olivia's experience compiled into conditional-compliance demand",
+      "compound": "COMP-RF08-010 (RF-08+RF-04)",
+      "note": "Most developed relay instance: multi-grievance complaint document with conditional-compliance framing. Olivia positioned as both complaint source and compliance arbiter. Abby component consistent with ADD-004."
+    },
+    {
+      "signal_id": "ARC-RF08-001-S011",
+      "batch": "B-031",
+      "date": "2026-04-12",
+      "severity": 2,
+      "classification": "Post-activation — dataset close",
+      "rows": "ROW-15592",
+      "verbatim_anchor": "ROW-15592: 'Also Naomi was telling her dad yesterday that Olivia doesn't like that you yell at her for no reason. Olivia was telling her about valentine weekend and how she can't talk to you and you were screaming for no reason'",
+      "mechanism": "Peer-parent relay — Naomi's father as third-party corroborating witness",
+      "compound": "COMP-RF08-011 (RF-08+RF-04)",
+      "note": "Dataset's only documented peer-parent relay. Introduces peer-parent network as corroboration mechanism for Olivia's distress characterization. Implications extend beyond direct parties."
+    }
+  ],
+
+  "compound_pattern_summary": {
+    "total": 11,
+    "rf08_rf01": 9,
+    "rf08_rf01_rf15": 1,
+    "rf08_rf01_rf02": 1,
+    "rf08_rf04": 2,
+    "rf08_rf01_rf02_triple": 1,
+    "note": "All 11 RF-08 signals are compounds with other completed passes. 9 compound with RF-01 ADD-004 relay (core overlap). 2 compound with RF-04 (Phase C peer-parent and complaint relay). 1 triple compound with RF-01+RF-02 (visit refusal gatekeeping)."
+  },
+
+  "sub_pattern_summary": {
+    "intelligence_channel": "S001 — Melissa's assertion of her right to Olivia's reports from Eli's household (earliest documented, Apr-Jun 2023)",
+    "emotional_state_relay": "S002, S010 — Olivia's distress or emotional experience delivered as evidence/pressure",
+    "narrative_relay_in_childs_voice": "S003, S007 — Abandonment arc premise delivered via Olivia's reported speech; S007 is the coached version (post-ROW-6819)",
+    "coaching_admission": "S004 — Explicit written confirmation of both outbound scripting and inbound intelligence-gathering",
+    "harm_allegation_relay": "S005 — Physical harm allegations delivered via Olivia's account",
+    "contrary_account_relay": "S006 — Olivia's reported account used to rebut Eli's direct testimony",
+    "preference_relay": "S008, S009 — Olivia's stated preferences used as leverage in adult disputes or to justify gatekeeping",
+    "comprehensive_complaint_relay": "S010 — Multi-grievance complaint document with conditional-compliance framing",
+    "peer_parent_relay": "S011 — Third-party adult parent invoked as independent corroborating witness"
+  },
+
+  "arc_trajectory": {
+    "phase_A_pre_activation": "B-007 through B-017: 3 pre-signals establishing intelligence-channel claim and emotional-relay sub-patterns. Pattern consistent but not yet confirmed.",
+    "arc_activation": "B-018 (ROW-6819, Aug 2024): Explicit written confirmation. Both relay directions confirmed: Melissa scripts outbound content for Olivia AND mines Olivia's inbound reports about Eli's household.",
+    "phase_A_post_activation": "B-019 (Sep-Oct 2024): Immediate post-activation signals — harm allegations relay and contrary-account relay deployed within weeks of ROW-6819.",
+    "phase_B": "B-022, B-026, B-028 (Jan-Aug 2025): Abandonment arc delivered in Olivia's voice (most coached relay); preference relay; visit refusal cascade.",
+    "phase_C": "B-029, B-031 (Nov 2025-Apr 2026): Comprehensive complaint relay escalates to multi-grievance conditional-compliance demand; peer-parent network introduced at dataset close.",
+    "no_attenuation": "Pattern maintained without attenuation across all phases. Phase C introduces new mechanisms (comprehensive complaint relay, peer-parent network) rather than de-escalating."
+  },
+
+  "synthesis_flags": [
+    "S011 peer-parent relay: assess whether Naomi's-father relay preceded B-031 — review unreported instances in B-028 through B-030 at synthesis",
+    "S004 ROW-6819 is the retroactive anchor for S001-S003: GAL narrative should present the pre-signals as early manifestations of the same mechanism explicitly confirmed at ROW-6819",
+    "Intelligence-gathering dimension: ROW-6819 'I remind her of some of the things she's told me' confirms the inbound channel. Cross-reference with Melissa's specific questions about Abby (CP2 Q5) at synthesis for pattern documentation",
+    "Visit refusal cascade (S009) is the Phase C dominant mechanism: Olivia positioned as decision-maker for court-ordered parenting plan compliance — synthesize with RF-02 relocation arc and ARC-RF02-006",
+    "11 compound patterns across RF-01, RF-04, RF-02, RF-15: RF-08 arc is deeply interwoven with the alienation and manipulation passes — the triangulation mechanism is the delivery system for RF-01 and RF-04 content"
+  ],
+
+  "cross_rf_notes": {
+    "rf01": "RF-01 ADD-004 relay is the primary structural overlap. 9 of 11 RF-08 signals are also RF-01 ADD-004 events. The distinction: RF-01 classifies WHAT alienating content Olivia delivers; RF-08 classifies the structural use of Olivia as a communication channel.",
+    "rf02": "RF-02 ARC-RF02-001 (required-intermediary, 64 signals) documents Melissa requiring adult intermediaries between herself and Eli. RF-08 documents the inverse: using Olivia as the child intermediary. The two arcs are structurally parallel but operationally distinct.",
+    "rf04": "RF-04 compounds appear in Phase C — the complaint-relay (S010) and peer-parent relay (S011) are both RF-04+RF-08 compounds. The peer-parent relay adds the triangulation mechanism to the RF-04 DARVO cluster.",
+    "rf15": "S005 (harm allegations via Olivia) is also RF-15 (false allegations). The relay mechanism is the delivery system for the false allegation: Olivia's coached report becomes Melissa's evidence.",
+    "rf11": "RF-11 (Inappropriate Child Involvement) has significant overlap with RF-08 — using Olivia in adult disputes is both triangulation (RF-08) and inappropriate involvement (RF-11). RF-11 pass should cross-reference all 11 RF-08 signals."
+  }
+}

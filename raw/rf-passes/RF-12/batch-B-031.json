@@ -1,0 +1,41 @@
+{
+  "batch_id": "B-031",
+  "date_range": {
+    "start": "2026-01-08",
+    "end": "2026-04-12",
+    "note": "date-filtered batch"
+  },
+  "message_count": 464,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "calibration_addenda_active": [
+    "RF12-ADD-001",
+    "RF12-ADD-002",
+    "RF12-ADD-003",
+    "RF12-ADD-004",
+    "RF12-ADD-005",
+    "RF12-ADD-006",
+    "RF12-ADD-007",
+    "RF12-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "No new primary RF-12 flags in B-031. Active arcs hold. Note: April 2026 GAL appointment (ADD-001 legal milestone) is within dataset close window \u2014 communications near Apr 2026 are highest-priority for performative reasonableness review but no specific message flagged without manual batch review. Dataset closes with ARC-RF12-001 ACTIVE (3 signals), ARC-RF12-002 WATCHING (2 signals)."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF12-001",
+      "state": "ACTIVE",
+      "signals_cumulative": 3
+    },
+    {
+      "arc": "ARC-RF12-002",
+      "state": "WATCHING",
+      "signals_cumulative": 2
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "pipeline_status": "phase1_complete_supplemental_pending",
+  "triage_complete": true,
+  "cp1_complete": true,
+  "cp1_completed_at": "2026-04-22",
+  "rf_passes": {
+    "RF-01": {
+      "status": "complete",
+      "priority": 2,
+      "tier": 1,
+      "eli_signal": "confirmed_high",
+      "batches_complete": 31,
+      "primary_flags_so_far": 27,
+      "active_arcs": [
+        "ARC-RF01-001"
+      ],
+      "cp2_complete": "2026-04-23",
+      "cp3_items": 20,
+      "completed_date": "2026-04-23",
+      "note": "COMPLETE. 27 primary flags total (2 Sev-1, 25 Sev-2). ARC-RF01-001 ACTIVE (27 signals; last signal B-028 Aug 24-28 2025 \u2014 visit refusal cascade with comprehensive ADD-004 relay). 20 CP3 items. Phase C (B-029-031) produced 0 primary signals \u2014 Melissa's RF-01 delivery mechanism absent post-Aug 2025; visit refusals continue as RF-02. Key arc components: abandonment/inadequate-father, Abby-prioritization, Abby-as-obstacle, untrustworthy-father, predatory-father/false-allegation. Coaching admission ROW-6819 provides structural context for all ADD-004 relays. Ready for Phase 2 pattern synthesis."
+    },
+    "RF-02": {
+      "status": "complete",
+      "priority": 1,
+      "tier": 1,
+      "eli_signal": "elevated_high",
+      "note": "Eli identified as worst pattern \u2014 elevated from Tier 2",
+      "batches_complete": 31,
+      "completed_date": "2026-04-23",
+      "active_arcs": [
+        "ARC-RF02-001",
+        "ARC-RF02-002",
+        "ARC-RF02-004",
+        "ARC-RF02-006"
+      ],
+      "primary_flags": 101,
+      "key_finding": "64-signal required-intermediary arc; 27-signal phone-blocking arc; visit-refusal cascade dominant B-028\u2013B-031; relocation intent ACTIVE"
+    },
+    "RF-03": {
+      "status": "complete",
+      "priority": 11,
+      "tier": 2,
+      "eli_signal": "medium",
+      "batches_complete": 31,
+      "primary_flags": 6,
+      "peripheral_flags": 3,
+      "severity_distribution": { "1": 6, "2": 0, "3": 0 },
+      "active_arcs": ["ARC-RF03-001"],
+      "candidate_arcs": ["ARC-RF03-002"],
+      "cp2_status": "complete",
+      "cp2_completed": "2026-05-05",
+      "cp2_addenda": 7,
+      "completed_date": "2026-05-05",
+      "note": "COMPLETE. 31 batches. 6 primary flags (all Sev-1). 3 peripheral (cat allergy B-014, vaping/asthma B-025/B-026 — RF-15+RF-02 primary, RF-03 peripheral). ARC-RF03-001 ACTIVE (6 signals; unresolved at dataset close) — dominant mechanism is SPP transport offloading (ADD-004), 5 of 6 signals. ARC-RF03-002 CANDIDATE (0 independent signals; dance enrollment S-003 classified under ARC-RF03-001 as compound). Key findings: S-001 B-016 SPP misrepresentation (Melissa claims 'per court order' Eli brings home — misrepresents SPP); S-003 B-028 dance enrollment schedule conflict (RF-03+RF-06 compound); S-005 B-030 arc ACTIVE promotion. Father's Day location redirect (ADD-003) and urgent care prerequisite (ADD-005) CP2-confirmed but not keyword-located in messages."
+    },
+    "RF-04": {
+      "status": "complete",
+      "priority": 3,
+      "tier": 1,
+      "eli_signal": "confirmed",
+      "batches_complete": 31,
+      "primary_flags": 93,
+      "primary_flags_so_far": 93,
+      "active_arcs": [
+        "ARC-RF04-001",
+        "ARC-RF04-002"
+      ],
+      "watching_arcs": [],
+      "cp2_complete": "2026-04-23",
+      "cp3_items": 31,
+      "completed_date": "2026-04-24",
+      "note": "COMPLETE. 31 batches. 93 primary flags (58 Sev-1, 34 Sev-2, 1 Sev-3). ARC-RF04-001 CLOSED at 89 signals (2022-08-28 through 2026-04-12 \u2014 full dataset span). ARC-RF04-002 CLOSED at 28 signals. 30 compound patterns. 31 CP3 items. Both arcs active at dataset close \u2014 no attenuation across Phase C. Key Phase C closures: COMP-RF04-028 (Nov 25 'big contempt case' DARVO); COMP-RF04-029 (Feb 15 admitted-incident amplification: raised voice \u2192 verbal abuse \u2192 traumatized \u2192 drinking problem); COMP-RF04-030 (Apr 12 bruise DARVO + peer-parent relay \u2014 dataset closing compound). Final new mechanisms: admitted-incident amplification (B-030), explicit alcoholism accusation (Mar 28 B-030), peer-parent network relay (Apr 12 B-031). Predation framing closes at 10 instances."
+    },
+    "RF-05": {
+      "status": "complete",
+      "priority": 4,
+      "tier": 1,
+      "eli_signal": "confirmed_high",
+      "batches_complete": 31,
+      "primary_flags": 26,
+      "severity_distribution": {
+        "1": 14,
+        "2": 12,
+        "3": 0
+      },
+      "active_arcs": [
+        "ARC-RF05-001"
+      ],
+      "cp2_complete": "2026-04-24",
+      "cp3_items": 4,
+      "completed_date": "2026-04-24",
+      "note": "COMPLETE. 31 batches, 10,637 messages. 26 primary flags (Sev-1:14, Sev-2:12). ARC-RF05-001 ACTIVE (26 signals; arc unresolved at dataset close). 8 compound patterns (all RF-04+RF-05 cross-pass). 4 CP3 items. Paper-tiger trajectory confirmed: legal threats sustained without documented execution, but compliance environment maintained throughout. Key milestones: S-002 first contempt threat (Nov 2022); S-010 retainer-free access disclosed (Feb 2024); S-013 rape/assault allegation (May 2024); S-014 'See you in court' first instance (Jun 2024); S-016 first sole-custody filing threat (Aug 2024); S-019 communication-suppression harassment threat (May 2025); S-020 DARVO-denial mechanism (Jul 2025); S-021 confirmed attorney engagement (Aug 2025); S-022 PEAK: consultation complete + agreement ready to sign (Sep 2025); S-025 gatekeeping-to-contempt inversion (Nov 2025). Pre-2022 dataset gap flagged (ADD-004). Eli's vigilance posture is impact finding (ADD-005). Arc state: analysis-output/arc-states/RF-05-arc-state-B001.json."
+    },
+    "RF-06": {
+      "status": "complete",
+      "priority": 12,
+      "tier": 2,
+      "eli_signal": "medium",
+      "batches_complete": 31,
+      "primary_flags": 10,
+      "peripheral_flags": 0,
+      "severity_distribution": { "1": 8, "2": 2, "3": 0 },
+      "active_arcs": ["ARC-RF06-001"],
+      "cp2_status": "complete",
+      "cp2_completed": "2026-05-05",
+      "cp2_addenda": 8,
+      "completed_date": "2026-05-05",
+      "note": "COMPLETE. 31 batches. 10 primary flags (Sev-1:8, Sev-2:2). ARC-RF06-001 ACTIVE (10 signals; unresolved at dataset close). All 10 signals received direction (Melissa-to-Eli). Key findings: S-001 B-003 first contempt threat cluster (Nov 2022); S-002 B-004 'filing contempt again' → WATCHING; S-006 B-017 explicit payment-history evidence framing → ACTIVE; S-009 B-030 childcare billing on refused visitation (ADD-003 Phase C confirmed); S-010 B-031 'filing contempt on Monday' specific execution date. Pattern: Phase A dense contempt threats, Phase C childcare billing on refused visits. Jun 3 2022 contempt summons (executed, ADD-002) precedes dataset window. War-of-attrition financial asymmetry (ADD-004) confirmed."
+    },
+    "RF-07": {
+      "status": "complete",
+      "priority": 5,
+      "tier": 1,
+      "eli_signal": "confirmed_high",
+      "batches_complete": 31,
+      "primary_flags": 12,
+      "severity_distribution": {
+        "1": 8,
+        "2": 4,
+        "3": 0
+      },
+      "active_arcs": [
+        "ARC-RF07-001"
+      ],
+      "cp2_complete": "2026-04-24",
+      "compound_patterns": 4,
+      "completed_date": "2026-04-24",
+      "note": "COMPLETE. 31 batches, 10,637 messages. 12 primary flags (Sev-1:8, Sev-2:4). ARC-RF07-001 ACTIVE (12 signals; unresolved at dataset close). 4 compound patterns (COMP-RF07-001 through COMP-RF07-004; all with RF-04; COMP-RF07-001+002 also with RF-05). Key findings: S-012 CONFIRMED FLOODING (Apr 12 2026, 5 msgs in 3:14, only ADD-001-verified event); S-001 and S-004 flooding candidates (Aug 2024 and Aug 2025 mega-clusters ~80 msgs each, pending synthesis timestamp confirmation); S-003 clearest continuation-after-self-demand (May 2025 'stop texting me' then continues); three hot periods confirmed (Aug 2024, May 2025, Aug 2025); Phase C pattern maintained without attenuation. Arc state: analysis-output/arc-states/RF-07-arc-state.json."
+    },
+    "RF-08": {
+      "status": "complete",
+      "priority": 6,
+      "tier": 1,
+      "eli_signal": "confirmed",
+      "batches_complete": 31,
+      "primary_flags": 11,
+      "severity_distribution": {
+        "1": 4,
+        "2": 6,
+        "3": 1
+      },
+      "active_arcs": [
+        "ARC-RF08-001"
+      ],
+      "cp2_complete": "2026-04-26",
+      "compound_patterns": 11,
+      "completed_date": "2026-04-26",
+      "note": "COMPLETE. 31 batches, 10,637 messages. 11 primary flags (Sev-1:4, Sev-2:6, Sev-3:1). ARC-RF08-001 ACTIVE (11 signals; unresolved at dataset close). 11 compound patterns (9 RF-08+RF-01; 2 RF-08+RF-04; 1 triple RF-08+RF-01+RF-15; 1 triple RF-08+RF-01+RF-02). Key finding: ROW-6819 (B-018, Aug 2024) explicit coaching admission \u2014 Melissa scripts Olivia's conversations with Eli AND mines Olivia's reports about Eli's household. 3 Sev-1 pre-signals (B-007-B-010, Apr-Oct 2023). Post-activation: harm allegations via Olivia (B-019 Sep 2024), abandonment arc in Olivia's voice (B-022 Feb 2025), visit refusal cascade relay (B-028 Aug 2025), comprehensive complaint relay (B-029 Nov 2025), peer-parent relay via Naomi's father (B-031 Apr 2026). No attenuation through Phase C."
+    },
+    "RF-09": {
+      "status": "complete",
+      "priority": 7,
+      "tier": 1,
+      "eli_signal": "confirmed",
+      "batches_complete": 31,
+      "primary_flags": 11,
+      "severity_distribution": {
+        "1": 7,
+        "2": 4,
+        "3": 0
+      },
+      "active_arcs": [
+        "ARC-RF09-001"
+      ],
+      "watching_arcs": [],
+      "cp2_complete": "2026-04-27",
+      "cp3_items": 0,
+      "compound_patterns": 8,
+      "completed_date": "2026-04-27",
+      "note": "COMPLETE. 31 batches, 10,637 messages. 11 primary flags (Sev-1:7, Sev-2:4). ARC-RF09-001 ACTIVE (11 signals; unresolved at dataset close). 8 compound patterns (7 RF-09+RF-04; 1 RF-09+RF-05; 1 triple RF-09+RF-04+RF-08). 1 Level A cross-reference pair (XREF-001: ROW-9964 'There's no threats' vs. ROW-9957 documented threat, B-027 Jul 2025). Dominant mechanism: DARVO-inversion \u2014 Melissa accuses Eli of gaslighting across 7+ distinct conflict periods (S001 Nov 2022 through S010 Nov 2025) while engaged in documented RF-04 DARVO campaign. Feb 2026 amplification (S011): raised voice \u2192 verbal abuse \u2192 traumatized \u2192 drinking/alcoholism \u2014 Level C event rewrite driving Phase C visit-refusal engine. ROW-6819 coaching admission undenied at dataset close (ADD-002 forward anchor). RF-09 structurally embedded in RF-04 DARVO mechanism \u2014 8/11 signals are RF-09+RF-04 compounds."
+    },
+    "RF-10": {
+      "status": "complete",
+      "priority": 13,
+      "tier": 2,
+      "eli_signal": "low_keyword_full_pass",
+      "batches_complete": 31,
+      "primary_flags": 1,
+      "peripheral_flags": 0,
+      "severity_distribution": { "1": 1, "2": 0, "3": 0 },
+      "candidate_arcs": ["ARC-RF10-001", "ARC-RF10-002"],
+      "cp2_status": "complete",
+      "cp2_completed": "2026-05-05",
+      "cp2_addenda": 8,
+      "completed_date": "2026-05-05",
+      "note": "COMPLETE. 31 batches. 1 primary flag (Sev-1). Both arcs close at CANDIDATE — never promoted. Low flag count reflects evidence type, NOT pattern absence. CP2 confirms: simulated cooperation ('cooperative if it agrees'), vacation pre-commitment traps, medical record exclusion (structural — Eli has zero access to Olivia's records), therapist gatekeeping, single-disclosure friction. These are behavioral patterns documented in CP2 interview, not keyword-identifiable in message text. S-001 B-028: dance enrollment simulated consultation (ADD-003/ADD-004 compound). ARC-RF10-001 CANDIDATE 1 signal; ARC-RF10-002 CANDIDATE 0 signals. Phase 2 synthesis: CP2 Q2(a) direct behavioral admission is a synthesis anchor. Medical record exclusion (ADD-007) requires document discovery / GAL interview, not message analysis."
+    },
+    "RF-11": {
+      "status": "complete",
+      "priority": 8,
+      "tier": 1,
+      "eli_signal": "confirmed",
+      "batches_complete": 31,
+      "primary_flags": 5,
+      "severity_distribution": {
+        "1": 0,
+        "2": 5,
+        "3": 0
+      },
+      "active_arcs": [
+        "ARC-RF11-001"
+      ],
+      "cp2_complete": "2026-04-28",
+      "cp3_items": 0,
+      "compound_patterns": 5,
+      "completed_date": "2026-04-28",
+      "note": "COMPLETE. 31 batches, 10,637 messages. 5 primary flags (all Sev-2). ARC-RF11-001 ACTIVE (5 signals; unresolved at dataset close). 5 compound patterns. 1 bilateral signal (B-030 Feb 2026 hiding incident). Key findings: parentification of visit-compliance decision (ROW-14841 'it was her choice') is dominant mechanism; police report disclosure to Olivia (B-029) has highest child-welfare consequence; Feb 2026 bilateral (children hiding + verbal abuse framing); counselor relay weaponization (B-027 ROW-14097); Olivia as emotional stabilizer confirmed at CP2. Therapist pattern: Melissa drops therapists when called out \u2014 clinically significant for GAL evaluation. RF-11 structurally embedded in RF-02 (visit-refusal cascade) \u2014 parentification is the child-facing dimension of gatekeeping."
+    },
+    "RF-12": {
+      "status": "complete",
+      "priority": 14,
+      "tier": 1,
+      "eli_signal": "low_keyword_full_pass",
+      "batches_complete": 31,
+      "primary_flags": 5,
+      "peripheral_flags": 0,
+      "severity_distribution": { "1": 1, "2": 4, "3": 0 },
+      "active_arcs": ["ARC-RF12-001"],
+      "watching_arcs": ["ARC-RF12-002"],
+      "cp2_status": "complete",
+      "cp2_completed": "2026-05-05",
+      "cp2_addenda": 8,
+      "completed_date": "2026-05-05",
+      "note": "COMPLETE. 31 batches. 5 primary flags (Sev-1:1, Sev-2:4). ARC-RF12-001 ACTIVE (3 signals; unresolved at dataset close). ARC-RF12-002 WATCHING (2 signals; unresolved). All 5 signals received direction. Key findings: S-001 B-020 stop-texting manufactured boundary violation (7+ messages after 'stop') → ARC-RF12-002 WATCHING; S-002 B-023 'For the record' explicit documentation language → ARC-RF12-001 WATCHING; S-003 B-025 stop-contacting + harassment threat then 9+ messages (Sev-2); S-004 B-029 'My lawyer already said I had a strong case this further demonstrates that' (Sev-2); S-005 B-030 post-police-report probe tone shift (CP2 confirmed ADD-004; specific message not keyword-located — manual verification recommended) → ARC-RF12-001 ACTIVE. Explicit documentation admission ('documenting my responses for her court case') confirmed at CP2 but message not keyword-located — if found adds Sev-2 signal. Bait-switch-index.json deferred to Phase 2 synthesis."
+    },
+    "RF-13": {
+      "status": "complete",
+      "priority": 9,
+      "tier": 1,
+      "eli_signal": "confirmed_high",
+      "batches_complete": 31,
+      "primary_flags": 20,
+      "severity_distribution": {
+        "1": 7,
+        "2": 11,
+        "3": 2
+      },
+      "active_arcs": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "cp2_complete": "2026-04-28",
+      "cp3_items": 1,
+      "completed_date": "2026-04-28",
+      "note": "COMPLETE. 31 batches, 10,637 messages. 20 primary flags (Sev-1:7, Sev-2:11, Sev-3:2). Three arcs ACTIVE (Trajectory, Role Consistency, De-Escalation Resistance; all unresolved at dataset close). 46 hostile episodes flagged. 5 cycles confirmed. Key findings: Melissa = consistent escalator (69% received direction); Eli = consistent de-escalator. EP-0854 (311 msgs Aug 4 2024) and B-022 Jan-Feb 2025 cluster (365 msgs, 5 episodes) are Sev-3 peaks. AI-guided communication start: EP-1078 May 4 2025 — Melissa escalated regardless (definitional de-escalation resistance). Trigger unpredictability confirmed (walking-on-eggshells dynamic). Five holiday temporal windows confirmed multi-year (Halloween, Thanksgiving, Christmas, Valentine's Day, New Year's). EP-0093 (Oct 31 2022) is the first hostile episode — Halloween day. Emotional numbing impact finding (CP2 Q6 — Eli numb to hostile exchanges after sustained exposure)."
+    },
+    "RF-14": {
+      "status": "complete",
+      "priority": 15,
+      "tier": 2,
+      "eli_signal": "medium",
+      "batches_complete": 31,
+      "primary_flags": 20,
+      "peripheral_flags": 8,
+      "severity_distribution": { "1": 19, "2": 1, "3": 0 },
+      "active_arcs": ["ARC-RF14-001", "ARC-RF14-002"],
+      "cp2_status": "complete",
+      "cp2_completed": "2026-05-05",
+      "cp2_addenda": 8,
+      "completed_date": "2026-05-05",
+      "note": "COMPLETE. 31 batches, ~15,464 messages. 20 primary flags (S-000 through S-019; Sev-1:19, Sev-2:1). 8 peripheral flags. Two arcs ACTIVE at dataset close: ARC-RF14-001 (Safety Allegation Pattern — Melissa's manufactured false safety allegations, 8 signals, WATCHING B-004 Dec 2022, ACTIVE B-019 Oct 2024) and ARC-RF14-002 (Genuine Safety Documentation — legitimate bidirectional welfare concerns, 12 signals, WATCHING B-009 Jul 2023, ACTIVE B-017 Aug 2024). Critical calibration: RF-15/RF-14 compound boundary rule applied — all known RF-15 false allegations (alcoholism accusation ROW-15498, vaping/asthma B-025/B-026, pinching relay, bruise DARVO) correctly routed to RF-15 primary with RF-14 peripheral only. Key ARC-RF14-002 signals: Percocet disclosure Jul 2025 (S-014), Gary documented overnight Aug 2025 (S-015), homicide investigation Sep 2025 (S-016), Gary parenting plan challenge Nov 2025 (S-017), Gary post-challenge visit Feb 2026 (S-018), Melissa seizure Feb 2026 (S-019). Olivia self-harm Feb 2025 (S-012) is the only Sev-2 flag. ARC-RF14-001 effectively closed after B-019 (no new manufactured safety allegations in 2025-2026). Gary arc (S-015 through S-018) is compound RF-14/RF-02 synthesis candidate."
+    },
+    "RF-15": {
+      "status": "complete",
+      "priority": 10,
+      "tier": 1,
+      "eli_signal": "confirmed",
+      "batches_complete": 31,
+      "primary_flags": 16,
+      "severity_distribution": { "1": 7, "2": 8, "3": 1 },
+      "active_arcs": ["ARC-RF15-001", "ARC-RF15-002"],
+      "cp2_complete": "2026-04-28",
+      "cp3_items": 0,
+      "compound_patterns": 10,
+      "projection_pairs": 4,
+      "completed_date": "2026-04-28",
+      "note": "COMPLETE. 31 batches, 10,637 messages. 16 primary flags (Sev-1:7, Sev-2:8, Sev-3:1). Two arcs ACTIVE at dataset close: ARC-RF15-001 (False Allegation Pattern, 15 signals) and ARC-RF15-002 (Systematic Projection, 15 signals). 10 compound patterns. 4 confirmed projection pairs. 0 CP3 items. Key findings: Sev-3 = B-016 ROW-5862 explicit incest statement ('doesn't know she shouldn't fuck her uncle') — third-party reach confirmed (family, Facebook, professional contact Christopher Campbell Nov 2020); no formal CPS/police filings (CP2 Q3). Five-category false allegation framework (A: fabricated, B: distorted, C: sexual predation, D: projection, E: self-danger conversion). Projection pairs: PROJ-001 'you gaslight everything' (RF-09 cross-doc); PROJ-002 'Abby makes false allegations' (RF-15 cross-doc); PROJ-003 suppression claim (ROW-6819 coaching admission cross-doc); PROJ-004 'making her think I'm abusing her' (RF-11 cross-doc). Cat allergy manufactured medical pretext confirmed: Olivia raised with pets from birth, allergy specialist visit used to deny visitation (RF-02 compound). Pre-dataset anchor: Christopher Campbell Google msg Nov 9 2020 — false narrative campaign active 14+ months before dataset start. All Tier 1 RF passes complete."
+    }
+  },
+  "pending_checkpoints": {
+    "cp1": false,
+    "cp2": [],
+    "cp3": 77,
+    "cp4": 0
+  },
+  "context": {
+    "parties": {
+      "eli": "Plaintiff / father",
+      "melissa": "Defendant / mother",
+      "olivia": "Child subject of custody evaluation",
+      "abby": "Eli's girlfriend; Olivia's cousin (Eli's niece); together since mid-2022"
+    },
+    "key_dates": {
+      "divorce_filed": "2021-07",
+      "child_support_hearing": "late 2021 or late 2022 (approximate)",
+      "abby_relationship_start": "mid-2022",
+      "oct_2024_drop": "Behavioral \u2014 Melissa went silent after intense early-October conflict; no court order identified",
+      "may_2025_spike": "Eli holding communication boundaries; Melissa escalating in response",
+      "police_report": "2025-11-22 \u2014 Olivia refused to come for Eli's weekend; Melissa aware"
+    },
+    "inflection_point_updates": {
+      "INF-001": "Confirmed \u2014 Abby entered picture mid-2022; Sep 2022 detection roughly correct",
+      "INF-002": "Possible child support hearing late 2022 \u2014 not a false positive; promote to medium confidence",
+      "INF-005": "Behavioral silence, not court-ordered \u2014 Melissa withdrew after conflict",
+      "INF-007": "Eli holding boundaries triggered escalation \u2014 consistent with RF-07/RF-13"
+    },
+    "eli_priority_concerns": [
+      "RF-01 Parental Alienation",
+      "RF-02 Gatekeeping",
+      "RF-04 Emotional Manipulation",
+      "RF-05 Intimidation/Threats",
+      "RF-07 Boundary Violations",
+      "RF-08 Triangulation",
+      "RF-09 Gaslighting",
+      "RF-11 Inappropriate Child Involvement",
+      "RF-13 Escalation Patterns",
+      "RF-15 False Allegations/Projection"
+    ],
+    "abby_dynamic_note": "Melissa repeatedly uses Abby relationship as attack vector in messages (uncle/niece framing, inappropriate relationship allegations). Feeds RF-01, RF-04, RF-05, RF-15. Abby also lives with Eli \u2014 relevant to RF-11 (Feb 2026 episode, children hiding during argument)."
+  },
+  "last_updated": "2026-05-05 (PHASE 1 COMPLETE — all 15 RF passes done; supplemental dataset 4/13/2026–present pending)",
+  "sessions": 30,
+  "supplemental_dataset": {
+    "status": "pending",
+    "date_range": "2026-04-13 to present",
+    "note": "Supplemental dataset covering 4/13/2026 onward identified by Eli. Less than 30 days of messages; Eli confirmed there is material that needs review. Process using same RF pass framework. Will extend all arc states from current close point."
+  },
+  "notes": "CP1 complete. ALL 15 RF PASSES COMPLETE (Phase 1). Tier 1: RF-01 (27 flags), RF-02 (101 flags), RF-04 (93 flags), RF-05 (26 flags), RF-07 (12 flags), RF-08 (11 flags), RF-09 (11 flags), RF-11 (5 flags), RF-12 (5 flags), RF-13 (20 flags), RF-15 (16 flags). Tier 2: RF-03 (6 flags), RF-06 (10 flags), RF-10 (1 flag), RF-14 (20 flags). Grand total: ~364 primary flags across 15 passes. 77 CP3 items pending (RF-01:20, RF-04:31, RF-05:4, RF-13:1, others:21). Next steps: (1) Supplemental dataset 4/13/2026–present; (2) Phase 2 Pattern Synthesis (RC-PATTERN-SYNTHESIS.md); (3) Phase 3 Evidence Compiler (RC-EVIDENCE-COMPILER.md)."
+}

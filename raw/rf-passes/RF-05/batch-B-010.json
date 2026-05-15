@@ -1,0 +1,61 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-010",
+    "row_range": { "start": 3344, "end": 3723 },
+    "date_range": { "start": "2023-08-21", "end": "2023-10-04" },
+    "message_count": 380,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 380,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 1,
+    "peripheral_rf_distribution": { "RF-04": 1 },
+    "no_flag_messages": 379,
+    "flag_rate": "0.3%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B010-001",
+      "row_range": "ROW-3593 through ROW-3719",
+      "timestamp": "2023-09-25 through 2023-10-04",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-3593: 'Do I need to file contempt again?' | ROW-3603: 'I'm going to be filing contempt on you' | ROW-3717: 'So do I need to file contempt' | ROW-3719: 'Ok. I'm calling the lawyer'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Seventh through ninth instances of financial-contempt/lawyer-call threat cluster. ADD-002: Sev-1 (recurring, paper tiger trajectory). Four separate threat instances across Sep 25 - Oct 4 (10-day span), indicating elevated payment-enforcement pressure in this period. The lawyer-call threat (ROW-3719 'Ok. I'm calling the lawyer') produces a direct compliance response: ROW-3720 (Eli, Sent): 'You don't need to do that I'll have everything up to date friday.' This is the clearest on-record evidence of the compliance mechanism working — the threat produces an immediate Eli response with a payment commitment and an explicit request that Melissa not call the lawyer. ADD-005 context: Eli's compliance response confirms his threat-monitoring posture and the functional intimidation effect of the legal-threat pattern even as it becomes a 'paper tiger' subjectively.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-3389: 'Banging your niece, that you met when you were 30 and she was getting ready t...' — 5th predation framing (RF-04+RF-15 primary per ADD-001, RF-05 peripheral aggressive-tone). ROW-3610: 'Dumbass' — RF04-ADD-002 pattern.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-3720 Eli compliance response: 'I literally just saw this. You don't need to do that I'll have everything up to date friday. If I don't have to you buy then you...' — Eli immediately moves to preempt the lawyer call with a payment commitment. This response pattern confirms the threat mechanism functions even after the pattern is established. KEY FINDING for synthesis: the legal-threat compliance cycle is still operational in Oct 2023 despite the threat type being well-established since Nov 2022.",
+      "pattern_tags": ["contempt_filing_threat", "lawyer_call_threat", "compliance_response_confirmed", "threat_mechanism_active"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'Ok. I'm calling the lawyer' (ROW-3719) → Eli: 'You don't need to do that I'll have everything up to date friday' (ROW-3720)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. B-010 adds significant compliance-mechanism evidence: Eli's ROW-3720 response to the lawyer threat. This strengthens the arc's functional-impact finding for synthesis."
+  },
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+  "batch_observations": {
+    "tone_assessment": "B-010 (Aug-Oct 2023): The financial contempt cycle continues at elevated frequency (4 threat instances in 10 days). The key finding is the compliance response — the threat mechanism is still functionally active in Oct 2023.",
+    "cross_rf_context": "RF-04 B-010: COMP-RF04-010 (5th predation framing ROW-3388). No primary RF-05 cross-tag in B-010 RF-04 compound."
+  }
+}

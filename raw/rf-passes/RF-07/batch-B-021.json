@@ -1,0 +1,59 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-021",
+    "row_range": {
+      "start": 7706,
+      "end": 7713
+    },
+    "date_range": {
+      "start": "2024-12-19",
+      "end": "2025-01-08"
+    },
+    "message_count": 8,
+    "phase": "B",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": [
+      "RF07-ADD-001",
+      "RF07-ADD-002",
+      "RF07-ADD-003",
+      "RF07-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 8,
+    "primary_flags": 0,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 8,
+    "flag_rate": "0.0%"
+  },
+  "flagged_messages": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. No new signals this batch. from B-017, no new signals. Note: ROW-8877 (Jan 5, 2025: 'Shouldn't take 3.5 hours to get an answer if you can be a decent parent or not') is an out-of-order row appearing in B-030 sequential data. Chronologically Jan 5 2025 falls in this batch. Single response-time complaint without a flooding cluster \u2014 peripheral note only, does not meet RF-07 primary threshold as an isolated message."
+  },
+  "compound_patterns": [],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Near-full silence \u2014 only 8 messages Dec 19-Jan 8 2025. Melissa's communication drop (INF-005) continues. No conflict incidents. Co-parenting logistics only.",
+    "rf07_assessment": "Zero RF-07 primary signals. 8 messages total \u2014 no clustering possible. Arc active from B-017, no new signals. Note: ROW-8877 (Jan 5, 2025: 'Shouldn't take 3.5 hours to get an answer if you can be a decent parent or not') is an out-of-order row appearing in B-030 sequential data. Chronologically Jan 5 2025 falls in this batch. Single response-time complaint without a flooding cluster \u2014 peripheral note only, does not meet RF-07 primary threshold as an isolated message.",
+    "custodial_context": "Low-contact period; no custodial-time-overstepping at ADD-004 threshold given overall message density."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-013",
+    "row_range": { "start": 4449, "end": 4860 },
+    "date_range": { "start": "2024-02-01", "end": "2024-03-27" },
+    "message_count": 412,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 412,
+    "primary_flags": 2,
+    "primary_severity_distribution": { "1": 0, "2": 2, "3": 0 },
+    "peripheral_flags_total": 1,
+    "peripheral_rf_distribution": { "RF-04": 1 },
+    "no_flag_messages": 410,
+    "flag_rate": "0.5%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B013-001",
+      "row_range": "ROW-4613",
+      "timestamp": "2024-02-23",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-4609: '$180 due' | ROW-4610: 'And $1000 due next Wednesday' | ROW-4611: 'Also you're late on daycare' | ROW-4612: 'And don't forget about the $1k due next Wednesday' | ROW-4613: 'Beginning this year through my work I'm no longer required to pay a retainer so it's easier to take you to court if needed'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST litigation-capability escalation disclosure. Melissa announces that her employer benefits now cover legal fees without a retainer, making litigation 'easier.' ADD-002 temporal rule: first instance of a new threat sub-category = Sev-2. This is qualitatively different from prior legal threats: prior threats asserted intent to use legal mechanisms; this message announces that the practical barrier to doing so has been removed. The retainer-free access materially increases the credibility of all prior and future legal threats — litigation is now lower-cost for Melissa. Context: the disclosure immediately follows three successive payment-pressure messages (ROW-4609-4612) about $180 and $1,000 due — it functions as an amplifier of those payment demands. 'If needed' is a mild hedge that doesn't reduce the threat value; the sentence still functions as a compliance warning. For the GAL: this is a structural change in the threat environment that occurred in early 2024 and should be understood as elevating the credibility of all subsequent legal threats.",
+      "peripheral_flags": [],
+      "context_notes": "The disclosure appears sandwiched between payment pressure messages and is followed by a logistics exchange (ROW-4614-4616). The casual insertion of the capability disclosure into a payment-demand sequence makes it more threatening, not less — it reads as 'by the way, in case you're thinking of not paying, it just got cheaper for me to pursue you.'",
+      "pattern_tags": ["capability_escalation", "retainer_free_litigation", "first_capability_disclosure", "structural_threat_escalation"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'Beginning this year through my work I'm no longer required to pay a retainer so it's easier to take you to court if needed' (ROW-4613)"
+    },
+    {
+      "message_id": "RF05-B013-002",
+      "row_range": "ROW-4663",
+      "timestamp": "2024-02-28",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-4663: 'Remember to pay the $1000 by end of today. Otherwise you face 30 days jail'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST explicit imprisonment-duration threat. Prior financial threat language used jail framing generically ('about to go to jail' ROW-2171 B-006). ROW-4663 is the first message specifying a concrete jail duration: '30 days.' The specificity of '30 days' elevates this beyond generic consequence framing — it represents a precise legal penalty calculation, suggesting Melissa has consulted her attorney about the specific consequence or researched it. Coming just five days after the retainer-free disclosure (ROW-4613, Feb 23), the 30-day jail threat operates in a newly elevated threat environment: Melissa has just announced easier access to court, and now she specifies the exact imprisonment consequence of non-compliance. The sequence ROW-4613 → ROW-4663 (Feb 23 → Feb 28, 5 days) is the most compressed and escalatory legal-threat sequence in the dataset to this point. ADD-002: first instance of explicit-imprisonment-duration category = Sev-2.",
+      "peripheral_flags": [],
+      "context_notes": "The $1,000 payment referenced is the monthly attorney fees payment from the court-order or agreement (per ROW-4364 B-012). Context: ROW-4662 Eli was preparing for a meeting when the jail threat arrived. The threat is delivered with no prior warning in the exchange — an isolated demand message. Eli's response is not captured in this batch (the following messages are unrelated logistics). The absence of a compliance-response message in immediate follow-up may suggest the payment was made silently, or was late.",
+      "pattern_tags": ["explicit_jail_threat", "imprisonment_duration", "first_30day_threat", "compressed_with_capability_disclosure"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'Remember to pay the $1000 by end of today. Otherwise you face 30 days jail' (ROW-4663)"
+    }
+  ],
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-4801",
+      "message_text": "'Such a worthless dick' (ROW-4801)",
+      "assessment": "RF-04 contempt (COMP-RF04-012 per RF-04 pass: child-relay guilt + extreme slur). RF-04+RF-05 compound per RF-04 pass — RF-05 role is aggressive-tone peripheral (Sev-1) within the RF-04 primary compound. Not RF-05 primary in this pass."
+    }
+  ],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. B-013 adds two Sev-2 signals (S-013 and S-014): litigation-capability escalation (ROW-4613) and first explicit 30-day imprisonment threat (ROW-4663). Both are first instances of new sub-categories. The Feb 23→Feb 28 sequence is the dataset's most compressed escalatory legal-threat sequence to date."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": [
+      "CP3-RF05-001 (MEDIUM): ROW-4613 (Feb 23 2024) — retainer-free court access disclosure. Attorney should verify whether Melissa's employer legal benefit is confirmed by any other record (discovery, deposition). If confirmed, this represents a structural change in the threat environment that elevates all Phase B and C legal threats. Eli: do you recall if Melissa ever mentioned her employer or work benefits in the context of legal access before this message?"
+    ]
+  },
+  "batch_observations": {
+    "tone_assessment": "B-013 (Feb-Mar 2024) is the highest-severity RF-05 batch to date: two Sev-2 signals in 5 days, with the retainer-free disclosure materially elevating the legal-threat environment before the explicit jail threat arrives. The arc is intensifying. The paper-tiger pattern (ADD-002) may be partially disrupted by the retainer-free access — the barrier to follow-through has been reduced.",
+    "cross_rf_context": "RF-04 B-013: COMP-RF04-012 ('Such a worthless dick' + child guilt relay) at ROW-4793-4800. RF-05 peripheral for 'such a worthless dick.' Also: RF-04 pass CP3-RF04-013 notes ROW-4587-4588 (B-013) — NC relocation mention (RF-02). Relocation signal in same batch as legal-capability escalation is worth noting for synthesis."
+  }
+}

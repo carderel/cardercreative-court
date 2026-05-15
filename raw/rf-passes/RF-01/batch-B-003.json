@@ -1,0 +1,129 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-003",
+    "row_range": {"start": 714, "end": 1093},
+    "date_range": {"start": "2022-11-06", "end": "2022-12-12"},
+    "message_count": 380,
+    "mms_note": "MMS for this date range exist on a separate MMS sheet (row numbering 10000+) and are not separately analyzed in this batch; SMS-only analysis.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "timezone_note": "All source timestamps are UTC. Nov 6, 2022 = DST end; entire B-003 date range is EST (UTC-5). All local times in this file are EST.",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. Post-Halloween normalization batch. Significantly less RF-01 density than B-002. One primary flag (Sev 1): Dec 7 late dropoff cluster activates Abby attack vector again — Melissa documents in writing that Eli drove across town to drop Abby first while Olivia needed the bathroom, then explicitly states 'It's not good parenting.' Third written activation of Abby-prioritization-over-Olivia narrative. Notable peripheral: ROW-938-939 (Nov 23) — Melissa makes a false allegation about Abby relationship start date (peripheral RF-15). ARC-RF01-001 remains ACTIVE; +1 signal (total 5)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 380,
+    "primary_flags": 1,
+    "primary_severity_distribution": {"1": 1, "2": 0, "3": 0},
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {"RF-02": 2, "RF-04": 1, "RF-15": 1},
+    "no_flag_messages": 379,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "signal_id": "RF01-B003-S001",
+      "message_id": "ROW-1056",
+      "timestamp": "2022-12-07 01:05:00 UTC",
+      "local_time": "2022-12-06 20:05 EST",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "You didn't communicate that you were going to be late. Then you lied to me. You didn't do any homework with her and she...",
+      "primary_rf": "RF-01",
+      "primary_severity": 1,
+      "primary_reasoning": "Four-message cluster (ROW-1056–1059): Eli returned Olivia late from a custodial period. Melissa constructs the incident as evidence of inadequate parenting and Abby prioritization. Key messages: ROW-1056 ('You didn't communicate that you were going to be late. Then you lied to me. You didn't do any homework with her and she...'); ROW-1057 ('She said she was about to [pee] herself and all you did was roll down your window and tell the road to go faster'); ROW-1058 ('It's not good parenting'); ROW-1059 ('And you were on this side of town and went clear across town to take Abby home when it would've been quicker all the way [to Melissa's]'). Severity 1 because: (1) the inadequate-father narrative and Abby prioritization claim are present ('not good parenting' + 'took Abby home first') but grounded in a specific incident rather than a sustained manufactured narrative; (2) pattern-consistent with ARC-RF01-001 and Abby attack vector but less intensive than Halloween cluster; (3) the 'chose Abby over Olivia's immediate physical need' framing is the third written activation of the Abby-prioritization narrative. Note: RF01-ADD-002 (abandonment language → Sev 2 minimum) does not apply here because this is not abandonment language specifically — it is inadequate-father framing in context of a specific dropoff incident. Sev 1 appropriate.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-1056 cluster: contemptuous parenting critique — 'then you lied to me' / 'it's not good parenting.' Extended characterization of Eli as a dishonest and inadequate parent following a single late dropoff. RF-04 primary framing of this cluster; RF-01 is the secondary pattern.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Full sequence context: ROW-1048 (19:35 EST, 12/07): 'You're late on getting her home. Didn't even bother to call.' ROW-1050 (19:36 EST): 'You have to abide by the rules.' ROW-1051-1054 (19:52-19:58 EST): Melissa at Kroger pickup; Eli texts 'Almost there' then 'Here.' ROW-1055 (19:59 EST): 'Where at?' — exchange location. Then ROW-1056-1059 (20:05-20:19 EST). The Abby claim (ROW-1059): Eli was 'on this side of town' (near Melissa's) but 'went clear across town to take Abby home when it would've been quicker all the way [to Melissa's].' This means Melissa is asserting Eli chose to drop Abby off first, making Olivia's dropoff later and causing the child's physical discomfort. This is consistent with the Halloween narrative: Eli prioritizes Abby over Olivia. ROW-1057 relay: Melissa reports Olivia's statement ('she said she was about to [pee] herself') — Melissa is relaying Olivia's experienced discomfort as evidence of Eli's parenting failure. This falls under RF01-ADD-004: Melissa uses Olivia's reported reaction as evidence against Eli.",
+      "pattern_tags": ["inadequate_father_narrative", "abby_attack_vector", "abby_prioritization_over_olivia", "child_experience_weaponized"],
+      "arc_references": ["ARC-RF01-001"],
+      "image_reference": null,
+      "quote_excerpt": "It's not good parenting / went clear across town to take Abby home when it would've been quicker all the way [to Melissa's]",
+      "calibration_status": "confirmed",
+      "journal_crossref_date": "2022-12-07"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-736",
+      "reason_noted": "Nov 8: 'You don't have any clue what is going on with her.' Melissa dismisses Eli's suggestion (ADHD focus music article) with an assertion that Eli is ignorant of Olivia's daily experience. Near-boundary RF-01: 'you don't know your own child' framing positions Eli as disconnected and uninformed about Olivia. RF-04 primary (contemptuous dismissal of co-parent input). NOT flagged RF-01 primary because it is a single statement in context of a specific disagreement about a homework/focus strategy, not a sustained narrative about Eli's parental inadequacy. Watch: if 'you don't know her / you don't have a clue what's going on with her' becomes a recurring phrase, it merits escalation."
+    },
+    {
+      "message_id": "ROW-792",
+      "reason_noted": "Nov 12: 'She said she is so hungry. Why didn't you take her to lunch or breakfast?' Melissa relays Olivia's hunger complaint during Eli's custodial time. Near-boundary RF01-ADD-004: Melissa uses Olivia's reported physical state as evidence of Eli's parenting failure ('why didn't you take her to...?'). NOT flagged RF-01 primary because: (1) the complaint is specific and logistical; (2) no sustained inadequate-father framing. RF-04 peripheral (contemptuous co-parent critique). Noted: 'she said she is so hungry' is the relay-of-Olivia's-needs-as-evidence pattern."
+    },
+    {
+      "message_id": "ROW-1039-1041",
+      "reason_noted": "Dec 6: Melissa relays Olivia's reaction to a brief phone call: 'She said that was awkward. I said what was awkward. She said he was on the phone 10 seconds then only another 10 seconds.' Near-boundary RF01-ADD-004: Melissa relays Olivia's critical evaluation of Eli's phone contact quality back to Eli as evidence of inadequacy. The relay frames Olivia as a witness to Eli's insufficient effort. NOT flagged RF-01 primary because: (1) the relay is mild and specific; (2) short phone calls may genuinely reflect the facts of that call. However: this is consistent with the pattern of Melissa using Olivia's reported reactions to document and communicate Eli's parental shortcomings. Watch for: Melissa systematically collecting and relaying Olivia's negative reactions to Eli's contact attempts as a recurring pattern."
+    },
+    {
+      "message_id": "ROW-747",
+      "reason_noted": "Nov 9: 'She said thank you for surprising me when I picked her up.' Melissa relays Olivia's positive reaction to something Eli did during his time. Cooperative data point: Melissa spontaneously sharing Olivia's positive experience of Eli."
+    },
+    {
+      "message_id": "ROW-938-939",
+      "reason_noted": "Nov 23: 'Why? You hoping to bang another one?' / 'I mean this is the anniversary of you meeting her when she was 7 getting ready to turn 8 and you 30. Happy anniversary.' Context: Eli asked if Melissa was doing anything with her family (Thanksgiving period). Melissa responds with: (1) implication that Eli wants to sleep with another woman; (2) claim that Eli 'met' Abby when Abby was 7-8 years old and Eli was 30 — implying a predatory/grooming relationship. SIGNIFICANT: This is a written false allegation about the origins of the Eli-Abby relationship. Given that Abby is Eli's niece (Olivia's cousin), this 'anniversary of you meeting her' framing reframes a family relationship as predatory. NOT flagged RF-01 primary: this message is directed at Eli (adult-to-adult), not delivered to/through Olivia in this instance. PRIMARY RF-15 candidate: false allegation about relationship start date. RF-04 peripheral: contemptuous sexual attack. Attorney note: if Melissa is making this claim to Eli in writing, she may be making it to Olivia and others as well."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-726-727",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "note": "Nov 8: Melissa denies Eli's request to pick Olivia up the following day ('We have plans already'). ROW-727 simultaneously challenges Eli's illness ('weren't you just so sick that you couldn't be around her? You should get Covid checked'). RF-02 gatekeeping of custodial access; the illness counter-narrative is a recurring tactic to undermine Eli's legitimate explanations for missed contact.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-893",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "note": "Nov 20: 'Cause it's 8:30' — Eli's call goes to voicemail; Melissa explains it is because of the 8:30 cutoff. ARC-RF02-001 signal: DND enforcement. Cross-RF-01: the system that prevents Eli's access to Olivia after 8:30 is the same structural pattern Melissa later points to when accusing Eli of insufficient contact effort.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1066",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Dec 9: 'You cancel stuff cause you're lazy.' Melissa accuses Eli of using illness as a laziness excuse when he cancels a pickup due to illness (Abby and Milo also sick). RF-04 contempt: character attack on Eli's parental motivation. Consistent with overall inadequate-father framing.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-938-939",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "Nov 23: 'The anniversary of you meeting her when she was 7 getting ready to turn 8 and you 30.' Written false allegation claiming Eli's relationship with Abby began when Abby was a child (~7-8 years old) and Eli was ~30 — implying predatory grooming. Given that Abby is Eli's niece (Olivia's cousin), this reframes a family relationship as predatory in writing. Sev 2: explicit false allegation in writing, not just contempt. First written documentation of this specific false claim. RF-15 primary candidate for RF-15 pass.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_continuation_note": "ARC-RF01-001 (Abandonment/Blame Attribution Narrative): remains ACTIVE. +1 signal this batch (RF01-B003-S001, Sev 1, Dec 7 late dropoff / Abby prioritization). Total signals: 5. Severity distribution: 2 Sev-1, 3 Sev-2. Pattern continues at lower intensity post-Halloween. Abby attack vector confirmed active for a third written instance."
+  },
+
+  "batch_narrative_note": "B-003 is a de-escalation batch following the Halloween peak. RF-01 density drops sharply: one Sev-1 flag vs. two Sev-2 flags in B-002. The batch contains significant cooperative content — Melissa spontaneously sharing Olivia's baking, swim meets, artwork, and positive Eli interactions — alongside the established conflict patterns. The single RF-01 primary flag (Dec 7 late dropoff) is notable because: (1) it demonstrates the Abby attack vector activates on specific incidents, not only in sustained conflicts; (2) Melissa relays Olivia's physical discomfort as evidence of Eli's inadequacy (RF01-ADD-004); (3) the 'went across town to take Abby home first' framing is the third written documentation of 'Eli chose Abby over Olivia.' The Nov 23 false allegation (ROW-938-939) that Eli met Abby when she was 7-8 years old and he was 30 is analytically significant: this is the first written documentation of this specific false narrative, which if communicated to Olivia (consistent with Eli's confirmed pattern reporting) would be a significant RF-15 event.",
+
+  "cooperative_data_notes": "B-003 contains notably more cooperative content than B-002. Melissa shares Olivia's baking achievements (ROW-749-765), swim class updates including warm humor (ROW-948-961, Olivia picking nose and winking), school projects (ROW-822-823, 908-913), the Otherworld trip excitement (ROW-914-927), and upcoming surgery logistics. Melissa also relays Olivia wanting Eli to attend swim (ROW-795-813) and wanting to FaceTime him to show her 'surgery buddy' (ROW-1014). These cooperative signals exist within the same period as the Dec 7 parenting attack — the pattern is: routine cooperation interrupted by targeted attacks when conflict arises.",
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

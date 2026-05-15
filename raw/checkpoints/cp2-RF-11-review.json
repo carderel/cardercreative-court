@@ -1,0 +1,131 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "generated": "2026-04-27",
+  "status": "complete",
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "tone_assessment": "Lowest-conflict period. Zero RF-11 primary signals. No parentification, no legal disclosure to Olivia, no emotional-confidant language. Baseline confirmed: Jan-Oct 2022 is the cooperative pre-escalation period.",
+    "note": "Zero primary flags is correct for B-001. RF-11 primary signal expected in Phase C (B-028-B-031): Oct 2025 fear-relay cluster, Nov 22 2025 police report context, Feb 2026 hiding incident. Earlier potential signals in B-007 (Abby/treat threat), B-009 (Olivia vaping report). This pass is bilateral \u2014 significant signals may come from both Melissa's direction AND Eli's direction (Feb 2026 domestic argument)."
+  },
+  "group_a_clear_flags": [],
+  "group_b_ambiguous_flags": [
+    {
+      "id": "CP2-RF11-AMB-001",
+      "batch_in_dataset": "B-007 (Apr-Jun 2023)",
+      "row_ref": "ROW-2372-2376 area",
+      "direction": "received",
+      "current_classification": "NOT FLAGGED \u2014 pending CP2 context",
+      "issue": "Melissa reports that Abby told Olivia she 'couldn't have a treat if she told Melissa.' If accurate, this is Abby (in Eli's household) conditioning Olivia's reporting behavior toward Melissa \u2014 placing Olivia in an adult conflict-monitoring role with conditional consequences. Evidence is one-sided: this is Melissa's account of what Olivia told her. Cannot cross-reference from text record.",
+      "cp2_question": "Did Abby (or anyone in your household) ever tell Olivia that there would be consequences if she told Melissa something about what happened at your home? Were there any agreements or understandings with Olivia about what she should or shouldn't share with Melissa?"
+    },
+    {
+      "id": "CP2-RF11-AMB-002",
+      "batch_in_dataset": "B-028-B-029 (Aug-Dec 2025)",
+      "row_ref": "ROW-14490-14517 area (B-028); ROW-14547+ (B-029)",
+      "direction": "received",
+      "current_classification": "NOT FLAGGED \u2014 pending CP2 context",
+      "issue": "Multiple messages in the Oct 2025 visit-refusal period include 'so afraid of you' language, 'she doesn't feel safe,' and 'she got told not to say anything cause she's so afraid of you.' The fear language may reflect (a) genuine documented fear from Olivia's perspective, (b) Melissa coaching Olivia's fear language as visit-refusal justification, or (c) both. The 'told not to say anything' language is particularly ambiguous \u2014 it implies someone instructed Olivia to withhold something.",
+      "cp2_question": "The Oct 2025 messages include 'she got told not to say anything cause she's so afraid of you' \u2014 do you know who told Olivia not to say something, and what she was told not to say? In your view, was Olivia's 'fear of you' framing in this period authentic, or does it appear to have been coached? Have you had any contact with Olivia in this period that contradicts the fear narrative Melissa was presenting?"
+    }
+  ],
+  "group_c_non_flags": [
+    {
+      "id": "CP2-RF11-NF-001",
+      "row": "B-001 overall",
+      "reason_not_flagged": "Zero-conflict cooperative period. No RF-11 behavioral indicators present in Jan-Oct 2022.",
+      "cp2_question": "In the early 2022 period (the first months of co-parenting after divorce filing), did Melissa say or do anything that suggested Olivia was being given adult information about the divorce, finances, or legal proceedings? Any early parentification you remember?"
+    }
+  ],
+  "calibration_questions": [
+    {
+      "id": "CP2-RF11-Q1",
+      "topic": "Feb 15 2026 incident \u2014 children present",
+      "question": "The Feb 2026 incident (B-030) is documented in Melissa's messages to you as follows: 'Her, Milo and Alice were hiding in her room. Milo was telling Olivia if it kept going they might need to leave and they discussed going out the window because they were both scared. She almost called the police.' And: 'She said it sounded like verbal abuse and you pulled your phone out and said let\\'s educate ourselves today. Looked up verbal abuse and told them it\\'s not illegal.' (a) Were Olivia, Milo, and Alice in or near the room during the argument? How old were they at this time? (b) Did you look up 'verbal abuse' on your phone during or after the argument, and if so, were the children present for that? (c) Was the incident a single argument or an extended conflict episode? Melissa has deployed this incident as the primary visit-refusal justification through April 2026.",
+      "why_asked": "RF-11 applies to BOTH directions. If children were directly present during or immediately affected by an adult domestic argument, that is an RF-11 signal from Eli's direction (Sev-2 minimum). The 'looked up verbal abuse' allegation, if confirmed, is Sev-3 \u2014 adult legal framing directed at children. This is the anchor event for the bilateral analysis.",
+      "classification_impact": "High \u2014 determines severity of RF-11 signal from Eli's direction; 'looked up verbal abuse' allegation has significant implications if confirmed"
+    },
+    {
+      "id": "CP2-RF11-Q2",
+      "topic": "Olivia's knowledge of legal proceedings",
+      "question": "RF-11 includes 'discussing court proceedings, legal strategy, or financial disputes with/around children' as a behavioral indicator. (a) Do you have any evidence or strong impression that Melissa has discussed the custody case, GAL evaluation, court dates, or legal strategy with Olivia? For example, has Olivia ever said something to you suggesting she knows about the GAL process, what the GAL does, or what might happen in court? (b) Has Melissa discussed child support payments or financial matters with Olivia that you know of? (c) Has Olivia ever mentioned 'the judge,' 'court,' or what the 'GAL lady' does, in a way suggesting Melissa has briefed her on the legal proceedings?",
+      "why_asked": "Coaching Olivia on what to say to the GAL (already documented in ROW-6819) is one dimension. A separate question is whether Olivia is also aware of legal proceedings at a level beyond age-appropriate. This is Sev-2-3 territory if confirmed.",
+      "classification_impact": "High \u2014 if confirmed, generates Sev-2-3 primary flags for legal-proceedings disclosure to child"
+    },
+    {
+      "id": "CP2-RF11-Q3",
+      "topic": "Emotional-confidant parentification",
+      "question": "RF-11 includes 'using children as emotional support' (parentification) as an indicator. (a) Has Olivia ever expressed to you that Melissa shares adult feelings of sadness, hurt, or stress with her \u2014 or made comments like 'mommy needs you' or 'I don't know what I'd do without you'? (b) Have you observed or heard about Olivia being put in the role of comforting Melissa, or Olivia expressing worry about Melissa's emotional wellbeing in a way that seems beyond a child's normal concern? (c) Has Olivia ever seemed to feel responsible for Melissa's happiness or stability?",
+      "why_asked": "Parentification (child made responsible for parent's emotional state) is a Sev-2-3 RF-11 indicator that may not appear directly in the text record but would be visible through Olivia's behavior and statements.",
+      "classification_impact": "Medium-high \u2014 generates Level E or behavioral indicator flags; higher if corroborated by Olivia's statements relayed in text record"
+    },
+    {
+      "id": "CP2-RF11-Q4",
+      "topic": "Nov 22 2025 police report and Olivia",
+      "question": "You filed a police report on Nov 22 2025 because Olivia refused to come for your court-ordered weekend visit. (a) What was Olivia's awareness of the police report? Was she present when police were involved, or was she told about it by Melissa? (b) Do you know whether Melissa told Olivia that a police report was being filed or that police might come? (c) After the police report, did Melissa reference the report to Olivia or use it in conversations with you in a way that suggested Olivia was aware of or involved in the report? This is the RF-11 anchor event identified at CP1.",
+      "why_asked": "Involving a child in the awareness of police report filing against her other parent's custody compliance is a Sev-2-3 RF-11 indicator \u2014 it places the child in the middle of adult legal proceedings.",
+      "classification_impact": "High \u2014 determines whether the Nov 22 police report generates RF-11 primary flags from Melissa's direction (exposing Olivia to legal proceedings)"
+    },
+    {
+      "id": "CP2-RF11-Q5",
+      "topic": "Olivia's visit refusal \u2014 who made the decision",
+      "question": "In the B-028 through B-031 period (Aug 2025 \u2013 Apr 2026), Olivia is documented as repeatedly refusing visits with you. (a) In your view, was Olivia independently making the decision to refuse visits, or was she being directed or coached by Melissa? (b) Melissa's messages in this period repeatedly frame Olivia's refusal as Olivia's autonomous choice and as a matter of her safety. Do you believe Melissa presented the court-ordered visit schedule to Olivia as optional or as a safety decision she (Olivia) gets to make? Placing a child in the role of deciding whether to comply with a court order is a form of parentification \u2014 the child becomes responsible for the legal/custody decision.",
+      "why_asked": "If Melissa presented the court-ordered schedule to Olivia as Olivia's decision (rather than a legal requirement Melissa enforces), that is Sev-2-3 parentification \u2014 child made responsible for adult legal compliance decisions. This is distinct from RF-02 (gatekeeping) and RF-01 (alienation) \u2014 it focuses on the burden placed on the child.",
+      "classification_impact": "High \u2014 if confirmed, generates Sev-2-3 parentification flags across the visit-refusal cascade batches"
+    },
+    {
+      "id": "CP2-RF11-Q6",
+      "topic": "Scope of coaching \u2014 GAL, therapist, police interview",
+      "question": "RF-11 specifically flags 'coaching children on what to say to GAL, therapist, or other parent.' ROW-6819 confirmed Melissa coaches Olivia's conversations with you (already RF-08). (a) Do you have any evidence that Melissa has coached Olivia on what to say to the GAL evaluator \u2014 for example, has Olivia made references to specific things she 'should tell the GAL' or has her GAL interaction seemed scripted? (b) If Olivia has spoken to a therapist, do you have any evidence of coaching there? (c) Was Olivia aware of or involved in the Nov 22 2025 police interaction in a way that suggests coaching about what to tell police?",
+      "why_asked": "Coaching children for GAL/therapist/police interviews is the highest-severity form of RF-11 (Sev-3). ROW-6819 confirms coaching is normalized. The question is whether the coaching extends beyond conversations with Eli to third-party evaluators.",
+      "classification_impact": "Critical \u2014 GAL/therapist coaching would generate Sev-3 primary flags and has direct bearing on the reliability of the GAL evaluation itself"
+    }
+  ],
+  "addenda_proposed": [
+    {
+      "id": "RF11-ADD-001-PROPOSED",
+      "title": "Bilateral Analysis Rule \u2014 Both-Direction Flagging",
+      "rule_draft": "[CONFIRMED \u2014 no CP2 input needed] RF-11 is analyzed in both directions. Melissa-direction flags: parentification, emotional relay, legal-proceedings disclosure, coaching for third-party evaluators, fear-framing as visit-refusal tool. Eli-direction flags: children present during adult domestic conflict (Feb 2026 anchor event), adult-legal-framing in children's presence (ROW-15103 allegation pending CP2 Q1 confirmation). Both directions are primary flags, not mitigated by each other. Compound flags with RF-04 (amplification) and RF-02 (visit-refusal cascade) apply per ADD-003.",
+      "status": "confirmed"
+    },
+    {
+      "id": "RF11-ADD-002-PROPOSED",
+      "title": "Visit-Refusal Parentification Rule",
+      "rule_draft": "[PENDING CP2 ANSWER Q5] When Melissa presents a court-ordered parenting schedule to Olivia as Olivia's autonomous choice, and Olivia's stated refusal is then deployed by Melissa as the compliance justification, flag as RF-11 Sev-2 parentification. Compound with RF-02 (gatekeeping) per ADD-003. Applies retroactively to the Aug 2025 onward visit-refusal cascade if Q5 confirms.",
+      "status": "confirmed"
+    },
+    {
+      "id": "RF11-ADD-003-PROPOSED",
+      "title": "Cross-RF Compound Rule",
+      "rule_draft": "[CONFIRMED \u2014 no CP2 input needed] RF-11 primary signals generate compound flags as follows: RF-11+RF-08 when the mechanism involves Olivia as relay conduit for adult conflict content (Olivia-as-messenger = RF-08; child exposed to adult conflict content = RF-11 compound); RF-11+RF-04 when Melissa uses Olivia's reported emotional state as DARVO leverage or emotional manipulation; RF-11+RF-02 when visit-refusal parentification is the mechanism.",
+      "status": "confirmed"
+    },
+    {
+      "id": "RF11-ADD-004-PROPOSED",
+      "title": "GAL/Evaluator Coaching Sev-3 Rule",
+      "rule_draft": "[PENDING CP2 ANSWER Q6] If Eli confirms evidence that Melissa coached Olivia on what to say to the GAL evaluator, therapist, or police, flag as RF-11 Sev-3. ROW-6819 confirms coaching normalized for conversations with Eli (RF-08). If coaching extends to GAL/third-party evaluators, this is the highest-severity RF-11 signal available and directly impugns the reliability of Olivia's GAL interview. Compound: RF-11+RF-08+RF-01 (alienation via GAL coaching).",
+      "status": "confirmed_modified"
+    }
+  ],
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda with CP2 answers. Update calibration file. Set cp2_status to complete. Resume B-002 processing. Expected primary signal concentration: Phase C (B-028-B-031). Earlier signal candidates: B-007 (Abby/treat threat), B-009 (vaping report relay).",
+    "if_reclassification_needed": "Update B-001 if any early signals identified. Adjust arc state accordingly. Resume B-002.",
+    "arc_initialization_note": "ARC-RF11-001 (Parentification/Child Exposure Pattern) should initialize at CANDIDATE. Expected activation: Phase B/C transition (B-025-B-028 area) when visit-refusal cascade begins placing Olivia in adult decision-making roles. Feb 2026 hiding incident (B-030) is likely the highest-severity bilateral signal.",
+    "bilateral_processing_note": "For each batch: process Melissa-direction messages first (primary RF-11 focus), then Eli-direction messages. Flag Eli-direction signals with 'direction: sent' field. The Feb 2026 incident is the only currently identified Eli-direction primary candidate \u2014 do not presuppose Eli-direction signals elsewhere unless evidence is found.",
+    "cross_rf_note": "RF-08 coaching signals (ROW-6819 and relay signals) are RF-08 primary; flag RF-11 as compound only when the Olivia-relay content directly exposes Olivia to adult conflict content (not just uses her as a messenger). RF-02 visit-refusal cascade (B-028-B-031) is RF-02 primary; flag RF-11 as compound when Olivia is placed in the role of making the visit-compliance decision."
+  },
+  "completed": "2026-04-28",
+  "cp2_answers_summary": {
+    "Q1_feb15_incident": "Confirmed: children (10, 6, 1) were home in a small house, hiding during argument. Eli confirms he looked up 'verbal abuse' on his phone because the children were asking. Out-of-character incident \u2014 sinus infection, steroid use, sleep deprivation, bad day. Eli apologized to everyone. This is RF-11 Sev-2 from Eli's direction: children directly present during adult domestic argument and then Eli involving children in adult legal-framing discussion (looking up 'verbal abuse' and explaining it's not illegal). Mitigated by: responsive to children's question (not proactive), health context, apology, single out-of-character incident. Still Sev-2 per ADD-001 bilateral rule.",
+    "Q2_olivia_legal_knowledge": "Probable but not directly confirmed. Melissa works for Franklin County Clerk of Courts (Auto title division). Eli says Olivia 'is aware of the court order' but Melissa has not specifically discussed legal proceedings with Olivia to Eli's direct knowledge. Apply: contextual note; no standalone primary flag without text-record evidence. Olivia's court-order awareness is likely age-appropriate given circumstances.",
+    "Q3_emotional_stabilizer": "Confirmed: 'It seems to me that Olivia is Melissa's stabilizer.' Yes to parentification. Apply ADD-006: behavioral indicator for severity context across all Phase C signals. No standalone primary flag from behavioral observation alone; informs severity of text-record signals.",
+    "Q4_police_report_olivia": "Confirmed: Olivia was home when police phone call happened. Melissa told Olivia about the report. Olivia was mad at Eli and didn't talk to him for over a week. Eli believes text evidence exists. Apply ADD-005: police report child-exposure rule \u2014 Sev-2 primary flag in B-029.",
+    "Q5_visit_refusal_ownership": "Confirmed and text-documented: 'It was her choice not to go and I am not expected to forcibly remove her from the home' (ROW-14841 area, B-029). Melissa has explicitly framed Olivia's court-order non-compliance as Olivia's autonomous choice in text. Eli's view: mixed \u2014 sometimes Olivia's genuine choice, sometimes Melissa-directed based on what suited Melissa's needs. Apply ADD-002: visit-refusal parentification rule confirmed \u2014 Sev-2 flag in B-029 and retroactive to visit-refusal cascade.",
+    "Q6_gal_therapist_coaching": "No GAL evaluator yet (process pending). Therapist coaching: Eli believes it occurred but therapy relationships never lasted \u2014 Melissa drops therapists once called out. This pattern itself is behaviorally significant: therapist non-continuity may reflect coaching + discovery risk. No standalone primary flag for therapist coaching without text evidence; apply as behavioral severity context. ROW-14097 (B-027) counselor relay is text-documented evidence of therapist-relationship weaponization."
+  }
+}

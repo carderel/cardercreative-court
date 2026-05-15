@@ -1,0 +1,70 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-028",
+    "row_range": { "start": 8062, "end": 8228 },
+    "date_range": { "start": "2025-08-08", "end": "2025-09-12" },
+    "message_count": 167,
+    "timezone_note": "Entirely EDT (UTC-4). RF-02 B-028 secondary section states ROW-8063-8190; RF-01 starts at ROW-8062 (off-by-one pattern). B-028 extends through ROW-8228 (Sep 12) per date-based extraction — the RF-02 secondary section boundary at ROW-8190 (Aug 31) does not constrain RF-01 date extraction.",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Phase B — visit refusal cascade begins. Aug 24-29 is the first documented multi-day visit refusal in the record: Olivia refuses to attend Eli's scheduled weekend; Melissa relays Olivia's stated reasons as a comprehensive complaint list about Eli's home environment and Abby presence. This cascade directly feeds RF-02 (B-028 identified as start of 'visit-refusal cascade dominant B-028–B-031'). RF-01 primary signal is the ADD-004 delivery mechanism — Melissa delivering Olivia's complaints to Eli — which simultaneously functions as an inadequate-father narrative and a gatekeeping rationalization."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B028-F001",
+      "arc_signal_ref": "RF01-B028-S001",
+      "row": "ROW-8127-8177",
+      "date": "2025-08-24 to 2025-08-28",
+      "rf_tags": ["RF-01"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-004", "RF01-ADD-001", "RF01-ADD-002"],
+      "arc": "ARC-RF01-001",
+      "summary": "August 24-28 — Visit refusal cascade with ADD-004 comprehensive complaint relay. Context: Eli's scheduled Labor Day weekend; Olivia refused to go. Melissa relays Olivia's position in escalating stages. ADD-004 nodes: ROW-8127 (Aug 24) 'Olivia said she wants to stay home with me Labor Day weekend because she knows we normally go and do fun things' — initial relay of Olivia's preference as information; ROW-8131-8132 (Aug 27) 'I tried talking to her and she is very adamant that she's not going. I told her I would ask about switching and I did / So you need to talk to her before Friday so that she is willing to go' — Melissa positioning Olivia's refusal as Eli's problem to solve; ROW-8139 (Aug 27) 'She wants to see friends and ride rides. I told her maybe she could ask you to take her but she said you don't let her do anything. She said all you do is follow Abby around and not let them do anything then leave' — ADD-001 core element: Olivia's characterization ('all you do is follow Abby around / not let them do anything') delivered to Eli in Olivia's reported voice; ADD-004 core; ROW-8148-8149 (Aug 28) 'She said she's not packing a bag. I can pack a bag / She said you have to drag her out. I'm not dragging her out' — ADD-004: Olivia characterizes Eli's parenting-plan enforcement as 'dragging her out'; ROW-8177 (Aug 28) comprehensive complaint relay: 'She has trouble sleeping there, Milo and her fight too much, you dont have food she likes, she doesn't feel like she has space since her room is now Alice's room and covered in baby stuff, you only let her go in certain parts of the house and it's boring there. She just doesn't like it. I can't make her like something. I told her that you really want to see her. I've explained sometimes you need to do something you don't want to do so you can grow and maybe change your mind on how you feel.' — ADD-004 maximum expression: Olivia's comprehensive indictment of Eli's home environment (sleep problems, Milo conflict, food inadequacy, space displacement by Alice, movement restrictions, boredom) delivered to Eli in extended reported speech; ADD-001 (Milo fights, Alice's room displacing Olivia's space); ADD-002 implicit (inadequate home environment framing). ADD-002 explicit nodes: ROW-8161 'Your refusal to provide a healthy home was your refusal to be a consistent or proper parent' (cat-allergy historical reframe — Melissa ties Eli's prior refusal to remove cats to categorical parenting inadequacy); ROW-8162 'Once the cats were gone I don't know why you still never chose to see her and your visitations have been very inconsistent sometimes going weeks between' (abandonment arc extension — 'still never chose to see her' even after the cat excuse was removed). Structural analysis: Melissa delivers Olivia's comprehensive complaint list AFTER framing it as a factual account she is compelled to relay ('I can't make her like something' — ROW-8177), which simultaneously: (1) provides an inadequate-father narrative to Eli (RF-01); (2) justifies the visit refusal with child-preference rationale (RF-02). The ROW-6819 coaching admission context makes the comprehensiveness and specificity of this complaint list suspect — many items mirror Melissa's own prior attack vectors (Milo conflict, Alice displacing Olivia, food inadequacy, Abby presence). Counter-indicators: ROW-8163 ('Nobody is saying that the order shouldn't be supported. I never said im not sending her.') — Melissa verbally asserts she will comply with the parenting plan; ROW-8177's closing section shows Melissa did explain Eli's perspective to Olivia ('I told her that you really want to see her / I've explained sometimes you need to do something you don't want to do'). However the cumulative effect of the relay remains ADD-004 primary."
+    }
+  ],
+
+  "primary_flag_count": 1,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B028-P001",
+      "row": "ROW-8104",
+      "date": "2025-08-14",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "August 14 — 'I said she asked it. Can your dumbass not read?' (ROW-8104). ADD-002 adjacent name-calling; characterizes Eli as unable to read/comprehend (cognitive inadequacy framing). Single message; peripheral threshold. Consistent with prior ADD-002 casual name-calling pattern (ROW-7725 'your stupid ass,' ROW-6985 'dumbass')."
+    }
+  ],
+
+  "peripheral_flag_count": 1,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": "RF01-B028-S001",
+      "signal_count_before": 26,
+      "signal_count_after": 27,
+      "severity": 2,
+      "notes": "B-028 adds 1 Sev-2 signal. Total: 27 signals (2 Sev-1, 25 Sev-2). RF01-B028-S001 (Aug 24-28): most comprehensive ADD-004 relay in the record — Olivia's multi-factor complaint list about Eli's home delivered in extended reported speech. Combined with ADD-001 Abby framing ('all you do is follow Abby around') and ADD-002 parenting-inadequacy framing. This signal is structurally significant because it demonstrates the visit refusal cascade functioning as an RF-01 delivery mechanism: Olivia's refusal rationale becomes the vehicle for the inadequate-home/inadequate-father narrative. Last signal date updated: 2025-06-13 → 2025-08-28."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B028-001",
+      "row": "ROW-8139 and ROW-8177",
+      "date": "2025-08-27 to 2025-08-28",
+      "summary": "ROW-8139: 'She said all you do is follow Abby around and not let them do anything then leave' — Olivia's characterization of Eli's parenting style delivered in reported speech; ADD-001+ADD-004; structurally mirrors prior Melissa attacks (B-008, B-012) now in Olivia's alleged voice. ROW-8177: Comprehensive complaint relay — 'She has trouble sleeping there, Milo and her fight too much, you dont have food she likes, she doesn't feel like she has space since her room is now Alice's room and covered in baby stuff, you only let her go in certain parts of the house and it's boring there. She just doesn't like it.' — most extensive ADD-004 relay in the record. Attorney: note coherence with ROW-6819 coaching admission; the specificity and framing of complaints mirrors Melissa's own prior attack vectors. Both verbatim attorney review items."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "Bimodal. Aug 8-23 (ROW-8062-8126): cooperative to routine — Eli managing pickup timing, school year starting, Olivia broke a finger (Sep 2, minor). Aug 24-29 (ROW-8127-8183): visit refusal cascade — 5-day multi-message dispute with Melissa relaying Olivia's escalating refusal and comprehensive complaint list; primary RF-01 and RF-02 content. Aug 30-Sep 12 (ROW-8184-8228): returns to cooperative baseline — parenting plan scheduling messages, Eli attending events.",
+    "visit_refusal_cascade": "The Aug 24-29 cascade is the first documented multi-day visit refusal in the record. Sequence: Melissa signals Olivia's preference (Aug 24 ROW-8127) → Olivia characterized as 'adamant' (Aug 27 ROW-8131) → Olivia's Abby complaint relayed (Aug 27 ROW-8139) → visit enforcement resistance ('drag her out,' ROW-8148-8149 Aug 28) → comprehensive complaint list (Aug 28 ROW-8177). RF-02 primary (visit refusal gatekeeping); RF-01 primary (ADD-004 complaint relay as inadequate-father narrative delivery).",
+    "abby_through_olivia": "ROW-8139 is a qualitative escalation in the Abby attack vector: Melissa delivers the 'all you do is follow Abby around' characterization attributed to Olivia. Prior Abby attack iterations (B-007-B-012) were Melissa's own characterizations. This iteration attributes the same narrative to Olivia, converting it from Melissa's opinion to Olivia's lived experience. Combined with ROW-8177's Milo conflict and Alice's room elements, the Abby/Milo/Alice household framing is now delivered entirely in Olivia's alleged voice.",
+    "coaching_admission_relevance": "ROW-6819 coaching admission (Aug 2024): 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me.' The specificity and comprehensiveness of ROW-8177's complaint list — touching every prior Melissa attack vector (food, space, Milo conflict, Alice displacement, Abby control, movement restrictions) — should be evaluated in this context. Whether Olivia spontaneously enumerated all these factors or was coached/cued, Melissa's act of relaying them to Eli is ADD-004."
+  }
+}

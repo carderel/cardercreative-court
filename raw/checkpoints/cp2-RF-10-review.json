@@ -1,0 +1,63 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "generated": "2026-04-28",
+  "status": "pending",
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "tone_assessment": "Cooperative baseline. Zero RF-10 primary signals. Functional co-parenting engagement in pre-escalation period. IMPORTANT: RF-10 manifests as INACTION \u2014 the absence of response is the signal. Only 2 triage keyword hits across entire dataset; full pass required for structural gap analysis. B-001 establishes the cooperative co-parenting baseline for measuring subsequent deterioration."
+  },
+  "calibration_questions": [
+    {
+      "id": "CP2-RF10-Q1",
+      "topic": "Overall co-parenting responsiveness pattern",
+      "question": "(a) Generally, how does Melissa respond to routine co-parenting requests \u2014 medical, school, scheduling? Does she respond promptly to everything, selectively, or does she routinely ignore certain categories? (b) Are there specific topics she consistently ignores or deflects \u2014 e.g., your requests for medical information, school event notices, activity schedules? (c) Is her response rate different for 'convenient' topics (things that benefit her) vs. requests that require her cooperation?",
+      "why_asked": "RF-10 is the quietest red flag \u2014 manifesting as silence and selective responsiveness. Understanding the general pattern helps calibrate what counts as meaningful non-response vs. ordinary communication lag.",
+      "classification_impact": "High \u2014 establishes the baseline for what constitutes a meaningful co-parenting refusal vs. normal communication variance"
+    },
+    {
+      "id": "CP2-RF10-Q2",
+      "topic": "Unilateral decisions about Olivia",
+      "question": "(a) Has Melissa made major decisions about Olivia without consulting you \u2014 medical procedures, school enrollment, therapy choices, religious practices, or significant activity commitments? (b) Does she inform you AFTER the fact rather than consulting you beforehand on major decisions? (c) The allergy specialist visit (RF-15 ADD-006) \u2014 was that done without any prior discussion with you? Any other medical decisions made unilaterally?",
+      "why_asked": "Unilateral major decisions are RF-10 primary signals. The allergy specialist visit is already documented (RF-15) \u2014 this question identifies additional unilateral decision patterns beyond what the RF-15 record captured.",
+      "classification_impact": "High \u2014 each confirmed unilateral major decision is an RF-10 primary flag; pattern of them activates ARC-RF10-001"
+    },
+    {
+      "id": "CP2-RF10-Q3",
+      "topic": "Information withheld \u2014 school, medical, activities",
+      "question": "(a) Have there been situations where you found out about a school event, medical appointment, or Olivia's activity after the fact \u2014 things you should have been included in? (b) Does Melissa share Olivia's school calendar, medical summaries, or provider contact information proactively? Or do you have to request everything individually? (c) The RF-08 record documents Melissa mining Olivia for information about Eli's household (ROW-6819). Has it worked the other way \u2014 does Melissa share information about her household and Olivia's life there with you?",
+      "why_asked": "Information blackout is ARC-RF10-002 territory. The distinction from RF-08 (triangulation/relay) is direction: RF-08 = Olivia used as intelligence channel INTO Eli; RF-10 = Eli denied information that should come directly FROM Melissa.",
+      "classification_impact": "High \u2014 systematic information withholding activates ARC-RF10-002; establishes RF-10 + RF-02 compound when information denial is linked to access denial"
+    },
+    {
+      "id": "CP2-RF10-Q4",
+      "topic": "Response to hostile exchanges vs. substantive requests",
+      "question": "(a) When Melissa is in a hostile episode (RF-04/RF-13 pattern), does she still respond to substantive co-parenting requests \u2014 or do all practical communications get ignored during those periods? (b) Conversely, when things are relatively calm, is she more cooperative? Or does co-parenting responsiveness track something other than conflict level? (c) Has she ever explicitly refused to discuss a parenting topic \u2014 e.g., 'I'm not talking about that,' 'deal with it,' or just silence on a specific topic?",
+      "why_asked": "Distinguishing conflict-correlated responsiveness from structural refusal is important for arc severity. If responsiveness drops during hostile episodes, it's RF-13/RF-04 compound; if refusal is systematic regardless of conflict level, it's RF-10 primary.",
+      "classification_impact": "Medium-high \u2014 determines whether RF-10 is a structural arc (ACTIVE) or a component of conflict escalation arcs (compound)"
+    }
+  ],
+  "addenda_proposed": [
+    {
+      "id": "RF10-ADD-001-PROPOSED",
+      "title": "Structural Gap Analysis Methodology",
+      "rule_draft": "[PENDING CP2] RF-10 primary detection: scan for (1) messages sent by Eli that received no response \u2014 identify the topic and whether a response was reasonably expected; (2) unilateral major decisions documented in the record; (3) information that Eli had to obtain through other channels (Olivia, school directly, medical provider) rather than from Melissa. Each confirmed gap is an RF-10 signal. Distinguish: silence on hostile messages (appropriate) vs. silence on substantive co-parenting requests (RF-10).",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF10-ADD-002-PROPOSED",
+      "title": "RF-10 + RF-02 Compound Rule",
+      "rule_draft": "[PENDING CP2] When information withholding or co-parenting refusal is directly linked to access denial: RF-02 primary + RF-10 secondary. When co-parenting refusal is independent of access events (e.g., ignoring medical information requests during a non-conflict period): RF-10 primary, standalone.",
+      "status": "pending_cp2"
+    }
+  ],
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda. Initialize ARC-RF10-001 and ARC-RF10-002 at CANDIDATE. Resume B-002. Apply structural gap analysis methodology at each batch \u2014 flag unanswered substantive co-parenting requests even when no explicit refusal language appears. Cross-reference RF-02 for compound tagging. 2 keyword hits only in triage \u2014 most signals will be zero-keyword structural gaps.",
+    "signal_sourcing_note": "RF-10 requires active gap detection. At each batch: (1) note any Eli-sent messages that appear to be requests for information, scheduling, medical, or school coordination; (2) check subsequent messages for response; (3) flag non-responses as potential RF-10 signals. Hot periods per triage: 2023-02, 2024-08 \u2014 cross-check against RF-04 conflict cluster records for overlap."
+  }
+}

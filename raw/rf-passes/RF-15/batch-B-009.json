@@ -1,0 +1,63 @@
+{
+  "batch_id": "B-009",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2023-07-15",
+    "end": "2023-08-20"
+  },
+  "row_range": {
+    "start": 2795,
+    "end": 3175
+  },
+  "message_count": 508,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "WATCHING",
+    "ARC-RF15-002": "WATCHING"
+  },
+  "arc_signals_cumulative": 1,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B009-001",
+      "date": "2023-08-13",
+      "row_ref": "ROW-3240",
+      "severity": 1,
+      "rf15_category": "C",
+      "direction": "received",
+      "summary": "Cheer game incest reference. Aug 13 2023. ROW-3240: 'Abby pregnant or what' \u2014 at Olivia's first cheer game where Melissa, Eli, and Abby are in the same public environment. Casual incest-framing reference during co-parenting public event. Category C (incest/predation framing). Sev-1 (single isolated instance; less explicit than later Category C flags).",
+      "exact_quote": "ROW-3240: 'Abby pregnant or what'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 3,
+      "compound_patterns": [
+        "RF-04+RF-15 peripheral"
+      ],
+      "cross_rf_note": "RF-04 B-009 Sev-1 flag (Aug 13 2023) cross-references this incest-framing instance. Cheer game context makes the implicit pregnancy/incest reference especially pointed."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF15-001",
+      "event": "B-009: Second signal for WATCHING state. Cheer game incest reference is 3rd RF-15 instance across 3 batches \u2014 pattern establishing.",
+      "state": "WATCHING"
+    }
+  ]
+}

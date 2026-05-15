@@ -1,0 +1,56 @@
+{
+  "batch_id": "B-026",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2025-06-11",
+    "end": "2025-07-16"
+  },
+  "row_range": {
+    "start": 9668,
+    "end": 10047
+  },
+  "message_count": 510,
+  "phase": "B",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 12,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B026-001",
+      "date": "2025-06-13",
+      "row_ref": "ROW-9668-10047_range",
+      "severity": 2,
+      "rf15_category": "C",
+      "direction": "received",
+      "summary": "Jun 2025 continuation \u2014 incest-framing + harm relay continuation. Phase B onset. RF-04 B-026 Sev-2 flag with RF-15 cross-reference. Triage hot period 2025-06 confirms concentration. Phase B first appearance of predation-framing language. ADD-002 active. Category C/B.",
+      "exact_quote": "Jun 2025 continuation \u2014 see RF-04 B-026 for exact text.",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 13,
+      "compound_patterns": [
+        "RF-04+RF-15"
+      ]
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

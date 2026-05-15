@@ -1,0 +1,73 @@
+{
+  "batch_id": "B-015",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2024-05-11",
+    "end": "2024-06-13"
+  },
+  "row_range": {
+    "start": 5169,
+    "end": 5564
+  },
+  "message_count": 514,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "WATCHING",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 7,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 2,
+    "note": "Pre-summer 2024: EP-0754 May 14 (52 msgs, FLOOD) + EP-0787 Jun 11 (19 msgs, FLOOD). Two hostile episodes preceding June 2024 mega-cluster (B-016). Hostile frequency accelerating into summer 2024."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B015-001",
+      "episode_cluster": [
+        "EP-0754",
+        "EP-0787"
+      ],
+      "dates": "2024-05-14 and 2024-06-11",
+      "total_messages": 71,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 1,
+      "escalation_shape": "pre-cluster ramp \u2014 two hostile episodes preceding June mega-cluster",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured responses",
+        "received_direction": "hostile escalation both episodes; flooding confirmed",
+        "net_escalation": "moderate Sev-1",
+        "de_escalation_resistance": "Eli disengages both times; Melissa re-initiates"
+      },
+      "cycle_classification": "CYC-002 content-correlated; pre-summer custody/scheduling stress",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 8,
+      "cross_rf_note": "B-015 contains RF-04 (4 flags) and RF-05 signals. CYC-004 legal-ceiling beginning to emerge."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "May-Jun 2024: hostile episode frequency increasing. Highest since Feb 2023. Pre-cursor to summer 2024 peak.",
+      "state": "WATCHING"
+    }
+  ]
+}

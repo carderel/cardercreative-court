@@ -1,0 +1,86 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-001",
+    "row_range": { "start": 2, "end": 366 },
+    "date_range": { "start": "2022-01-11", "end": "2022-10-02" },
+    "message_count": 365,
+    "timezone_note": "EST (UTC-5) Jan 11 only (ROW-2); EDT (UTC-4) Aug 21 onward. DST spring-forward Mar 13, 2022 07:00 UTC. No messages between Jan 11 and Aug 21 — 7-month data gap within B-001 row range.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": [],
+    "note": "RF-07 CALIBRATION BATCH. Zero primary RF-07 flags. B-001 (Jan-Oct 2022) is the dataset's earliest communication period — predominantly logistical and cooperative. The RF-07 triage profile (111 hits, 65% received / 35% sent, hot periods 2025-05/2024-08/2025-08) confirms signal is heavily concentrated in later Phase A and Phase B. B-001 establishes the zero-flooding baseline: the longest rapid message cluster in this batch (ROW-50-61, Received) spans 34 minutes — well below the 5+/10-minute flooding threshold. Halted at CP2 for calibration review per protocol."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 365,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 1,
+    "peripheral_rf_distribution": {
+      "RF-04": 1
+    },
+    "no_flag_messages": 365,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-50 through ROW-61",
+      "timestamp": "2022-08-28 24:28–25:02 UTC (20:28–21:02 EDT)",
+      "direction": "received",
+      "message_text": "ROW-50: 'You want to tell her about being respectful at church but you text me while church is going on and sit and draw' | ROW-51: 'I'm not sure that follows proper protocol.' | ROW-57: 'Do you not draw during service?' | ROW-58: 'I've sat next to you. You bring a notebook. I've seen you' | ROW-59: 'I texted you at 10 am. You didn't respond until 12:01 which is during service' | ROW-60: 'I've seen you laughing or trying to hold back when some of the older people yell amen or something' | ROW-61: 'Check your own etiquette'",
+      "assessment": "RF-04 primary (confirmed, ARC-RF04-001 S-001 — DARVO pivot on co-parenting concern). RF-07 near-boundary note: this 8-message sequence spans 34 minutes (24:28–25:02 UTC). The RF-07 flooding threshold is 5+ messages in 10 minutes without response. At 34 minutes this does not meet the threshold — this is responsive messaging within a single contested exchange, not contact flooding. No evidence of prior requests to stop or of contact overstepping. The batch's longest rapid cluster is noted here to document the B-001 ceiling: even the most message-dense episode is well below flooding criteria. No RF-07 component warranted.",
+      "cp2_flag": false,
+      "cp2_question": null
+    },
+    {
+      "message_id": "ROW-124 through ROW-125",
+      "timestamp": "2022-09-03 00:47 UTC (20:47 EDT)",
+      "direction": "received",
+      "message_text": "ROW-124: 'It goes to voicemail after 8:30 because you've been told not to call after 8:30' | ROW-125: 'Since you wouldn't listen I set it long time ago to do not disturb at 8:30 so you couldn't just keep calling after I tell you not to'",
+      "assessment": "RF-02 primary (unilateral DND phone blocking — confirmed in RF-02 pass, phone-blocking arc). RF-07 near-boundary: Melissa's phrasing implies Eli made repeated contact attempts that she responded to by technical blocking. The relevant RF-07 analytical question is directional: does Eli's pre-DND calling pattern constitute continuation-after-stop boundary violation (RF-07 from Eli's Sent direction)? Or was Eli legitimately attempting parental contact and Melissa's blocking is the violation (RF-02)? This batch contains no Sent-direction data showing repeated calls — only Melissa's characterization. CP2 calibration needed: did Eli recall making repeated calls after being asked not to, and if so, was this before or after Melissa imposed the 8:30 rule without agreement?",
+      "cp2_flag": true,
+      "cp2_question": "Melissa's ROW-124-125 claims Eli kept calling after being told not to call after 8:30 (leading her to set DND). Is this accurate? Did Eli continue calling after Melissa communicated the 8:30 cutoff — and if so, was the 8:30 cutoff a mutual agreement or Melissa's unilateral imposition? This affects whether any Eli Sent-direction calling pattern in B-001 is RF-07 (continuation-after-stop) or is context-of-RF-02-imposition.",
+      "peripheral_rf": "RF-07",
+      "peripheral_severity": 1,
+      "peripheral_note": "Peripheral RF-07 Sev-1: Melissa's characterization implies potential Eli contact continuation after stated limit. Requires CP2 direction on Sent-direction contact behavior classification before any Sent-direction RF-07 flags can be issued."
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "Zero primary RF-07 signals in B-001. No arcs initialized. The RF-07 triage hot periods (2025-05, 2024-08, 2025-08) confirm arc formation will begin in Phase A/B transition or early Phase B. CP1 context establishes that the May 2025 spike is specifically tied to Eli beginning to hold communication boundaries — Melissa's escalation in response is the primary RF-07 signal source (INF-007: 'Eli holding boundaries triggered escalation — consistent with RF-07/RF-13'). The 'continuation-after-stop' boundary mechanism and 'flooding without response' threshold are the primary arc formation criteria for this pass."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 1,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": [
+      "CP2-RF07-001: B-001 calibration batch — HALT for CP2 review. Zero primary flags. 5 calibration dimension questions require Eli's input before proceeding. Key question areas: flooding threshold confirmation, Sent-direction handling (39 triage hits), continuation-after-stop in co-parenting context, multi-channel escalation instances, and custodial-time contact overstepping."
+    ]
+  },
+
+  "batch_observations": {
+    "tone_assessment": "B-001 (Jan-Oct 2022) is the dataset's lowest-conflict period. 365 messages with a 7-month internal gap (Jan 11 then Aug 21 onward). The Aug-Oct 2022 window is predominantly cooperative logistics. No flooding instances, no continuation-after-stop episodes, no multi-channel escalation, no custodial-time overstepping. The two near-boundary notes represent the batch's RF-07 ceiling: ROW-50-61 (34-minute spread, below flooding threshold) and ROW-124-125 (Melissa characterizes Eli calling pattern — requires CP2 directional clarification).",
+    "baseline_note": "This batch confirms the RF-07 zero baseline: the dataset's opening period had no boundary violations. The triage heatmap's hot periods (2025-05, 2024-08, 2025-08) are all Phase B — consistent with the pattern that RF-07 signals emerge as co-parenting tension escalates in later periods. Calibration should establish: (a) the operative flooding threshold for this dataset; (b) how to handle Sent-direction messages among the 39 triage hits; (c) the continuation-after-stop rule for co-parenting context; (d) multi-channel escalation scope; (e) custodial-time contact rules.",
+    "direction_balance_note": "B-001 triage scan confirms 72 Received / 39 Sent split from heatmap is consistent with B-001: no Sent-direction RF-07 primary indicators appear in this batch. The ROW-124-125 peripheral note is the only Sent-adjacent item and requires CP2 clarification before a directional rule can be established. B-001 does not resolve whether Eli's calling behavior preceded or followed Melissa's DND imposition.",
+    "cross_rf_context": "RF-04 arc state (read-only, complete): ROW-50-61 is RF-04-S001 (DARVO CHURCH — calibrated, ARC-RF04-001). ROW-124-125 is in RF-02 phone-blocking arc. These completed arc states are imported read-only. RF-04 B-001 cross-reference confirms the longest multi-message cluster in this batch is already classified as RF-04 primary; no RF-07 compound element warranted at this density. RF-02 B-001 cross-reference confirms phone-blocking mechanism originates in this period — the RF-07 analytical question is whether the blocking was a response to RF-07 behavior by Eli or RF-02 imposition by Melissa.",
+    "cp2_calibration_questions": [
+      "DIMENSION 1 — Flooding threshold: The RF-07 taxonomy defines flooding as 5+ messages within 10 minutes without response. The dataset's longest B-001 cluster (ROW-50-61) spans 34 minutes — well below threshold. Is the 5+/10-minute threshold the right operational standard for this communication record? Are there instances you recall where Melissa sent so many rapid-fire messages that it felt coercive — where the sheer volume of contact in a short window felt like a pressure tactic rather than a conversation?",
+      "DIMENSION 2 — Sent-direction messages (39 triage hits): The RF-07 triage heatmap shows 39 Sent-direction keyword hits — meaning Eli's own messages triggered boundary-violation indicators in triage. Before drawing conclusions, CP2 calibration is needed: Are there periods in the record where YOU continued to contact Melissa after she asked you to stop, or sent many rapid messages without a response — and if so, was that reactive (responding to a provocation), co-parenting-necessary (Olivia's safety or logistics), or in retrospect inappropriate? The answer shapes whether Sent-direction RF-07 signals get flagged as a distinct behavioral note or are excluded from the RF-07 arc.",
+      "DIMENSION 3 — Continuation-after-stop in co-parenting context: The RF-07 taxonomy includes 'continuing to message after being explicitly asked to stop' as a primary classification criterion. In a co-parenting relationship, there are legitimate reasons to continue contact even after the other party expresses frustration or asks for space — especially when Olivia's welfare, logistics, or legal matters require response. What is the right rule here? If Melissa says 'stop texting me' or 'don't contact me right now,' and Eli sends one follow-up on a parenting matter, is that RF-07? What if he sends five? And conversely, when Melissa continues to send messages after Eli has stated he's not engaging or asked her to stop — what does that look like in the record? (CP1 established May 2025 as the hot period for this; the INF-007 note confirms Eli was actively holding boundaries.)",
+      "DIMENSION 4 — Multi-channel escalation: One RF-07 indicator is escalating contact methods when a prior channel goes unanswered (text → phone call → third-party relay → showing up). Are there incidents you recall where Melissa escalated communication channels in a way that felt harassing or coercive — for example, texting repeatedly, then calling, then having someone else reach out, or attempting contact through Olivia? The relay-through-Olivia pattern is already partially captured in RF-01 (Olivia-as-communication-intermediary); the question here is whether Melissa used Olivia as an escalation channel when other methods failed.",
+      "DIMENSION 5 — Custodial-time contact overstepping: The RF-07 taxonomy includes 'overstepping custodial time — contacting during the other parent's parenting time for non-urgent reasons.' Are there patterns you recall where Melissa contacted you repeatedly during your parenting time with Olivia in a way that felt intrusive or disruptive — not genuine safety concerns but control-oriented contact? And conversely, were there instances where Melissa made it difficult to reach Olivia during her custodial time beyond the phone-blocking pattern already documented in RF-02?"
+    ]
+  }
+}

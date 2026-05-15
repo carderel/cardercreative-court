@@ -1,0 +1,37 @@
+{
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "arc_state_version": "initial",
+  "last_updated": "2026-04-28",
+  "dataset_close": "2026-04-12",
+  "arcs": [
+    {
+      "arc_id": "ARC-RF10-001",
+      "arc_name": "Co-Parenting Refusal Pattern",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 cooperative co-parenting engagement in baseline; structural gap analysis required across full dataset."
+        }
+      ]
+    },
+    {
+      "arc_id": "ARC-RF10-002",
+      "arc_name": "Information Blackout Pattern",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 no information blackout signals in cooperative baseline."
+        }
+      ]
+    }
+  ]
+}

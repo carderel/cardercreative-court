@@ -1,0 +1,57 @@
+{
+  "batch_id": "B-016",
+  "date_range": {
+    "start": "2024-06-14",
+    "end": "2024-07-15"
+  },
+  "message_count": "~519",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 6,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Jun-Jul 2024. S-006: Melissa reports bruises from Milo throwing water balloons at Olivia (Jun 17, 2024) \u2014 delivered in hostile context ('I know you don't care. Just trying to deflect since you were proved wrong'). Safety allegation about supervision at Eli's household. Jun 26: Olivia fell at park and bruised her arm \u2014 cooperative reporting, no allegation against Eli. ARC-RF14-001 signal 5."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-006",
+      "row_ref": "ROW-5735/7729-7730",
+      "date": "2024-06-17",
+      "direction": "Received",
+      "severity": 1,
+      "arc": "ARC-RF14-001",
+      "arc_signal_num": 5,
+      "type": "Safety allegation \u2014 supervision/physical harm",
+      "description": "ROW-7729: 'Also Olivia came home with bruises on her legs from Milo throwing water balloons at her and hitting her really hard with them.' ROW-7730: 'Make sure you watch him better.' Melissa reporting bruises sustained at Eli's household (Milo = child at Eli's household). Safety allegation about supervision quality delivered in hostile framing (ROW-7728: 'although I know you don't care. Just simply trying to deflect since you were proved wrong and now look stupid'). Hostile delivery context suggests weaponized framing but genuine bruise report.",
+      "addenda_applied": [
+        "RF14-ADD-001"
+      ]
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "RF14-S-006: Milo water balloon bruise report. Signal count now 5. Pattern: Melissa reports injuries/safety concerns about Eli's household in hostile framing. WATCHING \u2192 approaching ACTIVE threshold.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 WATCHING (2 signals)",
+      "state": "WATCHING"
+    }
+  ]
+}

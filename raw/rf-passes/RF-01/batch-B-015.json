@@ -1,0 +1,112 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-015",
+    "row_range": { "start": 5239, "end": 5624 },
+    "date_range": { "start": "2024-05-11", "end": "2024-06-13" },
+    "message_count": 386,
+    "timezone_note": "Entirely EDT (UTC-4). DST started Mar 10, 2024; next change Nov 3, 2024. Row boundary: ROW-5238 (2024-05-10 23:45 EDT / 2024-05-11 03:45 UTC) belongs to B-014; B-015 starts at ROW-5239 (2024-05-11 13:30 EDT), consistent with RF-02 B-015 first_row.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B015-F001",
+      "arc_signal_ref": "RF01-B015-S001",
+      "row": "ROW-5301-5316",
+      "date": "2024-05-14",
+      "rf_tags": ["RF-01", "RF-15", "RF-05"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-002", "RF01-ADD-005"],
+      "arc": "ARC-RF01-001",
+      "summary": "May 14 — Most extreme escalation cluster in the record. Context: co-parenting channel discussion of summer childcare. Melissa launches into a sustained written attack combining inadequate-father framing (ADD-002) and full false allegation construction (ADD-005). ROW-5301: 'I'm way more comfortable with her spending a whole day with them than you' — direct written statement that Melissa trusts third parties over Eli as caregiver for Olivia. ROW-5302-5303: 'That's also really concerning that you don't trust yourself either' — frames Eli's reasonable caution about unfamiliar caregivers as evidence he is self-aware of being a danger to his daughter. ROW-5306: 'I've got quite a few reservations about her staying with you.' ROW-5307: '1. You chose a cat over your daughter' (ADD-002). ROW-5308: '2. You have the ability to see her but choose to do so for about 3 hours a week' (ADD-002 — deliberate-choice framing of limited contact). ROW-5309: '3. The more I think about the night Abby was drunk the more I wonder what your intentions were and what you actually may have done.' ROW-5310: 'You clearly set her up to get drunk and that was after sending her weird messages sexual in nature. Then as long as Milo was crying you didn't try to help him. Instead I go up to find you standing over her with her left breast out.' ROW-5311: 'That kid was up there crying a long time. I thought he was sick and that's why I brought Tylenol up only to find that. I don't know who you thought would watch him.' ROW-5312: 'I don't know why you gave her a bottle of tequila.' ROW-5313: 'The more I've thought of that night the more I really question what really happened.' ROW-5314: 'At the time I didn't think anything of it except she was really drunk because I didn't think you could do something like that.' ROW-5315: 'Then the way she was yelling and fighting after I just thought she was really out of it but now I wonder if she still thought you were attacking her.' ROW-5316: 'Then I remember that you said you told her not to tell anyone that she had been raped before because you had a friend that was raped and when she told someone she got raped by that guy cause he knew she wouldn't tell. I wonder if you were that guy.' ADD-005 fully activated: escalates predatory-father arc component (first addition since B-010/ROW-3629-3630) from oblique implication to full constructed rape narrative alleging Eli: (1) deliberately intoxicated Abby, (2) was found in a sexualized position over her unconscious body, (3) may have raped her that night, (4) may have been a prior rapist who selected Abby knowing she had prior trauma and would not report. Most extreme false allegation in the record. RF-01 primary; RF-15 heavily implicated; RF-05 adjacent (threat framing in prior context)."
+    }
+  ],
+
+  "primary_flag_count": 1,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B015-P001",
+      "row": "ROW-5257-5261",
+      "date": "2024-05-12",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "May 12 — Vaping accusation relay: 'You know she has a lot of breathing problems. Stop vaping near her' (ROW-5257); Eli corrects: 'We were outside and she was over ten feet from me' (ROW-5258); 'She said it was 6 feet' (ROW-5259); 'You can put it aside while you spend time with her / It ain't gonna kill you' (ROW-5260-5261). Melissa relays Olivia's account (6 feet) over Eli's correction (10 feet) without acknowledgment. ADD-004 adjacent. RF-04 peripheral. Pattern consistent with phone-hang-up relay flags in B-013/B-014."
+    },
+    {
+      "flag_id": "RF01-B015-P002",
+      "row": "ROW-5263",
+      "date": "2024-05-13",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "May 13 — 'She said you didn't call' (ROW-5263); Eli corrects: 'I did it just went straight to not answering' (ROW-5264). Melissa relays Olivia's characterization of missed call as Eli not calling, without acknowledging Eli's explanation. RF-04 peripheral. Fifth instance of missed-call relay pattern (B-013 ROW-5156-5158; B-014 ROW-4991-4994, ROW-5156-5158 carried over)."
+    },
+    {
+      "flag_id": "RF01-B015-P003",
+      "row": "ROW-5267-5268",
+      "date": "2024-05-14",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "May 14 — Job change contempt: Eli announces starting full time at WowBrands; Melissa: 'You got fired then I suspect' (ROW-5267); 'I don't believe that you quit. You always get fired because you don't put in the effort' (ROW-5268). Character contempt in co-parenting channel; ADD-002 adjacent (inadequate/unreliable). RF-04 peripheral. Immediately precedes the primary cluster (ROW-5301-5316)."
+    },
+    {
+      "flag_id": "RF01-B015-P004",
+      "row": "ROW-5270",
+      "date": "2024-05-14",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "May 14 — Baby/pregnancy framing: 'lol. So you thought with a new baby coming it would be better to be away from the house so you don't have to deal with it. Lol' (ROW-5270). First written confirmation that Melissa knows of Abby's pregnancy (B-014 ROW-5127 'Abby preggers?' was inquiry; this is statement of known fact). Frames Eli's career transition as avoidance of parental/familial responsibility due to the pregnancy. RF-04/RF-01 adjacent. Monitoring: pregnancy-as-content-area now active; may feed RF-01 narrative re: Eli's competing family."
+    },
+    {
+      "flag_id": "RF01-B015-P005",
+      "row": "ROW-5566-5567",
+      "date": "2024-06-09",
+      "rf_tags": ["RF-05", "RF-04"],
+      "severity": "peripheral",
+      "summary": "June 9 — Lake threat: 'If my baby drowns I will murder you' (ROW-5566); 'For real though' (ROW-5567). Context: Eli taking Olivia to Alum Creek State Park beach. Threat framing implies Eli is unsafe/incompetent as Olivia's water supervisor. RF-05 primary (threat to be flagged in RF-05 pass); RF-04 peripheral (incompetent-father framing for water safety). RF-01 peripheral."
+    },
+    {
+      "flag_id": "RF01-B015-P006",
+      "row": "ROW-5606",
+      "date": "2024-06-13",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "June 13 — Father's Day relay: 'She's going to be sad that you won't be there and the other dads will' (ROW-5606). Context: Eli cannot attend Father's Day event at Primrose due to 3-4 PM work meeting. Melissa relays Olivia's anticipated emotional state and compares Eli to 'the other dads' as pressure. ADD-004 adjacent. RF-04 peripheral. Eli's explanation ('I have a meeting in that window') is practical and verifiable."
+    }
+  ],
+
+  "peripheral_flag_count": 6,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": "RF01-B015-S001",
+      "signal_count_before": 15,
+      "signal_count_after": 16,
+      "severity": 2,
+      "notes": "B-015 adds 1 Sev-2 signal (ROW-5301-5316, May 14). Total: 16 signals (2 Sev-1, 14 Sev-2). Last signal date updated: 2024-03-17 → 2024-05-14. Most extreme escalation in the record: predatory-father arc component (added at B-010 ROW-3629-3630 as 'I really hope you weren't just making yourself available because there were young girls there') now escalates to full constructed rape narrative alleging Eli deliberately intoxicated Abby and sexually assaulted her. Pattern break: after two consecutive quiet batches (B-011, B-014) and one low-intensity batch (B-013), B-015 contains the most extreme single-flag escalation in the RF-01 record."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B015-001",
+      "row": "ROW-5309-5316",
+      "date": "2024-05-14",
+      "priority": "high",
+      "summary": "Full rape narrative construction in co-parenting channel. Melissa alleges in writing: (1) Eli deliberately intoxicated Abby with tequila; (2) was found 'standing over her with her left breast out' while Milo cried unattended upstairs; (3) Abby may have been 'fighting' because 'she still thought you were attacking her'; (4) Eli may be a repeat rapist who selected Abby knowing she had prior sexual trauma and 'told her not to tell anyone that she had been raped before.' Most extreme written false allegation in the 15,000-message record. Escalates ARC-RF01-001 predatory-father component from oblique implication (ROW-3629-3630) to explicit rape narrative. Document for RF-15 primary analysis; cross-reference with RF-01 arc. Eli does not appear to respond substantively to ROW-5309-5316 in this batch."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "Mixed. High cooperative content overall — Outer Banks vacation (May 19-26) produces positive photo-sharing, parasailing coordination, beach updates; summer childcare planning (Boys and Girls Club, Becky as babysitter option) is substantively cooperative; illness management (Olivia's fever/vomiting ROW-5318-5390) shows genuine co-parenting. Sharp high-intensity escalation cluster on May 14 (ROW-5267-5316) stands as a severe outlier against otherwise moderate tone. June 11 Olivia behavioral incident (ROW-5582-5599: hitting Melissa, 'get your hands off me bitch') is notable but handled jointly without RF-01 escalation.",
+    "escalation_context_may14": "The May 14 escalation (ROW-5267-5316) begins with Eli's job change announcement and progresses: contempt (ROW-5267-5268) → baby/pregnancy jab (ROW-5270) → summer childcare disagreement (ROW-5275-5300) → 'more comfortable with strangers than you' (ROW-5301) → predatory self-trust implication (ROW-5303) → numbered reservations list (ROW-5306-5308) → full rape narrative (ROW-5309-5316). The escalation is triggered by Eli's reasonable pushback on Olivia attending an unsupervised home environment and builds to the most extreme false allegation in the record. The rape narrative appears unprompted by any specific provocation in this exchange.",
+    "pregnancy_confirmed": "ROW-5270 (May 14): Melissa references 'a new baby coming' as established fact — confirms Melissa knows of Abby's pregnancy. First written pregnancy content in the record since B-014 ROW-5127 ('Abby preggers?' inquiry). Monitoring: pregnancy-as-attack-vector active, consistent with B-014 flag re RF-01/RF-15 implications.",
+    "outer_banks_vacation": "May 19-26, 2024: Olivia on Outer Banks vacation with Melissa. Melissa shares address (ROW-5393-5394), vacation rental link, photos (ROW-5403-5404, 5417). Parasailing coordination (ROW-5408-5417). Cooperative content; Eli supportive throughout. Notably positive co-parenting segment.",
+    "fathers_day": "June 13: Father's Day event at Primrose (3:30 PM). Eli has 3-4 PM meeting, cannot attend. Melissa's response (ROW-5606-5607) is mild pressure — 'She's going to be sad that you won't be there and the other dads will' — but Eli offers to pick Olivia up that evening as alternative. Exchange is low-level; not a primary escalation.",
+    "behavioral_incident_june11": "ROW-5582-5599: Olivia hits Melissa, calls her 'bitch,' kicks her; Melissa takes devices; Olivia remains defiant. Melissa relays the incident factually to Eli. Eli responds with concern (ROW-5593: 'we have never struck her'). Melissa deflects Eli's implied question (ROW-5596: 'you were still here / trying to accuse me of something') but does not escalate into RF-01 framing. ROW-5599: 'Your kid is out of control' — mild contempt. Notable for child behavioral documentation; not RF-01 primary."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-031",
+    "row_range": {
+      "start": null,
+      "end": null
+    },
+    "date_range": {
+      "start": "2026-04-08",
+      "end": "2026-04-12"
+    },
+    "message_count": null,
+    "phase": "C",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ],
+    "note": "Phase C. Dataset final batch. Three-block data structure."
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": null,
+    "primary_flags": 1,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": null,
+    "flag_rate": "1 primary flag"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B031-S011",
+      "arc_signal_ref": "ARC-RF08-001-S011",
+      "rows": "ROW-15592",
+      "date": "2026-04-12",
+      "severity": 2,
+      "rf_tags": [
+        "RF-08",
+        "RF-04"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-003"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "ACTIVE: 11 signals (arc unresolved at dataset close)",
+      "compound_id": "COMP-RF08-011",
+      "summary": "Peer-parent relay \u2014 Naomi's father invoked as third-party corroborating witness for Olivia's distress. ROW-15592: 'Also Naomi was telling her dad yesterday that Olivia doesn't like that you yell at her for no reason. Olivia was telling her about valentine weekend and how she can't talk to you and you were screaming for no reason.' Context: Apr 12 2026 DARVO bruise/abuse reversal cluster (RF-04 B-031-001). After Melissa deflects Eli's bruise inquiry, she adds the peer-parent relay as an independent corroboration: Naomi's father is positioned as a third-party adult witness who independently heard Olivia's characterization of Eli's behavior. RF-08 mechanisms: (1) peer-parent network relay per ADD-003 \u2014 third-party parent cited as corroborating witness; (2) the relay circulates a characterization of the Feb 15 2026 incident ('screaming for no reason') through a parent network two months after the event; (3) Naomi's father becomes a structural element in Melissa's narrative \u2014 his knowledge of Olivia's distress implies a broader community of adults who share Melissa's characterization of Eli. Cross-reference RF-04 B-031-001 (DARVO bruise reversal cluster).",
+      "exact_quotes": [
+        "ROW-15592 (Received): 'Also Naomi was telling her dad yesterday that Olivia doesn\\'t like that you yell at her for no reason. Olivia was telling her about valentine weekend and how she can\\'t talk to you and you were screaming for no reason'"
+      ],
+      "rf08_mechanism": "Peer-parent relay per ADD-003: Naomi's father cited as third-party adult who independently heard Olivia's characterization of Eli. This is the dataset's first documented peer-parent relay and the first time a third-party adult outside the direct family is positioned as a corroborating witness.",
+      "network_implications_note": "ROW-15592 implies a peer-parent information network: Olivia shared her characterization of Eli with Naomi; Naomi shared it with her father; Naomi's father shared it with Melissa (or Melissa is presenting this relay chain as verification). The mechanism amplifies the isolation dynamic: a community of peer parents has been given Melissa's narrative about Eli's behavior."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-011"
+    ],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 ACTIVE: 11 signals. Arc unresolved at dataset close (Apr 12 2026). The peer-parent relay in ROW-15592 introduces a new sub-mechanism at the dataset's final batch \u2014 synthesis should assess whether the Naomi's-father relay preceded B-031 in unreported instances."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-011",
+      "rf_passes": [
+        "RF-08",
+        "RF-04"
+      ],
+      "rf04_ref": "RF04-B031-001",
+      "description": "Peer-parent relay in DARVO bruise context: RF-08 ADD-003 (Naomi's father as third-party corroborating witness for Olivia's distress characterization) + RF-04 (DARVO bruise reversal \u2014 Eli's welfare check reframed as systematic abuse-accusation campaign). The peer-parent relay is appended to the DARVO cluster as additional corroboration, amplifying the false-characterization through a third-party network."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase C. Dataset final batch (Apr 8-12 2026). S011 introduces the peer-parent relay mechanism at the dataset close.",
+    "rf08_assessment": "One Sev-2 primary flag. ROW-15592 is the dataset's only documented peer-parent relay event. The mechanism implies Olivia's characterizations of Eli circulate beyond the direct parent-child relationship into a peer network \u2014 Naomi's father as the documented example. Arc unresolved at dataset close.",
+    "cross_rf_context": "RF-04 compound. ROW-15592 is appended to the RF-04 DARVO bruise cluster (Apr 12 2026) as additional corroboration. The peer-parent relay amplifies the false-characterization by adding apparent third-party verification: not just Melissa's characterization of Eli's behavior, but a community of parents who heard it from Olivia."
+  }
+}

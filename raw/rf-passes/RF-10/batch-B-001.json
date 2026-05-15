@@ -1,0 +1,67 @@
+{
+  "batch_id": "B-001",
+  "date_range": {
+    "start": "2022-01-11",
+    "end": "2022-10-02"
+  },
+  "row_range": {
+    "start": 2,
+    "end": 366
+  },
+  "message_count": 365,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [],
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "pass_context": {
+    "rf10_definition": "RF-10 flags: stonewalling, ignoring reasonable requests, unilateral decisions, or refusing to engage in cooperative parenting. CRITICAL NOTE: RF-10 manifests as INACTION \u2014 silence and non-response are the primary signals. Keyword hits will be low; structural gap analysis (unanswered messages, response latency, selective responsiveness) is the primary detection methodology.",
+    "cross_rf_foundation": {
+      "rf02_context": "RF-02 complete (101 flags). RF-02 is access DENIAL; RF-10 is engagement REFUSAL. These overlap but are distinct: RF-02 = 'you can't see Olivia'; RF-10 = 'I won't engage with your co-parenting requests.' Both can appear in the same event. Required-intermediary arc (64 signals) in RF-02 reflects a co-parenting structure where Melissa routes communication through conditions \u2014 that is also RF-10 selective responsiveness.",
+      "rf08_context": "RF-08 complete (11 flags, ROW-6819 coaching admission). Information hoarding appears in RF-08 context \u2014 Melissa mines Olivia for information about Eli's household while the RF-08 record suggests information sharing to Eli was selective. ROW-6819: 'I remind her of some of the things she's told me' \u2014 this is information-gathering FROM Olivia, not information-sharing TO Eli.",
+      "rf09_context": "RF-09 XREF-001 (ROW-9964 'There's no threats' vs. ROW-9957 documented threat) \u2014 strategic denial is part of selective responsiveness. Melissa responds to messages that suit her narrative and ignores those that don't.",
+      "known_signal_areas": [
+        "Structural gap analysis required across all 31 batches \u2014 look for unanswered co-parenting requests",
+        "Unilateral decisions: medical (allergy specialist without notice), activity enrollment, school decisions",
+        "Information blackout: school information, medical appointments, schedule details",
+        "Phase B/C: Eli holding communication boundaries (RF-13 Q5) \u2014 Melissa's selective responsiveness may intensify"
+      ],
+      "methodology_note": "Only 2 keyword hits in triage \u2014 upgrade to full pass per triage recommendation. RF-10 is about the absence of response. Track: (1) requests that were never answered; (2) unilateral decisions documented in the record; (3) information that was withheld despite a reasonable expectation of sharing. Cross-check against RF-02 records for access-related unilateral decisions."
+    },
+    "anticipated_arcs": [
+      "ARC-RF10-001: Co-Parenting Refusal Pattern \u2014 selective responsiveness, stonewalling co-parenting requests",
+      "ARC-RF10-002: Information Blackout Pattern \u2014 deliberate withholding of medical/school/activity information"
+    ],
+    "not_this_boundaries": [
+      "Slow response during work hours or reasonable timeframes",
+      "Establishing structured communication protocols (healthy boundary-setting)",
+      "Parallel parenting recommended by therapist or court",
+      "Setting communication limits around hostile exchanges"
+    ]
+  },
+  "calibration_episode": {
+    "batch_tone": "Cooperative baseline Jan-Oct 2022. Co-parenting engagement expected to be functional in pre-escalation period. Very low triage keyword signal (2 hits total across dataset, 0 in Phase B/C) \u2014 primary analysis is structural (unanswered messages) rather than content-based.",
+    "rf10_flag": false,
+    "reason_not_flagged": "Jan-Oct 2022 cooperative baseline. Both triage keyword hits (2 total) appear in later Phase A (Feb 2023 and Aug 2024 hot periods per triage). Zero RF-10 structural signals expected in B-001 cooperative period. Confirming zero primary flags. B-001 establishes the cooperative co-parenting engagement baseline for comparison with Phase A/B/C deterioration."
+  },
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jan-Oct 2022 calibration batch. Zero RF-10 primary flags. Cooperative baseline \u2014 functional co-parenting engagement in pre-escalation period. Primary analysis methodology is structural gap analysis, not keyword detection. Full pass required across all 31 batches to map responsiveness patterns. Arc ARC-RF10-001 and ARC-RF10-002 initialized at CANDIDATE."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF10-001",
+      "event": "Co-Parenting Refusal arc initialized \u2014 B-001 baseline: functional co-parenting engagement in cooperative period",
+      "state": "CANDIDATE"
+    },
+    {
+      "arc": "ARC-RF10-002",
+      "event": "Information Blackout arc initialized \u2014 B-001 baseline: no information withholding documented in cooperative period",
+      "state": "CANDIDATE"
+    }
+  ]
+}

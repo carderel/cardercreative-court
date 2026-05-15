@@ -1,0 +1,88 @@
+{
+  "batch_id": "B-001",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2022-01-11",
+    "end": "2022-10-02"
+  },
+  "row_range": {
+    "start": 2,
+    "end": 366
+  },
+  "message_count": 365,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [],
+  "pass_context": {
+    "rf15_definition": "RF-15 flags: (1) false allegations — unfounded accusations made to gain legal/custodial advantage, especially those contradicted by the text record; (2) projection — accusing Eli of behaviors Melissa herself is demonstrably engaging in; (3) DARVO-plus — not just reversing victim/offender but fabricating offenses; (4) exaggerating incidents beyond what the record supports; (5) creating incidents then reporting Eli's response as the problem.",
+    "cross_rf_foundation": {
+      "confirmed_signal_pool": [
+        "RF-01 B-015 (ROW-5301-5316): self-danger framing ('you don't trust yourself') + inadequate-father false allegation enumeration — RF-01/RF-15/RF-05 compound",
+        "RF-01 B-016 (ROW-5862): most explicit incest-framing — 'doesn't know that she shouldn't fuck her uncle' — sexual deviance false allegation against Abby/Eli",
+        "RF-04 B-007 (ROW-2373-2379): Abby character assassination ('bitch can shut her fucking whore mouth') + false suppression allegation — first severe Abby-attack",
+        "RF-04 B-015 (ROW-5301-5316): false rape allegation context (Sev-3 in RF-04) — same cluster as RF-01 B-015",
+        "RF-04 B-025 (ROW-9735-9751): vaping + physical threat allegation via Olivia relay",
+        "RF-04 B-026 (ROW-9xxx): continuation Abby-harm allegation cluster",
+        "RF-04 B-029 (ROW-14746): predation-framing DARVO ('fucking her cousin') — 10th instance",
+        "RF-04 B-030 (ROW-15498-15500): alcoholism allegation + inadequate-father enumeration",
+        "RF-04 B-031 (ROW-15588-15596): bruise-abuse DARVO reversal — welfare check reframed as planting abuse suspicion",
+        "RF-08 B-019: harm allegations via Olivia relay"
+      ],
+      "primary_allegation_types": [
+        "Incest/sexual predation framing of Eli/Abby (multi-year, Sev-2/3)",
+        "Physical harm allegations via Olivia relay (vaping, pinching, bruise)",
+        "Self-danger projection ('you don't trust yourself')",
+        "Alcoholism fabrication (Phase C)",
+        "Abuse-accusation DARVO ('trying to make her think I'm abusing her')",
+        "Character assassination of Abby (liar, false allegations, 'whore')"
+      ],
+      "triage_profile": {
+        "keyword_hit_count": 15,
+        "pct_received": 93,
+        "hot_periods": ["2025-06", "2024-06", "2023-09"],
+        "phase_distribution": {"A": 8, "B": 7, "C": 0},
+        "note": "15 keyword hits (93% received) is a moderate triage signal. The cross-RF pre-identification pool is significantly larger than the triage keyword hits — the most significant RF-15 signals are embedded in RF-04/RF-01 compound flags, not standalone RF-15 keyword matches. Full pass required to classify all instances properly."
+      }
+    },
+    "anticipated_arcs": [
+      "ARC-RF15-001: False Allegation Pattern — systematic unfounded claims about Eli/Abby behavior (sexual predation framing, physical harm via relay, alcoholism, inadequate-father fabrication)",
+      "ARC-RF15-002: Systematic Projection — Melissa consistently accuses Eli of behaviors she is documented doing herself (coaching Olivia, gaslighting, suppression, false allegations)"
+    ],
+    "arc_activation_expected": {
+      "ARC-RF15-001": "WATCHING at B-007 (Abby sexual slur + suppression false claim); ACTIVE at B-015/B-016 (rape/incest framing cluster — multi-instance false allegation pattern confirmed)",
+      "ARC-RF15-002": "WATCHING at B-007 or earlier if projection instances found; ACTIVE when 3+ documented projections are confirmed"
+    },
+    "not_this_boundaries": [
+      "Genuine parenting concerns expressed as criticism (e.g., Melissa saying Eli doesn't spend enough time with Olivia — disagreement, not false allegation)",
+      "Exaggeration of minor incidents without strategic legal context",
+      "Good-faith concerns that happen to be inaccurate",
+      "Standard DARVO without a fabricated specific claim — that is RF-04 primary"
+    ]
+  },
+  "calibration_episode": {
+    "batch_tone": "Cooperative baseline Jan-Oct 2022. No false allegations identified. The period is pre-escalation; Melissa's concern language (if any) is complaint-based rather than allegation-based. RF-15 primary signal expected to begin Phase A escalation batches (B-006 onward based on cross-RF pre-identification).",
+    "rf15_flag": false,
+    "reason_not_flagged": "Jan-Oct 2022 is the cooperative pre-escalation baseline. Zero RF-15 primary signals expected. RF-04 calibration (B-001) found only one DARVO pivot (Aug 28 church dispute) with no false allegation component. Confirming zero RF-15 primary flags for B-001."
+  },
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jan-Oct 2022 calibration batch. Zero RF-15 primary flags. Cooperative baseline confirmed. No false allegations, projection patterns, or fabricated incidents identified in this period. RF-15 signal concentration expected in B-006-B-007 (first Abby-attack clusters), B-015-B-016 (false rape/incest peak), B-025-B-031 (Phase B/C harm relays and alcoholism fabrication). Arc ARC-RF15-001 and ARC-RF15-002 initialized at CANDIDATE."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF15-001",
+      "event": "False allegation arc initialized — B-001 baseline: no false allegations in cooperative period",
+      "state": "CANDIDATE"
+    },
+    {
+      "arc": "ARC-RF15-002",
+      "event": "Projection arc initialized — B-001 baseline: no documented projection in cooperative period",
+      "state": "CANDIDATE"
+    }
+  ]
+}

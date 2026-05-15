@@ -1,0 +1,87 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-017",
+    "row_range": { "start": 6013, "end": 6556 },
+    "date_range": { "start": "2024-07-15", "end": "2024-08-04" },
+    "message_count": 544,
+    "timezone_note": "Entirely EDT (UTC-4). First two messages (ROW-6013-6014, Jul 15 22:29-22:39 EDT) carry Jul 15 local date; B-017 date range officially starts Jul 16 per RF-02 but these rows follow B-016 endpoint (ROW-6012) so are included here. DST change Nov 3, 2024 ahead.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B017-F001",
+      "arc_signal_ref": "RF01-B017-S001",
+      "row": "ROW-6282-6524",
+      "date": "2024-08-04",
+      "rf_tags": ["RF-01", "RF-05"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-002", "RF01-ADD-004"],
+      "arc": "ARC-RF01-001",
+      "summary": "August 4 — Most sustained single-day inadequate-father attack in the record. Context: scheduling conflict over morning childcare coverage for Becky's doctor appointment. Melissa launches a sustained 80+ message escalation combining multiple ADD-002 iterations, ADD-004 Olivia-emotional-relay, and explicit legal threats. Key nodes: ROW-6282: 'My work is more important than yours — especially if you want me to continue with child support' (Eli, triggering escalation) → ROW-6287: 'I can't understand why you have shared custody since you do nothing for her' (ADD-002); ROW-6290: 'Your answers are good evidence to show the court as to why you shouldn't have custody' (legal threat + inadequate-father); ROW-6296-6301: 'She is also your daughter even though you don't act like it / You don't act like a father at all / You grump at her all the time. You don't take care of any of the responsibilities / You get fired from all your jobs / Instead of working you play PlayStation' (ADD-002 sustained multi-message cluster); ROW-6312: 'I'm going to show these messages to the lawyer and file for sole custody so they can see how unreliable you are and how you push off your responsibilities' (legal threat for sole custody + inadequate-father framing); ROW-6324-6325: 'She is all sad cause she was looking forward to seeing you / You let her down once again' (ADD-004 — Olivia's disappointment relayed as parental failure evidence); ROW-6344: 'What involvement do you have with her other than the 2.5 hours you spend with her every week sometimes skipping a week' (ADD-002 — 2.5-hours framing; fourth written iteration across B-006, B-008, B-015); ROW-6345-6346: 'The fact that you knew she was allergic to cats and chose to not have her visit because it wasn't fair to the cats should be enough / I have those texts' (cat-allergy characterization used as court evidence of Eli prioritizing cats over Olivia); ROW-6347: 'I think the court will see she is not a priority to you' (inadequate-father for court); ROW-6436: 'You already told her that your house isn't big enough for her and Milo and the new baby coming' (pregnancy/Milo-as-overcrowding used as inadequacy signal; ADD-001 adjacent); ROW-6483: 'You are a shit father' (ADD-002); ROW-6496-6497: 'Last week you got her then Abby got sick. You never said hey I have to take care of Abby. Let me pick you up tomorrow so we can still spend time / She kept asking me if you were going to see her cause she didn't get to spend much time with you' (ADD-004 + ADD-001 — Abby as reason Eli fails Olivia); ROW-6514-6516: 'Then to have her with you everyday all day and then just walk out of her life like nothing / And only see her a few hours a week now. No wonder you want to act like I make things difficult for you. You'd feel too much like an asshole if you'd have to really take an honest look at what you did and continue to do / If you had to take an honest look at yourself and your actions you wouldn't be able to handle the guilt of what you did and how you handle things now' (abandonment/walked-out framing + guilt attribution; ADD-002 + arc-core narrative); ROW-6524: 'I try to overcompensate for your shortcomings' (Melissa frames herself as compensating for Eli's inadequacy). Most extensive single written inadequate-father attack cluster; contains five distinct ADD-002 sub-patterns plus ADD-004 and legal threat framing."
+    }
+  ],
+
+  "primary_flag_count": 1,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B017-P001",
+      "row": "ROW-6016-6017",
+      "date": "2024-07-15",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "July 15 — Olivia's post-vacation sadness relay: 'She was crying earlier when I tried to call you. / She says she is sad cause she's going to miss Canada. Wants to move to Canada or North Carolina' (ROW-6016-6017). Context: returning from Canada vacation. ADD-004 adjacent. NC mentioned as destination Olivia wants — resonates with B-013 ROW-4588 NC relocation inquiry ('You still good if we move to NC?'). RF-04 peripheral."
+    },
+    {
+      "flag_id": "RF01-B017-P002",
+      "row": "ROW-6026",
+      "date": "2024-07-16",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "July 16 — 'Call your daughter. She is all sad and she wants to talk to you.' (ROW-6026). Context: Olivia returning from Canada, still sad. Melissa directive + Olivia emotional state relay. ADD-004 adjacent. RF-04 peripheral."
+    },
+    {
+      "flag_id": "RF01-B017-P003",
+      "row": "ROW-6098",
+      "date": "2024-07-21",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "July 21 — 'I feel like you are just excuses at this point but whatevs' (ROW-6098). Context: Eli postponing Olivia pickup due to bronchitis concern (Melissa and Olivia both recently ill). ADD-002 adjacent (unreliable framing). RF-04 peripheral."
+    }
+  ],
+
+  "peripheral_flag_count": 3,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": "RF01-B017-S001",
+      "signal_count_before": 17,
+      "signal_count_after": 18,
+      "severity": 2,
+      "notes": "B-017 adds 1 Sev-2 signal (ROW-6282-6524, August 4). Total: 18 signals (2 Sev-1, 16 Sev-2). Last signal date updated: 2024-06-30 → 2024-08-04. Third consecutive batch with primary signal (B-015, B-016, B-017). ROW-6514-6516 ('walk out of her life like nothing / only see her a few hours a week now') is the clearest written iteration of the ARC-RF01-001 core narrative — abandonment reframing — since B-006 (ROW-2168: 'I choose to be single because I have a daughter to take care of. Something you wouldn't know about'). Most extensive single-day written inadequate-father cluster."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B017-001",
+      "row": "ROW-6282-6524",
+      "date": "2024-08-04",
+      "priority": "high",
+      "summary": "Most sustained single-day inadequate-father cluster in the record. Triggered by scheduling conflict. Contains: (1) written intent to file for sole custody and show these messages to lawyer (ROW-6290, 6312); (2) five distinct ADD-002 iterations; (3) ADD-004 (Olivia's sadness/disappointment); (4) 2.5-hours framing (ROW-6344 — fourth iteration across record); (5) cat-allergy characterization for court (ROW-6345-6346); (6) abandonment/walk-out narrative (ROW-6514-6516: 'walk out of her life like nothing'); (7) baby/pregnancy reference (ROW-6436). Document for RF-01 arc. Note: Eli does not substantively engage with the character attacks, responding only to practical scheduling and offering alternatives. Melissa resolves the issue independently (Roger watches Olivia, ROW-6458) after the extended attack."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "High-cooperative baseline with one major August 4 escalation. July 15-31 is predominantly cooperative: vacation return photos and sharing (ROW-6013-6033), Olivia's crush update (ROW-6029-6030), illness management and genuine co-parenting (ROW-6051-6073), Olivia/Valentina Tinder/sex-education concern handled jointly and cooperatively (ROW-6170-6198), daycare coordination (ROW-6136-6192). The August 4 cluster (ROW-6257-6524) is the most severe escalation in this batch and stands in sharp contrast to the surrounding cooperative content.",
+    "valentina_incident": "ROW-6170-6198 (July 30): Eli discloses to Melissa that Olivia mentioned Valentina 'taught her' about Tinder and sex. Melissa confirms she was already aware, had talked to Valentina, and was managing it sensitively given Valentina's mother's recent bereavement. Both parties coordinate jointly. Genuinely cooperative co-parenting on a sensitive child-safety topic.",
+    "abandonment_narrative_resurgence": "ROW-6514-6516 is the clearest articulation of the ARC-RF01-001 abandonment/walk-out narrative since early batches: 'Then to have her with you everyday all day and then just walk out of her life like nothing / And only see her a few hours a week now.' Frames Eli's current limited-contact arrangement as abandonment of a child he was previously 'with every day.' Consistent with B-001 through B-006 messaging. Pattern: abandonment framing resurfaces during high-conflict logistics disputes.",
+    "baby_pregnancy_escalation": "ROW-6436: 'You already told her that your house isn't big enough for her and Milo and the new baby coming' — second written reference to Abby's pregnancy (first: B-015 ROW-5270). Here Melissa uses it as inadequacy framing: Eli's home is insufficient for all three children. Monitoring pregnancy-as-attack-vector.",
+    "legal_threat_pattern": "ROW-6290, 6312: Melissa explicitly states intent to show these messages to lawyer and file for sole custody. Pattern with prior legal threat invocations (B-014 cat allergy lawyer letter, B-015 ROW-5303 'reservations about her staying with you'). RF-05 primary for these rows; RF-01 adjacent via sole-custody inadequate-father framing."
+  }
+}

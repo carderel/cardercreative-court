@@ -1,0 +1,80 @@
+{
+  "batch_id": "B-016",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2024-06-14",
+    "end": "2024-07-15"
+  },
+  "row_range": {
+    "start": 5565,
+    "end": 5966
+  },
+  "message_count": 518,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "WATCHING",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 8,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 4,
+    "note": "June 2024 sustained cluster: EP-0793 Jun 16 (107 msgs) + EP-0808 Jun 28 (27 msgs) + EP-0809 Jun 29 (37 msgs) + EP-0810 Jun 30 (27 msgs). 198 total hostile msgs in 17 days. Largest cluster volume to date. CYC-001 and CYC-004 both active."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B016-001",
+      "episode_cluster": [
+        "EP-0793",
+        "EP-0808",
+        "EP-0809",
+        "EP-0810"
+      ],
+      "dates": "2024-06-16 through 2024-06-30",
+      "total_messages": 198,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "sustained cluster \u2014 4 hostile episodes in 17 days",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured responses; Eli attempts to contain between episodes",
+        "received_direction": "4 hostile episodes in 17 days; flooding in most episodes",
+        "net_escalation": "high Sev-2 (198 msgs in 17 days; highest volume to date)",
+        "de_escalation_resistance": "Three re-initiations Jun 28-30 after Eli withdrawal post-EP-0793"
+      },
+      "cycle_classification": "CYC-001 + CYC-004 compound \u2014 Abby content, legal threats",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 9,
+      "cross_rf_note": "B-016 RF-04 flags: ROW-5668-5729 (Sev-2), ROW-5796-5808, ROW-5862. RF-05 signals also present."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "June 2024: 198 hostile msgs in 17 days. Largest sustained cluster volume. Pre-cursor to Aug mega-cluster.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "Three re-initiations Jun 28-30 after Eli withdrawal. Strongest multi-day re-initiation pattern to date.",
+      "state": "ACTIVE"
+    }
+  ]
+}

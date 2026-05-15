@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-015",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2024-05-11",
+    "end": "2024-06-13"
+  },
+  "row_range": {
+    "start": 5169,
+    "end": 5564
+  },
+  "message_count": 514,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "WATCHING",
+    "ARC-RF15-002": "WATCHING"
+  },
+  "arc_signals_cumulative": 5,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B015-001",
+      "date": "2024-05-14",
+      "row_ref": "ROW-5301-5316",
+      "severity": 2,
+      "rf15_category": "C_E",
+      "direction": "received",
+      "summary": "False danger + inadequate-father false enumeration cluster. May 14 2024. ROW-5301: 'I'm way more comfortable with her spending a whole day with them than you' \u2014 written statement that strangers are safer with Olivia than her own father. ROW-5302: 'That's also really concerning that you don't trust yourself either' \u2014 self-danger conversion: Eli's reasonable caution about childcare recast as self-awareness of danger (Category E). ROW-5307-5316: false-enumeration list \u2014 'You chose a cat over your daughter,' multiple inadequate-father allegations enumerated in text. Category C (predation narrative) + Category E (self-danger conversion). Sev-2. ADD-002: false danger narrative is part of systematic incest/predation campaign confirmed to have reached multiple third parties (Q1).",
+      "exact_quote": "ROW-5301: 'I'm way more comfortable with her spending a whole day with them than you' | ROW-5302: 'That's really concerning that you don't trust yourself either'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 7,
+      "compound_patterns": [
+        "RF-04+RF-15",
+        "RF-01+RF-15",
+        "RF-05+RF-15"
+      ],
+      "cross_rf_note": "RF-04 B-015 RF04-B015-003 Sev-3 is the primary RF-04 flag for this cluster. RF-01 B-015 RF01-B015-F001 Sev-2 is primary RF-01. Both share ROW-5301-5316. RF-15 primary flag generated as standalone for the self-danger conversion mechanism."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

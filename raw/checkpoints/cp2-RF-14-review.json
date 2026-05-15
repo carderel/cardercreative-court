@@ -1,0 +1,70 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "generated": "2026-04-28",
+  "status": "pending",
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "tone_assessment": "Cooperative baseline. Zero RF-14 primary signals. Triage hot period 2022-10 at end of B-001 range. 43 keyword hits (72% received) \u2014 Melissa is primary safety-allegation source. CRITICAL: RF-15 record documents systematic false allegations including alcoholism (Category B), vaping/asthma (Category B), and harm relay events. Many RF-14 triage hits are likely RF-15 false allegations. CP2 essential for calibrating genuine vs. manufactured safety concerns."
+  },
+  "calibration_questions": [
+    {
+      "id": "CP2-RF14-Q1",
+      "topic": "Genuine safety concerns \u2014 Melissa's household",
+      "question": "The RF-15 record documents Melissa making false safety allegations against Eli. On the other side: (a) Do you have any genuine safety or wellbeing concerns about Olivia's time at Melissa's household \u2014 substance use, instability, unsafe environment, inappropriate people present, etc.? (b) Has Olivia ever expressed fear or concern about her living situation there, or said anything that suggested she felt unsafe? (c) Has there been any domestic violence or instability in Melissa's household that you're aware of?",
+      "why_asked": "RF-14 is direction-aware. The triage shows 12 Sent (Eli) and 31 Received (Melissa) hits. The 12 Sent hits may represent Eli's genuine safety observations about Melissa's household. Establishing whether there are genuine Sent-direction safety concerns prevents underclassification.",
+      "classification_impact": "High \u2014 confirms whether Sent-direction RF-14 signals exist and their severity; also informs compound classification with RF-15 (genuine concern vs. false allegation dynamic)"
+    },
+    {
+      "id": "CP2-RF14-Q2",
+      "topic": "Substance concerns \u2014 genuine vs. false allegation",
+      "question": "The RF-15 record already documents: (1) alcoholism allegation against Eli (one beer at dinner \u2192 'drinking problem') = false; (2) vaping/asthma allegation = partially true but weaponized. For calibration: (a) Is there any substance use or dependency concern you have about Melissa? (b) Has Olivia ever said anything that suggested substance use around her at Melissa's? (c) In the record, are references to alcohol/substances in Eli's messages primarily factual (e.g., 'I had a beer with dinner') or are there any that suggest a genuine concern on either side?",
+      "why_asked": "The RF-15/RF-14 boundary is critical here. Melissa's false alcoholism allegation (RF-15 primary) should NOT generate an RF-14 primary flag \u2014 it should be RF-15 primary + RF-14 peripheral. However, if there are genuine substance observations in either direction, those ARE RF-14 primary.",
+      "classification_impact": "High \u2014 determines the RF-15/RF-14 compound boundary for all substance-related content in the dataset"
+    },
+    {
+      "id": "CP2-RF14-Q3",
+      "topic": "The Feb 2026 argument and children hiding \u2014 safety assessment",
+      "question": "The RF-11 record (B-030) documents a bilateral safety signal: children (ages 10, 6, 1) hiding during an argument between Eli and Abby in Feb 2026. You confirmed you and Abby argued verbally with children present, and you looked up 'verbal abuse.' (a) Is this an isolated incident or has there been conflict (Eli/Abby) visible to children before? (b) After Feb 2026, have you and Abby changed how you handle conflict when children are present? (c) This is already RF-11 primary. For RF-14: does the Feb 2026 incident rise to a genuine safety concern level for the children, or was it a heated exchange that didn't reach the threshold of child endangerment?",
+      "why_asked": "The Feb 2026 bilateral signal is the clearest genuine safety event in the dataset from the Eli/Abby direction. RF-14 severity depends on whether it was isolated or part of a pattern.",
+      "classification_impact": "Medium-high \u2014 determines whether ARC-RF14-002 (Genuine Safety Documentation, Sent direction) gets activated at the Feb 2026 event; also affects compound severity with RF-11"
+    },
+    {
+      "id": "CP2-RF14-Q4",
+      "topic": "Olivia's safety \u2014 specific documented incidents",
+      "question": "(a) Has Olivia ever been left with an inappropriate caregiver \u2014 someone you had concerns about? (b) Has she ever missed a medical appointment, medication, or school attendance in a pattern that concerned you? (c) The pinching allegation (B-025 via Olivia relay) \u2014 Eli unconfirmed in RF-15. Are there any other physical harm incidents involving Olivia that appeared in the record or were relayed to you by Olivia? (d) The bruise welfare check (B-031) \u2014 what was your read on that bruise? Did you feel satisfied with Olivia's explanation (horseplaying with friend) or were you still concerned?",
+      "why_asked": "This question separates genuine safety observations (even if minor) from the manufactured false allegation pattern. The bruise incident in particular \u2014 Eli's welfare check was appropriate but the outcome (Olivia's explanation) needs to be on record.",
+      "classification_impact": "High \u2014 identifies any genuine RF-14 signals from the Sent direction that need primary flagging; also calibrates the severity of the bruise event (welfare check = appropriate response, not itself RF-14)"
+    },
+    {
+      "id": "CP2-RF14-Q5",
+      "topic": "Triage 2022-10 hot period \u2014 early safety language",
+      "question": "The triage shows October 2022 as an RF-14 hot period \u2014 right at the end of the B-001 cooperative baseline and the start of Phase A escalation (EP-0093 Oct 31 Halloween is the first hostile episode). (a) Do you recall any safety-related conversations or allegations in or around October 2022? (b) Was this the period when Melissa first started raising concerns about Olivia's safety in your care, or had there been earlier hints? (c) The RF-01 Abby-attack pattern begins April 2023 (B-007) \u2014 were there any earlier Abby-related safety allegations before that?",
+      "why_asked": "The 2022-10 triage hot period is the earliest safety signal in the dataset. Calibrating what this represents \u2014 genuine early concern, or the first manufactured safety allegation \u2014 anchors the RF-14 arc start.",
+      "classification_impact": "Medium \u2014 determines when the safety allegation pattern began (arc WATCHING state trigger); if early enough, may produce a Sev-1 flag in B-002 or B-003"
+    }
+  ],
+  "addenda_proposed": [
+    {
+      "id": "RF14-ADD-001-PROPOSED",
+      "title": "RF-15/RF-14 Compound Boundary Rule",
+      "rule_draft": "[PENDING CP2 Q2] For ALL known RF-15 false allegations with safety content: RF-15 primary, RF-14 peripheral (not standalone). Known false allegation/RF-14 intersections: (1) Alcoholism accusation (B-030) \u2014 RF-15 Category B primary; RF-14 peripheral note ('false substance allegation'). (2) Vaping/asthma (B-025) \u2014 RF-15 Category B primary; RF-14 peripheral note ('partially-real substance use weaponized as safety allegation'). (3) Pinching threat (B-025) \u2014 RF-15 Category A primary; RF-14 peripheral note. (4) Bruise welfare check (B-031) \u2014 RF-15 Category D primary; NO RF-14 flag (welfare check is appropriate protective behavior, not a safety concern). Apply this boundary consistently to avoid double-counting known false allegations.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF14-ADD-002-PROPOSED",
+      "title": "Feb 2026 Bilateral Safety Event",
+      "rule_draft": "[PENDING CP2 Q3] Feb 2026 bilateral signal (B-030 RF-11): children hiding during Eli/Abby argument. Already RF-11 primary. For RF-14: if CP2 Q3 confirms this was isolated and below endangerment threshold, RF-14 = peripheral compound (Sev-1). If confirmed as part of a pattern or above endangerment threshold, RF-14 = secondary flag (Sev-2). Eli's honest acknowledgment (looked up 'verbal abuse') is a mitigating factor \u2014 demonstrates awareness and self-assessment.",
+      "status": "pending_cp2"
+    }
+  ],
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda. Initialize ARC-RF14-001 and ARC-RF14-002 at CANDIDATE. Resume B-002. Critical: apply RF-15/RF-14 compound boundary rule consistently \u2014 known false allegations are RF-15 primary, NOT standalone RF-14 flags. Watch for early safety allegations in B-002-B-003 (2022-10/2023-01 hot period area). Genuine safety observations from Sent direction are standalone RF-14 primary.",
+    "signal_sourcing_note": "43 triage hits, 72% received. Many received hits are likely RF-15 compound (false allegations). Direction-aware analysis critical. At each batch: distinguish (1) received safety allegations \u2192 cross-reference RF-15 addenda; apply RF-15 primary or RF-14 primary based on truth/false determination; (2) sent safety observations \u2192 standalone RF-14 if genuine concern; (3) bilateral events (Feb 2026) \u2192 RF-11 primary + RF-14 secondary compound."
+  }
+}

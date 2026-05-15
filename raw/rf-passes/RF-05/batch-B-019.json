@@ -1,0 +1,59 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-019",
+    "row_range": { "start": 7056, "end": 7557 },
+    "date_range": { "start": "2024-09-09", "end": "2024-10-18" },
+    "message_count": 502,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 502,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 501,
+    "flag_rate": "0.2%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B019-001",
+      "row_range": "ROW-7461 and ROW-7481 through ROW-7482",
+      "timestamp": "2024-10-03",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-7461 (Received): 'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody' | ROW-7481 (Received): 'I don't have to do as much as I do to include you' | ROW-7482 (Received): 'I don't have to give you pictures of her'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Two RF-05 signal elements within COMP-RF04-018 (RF-04+RF-15+RF-01+RF-05 per RF-04 pass). SIGNAL 1 — ROW-7461: 'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody' — implicit full-custody viability claim. Distinct from B-017's explicit filing threat (ROW-6312 'I'm going to file for sole custody') — this formulation claims: (a) Melissa has already identified the basis for a full custody case; (b) Eli's current behavior improvements are attributed to Melissa's threat rather than his own judgment; (c) the threat remains operative as the compliance mechanism. ADD-002: Sev-1 (not first instance of custody threat category; B-017 established that). The implicit framing ('would easily give me full custody') rather than explicit ('I am filing') = Sev-1. SIGNAL 2 — ROW-7481-7482 access withdrawal threats: 'I don't have to do as much as I do to include you' + 'I don't have to give you pictures of her' — access-conditional framing: Melissa positions Eli's current access level as her personal gift, not his legal right. These are more RF-02 primary (gatekeeping leverage) but function as RF-05 threats in context — threatening withdrawal of access/information as compliance instrument. ADD-002: Sev-1 (adjacent to contempt threat category; not first instance of access-conditional framing). Combined Sev-1 for the cluster.",
+      "peripheral_flags": [],
+      "context_notes": "All three rows are part of the Oct 3 mega-cluster (ROW-7325-7490), the largest single conflict episode in B-019. COMP-RF04-018 (RF-04+RF-15+RF-01+RF-05) is confirmed per RF-04 pass. RF-04 peripheral flag RF04-B019-P05 explicitly cross-tags both ROW-7461 and ROW-7481-7482 as RF-05 primary. The 8th predation framing (ROW-7367 'Did you tell the Dr you made her a new sister/cousin') within this same cluster is ADD-001 exempt — RF-04+RF-15 primary, not RF-05. The gatekeeping control admission (ROW-7478-7483 'I used to ask her if she wanted to call you in the mornings') is RF-02 primary.",
+      "pattern_tags": ["implicit_custody_viability_claim", "access_conditional_framing", "gatekeeping_threat", "COMP_RF04_018"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody' (ROW-7461); 'I don't have to do as much as I do to include you' (ROW-7481)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF04-018 (RF-04+RF-15+RF-01+RF-05 per RF-04 pass)"],
+    "note": "ARC-RF05-001 ACTIVE. B-019 adds S-018: implicit custody viability claim + access withdrawal threats within COMP-RF04-018. Sev-1 (prior instance of custody threat category established in B-017). The custody threat pattern is confirmed operative in two consecutive batches (B-017 Aug 4, B-019 Oct 3)."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-019 (Sep-Oct 2024): Moderate-signal RF-05 batch. Oct 3 mega-cluster contains implicit custody threat embedded in a comprehensive RF-04+RF-15+RF-01 compound. The implicit custody framing (ROW-7461) is significant because it reveals Melissa's awareness of the legal basis for her custody threat and her self-attribution as the force that has driven Eli's behavioral compliance. Sep 15 physical harm cluster (COMP-RF04-017: choking claim, DV false allegation) is RF-04+RF-15+RF-11 — no RF-05 primary.",
+    "cross_rf_context": "RF-04 B-019: COMP-RF04-017 (Sep 15 choking claim RF-04+RF-15+RF-11) + COMP-RF04-018 (Oct 3 mega-cluster RF-04+RF-15+RF-01+RF-05). RF-05 confirmed component of COMP-RF04-018. Oct 18 Abby-causal-attribution (ROW-7553) is RF-04 primary Sev-1."
+  }
+}

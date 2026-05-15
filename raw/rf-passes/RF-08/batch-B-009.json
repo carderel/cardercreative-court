@@ -1,0 +1,98 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-009",
+    "row_range": {
+      "start": 2959,
+      "end": 3342
+    },
+    "date_range": {
+      "start": "2023-07-16",
+      "end": "2023-08-20"
+    },
+    "message_count": 384,
+    "phase": "A",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 384,
+    "primary_flags": 1,
+    "primary_severity_distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 383,
+    "flag_rate": "0.26%"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B009-S002",
+      "arc_signal_ref": "ARC-RF08-001-S002",
+      "rows": "ROW-3127-3129",
+      "date": "2023-07-16 to 2023-08-20",
+      "severity": 1,
+      "rf_tags": [
+        "RF-08",
+        "RF-01"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001",
+        "RF08-ADD-002"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "CANDIDATE \u2192 WATCHING (2 signals reached; arc promotes to WATCHING)",
+      "compound_id": "COMP-RF08-002",
+      "summary": "Pre-signal \u2014 emotional state relay. ROW-3127: 'Olivia is over here crying' \u2014 Melissa delivers Olivia's real-time emotional distress as a pressure instrument. The message positions Olivia's emotional state as direct evidence of Eli's failure. Cross-reference RF01-B009-S001 (ADD-004): the RF-01 pass flagged this cluster for the same relay mechanism. RF-08 classification: Olivia's emotional experience is extracted, relayed, and weaponized by Melissa as co-parenting pressure against Eli \u2014 Olivia is not a party to this conversation but her emotional state is made a central exhibit in Melissa's argument. Note: pre-signal per ADD-002 \u2014 precedes confirmed coaching admission (ROW-6819, B-018).",
+      "exact_quotes": [
+        "ROW-3127 (Received): 'Olivia is over here crying'"
+      ],
+      "rf08_mechanism": "Emotional state relay: Olivia's distress communicated to Eli as pressure evidence. Child's emotional experience used as leverage without child's participation in the adult conflict."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [
+      "ARC-RF08-001: CANDIDATE \u2192 WATCHING"
+    ],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-002"
+    ],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 promoted to WATCHING: 2 signals (S001-S002). Arc activation deferred to ROW-6819 (B-018) per ADD-002 \u2014 coaching admission is the arc activation anchor."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-002",
+      "rf_passes": [
+        "RF-08",
+        "RF-01"
+      ],
+      "rf01_ref": "RF01-B009-S001",
+      "description": "Emotional state relay compounds with RF-01 ADD-004: ROW-3127 simultaneously delivers parental alienation content (Olivia's distress attributed to Eli's inadequacy) and triangulates Olivia as co-parenting pressure instrument."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase A. S002 documents the emotional-relay sub-pattern: Melissa converting Olivia's distress into co-parenting evidence.",
+    "rf08_assessment": "One Sev-1 pre-signal. Arc promoted to WATCHING. The emotional-relay pattern (using Olivia's reported distress as pressure) is distinct from coaching content delivery but both are components of the relay-through-Olivia mechanism.",
+    "cross_rf_context": "RF-01 ADD-004 compound. The 'Olivia is over here crying' pattern recurs throughout the dataset \u2014 this is the first documented instance."
+  }
+}

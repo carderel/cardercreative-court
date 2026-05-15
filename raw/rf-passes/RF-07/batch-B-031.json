@@ -1,0 +1,110 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-031",
+    "row_range": {
+      "sequential_block": "none",
+      "parallel_block": "ROW-15540–ROW-15596+",
+      "note": "Dataset final batch. Sequential block exhausted after B-030. Parallel block contains remaining Received messages Apr 8-12 2026. Three-block structure fully documented."
+    },
+    "date_range": { "start": "2026-04-08", "end": "2026-04-12" },
+    "phase": "C",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "DATASET FINAL BATCH. Apr 8-12 2026. Contains S-011 (ROW-15552 punitive non-disclosure, Sev-1) and S-012 (ROW-15588-15592 CONFIRMED FLOODING, Sev-2) — the only confirmed flooding event in the dataset with exact timestamps. COMP-RF07-004 generated."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": null,
+    "primary_flags": 2,
+    "primary_severity_distribution": { "1": 1, "2": 1, "3": 0 },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": null,
+    "flag_rate": "see note"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF07-B031-001",
+      "flag_id": "ARC-RF07-001-S011",
+      "timestamp": "2026-04-09",
+      "direction": "received",
+      "phase": "C",
+      "row_ref": "ROW-15552",
+      "message_text": "ROW-15552 (Received, Apr 9): 'Well I was going to share some info but since you won't answer nevermind'",
+      "primary_rf": "RF-07",
+      "primary_severity": 1,
+      "sub_pattern": "punitive_non_disclosure",
+      "primary_reasoning": "Punitive non-disclosure — Melissa withholds information as punishment for Eli's non-immediate response. ROW-15552: Melissa indicates she had information to share about Olivia but is now withholding it because Eli didn't respond promptly enough. Mechanism: (1) information withholding as response-demand pressure — the implicit demand is 'respond to me or lose access to important information about your child'; (2) passive-aggressive communication style deploying information asymmetry as leverage. Per ADD-004: response-demand framing. The withholding of child-related information ('some info') as punishment for non-immediate response is RF-07 boundary-violation behavior — co-parenting communication requires sharing relevant information about the child regardless of response-time grievances. Sev-1: single message; no flooding or explicit harassment. ARC-RF07-001-S011.",
+      "verbatim_key_messages": [
+        "ROW-15552 (Received, Apr 9): 'Well I was going to share some info but since you won't answer nevermind'"
+      ],
+      "pattern_tags": ["punitive_non_disclosure", "information_withholding", "response_demand", "passive_aggressive"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": [],
+      "calibration_notes": "Sev-1: single message punitive non-disclosure. Distinctive sub-pattern — information about Olivia withheld as leverage for response compliance. Confirms the on-demand-response-norm pattern established in S-010."
+    },
+    {
+      "message_id": "RF07-B031-002",
+      "flag_id": "ARC-RF07-001-S012",
+      "timestamp": "2026-04-12 14:24:25 through 14:27:39 UTC",
+      "direction": "received",
+      "phase": "C",
+      "row_ref": "ROW-15588–ROW-15592",
+      "message_text": "ROW-15588 (Received, 14:24:25): 'Why do you keep trying to make Olivia think I'm abusing her?' | ROW-15589 (Received, 14:24:41): 'She said she has a bruise on her arm and you said it looked like a finger mark' | ROW-15590 (Received, ~14:25–14:26): [defensive explanation — skateboarding/roller skates] | ROW-15591 (Received, ~14:26–14:27): [continued defensive explanation] | ROW-15592 (Received, 14:27:39): 'Also Naomi was telling her dad yesterday that Olivia doesn't like that you yell at her for no reason. Olivia was telling her about valentine weekend and how she can't talk to you and you were screaming for no reason'",
+      "primary_rf": "RF-07",
+      "primary_severity": 2,
+      "sub_pattern": "confirmed_flooding",
+      "primary_reasoning": "CONFIRMED FLOODING — the only flooding event in the dataset with exact timestamp verification meeting the ADD-001 threshold. Five Received messages from 14:24:25 to 14:27:39 UTC = 3 minutes 14 seconds. Eli does not respond until ROW-15593 (Sent direction, 18:08:07 UTC — approximately 3 hours 41 minutes later). Per ADD-001: 5+ messages in one direction within a 10-minute window without a response from the recipient = RF-07 primary flooding. Confirmed: (1) 5 consecutive Received messages; (2) window = 3:14 (well within the 10-minute threshold); (3) Eli's first response (ROW-15593) comes 3:41 after the last flood message. No response from Eli during the flooding window. This is the dataset's only fully timestamp-confirmed flooding event — prior flooding candidates (S-001 Aug 2024 ~80 msgs; S-004 Aug 2025 ~80 msgs) remain flooding_candidate designation pending raw timestamp review at synthesis. S-012 is Sev-2: confirmed flooding threshold met. ARC-RF07-001-S012. Additionally: this cluster is COMP-RF04-030 (Apr 12 DARVO bruise/abuse reversal — Eli noticed bruise, asked what happened, Melissa characterizes as abuse accusation) — RF-04+RF-07 compound. The flooding serves to overwhelm Eli's ability to compose a thoughtful response, consistent with the DARVO mechanism.",
+      "verbatim_key_messages": [
+        "ROW-15588 (Received, 2026-04-12 14:24:25): 'Why do you keep trying to make Olivia think I'm abusing her?'",
+        "ROW-15589 (Received, 2026-04-12 14:24:41): 'She said she has a bruise on her arm and you said it looked like a finger mark'",
+        "ROW-15590 (Received, ~14:25–14:26): [defensive explanation — bruise from skateboarding/roller skates]",
+        "ROW-15591 (Received, ~14:26–14:27): [continued defensive explanation]",
+        "ROW-15592 (Received, 2026-04-12 14:27:39): 'Also Naomi was telling her dad yesterday that Olivia doesn't like that you yell at her for no reason...'"
+      ],
+      "pattern_tags": ["confirmed_flooding", "timestamp_verified", "darvo_compound", "5_messages_3min14sec"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": ["COMP-RF07-004", "COMP-RF04-030"],
+      "calibration_notes": "Sev-2 CONFIRMED: ADD-001 threshold met with exact timestamps. 5 messages in 3:14. Eli's response 3:41 hours later (ROW-15593). This is the dataset's only ADD-001-confirmed flooding event. Compound with COMP-RF04-030 (RF-04 DARVO bruise/abuse reversal) — flooding serves as delivery mechanism for DARVO content."
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF07-004"],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE at dataset close. S-011 and S-012 added. FINAL ARC STATE: 12 signals total (3 Sev-2: S-001, S-003, S-004, S-012 — actually 4 Sev-2; 8 Sev-1: S-002, S-005, S-006, S-007, S-008, S-009, S-010, S-011). Arc unresolved at dataset close — no resolution event identified. Sub-patterns confirmed across full arc: flooding_candidate (S-001 Aug 2024, S-004 Aug 2025), confirmed_flooding (S-012 Apr 2026), response_demand (S-002, S-005, S-007, S-008, S-010), continuation_after_self_demand (S-003), read_receipt_pressure (S-005), custodial_time_overstepping (S-006), continuation_after_silence (S-009), punitive_non_disclosure (S-011). Note on Sev-2 count: S-001 (Aug 2024 flooding candidate), S-003 (May 2025 continuation-after-self-demand), S-004 (Aug 2025 flooding candidate), S-012 (Apr 2026 confirmed flooding) = 4 Sev-2. S-002, S-005, S-006, S-007, S-008, S-009, S-010, S-011 = 8 Sev-1. Total: 12 signals."
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF07-004",
+      "date": "2026-04-12",
+      "row_ref": "ROW-15588–ROW-15592",
+      "rf_tags": ["RF-04", "RF-07"],
+      "summary": "RF-04+RF-07 compound. RF-07 (Sev-2: CONFIRMED FLOODING — 5 messages in 3:14, ADD-001 threshold met; ARC-RF07-001-S012) + RF-04 (COMP-RF04-030: Apr 12 DARVO bruise/abuse reversal — Eli noticed bruise on Olivia, asked what happened; Melissa characterizes as abuse accusation; third-party relay through Naomi's father; ARC-RF04-001-S89). Flooding mechanism delivers DARVO content: the rapid five-message burst overwhelms Eli's ability to compose a measured response to the abuse-accusation framing. Dataset closing compound.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF07-001-S012", "ARC-RF04-001-S89"]
+    }
+  ],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Dataset closing batch — Apr 8-12 2026. Apr 9 punitive non-disclosure (S-011). Apr 12 DARVO bruise cluster with confirmed flooding (S-012, COMP-RF04-030). Eli's response at ROW-15593 is measured and factual — maintains clear account despite flooding. Dataset ends at ROW-15596 approximately.",
+    "rf07_assessment": "B-031 closes the RF-07 pass with the dataset's only ADD-001-confirmed flooding event. S-012 is the analytical anchor for the flooding sub-pattern — it confirms retrospectively that the prior mega-clusters (S-001 Aug 2024 ~80 msgs, S-004 Aug 2025 ~80 msgs) are probable flooding candidates as classified. The mechanism is identical; what differs is that B-031's timestamps are available in the RF-04 batch record while the prior mega-clusters require raw Excel timestamp review at synthesis. ARC-RF07-001 closes at 12 signals, ACTIVE and unresolved.",
+    "custodial_context": "Apr 12 is a Saturday — Eli's parenting time weekend. The flooding cluster (ROW-15588-15592) arrives during what is likely Eli's parenting time, making S-012 a potential ADD-004 custodial-time-overstepping compound signal as well. Held at ADD-001 flooding (Sev-2) as the primary mechanism; ADD-004 is an additional context note."
+  }
+}

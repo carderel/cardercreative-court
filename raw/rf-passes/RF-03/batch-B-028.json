@@ -1,0 +1,85 @@
+{
+  "batch_id": "B-028",
+  "date_range": {
+    "start": "2025-08-03",
+    "end": "2025-09-12",
+    "note": "date-filtered batch"
+  },
+  "message_count": 483,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "calibration_addenda_active": [
+    "RF03-ADD-001",
+    "RF03-ADD-002",
+    "RF03-ADD-003",
+    "RF03-ADD-004",
+    "RF03-ADD-005",
+    "RF03-ADD-006",
+    "RF03-ADD-007"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-003: dance enrollment without consent + Thursday schedule conflict (Sep 3-4 2025). Eli's pick-up conditioned on taking Olivia to dance. RF-03+RF-06 compound. ARC-RF03-001 Signal 3."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-003",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF03-001",
+      "arc_signal": 3,
+      "date_range": "2025-09-03 to 2025-09-04",
+      "orig_rows": [
+        "14300",
+        "14301",
+        "14304",
+        "14305"
+      ],
+      "messages": [
+        {
+          "orig_row": "14300",
+          "direction": "Received",
+          "date": "2025-09-03",
+          "text": "Just remembered Thursday doesn't work either cause she has her first dance class."
+        },
+        {
+          "orig_row": "14301",
+          "direction": "Received",
+          "date": "2025-09-03",
+          "text": "So my plans worked out. You can pick her up tomorrow if you get her to dance class at 8. She won't be able to dance but at least she can learn the rules and see the studio"
+        },
+        {
+          "orig_row": "14304",
+          "direction": "Received",
+          "date": "2025-09-04",
+          "text": "Are you picking her up tonight and taking her to dance class?"
+        },
+        {
+          "orig_row": "14305",
+          "direction": "Received",
+          "date": "2025-09-04",
+          "text": "Dance at 8"
+        }
+      ],
+      "classification": "RF-03 primary Sev-1 \u2014 Melissa enrolled Olivia in Thursday tap dance classes without Eli's agreement (Eli objected: ROW-8089/8107). Once enrolled, Melissa treats the Thursday dance class as a standing logistics condition: Eli must take Olivia to dance during his parenting time. ROW-14301 frames Eli's visit as contingent on him taking Olivia to dance ('You can pick her up tomorrow if you get her to dance class at 8'). This is the activity-enrollment-creates-logistics-obligation pattern per ADD-006. ARC-RF03-001 Signal 3. Compound: RF-03+RF-06 (dance enrollment forced payment per RF-06 ADD-007).",
+      "addendum_applied": "ADD-006 (dance lesson \u2014 RF-03 secondary if enrollment creates scheduling conflict documented). ADD-002 (RF-03 applies when logistics obstruction is the operative element)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF03-001",
+      "state": "WATCHING",
+      "signals_cumulative": 3,
+      "event": "No new signals in B-028. WATCHING state holds."
+    },
+    {
+      "arc": "ARC-RF03-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0,
+      "event": "No Activity Enrollment Obstruction signals."
+    }
+  ]
+}

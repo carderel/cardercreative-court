@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-008",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2023-06-02",
+    "end": "2023-07-15"
+  },
+  "row_range": {
+    "start": 2580,
+    "end": 2954
+  },
+  "message_count": 509,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jun\u2013Jul 2023: GAL keyword in RF-04 analysis flag type label, not in message text as child-directed disclosure. No RF-11 primary signals."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

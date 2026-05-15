@@ -1,0 +1,37 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-025",
+    "row_range": { "start": 7805, "end": 7831 },
+    "date_range": { "start": "2025-05-22", "end": "2025-05-29" },
+    "message_count": 27,
+    "timezone_note": "Entirely EDT (UTC-4). DST spring forward occurred Mar 9, 2025 — EDT is active for the remainder of Phase B through Nov 2, 2025 DST fall-back. RF-02 B-025 date_range.start states May 4; actual first message in this range is ROW-7805 on May 22 (May 4-21 appears to be a real gap in the messaging record or falls within RF-02's primary SMS table). RF-02 sms_secondary_section notes ROW-7806-7832; RF-01 starts at ROW-7805 (off-by-one pattern).",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Predominantly Eli-sent batch (INF-007 period — Eli holding communication boundaries). Almost all messages are Sent. Received messages limited to ROW-7807 ('Yeah'), ROW-7826-7829 (Melissa agreeing with 9-month parenting plan provision). Content: pickup coordination, Olivia visiting Eli's mom, birthday planning structure, parenting plan 9-month rule discussion (cooperative resolution). Zero RF-01 content."
+  },
+
+  "primary_flags": [],
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [],
+  "peripheral_flag_count": 0,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "signal_count": 25,
+      "notes": "B-025 produces no RF-01 signals. May 22-29 period is entirely cooperative. Notable: Eli sets birthday planning structure for Olivia (ROW-7824 — activity, dinner, cake, movie); Eli and Melissa reach cooperative agreement on 9-month parenting plan rule for new partners (ROW-7825-7830). INF-007 period (Eli holding communication boundaries) = predominantly Sent messages; Melissa's Received messages this batch are cooperative."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Cooperative throughout. Eli dominant sender (25 of 27 messages Sent). May 22: pickup logistics. May 25-26: Olivia visit with Eli's mom, food diary (Jimmy John's, brussel sprouts), birthday planning structure. May 28: Parenting plan 9-month rule for new significant others — Melissa engages cooperatively ('That's why I said something / I look at it the same as you'). May 29: Eli at an outdoor event (booted to cars).",
+    "parenting_plan_enforcement": "ROW-7825 (May 28) is notable: Eli raises the parenting plan 9-month partner introduction provision in writing, citing Melissa's new partner and Olivia's relationship with him. Melissa's response (ROW-7826-7829) is cooperative — she agrees with the provision and clarifies the introduction happened prior to the relationship. This represents Eli setting a parenting-plan boundary (INF-007) and Melissa complying cooperatively. No escalation.",
+    "birthday_planning": "ROW-7824 (May 26): Eli articulates a birthday planning structure for Olivia ('Pick one fun place/activity + Pick dinner place + Pick ur cake + Pick the movie'). This is cooperative parenting behavior — establishing a birthday tradition framework.",
+    "may_gap": "May 4-21 appears to be a real gap in the messaging record (no messages). The prior batch (B-024) ended Apr 10; next message is May 22. This represents a 42-day gap in communication — consistent with the INF-007 period where Eli is holding communication boundaries."
+  }
+}

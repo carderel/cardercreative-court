@@ -1,0 +1,56 @@
+{
+  "batch_id": "B-030",
+  "date_range": {
+    "start": "2025-11-02",
+    "end": "2026-01-02",
+    "note": "date-filtered batch"
+  },
+  "message_count": 401,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "calibration_addenda_active": [
+    "RF12-ADD-001",
+    "RF12-ADD-002",
+    "RF12-ADD-003",
+    "RF12-ADD-004",
+    "RF12-ADD-005",
+    "RF12-ADD-006",
+    "RF12-ADD-007",
+    "RF12-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-005: post-police-report probe tone shift, Nov 2025 (ADD-004 anchor). CP2-confirmed; specific message requires manual verification in batch. ARC-RF12-001 promotes to ACTIVE at Signal 3."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-005",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF12-001",
+      "arc_signal": 3,
+      "date_range": "2025-11-22 onward",
+      "orig_rows": [
+        "contextual"
+      ],
+      "classification": "RF-12 primary Sev-1 \u2014 ADD-004 police report tone shift anchor (Nov 22, 2025). CP2 confirmed: after the police report, Melissa shifted tone toward probing and apparent concern ('What's going on with you? You seem different. If you want to talk'). While the specific probe message was not located in keyword searches, the behavioral shift is CP2-confirmed. This batch represents the high-correlation legal event window (police report Nov 22, 2025 = within 30 days). Classify as Sev-1 with note that the specific message(s) should be identified upon manual batch review. ARC-RF12-001 Signal 3. ARC-RF12-001 promotes to ACTIVE.",
+      "note": "Specific probe message(s) not located via keyword search; CP2-confirmed behavioral pattern. Manual review recommended to locate and document the specific message(s) in B-030.",
+      "addendum_applied": "ADD-004 (police report tone shift anchor \u2014 high legal correlation window). ADD-001 (Nov 22 2025 police report = legal event; Sev-1 minimum)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF12-001",
+      "state": "ACTIVE",
+      "signals_cumulative": 3
+    },
+    {
+      "arc": "ARC-RF12-002",
+      "state": "WATCHING",
+      "signals_cumulative": 2
+    }
+  ]
+}

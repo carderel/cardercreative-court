@@ -1,0 +1,41 @@
+{
+  "batch_id": "B-022",
+  "date_range": {
+    "start": "2025-01-14",
+    "end": "2025-02-14",
+    "note": "date-filtered batch"
+  },
+  "message_count": 297,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "calibration_addenda_active": [
+    "RF10-ADD-001",
+    "RF10-ADD-002",
+    "RF10-ADD-003",
+    "RF10-ADD-004",
+    "RF10-ADD-005",
+    "RF10-ADD-006",
+    "RF10-ADD-007",
+    "RF10-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Structural gap analysis applied. No primary RF-10 co-parenting refusal signals identified in 2025-01. Cooperative communication in co-parenting logistics present."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF10-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    },
+    {
+      "arc": "ARC-RF10-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    }
+  ]
+}

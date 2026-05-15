@@ -1,0 +1,35 @@
+{
+  "rf_pass": "RF-07",
+  "generated_from_cp2": "2026-04-24",
+  "status": "confirmed",
+  "addenda": [
+    {
+      "id": "RF07-ADD-001",
+      "title": "Flooding Threshold — 5+/10-Minute Rule Confirmed",
+      "rule": "The operative flooding threshold for this pass is 5 or more messages sent in one direction within a 10-minute window without a response from the recipient. Eli confirmed this standard feels appropriate — no subjective experience of slower flooding episodes that would require a lower threshold. Flag as RF-07 primary Sev-2 when a single 10-minute window contains 5+ messages. Flag as RF-07 primary Sev-1 when a session contains multiple clustering events below the strict threshold that together constitute a sustained pressure pattern (e.g., 4 messages in 10 min × 3 clusters within one hour).",
+      "why": "Eli confirmed the 5+/10-min standard without qualification — no incidents of 'slow flooding' that felt coercive at lower density.",
+      "how_to_apply": "For each message cluster in any batch, calculate the number of consecutive messages in one direction within any rolling 10-minute window. If 5+ occur without an intervening response from the recipient, flag as RF-07 primary. Use RF-04 pass compound episodes (B-004 July 4 30-message cluster, B-016 80-message overnight cluster, B-028/B-029 Phase C episodes) as the primary candidate pool for flooding events."
+    },
+    {
+      "id": "RF07-ADD-002",
+      "title": "Sent-Direction Messages — Reactive/Co-Parenting; Not RF-07 Primary",
+      "rule": "Eli's Sent-direction messages (39 triage hits) were reactive responses to ongoing provocations and legitimate co-parenting communication attempts — NOT boundary violations on Eli's part. Do NOT flag any Sent-direction messages as RF-07 primary signals against Eli. Where Eli's Sent messages follow a Melissa flooding cluster or escalation episode, note them as contextual co-parenting responses within the compound analysis. If Melissa characterizes Eli's legitimate contact attempts as harassment or boundary violations (per RF-15 false allegations framing), flag that characterization as RF-04+RF-15 compound, not RF-07.",
+      "why": "Eli confirmed his messaging pattern was reactive and communication-seeking. The 39 Sent triage hits reflect co-parenting necessity, not boundary overstepping.",
+      "how_to_apply": "When processing any batch: RF-07 primary signals are Received-direction only (Melissa's messages). Sent-direction messages are analyzed as context (were they before/during/after a Melissa flooding cluster?) but do not generate RF-07 primary flags against Eli. Exception: if transcript shows Eli explicitly demanding immediate responses or making ultimatums about contact — evaluate individually. None expected based on CP2 calibration."
+    },
+    {
+      "id": "RF07-ADD-003",
+      "title": "Continuation-After-Stop — Eli's Practice Defines the Baseline",
+      "rule": "Eli's pattern when Melissa said to stop or when conflict escalated was to wait — holding the boundary, letting the conversation go, re-engaging only when Melissa initiated again. This is the operative calibration reference: when Eli held a communication limit, Melissa's subsequent messages into that silence constitute RF-07 continuation-after-stop primary signals. The classification rule: (1) Eli signals end of engagement (explicitly: 'I'm done discussing this,' 'don't contact me about this,' or implicitly: stops responding after a clear conflict endpoint); (2) Melissa sends further messages on the same topic or in the same episode; (3) Each such message-into-silence episode = one RF-07 continuation-after-stop event. Multi-message continuation after a single stop signal = one compound event, not multiple flags. The inverse direction (Melissa saying stop, Eli continuing) applies the same rule — but per ADD-002, Eli's practice was to wait, making this primarily a Received-direction pattern.",
+      "why": "Eli confirmed he wasn't sure of the 'rule' but in practice erred toward waiting and letting Melissa re-initiate. This means his behavior was boundary-respecting; the continuation-after-stop pattern is Melissa's mechanism, not his.",
+      "how_to_apply": "In each batch, identify episodes where Eli: (a) explicitly states he's not engaging, (b) stops responding mid-conflict, or (c) sets a communication limit. Any Received messages continuing that episode after the limit = RF-07 continuation-after-stop signal. Severity: Sev-2 when Eli made an explicit verbal stop request; Sev-1 when Eli simply went silent and Melissa continued. May 2025 hot period (INF-007: Eli holding communication boundaries) is the primary expected source of this signal type — anticipate arc formation in that period."
+    },
+    {
+      "id": "RF07-ADD-004",
+      "title": "Custodial-Time Contact Overstepping — Confirmed Sub-Pattern",
+      "rule": "Eli confirmed that Melissa contacted him or Olivia repeatedly during his parenting time for non-urgent reasons. This is a confirmed RF-07 sub-pattern. Flag as RF-07 primary when: (a) messages arrive during Eli's documented or expected parenting time (weekends, scheduled visits), (b) content is non-urgent (no genuine safety or logistics reason requiring immediate response), and (c) the contact pattern is repetitive (2+ non-urgent intrusions in a single parenting period constitute a cluster; flag the cluster as one event). Severity: Sev-2 when Melissa explicitly demands immediate response during Eli's parenting time ('why aren't you answering?' / response-demand framing). Sev-1 when contact is repeated without response demands but pattern is intrusive.",
+      "why": "Eli confirmed yes to custodial-time overstepping. This is a distinct RF-07 mechanism from flooding — it is about the timing and purpose of contact relative to parenting schedule, not purely message volume.",
+      "how_to_apply": "When processing batches, note timestamps relative to custody schedule. Eli's standard parenting time is weekends (Fri-Sun, per case context). Messages arriving during those periods on non-urgent topics (not Olivia's safety, not emergency logistics) that are repetitive = RF-07 custodial-time-overstepping. Cross-reference with RF-02 arc: RF-02 documents Melissa's phone-blocking during her custodial time (blocking Eli's access to Olivia); RF-07 custodial-time overstepping is the inverse — Melissa's intrusion into Eli's time. They are separate arcs but may compound."
+    }
+  ]
+}

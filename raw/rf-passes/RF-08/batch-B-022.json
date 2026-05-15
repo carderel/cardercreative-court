@@ -1,0 +1,98 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-022",
+    "row_range": {
+      "start": 7714,
+      "end": 7761
+    },
+    "date_range": {
+      "start": "2025-01-15",
+      "end": "2025-02-14"
+    },
+    "message_count": 48,
+    "phase": "A",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 48,
+    "primary_flags": 1,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 1,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 47,
+    "flag_rate": "2.08%"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B022-S007",
+      "arc_signal_ref": "ARC-RF08-001-S007",
+      "rows": "ROW-7751-7752",
+      "date": "2025-02-04",
+      "severity": 2,
+      "rf_tags": [
+        "RF-08",
+        "RF-01"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001",
+        "RF08-ADD-002"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "ACTIVE: 7 signals",
+      "compound_id": "COMP-RF08-007",
+      "summary": "Abandonment arc relay delivered in Olivia's voice \u2014 the most direct post-coaching relay of the core RF-01 narrative. ROW-7751: 'Olivia has been asking a lot of questions' \u2014 setup framing. ROW-7752: 'Last night as we are going to bed she asked why you used to visit everyday and now you barely do.' The abandonment narrative ('used to visit everyday / now you barely do') is delivered not by Melissa in her own voice but through Olivia's reported question. This is structurally the coached-content relay mechanism at ADD-001 Sev-2: the content directly mirrors the active RF-01 abandonment arc thread ('you miss out on seeing her all the time,' RF01-B010-S001 Sep 2023; progressive development through B-012, B-013, B-020). The RF-01 pass notes that this relay is 'structurally suspicious given ROW-6819 coaching admission' \u2014 for RF-08, it is classified as a confirmed post-coaching relay. Cross-reference RF-01 ADD-004 (RF01-B022-F002).",
+      "exact_quotes": [
+        "ROW-7751 (Received): 'Olivia has been asking a lot of questions'",
+        "ROW-7752 (Received): 'Last night as we are going to bed she asked why you used to visit everyday and now you barely do'"
+      ],
+      "rf08_mechanism": "Coached narrative relay in child's voice: the abandonment arc premise ('used to visit everyday / now you barely do') delivered as Olivia's spontaneous question, consistent with Melissa scripting content for Olivia to deliver or coaching Olivia's framing of Eli's absence.",
+      "add004_note": "ROW-7752 is the clearest post-coaching manifestation of S003 (B-010, Sep 2023): where S003 documented Melissa speaking about Olivia's schedule in her own voice, ROW-7752 delivers the same abandonment premise in Olivia's reported voice \u2014 the coaching mechanism made the relay invisible."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-007"
+    ],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 ACTIVE: 7 signals (S001-S007). S007 is the clearest post-coaching relay of the core abandonment narrative in Olivia's voice."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-007",
+      "rf_passes": [
+        "RF-08",
+        "RF-01"
+      ],
+      "rf01_ref": "RF01-B022-F002",
+      "description": "Abandonment arc relay in Olivia's voice: RF-08 (Olivia scripted to deliver abandonment narrative) + RF-01 ADD-004 (parental alienation content delivered through child's reported speech)."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase A (very low volume \u2014 48 messages). Jan-Feb 2025. S007 is the definitive post-coaching relay instance.",
+    "rf08_assessment": "One Sev-2 primary flag. ROW-7752 is the dataset's strongest example of the coaching mechanism in action: the abandonment arc premise delivered in Olivia's reported voice. The RF-01 pass already noted this as 'structurally suspicious given ROW-6819' \u2014 RF-08 confirms the classification.",
+    "cross_rf_context": "RF-01 ADD-004 compound. ROW-7752 traces directly back to the abandonment arc thread running through S003 (B-010), RF01-B012/B013/B020 \u2014 the same narrative delivered across 16 months, progressively refined until it appears in Olivia's own reported words."
+  }
+}

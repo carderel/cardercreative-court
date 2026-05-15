@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-022",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2025-01-14",
+    "end": "2025-02-15"
+  },
+  "row_range": {
+    "start": 8053,
+    "end": 8522
+  },
+  "message_count": 642,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 9,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B022-001",
+      "date": "2025-01-15",
+      "row_ref": "ROW-7724-7740",
+      "severity": 1,
+      "rf15_category": "D",
+      "direction": "received",
+      "summary": "PROJ-001 confirmed \u2014 projection of gaslighting accusation. Jan 15 2025 hostile cluster. ROW-7740: 'you gaslight everything' \u2014 Melissa explicitly accuses Eli of the RF-09-documented behavior she is engaged in across 7+ conflict periods. Category D (projection). Sev-1 (first isolated instance for PROJ-001 at this batch; cross-RF context elevates pattern significance). ADD-004 applies: confirmed projection pair.",
+      "exact_quote": "ROW-7740: 'you gaslight everything'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 10,
+      "compound_patterns": [
+        "RF-04+RF-15",
+        "RF-09+RF-15"
+      ],
+      "cross_rf_note": "RF-04 B-022 ROW-7724-7725/7740 is the primary RF-04 flag. RF-09 S006 (B-022) documents this as DARVO-inversion. RF-15 primary identifies the projection mechanism: Melissa names gaslighting and attributes it to Eli while RF-09 documents Melissa's systematic reality-distortion.",
+      "projection_pair_id": "PROJ-001"
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

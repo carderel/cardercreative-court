@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-031",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2026-04-08",
+    "end": "2026-04-12"
+  },
+  "row_range": {
+    "start": 15540,
+    "end": 15600
+  },
+  "message_count": 61,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 5,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Apr 2026 dataset close (Apr 8-12). S005 (B-030) preceded. Apr 12 DARVO bruise/abuse reversal cluster (RF-04 COMP-RF04-030, RF-08 S011). No RF-11 primary signals \u2014 bruise discovery by Eli was an appropriate parental inquiry; Melissa's escalation to peer-parent relay is RF-08 primary. Olivia's reporting role in the bruise incident is RF-08 context. ARC-RF11-001 ACTIVE, 5 signals, unresolved at dataset close."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

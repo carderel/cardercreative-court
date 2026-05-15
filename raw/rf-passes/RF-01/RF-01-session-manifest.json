@@ -1,0 +1,198 @@
+{
+  "rf_pass": "RF-01",
+  "rf_name": "Parental Alienation",
+  "pass_status": "complete",
+  "priority": 2,
+  "tier": 1,
+  "pass_mode": "full_deep",
+
+  "progress": {
+    "total_batches": 31,
+    "batches_completed": 31,
+    "batches_remaining": 0,
+    "last_batch_completed": "B-031",
+    "next_batch": null,
+    "halt_reason": null
+  },
+
+  "date_coverage": {
+    "covered_through": "2026-03-18",
+    "remaining_from": null
+  },
+
+  "cumulative_statistics": {
+    "messages_analyzed": 8592,
+    "primary_flags": 27,
+    "severity_distribution": {"1": 2, "2": 25, "3": 0},
+    "peripheral_flags": 90,
+    "active_arcs": 1,
+    "watching_arcs": 0,
+    "candidate_arcs": 0,
+    "resolved_arcs": 0
+  },
+
+  "cross_rf_context": {
+    "rf02_arc_state": "analysis-output/arc-states/RF-02-arc-state-final.json",
+    "rf02_status": "complete",
+    "rf02_active_arcs": ["ARC-RF02-001", "ARC-RF02-002", "ARC-RF02-004", "ARC-RF02-006"],
+    "rf02_note": "RF-02 final arc state loaded read-only for compound pattern detection and informed peripheral tagging"
+  },
+
+  "calibration_addenda": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+  "calibration_addenda_file": "analysis-output/calibration/addenda-RF-01.json",
+
+  "cp2_status": "complete",
+  "cp2_generated": "2026-04-23",
+  "cp2_completed": "2026-04-23",
+  "cp2_file": "analysis-output/checkpoints/cp2-RF-01-review.json",
+
+  "batch_plan_note": "Following triage batch plan date ranges. RF-02 used modified date-based batches due to anomalous row ranges from B-007+; RF-01 uses triage plan. Synthesis stage handles any batch-boundary alignment differences.",
+
+  "session_log": [
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-001"],
+      "notes": "RF-01 pass initialized and B-001 (calibration batch) processed. Date range: Jan 11 – Oct 3, 2022. 365 SMS messages + 128 MMS. Pre-calibration: 3 primary flags. Post-calibration: 2 primary flags (1 dismissed, 1 elevated). S001 (ROW-43, Sev 1, CONFIRMED): church / 'my mom said' override — confirmed recurring pattern. S002 (ROW-292-293, DISMISSED): twerking — confirmed inside joke, not genuine negative attribution. S003 (ROW-361-363, Sev 2, ELEVATED): Savage Love / abandonment language — confirmed deliberate coached narrative maintained since divorce filing. 5 peripheral flags. ARC-RF01-001 promoted CANDIDATE → WATCHING (2 confirmed signals, pattern confirmed as ongoing since day one). CP2 complete. 5 addenda generated."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-002"],
+      "notes": "B-002 processed: Oct 3 – Nov 5, 2022. 346 SMS + 154 MMS. 2 primary flags (both Sev 2): S001 (ROW-619-621, Halloween 'We don't need you / She deserves a better dad' — inadequate father narrative in writing for first time); S002 (ROW-635-656, Halloween Abby/Milo comparison cluster — 'My biggest issue is you don't prioritize Olivia / Your daughter is begging you'). 5 peripheral flags (RF-02 x2, RF-04 x2, RF-09 x1). ARC-RF01-001 promoted WATCHING → ACTIVE (4 signals total, 3 Sev 2). Compound pattern COMP-RF01-001 established (contact denial + abandonment narrative delivery). Notable: Eli drove to Melissa's neighborhood at 7:08 PM EDT (peak trick-or-treating hours, not 11pm; source timestamps UTC, EDT=UTC-4) — contradicts the 'refused to come' narrative constructed in ROW-619-656."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-003"],
+      "notes": "B-003 processed: Nov 6 – Dec 12, 2022 (full EST, UTC-5). 380 SMS. 1 primary flag (Sev 1): S001 (ROW-1056-1059, Dec 7 — late dropoff cluster: 'It's not good parenting / went clear across town to take Abby home' — third written Abby-prioritization instance; Olivia's physical discomfort relayed as evidence of parental inadequacy). 4 peripheral flags (RF-02 x2, RF-04 x1, RF-15 x1). Notable peripheral: ROW-938-939 (Nov 23) — first written documentation of false allegation that Eli met Abby when she was 7-8 years old and he was 30 — RF-15 primary candidate. ARC-RF01-001 remains ACTIVE, +1 signal (total 5: 2 Sev-1, 3 Sev-2). De-escalation batch post-Halloween; cooperative content notably higher than B-002."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-004"],
+      "notes": "B-004 processed: Dec 12, 2022 – Jan 17, 2023 (EST). 369 SMS. 1 primary flag (Sev 2): S001 (ROW-1285-1288, Dec 28 surgery morning — 'she is your kid and he's not' + 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic' — most explicit written statement of real-daughter/not-your-child abandonment framing; uncle/dad sarcasm second written use). 4 peripheral flags (RF-02 x1 cat-allergy home gatekeeping, RF-04 x2, RF-15 x1). ARC-RF01-001 ACTIVE, +1 Sev-2 signal (total 6: 2 Sev-1, 4 Sev-2). High cooperative content — surgery recovery period; Melissa facilitates movie night and lunch outing."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-005"],
+      "notes": "B-005 processed: Jan 18 – Feb 21, 2023 (EST). 378 SMS. 0 primary RF-01 flags. 3 peripheral flags (RF-04 x2 — Abby-illness contempt + scammer characterization; RF-08 x1 — both parties involving Olivia in accident/lawsuit discussion). ARC-RF01-001 ACTIVE, no new signal. Total still 6 signals. Key observation: quiet batch correlates with high Eli-Olivia contact period — multiple outings, cooperative logistics. Pattern hypothesis: RF-01 primary signals cluster around access conflicts, not active contact periods."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-006"],
+      "notes": "B-006 processed: Feb 22 – Apr 3, 2023 (EST through Mar 12, then EDT). 389 SMS. 2 primary flags (both Sev 2): S001 (ROW-1881-1884, Feb 23 — 'News flash. You're a horrible father / I shouldn't have called you a dumbass in front of her but you're such a shit dad that it slipped out' — WRITTEN ADMISSION of in-front-of-Olivia disparagement; next morning Olivia asked 'if it was her fault' ROW-1889); S002 (ROW-2168-2192, Mar 30-31 — 'I choose to be single because I have a daughter / Something you wouldn't know about' + 'You're not a good father' + third false allegation invocation + adultery framing). 5 peripheral flags (RF-02 x1, RF-04 x2, RF-15 x2). 1 CP3 item: CP3-RF01-B006-001 (ROW-1884 written admission). ARC-RF01-001 ACTIVE, +2 Sev-2 signals. Total: 8 signals (2 Sev-1, 6 Sev-2). Pattern observation confirmed: B-005 quiet period followed by B-006 escalation — consistent with access-conflict activation hypothesis."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-007"],
+      "notes": "B-007 processed: Apr 3 – Jun 2, 2023 (all EDT). 351 SMS. 1 primary flag (Sev 2): S001 (ROW-2373-2409, Apr 21-28 — Abby exclusion campaign: Melissa characterizes Abby as 'bitch/whore mouth,' relays Olivia 'crying' and wanting Abby excluded, then Apr 27-28 conditions pickup on Abby's absence using Olivia's 'adamant' refusal, claiming 'that was her making that plan all on her own' — first instance of Eli's custodial contact conditioned on Abby's exclusion via Olivia's voiced preferences; Abby attack vector fully operationalized). 4 peripheral flags (RF-04 x3, RF-02 x1). 1 CP3 item: CP3-RF01-B007-001. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 9 signals (2 Sev-1, 7 Sev-2). Pattern: 7 consecutive 'Olivia doesn't want to call' responses in 13 days following Apr 21 incident; post-incident phone-refusal cluster is most sustained in the record."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-008"],
+      "notes": "B-008 processed: Jun 2 – Jul 15, 2023 (all EDT). 378 SMS. 1 primary flag (Sev 2): S001 (ROW-2924-2940, Jul 14 — Olivia's birthday: 'begging you' + 'You've never asked to do anything with her' + 'We all know it's Abby that's not letting you go because she is insecure and immature' + 'You should dump her and date an honest person that will support your relationship with your daughter' + 'You're a shit dad.' Structural development: Abby attack vector shifts from Abby harms Olivia directly to Abby prevents Eli from choosing Olivia). 4 peripheral flags (RF-04 x3, RF-02 x1). 1 CP3 item: CP3-RF01-B008-001. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 10 signals (2 Sev-1, 8 Sev-2). Key near-boundary: Jun 15 ROW-2719-2720 'Olivia was feeling / you need to do better so she knows you love her' — structural feedback loop: B-007 Abby exclusion condition creates reduced contact → characterized as abandonment in B-008."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-009"],
+      "notes": "B-009 processed: Jul 15 – Aug 20, 2023 (all EDT). 384 SMS. 1 primary flag (Sev 2): S001 (ROW-3127-3158, Jul 29-31 — vaping incident: Melissa frames Eli as lying to Olivia; ROW-3151 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days' — explicit gatekeeping admission; Olivia demands 'not a fake' apology mediated by Melissa). 4 peripheral flags (RF-04 x2, RF-04/RF-01 near-boundary x1, RF-15 x1). 1 CP3 item: CP3-RF01-B009-001 (ROW-3151 gatekeeping admission). ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 11 signals (2 Sev-1, 9 Sev-2). Strong cooperative content: cheer practice coordination, school supply drop-off, first-day-of-school photos, Melissa asks Eli to write letter for Olivia's first day."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-010"],
+      "notes": "B-010 processed: Aug 21 – Oct 4, 2023 (all EDT). 381 SMS (rows 3343-3723). 1 primary flag (Sev 2): S001 (ROW-3629-3630, Sep 26 — predatory-implication cluster: 'You miss out on seeing her all the time.' + 'I really hope you weren't just making yourself available because there were young girls there.' — explicit written implication that Eli's cheer attendance was predatory toward other children; fifth thematic component of ARC-RF01-001; most serious false allegation variant to date). 4 peripheral flags: ROW-3353-3355 (RF-02: 'That's why you are called most mornings. Because I ask.' — second written gatekeeping admission corroborating ROW-3151); ROW-3388 (RF-15: 'Banging your niece, that you met when you were 30 and she was getting ready to turn 8' — most explicit written statement of false age-at-meeting allegation); ROW-3397-3398 (RF-04: 'She said cause you're a jerk' + 'you keep yelling at her'); ROW-3545-3546 (RF-02: 'I deleted her off of pickup. Abby. Lol.' — Abby unilaterally removed from school pickup list). 1 CP3 item: CP3-RF01-B010-001 (ROW-3629 predatory implication). ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 12 signals (2 Sev-1, 10 Sev-2)."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-011"],
+      "notes": "B-011 processed: Oct 5 – Nov 25, 2023 (mixed EDT/EST; DST end Nov 5, 2023). 330 SMS (rows 3724-4053). 0 primary RF-01 flags. 4 peripheral flags: ROW-3768 (RF-04: 'She said that's common' — Olivia's negative characterization of Eli's availability relayed); ROW-3778-3790 (RF-09: fair-confusion gaslighting cluster + 'you forgot to call per usual'); ROW-3936 (RF-01 near-boundary/RF-04: Halloween 'You're not trying to get her more candy. You're trying to not fight with Abby' — ADD-001+002 triggered, peripheral threshold only; second consecutive Halloween with Abby attack vector); ROW-3969 (RF-04: 'She doesn't cry with me anymore' — comparative framing of Eli's presence as source of Olivia's distress). 0 CP3 items. ARC-RF01-001 no new signal. Quiet-batch pattern confirmed post-B-010 conflict. Total remains: 12 signals (2 Sev-1, 10 Sev-2)."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-012"],
+      "notes": "B-012 processed: Nov 26, 2023 – Jan 31, 2024 (all EST). 395 SMS (rows 4054-4448). 2 primary flags (both Sev 2): S001 (ROW-4073-4074, Dec 2 — 'She said you just follow Abby around and Abby led you to the car' — Abby-control attribution relayed via Olivia; partial factual correction by Eli re Santa and skates, Abby framing left intact); S002 (ROW-4177-4185, Dec 24 Christmas Eve — 'You let Abby dictate everything which is why your relationship with your daughter isn't very good' — most explicit Abby-causation statement to date + inadequate-father cluster). 5 peripheral flags (RF-15/RF-01 x1, RF-04 x1, RF-02 x3). 2 CP3 items (CP3-RF01-B012-001, CP3-RF01-B012-002). ARC-RF01-001 ACTIVE, +2 Sev-2 signals. Total: 14 signals (2 Sev-1, 12 Sev-2). Also: 3 more written gatekeeping admissions (ROW-4367-4369, ROW-4383-4385, ROW-4389) — 6 total across record. Notable counter-indicators: ROW-4275 Melissa corrects Olivia's mocking misperception; ROW-4426 Olivia first called Eli when hurt."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-013"],
+      "notes": "B-013 processed: Feb 1 – Mar 27, 2024 (EST through Mar 10, then EDT; DST start confirmed at ROW-4725). 415 SMS (rows 4449-4863). 1 primary flag (Sev 2): S001 (ROW-4792-4801, Mar 17 — 'She tells me about how it hurts her that you don't have time for her' — systemic inadequate-father framing via Olivia's reported ongoing hurt; + 'your selfish self fucked up' + 'Such a worthless dick'; ADD-002 + ADD-004). 3 peripheral flags: ROW-4588-4589 (RF-02/RF-01: NC relocation inquiry 'You still good if we move to NC?'); ROW-4718-4724 (RF-01/RF-04 near-boundary: 'game more important than her' — partial balance in ROW-4724); ROW-4773-4774 (RF-04/RF-01: 'dumb shit that comes out of your mouth is hurtful. It was that way to me too'). 1 CP3 item: CP3-RF01-B013-001. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 15 signals (2 Sev-1, 13 Sev-2). Notable: Melissa takes Olivia to airport at dawn to see Eli off (ROW-4575-4584) — significant cooperative indicator."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-014"],
+      "notes": "B-014 processed: Mar 28 – May 9, 2024 (all EDT). 375 SMS (rows 4864-5238). Note: RF-02 batch file showed anomalous last_row ROW-11811; actual range confirmed via date-based extraction. 0 primary RF-01 flags. 4 peripheral flags: ROW-4907-4912 (RF-04/RF-02: cat allergy accusation cluster 'Didn't stop until my lawyer sent you a letter' — character-attack framing; ADD-002 adjacent); ROW-4991-4994 (RF-04: 'Your daughter is upset that you hung up on her' — Melissa relays Olivia's interpretation over Eli's correction without acknowledgment); ROW-5156-5158 (RF-04: 'She was mad because you hung up on her' — Olivia's anger relayed as settled despite Eli's corrective explanation); ROW-5185 (RF-04: 'You're unreliable' — ADD-002 adjacent; car breakdown context). 0 CP3 items. ARC-RF01-001 no new signal. Quiet-batch pattern confirmed post-B-013 conflict. Total remains: 15 signals (2 Sev-1, 13 Sev-2). Notable: ROW-5203 (May 7) Eli explicitly states 'I make sure she is respectful about and to you. I never talk about you around her and discourage any negative talk regarding you. You're her mom and I make sure she is respectful of you. I need you to do the same.' — documented contemporaneous co-parenting standard; Melissa's response dismisses as 'too sensitive.' ROW-5127 'Abby preggers?' — first documented pregnancy inquiry (monitoring). Three consecutive batches (B-012, B-013, B-014) with Melissa correcting Olivia's negative misperceptions of Eli (counter-indicator pattern)."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-015"],
+      "notes": "B-015 processed: May 11 – Jun 13, 2024 (all EDT). 386 SMS (rows 5239-5624). 1 primary flag (Sev 2) — most extreme escalation in the record: S001 (ROW-5301-5316, May 14 — escalating attack cluster in summer childcare discussion: ROW-5301 'I'm way more comfortable with her spending a whole day with them than you'; ROW-5303 'That's also really concerning that you don't trust yourself either'; ROW-5306-5308 numbered reservations ('You chose a cat over your daughter / 3 hours a week'; ADD-002); ROW-5309-5316 full rape narrative construction alleging Eli deliberately intoxicated Abby, sexually assaulted her, and may be a repeat offender who exploited her prior trauma — ADD-005; most extreme false allegation in the record; escalates predatory-father arc component from oblique implication to constructed rape narrative). 6 peripheral flags: ROW-5257-5261 (vaping relay), ROW-5263 (call relay), ROW-5267-5268 (job contempt), ROW-5270 (pregnancy-as-avoidance framing — first written pregnancy confirmation), ROW-5566-5567 ('If my baby drowns I will murder you' — RF-05), ROW-5606 (Father's Day pressure). 1 CP3 item: CP3-RF01-B015-001 (ROW-5309-5316 rape narrative). ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 16 signals (2 Sev-1, 14 Sev-2). Notable: Outer Banks vacation (May 19-26) is highly cooperative; June 11 Olivia behavioral incident (hitting Melissa) handled jointly without RF-01 escalation."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-016"],
+      "notes": "B-016 processed: Jun 14 – Jul 15, 2024 (all EDT). 388 SMS (rows 5625-6012). 1 primary flag (Sev 2): S001 (ROW-5862, June 30 — most explicitly sexual incest-framing of Eli/Abby relationship: 'I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong, seeks attention without regard for others, is a liar, makes false allegations and doesn't know that she shouldn't fuck her uncle' — ADD-001 full character assassination + ADD-005 uncle/niece incest language; triggered by Eli's reasonable input re: Olivia visiting Melissa's seriously ill father). 3 peripheral flags: ROW-5734-5735 (Milo supervision critique), ROW-5830-5831 (bed bug inquiry), ROW-5887 ('You got her crying'). 1 CP3 item: CP3-RF01-B016-001. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 17 signals (2 Sev-1, 15 Sev-2). Strong cooperative content: Melissa proactively offers to hide Eli's birthday gift for Olivia's Canada vacation (ROW-5908-5910); genuine mutual support during Melissa's father's hospitalization; Canada trip photo sharing."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-017"],
+      "notes": "B-017 processed: Jul 15/16 – Aug 4, 2024 (all EDT; ROW-6013-6014 carry Jul 15 local date). 544 SMS (rows 6013-6556). 1 primary flag (Sev 2): S001 (ROW-6282-6524, August 4 — most sustained single-day inadequate-father attack in the record; triggered by scheduling conflict over Becky's morning childcare; 80+ message escalation combining five ADD-002 iterations, ADD-004 Olivia relay, explicit legal threats ROW-6290/6312 with sole-custody filing intent, 2.5-hours framing fourth iteration ROW-6344, cat-allergy court evidence framing ROW-6345-6346, pregnancy-overcrowding framing ROW-6436, 'You are a shit father' ROW-6483, abandonment narrative clearest articulation since B-006 ROW-6514-6516 'walk out of her life like nothing / only see her a few hours a week now'). 3 peripheral flags: ROW-6016-6017 (Canada return sadness relay), ROW-6026 (call directive), ROW-6098 (excuses contempt). 1 CP3 item: CP3-RF01-B017-001. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 18 signals (2 Sev-1, 16 Sev-2). Third consecutive batch with primary signal (B-015+B-016+B-017). Notable: Valentina/Tinder/sex concern (ROW-6170-6198) handled cooperatively; dispute self-resolved when Melissa found Roger to watch Olivia (ROW-6458). Pregnancy-as-attack-vector now active monitoring target."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-018"],
+      "notes": "B-018 processed: Aug 5 – Sep 2, 2024 (all EDT; Sep 3 was a gap day — no messages). 387 SMS (rows 6557-6943). 1 primary flag (Sev 2): S001 (ROW-6783-6831, Aug 19-20 — inadequate-father cluster triggered by Eli's 12-minute school supply drop-off appearance and child support delay; key node ROW-6819: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me' — most direct written admission of conversation coaching in the record; sustained ADD-002 school-year attack vector established; ROW-6814 '12 minutes does it really matter?'; ROW-6811 'You had no clue who her teacher was'). 3 peripheral flags: ROW-6582-6585 (absent parent/excuses framing), ROW-6873-6874 (did you yell at her — default suspicion), ROW-6934 (poor Milo parade jab). 1 CP3 item: CP3-RF01-B018-001. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 19 signals (2 Sev-1, 17 Sev-2). Strong cooperative baseline: salon visit, lemonade stand (Eli attends), birthday party coordination, Labor Day festivals. B-018 breaks three-consecutive-primary-batch streak but produces primary signal in school-year-start context. Tennessee mention (ROW-6730) added to relocation monitoring alongside NC inquiry."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-019"],
+      "notes": "B-019 processed: Sep 4 – Oct 3, 2024 (all EDT; ROW-6944-7523). 580 SMS. FIRST TRIPLE-PRIMARY-FLAG BATCH IN PHASE A. 3 primary flags (all Sev 2): S001 (ROW-6953-7023, Sep 5 — bike scratch triggers pregnancy incompetence attacks: ROW-6971 'How are you having another kid when you have no clue how to parent?' + ROW-6976 'I feel bad for Milo and that poor unborn child' + ROW-7017 'I mean I am questioning your parenting skills'; ADD-002 + ADD-001); S002 (ROW-7161-7170, Sep 14 — choking allegation via Olivia + physical harm of Melissa allegation; Alice born ~Sep 11-12; ROW-7164 'he choked her and she couldn't breathe'; ROW-7168 'you used to physically harm me too'; ADD-004 + ADD-005); S003 (ROW-7325-7490, Oct 2 — 165-message dump; ROW-7461 custody strategy acknowledgment 'would easily give me full custody'; ROW-7478 third gatekeeping admission; ROW-7459 'walked out on her' abandonment arc fourth iteration; ROW-7367 'sister/cousin' incest framing of Alice; ADD-002 + ADD-001 + ADD-004 + ADD-005). 5 peripheral flags. 3 CP3 items: CP3-RF01-B019-001 (choking allegation); CP3-RF01-B019-002 (custody strategy acknowledgment); CP3-RF01-B019-003 (third gatekeeping admission). ARC-RF01-001 ACTIVE, +3 Sev-2 signals. Total: 22 signals (2 Sev-1, 20 Sev-2). Notable: Eli took Olivia to Children's hospital for bee sting Oct 1 (cooperative medical management); bee sting contradicts ROW-7465 'you never helped with her care when she was sick until yesterday.'."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-020"],
+      "notes": "B-020 processed: Oct 4 – Dec 6, 2024 (EDT through ROW-7598 Oct 31; EST from ROW-7599 Nov 6; Dec 7-17 gap — no messages). 182 SMS (rows 7524-7705). 1 primary flag (Sev 2): S001 (ROW-7624-7678, Nov 17-18 — food-dispute parenting-competence cluster: 'Are you not able to parent for 2 hrs' ROW-7624; 'Be a parent' ROW-7625; 'Do I need to come do what you should be doing?' ROW-7638 — ADD-003 cross-household override offer; 'She's with me more because you make no time for her' ROW-7654; 'Are you going to give her dinner or send her home without eating again?' ROW-7678). 2 peripheral flags: ROW-7553 (Abby throwing a fit — ADD-001), ROW-7703 (huffy with Olivia, talking to Abby — ADD-001). 0 CP3 items. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 23 signals (2 Sev-1, 21 Sev-2). Low-intensity batch — post-B-019 de-escalation confirmed; cooperative October period; food-dispute is only escalation."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-021"],
+      "notes": "B-021 processed: Dec 19, 2024 – Jan 8, 2025 (all EST; ROW-7706-7713). 8 SMS — quietest batch in the record. Phase A/B boundary. 0 primary flags, 0 peripheral flags, 0 CP3 items. ARC-RF01-001 no new signal. Content: childcare coordination (ROW-7706-7709 Dec 19), $25 payment request (ROW-7710 Dec 23), holiday message ROW-7711 Dec 25 ('Meta quest is cool as hell'), childcare update ROW-7712 Jan 7, pickup inquiry ROW-7713 Jan 8. All routine — no RF-01 indicators. Consistent with INF-005 behavioral silence period (Melissa withdrew after intense early-October conflict). Jan 2025 hot-period escalation has not yet materialized as of Jan 8; anticipated in B-022+."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-022"],
+      "notes": "B-022 processed: Jan 15 – Feb 14, 2025 (all EST; ROW-7714-7761). 48 SMS. Phase B — Jan 2025 hot period. 2 primary flags (both Sev 2): RF01-B022-F001 (ROW-7714-7749, Jan 15 — 36-message pickup-cancellation escalation; ADD-002 sustained including first 'sperm donor' framing ROW-7726, ADD-004 ROW-7748 Olivia crying at Janette's); RF01-B022-F002 (ROW-7751-7753, Feb 4 — abandonment arc relay via Olivia's question 'why you used to visit everyday and now you barely do'; ADD-004 + ADD-001 Milo eating competition). 3 peripheral flags: ROW-7717 ('She knows how you are' — ADD-002 adjacent), ROW-7724 ('told Olivia I'm crazy' — RF-09/RF-15 counter-allegation), ROW-7739 (Eli placed scheduling responsibility on Olivia — RF-08 peripheral). 2 CP3 items: ROW-7726 sperm donor language; ROW-7752 abandonment relay via Olivia. ARC-RF01-001 ACTIVE, +2 Sev-2 signals. Total: 25 signals (2 Sev-1, 23 Sev-2). Jan 29-Feb 14 portion cooperative to neutral; bimodal batch."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-023"],
+      "notes": "B-023 processed: Feb 24 – Mar 3, 2025 (all EST; ROW-7762-7773). 12 SMS. 0 primary flags, 0 peripheral flags, 0 CP3 items. ARC no new signal. Feb 15-23 is a real 9-day gap in the messaging record. Content: $270 payment (ROW-7762), Olivia status update (ROW-7764-7765), cooperative childcare coordination around Melissa's kidney stone hospital visit Mar 3 (ROW-7766-7773). Entirely routine. DST spring forward Mar 9 2025 ahead — B-024 will span the change."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-024"],
+      "notes": "B-024 processed: Mar 4 – Apr 10, 2025 (EST through ROW-7780 Mar 7; EDT from ROW-7781 Mar 10; DST spring forward confirmed in Mar 8-9 gap; ROW-7774-7804). 31 SMS. Apr 11-30 is a real gap in messaging record. 0 primary flags. 2 peripheral flags: ROW-7776 (ADD-001 — 'abster doesn't want you going' re Olivia's birthday party), ROW-7785-7795 (ADD-002 adjacent sick-child/surgery cluster — peripheral threshold only). 0 CP3 items. ARC no new signal. Total: 25 signals (2 Sev-1, 23 Sev-2). Remainder of batch (Mar 17, 24, Apr 10) is routine coordination."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-025", "B-026", "B-027"],
+      "notes": "B-025 processed: May 22-29, 2025 (EDT; ROW-7805-7831). 27 SMS. May 4-21 is a real 42-day gap — INF-007 period. 0 flags. Cooperative throughout; parenting plan 9-month partner rule raised cooperatively and resolved. B-026 processed: May 30 – Jun 29, 2025 (EDT; ROW-7832-7942). 111 SMS. 1 primary flag (Sev-2): RF01-B026-F001 (ROW-7873-7878, Jun 13 — incest-framing cluster in response to Eli enforcing parenting plan; ADD-001+ADD-005+ADD-004; first use of Olivia's imagined first-person voice to deliver incest characterization: 'That's my dad and my cousin why are they making out'). 2 peripheral flags (ROW-7891 ADD-002 adjacent, ROW-7927 RF-09/RF-15 cross-reference — Abby apologized to Melissa's mom). 1 CP3 item (ROW-7877). ARC +1 Sev-2 signal. B-027 processed: Jul 1 – Aug 2, 2025 (EDT; ROW-7943-8061). 119 SMS. 0 flags. Cooperative throughout — Olivia birthday Jul 14 (Eli reaches out; Melissa facilitates), Olivia sick during Melissa's trip Jul 15-17 (cooperative medical coordination), tap dancing interest. Total after B-025-027: 26 signals (2 Sev-1, 24 Sev-2)."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-028"],
+      "notes": "B-028 processed: Aug 8 – Sep 12, 2025 (all EDT; ROW-8062-8228). 167 SMS. Phase B — visit refusal cascade begins. 1 primary flag (Sev-2): RF01-B028-F001 (ROW-8127-8177, Aug 24-28 — most comprehensive ADD-004 relay in the record; Olivia's multi-factor complaint list about Eli's home delivered in extended reported speech: sleep problems, Milo conflict, food inadequacy, Alice displacing Olivia's room, movement restrictions, boredom; 'She said all you do is follow Abby around and not let them do anything then leave' ROW-8139 ADD-001 in Olivia's alleged voice; ROW-8161 'refusal to be a consistent or proper parent' ADD-002; ROW-8177 closing shows Melissa told Olivia 'you really want to see her' and 'sometimes you need to do something you don't want to do'). 1 peripheral (ROW-8104 'dumbass' ADD-002 adjacent). 1 CP3 item (ROW-8139 + ROW-8177). ARC +1 Sev-2 signal. Total: 27 signals (2 Sev-1, 25 Sev-2). Bimodal batch — Aug 8-23 cooperative; Aug 24-29 visit refusal cascade; Aug 30-Sep 12 returns to cooperative baseline."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-029"],
+      "notes": "B-029 processed: Sep 13 – Oct 30, 2025 (all EDT; ROW-8229-8403). 175 SMS. Phase B — visit refusal cascade continues but RF-01 content sparse. 0 primary flags. 1 peripheral flag (ROW-8261, Sep 19 — 'If you're not there when I get there I'm calling the police'; RF-05 primary; RF-01 peripheral: police threat could function as inadequate-father narrative element if reported to Olivia). 0 CP3 items. ARC no new signal. Predominantly cooperative and Eli-sent; Received messages limited to routine coordination. Oct 2025 cooperative overall: school coordination, birthday parties, Halloween. Police threat resolved same day; ROW-8268 'Stop fucking texting me' same dispute."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-030"],
+      "notes": "B-030 processed: Nov 2 – Dec 26, 2025 (all EST; ROW-8404-8498). 95 SMS. Phase B/C boundary. All EST — post-DST fall-back Nov 2. 0 primary flags. 2 peripheral flags: ROW-8423 (Nov 7 — 'refuses to come out' ADD-004 visit refusal relay; Nov 7 incident follows dispute about Eli's alleged verbal agreement to let Olivia go to a movie instead of pickup); ROW-8431 (Nov 19 — 'You never answer. Why are you so hard to get along with' ADD-002 adjacent; 3 days before Nov 22 police report). 0 CP3 items. ARC no new signal. Nov 22 police report anchor event (Olivia refused Eli's weekend; Melissa aware) — no messages visible around that date; primarily RF-02 territory. Christmas Eve coordination (Dec 23-24 ROW-8482-8489) cooperative. Dec 27-Jan 7, 2026 is a real gap."
+    },
+    {
+      "session_date": "2026-04-23",
+      "batches_processed": ["B-031"],
+      "notes": "B-031 processed: Jan 8 – Mar 18, 2026 (EST/EDT; ROW-8499-8594). 96 SMS. Phase C — final batch; last SMS row in dataset (ROW-8595+ is MMS data with dates reverting to Nov 2024). 0 primary flags. 1 peripheral flag (ROW-8575, Feb 27 — 'You can come but she says she's not coming out' ADD-004; visit refusal relay in Olivia's reported voice; structurally identical to Nov 7 B-030 relay). 0 CP3 items. ARC no new signal. Key events: Feb 11 scheduling dispute (Melissa moved plans when Eli didn't communicate; ROW-8545-8547); Feb 26 note-on-windshield event (ROW-8569; RF-07 territory); Feb 27 visit refusal (ROW-8575). RF-01 PASS COMPLETE. Final totals: 27 primary signals (2 Sev-1, 25 Sev-2), 90 peripheral flags, 20 CP3 items, 8592 messages analyzed across all 31 batches."
+    }
+  ]
+}

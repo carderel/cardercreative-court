@@ -1,0 +1,36 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-023",
+    "row_range": { "start": 7762, "end": 7773 },
+    "date_range": { "start": "2025-02-24", "end": "2025-03-03" },
+    "message_count": 12,
+    "timezone_note": "Entirely EST (UTC-5). DST spring forward Mar 9, 2025 at 2:00 AM EST (07:00 UTC) is still ahead — will fall within B-024 range. RF-02 B-023 date_range.start states Feb 15; actual first message in this range is ROW-7762 on Feb 24 (Feb 15-23 is a real gap in the messaging record). RF-02 sms_secondary_section notes ROW-7763-7774 as secondary table entries — consistent with extracted range.",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Sparse cooperative batch. Feb 15-23 is a 9-day gap in the messaging record. Feb 24: payment + Olivia status update. Mar 3: Melissa requests Eli watch Olivia while she goes to hospital for suspected kidney stone — cooperative co-parenting. No RF-01 indicators."
+  },
+
+  "primary_flags": [],
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [],
+  "peripheral_flag_count": 0,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "signal_count": 25,
+      "notes": "B-023 produces no RF-01 signals. 12 messages — all routine. Content: $270 payment (ROW-7762), Olivia status (ROW-7764-7765 'She's ok, watching videos'), cooperative childcare request around Melissa's hospital visit for suspected kidney stone/blood in urine (ROW-7766-7773). Eli responds supportively. Post-B-022 de-escalation pattern consistent with prior cycle."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Entirely cooperative. Two date clusters: Feb 24 (ROW-7762-7765 — payment + Olivia update) and Mar 3 (ROW-7766-7773 — Melissa hospital request). Mar 3 is notably cooperative: Melissa reaches out asking Eli to take Olivia; Eli asks what's wrong and offers to help; Melissa discloses kidney stone symptoms (blood in urine). This is a moment of genuine co-parenting under a health emergency.",
+    "gap_period": "Feb 15-23 is a 9-day gap — no messages after Feb 14 Valentine's Day batch through Feb 24. This represents the longest post-B-022-escalation quiet period in Phase B so far.",
+    "dst_note": "DST spring forward occurs Mar 9, 2025 at 2:00 AM EST (clocks move to EDT, UTC-4). All B-023 messages predate the transition. B-024 will span the DST change — threshold is Mar 9, 2025 07:00 UTC."
+  }
+}

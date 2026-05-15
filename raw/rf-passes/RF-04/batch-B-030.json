@@ -1,0 +1,231 @@
+{
+  "batch_id": "B-030",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "batch_status": "complete",
+  "analysis_date": "2026-04-24",
+
+  "date_range": {
+    "start": "2025-12-16",
+    "end": "2026-04-07"
+  },
+
+  "row_range": {
+    "sequential_block": "ROW-8467–ROW-8595",
+    "parallel_block": "ROW-14922–ROW-15539",
+    "note": "Three-block data structure. Sequential block (Eli/Sent messages) covers Dec 16, 2025–Mar 18, 2026 (ROW-8467–8595); after ROW-8595 the sequential block contains Nov-Dec 2024 data appearing out of chronological order (see data_structure_note). Parallel block (Melissa/Received messages) covers full Dec 16, 2025–Apr 7, 2026 range. Mar 18–Apr 7 period sourced from parallel block only."
+  },
+
+  "data_structure_note": "ROW-8596 onward in the sequential block contains Nov-Dec 2024 messages appearing out of chronological order. These include ROW-8679 (Dec 14, 2024: 'Bitch answer yo phone' — ADD-002 slur) and ROW-8877 (Jan 5, 2025: 'Shouldn't take 3.5 hours to get an answer if you can be a decent parent or not' — contempt characterization). These pre-date B-030 and were not captured in their chronological batch analyses (B-020/B-021 territory). They are noted here as data structure discoveries. The 'Bitch answer yo phone' (ROW-8679, Dec 14 2024) is an additional 'bitch' ADD-002 instance; update ADD-002 tracker: bitch ×2 confirmed (ROW-8679 Dec 2024 + ROW-14611 Oct 2025).",
+
+  "phase_context": {
+    "phase": "Phase C (extended)",
+    "phase_description": "Dec 16 2025 – Apr 7 2026. Very low conflict ratio (0.10) with cooperative periods interspersed. Feb 15 2026 is the anchor event: Eli-Abby argument with Olivia present — Eli admits raising his voice (ROW-15099). Melissa deploys incident as ongoing visit-refusal engine through Apr 2026 ('traumatized,' 'scared,' 'drinking problem?' insinuation). Feb 27: 'You can come but she says she's not coming out' (ROW-8576) — visit-refusal continues. Mar–Apr: continued visit refusal with behavioral/relational framing. Dec 2025 and Jan 2026 are predominantly cooperative/administrative."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B030-001",
+      "severity": 1,
+      "date": "2026-02-11",
+      "rows": "ROW-15077–15082",
+      "pattern_type": "Blame-attribution contempt — non-response punishment; DARVO partial",
+      "summary": "Feb 11 pickup coordination: Eli asks if he can pick up Olivia if he feels well enough (post-flu/pneumonia illness). He doesn't respond promptly due to work meetings. Melissa escalates: 'Lame excuse' (ROW-15079); 'I'll take your no response as a no' (ROW-15077); 'Your idea that you don't need to answer me until you feel like it causes these issues' (ROW-15082) — response-time blame attribution framing. Eli's sequential response (ROW-8543): 'I was working and have been in meetings' — factual but dismissed. Melissa's framing converts Eli's response delay into a character-based pattern ('your idea that...').",
+      "exact_quotes": [
+        "ROW-15079: 'Lame excuse'",
+        "ROW-15082: 'That's where we are now. If you wanted me to pick her up then communicate in a timely manner so I can plan accordingly. Your idea that you don\\'t need to answer me until you feel like it causes these issues.'"
+      ],
+      "arc_signals": ["ARC-RF04-001-S83"],
+      "cross_rf": [],
+      "add_codes": []
+    },
+    {
+      "flag_id": "RF04-B030-002",
+      "severity": 2,
+      "date": "2026-02-15 / 2026-02-16 / ongoing through Apr 2026",
+      "rows": "ROW-15098–15113, ROW-15183, ROW-15528-15529",
+      "pattern_type": "Incident amplification — admitted raised voice → 'verbal abuse' characterization; child-fear relay; 'traumatized' ongoing visit-refusal engine; COMP-RF04-029",
+      "summary": "Feb 15 2026: Eli and Abby had a domestic argument while Olivia (and Milo/Alice) were present. Eli admits raising his voice (ROW-15099: 'I did raise my voice during a disagreement. That should not have happened in front of the kids. I apologized to Olivia and took responsibility for letting my frustration show.'). No physical aggression (confirmed by Eli). Melissa's escalation trajectory: (1) ROW-15098: Relays Olivia's account — 'she was scared because you were yelling, screaming, being rude and scary. Her, Milo and Alice were hiding in her room. Milo was telling Olivia if it kept going they might need to leave and they discussed going out the window because they were both scared. She almost called the police.' (2) ROW-15103: 'She said it sounded like verbal abuse and you pulled your phone out and said let's educate ourselves today. Looked up verbal abuse and told them it's not illegal.' (3) ROW-15104: 'A 10 year old saying they were scared of you wasn't enough to snap you out of whatever you were doing.' (4) ROW-15108: Child relay of visit-pause request — 'She pretty upset and said she would like to pause weekends for awhile, not forever cause she wants to see her sister.' (5) ROW-15109-15110: 'anger management classes' + 'You need professional support.' (6) ROW-15112: Expanded characterization — 'You've been a lil yelly with me on the phone telling me to shut up.' (7) ROW-15183 Mar 9: 'She said you traumatized her and she's still not ready to go back to your house yet.' (8) ROW-15528-15529 Apr 5: 'I heard Olivia telling the girls about you yelling that day and crashing out on her / It's still bothering her.' RF-04 pattern: Eli's admitted one-time raised voice → DARVO amplification to 'verbal abuse' → characterological diagnosis (anger management) → 'traumatized' framing used as ongoing visit-refusal engine through at least Apr 5. Eli's sequential responses throughout (ROW-8557, ROW-8575, ROW-8588-8589) show consistent boundary-assertion: 'I do not agree to pausing weekends. Olivia's parenting time will continue as scheduled.'",
+      "exact_quotes": [
+        "ROW-15098: 'She called me saying she was scared because you and Abby were fighting and you were yelling, screaming, being rude and scary... Milo was telling Olivia that if it kept going they might need to leave and they discussed going out the window because they were both scared. Then Milo told her she should call me. She said she almost called the police because it was so bad.'",
+        "ROW-15103: 'She said it sounded like verbal abuse and you pulled your phone out and said let\\'s educate ourselves today. Looked up verbal abuse and told them it\\'s not illegal'",
+        "ROW-15104: 'A 10 year old saying they were scared of you wasn\\'t enough to snap you out of whatever you were doing. So I can\\'t say i blame her.'",
+        "ROW-15108: 'She pretty upset and said she would like to pause weekends for awhile, not forever cause she wants to see her sister'",
+        "ROW-15109: 'You need professional support. You need to learn to calm your temper. How are you using this off on her'",
+        "ROW-15183: 'She said you traumatized her and she\\'s still not ready to go back to your house yet'",
+        "ROW-15099 (Eli/Sent): 'I did raise my voice during a disagreement. That should not have happened in front of the kids. I apologized to Olivia and took responsibility for letting my frustration show. There was no physical aggression and no one was in danger.'"
+      ],
+      "arc_signals": ["ARC-RF04-001-S84", "ARC-RF04-002-S27"],
+      "cross_rf": ["RF-11", "RF-02"],
+      "add_codes": [],
+      "compound_pattern": "COMP-RF04-029",
+      "note": "Context complexity: Eli admits partial fault (raised voice). RF-04 concern is the amplification trajectory: admitted raised voice → 'verbal abuse' characterization → 'anger management' → 'traumatized' framing → ongoing visit-refusal engine through Apr 5. ARC-RF04-002-S27: ROW-15108 child relay of 'pause weekends' request (child's reported desire used as visit-refusal justification). Feb 27 continuation: ROW-8576 (sequential): 'You can come but she says she's not coming out' — Feb 15 incident continues as conditioning mechanism. Cross-ref RF-11 (child's alleged fear used as evidence against Eli; Olivia's in-home experience deployed in adult custody context)."
+    },
+    {
+      "flag_id": "RF04-B030-003",
+      "severity": 1,
+      "date": "2026-03-04",
+      "rows": "ROW-15161",
+      "pattern_type": "ADD-002 contempt slur — 'Dumbass' 9th instance",
+      "summary": "ROW-15161: 'Dumbass' — 9th confirmed ADD-002 'dumbass' instance in the RF-04 dataset. Context: Eli reviewing Olivia's grades, responds that 'most look stable or improved' and the D in math is the only standout (ROW-8584). Melissa's response (ROW-15161): 'Dumbass' — isolated contempt attack following Eli's measured grade assessment. Prior 'dumbass' instances: ROW-2167 (B-006), ROW-3609 (B-010), ROW-3892 (B-011), ROW-5668 (B-016), ROW-6985 (B-018), ROW-9408 (B-024), ROW-14035 (B-027), ROW-8208 context adjacent (B-028 'idiot' not 'dumbass').",
+      "exact_quotes": [
+        "ROW-15161: 'Dumbass'"
+      ],
+      "arc_signals": ["ARC-RF04-001-S85"],
+      "cross_rf": [],
+      "add_codes": ["ADD-002"]
+    },
+    {
+      "flag_id": "RF04-B030-004",
+      "severity": 1,
+      "date": "2026-03-21",
+      "rows": "ROW-15480",
+      "pattern_type": "ADD-002 'do you boo' 5th instance; contempt dismissal in legal-threat context",
+      "summary": "ROW-15480: 'I'm not going to keep asking. I'm just going to file contempt on Monday. You made your choice that you'd like to pay what you owe plus the court costs and lawyer fees so that's what you can do. I'll let my lawyer handle it. You're just getting yourself further in debt with bad choices but you do you boo.' — 'do you boo' 5th confirmed instance. First deployment in a legal-threat context (prior 4 instances were used as dismissal in personal/emotional disputes). 'You're just getting yourself further in debt with bad choices' — contemptuous life-judgment framing preceding the dismissal. New contextual variant: 'do you boo' as dismissal before legal filing threat.",
+      "exact_quotes": [
+        "ROW-15480: 'I\\'m not going to keep asking. I\\'m just going to file contempt on Monday. You made your choice that you\\'d like to pay what you owe plus the court costs and lawyer fees so that\\'s what you can do. I\\'ll let my lawyer handle it. You\\'re just getting yourself further in debt with bad choices but you do you boo'"
+      ],
+      "arc_signals": ["ARC-RF04-001-S86"],
+      "cross_rf": ["RF-05"],
+      "add_codes": ["ADD-002"],
+      "do_you_boo_instance": 5
+    },
+    {
+      "flag_id": "RF04-B030-005",
+      "severity": 1,
+      "date": "2026-03-25",
+      "rows": "ROW-15494",
+      "pattern_type": "Sustained sarcastic contempt mockery — inadequate-father via irony",
+      "summary": "ROW-15494: 'The effort you are making to let her know you care and want her around is amazing! How do you do so much? It must be exhausting putting in that much effort! 👏 good job!' — sustained sarcastic contempt attack. Context: Melissa had told Eli to call Olivia and show up at dance (ROW-15486-15489); Eli had talked to Olivia that morning (ROW-15490-15491). Melissa's sarcasm frames Eli's actual effort as non-existent. Mechanism: ironic praise as contempt — elevated-register sarcasm that allows deniability while delivering maximum inadequate-father messaging.",
+      "exact_quotes": [
+        "ROW-15494: 'The effort you are making to let her know you care and want her around is amazing!  How do you do so much? It must be exhausting putting in that much effort!  👏 good job!'"
+      ],
+      "arc_signals": ["ARC-RF04-001-S87"],
+      "cross_rf": [],
+      "add_codes": []
+    },
+    {
+      "flag_id": "RF04-B030-006",
+      "severity": 2,
+      "date": "2026-03-28",
+      "rows": "ROW-15498–15500",
+      "pattern_type": "New mechanism: drinking-problem insinuation + inadequate-father sustained cluster + Milo/Alice-prioritization relay",
+      "summary": "ROW-15498: 'Is this the problem? Do you have a drinking problem? If you are trying to convince her to come with you is showing up and asking her to get in a vehicle with you while you smell of beer a good way to convince her?' — new mechanism: alcohol/drinking-problem characterization as inadequate-father evidence and child-safety concern. ROW-15499: 'You obviously know you haven't been a good father. Even the lady at dance mentioned that she was surprised to see you...' — inadequate-father characterization with third-party witness invocation (dance instructor). ROW-15500: 'Olivia sees your lack of effort. She tells me that you love Milo and Alice more than her.' — child relay of Milo/Alice-prioritization-over-Olivia claim; new ARC-RF04-002 signal. Context: Eli arrived at Melissa's to try to get Olivia on a visit. Eli had admitted drinking at dinner (no explicit quantity or impairment evidence cited). Mechanism: beer-smell observation → 'drinking problem?' interrogatory → vehicle safety concern framing → compound inadequate-father attacks.",
+      "exact_quotes": [
+        "ROW-15498: 'Is this the problem? Do you have a drinking problem? If you are trying to convince her to come with you is showing up and asking her to get in a vehicle with you while you smell of beer a good way to convince her?'",
+        "ROW-15499: 'You obviously know you haven\\'t been a good father. Even the lady at dance mentioned that she was surprised to see you and that you took her comment wrong making it awkward the rest of the night.'",
+        "ROW-15500: 'Olivia sees your lack of effort. She tells me that you love Milo and Alice more than her.'"
+      ],
+      "arc_signals": ["ARC-RF04-001-S88", "ARC-RF04-002-S28"],
+      "cross_rf": ["RF-15"],
+      "add_codes": [],
+      "note": "New mechanism: drinking-problem insinuation (first instance in dataset). Combined with beer-spend framing from B-027 (ROW-14203-14224, ARC-RF04-001-S67), establishes a developing alcohol-characterization sub-pattern. ROW-15499's invocation of the dance instructor as witness ('the lady at dance mentioned that she was surprised to see you') adds third-party observer validation framing — similar mechanism to B-027 'My Dr told me' (COMP-RF04-024). ARC-RF04-002-S28: ROW-15500 'Olivia tells me that you love Milo and Alice more than her' — Milo/Alice prioritization relay as guilt delivery; new mechanism in ARC-RF04-002 (prior signals focused on abandonment/fears/home-safety; this uses sibling comparison as inadequacy evidence)."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B030-P001",
+      "severity": "peripheral",
+      "date": "2026-02-14",
+      "rows": "ROW-15097",
+      "summary": "'Do I need to file contempt for the money you aren't paying and because you won't let me talk to her?' — RF-05 primary (contempt threat); RF-04 peripheral (emotional coercion via phone-access framing)."
+    },
+    {
+      "flag_id": "RF04-B030-P002",
+      "severity": "peripheral",
+      "date": "2026-02-16",
+      "rows": "ROW-15101–15102",
+      "summary": "Post-incident continuation — child relay: 'Olivia has never been a fan of going to your house on the weekends. After yesterday she is especially not wanting to go' (ROW-15101); 'She talked about your actions all day yesterday. Just kept randomly bringing it up' (ROW-15102). RF-04 peripheral; primary RF-02 (ongoing conditioning framing)."
+    },
+    {
+      "flag_id": "RF04-B030-P003",
+      "severity": "peripheral",
+      "date": "2026-02-19 / 2026-02-20",
+      "rows": "ROW-15119–15120",
+      "summary": "'I thought it would be good to show support for her and be able to talk to her in a public area since she keeps saying she is scared of you' (ROW-15119); 'I'm only trying to repair things for her but you should be the one putting in the work' (ROW-15120). RF-04 peripheral (inadequate-father + 'scared of you' relay maintenance; responsibility-deflection 'you should be the one putting in the work')."
+    },
+    {
+      "flag_id": "RF04-B030-P004",
+      "severity": "peripheral",
+      "date": "2026-03-09",
+      "rows": "ROW-15183",
+      "summary": "'She said you traumatized her and she's still not ready to go back to your house yet.' RF-04 peripheral (Feb 15 incident maintained as 'traumatized' label through Mar 9, ~22 days later; primary RF-02 ongoing visit-refusal engine). Captured as part of RF04-B030-002 Sev-2 flag trajectory."
+    },
+    {
+      "flag_id": "RF04-B030-P005",
+      "severity": "peripheral",
+      "date": "2026-04-05",
+      "rows": "ROW-15528–15529",
+      "summary": "'I heard Olivia telling the girls about you yelling that day and crashing out on her / It's still bothering her.' — RF-04 peripheral (Feb 15 incident ongoing relay; 'crashing out on her' characterization). Latest date in RF04-B030-002 incident trajectory: ~49 days post-incident."
+    }
+  ],
+
+  "compound_patterns_detected": [
+    {
+      "compound_id": "COMP-RF04-029",
+      "label": "Feb 15 Incident Amplification — Raised Voice → 'Verbal Abuse' → 'Traumatized' Visit-Refusal Engine",
+      "batch_detected": "B-030",
+      "date": "2026-02-15 / ongoing through 2026-04-05",
+      "rows": "ROW-15098–15113 + ROW-15183 + ROW-15528-15529",
+      "rfs_active": ["RF-04", "RF-11", "RF-02"],
+      "description": "Twenty-ninth compound multi-RF episode. Phase C extended. RF-04 (Sev-2: admitted raised-voice incident amplified to 'verbal abuse' characterization ROW-15103; 'anger management' characterological diagnosis ROW-15109; 'traumatized' framing deployed ~22 days later ROW-15183; 'crashing out on her' framing maintained ~49 days later ROW-15529; ARC-RF04-001-S84) + RF-11 (Olivia's reported fear response used as evidence against Eli; 'she was scared because...yelling, screaming, being rude and scary' ROW-15098; child's in-home experience converted to adult custody dispute evidence; 'She almost called the police' ROW-15098; ARC-RF04-002-S27) + RF-02 (Feb 15 incident deployed as ongoing visit-refusal justification: 'pause weekends' ROW-15108; 'traumatized' ROW-15183; 'She's not going' ROW-15189, ROW-15482; Feb 27 'she says she's not coming out' ROW-8576). Context complexity: Eli admits raising his voice and apologizes (ROW-15099) — not a false allegation in the same way as prior harm instances. The RF-04 concern is the amplification trajectory from admitted limited incident to sustained characterological diagnosis and ongoing visit-refusal engine."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "signals_added": ["ARC-RF04-001-S83", "ARC-RF04-001-S84", "ARC-RF04-001-S85", "ARC-RF04-001-S86", "ARC-RF04-001-S87", "ARC-RF04-001-S88"],
+      "signal_count_before": 82,
+      "signal_count_after": 88,
+      "last_signal_date": "2026-03-28"
+    },
+    "ARC-RF04-002": {
+      "signals_added": ["ARC-RF04-002-S27", "ARC-RF04-002-S28"],
+      "signal_count_before": 26,
+      "signal_count_after": 28,
+      "last_signal_date": "2026-03-28"
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF04-031",
+      "priority": "high",
+      "flag_ref": "RF04-B030-002",
+      "summary": "Feb 15 2026 incident + amplification arc: Attorney needs to evaluate (1) Eli's admitted raised voice vs. Melissa's 'verbal abuse' trajectory; (2) 'traumatized' framing maintained ~7 weeks (Feb 15–Apr 5) as ongoing visit-refusal engine; (3) 'drinking problem?' insinuation Mar 28 (ROW-15498) — new character allegation building on same visit refusal pattern. Cross-ref: RF-11 (Olivia's reported fear as custody evidence); RF-02 (visit refusal justified by amplified incident). Key question for attorney: Does Melissa's characterization of a single admitted raised-voice incident as 'verbal abuse' and 'traumatizing' constitute actionable DARVO in a GAL context? COMP-RF04-029."
+    },
+    {
+      "cp3_id": "CP3-RF04-032",
+      "priority": "medium",
+      "flag_ref": "RF04-B030-006",
+      "summary": "Mar 28 ROW-15498 'drinking problem?' insinuation: First explicit alcohol-problem characterization in dataset. Combined with beer-spend framing from B-027 (ROW-14203-14224 'spent money on beer'), an alcohol-characterization sub-pattern is developing. Attorney should assess whether this rises to RF-15 false-allegation territory or remains RF-04 contemptuous characterization. Note: Eli did admit drinking at dinner — Melissa's escalation to 'drinking problem?' interrogatory is the RF-04 concern, not the underlying fact."
+    }
+  ],
+
+  "batch_statistics": {
+    "messages_analyzed_this_batch": 747,
+    "primary_flags": 6,
+    "severity_distribution": { "1": 4, "2": 2, "3": 0 },
+    "peripheral_flags": 5,
+    "compound_patterns_new": 1,
+    "cp3_items_new": 2,
+    "arc_signals_added": {
+      "ARC-RF04-001": 6,
+      "ARC-RF04-002": 2
+    }
+  },
+
+  "add_002_tracker_update": {
+    "new_slurs_this_batch": ["dumbass #9 (ROW-15161, Mar 4)", "'do you boo' #5 in legal-threat context (ROW-15480, Mar 21)"],
+    "data_structure_discovery": "ROW-8679 (Dec 14, 2024, sequential block anomaly): 'Bitch answer yo phone' — additional 'bitch' ADD-002 instance. Confirmed bitch instances: ROW-8679 (Dec 2024, sequential block anomaly) + ROW-14611 (Oct 2025) = 2 confirmed instances."
+  },
+
+  "do_you_boo_tracker": {
+    "confirmed_instances_through_b030": 5,
+    "instances": ["B-025 ROW-9655", "B-027 ROW-14162", "B-027 ROW-14207", "B-028 ROW-14275", "B-030 ROW-15480"],
+    "note": "5th instance first deployment in legal-threat context. Prior 4 instances: dismissal in personal/emotional disputes. Contextual shift: Mar 21 ROW-15480 'but you do you boo' as contemptuous dismissal preceding contempt-filing threat."
+  },
+
+  "batch_notes": "B-030 is a moderate-density Phase C batch (conflict ratio 0.10 — lowest of active batches). Dec 2025–Jan 2026 period is predominantly cooperative/administrative. Feb 15 2026 Eli-Abby argument is the anchor event — Eli's admission makes this RF-04 complexity distinct from prior harm-allegation patterns. Key developments: (1) COMP-RF04-029 (Feb 15 amplification arc) — first RF-04 compound based on an admitted incident rather than false allegation; 'traumatized' framing maintained through Apr 5; (2) Drinking-problem insinuation (Mar 28) is a new mechanism building an alcohol-characterization sub-pattern; (3) 'do you boo' reaches 5th instance in new legal-threat context; (4) 'Dumbass' #9 continues ADD-002 trajectory. Data structure anomaly discovered: ROW-8596+ in sequential block contains Nov-Dec 2024 data including an additional 'Bitch' ADD-002 slur (ROW-8679) not captured in prior batches."
+}

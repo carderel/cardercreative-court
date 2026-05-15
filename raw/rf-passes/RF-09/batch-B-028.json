@@ -1,0 +1,54 @@
+{
+  "batch_id": "B-028",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2025-08-28",
+    "end": "2025-10-16"
+  },
+  "row_range": {
+    "start": 14236,
+    "end": 14546
+  },
+  "message_count": 502,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 8,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Aug 2025: 1 primary RF-09 signal. S009 \u2014 gaslight accusation via Olivia relay, DARVO-inversion. Arc ACTIVE (9 signals)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B028-001",
+      "signal_id": "S009",
+      "severity": 1,
+      "date": "2025-08-29",
+      "row_ref": "ROW-14237-14252",
+      "direction": "received",
+      "evidence_level": "E",
+      "type": "darvo_inversion_gaslight_accusation_via_olivia_relay",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-003",
+        "ADD-004"
+      ],
+      "compound_pattern": "COMP-RF09-006",
+      "cross_rf": "RF-04 (visit refusal DARVO cluster B-028 ROW-14237-14275); RF-08 (relay mechanism)",
+      "message_text": "ROW-14243: 'The conversation led her to scream into the couch and cry cause you kept trying to gaslight her about it'",
+      "summary": "Aug 2025: Melissa accuses Eli of gaslighting Olivia during a reported conversation. Context: Labor Day weekend visit refusal cluster. ROW-14243: 'The conversation led her to scream into the couch and cry cause you kept trying to gaslight her about it' \u2014 Melissa reports to Eli that he 'gaslighted' Olivia during their conversation, producing extreme distress (screaming, crying). This is a compound mechanism: (1) DARVO-inversion: Melissa accuses Eli of the RF-09 behavior she is engaged in; (2) Olivia relay: Melissa's account of Olivia's distress is used to make the accusation; (3) RF-04: reframes Eli's boundary-holding conversation with Olivia as traumatizing psychological manipulation. Evidence Level E: reality-questioning without specific denied claim and without cross-referenceable contradiction. Sev-1: single instance in isolation; escalated arc context (arc already ACTIVE, S006 Sev-2 sustained). ADD-004: 6th+ documented 'you gaslight' instance. ADD-003 compound: explicit gaslight accusation within DARVO cluster \u2192 RF-09+RF-04 compound COMP-RF09-006."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S009 signal added",
+      "new_state": "ACTIVE",
+      "signal_count": 9
+    }
+  ]
+}

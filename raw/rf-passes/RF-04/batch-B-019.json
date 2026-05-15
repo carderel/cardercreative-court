@@ -1,0 +1,245 @@
+{
+  "batch_id": "B-019",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2024-09-09", "end": "2024-10-18" },
+  "row_range": { "start": 7056, "end": 7557 },
+  "message_count": 502,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "mixed — predominantly cooperative (Sep 14 family crisis / Kristi hospital logistics; Sep 17-18 Alice jaundice blood test monitoring; Oct 4-16 school photo, eye exam coordination, daycare costs, Oct 26-27 childcare request) punctuated by three RF-04 clusters of escalating severity plus one Sev-1 close",
+    "conflict_ratio": "~0.22",
+    "rf04_activity": "high — 2 Sev-1, 2 Sev-2; Sep 9 body-shame contempt ('fat ass' / 'old ass'); Sep 15 child relay physical harm allegation including choking claim + domestic violence false allegation; Oct 3 sustained mega-cluster (~165 messages): 8th predation framing (ROW-7367) + DV false allegation echo (ROW-7365) + inadequate-father barrage (ROW-7457-7465) + gatekeeping control admission (ROW-7478-7483) + DARVO resolution (ROW-7484-7487) + Abby body shaming (ROW-7488-7490); Oct 18 Abby-causal-attribution (ROW-7553)",
+    "notable_context": "Alice (Eli and Abby's newborn) is central — born premature with jaundice (Sep 17 bloodwork context); Melissa immediately weaponizes Alice in Sep 15 (ROW-7165-7166 'she doesn't want you to do that to Alice') and Oct 3 (ROW-7364 child relay Alice harm anticipation; ROW-7367 'sister/cousin' predation framing directed at the Dr). Olivia has molluscum contagiosum — extensive Oct 3 health discussion mixed into the attack sequence. Second gatekeeping control admission at ROW-7478-7483: Melissa reveals she controlled whether Olivia called Eli in the mornings and frames access as her personal gift ('I don't have to do as much as I do to include you' / 'I don't have to give you pictures of her'). Oct 3 mega-cluster triggered by Eli's complaint about Olivia's disrespect at Dr office → comprehensive counter-attack."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B019-001",
+      "severity": 1,
+      "date": "2024-09-09",
+      "row_ref": "ROW-7071-7091",
+      "type": "body_shame_contempt + incompetence_attack + break_attribution",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "summary": "Sep 9 skateboard contempt cluster — body-shame ('fat ass' / 'old ass') + incompetence attribution ('not careful with anything,' 'you break so much shit'). Context: Eli was helping Olivia with her skateboard and found a loose truck; Melissa immediately launched body-shame contempt. ROW-7071: 'Also quit using Olivia's skateboard. It's made for her, not your fat ass' — unsolicited body attack. ROW-7072: 'You want a skateboard go buy yourself one. Probably why that part is loose' — blame attribution for pre-existing equipment issue. ROW-7081: 'She hasn't had any issues with it. Maybe you broke it when you were riding it. Convenient there was no issues until you tested it' — false accusation/gaslighting that Eli caused the defect. ROW-7085: 'I don't like you riding it because you're not careful with anything' — broad incompetence attack. ROW-7086: 'You break so much shit' — contemptuous character attack. ROW-7091: 'Sounds like you tried to do an Ollie and about fell on your face cause your old ass hasn't skateboarded in decades and now it's the skateboard's fault' — sustained body-shame plus contemptuous mockery of Eli's athletic competence. Pattern: Eli doing safety check on Olivia's equipment → contemptuous body-shame → incompetence attribution → false damage blame. New body-shame variants ('fat ass,' 'old ass') consistent with ADD-002 intelligence/character attack family. ARC-RF04-001-S49.",
+      "verbatim_key_messages": [
+        "ROW-7071 (Received): \"Also quit using Olivia's skateboard. It's made for her, not your fat ass\"",
+        "ROW-7072 (Received): \"You want a skateboard go buy yourself one. Probably why that part is loose\"",
+        "ROW-7081 (Received): \"She hasn't had any issues with it. Maybe you broke it when you were riding it. Convenient there was no issues until you tested it\"",
+        "ROW-7085 (Received): \"I don't like you riding it because you're not careful with anything\"",
+        "ROW-7086 (Received): \"You break so much shit\"",
+        "ROW-7091 (Received): \"Sounds like you tried to do an Ollie and about fell on your face cause your old ass hasn't skateboarded in decades and now it's the skateboard's fault\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B019-002",
+      "severity": 2,
+      "date": "2024-09-15",
+      "row_ref": "ROW-7161-7170",
+      "type": "child_relay_physical_harm_allegation + choking_claim + domestic_violence_false_allegation + alice_harm_anticipation",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "compound": "COMP-RF04-017",
+      "cross_arc": "ARC-RF04-002-S14",
+      "summary": "Sep 15 child relay physical harm allegation — choking claim + domestic violence false allegation. Context: Eli had Olivia for a visit; Melissa messages at 3am. Cluster opens with mild re-framing (tickling too hard) and escalates to a choking allegation and DV claim. ROW-7161: 'Be more gentle with Olivia' — tone-setter. ROW-7162: 'She said you tickle too hard and she doesn't like it.' ROW-7163: 'She said that you kept twisting her arm and it hurt and you'd say sorry but kept doing it' — child relay injury claim (arm twisting). ROW-7164: 'And she said that you choked her and she couldn't breathe for a bit' — child relay choking allegation; presents as roughhousing framing but deploys a choking claim in physical harm territory. ROW-7165: 'She said you were just playing but you okay too rough and she doesn't like it and she doesn't want you to do that to Alice either' — extends allegation to Alice (newborn; born premature with jaundice per Sep 17 context); positions Olivia as concerned protector of Alice from Eli's roughness. ROW-7166: 'She doesn't want you to get in trouble but said she is worried that if you are so rough on her that you will be too rough on Alice and she doesn't want Alice to [get hurt]' — child relay weaponized to express anticipated harm to newborn; 'she doesn't want you to get in trouble' framing implies awareness of the accusatory nature. ROW-7167: 'So keep your hands off my girl. Don't play like that with her.' — threat/directive. ROW-7168: 'You used to do that shit with me and tell me you weren't hurting me. Don't do that to her. Don't play with her like that' — CRITICAL: domestic violence false allegation; echoes the Sep 5 bike incident pattern; presents Eli's roughhousing as continuation of alleged DV against Melissa. ROW-7169: 'Keep your hands off her.' ROW-7170: 'She gets hurt you deal with me' — explicit threat. Pattern: child relay frames minor roughhousing → escalates to choking claim → extends to Alice harm anticipation → DV false allegation to contextualize pattern as abusive → threat. COMP-RF04-017 (RF-04 + RF-15 + RF-11). ARC-RF04-001-S50; ARC-RF04-002-S14.",
+      "verbatim_key_messages": [
+        "ROW-7163 (Received): \"She said that you kept twisting her arm and it hurt and you'd say sorry but kept doing it\"",
+        "ROW-7164 (Received): \"And she said that you choked her and she couldn't breathe for a bit\"",
+        "ROW-7165 (Received): \"She said you were just playing but you okay too rough and she doesn't like it and she doesn't want you to do that to Alice either\"",
+        "ROW-7166 (Received): \"She doesn't want you to get in trouble but said she is worried that if you are so rough on her that you will be too rough on Alice and she doesn't want Alice to [get hurt]\"",
+        "ROW-7167 (Received): \"So keep your hands off my girl. Don't play like that with her.\"",
+        "ROW-7168 (Received): \"You used to do that shit with me and tell me you weren't hurting me. Don't do that to her. Don't play with her like that\"",
+        "ROW-7170 (Received): \"She gets hurt you deal with me\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B019-003",
+      "severity": 2,
+      "date": "2024-10-03",
+      "row_ref": "ROW-7325-7490",
+      "type": "sustained_mega_cluster + 8th_predation_framing + domestic_violence_false_allegation_echo + gatekeeping_control_admission + inadequate_father_barrage + DARVO_resolution + abby_body_shame",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "compound": "COMP-RF04-018",
+      "cross_arc": "ARC-RF04-002-S15",
+      "summary": "Oct 3 sustained mega-cluster (~165 messages) — 8th predation framing + DV false allegation echo + inadequate-father barrage + gatekeeping control admission + DARVO + Abby body shaming. Trigger: Eli raises concern about Olivia's disrespect at Dr office visit. Structure across cluster: (1) OPENING DISMISSAL/DARVO — ROW-7326: 'I don't know what you're talking about.' ROW-7329: 'She said you're lying. She said she didn't say anything disrespectful at the dr' — Olivia deployed to deny Eli's account. ROW-7332: 'She said she didn't say anything disrespectful or sassy at the dr and you are lying.' ROW-7333: 'She's upset that you made that up.' ROW-7345: 'Sounds like you've had a rough day and being all up in your feelings. Calm yourself down, eat a snick[ers]' — contemptuous minimization. (2) COUNTER-ATTACK ESCALATION — ROW-7343: 'you get what you give.' ROW-7344: 'So maybe rethink how you talk to her and how you treat her.' ROW-7348: 'This coming from the guy that regularly tells her that her mom is crazy' — false accusation (Eli telling Olivia her mom is crazy). ROW-7364: 'She told me after she met Alice that she was afraid you would hurt Alice because you are too rough with her and thought you'd do the same to Alice' — child relay Alice harm anticipation echo (cross-ref Sep 15 cluster); ARC-RF04-002-S15. ROW-7365: 'I have first hand experience with that cause you sued [used] to physically harm me too and then claim it wasn't hurting me' — domestic violence false allegation echo; second instance in dataset (first: ROW-7168 Sep 15). ROW-7366: 'So don't take what you do wrong and try to put it on me' — DARVO. ROW-7367 (CRITICAL): 'Did you tell the Dr you made her a new sister/cousin. Maybe she should notate that' — 8th predation framing; Abby-Olivia relationship (Abby is Olivia's cousin and Eli's girlfriend) used to imply incest/inappropriate family structure; deployed specifically toward medical provider as implied CPS/reporting threat. (3) INADEQUATE-FATHER BARRAGE (ROW-7457-7465) — ROW-7457: 'You act like you know it all and are dad of the year.' ROW-7458: 'You gave her melatonin to get her to sleep instead of just being with her to comfort her. Your first choice was to drug her. You refused to keep cats away from [Olivia's allergies].' ROW-7459: 'You walked out on her. You went from being around all the time to hardly ever.' ROW-7460: 'She sees you raising another family while giving her no time.' ROW-7461: 'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody' — inadequate-father combined with legal threat (RF-05 cross-tag). ROW-7462: 'You hang up on her and get rude to her when you're noise sensitive.' ROW-7463-7464: 'Your exact quote was that you didn't put the cats in the basement because it wasn't fair to the cats. Then continued to choose the cats over your daughter for over 2 years.' ROW-7465: 'You never helped with her care when she was sick until yesterday.' (4) GATEKEEPING CONTROL ADMISSION (ROW-7478-7483) — ROW-7478: 'I used to ask her if she wanted to call you in the mornings to keep communication going' — admission that Melissa controlled the decision of whether Olivia initiated morning calls to Eli; structural confirmation of RF-02 gatekeeping mechanism. ROW-7481: 'I don't have to do as much as I do to include you' — explicit threat that current access level is Melissa's personal gift. ROW-7482: 'I don't have to give you pictures of her' — explicit gatekeeping threat. ROW-7483: 'I do so you are included in her life because you should be' — confirms Melissa positions herself as the arbiter of Eli's inclusion in Olivia's life. (5) DARVO RESOLUTION — ROW-7484: 'So stop all these attacks that you are trying to make and appreciate the care and time that I put in as a mother' — Eli's legitimate concerns reframed as 'attacks'; DARVO mechanism. ROW-7485-7487: 'And now I'm done. I need no response. Thanks for listening. 😘' — contemptuous dismissal. (6) ABBY BODY SHAMING — ROW-7488: 'Oh and you act like you eat so healthy. If it was so healthy over there why did Abby gain like 75 pounds before she got pregnant.' ROW-7489-7490: further elaboration estimating weight gain — unsolicited contemptuous body-shame attack on Abby appended after DARVO 'close.' COMP-RF04-018 (RF-04 + RF-15 + RF-01 + RF-05). ARC-RF04-001-S51.",
+      "verbatim_key_messages": [
+        "ROW-7329 (Received): \"She said you're lying. She said she didn't say anything disrespectful at the dr\"",
+        "ROW-7345 (Received): \"Sounds like you've had a rough day and being all up in your feelings. Calm yourself down, eat a snick[ers]\"",
+        "ROW-7348 (Received): \"This coming from the guy that regularly tells her that her mom is crazy\"",
+        "ROW-7364 (Received): \"She told me after she met Alice that she was afraid you would hurt Alice because you are too rough with her and thought you'd do the same to Alice\"",
+        "ROW-7365 (Received): \"I have first hand experience with that cause you sued to physically harm me too and then claim it wasn't hurting me\"",
+        "ROW-7367 (Received): \"Did you tell the Dr you made her a new sister/cousin. Maybe she should notate that\"",
+        "ROW-7457 (Received): \"You act like you know it all and are dad of the year\"",
+        "ROW-7459 (Received): \"You walked out on her. You went from being around all the time to hardly ever\"",
+        "ROW-7460 (Received): \"She sees you raising another family while giving her no time\"",
+        "ROW-7461 (Received): \"You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody\"",
+        "ROW-7478 (Received): \"I used to ask her if she wanted to call you in the mornings to keep communication going\"",
+        "ROW-7481 (Received): \"I don't have to do as much as I do to include you\"",
+        "ROW-7482 (Received): \"I don't have to give you pictures of her\"",
+        "ROW-7483 (Received): \"I do so you are included in her life because you should be\"",
+        "ROW-7484 (Received): \"So stop all these attacks that you are trying to make and appreciate the care and time that I put in as a mother\"",
+        "ROW-7488 (Received): \"Oh and you act like you eat so healthy. If it was so healthy over there why did Abby gain like 75 pounds before she got pregnant\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B019-004",
+      "severity": 1,
+      "date": "2024-10-18",
+      "row_ref": "ROW-7553",
+      "type": "abby_causal_attribution + abby_obstacle_framework",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Oct 18 Abby-causal-attribution — unsolicited blame of Abby for logistics breakdown. Context: Eli offered Olivia a sleepover; later cited car trouble preventing pickup from Lancaster hospital. Melissa's response: ROW-7553: 'Abby throwing a fit. Is that why it went from you could have her spend the night to having car issues all of a sudden' — unprovoked attribution of Eli's car problem to Abby's emotional state ('throwing a fit'); deploys Abby as the true obstacle to Olivia's time with Eli. Consistent with Abby-obstacle framework: Eli's limitations attributed to Abby's interference rather than logistical reality. Eli's response (ROW-7554-7556) addresses the actual logistics; Melissa closes with contempt: ROW-7557: 'Omg. Are you still talking? Go to bed.' ARC-RF04-001-S52.",
+      "verbatim_key_messages": [
+        "ROW-7553 (Received): \"Abby throwing a fit. Is that why it went from you could have her spend the night to having car issues all of a sudden\"",
+        "ROW-7557 (Received): \"Omg. Are you still talking? Go to bed\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B019-P01",
+      "row_ref": "ROW-7329-7333",
+      "date": "2024-10-03",
+      "type": "child_relay_denial + gaslighting_via_olivia",
+      "note": "ROW-7329: 'She said you're lying. She said she didn't say anything disrespectful at the dr' + ROW-7332: 'She said she didn't say anything disrespectful or sassy at the dr and you are lying' + ROW-7333: 'She's upset that you made that up' — Olivia deployed to flatly deny Eli's account and label him a liar; child relay as gaslighting instrument. ARC-RF04-002 and RF-09 cross-tag. Part of Oct 3 opening sequence (RF04-B019-003 primary)."
+    },
+    {
+      "flag_id": "RF04-B019-P02",
+      "row_ref": "ROW-7343-7345",
+      "date": "2024-10-03",
+      "type": "DARVO_contempt_minimization",
+      "note": "ROW-7343: 'you get what you give' + ROW-7344: 'So maybe rethink how you talk to her and how you treat her' — contemptuous framing that Olivia's disrespect is Eli's fault (implicit inadequate-father). ROW-7345: 'Sounds like you've had a rough day and being all up in your feelings. Calm yourself down, eat a snick[ers]' — contemptuous minimization of Eli's legitimate parenting concern as emotional dysregulation. 'Calm yourself down' condescension pattern (cross-ref B-017 ROW-6212 'Calm down'). Part of Oct 3 cluster opening."
+    },
+    {
+      "flag_id": "RF04-B019-P03",
+      "row_ref": "ROW-7386",
+      "date": "2024-10-03",
+      "type": "child_relay_inadequate_father + yelling_accusation",
+      "note": "ROW-7386: 'She wasn't doing anything disrespectful to you. She said you yell at her for everything. She's told me that you yell at her for making noise or moving around ne[ar you]' — child relay deploying Olivia's stated experience to build inadequate-father case (Eli yells at Olivia). Deployed mid-Oct 3 cluster as cumulative character indictment. ARC-RF04-002 peripheral."
+    },
+    {
+      "flag_id": "RF04-B019-P04",
+      "row_ref": "ROW-7418",
+      "date": "2024-10-03",
+      "type": "DARVO_accusation_flip + gaslighting_accusation",
+      "note": "ROW-7418: 'You have been accusatory so stop trying to gas light' — DARVO inversion: Eli's factual position reframed as both accusatory AND gaslighting simultaneously. Notably, Melissa uses the word 'gas light' to accuse Eli of the behavior she is exhibiting. RF-09 cross-tag."
+    },
+    {
+      "flag_id": "RF04-B019-P05",
+      "row_ref": "ROW-7461, ROW-7481-7482",
+      "date": "2024-10-03",
+      "type": "legal_threat_custody + gatekeeping_threat",
+      "note": "ROW-7461: 'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody' — custody threat embedded in inadequate-father barrage; RF-05 primary cross-tag. ROW-7481-7482: 'I don't have to do as much as I do to include you' + 'I don't have to give you pictures of her' — explicit gatekeeping leverage framing; RF-02 primary cross-tag. RF-04 peripheral (emotional leverage component)."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S49",
+          "batch": "B-019",
+          "date": "2024-09-09",
+          "row": "ROW-7071-7091",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Sep 9 skateboard body-shame contempt: 'not your fat ass' (ROW-7071) + 'Maybe you broke it' false attribution (ROW-7081) + 'not careful with anything' / 'you break so much shit' (ROW-7085-7086) + 'your old ass hasn't skateboarded in decades' (ROW-7091). New body-shame variants added to ADD-002 family."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S50",
+          "batch": "B-019",
+          "date": "2024-09-15",
+          "row": "ROW-7161-7170",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Sep 15 child relay physical harm cluster: choking claim (ROW-7164) + arm-twisting relay (ROW-7163) + Alice harm anticipation via Olivia (ROW-7165-7166) + DV false allegation 'you used to do that shit with me' (ROW-7168) + explicit threat 'she gets hurt you deal with me' (ROW-7170). COMP-RF04-017 (RF-04+RF-15+RF-11); ARC-RF04-002-S14 overlap."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S51",
+          "batch": "B-019",
+          "date": "2024-10-03",
+          "row": "ROW-7325-7490",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Oct 3 mega-cluster: 8th predation framing 'sister/cousin' toward Dr ROW-7367; DV false allegation echo ROW-7365; inadequate-father barrage ROW-7457-7465 ('walked out on her,' 'raising another family,' 'give me full custody'); gatekeeping control admission ROW-7478-7483 ('I don't have to do as much as I do to include you'); DARVO resolution ROW-7484-7487; Abby body-shame ROW-7488-7490. COMP-RF04-018 (RF-04+RF-15+RF-01+RF-05); ARC-RF04-002-S15 overlap."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S52",
+          "batch": "B-019",
+          "date": "2024-10-18",
+          "row": "ROW-7553",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Oct 18 Abby-causal-attribution: 'Abby throwing a fit. Is that why it went from you could have her spend the night to having car issues all of a sudden' — Abby-obstacle framework; Eli's car problem attributed to Abby's emotional interference."
+        }
+      ],
+      "signal_count_after": 52
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S14",
+          "batch": "B-019",
+          "date": "2024-09-15",
+          "row": "ROW-7161-7170",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Sep 15 child relay as physical harm accusation vector: Olivia's play experience relayed as choking/arm-twisting claims; Olivia positioned as concerned protector of newborn Alice; child's stated worry ('she doesn't want you to get in trouble') weaponized to validate the accusation while appearing protective. ARC-RF04-001-S50 overlap."
+        },
+        {
+          "signal_ref": "ARC-RF04-002-S15",
+          "batch": "B-019",
+          "date": "2024-10-03",
+          "row": "ROW-7364",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "'She told me after she met Alice that she was afraid you would hurt Alice because you are too rough with her and thought you'd do the same to Alice' — Olivia's reported concern about Alice's safety from Eli deployed in Oct 3 cluster; extends child relay mechanism to encompass anticipated harm to newborn. ARC-RF04-001-S51 overlap."
+        }
+      ],
+      "signal_count_after": 15
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-017",
+      "batch": "B-019",
+      "date": "2024-09-15",
+      "row_ref": "ROW-7161-7170",
+      "rf_tags": ["RF-04", "RF-15", "RF-11"],
+      "summary": "Seventeenth compound multi-RF episode. RF-04 (Sev-2: child relay as emotional manipulation weapon; ARC-RF04-001-S50; ARC-RF04-002-S14) + RF-15 (choking claim ROW-7164; DV false allegation ROW-7168 'you used to do that shit with me and tell me you weren't hurting me'; Alice harm anticipation ROW-7165-7166) + RF-11 (Olivia positioned as harm-informant reporting Eli's physical conduct to Melissa at 3am; child deployed as instrument of false allegation; ROW-7166 'she doesn't want you to get in trouble' framing makes Olivia complicit in the accusation while appearing protective)."
+    },
+    {
+      "compound_id": "COMP-RF04-018",
+      "batch": "B-019",
+      "date": "2024-10-03",
+      "row_ref": "ROW-7325-7490",
+      "rf_tags": ["RF-04", "RF-15", "RF-01", "RF-05"],
+      "summary": "Eighteenth compound multi-RF episode. RF-04 (Sev-2: sustained mega-cluster: opening dismissal/DARVO, inadequate-father barrage ROW-7457-7465, Abby body-shame ROW-7488-7490, DARVO resolution ROW-7484-7487; ARC-RF04-001-S51; ARC-RF04-002-S15) + RF-15 (8th predation framing ROW-7367 'sister/cousin' toward Dr; DV false allegation echo ROW-7365; false accusation 'you regularly tell her that her mom is crazy' ROW-7348) + RF-01 (gatekeeping control admission ROW-7478-7483: Melissa revealing she controlled Olivia's morning calls to Eli; explicit 'I don't have to include you' threat; structural confirmation of gatekeeping mechanism) + RF-05 (ROW-7461 'all the things you don't do that would easily give me full custody' custody threat; ROW-7481-7482 access-withdrawal threats)."
+    }
+  ],
+
+  "cp3_item": {
+    "id": "CP3-RF04-019",
+    "batch": "B-019",
+    "summary": "B-019 yields two high-value CP3 clusters: (1) Sep 15 ROW-7161-7170 — child relay physical harm allegation: 'she said that you choked her and she couldn't breathe for a bit' (ROW-7164); DV false allegation: 'You used to do that shit with me and tell me you weren't hurting me' (ROW-7168); Alice harm anticipation via Olivia (ROW-7165-7166); COMP-RF04-017 (RF-04+RF-15+RF-11); ARC-RF04-001-S50; ARC-RF04-002-S14. (2) Oct 3 ROW-7325-7490 — 8th predation framing: 'Did you tell the Dr you made her a new sister/cousin. Maybe she should notate that' (ROW-7367); DV false allegation echo (ROW-7365); gatekeeping control admission: 'I don't have to do as much as I do to include you' / 'I don't have to give you pictures of her' (ROW-7481-7482); inadequate-father barrage ROW-7457-7465; DARVO resolution (ROW-7484-7487); Abby body-shame (ROW-7488-7490); COMP-RF04-018 (RF-04+RF-15+RF-01+RF-05); ARC-RF04-001-S51. Notable also: Sep 9 body-shame ('fat ass' ROW-7071, 'old ass' ROW-7091) — new ADD-002 family variants; Oct 18 Abby-causal-attribution ROW-7553."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 4,
+    "severity_1": 2,
+    "severity_2": 2,
+    "severity_3": 0,
+    "peripheral_flags": 5,
+    "compound_patterns": 2,
+    "arc_rf04_001_signals_added": 4,
+    "arc_rf04_002_signals_added": 2
+  }
+}

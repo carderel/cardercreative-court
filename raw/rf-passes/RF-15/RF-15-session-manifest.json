@@ -1,0 +1,143 @@
+{
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "pass_status": "complete",
+  "generated": "2026-04-28",
+
+  "pass_statistics": {
+    "batches_complete": 31,
+    "messages_analyzed": 10637,
+    "primary_flags": 16,
+    "severity_distribution": { "1": 7, "2": 8, "3": 1 },
+    "zero_flag_batches": 15,
+    "signal_batches": 16,
+    "arcs_active": 2,
+    "projection_pairs_confirmed": 4,
+    "cp3_items": 0,
+    "compound_patterns": 10
+  },
+
+  "batch_index": {
+    "zero_flag": ["B-001", "B-002", "B-003", "B-004", "B-005", "B-008", "B-011", "B-013", "B-017", "B-018", "B-020", "B-021", "B-023", "B-024", "B-027"],
+    "signal": [
+      { "batch": "B-006", "severity": 1, "description": "Precursor incest-adjacent framing — early Abby-attack language" },
+      { "batch": "B-007", "severity": 2, "description": "First Abby-attack: sexual slur ('whore mouth') + false suppression claim — PROJ-003 candidate — RF-15+RF-04 compound" },
+      { "batch": "B-009", "severity": 1, "description": "Cheer game incest reference ('Abby pregnant or what') — Category C Sev-1" },
+      { "batch": "B-010", "severity": 1, "description": "Sep 2023 projection instance — Category D Sev-1" },
+      { "batch": "B-012", "severity": 1, "description": "Dec 2023 incest-framing continuation — Category C Sev-1" },
+      { "batch": "B-014", "severity": 1, "description": "Apr 2024 incest-framing buildup — Category C Sev-1" },
+      { "batch": "B-015", "severity": 2, "description": "False danger cluster ROW-5301-5316 — self-danger conversion + inadequate-father enumeration — Category C/E compound — RF-15+RF-04+RF-01" },
+      { "batch": "B-016", "severity": 3, "description": "Explicit incest statement ROW-5862 ('doesn't know she shouldn't fuck her uncle') + PROJ-002 ('Abby makes false allegations') — Category C Sev-3 (third-party reach confirmed) + PROJ-002 ACTIVE" },
+      { "batch": "B-019", "severity": 2, "description": "Harm relay Sep-Oct 2024 — Category B physical harm via Olivia — RF-15+RF-08 compound" },
+      { "batch": "B-022", "severity": 1, "description": "PROJ-001 'you gaslight everything' ROW-7740 — Category D Sev-1 — cross-ref RF-09" },
+      { "batch": "B-025", "severity": 2, "description": "Vaping+pinching relay ROW-9735-9751 — Category B (vaping, cat-allergy scheme) + Category A (pinching unconfirmed) — RF-15+RF-08+RF-02 compound — ADD-003+ADD-006" },
+      { "batch": "B-026", "severity": 2, "description": "B-025 harm relay continuation — Category B sustained — RF-15+RF-04 compound" },
+      { "batch": "B-028", "severity": 1, "description": "Phase B harm relay — Category B Sev-1 — RF-15+RF-08 compound" },
+      { "batch": "B-029", "severity": 2, "description": "10th predation-DARVO instance ROW-14746 ('fucking her cousin') — Category C Sev-2 sustained — RF-15+RF-04 compound" },
+      { "batch": "B-030", "severity": 2, "description": "Alcoholism fabrication ROW-15498 — one-beer-at-dinner distorted to 'drinking problem' — Category B Sev-2 — RF-15+RF-04+RF-09 compound" },
+      { "batch": "B-031", "severity": 2, "description": "Bruise welfare check DARVO ROW-15588 — PROJ-004 confirmed ('trying to make her think I'm abusing her') — Category D Sev-2 — RF-15+RF-04+RF-11 compound" }
+    ]
+  },
+
+  "arc_summary": [
+    {
+      "arc_id": "ARC-RF15-001",
+      "arc_name": "False Allegation Pattern",
+      "status": "ACTIVE",
+      "unresolved_at_dataset_close": true,
+      "signal_count": 15,
+      "lifecycle": "CANDIDATE(B-001) → WATCHING(B-007 first Abby-attack + suppression claim) → ACTIVE(B-015/B-016 incest-framing cluster + third-party reach confirmed)",
+      "dominant_mechanisms": [
+        "Sexual predation/incest framing of Eli/Abby relationship — B-007 through B-029, multi-year sustained, 10+ instances",
+        "Physical harm allegations via Olivia relay — vaping (Category B weaponized), pinching (Category A unconfirmed), bruise (DARVO of protective behavior)",
+        "Alcoholism fabrication — single dinner beer distorted into 'drinking problem' pattern allegation",
+        "Self-danger conversion — Eli's legitimate parenting concerns reframed as admissions of danger (ROW-5302)",
+        "Inadequate-father enumeration — B-015 cluster lists legitimate parenting behaviors recast as neglect"
+      ],
+      "sev3_basis": "No formal CPS/police filings (CP2 Q3). Sev-3 justified by systematic false narrative communicated to multiple third parties: family members, Facebook (confirmed CP2 Q1 — no screenshots), and professional contact Christopher Campbell who cut all contact with Eli (Google message Nov 9 2020).",
+      "pre_dataset_anchor": "Christopher Campbell Google message Nov 9 2020: 'maybe spend less time cheeting on your wife and i would have any respect for you' — photography work-partner who cut contact based on Melissa's narrative. Dataset period begins Jan 2022 — false narrative campaign was active 14+ months before dataset start."
+    },
+    {
+      "arc_id": "ARC-RF15-002",
+      "arc_name": "Systematic Projection Pattern",
+      "status": "ACTIVE",
+      "unresolved_at_dataset_close": true,
+      "signal_count": 15,
+      "lifecycle": "CANDIDATE(B-001) → WATCHING(B-007 PROJ-003 suppression claim candidate) → ACTIVE(B-016 PROJ-002 confirmed + multiple pairs established)",
+      "projection_pairs": [
+        {
+          "id": "PROJ-001",
+          "accusation": "'You gaslight everything' (ROW-7740, B-022 Jan 15 2025)",
+          "cross_rf_documentation": "RF-09 ARC-RF09-001: 11-signal systematic reality-distortion pattern. DARVO-inversion dominant mechanism. Eli documented as consistent de-escalator across all 46 hostile episodes.",
+          "projection_confirmed": true
+        },
+        {
+          "id": "PROJ-002",
+          "accusation": "'Abby... is a liar, makes false allegations' (ROW-5862, B-016 Jun 30 2024)",
+          "cross_rf_documentation": "RF-15 ARC-RF15-001: Melissa has a documented systematic false allegation pattern communicated to multiple channels. No documented false allegations by Abby in the record.",
+          "projection_confirmed": true
+        },
+        {
+          "id": "PROJ-003",
+          "accusation": "Suppression claim — 'Abby doesn't need to tell her she can't have a treat if she tells me' (B-007, ROW-2374, Apr 22 2023)",
+          "cross_rf_documentation": "RF-08 ARC-RF08-001: ROW-6819 is Melissa's explicit written coaching admission. The suppression allegation against Abby mirrors Melissa's own documented coaching behavior.",
+          "projection_confirmed": true
+        },
+        {
+          "id": "PROJ-004",
+          "accusation": "'Why do you keep trying to make Olivia think I'm abusing her?' (ROW-15588, B-031 Apr 12 2026)",
+          "cross_rf_documentation": "RF-11 ARC-RF11-001: Melissa's parentification pattern includes placing adult compliance decisions on Olivia, exposing Olivia to police report content, and weaponizing counselor statements. Eli's welfare check (asking about bruise on forearm) is protective behavior — the inverse of the documented pattern.",
+          "projection_confirmed": true
+        }
+      ],
+      "cp2_confirmation": "Eli confirmed (Q5): 'Often times I notice that her accusations are often admissions.' Cross-RF record provides independent documentation for all four pairs."
+    }
+  ],
+
+  "calibration_summary": {
+    "cp2_status": "complete",
+    "cp2_completed": "2026-04-28",
+    "addenda_confirmed": 6,
+    "key_calibrations": [
+      "Q1: Incest/predation narrative confirmed communicated to family, Facebook, professional contact (Campbell Nov 2020). No formal filings (Q3). Sev-3 basis: systematic third-party reach, not institutional filing.",
+      "Q2: Vaping partially real (outside, not enclosed spaces) but weaponized in manufactured cat-allergy gatekeeping scheme (ADD-006 — allergy specialist visit; Olivia raised with pets from birth). Pinching unconfirmed (Category A). Bruise = legitimate welfare check DARVO'd by Melissa (PROJ-004).",
+      "Q3: No CPS filing, no police report by Melissa against Eli confirmed. Clean record for Eli (few speeding tickets only).",
+      "Q4: One beer with dinner before 7:30 pickup — 'well I had one with dinner which I had to hurry up and finish.' No substance problem, no DUI or drug charges.",
+      "Q5: Eli confirms 'her accusations are often admissions.' Systematic projection pattern confirmed generally; no additional text-specific instances beyond the record.",
+      "Q6: 'I'm sure she has but there is so much that happens in each exchange its hard to recall' — same emotional numbing pattern as RF-13 ADD-004."
+    ]
+  },
+
+  "compound_patterns": [
+    { "id": "COMP-RF15-001", "batches": ["B-007"], "compound": "RF-15+RF-04", "description": "Abby sexual slur + false suppression claim — RF-04 DARVO + RF-15 Category C/D" },
+    { "id": "COMP-RF15-002", "batches": ["B-015"], "compound": "RF-15+RF-04+RF-01", "description": "False danger cluster — RF-04 DARVO + RF-01 false allegation relay + RF-15 Category C/E" },
+    { "id": "COMP-RF15-003", "batches": ["B-016"], "compound": "RF-15+RF-04+RF-01", "description": "Explicit incest statement + PROJ-002 — RF-04 + RF-01 compound false allegation; Sev-3" },
+    { "id": "COMP-RF15-004", "batches": ["B-019"], "compound": "RF-15+RF-08", "description": "Harm relay via Olivia — RF-08 coaching mechanism + RF-15 Category B false content" },
+    { "id": "COMP-RF15-005", "batches": ["B-025", "B-026"], "compound": "RF-15+RF-08+RF-02", "description": "Vaping/pinching relay in cat-allergy gatekeeping scheme — RF-08 relay + RF-15 Category A/B + RF-02 visitation denial" },
+    { "id": "COMP-RF15-006", "batches": ["B-028"], "compound": "RF-15+RF-08", "description": "Phase B harm relay — RF-08 relay mechanism + RF-15 Category B" },
+    { "id": "COMP-RF15-007", "batches": ["B-029"], "compound": "RF-15+RF-04", "description": "10th predation-DARVO instance — RF-04 DARVO + RF-15 Category C sustained" },
+    { "id": "COMP-RF15-008", "batches": ["B-030"], "compound": "RF-15+RF-04+RF-09", "description": "Alcoholism fabrication — RF-04 admitted-incident amplification + RF-09 reality-distortion + RF-15 Category B" },
+    { "id": "COMP-RF15-009", "batches": ["B-031"], "compound": "RF-15+RF-04+RF-11", "description": "Bruise welfare check DARVO — RF-04 DARVO + RF-11 parentification context + RF-15 Category D PROJ-004" },
+    { "id": "COMP-RF15-010", "batches": ["B-022"], "compound": "RF-15+RF-09", "description": "PROJ-001 gaslighting projection — RF-15 Category D + RF-09 cross-documentation" }
+  ],
+
+  "gal_relevance_summary": {
+    "third_party_narrative_alert": "The incest/predation narrative was communicated outside the co-parenting channel to family members and on Facebook. The GAL's investigation may encounter these allegations from third-party sources. The text record provides the documentary refutation and the timeline of escalation.",
+    "harm_relay_alert": "Physical harm allegations delivered via Olivia (vaping, pinching, bruise welfare check) reflect the RF-08 coaching mechanism. Olivia-sourced harm allegations in any context should be evaluated against the coaching admission record (ROW-6819).",
+    "projection_alert": "Melissa's projection pattern (accusing Eli of documented-Melissa behaviors) creates a false-equivalence dynamic. For each of the four confirmed projection pairs, the cross-RF record documents only one party engaging in the behavior — documentary refutation is available for each.",
+    "cat_allergy_note": "Olivia was raised from birth with two cats and a husky with no prior documented issues. Melissa took Olivia to an allergy specialist and then used the resulting documentation to deny visitation. This is a manufactured evidence chain. GAL should probe independently when evaluating health-based gatekeeping."
+  },
+
+  "session_log": [
+    {
+      "session": 28,
+      "date": "2026-04-28",
+      "work": "B-001 calibration written; CP2 questions generated and answered; addenda-RF-15.json confirmed (6 addenda); arc-states/RF-15-arc-state.json created; all 31 batch files written (B-001 through B-031); session interrupted before wrap-up files."
+    },
+    {
+      "session": 29,
+      "date": "2026-04-28",
+      "work": "Wrap-up completed: RF-15-session-manifest.json created; pipeline-manifest.json updated (RF-15 status → complete, pending_checkpoints.cp2 cleared, sessions → 29, pipeline_status → tier1_complete, notes updated); memory/project_pipeline_state.md updated (RF-15 row + key findings + next step)."
+    }
+  ]
+}

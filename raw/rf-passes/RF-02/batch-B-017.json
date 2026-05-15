@@ -1,0 +1,168 @@
+{
+  "batch_id": "B-017",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "batch_status": "complete",
+
+  "date_range": {
+    "start": "2024-07-16",
+    "end": "2024-08-05"
+  },
+
+  "row_range": {
+    "sms_start": "ROW-6014",
+    "sms_end": "ROW-6557",
+    "mms_start": "ROW-12070",
+    "mms_end": "ROW-12105",
+    "note": "Date-based extraction used per B-007+ protocol. SMS rows sequential; MMS rows anomalous (ROW-12xxx range)."
+  },
+
+  "message_count": 581,
+
+  "primary_flags": [
+    {
+      "flag_id": "B017-RF02-001",
+      "severity": 1,
+      "arc_id": "ARC-RF02-002",
+      "arc_signal_number": 37,
+      "message_ids": ["ROW-6017"],
+      "date": "2024-07-16",
+      "signal_type": "contact_conflict_relay_fifth_instance",
+      "flag_summary": "'She was crying earlier when I tried to call you' — fifth contact-conflict relay event; Olivia's distress relayed in context of failed contact attempt attributed to Eli's unavailability",
+      "excerpts": [
+        {"row": "ROW-6017", "direction": "Received", "text": "She was crying earlier when I tried to call you."},
+        {"row": "ROW-6018", "direction": "Received", "text": "She says she is sad cause she's going to miss Canada. Wants to move to Canada or North Carolina"}
+      ],
+      "analysis": "Fifth instance of the contact-conflict relay sub-pattern: Melissa relays Olivia's distress in direct connection to a contact attempt. Prior four instances (Apr 4, Apr 8, May 1 — B-014; Jul 2 — B-016) all attributed Olivia's distress to Eli's conduct ('You got her crying,' 'She said you hung up on her'). This instance differs in degree: the distress is contextual (vacation ending, missing Canada, first crush) and not explicitly attributed to Eli's misconduct. However, the relay mechanism is consistent — Melissa's opening frames the distress in direct proximity to contact failure ('when I tried to call you'), implicating Eli's unavailability in Olivia's emotional state. The sub-pattern now spans 3.5 months (Apr–Jul 2024) with one instance in B-014, one in B-016, and one here.",
+      "arc_impact": "ARC-RF02-002 signal count: 36 → 37. Contact-conflict relay sub-pattern: five documented instances."
+    },
+    {
+      "flag_id": "B017-RF02-002",
+      "severity": 1,
+      "arc_id": "ARC-RF02-006",
+      "arc_signal_number": 3,
+      "message_ids": ["ROW-6018"],
+      "date": "2024-07-16",
+      "signal_type": "out_of_state_relocation_third_reference_child_relay",
+      "flag_summary": "Third NC reference — relayed as Olivia's stated preference on return from Canada vacation; triggers ARC-RF02-006 CANDIDATE → WATCHING promotion",
+      "excerpts": [
+        {"row": "ROW-6018", "direction": "Received", "text": "She says she is sad cause she's going to miss Canada. Wants to move to Canada or North Carolina"}
+      ],
+      "analysis": "Third reference to NC relocation. Distinct from prior two signals: (1) B-013 ROW-4588-4589 — Melissa's own direct inquiry ('You still good if we move to NC?') with employment rationale, highest analytical weight; (2) B-015 ROW-5440 — Melissa's vacation sentiment from Outer Banks NC ('This is exactly why I want to live out here'), attenuated; (3) here — Melissa relays Olivia's expressed preference on return from Canada, with NC bundled alongside Canada, most attenuated. The promotion threshold specified 'third NC reference OR any action step OR escalated framing from sentiment to firm intent.' Third reference reached; attenuation noted but threshold met. The child preference relay adds a new dimension: the NC idea is now present in Olivia's expressed discourse, suggesting the relocation narrative is circulating in the household. Promoting to WATCHING.",
+      "arc_promotion": {
+        "from": "CANDIDATE",
+        "to": "WATCHING",
+        "reason": "Third NC reference reached (all three signals attenuated or indirect; no action step yet). Promotion threshold met on signal count criterion.",
+        "new_promotion_threshold": "ACTIVE threshold: action step (job application, housing inquiry, school enrollment inquiry) OR firm, unambiguous statement of intent to relocate OR court filing related to relocation OR fourth reference with contextual specificity (not vacation sentiment or child relay)."
+      },
+      "arc_impact": "ARC-RF02-006 signal count: 2 → 3. Status: CANDIDATE → WATCHING."
+    }
+  ],
+
+  "primary_flag_count": 2,
+  "primary_flag_severity_distribution": {"1": 2, "2": 0, "3": 0},
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B017-P001",
+      "rf_category": "RF-11",
+      "severity": 2,
+      "message_ids": ["ROW-6313"],
+      "date": "2024-08-04",
+      "flag_summary": "Melissa threatens sole custody filing explicitly to eliminate co-parenting consultation requirements — highest-severity RF-11 event to date with direct RF-02 nexus",
+      "excerpts": [
+        {"row": "ROW-6313", "direction": "Received", "text": "I'm going to show these messages to the lawyer and file for sole custody so they can see how unreliable you are and how you push off your responsibilities. So that I don't have to run anything by you as far as daycare or anything"}
+      ],
+      "rf02_nexus": "This is not merely a generic legal threat — Melissa explicitly names the outcome she is seeking: 'so that I don't have to run anything by you as far as daycare or anything.' The motivation is structural elimination of Eli's co-parenting consultation rights. This is the most direct statement in the dataset of the gatekeeping goal at its logical extreme: an arrangement in which Melissa has unilateral authority over all decisions without obligation to consult the other parent. RF-02 cross-pass priority item.",
+      "cross_pass_priority": true,
+      "context": "Triggered by childcare scheduling dispute (Becky's medical appointment, Eli canceling morning commitment due to work meetings). Dispute spans ROW-6258–6529. Context includes Melissa's extended attack on Eli's parenting, finances, and fitness (ROW-6288-6517). The sole custody threat appears at the height of the conflict escalation (ROW-6313)."
+    },
+    {
+      "flag_id": "B017-P002",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "message_ids": ["ROW-6076"],
+      "date": "2024-07-20",
+      "flag_summary": "Parental delegitimizing — Melissa invokes her father's contempt for Eli to discourage contact",
+      "excerpts": [
+        {"row": "ROW-6076", "direction": "Received", "text": "Leave my dad alone. He doesn't like you"}
+      ],
+      "context": "Eli apparently contacted Melissa's father (likely wrong-number scenario — ROW-6079: 'Wrong Ron. I paid it already today' — suggests Eli had Melissa's father 'Ron' in contacts and reached out accidentally). Melissa's response is to invoke her father's dislike as a social sanction."
+    }
+  ],
+
+  "peripheral_flag_count": 2,
+
+  "arc_rf02_005_counter_signals": [
+    {
+      "note": "ARC-RF02-005 (Abby Exclusion) counter-pattern in B-017: Melissa proactively invites Abby on three occasions — a meaningful shift from the 2023 exclusion pattern. Arc remains WATCHING as no sustained pattern reversal established.",
+      "instances": [
+        {"date": "2024-07-25", "message_ids": ["ROW-6117", "ROW-6118"], "excerpt": "Does milo want to swim or hang out for a bit / Him and Olivia can swim"},
+        {"date": "2024-07-28", "message_ids": ["ROW-6127", "ROW-6128"], "excerpt": "Abby and Milo can come / It's free easy entertainment"},
+        {"date": "2024-08-04", "message_ids": ["ROW-6501"], "excerpt": "Hello even offered to let Milo swim while you were at the hospital with Abby"}
+      ]
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "cdp_id": "B017-CDP-001",
+      "date": "2024-07-19",
+      "message_ids": ["ROW-6046", "ROW-6049", "ROW-6050"],
+      "summary": "Melissa proactively offers Olivia pickup when Kings Island plans fell through; when staying home, immediately offers time window for Eli to pick her up",
+      "quality": "routine_cooperation"
+    },
+    {
+      "cdp_id": "B017-CDP-002",
+      "date": "2024-07-28",
+      "message_ids": ["ROW-6127", "ROW-6128", "ROW-6130", "ROW-6131", "ROW-6133"],
+      "summary": "Melissa invites Abby and Milo to join Olivia for pool day; proactively relays Olivia's interest in seeing Eli and coordinates pickup time around Olivia's request",
+      "quality": "high_quality_facilitation"
+    },
+    {
+      "cdp_id": "B017-CDP-003",
+      "date": "2024-07-31",
+      "message_ids": ["ROW-6171", "ROW-6175", "ROW-6176", "ROW-6177", "ROW-6180", "ROW-6182", "ROW-6192", "ROW-6195", "ROW-6196"],
+      "summary": "Cooperative co-parenting exchange on Valentina/Tinder concern — Melissa had already addressed the issue, provides Eli full context, both agree on approach and protection of Olivia's comfort. Melissa's response is measured and child-focused.",
+      "quality": "high_quality_cooperative_coparenting"
+    },
+    {
+      "cdp_id": "B017-CDP-004",
+      "date": "2024-08-02",
+      "message_ids": ["ROW-6237", "ROW-6238", "ROW-6239", "ROW-6240", "ROW-6241", "ROW-6242", "ROW-6244"],
+      "summary": "Melissa proactively coordinates Olivia's antibiotic pickup and care instructions during Eli's evening visit — detailed, child-health-focused communication",
+      "quality": "routine_cooperation"
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF02-001": {"signal_added": false},
+    "ARC-RF02-002": {
+      "signal_added": true,
+      "new_signal_count": 37,
+      "last_signal_batch": "B-017",
+      "last_signal_date": "2024-07-16",
+      "sub_pattern_note": "Contact-conflict relay sub-pattern: fifth instance (Jul 16 ROW-6017)."
+    },
+    "ARC-RF02-003": {"signal_added": false},
+    "ARC-RF02-004": {"signal_added": false},
+    "ARC-RF02-005": {"signal_added": false, "note": "Three Abby-inclusive invitations in B-017 (ROW-6117-6118, ROW-6127-6128, ROW-6501). Counter-signals documented. Arc remains WATCHING."},
+    "ARC-RF02-006": {
+      "signal_added": true,
+      "new_signal_count": 3,
+      "promoted": true,
+      "new_status": "WATCHING",
+      "last_signal_batch": "B-017",
+      "last_signal_date": "2024-07-16"
+    }
+  },
+
+  "batch_notes": [
+    "Quietest RF-02 batch since B-011 in primary flag terms (2 flags, both Sev 1). B-017 also contains the most cooperative data points in recent batches — particularly the Valentina/Tinder co-parenting exchange and multiple Abby-inclusive invitations.",
+    "ARC-RF02-006 WATCHING promotion: All three NC signals are attenuated (direct inquiry B-013, vacation sentiment B-015, child relay B-017). No action steps documented. WATCHING promotion driven by signal count threshold, not escalation of intent. The arc requires a qualitatively different signal (action step or firm intent) to reach ACTIVE.",
+    "Aug 4 scheduling dispute (ROW-6258-6529): Major conflict erupting from Eli's last-minute cancellation of childcare commitment. Melissa's extended attack spans finances, employment history, housing stability, and parenting fitness. The sole custody threat (ROW-6313) is analytically the most significant moment in this batch — explicit statement connecting legal action to elimination of co-parenting consultation requirements. Contextually, this is not a clear-day gatekeeping event but a crisis-mode power assertion.",
+    "ARC-RF02-005 (Abby Exclusion): Three Abby-inclusive invitations in B-017 — most significant cooperative Abby-engagement in the dataset. The 2023 restriction signals (B-007, B-010) have not reappeared since, and B-017 shows affirmative reversal. Arc cannot be resolved on this data alone but the counter-signal pattern is notable and should inform Phase 2 synthesis.",
+    "ROW-6529 (Aug 5 — Eli): 'My phone is off do not disturb. If SHE wants to call then I am available. I didn't want to have her call and you hijack the call.' — Eli explicitly references concern about Melissa mediating/hijacking direct Olivia calls. This demonstrates Eli's awareness of the ARC-RF02-002 required-intermediary dynamic and his attempt to create a direct-contact channel. Contextual note, not flagged.",
+    "ROW-6483 (Aug 4): Melissa explicitly denies gatekeeping: 'I don't do anything to make it hard for you to see Olivia.' This is the clearest denial of the pattern in the dataset. Occurs at peak conflict — the denial itself is analytically significant as Melissa's understanding of the accusation."
+  ]
+}

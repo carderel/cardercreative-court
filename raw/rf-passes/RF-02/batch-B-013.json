@@ -1,0 +1,206 @@
+{
+  "batch_id": "B-013",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "batch_status": "complete",
+
+  "source_rows": {
+    "first_row": "ROW-4449",
+    "last_row": "ROW-4863",
+    "total_messages": 415,
+    "date_start": "2024-02-01",
+    "date_end": "2024-03-27",
+    "extraction_method": "date_based"
+  },
+
+  "batch_summary": {
+    "primary_flags": 5,
+    "severity_distribution": {"1": 5, "2": 0, "3": 0},
+    "peripheral_flags": 3,
+    "arc_signals_added": {"ARC-RF02-001": 1, "ARC-RF02-002": 3, "ARC-RF02-006": 1},
+    "new_arcs_opened": ["ARC-RF02-006"],
+    "arcs_promoted": [],
+    "cooperative_data_points": 4,
+    "analytical_character": "Moderate gatekeeping activity with significant cooperative contrast. Homework conditional access pattern solidifies (4 cumulative instances across B-012–B-013). One major new signal: out-of-state relocation inquiry (Feb 21, ROW-4588-4589) opens new CANDIDATE arc. ARC-RF02-001 weakest signal so far (timing gate only). Two genuine cooperative gestures — airport sign facilitation (ROW-4580-4584) and direct 'You wanna talk to her?' (ROW-4840) — serve as contrast baseline alongside B-011."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "B013-PF-001",
+      "row_range": "ROW-4533–4539",
+      "date": "2024-02-15",
+      "severity": 1,
+      "arc": "ARC-RF02-002",
+      "signal_type": "homework_conditional_access",
+      "title": "Homework Conditional Access — Third Instance",
+      "messages": [
+        {"row": "ROW-4533", "dir": "Received", "text": "I'll pick her up cause I get off at 4:30. You can pick her up from the house but she does need to do something homework."},
+        {"row": "ROW-4534", "dir": "Received", "text": "So can pick between Iready and Lexia. She doesn't have to do it all."},
+        {"row": "ROW-4538", "dir": "Received", "text": "Are you able to do homework with her?"},
+        {"row": "ROW-4539", "dir": "Received", "text": "If not she can't go"}
+      ],
+      "analysis": "Melissa conditions Eli's pickup visit on homework completion. The operative phrase is ROW-4539: 'If not she can't go' — explicit access denial threatened for noncompliance. This is the third homework-conditional-access event (first two in B-012, ROW-4336-4348 and ROW-4393-4411). Four events across approximately two months (Jan–Mar 2024) solidify this as a sub-pattern within ARC-RF02-002. Eli complied (ROW-4540: 'Yeah. Homework.') and the visit proceeded.",
+      "arc_notes": "Third instance of homework-conditional-access sub-pattern. Threshold language ('If not she can't go') mirrors B-012 language pattern. Pattern now spanning five weeks across two batches."
+    },
+    {
+      "flag_id": "B013-PF-002",
+      "row_range": "ROW-4588–4589",
+      "date": "2024-02-21",
+      "severity": 1,
+      "arc": "ARC-RF02-006",
+      "signal_type": "out_of_state_relocation_inquiry",
+      "title": "Out-of-State Relocation Inquiry — NC — Opens New CANDIDATE Arc",
+      "messages": [
+        {"row": "ROW-4588", "dir": "Received", "text": "You still good if we move to NC?"},
+        {"row": "ROW-4589", "dir": "Received", "text": "I may be able to get into a job over there fairly easily"}
+      ],
+      "analysis": "Melissa raises the possibility of relocating with Olivia to North Carolina. The phrasing 'You still good' implies this was discussed previously — Melissa is checking Eli's current position, not introducing the idea for the first time. No response from Eli is recorded in this batch regarding the NC question. The significance for RF-02 is structural: an out-of-state relocation with Olivia would eliminate or dramatically reduce Eli's physical access to his daughter. Even as a query rather than a declaration, it establishes that Melissa is actively exploring this option. This warrants opening ARC-RF02-006 as a CANDIDATE arc to track whether relocation intent materializes or escalates in subsequent batches.",
+      "arc_notes": "Opens ARC-RF02-006 (CANDIDATE). Analytically distinct from all existing arcs — this is a potential macro-level gatekeeping mechanism, not a communication or visit restriction. Monitor for: (1) Eli's response in subsequent messages, (2) any further NC references, (3) any actual relocation steps. 'Still good' phrasing is the most analytically significant element — it implies prior tacit consent being re-verified."
+    },
+    {
+      "flag_id": "B013-PF-003",
+      "row_range": "ROW-4718–4724",
+      "date": "2024-03-10",
+      "severity": 1,
+      "arc": "ARC-RF02-002",
+      "signal_type": "conflict_amplified_contact_framing",
+      "title": "Conflict-Amplified Contact Framing — Gaming During Call",
+      "messages": [
+        {"row": "ROW-4718", "dir": "Received", "text": "Olivia is upset. She said that you think your game is more important than her"},
+        {"row": "ROW-4719", "dir": "Sent", "text": "That's not true.  First I told her I had to get a shower\nShe wasn't talking and when she was just being disrespectful and she hung up on me"},
+        {"row": "ROW-4721", "dir": "Received", "text": "She said she hung up on you cause your game was more important than her"},
+        {"row": "ROW-4722", "dir": "Received", "text": "I saw she wasn't on the phone anymore and asked if you had to get off the phone"},
+        {"row": "ROW-4723", "dir": "Received", "text": "She said no that she had hung up on you cause of that"},
+        {"row": "ROW-4724", "dir": "Received", "text": "I think she was lashing out with disrespect because she felt hurt"}
+      ],
+      "analysis": "Melissa positions herself as the required interpreter of Olivia's emotional state and contact motivations. The relay: Olivia hung up, Melissa asked why, Olivia explained, Melissa amplified the complaint to Eli ('your game is more important than her'). Even where Melissa offers mild mitigation (ROW-4724: 'lashing out with disrespect because she felt hurt'), she has already framed the contact failure as Eli's fault and reinforced it as Olivia's stated grievance. Melissa's role as the essential intermediary for understanding contact conflicts is the ARC-RF02-002 pattern. This instance also contributes to a recurring sub-pattern: Melissa relays Olivia's contact grievances that position Eli as emotionally unavailable.",
+      "arc_notes": "Consistent with conflict-amplified contact framing sub-pattern (see also ROW-3135-3136 B-009). Melissa's inquiry ('I saw she wasn't on the phone anymore and asked') demonstrates active monitoring of contact sessions and intervention to frame outcomes."
+    },
+    {
+      "flag_id": "B013-PF-004",
+      "row_range": "ROW-4785–4789",
+      "date": "2024-03-16",
+      "severity": 1,
+      "arc": "ARC-RF02-001",
+      "signal_type": "call_timing_gate_competing_call",
+      "title": "Call Timing Gate — Olivia on Competing Social Call",
+      "messages": [
+        {"row": "ROW-4785", "dir": "Received", "text": "Don't call yet"},
+        {"row": "ROW-4786", "dir": "Received", "text": "She's on the phone with Greyson"},
+        {"row": "ROW-4787", "dir": "Sent", "text": "Just called.  Right before you sent that"},
+        {"row": "ROW-4788", "dir": "Sent", "text": " She still on the phone?"},
+        {"row": "ROW-4789", "dir": "Received", "text": "Yep"}
+      ],
+      "analysis": "Melissa instructs Eli not to call because Olivia is on the phone with a peer (Greyson). Eli had already called before the instruction arrived. Melissa confirms Olivia is still on the other call ~17 minutes later. This is a weaker ARC-RF02-001 signal than the DND infrastructure or direct blocking events: the stated reason (competing social call) is facially reasonable and Eli's access attempt was not technically blocked. However, Melissa's active management of the timing of Eli's calls — including instructing him to wait while Olivia completes calls with others — fits the call-timing-gate sub-pattern. Analytically notable as the first ARC-RF02-001 signal since ROW-3780 (B-011, October 2023) — a five-month gap that itself is analytically relevant (arc quieted after B-011's single weak signal).",
+      "arc_notes": "Weakest ARC-RF02-001 signal in the dataset. Included as part of call-timing-gate sub-pattern but weight should be discounted relative to DND infrastructure and direct blocking signals. ARC-RF02-001 returning after 5-month gap."
+    },
+    {
+      "flag_id": "B013-PF-005",
+      "row_range": "ROW-4825–4827",
+      "date": "2024-03-20",
+      "severity": 1,
+      "arc": "ARC-RF02-002",
+      "signal_type": "homework_conditional_access",
+      "title": "Homework Conditional Access — Fourth Instance",
+      "messages": [
+        {"row": "ROW-4824", "dir": "Sent", "text": "Does she want Mr to pick her up tonight"},
+        {"row": "ROW-4825", "dir": "Received", "text": "So you're picking her up at 5:30 today and home by 9 with half of her homework done when she gets home 30 min ready and 6 units of Lexia need to be completed. Start with her to do list on iready"},
+        {"row": "ROW-4826", "dir": "Sent", "text": "Pickup about 5:30/ dropoff about 8:30 - she needs to do homework, She has an hour of iready and 12 units of Lexus due friday"},
+        {"row": "ROW-4827", "dir": "Received", "text": "If something happens and you need her charger call me and I can get that to you"}
+      ],
+      "analysis": "Eli asks if Olivia wants to be picked up. Melissa responds by immediately imposing specific homework requirements as the implicit condition of the visit ('home by 9 with half of her homework done... 6 units of Lexia need to be completed'). Unlike the third instance (ROW-4539: 'If not she can't go'), the explicit denial-contingency language is absent — but the structural pattern is the same: visit access conditioned on homework compliance communicated at the moment of access request. This is the fourth homework-conditional-access event in approximately nine weeks (Jan 18 – Mar 20, 2024). The pattern is now sufficiently established to track as a distinct sub-pattern within ARC-RF02-002.",
+      "arc_notes": "Fourth homework-conditional-access event. Sub-pattern now spans Jan 18 – Mar 20, 2024. Eli appears to accept conditions each time (no pushback documented). Cooperative outcome each time — visits proceed — but the precondition architecture is consistent."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B013-PF-P01",
+      "row_range": "ROW-4613",
+      "date": "2024-02-23",
+      "severity": 1,
+      "primary_rf": "RF-11",
+      "secondary_rf": "RF-04",
+      "signal_type": "legal_threat_coercive",
+      "title": "Legal Threat as Coercive Instrument",
+      "excerpt": "Beginning this year through my work I'm no longer required to pay a retainer so it's easier to take you to court if needed",
+      "analysis": "Melissa informs Eli that her employer has changed their legal benefits to eliminate retainer requirements, making it 'easier to take you to court if needed.' Embedded in a financial-pressure message (daycare arrears). This is a coercive legal threat used as a compliance lever — RF-11 (legal/financial manipulation). The framing positions litigation as a tool that is now more readily accessible and therefore more credible as a threat."
+    },
+    {
+      "flag_id": "B013-PF-P02",
+      "row_range": "ROW-4773–4774",
+      "date": "2024-03-15",
+      "severity": 1,
+      "primary_rf": "RF-04",
+      "signal_type": "parental_delegitimization_explicit",
+      "title": "Delegitimizing Eli's Parenting — Post-Roblox Incident",
+      "excerpt": "You really need to be more careful of what you say. Think before you speak. Some of the dumb shit that comes out of your mouth is hurtful. It was that way to me too. Don't do that to her",
+      "analysis": "Melissa uses a parenting correction moment (Eli misspoke about Roblox and inadvertently hurt Olivia's feelings) to inject a broad delegitimizing characterization of Eli's general communication ('dumb shit that comes out of your mouth is hurtful'). The pivot — 'it was that way to me too' — imports Melissa's personal grievances into a parenting instruction. Positions Melissa as the superior parent and Eli as requiring her instruction on how to communicate with his own daughter. RF-04 peripheral."
+    },
+    {
+      "flag_id": "B013-PF-P03",
+      "row_range": "ROW-4795–4801",
+      "date": "2024-03-18",
+      "severity": 1,
+      "primary_rf": "RF-05",
+      "signal_type": "derogatory_language_toward_eli",
+      "title": "Derogatory Language — 'Worthless Dick'",
+      "excerpt": "Such a worthless dick",
+      "context": "Dispute arose when Eli said Olivia could call back, but briefly did not answer when she did. Melissa escalated rapidly: 'Quit playing with her feelings / Now you've upset her cause you said she could call and then didn't answer our phone calls / Such a worthless dick' (ROW-4799-4801). Eli states he had his phone in his hand (ROW-4802).",
+      "analysis": "Melissa used a minor missed-call confusion to escalate to explicit derogatory language. The rapid escalation pattern (brief non-response → 'worthless dick') is consistent with prior RF-05 signals. Eli's explanation that he had his phone in hand (ROW-4802) was met with 'Then why the fuck didn't you answer' (ROW-4803) — no de-escalation."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_range": "ROW-4580–4584",
+      "date": "2024-02-19",
+      "type": "proactive_child_centered_facilitation",
+      "description": "Melissa organized Olivia to hold signs at the airport as Eli's flight departed, while sick with flu. 'That's why i had her call and ask what time your flight was. Then I asked her if she wanted to make a sign. She said yes so off we went to meijer late last night.' and 'Even if I'm super tired and have the flu she's worth it.' Highest-quality cooperative gesture documented in the dataset — spontaneous, child-centered, no reciprocal expectation stated."
+    },
+    {
+      "row_range": "ROW-4840",
+      "date": "2024-03-24",
+      "type": "direct_facilitation",
+      "description": "Melissa proactively offered Olivia to Eli: 'You wanna talk to her?' — direct facilitation without prompting."
+    },
+    {
+      "row_range": "ROW-4473–4474",
+      "date": "2024-02-07",
+      "type": "visit_facilitation_no_homework_condition",
+      "description": "Melissa explicitly waived homework requirement for a visit: 'She doesn't need to worry about homework tonight / We did some last night and there's no school Friday.' Analytically relevant as contrast to the homework-conditional-access sub-pattern — demonstrates Melissa is capable of exercising discretion in the child's favor."
+    },
+    {
+      "row_range": "ROW-4519–4521",
+      "date": "2024-02-14",
+      "type": "proactive_co_parenting_coordination",
+      "description": "Melissa proactively asked Eli whether he could take Olivia to school on Thursday mornings for a choir program (Finding Nemo show). 'If she decides to do choir for the finding Nemo show would you be able to get her to school at 8 on some Thursdays? I can get her there on days I close but not opening days.' Eli confirmed yes. Logistics-oriented cooperative coordination."
+    }
+  ],
+
+  "arc_state_changes": [
+    {
+      "arc_id": "ARC-RF02-001",
+      "change": "signal_added",
+      "signals_added": ["ROW-4785-4789"],
+      "new_signal_count": 22,
+      "notes": "First new signal since B-011 (5-month gap). Weakest signal type in arc — call timing gate, not infrastructure blocking or personal blocking."
+    },
+    {
+      "arc_id": "ARC-RF02-002",
+      "change": "signals_added",
+      "signals_added": ["ROW-4533-4539", "ROW-4718-4724", "ROW-4825-4827"],
+      "new_signal_count": 29,
+      "notes": "Homework conditional access now 4 instances across B-012–B-013 (9-week window). Sub-pattern now sufficiently dense to treat as established recurring mechanism within this arc."
+    },
+    {
+      "arc_id": "ARC-RF02-006",
+      "change": "arc_opened",
+      "new_status": "CANDIDATE",
+      "first_signal": "ROW-4588-4589",
+      "notes": "Out-of-state relocation inquiry. Single signal, CANDIDATE status. Watch for additional relocation references or action steps."
+    }
+  ],
+
+  "batch_notes": "B-013 is analytically mixed: three strong ARC-RF02-002 signals (including two homework conditional access instances) and a significant new CANDIDATE arc (relocation), offset by four documented cooperative gestures including the airport sign facilitation — the highest-quality cooperative gesture in the dataset. ARC-RF02-001 returns after 5-month gap with its weakest signal. The homework conditional access sub-pattern is now the most actively developing element of ARC-RF02-002: 4 instances in 9 weeks suggests it has become Melissa's standard operating mode for visit access rather than an intermittent occurrence. ROW-4613 ('easier to take you to court') is the first legal-threat framing since early batches and should be tracked for escalation. The NC relocation inquiry (ROW-4588-4589) carries the highest future-risk significance in the dataset: if executed, would supersede all existing arc dynamics by eliminating physical access entirely."
+}

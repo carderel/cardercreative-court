@@ -1,0 +1,46 @@
+{
+  "batch_id": "B-012",
+  "date_range": {
+    "start": "2023-12-02",
+    "end": "2024-01-31"
+  },
+  "row_range": {
+    "start": 4077,
+    "end": 4447
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 4,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Dec 2023\u2013Jan 2024. Jan 5, 2024: Bullying incident (daycare peer Aston hitting Olivia) \u2014 cooperative co-parenting response, no parent household safety concern. Jan 28, 2024: Hand injury requiring urgent care (sprain/no fracture) \u2014 Melissa coordinates with Eli, cooperative medical response. No allegation of harm causation against either parent. ROW-5824: 'She calls the glasses the fancy glasses' \u2014 casual reference, no compliance failure documented. 0 primary RF-14 flags. B-012 is last row-based batch; B-013+ are date-based."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals \u2014 WATCHING (3 signals)",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 WATCHING (1 signal)",
+      "state": "WATCHING"
+    }
+  ]
+}

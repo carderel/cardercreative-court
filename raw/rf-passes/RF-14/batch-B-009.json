@@ -1,0 +1,63 @@
+{
+  "batch_id": "B-009",
+  "date_range": {
+    "start": "2023-07-16",
+    "end": "2023-08-20"
+  },
+  "row_range": {
+    "start": 2964,
+    "end": 3334
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 3,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Jul-Aug 2023. S-003: Olivia reports a device with 'green light and smoke coming out' in Eli's household (Jul 30, 2023) \u2014 early vaping device reference, 2 years before the B-026 weaponization event. Olivia has documented asthma concerns (confirmed in B-009 ROW-3251 context). This is the EARLIEST vaping/smoke signal \u2014 at this stage it appears as a genuine Sent-direction safety observation relayed through Olivia. ARC-RF14-002 first signal: arc promoted CANDIDATE\u2192WATCHING."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-003",
+      "row_ref": "ROW-3139-3141",
+      "date": "2023-07-30",
+      "direction": "Received",
+      "severity": 1,
+      "arc": "ARC-RF14-002",
+      "arc_signal_num": 1,
+      "type": "Household environment \u2014 vaping device (early stage)",
+      "description": "ROW-3139 [Sent]: 'I didn't lie and legit cannot find it. It has a cover on it and I have a red [one]...' ROW-3141 [Received]: 'Why would she make up in detail it having a green light and smoke coming out.' \u2014 Olivia reports seeing a device with green light and smoke at Eli's household. Eli is searching for a device with a cover. Olivia has documented asthma concerns (per B-009 context). At this early stage (2023), this is a genuine welfare observation \u2014 not yet weaponized. Becomes the basis for the RF-15 Category B vaping/asthma scheme in B-026 (Jun 2025). Note: Eli admits vaping briefly in B-026 (stopped immediately on recognition). This early signal is the precursor.",
+      "addenda_applied": [
+        "RF14-ADD-001",
+        "RF14-ADD-006"
+      ],
+      "note": "This early observation predates the weaponized B-026 vaping/asthma allegation by 2 years. At B-009 stage: genuine concern. At B-026: RF-15 Category B primary, RF-14 peripheral per ADD-001 compound boundary."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals \u2014 WATCHING maintained (3 signals)",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "RF14-S-003: Vaping/smoke device early observation. ARC-RF14-002 first signal \u2014 promoted CANDIDATE\u2192WATCHING. Genuine safety documentation arc established.",
+      "state": "WATCHING"
+    }
+  ]
+}

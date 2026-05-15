@@ -1,0 +1,150 @@
+{
+  "checkpoint_type": "CP2",
+  "rf_pass": "RF-01",
+  "rf_name": "Parental Alienation",
+  "batch_reviewed": "B-001",
+  "date_generated": "2026-04-23",
+  "batch_date_range": "2022-01-11 to 2022-10-03",
+  "batch_message_count": 365,
+  "purpose": "First-batch calibration review. Eli reviews Group A (clear flags), Group B (ambiguous flags), and Group C (near-boundary non-flags) to calibrate the analysis before proceeding to B-002 through B-031.",
+
+  "instructions_for_reviewer": "For each item below, respond with: (1) CONFIRM — flag is accurate as described; (2) DISMISS — this should not be a flag (explain why); (3) ADJUST — flag is valid but severity or reasoning needs modification (explain how); (4) ELEVATE — flag should be higher severity than assigned. For Group B items, additional context you can provide will directly improve calibration. For Group C items, respond AGREE (not a flag) or PROMOTE (should be flagged — explain).",
+
+  "group_a_clear_flags": [
+    {
+      "item_id": "CP2-RF01-A1",
+      "signal_id": "RF01-B001-S002",
+      "rows": "ROW-292 and ROW-293",
+      "date": "2022-09-27",
+      "messages": [
+        "ROW-292: 'You taught her that'",
+        "ROW-293: 'Always remember that'"
+      ],
+      "context_summary": "Melissa sent Eli a video of Olivia (ROW-10060, content unknown). She then texted 'We need to talk to her before Friday' with a facepalm emoji. Eli responded with a dismissive eye-roll emoji. Twenty-one minutes later, Melissa sent 'You taught her that / Always remember that' — directly attributing whatever Olivia did in the video to Eli's influence, and instructing him to permanently carry that attribution.",
+      "flag_classification": "RF-01 Primary, Severity 1",
+      "why_flagged": "Direct attribution of negative child behavior to Eli's parenting influence. The phrase 'Always remember that' converts a single incident attribution into a directive to permanently accept blame. This is a clear RF-01 indicator: 'blaming the other parent for the child's behavior; attributing negative traits or actions to the other parent's influence.'",
+      "calibration_questions": [
+        "Do you know what the video showed? What was Olivia doing that Melissa found concerning?",
+        "Did Melissa have a pattern of attributing Olivia's negative behaviors to your influence in the earlier period of co-parenting?",
+        "Does 'Always remember that' feel like a routine expression for Melissa, or does it feel pointed/punitive in context?"
+      ]
+    }
+  ],
+
+  "group_b_ambiguous_flags": [
+    {
+      "item_id": "CP2-RF01-B1",
+      "signal_id": "RF01-B001-S003",
+      "rows": "ROW-361, ROW-362, ROW-363",
+      "date": "2022-10-02",
+      "messages": [
+        "ROW-361: 'We were singing savage love in the car.'",
+        "ROW-362: 'I sang \"did somebody break your heart?\"'",
+        "ROW-363: 'She said \"yeah. My dad when he left me\"'"
+      ],
+      "context_summary": "Melissa describes a car ride where she sang a lyric from 'Savage Love' directly to Olivia — specifically the question 'did somebody break your heart?' Olivia responded 'yeah. My dad when he left me.' Melissa then relayed this to Eli in real-time.",
+      "flag_classification": "RF-01 Primary, Severity 1 (PENDING CALIBRATION)",
+      "why_flagged": "A child of approximately 6 using the phrase 'when he left me' — abandonment framing — is clinically significant. Children at this age do not naturally characterize divorce as 'my dad left me' without that narrative being framed for them. Additionally, the method of relay (Melissa sending this exchange to Eli in real-time) is ambiguous: it could be transparent co-parenting (sharing how Olivia is processing the divorce) OR it could be weaponized communication (sending Eli a message about how his daughter perceives him).",
+      "ambiguity_explanation": "Two competing interpretations exist: (A) Melissa is being transparent about Olivia's emotional state regarding the divorce — the child said something that concerned or moved Melissa, and she shared it with co-parent Eli. This would be appropriate co-parenting. (B) Melissa has primed Olivia to express abandonment feelings about Eli, and is sending those expressed feelings to Eli as a message. The setup (Melissa singing a leading question about broken hearts to a 6-year-old) is consistent with interpretation B, but cannot be confirmed without additional context.",
+      "calibration_questions": [
+        "Have you ever heard Olivia use the phrase 'my dad left me' or 'when you left me' — language framing your departure as abandonment?",
+        "Did Olivia ever express this kind of feeling directly to you (that you left her)?",
+        "In your experience of Melissa during this period, did sharing an exchange like this feel like supportive transparency or like a message being sent to you?",
+        "Do you have any recollection of Melissa discussing the divorce with Olivia in terms of 'daddy leaving'?",
+        "How did 'Aww' feel as a response — was that your genuine reaction, or were you unsure how to respond?"
+      ]
+    },
+    {
+      "item_id": "CP2-RF01-B2",
+      "signal_id": "RF01-B001-S001",
+      "rows": "ROW-43",
+      "date": "2022-08-29",
+      "messages": [
+        "ROW-43: 'Olivia said you were yelling at her in church and someone saw her crying. She doesn't have to stand up at church'"
+      ],
+      "context_summary": "After Eli took Olivia to church, Melissa texted that Olivia reported Eli 'yelling at her' and that someone saw Olivia crying. Melissa then declared 'She doesn't have to stand up at church.' When Eli explained that he wasn't yelling but asked Olivia to stand respectfully, Eli also revealed that Olivia had used 'my mom said' to override his request during his parenting time. Melissa's subsequent messages criticized Eli's own church behavior rather than acknowledging the concern he raised.",
+      "flag_classification": "RF-01 Primary, Severity 1 (PENDING CALIBRATION — weakest of the three)",
+      "why_flagged": "Two elements: (1) Melissa uses Olivia's report as the vehicle to challenge Eli's parenting conduct during his custodial time. (2) Per Eli's own account, Olivia invoked 'my mom said' to override Eli's request — indicating Olivia was equipped with cross-household authority to resist Eli's parenting decisions during his time. This is consistent with the 'undermining the other parent's parenting authority' RF-01 indicator.",
+      "ambiguity_explanation": "This could be: (A) Legitimate co-parenting communication — Olivia was upset after church, Melissa raised a concern about how it went, and they discussed parenting approach differences. Church behavior preferences are a normal co-parenting topic. OR (B) Melissa using Olivia's reported account to criticize Eli's parenting, then positioning herself as the authority who overrides Eli's decisions. The 'my mom said' element is the most analytically significant — it is unusual for a child to cite the other parent's rule to resist the current parent's request unless that framing has been reinforced.",
+      "calibration_questions": [
+        "Was this a one-time occurrence where Olivia said 'my mom said' to override you, or has that happened at other times?",
+        "Did Melissa ever support your parenting decisions when you were in conflict with Olivia during your time — or did she typically side with Olivia's account?",
+        "Was the church issue a genuine ongoing disagreement (Melissa doesn't want Olivia to attend), or did it resolve?",
+        "How does the level of escalation in this exchange feel compared to other co-parenting disputes from this period?"
+      ]
+    }
+  ],
+
+  "group_c_near_boundary_nonflags": [
+    {
+      "item_id": "CP2-RF01-C1",
+      "rows": "ROW-256 through ROW-260",
+      "date": "2022-09-22",
+      "messages": [
+        "ROW-256: 'Olivia's impression of you in the car was hilarious'",
+        "ROW-257: 'I have an air fryer. You should get an air fryer. I love my air fryer...' (Olivia's impression of Eli)",
+        "ROW-259: 'Last night when she was pretending to hug, kiss and pet it saying \"I\\'m sorry honey\"'",
+        "ROW-260: 'She\\'s hilarious'"
+      ],
+      "why_not_flagged": "Olivia mocked Eli's air fryer enthusiasm and Melissa found it hilarious and shared it with Eli directly. NOT flagged because: (1) the impression is affectionate ribbing, not contemptuous disparagement; (2) Melissa shared it directly with Eli rather than encouraging Olivia to mock him covertly; (3) a child imitating a parent's known quirk is developmentally normal.",
+      "cp2_question": "Does this feel affectionate/playful or does it carry an edge? Is there a pattern of Melissa sharing Olivia's 'impressions' of you that you experienced as more mocking than loving?"
+    },
+    {
+      "item_id": "CP2-RF01-C2",
+      "rows": "ROW-365",
+      "date": "2022-10-02",
+      "messages": [
+        "ROW-365: 'She\\'s sending you to voicemail not me'"
+      ],
+      "why_not_flagged": "This is already a primary RF-02 flag (phone blocking arc, Signal 5). For RF-01, the 'not me' framing is near-boundary: it highlights that Olivia communicates with Melissa but not Eli, which could reinforce differential attachment framing. NOT flagged as RF-01 primary because (1) the statement is factually accurate — Eli goes to voicemail due to the DND system; (2) the RF-02 arc already captures the gatekeeping mechanism.",
+      "cp2_question": "How did you experience Melissa's habit of pointing out that Olivia will talk to her but sends you to voicemail? Did it feel like factual reporting or did it feel like a pointed comparison?"
+    },
+    {
+      "item_id": "CP2-RF01-C3",
+      "rows": "ROW-50 through ROW-61",
+      "date": "2022-08-29",
+      "messages": [
+        "ROW-50: 'You want to tell her about being respectful at church but you text me while church is going on...'",
+        "ROW-54: 'Also laughing at other people at church isn\\'t proper protocol. You shouldn\\'t be judging like that'",
+        "ROW-61: 'Check your own etiquette'"
+      ],
+      "why_not_flagged": "Melissa's counter-criticism during the church dispute is directed at Eli (criticizing his texting and behavior), not channeled through or about Olivia. NOT flagged as RF-01 because the criticism goes to Eli directly. This is RF-04/RF-05 territory (contemptuous communication, DARVO-adjacent), not parental alienation.",
+      "cp2_question": "No calibration needed for RF-01 — confirm you agree this belongs in RF-04/RF-05 rather than RF-01."
+    }
+  ],
+
+  "arc_calibration": {
+    "arc_id": "ARC-RF01-001",
+    "arc_name": "Abandonment/Blame Attribution Narrative",
+    "current_status": "candidate",
+    "signal_count": 3,
+    "cp2_question": "The three signals in B-001 suggest an early pattern of (1) attributing Olivia's negative behaviors to Eli's influence and (2) framing Eli as having abandoned Olivia in narrative content shared with or through Olivia. As you review these three signals, do they feel like isolated one-off communications or do they feel like the beginning of a pattern you've experienced throughout the case? This will help calibrate how quickly the arc should be promoted."
+  },
+
+  "key_calibration_questions_summary": [
+    {
+      "question_id": "KCQ-RF01-001",
+      "question": "Have you ever heard Olivia use abandonment language — 'you left me,' 'you left us,' 'my dad when he left' — either directly to you or as reported by Melissa?",
+      "why_important": "The Savage Love exchange (ROW-363) is the earliest instance of this language in the dataset. Knowing whether Olivia ever used this language with you directly would establish whether it represents a coached narrative or organic child processing."
+    },
+    {
+      "question_id": "KCQ-RF01-002",
+      "question": "Does Melissa have a pattern of attributing Olivia's behavioral problems specifically to your influence ('you taught her that' / 'that's from you'), or was the Sep 27 exchange unusual?",
+      "why_important": "ROW-292-293 is classified as Group A (clear flag), but its severity as a pattern depends on whether it is isolated or part of a recurring attribution dynamic."
+    },
+    {
+      "question_id": "KCQ-RF01-003",
+      "question": "Has Olivia ever used 'my mom said' or 'Mom says I don't have to' to override your parenting decisions during your custodial time? How often and in what contexts?",
+      "why_important": "ROW-45 (Eli's report of the church incident) is the first instance of this pattern in the dataset. If this is a recurring behavior, it significantly elevates the RF-01 arc status."
+    },
+    {
+      "question_id": "KCQ-RF01-004",
+      "question": "Looking at the Sep-Oct 2022 batch overall — do the RF-01 flags accurately capture the most concerning interactions, or are there aspects of the dynamic during this period that you think the analysis missed?",
+      "why_important": "This is the calibration batch. Your ground-truth knowledge of the relationship history during this period is the most important input to ensure the remaining 30 batches are analyzed accurately."
+    }
+  ],
+
+  "instructions_for_proceeding": "After completing this CP2 review, provide your responses and any additional context. The responses will be loaded as calibration addenda (saved to /analysis-output/calibration/addenda-RF-01.json) before B-002 through B-031 are processed. Do not proceed to B-002 without CP2 feedback.",
+
+  "pending_status": "HALT — awaiting Eli's CP2 calibration review"
+}

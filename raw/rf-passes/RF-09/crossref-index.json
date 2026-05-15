@@ -1,0 +1,50 @@
+{
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "generated": "2026-04-27",
+  "total_pairs": 1,
+  "unresolved_claims_count": 1,
+  "evidence_level_distribution": {
+    "A": 1,
+    "B": 0,
+    "C": 0,
+    "D": 0
+  },
+  "cross_references": [
+    {
+      "xref_id": "XREF-001",
+      "evidence_level": "A",
+      "status": "resolved",
+      "anchor_batch": "B-027",
+      "anchor_row": "ROW-9964",
+      "anchor_date": "2025-07-19",
+      "anchor_message": "There's no threats",
+      "contradiction_row": "ROW-9957-9960",
+      "contradiction_message": "ROW-9957: 'I'll screenshot this and file for full custody' | ROW-9960: 'Call me crazy if you want to but that is what will happen'",
+      "contradiction_date": "2025-07-19",
+      "same_cluster": true,
+      "signal_ref": "S008",
+      "flag_ref": "RF09-B027-001",
+      "compound_refs": [
+        "COMP-RF09-005",
+        "RF-05 S020"
+      ],
+      "notes": "Clearest Level A pair in dataset. Threat issued and denied within the same message cluster. No forward search required \u2014 both messages in B-027 ROW range. RF-05 S020 (DARVO-denial mechanism) documents same event from RF-05 perspective."
+    }
+  ],
+  "unresolved_claims": [
+    {
+      "claim_id": "UCLAIM-001",
+      "status": "unresolved_at_dataset_close",
+      "evidence_level_if_denied": "A",
+      "anchor_row": "ROW-6819",
+      "anchor_batch": "B-018",
+      "anchor_date": "2024-08-21",
+      "anchor_message": "I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so that she will share",
+      "claim_type": "coaching_admission_forward_anchor",
+      "watch_for": "Any 'I never told Olivia what to say' or 'I don't coach her' language in B-019 through B-031",
+      "result": "No coaching denial found in B-019 through B-031. ROW-6819 stands undenied at dataset close.",
+      "notes": "ADD-002 forward anchor. Eli's CP2 observation: Melissa's comfort with the admission suggests coaching is normalized and habitual across all subjects. Absence of denial is consistent with this interpretation \u2014 no need to walk it back. Note for Phase 2 synthesis: ROW-6819 as undenied coaching admission is significant; the absence of subsequent denial is itself a behavioral data point."
+    }
+  ]
+}

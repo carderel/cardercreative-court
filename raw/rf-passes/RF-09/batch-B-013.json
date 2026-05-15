@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-013",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2024-02-01",
+    "end": "2024-03-27"
+  },
+  "row_range": {
+    "start": 4448,
+    "end": 4860
+  },
+  "message_count": 516,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 3,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Feb\u2013Mar 2024: No RF-09 primary signals. RF-04 conflict clusters present. No documentable reality-denial language meeting Level B-E threshold in this batch."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

@@ -1,0 +1,71 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-020",
+    "row_range": { "start": 7524, "end": 7705 },
+    "date_range": { "start": "2024-10-04", "end": "2024-12-06" },
+    "message_count": 182,
+    "timezone_note": "EDT through ROW-7598 (Oct 31 08:55 EDT). EST from ROW-7599 (Nov 6 20:56 EST). DST change Nov 3 2024 at 2:00 AM EDT (clocks fall back; threshold: Nov 3 06:00 UTC). Oct 31 to Nov 6 gap in messages spans DST change. RF-02 B-020 date range extends to Dec 17, 2024, but Dec 6 (ROW-7705) is the actual last message in the dataset through Dec 17 — gap period Dec 7-17 (no messages). RF-02 anomalous sms_end ROW-8716 reflects non-sequential row numbering per B-007+ protocol note.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B020-F001",
+      "arc_signal_ref": "RF01-B020-S001",
+      "row": "ROW-7624-7678",
+      "date": "2024-11-17-18",
+      "rf_tags": ["RF-01"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-002", "RF01-ADD-003"],
+      "arc": "ARC-RF01-001",
+      "summary": "November 17-18 — Parenting-competence cluster triggered by Olivia's picky eating during a brief 2-hour dinner visit. Eli texted Melissa for support in handling Olivia's food refusal; Melissa frames this consultation as evidence of Eli's parental inadequacy. Key nodes: ROW-7624: 'Omg. Are you not able to parent for 2 hrs' (ADD-002 — consultation reframed as inability to parent independently); ROW-7625: 'Be a parent' (ADD-002 direct); ROW-7636: 'She is at your house. You should be able to parent' (ADD-002); ROW-7637-7638: 'Should I come tell her that if she doesn't eat it she can't have anything else? / Do I need to come do what you should be doing?' (ADD-003 — offer to cross into Eli's home to exercise parenting authority; cross-household override framing); ROW-7644: 'You should be able to handle it. Do you not think she's going to see what she can get by with there?' (ADD-002 — implies Olivia exploits Eli's permissiveness); ROW-7648-7649: 'Cause she's still not eating. Instead you're going to pack it up and make it my problem. / Great job 👏 👏 👏' (ADD-002 sarcastic); ROW-7654: 'She's with me more because you make no time for her' (ADD-002 — connects food incident to broader inadequate-father narrative; attributes Olivia's primary residence at Melissa's to Eli's failure to make time rather than to any scheduling arrangement); ROW-7671-7672: 'You need to be a parent / It's sad that you can't handle it and your solution is to pack up her meal and make it my problem' (ADD-002); ROW-7678 (Nov 18): 'Are you going to give her dinner or send her home without eating again?' (ADD-002 — next-day extension of parenting-competence attack when Eli requests pickup). Context counter-indicators: Eli did handle the situation (didn't relent, withheld cake, told Olivia the consequences — ROW-7627/7633/7640); Melissa's framing of Eli as unable to parent contradicts Eli's actual handling, which was consistent with Melissa's own stated approach (ROW-7629: 'She tries that here and there will be tears... I lay down the law and then she eats it'). ADD-003 dimension: ROW-7637-7638 is the most explicit cross-household authority override offer in the record — Melissa offers to physically come to Eli's home during his custodial time to parent Olivia, framing this as remediation of Eli's inadequacy."
+    }
+  ],
+
+  "primary_flag_count": 1,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B020-P001",
+      "row": "ROW-7553",
+      "date": "2024-10-17",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "October 17 — 'Abby throwing a fit. Is that why it went from you could have her spend the night to having car issues all of a sudden' (ROW-7553). Context: Melissa asked Eli to pick Olivia up from Lancaster hospital late at night; Eli offered Olivia could spend the night but then noted car reliability concerns about driving to Lancaster. Melissa immediately attributes the limitation to Abby's objection ('Abby throwing a fit') rather than accepting the car concern at face value. ADD-001 — Abby positioned as the real decision-maker constraining Eli's parenting. Peripheral — single message."
+    },
+    {
+      "flag_id": "RF01-B020-P002",
+      "row": "ROW-7703",
+      "date": "2024-11-26",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "November 26 — 'You were huffy with Olivia that night. Acting all irritated and talking to Abby. Next time pay attention' (ROW-7703). Context: Melissa delivers parenting critique following a visit. ADD-001 — Abby cited as reason Eli was distracted/inattentive with Olivia; ADD-002 adjacent — characterizes Eli's behavior as irritable/inattentive. 'Talking to Abby' as the reason for huffy behavior extends the Abby-as-distraction framing from B-018 ROW-6830. Peripheral — single message."
+    }
+  ],
+
+  "peripheral_flag_count": 2,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": "RF01-B020-S001",
+      "signal_count_before": 22,
+      "signal_count_after": 23,
+      "severity": 2,
+      "notes": "B-020 adds 1 Sev-2 signal (ROW-7624-7678, Nov 17-18). Total: 23 signals (2 Sev-1, 21 Sev-2). Last signal date updated: 2024-10-02 → 2024-11-18. B-020 is a low-intensity batch — consistent with the post-B-019 de-escalation pattern observed after high-conflict clusters. ADD-003 cross-household authority override offer (ROW-7637-7638) is a notable structural element — the offer to physically cross into Eli's home to parent Olivia represents the most explicit written cross-household override offer in Phase A."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Low-intensity batch. Oct 4 – Nov 16 is predominantly cooperative: school supply payment coordination, eye appointment coordination, parent-teacher sign-up (ROW-7576-7579), Olivia's reading achievement news (ROW-7580), Halloween police costume (ROW-7595 'giving out citations at the bus stop'), molluscum resolution updates (ROW-7583-7586 — good news, most bumps resolved). November 17 food incident is the only escalation point. November 18-26 returns to cooperative baseline. December: only 1 message (ROW-7705, Dec 6 — school-related, incomplete context). Post-B-019 de-escalation pattern confirmed.",
+    "dst_change": "DST change occurred Nov 3, 2024 (EDT to EST, UTC-5). Last EDT message: ROW-7598 (Oct 31 08:55 EDT). First EST message: ROW-7599 (Nov 6 20:56 EST). Nov 1-5 is a 5-day gap in messages spanning the DST change. No messages cross the boundary ambiguously.",
+    "add003_cross_household_offer": "ROW-7637-7638 contains the most explicit cross-household authority override offer in Phase A: 'Should I come tell her that if she doesn't eat it she can't have anything else? / Do I need to come do what you should be doing?' Melissa offers to physically enter Eli's home during his custodial time to parent Olivia, framing it as remediation of his incompetence. This extends the ADD-003 pattern beyond verbal overrides to proposed physical intervention during Eli's custodial time.",
+    "october_cooperation_level": "October is the most cooperative single-month period in Phase A since early B-018. Multiple genuine co-parenting moments: Eli takes Olivia to school and reports she 'did good' (ROW-7538); parent-teacher coordination (ROW-7576-7579); Eli requests school photo email (ROW-7535-7536); Olivia shared care (Oct 26-27 coverage request). No RF-01 primary signals in October.",
+    "eli_response_pattern": "Nov 17 food dispute: Eli consults Melissa, handles the situation consistently (no cake withheld; food packed for home), and de-escalates (ROW-7640: 'I will even send a piece of cake with her'; ROW-7646: 'I am aware of that and don't relent'; ROW-7664: 'Sure' to Melissa's offer to text nonstop during issues). Eli's behavior contradicts Melissa's inadequacy framing."
+  }
+}

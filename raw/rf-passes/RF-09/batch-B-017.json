@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-017",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2024-07-16",
+    "end": "2024-08-05"
+  },
+  "row_range": {
+    "start": 6013,
+    "end": 6556
+  },
+  "message_count": 544,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 4,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jul\u2013Aug 2024: Aug 4-5 mega-cluster (~80 messages, RF-04 Sev-2). No RF-09 primary signals \u2014 DARVO sequences do not include documentable 'I never said' or reality-denial language meeting compound threshold (ADD-003). Pure DARVO = RF-04 primary only. No cross-reference pairs found."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

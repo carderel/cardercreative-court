@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-010",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2023-08-21",
+    "end": "2023-10-04"
+  },
+  "row_range": {
+    "start": 3344,
+    "end": 3723
+  },
+  "message_count": 500,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Aug\u2013Oct 2023: court order reference in RF-08 analysis context ('weren't just making yourself available because there was a court order'). Relay context, not child-directed legal disclosure. No RF-11 primary signals."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

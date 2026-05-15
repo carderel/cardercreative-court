@@ -1,0 +1,67 @@
+{
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "arc_state_version": "initial",
+  "last_updated": "2026-04-28",
+  "dataset_close": "2026-04-12",
+  "tone_profiles": {
+    "melissa_phase_a": {
+      "direction": "received",
+      "phase": "A",
+      "baseline_established": false,
+      "batches_analyzed_for_baseline": [],
+      "note": "Baseline building required \u2014 B-001 through B-003 expected to establish Phase A tone profile. Prior RF-04 record shows volatile, DARVO-heavy communication style as Phase A norm."
+    },
+    "eli_phase_a": {
+      "direction": "sent",
+      "phase": "A",
+      "baseline_established": false,
+      "batches_analyzed_for_baseline": [],
+      "note": "Baseline building required. RF-13 confirms consistent de-escalator role. AI-guided communication begins EP-1078 May 2025 (Phase B inflection)."
+    },
+    "melissa_phase_bc": {
+      "direction": "received",
+      "phase": "B/C",
+      "baseline_established": false,
+      "batches_analyzed_for_baseline": [],
+      "note": "Phase B/C baseline to be built from B-025+ batches. RF-13 confirms escalation continued through Phase B/C despite Eli's AI-guided de-escalation \u2014 strategic vs. genuine communication change to be assessed."
+    },
+    "eli_phase_bc": {
+      "direction": "sent",
+      "phase": "B/C",
+      "baseline_established": false,
+      "batches_analyzed_for_baseline": [],
+      "note": "Phase B/C = AI-guided communication (ChatGPT from EP-1078 May 2025). This IS genuine communication change, not strategic. RF-12 analysis must distinguish Melissa's strategic adaptation from Eli's genuine improvement."
+    }
+  },
+  "arcs": [
+    {
+      "arc_id": "ARC-RF12-001",
+      "arc_name": "Strategic Communication Campaign",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 B-001 is baseline establishment period. No strategic communication expected in pre-escalation cooperative period."
+        }
+      ]
+    },
+    {
+      "arc_id": "ARC-RF12-002",
+      "arc_name": "Bait-and-Switch Cycle",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 bait-and-switch detection requires baseline tone establishment before patterns can be reliably identified."
+        }
+      ]
+    }
+  ]
+}

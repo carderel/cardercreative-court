@@ -1,0 +1,175 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-002",
+    "row_range": {"start": 367, "end": 712},
+    "mms_row_range": {"start": 10109, "end": 10262},
+    "date_range": {"start": "2022-10-03", "end": "2022-11-05"},
+    "message_count": 346,
+    "mms_count": 154,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. Dominant event: Oct 31 Halloween conflict — first batch with explicit, sustained 'bad father / chose a new family' narrative in writing. The Abby attack vector is activated for the first time in full force: Melissa constructs and repeats the argument that Eli chose Milo (Abby's son) over Olivia, making Eli inadequate and abandoning as a father. This narrative mirrors exactly what Eli confirmed Melissa has been telling Olivia verbally since the divorce filing. ARC-RF01-001 promoted to ACTIVE this batch."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 346,
+    "primary_flags": 2,
+    "primary_severity_distribution": {"1": 0, "2": 2, "3": 0},
+    "peripheral_flags_total": 5,
+    "peripheral_rf_distribution": {"RF-02": 2, "RF-04": 2, "RF-09": 1},
+    "no_flag_messages": 344,
+    "flag_rate": "0.6%"
+  },
+
+  "flagged_messages": [
+    {
+      "signal_id": "RF01-B002-S001",
+      "message_id": "ROW-619",
+      "timestamp": "2022-10-31 14:40:09 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "We don't need you",
+      "primary_rf": "RF-01",
+      "primary_severity": 2,
+      "primary_reasoning": "Three-message sequence (ROW-619–621): Melissa denies Eli's request to pick Olivia up for trick-or-treating with the statement 'We don't need you,' immediately followed by 'It's sad that you'd rather take someone else's kid than your own' and 'She deserves a better dad.' Per RF-01 calibration addendum RF01-ADD-002: the abandonment/inadequate-father narrative is confirmed coached and deliberate, warranting Sev 2 minimum. These three messages represent the abandonment narrative in its most explicit written form to date. 'We don't need you' is both an access refusal and a rejection statement that positions Eli as expendable. 'She deserves a better dad' is a direct articulation of parental inadequacy — the same framing Eli confirmed Melissa uses in front of Olivia. Severity 2 because: (1) three consecutive messages sustaining the same narrative; (2) phrasing matches confirmed coached language; (3) the framing that Eli chose another child ('someone else's kid') is the first explicit activation of the Abby-as-replacement-parent narrative in the written record.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "Extended Halloween sequence (ROW-619–659) includes sustained emotional attack: accusing Eli of preferring Milo, threatening regret, predicting parental failure. Multi-hour emotional manipulation campaign coinciding with Olivia's Halloween — high-visibility occasion.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-02",
+          "severity": 2,
+          "note": "ROW-618-619: Eli's request to participate in Halloween is flatly denied ('No / We don't need you'). Melissa has unilateral authority over whether Eli participates in a significant child milestone. RF-02 gatekeeping of in-person contact, not just phone access.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Full sequence: ROW-617 (14:15) — Eli asks if he can pick Olivia up for trick-or-treating around his neighborhood. ROW-618 (14:39) — 'No.' ROW-619 (14:40) — 'We don't need you.' ROW-620 (14:40) — 'It's sad that you'd rather take someone else's kid than your own.' ROW-621 (14:40) — 'She deserves a better dad.' The three messages (619-621) arrive in 31 seconds. The conflict continues for hours: ROW-622 through ROW-659. Critically, Eli DID arrive at Melissa's neighborhood at approximately 7:08 PM EDT (ROW-660-662, 22:53-23:08 UTC: 'She still in her costume? About ten or 15 mins away / Alright well came over. Drive through and didn't see you guys.') — squarely within the normal trick-or-treating window (6–8 PM). TIMESTAMP NOTE: all source data timestamps are UTC; Columbus, Ohio was EDT (UTC−4) on Oct 31, 2022. Eli's initial offer to pick Olivia up was made at 10:15 AM EDT (ROW-617, 14:15 UTC). Melissa's refusal and sustained narrative attack ran from 10:40 AM through the afternoon and early evening EDT. Eli texted at 6:53–6:54 PM EDT that he was 10–15 minutes away, then arrived at approximately 7:08 PM EDT — during prime trick-or-treating hours, not late at night. Abby is first named as an attack vector in ROW-628 ('But you will have time to take Milo') and ROW-636. Melissa's narrative that Eli 'chose' Milo over Olivia is directly contradicted by Eli's physical arrival during peak trick-or-treating hours.",
+      "pattern_tags": ["inadequate_father_narrative", "abandonment_framing", "abby_attack_vector", "halloween_incident", "we_dont_need_you"],
+      "arc_references": ["ARC-RF01-001"],
+      "image_reference": null,
+      "quote_excerpt": "We don't need you / It's sad that you'd rather take someone else's kid than your own / She deserves a better dad",
+      "calibration_status": "confirmed",
+      "journal_crossref_date": "2022-10-31"
+    },
+    {
+      "signal_id": "RF01-B002-S002",
+      "message_id": "ROW-635",
+      "timestamp": "2022-10-31 14:59:48 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "I think it's clear who you prefer as you put him to bed every night and spend most of your time with him and spend your [money/time with him]",
+      "primary_rf": "RF-01",
+      "primary_severity": 2,
+      "primary_reasoning": "Multi-message cluster (ROW-635, ROW-639, ROW-645-648, ROW-652-654, ROW-656, ROW-659): Melissa constructs a sustained comparative narrative that Eli systematically prefers Milo (Abby's son, who lives with Eli) over Olivia — spending more time, money, and priority on another man's child while neglecting his own daughter. Per RF-01 addendum RF01-ADD-002 (confirmed abandoned-for-new-family narrative, Sev 2 minimum) and RF01-ADD-004 (Melissa frames Eli as inadequate, using Olivia's emotional state as evidence). Key messages in the cluster: ROW-635 ('clear who you prefer / put him to bed every night / spend most of your time with him'); ROW-639 ('You'd rather let Olivia down than make Abby mad and that's pathetic'); ROW-645 ('My biggest issue is that you don't prioritize Olivia'); ROW-646 ('you aren't taking her tonight because it would make Abby mad'); ROW-648 ('You'd rather not hear her bitch so you are not going with Olivia'); ROW-652 ('She deserves a dad that prioritizes her'); ROW-653 ('You'll regret treating her poorly and not making the time and effort for her'); ROW-654 ('You'll regret it one day but it will be too late'); ROW-656 ('Your daughter is begging you to go with her and you tell her no so you can go with [Abby]'). Severity 2 because: (1) sustained multi-hour narrative, not a single message; (2) directly matches confirmed coached language about Eli's abandonment of Olivia for a new family; (3) ROW-656 implies Olivia's emotional state ('begging') is known to Melissa, meaning Olivia has been told Eli is not coming — Melissa has already delivered the abandonment narrative to Olivia before this exchange concludes.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "ROW-653-654: 'You'll regret treating her poorly and not making the time and effort for her / You'll regret it one day but it will be too late' — using Eli's parental relationship as a long-term threat. Predicting parental damage/regret on Halloween is calculated emotional leverage.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-635 through ROW-659 form a sustained narrative attack. Key analytic note on ROW-656: 'Your daughter is begging you to go with her.' The use of 'begging' implies Melissa has communicated to Olivia that Eli is not coming. The child's emotional state is being relayed back to Eli as leverage — this is consistent with RF01-ADD-004 (Melissa using Olivia's emotional reactions as evidence against Eli). Context from Eli's actions: Eli arrives at Melissa's neighborhood at approximately 7:08 PM EDT (ROW-660-662, 22:53-23:08 UTC — TIMESTAMP NOTE: all source data timestamps are UTC; EDT = UTC−4). This places Eli's arrival squarely within the normal trick-or-treating window (6–8 PM), not late in the evening. Melissa and Olivia are not home when he arrives ('Drive through and didn't see you guys'). The narrative of Eli 'refusing' to come is directly contradicted by his physical arrival during peak trick-or-treating hours. This is significant for the overall case: Melissa's narrative that Eli deprioritizes Olivia is documented to be false in this specific instance — he arrived during prime hours and they were not there. Milo context: Milo is Abby's son; Abby has been with Eli since mid-2022 and lives with Eli. Melissa's repeated comparison of Eli's time with Milo vs. Olivia is the 'new family' framing Eli confirmed she began at the outset of the divorce.",
+      "pattern_tags": ["inadequate_father_narrative", "abby_attack_vector", "milo_comparison", "abandonment_framing", "child_emotional_state_weaponized", "halloween_incident", "false_narrative_documented"],
+      "arc_references": ["ARC-RF01-001"],
+      "image_reference": null,
+      "quote_excerpt": "I think it's clear who you prefer / My biggest issue is that you don't prioritize Olivia / She deserves a dad that prioritizes her / Your daughter is begging you to go with her and you tell her no",
+      "calibration_status": "confirmed",
+      "journal_crossref_date": "2022-10-31"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-414",
+      "reason_noted": "Oct 7: 'She deserves to have your full attention. Stop calling while you're at the store and half ass paying attention to her.' Near-boundary RF-01: 'she deserves' framing mirrors Halloween language. NOT flagged as RF-01 primary because the complaint is about call quality during a specific instance, not the broader inadequate-father narrative. RF-04 peripheral (contemptuous framing of Eli's parenting behavior). Noted: 'She deserves' is Melissa's recurring rhetorical construction for positioning Eli as inadequate — first instance of this specific phrasing pre-Halloween."
+    },
+    {
+      "message_id": "ROW-545",
+      "reason_noted": "Oct 23: 'She said you were kissing her way too much on Friday.' Melissa relays Olivia's complaint about Eli's physical affection. Near-boundary RF-01: relaying a child's criticism of the other parent's parenting behavior. NOT flagged as RF-01 primary because: (1) the complaint is mild and specific (too much kissing); (2) it could be a genuine child preference communication. Noted: this is the first instance of Melissa relaying Olivia's criticisms of Eli's affectionate parenting behavior. If this becomes a pattern (Melissa regularly relaying Olivia's negative feedback about Eli's physical presence), it will elevate in significance."
+    },
+    {
+      "message_id": "ROW-675",
+      "reason_noted": "Nov 2: 'I always encourage her to call you and what not but you need to respect boundaries and not interfere with school work and bedtime.' SELF-CONTRADICTION: Melissa claims to always encourage Olivia to call Eli — directly contradicted by: (1) RF01-ADD-005 (Eli's confirmed CP2 statement that Melissa does not encourage Olivia to answer); (2) RF-02 ARC-RF02-001 (DND system set up specifically to prevent calls after 8:30); (3) multiple instances in this batch where Melissa enforces the DND boundary rather than facilitating contact. This is a documented false claim. Not flagged as RF-01 primary because it is a defensive statement to Eli, not a direct alienating act. RF-09 candidate (gaslighting — false claim about behavior contradicted by documented pattern)."
+    },
+    {
+      "message_id": "ROW-503",
+      "reason_noted": "Oct 20: 'She likes to see you.' Cooperative data point — Melissa acknowledging Olivia's positive feeling toward Eli. Contrasts with the Halloween narrative constructed 11 days later. Retained as cooperative baseline reference."
+    },
+    {
+      "message_id": "ROW-443_444",
+      "reason_noted": "Oct 10: Melissa relays that Olivia chose to wait until in-person pickup to tell Eli about her day instead of calling ('that's your chance for her to tell you what she did that day... makes sense right?'). Olivia is treating the phone call as unnecessary given imminent in-person contact. Neutral/near-boundary: could reflect Olivia's healthy preference for in-person connection, OR could reflect the normalized expectation that phone calls are not Eli's primary access to Olivia. Not flagged."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-607",
+      "peripheral_rf": "RF-02",
+      "severity": 2,
+      "note": "Oct 30: 'You literally had all day to call but waited past 8:30.' ARC-RF02-001 signal: DND enforcement after 8:30. Also reinforces RF-01 framing that Eli's contact attempts are inadequate ('had all day').",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-668",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "note": "Nov 2: 'I've told you long ago that no calls after 8:30.' ARC-RF02-001 signal: explicit restatement of DND boundary as rule. Cross-RF: this framing positions the phone restriction as Eli's fault for non-compliance, reinforcing the narrative of Eli as the problem parent.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-414",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Oct 7: 'She deserves to have your full attention. Stop calling while you're at the store and half ass paying attention to her.' Contemptuous characterization of Eli's parenting — the 'half ass' framing. Mild; single instance.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-681",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Nov 2: 'You know that buying her things doesn't substitute spending time with her right?' Melissa characterizing Eli's gifts as inadequate substitutes for presence. RF-04 peripheral: framing Eli's parenting as transactional rather than relational. Follows the Halloween conflict — continuation of the inadequate-father framing.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-675",
+      "peripheral_rf": "RF-09",
+      "severity": 1,
+      "note": "Nov 2: 'I always encourage her to call you.' Documented false claim directly contradicted by DND system (RF-02) and Eli's CP2 confirmation that Melissa does not actively encourage contact. First clear RF-09 candidate: Melissa states the opposite of her documented behavior. Not yet primary RF-09 flag (pending RF-09 pass calibration), but strong candidate.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": ["ARC-RF01-001: WATCHING → ACTIVE"],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["RF01/RF02 compound: Halloween contact denial (RF-02) combined with inadequate-father narrative delivery to Olivia (RF-01)"],
+    "arc_promotion_detail": {
+      "arc_id": "ARC-RF01-001",
+      "promoted_from": "watching",
+      "promoted_to": "active",
+      "promotion_batch": "B-002",
+      "promotion_rationale": "B-002 adds 2 Sev-2 signals (Halloween sequence) — meets the promotion criterion of '2+ Sev-2 signals.' The abandonment/inadequate-father narrative is no longer emergent; it is articulated explicitly and sustained across multiple hours in writing. The Abby attack vector is confirmed as a primary rhetorical tool. Arc total: 4 signals (2 from B-001 post-calibration, 2 from B-002). Pattern is active and escalating."
+    }
+  },
+
+  "batch_narrative_note": "The Halloween 2022 conflict is analytically important beyond its RF-01 flags: it establishes the first documented instance where (1) Melissa explicitly frames Eli as having abandoned Olivia for a 'new family' (Abby + Milo) in writing; (2) Melissa weaponizes Olivia's emotional state ('begging') to pressure Eli; (3) Eli makes a documented effort to be present (arriving at Melissa's neighborhood at approximately 7:08 PM EDT — during peak trick-or-treating hours; source timestamps are UTC, EDT = UTC−4, so ROW-662 at 23:08 UTC = 7:08 PM local time) that is obscured by Melissa's absence. This incident establishes a falsifiable narrative: Melissa claims Eli refused to come; Eli drove to the neighborhood and could not find them. This pattern — Melissa constructing the narrative of Eli's abandonment while Eli's behavior contradicts it — is central to the RF-01 arc.",
+
+  "cooperative_data_notes": "B-002 has limited cooperative content outside of logistics. ROW-503 ('She likes to see you') is notable as the last clearly cooperative tone message before the Halloween escalation. The batch includes extensive MMS sharing of Olivia's activities (Oct 8 events, zoo visit, Halloween prep) — Melissa continues to share Olivia's experiences with Eli, which is cooperative. The RF-01 flags are concentrated in the Oct 31 conflict.",
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": [
+      "CP3-RF01-B002-001: ARC-RF01-001 promoted to ACTIVE. Halloween 2022 conflict establishes first extended written documentation of 'new family abandonment' narrative. Two Sev-2 signals. Abby attack vector confirmed active. Flag for attorney review: Eli's physical arrival at Melissa's neighborhood on Halloween night directly contradicts the narrative Melissa constructed in writing that Eli refused to come."
+    ]
+  }
+}

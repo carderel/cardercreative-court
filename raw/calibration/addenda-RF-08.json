@@ -1,0 +1,45 @@
+{
+  "rf_pass": "RF-08",
+  "rf_name": "Triangulation",
+  "generated_from_cp2": "2026-04-24",
+  "cp2_completed": "2026-04-26",
+  "status": "confirmed",
+  "cp2_answers_summary": {
+    "Q1_relay_timing": "No answer provided. Conservative default applied: watch for relay signals from B-002 onward; signal classification confidence increases as ROW-6819 coaching admission (B-018) is approached.",
+    "Q2_coaching_timing": "No answer provided. ROW-6819 (Aug 2024) confirmed as arc anchor per dataset record. Pre-2024 signals classified as pre-signals (Sev-1). Post-ROW-6819: heightened scrutiny; all relay content classified with confirmed coaching context.",
+    "Q3_extended_family": "No answer provided. Apply no extended-family flags unless explicitly documented in message content.",
+    "Q4_peer_parent_network": "No answer provided. Naomi's father relay already confirmed in dataset (B-031 ROW-15592). Apply ADD-003 peer-parent rule when Melissa invokes third-party parent corroboration.",
+    "Q5_abby_intelligence": "Eli suspects Olivia used as Abby-intelligence source based on Melissa's very specific questions (no direct confirmation). Melissa has had knowledge traceable to Olivia but no specific incident recalled. Olivia shows coached-loyalty behavior around Abby: buys presents for Eli/Milo/Alice but makes handmade gift for Abby after arrival; displays confusion because Abby doesn't behave as expected — interpreted as coached expectations not matching reality."
+  },
+
+  "addenda": [
+    {
+      "id": "RF08-ADD-001",
+      "title": "Relay-Through-Olivia — Coached vs. Independent Reporting",
+      "rule": "Flag as RF-08 primary when Melissa uses Olivia as an active conduit in either direction: (a) relaying content TO Eli from Olivia (Olivia's stated preferences, complaints, or emotional state) that mirrors Melissa's active narrative threads in the same period; or (b) relaying content FROM Eli's household back to Melissa by demonstrating specific knowledge of Eli's household details that plausibly came through Olivia. Three-tier classification: Sev-3 when there is explicit written admission of the mechanism (ROW-6819 anchor). Sev-2 when Olivia's relayed content demonstrably matches the pattern of coached scripting — i.e., content mirrors Melissa's active RF-01 or RF-04 narrative threads in the same or preceding batch. Sev-1 when Olivia's stated preferences or emotional state are relayed as co-parenting pressure without clear mirroring of active narrative threads, or when the relay is early-period (pre-ROW-6819). Pre-signals (pre-B-018): all relay signals are Sev-1 regardless of content mirroring, with a note that they precede the confirmed coaching admission.",
+      "why": "ROW-6819 explicitly confirms Melissa (1) directed Olivia to have conversations with Eli, (2) scripted content for Olivia to deliver, and (3) reviewed Olivia's reports from Eli's household back to Melissa ('I remind her of some of the things she's told me'). This establishes both relay directions. Eli suspects intelligence-gathering based on Melissa's specific questions but cannot confirm a specific incident.",
+      "how_to_apply": "In each batch: (1) identify any instance where Melissa quotes or paraphrases Olivia's stated preferences, feelings, or experiences as co-parenting pressure; (2) cross-reference against active RF-01 and RF-04 narrative threads in the same batch to assess whether content was scripted; (3) for pre-B-018 batches, classify all such instances as Sev-1 pre-signals; (4) for post-B-018 batches, apply full severity scaling. The RF-01 ADD-004 relay signals are the primary candidate pool — all ADD-004 flagged instances are RF-08 compound candidates."
+    },
+    {
+      "id": "RF08-ADD-002",
+      "title": "Coaching Admission ROW-6819 as Arc Activation Anchor",
+      "rule": "ROW-6819 (B-018, Aug 19-20 2024) is the dataset's explicit written confirmation of coaching: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so get off your high horse.' Use this as the primary arc activation event for ARC-RF08-001. Arc state protocol: CANDIDATE at initialization; WATCHING after first two pre-signals accumulate in Phase A; ACTIVE at ROW-6819 (B-018) regardless of prior signal count. Signal weight: Sev-3 (highest severity in dataset). All retrospective relay signals before ROW-6819 are classified as Sev-1 pre-signals and labeled 'precedes confirmed coaching admission (ROW-6819)'.",
+      "why": "Eli could not pinpoint when coaching began pre-2024. ROW-6819 is the only explicit written admission in the dataset. Treating it as the arc activation anchor is the most defensible approach — it provides documented evidentiary foundation for all earlier signals that were circumstantially classified.",
+      "how_to_apply": "B-001 through B-017: flag relay signals as Sev-1 pre-signals only. Include note 'pre-signals — coaching confirmed at ROW-6819 (B-018).' B-018: flag ROW-6819 as Sev-3 primary; promote arc to ACTIVE. B-019 onward: apply full severity scaling per ADD-001. Do not apply Sev-3 to any other signal in the dataset — ROW-6819 is the unique explicit-admission event."
+    },
+    {
+      "id": "RF08-ADD-003",
+      "title": "Peer-Parent Relay Classification Rule",
+      "rule": "Confirmed: Melissa invoked Naomi's father as third-party corroboration of Olivia's distress and Eli's behavior (ROW-15592, B-031: 'Naomi was telling her dad yesterday that Olivia doesn't like that you yell at her for no reason'). Flag as RF-08 Sev-2 when Melissa cites a peer-parent's knowledge of Olivia's distress or Eli's behavior as validation for her characterizations. This is distinct from Melissa's own characterizations — it adds apparent third-party witness corroboration. Compound-flag with RF-04 when the peer-parent relay accompanies a distress amplification or false-characterization cluster (standard in this dataset: peer-parent relay was introduced in the Apr 12 2026 DARVO bruise cluster).",
+      "why": "ROW-15592 is the first documented peer-parent relay. Whether Naomi's father independently observed these events or was given Melissa's narrative is unresolved, but the relay mechanism positions a third-party adult as a corroborating witness to Olivia's distress about Eli. This is structurally distinct from Melissa speaking for herself — it implies a community of observers who share her characterization.",
+      "how_to_apply": "B-001 through B-030: no peer-parent relay expected. B-031 (Apr 12 2026): apply ADD-003 to ROW-15592. If additional peer-parent references appear on review of B-028-B-030, add as Sev-2 signals. Cross-reference with RF-04 compound patterns for all peer-parent relay instances."
+    },
+    {
+      "id": "RF08-ADD-004",
+      "title": "Abby Behavioral Loyalty Coaching — Contextual Indicator",
+      "rule": "Eli confirmed (CP2 Q5): Olivia displays behavioral markers consistent with coached loyalty around Abby — she purchases gifts for Eli, Milo, and Alice for holidays but makes a handmade gift for Abby after arriving, and shows confusion because Abby doesn't behave the way Olivia was led to expect. This is classified as a behavioral loyalty coaching indicator. Do NOT generate independent RF-08 primary flags solely from this behavioral observation — it cannot be anchored to a specific message. Apply as follows: (1) when analyzing messages where Melissa references Olivia's relationship with Abby or Olivia's stated feelings about Abby, note the behavioral-loyalty-coaching context in the flag reasoning; (2) when Melissa invokes Olivia's discomfort with Abby as co-parenting pressure, the coached-expectation framing elevates the relay classification to the higher end of the applicable severity tier; (3) in intelligence-gathering analysis: when Melissa demonstrates specific knowledge of Abby's behavior or interactions with Olivia that plausibly came through Olivia, note as RF-08 intelligence-gathering candidate (Eli's Q5(b) confirmed this occurred but no specific incident recalled).",
+      "why": "Olivia's gift behavior and confusion are the clearest observable evidence of active loyalty coaching. The pattern (handmade gift after arrival; uncertainty about Abby's behavior) suggests Olivia was primed to maintain relational distance from Abby that contradicts her actual experience. This is the RF-08 Abby-targeting dimension distinct from RF-01/RF-04 Abby-attack framing: the child is positioned as carrying Melissa's negative framing about Abby into Eli's household.",
+      "how_to_apply": "When a flagged message involves Melissa relaying Olivia's stated discomfort with Abby, include in flag reasoning: 'Eli confirmed Olivia displays behavioral loyalty coaching markers around Abby (CP2 Q5) — this relay may reflect coached rather than independent perception.' No standalone primary flag. Use as severity-scaling context for ADD-001 Sev-2 relay instances where Abby is the subject."
+    }
+  ]
+}

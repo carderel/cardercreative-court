@@ -1,0 +1,63 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "generated": "2026-04-28",
+  "status": "pending",
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "tone_assessment": "Cooperative baseline. Zero RF-06 primary signals. Financial arrangement recently established post-divorce (filed July 2021). 36 triage keyword hits (86% received) \u2014 Melissa is dominant financial coercion direction. Phase A dominant (29/36 hits), indicating financial dynamics active throughout Phase A. Hot periods: 2024-08, 2024-06, 2023-09. CP2 critical for establishing financial arrangement context before signal classification can proceed."
+  },
+  "calibration_questions": [
+    {
+      "id": "CP2-RF06-Q1",
+      "topic": "Child support arrangement \u2014 structure and weaponization",
+      "question": "(a) What is the current child support arrangement \u2014 who pays whom, how much, per what order? (b) Has the child support amount or arrangement ever been used as leverage \u2014 either threatened (e.g., 'I'll take you back to court for more support') or withheld as punishment? (c) Has she ever tied co-parenting cooperation to financial behavior \u2014 e.g., 'I'll share the school schedule once you pay X' or 'I won't agree to a schedule change unless the support amount changes'?",
+      "why_asked": "Child support leverage is the most common RF-06 pattern. Understanding the financial arrangement structure is essential before any financial coercion signals can be correctly classified.",
+      "classification_impact": "High \u2014 establishes the financial baseline; any conditionality linking access/information to financial compliance is RF-06 primary"
+    },
+    {
+      "id": "CP2-RF06-Q2",
+      "topic": "Shared expense disputes as leverage",
+      "question": "(a) Are there court-ordered shared expenses (medical, activities, childcare)? (b) Have there been disputes about expense allocation \u2014 e.g., Melissa refusing to share medical bills, demanding accounting for activity costs, or refusing agreed expenses as a tactic? (c) Has she ever used Olivia's needs or wants as financial leverage \u2014 e.g., 'Olivia needs X, and since you won't pay for it, she can't have it on your time'?",
+      "why_asked": "Expense disputes are a secondary RF-06 mechanism. Distinguishing legitimate cost disputes from weaponized financial friction requires knowing what the actual court-ordered expense allocation is.",
+      "classification_impact": "High \u2014 confirms RF-06 Category (withholding expenses, frivolous accounting demands, children's needs as leverage)"
+    },
+    {
+      "id": "CP2-RF06-Q3",
+      "topic": "Hot periods 2024-08, 2024-06, 2023-09 \u2014 financial context",
+      "question": "The triage identifies Aug 2024, Jun 2024, and Sep 2023 as RF-06 hot periods. (a) August 2024 was the EP-0854 mega-cluster (311 messages). Was financial coercion part of that conflict? (b) June 2024 overlaps with the RF-15 incest-framing cluster (B-016, Jun 30 2024) \u2014 were there financial dimensions to that conflict? (c) September 2023 \u2014 do you recall any specific financial dispute or leverage event around that time?",
+      "why_asked": "Correlating financial hot periods with known conflict clusters clarifies whether financial coercion is a standalone mechanism or a co-trigger with emotional/threat escalations.",
+      "classification_impact": "Medium-high \u2014 confirms severity context and compound patterns (RF-06+RF-04, RF-06+RF-05)"
+    },
+    {
+      "id": "CP2-RF06-Q4",
+      "topic": "Phase C financial dynamics",
+      "question": "The triage shows 5 RF-06 hits in Phase C (Oct 2025 - Apr 2026). (a) The November 2025 'big contempt case' threat (COMP-RF04-028) \u2014 were there financial dimensions, e.g., threat of financial sanctions? (b) The police report (Nov 22 2025) and subsequent visit refusals \u2014 was there any financial leverage in that period (e.g., threatening support changes as retaliation)? (c) March/April 2026 \u2014 the alcoholism accusation and bruise welfare check periods \u2014 any financial coercion in those exchanges?",
+      "why_asked": "Phase C financial patterns determine whether RF-06 remains active at dataset close or resolved. The Nov 2025 contempt threat and visit refusal cascade likely have financial dimensions.",
+      "classification_impact": "High \u2014 determines arc status at dataset close (ACTIVE vs. resolved)"
+    }
+  ],
+  "addenda_proposed": [
+    {
+      "id": "RF06-ADD-001-PROPOSED",
+      "title": "Financial Arrangement Context",
+      "rule_draft": "[PENDING CP2 Q1] Establish: (1) child support payer/payee/amount; (2) court-ordered expense sharing requirements; (3) any court-ordered financial provisions relevant to custody. Apply as calibration context for all financial language in the dataset. Without this baseline, financial disputes cannot be distinguished from weaponization.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF06-ADD-002-PROPOSED",
+      "title": "Access-for-Money Compound Rule",
+      "rule_draft": "[PENDING CP2] When financial compliance is explicitly conditioned on co-parenting cooperation (or vice versa): RF-06 primary + RF-02 compound. This is the highest-severity RF-06 pattern \u2014 children's access used as financial leverage.",
+      "status": "pending_cp2"
+    }
+  ],
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda. Initialize ARC-RF06-001 at CANDIDATE. Resume B-002. Cross-reference RF-05 for financial threat compounds (RF-06+RF-05 when financial leverage is delivered via threat mechanism). Cross-reference RF-02 for access-conditional-on-financial-compliance compounds. Phase A heavy signal (29 hits) \u2014 expect steady signal from B-006 onward.",
+    "signal_sourcing_note": "86% received direction \u2014 Melissa is overwhelmingly the financial coercion source. Eli-sent financial signals may represent legitimate cost-sharing requests or responses to financial pressure. Distinguish clearly. August 2024 mega-cluster and June 2024 incest-framing period are highest-priority signal batches."
+  }
+}

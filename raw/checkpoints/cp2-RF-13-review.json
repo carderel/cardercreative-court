@@ -1,0 +1,90 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "generated": "2026-04-28",
+  "status": "complete",
+  "completed": "2026-04-28",
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "episodes_analyzed": 32,
+    "hostile_episodes": 0,
+    "tense_episodes": 1,
+    "tone_assessment": "Cooperative baseline. EP-0009 (Aug 28, 32 msgs, tense) is the sole non-neutral episode \u2014 the church etiquette dispute. Asymmetric escalation pattern (Melissa escalates, Eli mild de-escalation) visible in first conflict but net escalation below primary threshold. Three arcs initialized at CANDIDATE.",
+    "note": "Zero primary flags is correct for B-001. Primary RF-13 signal concentration expected in B-003-B-006 (Nov 2022-Apr 2023 hostile cluster), B-016 (Jun 2024 cluster), B-017 (Aug 2024 mega-cluster), B-022 (Jan 2025), B-027 (Jul-Aug 2025 Phase B), and B-028 (Aug 2025). Phase C (B-029-B-031) has fewer direct-exchange hostile episodes but the structural pattern shifts to legal/visit-refusal conflict."
+  },
+  "calibration_questions": [
+    {
+      "id": "CP2-RF13-Q1",
+      "topic": "Hot-button topics that reliably trigger escalation",
+      "question": "RF-13 cycle detection requires identifying what TRIGGERS escalation cycles. Looking at the text record across the full dataset, we can see several recurring trigger types: Abby (any reference to Abby or Eli's household), scheduling/logistics requests, Eli asserting a boundary, legal/court topics, and child welfare concerns. (a) From your experience, which topics most reliably trigger Melissa to escalate? Are there topics you've learned to avoid or frame carefully because you know they'll set off a conflict? (b) Is there a specific type of message from you that most reliably produces a hostile response from Melissa \u2014 even when the message itself was logistical or calm? (c) Conversely, are there topics or framings that you've found tend to reduce conflict or keep things logistical?",
+      "why_asked": "Identifying reliable triggers allows RF-13 to classify escalation episodes as 'provoked by trigger' vs. 'zero-to-sixty' (unprovoked disproportionate response). Trigger-consistent patterns are the core of cycle detection.",
+      "classification_impact": "High \u2014 defines cycle trigger taxonomy for all 46 hostile episodes"
+    },
+    {
+      "id": "CP2-RF13-Q2",
+      "topic": "De-escalation strategy and when it started",
+      "question": "The text record shows a directional shift in Phase B/C \u2014 you appear to send fewer messages and maintain a more controlled tone even during escalation periods. (a) Did you consciously change how you communicate with Melissa at some point? If so, when and why? (b) Did you have attorney guidance about how to communicate? (c) Were there specific episodes where you deliberately chose not to respond or to de-escalate \u2014 exchanges you remember deciding 'I'm not going to engage with this'? (d) When you did try to de-escalate or redirect to logistics, did Melissa typically follow your lead or re-escalate regardless?",
+      "why_asked": "The supplemental methodology assigns delta +1.5 to messages that ignore de-escalation attempts. Knowing when Eli's de-escalation was intentional (vs. coincidental tone drop) calibrates the arc scoring. This also establishes the de-escalation resistance arc.",
+      "classification_impact": "High \u2014 determines ARC-RF13-003 (de-escalation resistance) activation threshold"
+    },
+    {
+      "id": "CP2-RF13-Q3",
+      "topic": "Temporal patterns \u2014 time of day, day of week, event correlation",
+      "question": "The triage data shows hostile episodes clustering at specific periods. (a) Did Melissa tend to send hostile or aggressive messages at specific times of day \u2014 late night, early morning, during transitions? (b) Looking at the calendar, do you have a sense that escalation was worse around specific types of events \u2014 custody exchanges, holidays, court dates, or when new developments happened in your personal life (Abby's pregnancy, Milo's birth, Alice's birth)? (c) The hostile episode inventory shows a Feb 14/15 pattern across two years (2023 and 2025) \u2014 does Valentine's Day or February have particular significance in the conflict history?",
+      "why_asked": "Temporal patterns reveal structural triggers (court dates, transitions, personal milestones) that distinguish reactive escalation from deliberate timing. The Feb pattern and holiday clusters are specific anomalies requiring calibration.",
+      "classification_impact": "Medium-high \u2014 informs temporal correlation analysis (Section 4 of supplement) and cycle frequency mapping"
+    },
+    {
+      "id": "CP2-RF13-Q4",
+      "topic": "The Oct 2024 behavioral silence \u2014 what preceded and followed it",
+      "question": "The triage shows that EP-0917 (Oct 2 2024, 173 messages, hostile) is followed by what prior passes identified as a 'behavioral silence period' (B-020, very low message volume through Dec 2024). This is a significant escalation followed by a sudden communication drop. (a) Do you know what caused Melissa to stop communicating at that level after October 2024? Was there a specific exchange or event that preceded the silence? (b) When communication resumed around December 2024 / January 2025, did the pattern re-emerge immediately or was there a period of calmer communication? (c) The Jan 15 2025 cluster (EP-0996, 106 msgs) followed the silence \u2014 what triggered that resumption of hostility?",
+      "why_asked": "The post-EP-0917 silence is a structural inflection point. Understanding whether the silence was strategic (Melissa withdrawing after a confrontation) or circumstantial informs the trajectory arc.",
+      "classification_impact": "Medium \u2014 shapes ARC-RF13-001 (trajectory arc) Phase A-to-B transition analysis"
+    },
+    {
+      "id": "CP2-RF13-Q5",
+      "topic": "Phase B communication change \u2014 May 2025 and Eli holding boundaries",
+      "question": "EP-1078 (May 4 2025, 170 msgs, hostile) is documented as the May 2025 boundary-enforcement spike. (a) What happened in this episode \u2014 what was the original topic and how did it escalate? (b) The triage characterizes May 2025 as 'Eli holding communication boundaries; Melissa escalating in response.' Did you begin using specific communication protocols around this time (e.g., only responding to logistics, not engaging with personal attacks, using specific phrasing)? (c) After the May 2025 spike, the escalation pattern shifts to Phase B/C dynamics \u2014 was there a deliberate change in your approach?",
+      "why_asked": "The May 2025 inflection point (INF-007) is the Phase A/B boundary trigger. Understanding what specifically changed in Eli's communication style calibrates the delta scoring for Phase B/C \u2014 where Eli's de-escalation attempts need to be distinguished from simply not engaging.",
+      "classification_impact": "High \u2014 determines whether Phase B/C pattern shows Eli's intentional de-escalation vs. disengagement; affects ARC-RF13-002 and ARC-RF13-003"
+    },
+    {
+      "id": "CP2-RF13-Q6",
+      "topic": "Worst exchanges recalled",
+      "question": "The supplement recommends asking the subject to identify exchanges they remember as particularly bad, to validate or calibrate the model's severity scoring. (a) What are the 2-3 exchanges or periods that you remember as the worst or most distressing? These help prioritize episode analysis. (b) Was there an exchange where you felt the most targeted or attacked? (c) Was there an exchange where you came closest to responding in kind \u2014 where it was hardest to stay controlled?",
+      "why_asked": "Eli's subjective experience of worst exchanges helps validate that the model's peak escalation scoring matches actual impact. If the model's highest-scoring episodes align with what Eli remembers as worst, confidence is high. Divergence would suggest calibration adjustment.",
+      "classification_impact": "Medium \u2014 validates peak severity scoring; may reveal high-impact episodes not captured by triage episode tone classification"
+    }
+  ],
+  "addenda_proposed": [
+    {
+      "id": "RF13-ADD-001-PROPOSED",
+      "title": "Escalation Cycle Taxonomy",
+      "rule_draft": "[PENDING CP2 ANSWER Q1] Five anticipated cycles: CYC-001 (Abby-trigger), CYC-002 (logistics spike), CYC-003 (holiday pattern), CYC-004 (legal-threat ceiling), CYC-005 (child-welfare allegation). CP2 Q1 will confirm, add, or remove cycle types based on Eli's recollection of reliable trigger patterns.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF13-ADD-002-PROPOSED",
+      "title": "De-Escalation Resistance Scoring Rule",
+      "rule_draft": "[PENDING CP2 ANSWER Q2] When Eli sends a message with delta -1 or lower AND Melissa's next message is delta +1 or higher (ADD-001 supplement delta +1.5 = ignored de-escalation), flag as RF-13 de-escalation resistance. Frequency determines arc severity. Apply ADD-003 to track the arc. Severity: first documented instance = Sev-1; systematic pattern across 5+ episodes = Sev-2; sustained across phase boundaries = Sev-3.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF13-ADD-003-PROPOSED",
+      "title": "Phase Trajectory Calibration",
+      "rule_draft": "[PENDING CP2 ANSWERS Q4, Q5] Phase A: establishing escalation pattern (moderate cycles). Phase B: escalation spike, Eli boundary-holding. Phase C: structural shift \u2014 fewer direct-exchange hostile episodes but legal/visit-refusal conflict dominant. Trajectory arc: WORSENING from Phase A to Phase B; STRUCTURAL SHIFT in Phase C (not necessarily worsening but qualitatively different). The Oct 2024 silence and May 2025 spike are the two key trajectory inflection points within Phase A.",
+      "status": "pending_cp2"
+    }
+  ],
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda. Update calibration file. Set cp2_status to complete. Resume B-002. Arc state: initialize all three arcs at CANDIDATE. Use hostile episode inventory as primary target list (46 episodes across 31 batches). For each batch, score all hostile + large tense episodes using delta methodology. Generate cycle objects as patterns emerge.",
+    "processing_note": "RF-13 is efficient because prior passes already documented episode content. Use RF-04, RF-05, RF-07 batch summaries as primary sources for episode delta profiles. Full delta scoring required only for PRIMARY flagged episodes; other episodes receive summary classifications.",
+    "cycle_detection_sequence": "After B-005 (Apr 2023, enough hostile episodes to detect patterns): generate initial cycle prototypes. Confirm or revise cycle templates at B-017 (post-Aug 2024 mega-cluster). Finalize cycle documentation at B-031.",
+    "arc_activation_expected": "ARC-RF13-001 (trajectory) WATCHING at B-003 (first cluster), ACTIVE at B-017 (mega-cluster confirms worsening trajectory). ARC-RF13-002 (role consistency) WATCHING at B-004-B-006 (consistent pattern across multiple hostile episodes), ACTIVE when 3+ instances confirmed. ARC-RF13-003 (de-escalation resistance) ACTIVE when systematic ignore-de-escalation pattern confirmed across 3+ episodes."
+  }
+}

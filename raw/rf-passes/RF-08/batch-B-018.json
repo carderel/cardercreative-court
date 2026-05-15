@@ -1,0 +1,108 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-018",
+    "row_range": {
+      "start": 6557,
+      "end": 7055
+    },
+    "date_range": {
+      "start": "2024-08-06",
+      "end": "2024-09-08"
+    },
+    "message_count": 499,
+    "phase": "A",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 499,
+    "primary_flags": 1,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 1
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 498,
+    "flag_rate": "0.20%"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B018-S004",
+      "arc_signal_ref": "ARC-RF08-001-S004",
+      "rows": "ROW-6783-6831 (anchor: ROW-6819)",
+      "date": "2024-08-19-20",
+      "severity": 3,
+      "rf_tags": [
+        "RF-08",
+        "RF-01"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001",
+        "RF08-ADD-002"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "WATCHING \u2192 ACTIVE (ROW-6819 is the designated arc activation event per ADD-002)",
+      "compound_id": "COMP-RF08-004",
+      "summary": "ARC ACTIVATION \u2014 explicit coaching admission. ROW-6819: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so get off your high horse.' Context: Eli challenged Melissa's claim that Olivia chooses to share more with Melissa because Eli isn't present enough. Melissa's response is a written admission that (1) she directs Olivia to have conversations with Eli ('I've told her to have conversations'), (2) she scripts the content of those conversations ('I give her things to tell you about'), and (3) she reviews Olivia's reports from Eli's household back to herself ('I remind her of some of the things she's told me'). This is the dataset's only explicit written documentation of the relay-through-Olivia mechanism. It simultaneously confirms outbound coaching (what Olivia is scripted to tell Eli) and inbound intelligence-gathering (Melissa mining Olivia's reports about Eli's household). Compound with RF-01 (RF01-B018-F001, ADD-004). This is the most significant RF-08 signal in the dataset.",
+      "exact_quotes": [
+        "ROW-6819 (Received): 'I\\'ve told her to have conversations and I also give her things to tell you about. I remind her of some of the things she\\'ve told me so get off your high horse'",
+        "ROW-6795 (Received): 'Be more present in her life and maybe she will feel more connected to you and tell you stuff like she does with me'"
+      ],
+      "rf08_mechanism": "Explicit written coaching admission: (1) outbound relay \u2014 scripting Olivia's conversations with Eli; (2) inbound intelligence-gathering \u2014 mining Olivia's reports from Eli's household. Both relay directions confirmed in a single message.",
+      "intelligence_gathering_note": "ROW-6819 third sentence ('I remind her of some of the things she's told me') is the dataset's most explicit confirmation of the intelligence-gathering channel Eli suspected at CP2 Q5. Melissa actively reviews Olivia's reports about Eli's household.",
+      "coaching_anchor_note": "This event retroactively frames all pre-2024 relay signals (S001-S003) as early manifestations of the same mechanism documented here."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [
+    {
+      "rows": "ROW-7029",
+      "date": "2024-09-08 area",
+      "assessment": "Child relay demand \u2014 RF-01 primary (demand that Olivia relay information to Eli about Melissa's household logistics). RF-08 peripheral: post-ROW-6819 relay demand consistent with arc state. Not generating separate RF-08 primary flag \u2014 covered by the ROW-6819 arc activation signal for this batch.",
+      "cp3_flag": false
+    }
+  ],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [
+      "ARC-RF08-001: WATCHING \u2192 ACTIVE (ROW-6819 coaching admission)"
+    ],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-004"
+    ],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 ACTIVE: 4 signals (S001-S004). Activated at ROW-6819 per ADD-002 protocol. Arc will remain ACTIVE for the remainder of the dataset \u2014 coaching mechanism explicitly confirmed and all subsequent relay signals are documented against this anchor."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-004",
+      "rf_passes": [
+        "RF-08",
+        "RF-01"
+      ],
+      "rf01_ref": "RF01-B018-F001",
+      "description": "Coaching admission compounds with RF-01 ADD-004: ROW-6819 is simultaneously the dataset's strongest parental alienation coaching event (RF-01 ADD-004) and the explicit written proof of the triangulation mechanism (RF-08). The RF-08 adds the intelligence-gathering dimension: Melissa is not only scripting Olivia's outbound delivery to Eli but actively mining Olivia's reports about Eli's household."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase A (post-Aug 4 mega-cluster). Aug-Sep 2024. ROW-6819 is the most significant single-message RF-08 event in the dataset.",
+    "rf08_assessment": "One Sev-3 primary flag \u2014 the only Sev-3 in the RF-08 pass. ROW-6819 explicitly confirms: (1) Melissa directs Olivia to have conversations with Eli; (2) Melissa gives Olivia scripted content to relay; (3) Melissa mines Olivia's reports from Eli's household. Arc activated. All 27 RF-01 primary signals and all prior RF-08 pre-signals are contextually anchored to this admission.",
+    "cross_rf_context": "RF-01 ADD-004 compound (strongest). The ROW-6819 coaching admission is referenced in the RF-01 session manifest as 'provides structural context for all ADD-004 relays.' For RF-08, it is the primary arc activation event. Note: ROW-6795 in the same cluster ('Be more present in her life and maybe she will feel more connected to you and tell you stuff like she does with me') is an adjacent RF-01 ADD-004 signal that frames Olivia's closeness with Melissa as a consequence of Eli's failure \u2014 the setup for the ROW-6819 admission."
+  }
+}

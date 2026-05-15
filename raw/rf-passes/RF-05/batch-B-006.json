@@ -1,0 +1,73 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-006",
+    "row_range": { "start": 1840, "end": 2228 },
+    "date_range": { "start": "2023-02-22", "end": "2023-04-03" },
+    "message_count": 389,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 389,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": { "RF-04": 1, "RF-15": 1 },
+    "no_flag_messages": 388,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B006-001",
+      "row_range": "ROW-1929 through ROW-2181",
+      "timestamp": "2023-03-05 through 2023-03-31",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-1929: 'Court order says paycheck' | ROW-1936: 'I'll be reaching out to my lawyer tomorrow since you don't have any other solution' | ROW-2171: '...about to go to jail for no payment. Who's making smart choices there' | ROW-2181: 'You're gonna need it to pay my attorney fees'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Multiple RF-05 signal elements across a 26-day span: SIGNAL 1 — ROW-1929/1936 (Mar 5): Court-order citation ('Court order says paycheck') plus lawyer consultation threat ('I'll be reaching out to my lawyer tomorrow since you don't have any other solution'). Third instance of lawyer/contempt financial-enforcement pattern. ADD-002: Sev-1 (recurring, paper tiger trajectory). SIGNAL 2 — ROW-2171 (Mar 31): 'about to go to jail for no payment' — embedded within the Abby/niece-attack cluster; jail-consequence framing adds implied imprisonment threat for non-payment. First instance of imprisonment-framing in the financial threat category. ADD-002: Sev-1 (extreme but embedded in broader attack; no follow-through on financial threats to date). SIGNAL 3 — ROW-2181 (Mar 31): 'You're gonna need it to pay my attorney fees' — first explicit attorney-fees threat. Delivered in the same escalation cluster as the niece attack. ADD-002 first-instance rule: attorney-fees category = new threat type, but delivered in banter context (Eli had been making sarcastic AI-assisted responses, ROW-2167-2180). Given banter context, severity is Sev-1 rather than Sev-2. Taken together: Mar 5 and Mar 31 signals span two episodes and continue the established compliance-pressure pattern. Both are Sev-1 repeats. No new threat category rises to Sev-2.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-1884-1885: 'I shouldn't have called you a dumbass in front of her but you're such a shit dad that it slipped out' — RF04-ADD-002 contempt pattern; DARVO partial (contempt as Eli's fault). RF-04 primary.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-15",
+          "severity": 2,
+          "note": "ROW-2168: 'Who's the dumbass that's fucking his niece? A girl he met when she was 7' — third predation framing (COMP-RF04-006 per RF-04 pass). RF-04+RF-15 primary per ADD-001. RF-05 peripheral aggressive-tone only.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-2171 ('about to go to jail') is embedded in the Abby-niece attack cluster (ROW-2168-2191) — the predation attack, jail threat, and attorney fees threat all appear in rapid succession on Mar 31. Context: a prolonged sarcastic exchange where Eli was responding with AI-generated comebacks (ROW-2167-2180). The legal threats in this cluster appear to be intensified by the tone of the exchange. ROW-2182 (Eli, Sent) shifts to a sincere explanatory message about the car accident affecting his finances — suggesting the threats landed and produced a compliance/explanation response.",
+      "pattern_tags": ["lawyer_consultation_threat", "jail_framing", "attorney_fees_threat", "financial_compliance_pressure", "embedded_in_attack"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'You're gonna need it to pay my attorney fees' (ROW-2181); 'I'll be reaching out to my lawyer tomorrow' (ROW-1936)"
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0
+  },
+
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+
+  "batch_observations": {
+    "tone_assessment": "B-006 (Feb-Apr 2023) adds three more RF-05 signal elements across two episodes. The jail-consequence framing (ROW-2171) is new language — the most severe financial threat formulation to date. The attorney-fees threat (ROW-2181) is the first of that sub-category. Neither rises to Sev-2 given the recurring pattern and banter context. ARC-RF05-001 remains active and growing.",
+    "cross_rf_context": "RF-04 B-006: COMP-RF04-006 = third predation framing (ROW-2167/2173). RF-05 attorney-fees threat (ROW-2181) is embedded in the same compound cluster. RF-04 primary."
+  }
+}

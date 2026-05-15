@@ -1,0 +1,36 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-021",
+    "row_range": { "start": 7706, "end": 7713 },
+    "date_range": { "start": "2024-12-19", "end": "2025-01-08" },
+    "message_count": 8,
+    "timezone_note": "Entirely EST (UTC-5). DST already changed Nov 3, 2024; DST spring forward Mar 9, 2025 is ahead. RF-02 B-021 date range states start Dec 18, 2024 but actual first message is ROW-7706 on Dec 19 (no Dec 18 messages exist). RF-02 reports 482 messages — this reflects anomalous row-numbering convention from B-007+ (MMS rows intermixed); actual SMS count is 8.",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Phase A/B boundary. B-021 marks entry into Phase B of the record (post-Oct 2024 behavioral silence, triage inflection INF-005). The Oct 2024 silence was confirmed as Melissa withdrawing after intense early-October conflict (not court-ordered). B-021 represents the beginning of the sparse communication period observed after INF-005."
+  },
+
+  "primary_flags": [],
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [],
+  "peripheral_flag_count": 0,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "signal_count": 23,
+      "notes": "B-021 produces no RF-01 signals. Extremely sparse period: 8 messages, all routine (childcare coordination, holiday, pickup inquiry). The Jan 2025 triage hot-period escalation has not yet materialized as of Jan 8."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Minimal communication period — 8 messages over 21 days. ROW-7706-7709 (Dec 19): childcare coordination — Melissa initially needs Eli to watch Olivia Monday but then resolves it ('Actually never mind. Ha said she would watch her'). ROW-7710 (Dec 23): $25 payment request. ROW-7711 (Dec 25): 'Meta quest is cool as hell' — casual holiday message, Olivia presumably received Meta Quest as gift. ROW-7712 (Jan 7): 'They had a Dr appointment and she was still able to watch Olivia. She is the best help ever' — childcare update. ROW-7713 (Jan 8): 'Are you picking her up tonight or not?' — routine pickup inquiry.",
+    "phase_transition": "The sparse communication density (8 messages in 21 days) is consistent with the INF-005 behavioral silence period noted in the pipeline manifest ('Melissa withdrew after intense early-October conflict'). The triage identified Oct 2024 as an inflection point. B-021 falls within the subsequent quiet period. The Jan 2025 'hot period' triage escalation signal begins in B-022+.",
+    "holiday_period": "Christmas 2024 covered by 1 message (ROW-7711 Dec 25). No conflict around holiday scheduling in the record. Meta Quest gift suggests Olivia is with someone during Christmas — context: with Eli and Abby, or with Melissa?"
+  }
+}

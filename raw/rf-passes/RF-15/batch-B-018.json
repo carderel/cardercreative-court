@@ -1,0 +1,37 @@
+{
+  "batch_id": "B-018",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2024-08-06",
+    "end": "2024-09-03"
+  },
+  "row_range": {
+    "start": 6300,
+    "end": 6736
+  },
+  "message_count": 527,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 8,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Aug-Sep 2024. Aug 2024 continuation hostile cluster. RF-04 flags present. No standalone RF-15 primary \u2014 coaching admission (ROW-6819) arrives in this window but is RF-08 primary, not RF-15."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

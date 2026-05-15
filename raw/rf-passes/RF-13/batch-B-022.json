@@ -1,0 +1,86 @@
+{
+  "batch_id": "B-022",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2025-01-14",
+    "end": "2025-02-15"
+  },
+  "row_range": {
+    "start": 8053,
+    "end": 8522
+  },
+  "message_count": 642,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "ACTIVE",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 12,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 5,
+    "note": "Jan-Feb 2025 MEGA-CLUSTER: EP-0996 Jan 15 (106 msgs, FLOOD) + EP-0998 Jan 20 (22 msgs, FLOOD) + EP-1008 Feb 4 (5 msgs) + EP-1011 Feb 9 (68 msgs, FLOOD) + EP-1018 Feb 15 (164 msgs, FLOOD). 365 total hostile msgs in 32 days. Sev-3. Five hostile episodes in one 32-day window. ADD-003 Valentine's Day temporal window: EP-1018 is Feb 15 (day after Valentine's). RF-04 compound: B-022 contains 'you gaslight everything' DARVO-inversion (ROW-7740) \u2014 RF-09 Level E. RF-11 bilateral signal: Feb 15 admitted-incident (children hiding). Highest hostile episode density in dataset."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B022-001",
+      "episode_cluster": [
+        "EP-0996",
+        "EP-0998",
+        "EP-1008",
+        "EP-1011",
+        "EP-1018"
+      ],
+      "dates": "2025-01-15 through 2025-02-15",
+      "total_messages": 365,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 3,
+      "escalation_shape": "ramp-and-cluster \u2014 5 hostile episodes in 32 days; peak at EP-1018 (164 msgs, Feb 15)",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "Eli measured responses; not increasing message frequency",
+        "received_direction": "5 hostile episodes in 32 days; flooding in 4/5; peak 164-msg exchange on Valentine's Day +1",
+        "net_escalation": "extreme Sev-3 (365 total hostile msgs in single 32-day window; five-episode cluster is unique in dataset)",
+        "de_escalation_resistance": "EXTREME: Eli disengages after each episode; Melissa re-initiates at Jan 20, Feb 4, Feb 9, Feb 15 \u2014 four re-initiations. Within-episode resistance confirmed across all major episodes."
+      },
+      "cycle_classification": "CYC-003 Valentine's Day temporal window (EP-1018 Feb 15) + CYC-002 logistics triggers; five-episode cluster is maximum expression of the escalation pattern",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 13,
+      "cross_rf_note": "B-022 contains RF-04 flags (including ROW-7724-7725, ROW-7740 'you gaslight everything' \u2014 RF-09+RF-04 compound). RF-09 Level E flag (B-022 S006) is DARVO-inversion within this hostile cluster. RF-11 S005 is Feb 15 bilateral signal (children hiding). Feb 2025 cluster is the most cross-RF compound period in Phase A."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Jan-Feb 2025: 5 hostile episodes / 365 msgs in 32 days. Highest hostile density in dataset. Following the Oct-Dec 2024 silence, hostility resumes at extreme level.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF13-002",
+      "event": "Five-episode cluster: Melissa = escalator/re-initiator all 5 episodes. Eli = de-escalator across 365 hostile msgs. Role consistency at maximum cluster scale.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "Four re-initiations in 32 days after Eli disengagement. Maximum between-episode resistance in dataset.",
+      "state": "ACTIVE"
+    }
+  ]
+}

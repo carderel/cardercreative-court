@@ -1,0 +1,23 @@
+{
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "arc_state_version": "initial",
+  "last_updated": "2026-04-28",
+  "dataset_close": "2026-04-12",
+  "arcs": [
+    {
+      "arc_id": "ARC-RF06-001",
+      "arc_name": "Financial Leverage Pattern",
+      "status": "CANDIDATE",
+      "unresolved_at_dataset_close": null,
+      "signal_count": 0,
+      "lifecycle": [
+        {
+          "state": "CANDIDATE",
+          "batch": "B-001",
+          "event": "Arc initialized \u2014 no financial coercion in cooperative baseline period."
+        }
+      ]
+    }
+  ]
+}

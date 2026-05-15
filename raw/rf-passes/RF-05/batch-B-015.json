@@ -1,0 +1,68 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-015",
+    "row_range": { "start": 5239, "end": 5625 },
+    "date_range": { "start": "2024-05-11", "end": "2024-06-13" },
+    "message_count": 387,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 387,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 0, "2": 1, "3": 0 },
+    "peripheral_flags_total": 1,
+    "peripheral_rf_distribution": { "RF-04": 1 },
+    "no_flag_messages": 386,
+    "flag_rate": "0.3%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B015-001",
+      "row_range": "ROW-5307 through ROW-5317",
+      "timestamp": "2024-05-14",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-5307: 'I've got quite a few reservations about her staying with you' | ROW-5308: '1. You chose a cat over your daughter' | ROW-5309: '2. You have the ability to see her but choose to do so for about 3 hours a week' | ROW-5310: '3. The more I think about the night Abby was drunk the more I wonder what your intentions were and what you actually may have done' | ROW-5311: 'You clearly set her up to get drunk and that was after sending her weird messages sexual in nature. Then as long as Milo was crying you didn't try to help him. Instead I go up to find you standing over her with her left breast out' | ROW-5313: 'I don't know why you gave her a bottle of tequila' | ROW-5314: 'The more I thought of that night the more I really question what really happened' | ROW-5315: 'At the time I didn't think anything of it except she was really drunk because I didn't think you could do something like that' | ROW-5316: 'Then the way she was yelling and fighting after I just thought she was really out of it but now I wonder if she still thought you were attacking her' | ROW-5317: 'Then I remember that you said you told her not to tell anyone that she had been raped before because you had a friend that was raped and when she told someone she got raped by that guy cause he knew she wouldn't tell. I wonder if you were that guy'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "DATASET SEV-3 EVENT — RF-05 classification note: RF-04 pass designated this as COMP-RF04-014 (RF-04+RF-15+RF-05+RF-01) at Sev-3 (highest compound severity). For RF-05 independent analysis, this is classified Sev-2 primary (see note below). ADD-001 exclusion scope: ADD-001 was established for 'uncle/niece framing, she was 7 when they met, incest allegations, pregnancy weaponization' — the specific attack mechanism here is categorically different: a direct, explicit CRIMINAL allegation of sexual assault/rape against Eli. This rises above ADD-001's scope. The sequence establishes: (1) ROW-5307 frames Olivia's custody as at risk ('reservations about her staying with you') — connecting the rape allegation directly to Olivia's parental access; (2) ROW-5310 introduces intent-questioning ('what your intentions were and what you actually may have done'); (3) ROW-5311 describes what Melissa claims to have witnessed as circumstantial sexual assault evidence ('standing over her with her left breast out'); (4) ROW-5316 makes the direct assault inference ('she still thought you were attacking her'); (5) ROW-5317 delivers the most severe element: 'I wonder if you were that guy' — explicitly accusing Eli of being Abby's prior rapist and of using knowledge of her trauma to silence her. This is a criminal allegation functioning as the most extreme form of custody threat: if Melissa reported this to police or presented it in custody proceedings, it would be a sexual assault allegation that could eliminate Eli's custody entirely. ADD-002: outside normal financial/legal threat categories; Sev-2 because: (a) Eli's CP2 answer on harm allegations ('a little bit' of fear) suggests some fear but not certainty; (b) explicit criminal intent to 'report' is not stated in ROW-5307-5317; (c) this is framed as Melissa's 'reservations' and 'wondering' rather than as a present filing threat. If Melissa had said 'I am reporting you to police,' this would be Sev-3.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 3,
+          "note": "ROW-5307-5317 is COMP-RF04-014 (RF-04+RF-15+RF-05+RF-01 — Sev-3 compound per RF-04 pass). RF-04+RF-15 are primary harm vectors. RF-05 is a secondary component of the compound.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Eli's response to ROW-5317 and the surrounding cluster is not captured in the immediate message sequence — ROW-5318 (Eli, Sent) addresses a missed 5:41am call, suggesting the conversation was either not directly responded to via text or the response was via phone. The rape allegation receives no direct textual rebuttal in this exchange. The absence of a text rebuttal may reflect Eli's decision not to engage with the allegation in writing — consistent with ADD-005 threat-monitoring posture. The RF-04 pass already flagged ROW-5303 (self-distrust insinuation re: Olivia) as part of this compound. Note: the 'reservations about her staying with you' framing (ROW-5307) is the only custody-threat element here — Melissa does not say she is filing for custody modification, she frames it as a personal concern. The custody connection is implied rather than explicit.",
+      "pattern_tags": ["rape_allegation", "criminal_implication", "custody_threat_via_allegation", "silence_coercion", "highest_severity_abby_attack"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'I wonder if you were that guy' (ROW-5317); 'I've got quite a few reservations about her staying with you' (ROW-5307); 'I wonder if she still thought you were attacking her' (ROW-5316)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. B-015 adds the highest-severity Abby-framework RF-05 signal: the explicit rape/sexual assault allegation. This signal exceeds ADD-001's exclusion scope. The allegation directly connects to Olivia's custody (ROW-5307 'reservations about her staying with you')."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": [
+      "CP3-RF05-002 (HIGH): ROW-5307-5317 (May 14 2024) — Rape/sexual assault allegation cluster. ATTORNEY MUST REVIEW. Melissa makes explicit criminal accusations against Eli: (1) alleging he deliberately got Abby drunk to commit sexual assault; (2) claiming she witnessed him 'standing over her with her left breast out'; (3) directly accusing Eli of being Abby's prior rapist who silenced her. The allegation is framed as 'reservations about Olivia staying with you.' If Melissa has repeated any version of this allegation to Olivia, the counselor, third parties, or in any formal proceeding, the attorney needs to know. This is the highest-severity Abby-framework RF-05 signal in the dataset. Cross-ref: COMP-RF04-014 (RF-04+RF-15+RF-05+RF-01 Sev-3 compound per RF-04 pass)."
+    ]
+  },
+  "batch_observations": {
+    "tone_assessment": "B-015 (May-Jun 2024) contains the dataset's most severe Abby-framework attack: the explicit rape/sexual assault allegation. This is COMP-RF04-014 — the Sev-3 compound event across the full analysis. For RF-05, this is the arc's highest-severity Abby-framework signal and falls outside ADD-001's general exclusion (ADD-001 covers inappropriate-relationship framing; direct criminal allegation is a different threat category).",
+    "cross_rf_context": "RF-04 pass: COMP-RF04-014 (B-015 Sev-3 event) — RF-04+RF-15+RF-05+RF-01 compound. RF-05 is a confirmed component of the dataset's highest-severity compound."
+  }
+}

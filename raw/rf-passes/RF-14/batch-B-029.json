@@ -1,0 +1,94 @@
+{
+  "batch_id": "B-029",
+  "date_range": {
+    "start": "2025-09-14",
+    "end": "2025-10-31"
+  },
+  "row_range": {
+    "orig_row_min": 8230,
+    "orig_row_max": 14649,
+    "note": "Date-filtered batch; orig_row range reflects unsorted Excel order within date window"
+  },
+  "message_count": 482,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": {
+    "ARC-RF14-001": "ACTIVE",
+    "ARC-RF14-002": "ACTIVE"
+  },
+  "arc_signals_cumulative_at_batch_start": {
+    "ARC-RF14-001": 8,
+    "ARC-RF14-002": 8
+  },
+  "calibration_addenda_active": [
+    "RF14-ADD-001", "RF14-ADD-002", "RF14-ADD-003", "RF14-ADD-004",
+    "RF14-ADD-005", "RF14-ADD-006", "RF14-ADD-007", "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "arc_signals_this_batch": {
+      "ARC-RF14-001": 0,
+      "ARC-RF14-002": 1
+    },
+    "note": "Sep 18, 2025 homicide investigation event: Melissa's friend's husband was arrested for (suspected) homicide of his wife; Melissa's neighborhood was an active crime scene — 'They breached the house / Crime scene unit is on site / The husband has been arrested and being detained' (ROW-14383-14385). Olivia was present: 'I was trying to process everything that my friend may have been murdered and trying to keep Olivia safe' (ROW-14402). Traumatic third-party violence event with Olivia present. Oct 2 follow-up confirms the friend may have been murdered (ROW-14485). Genuine Sev-1 RF-14 signal."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-016",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF14-002",
+      "arc_signal_number": 9,
+      "date": "2025-09-18",
+      "orig_rows": ["14383", "14384", "14385", "14402", "14485"],
+      "messages": [
+        {
+          "orig_row": "14383",
+          "direction": "Received",
+          "text": "They breached the house"
+        },
+        {
+          "orig_row": "14384",
+          "direction": "Received",
+          "text": "Crime scene unit is on site"
+        },
+        {
+          "orig_row": "14385",
+          "direction": "Received",
+          "text": "The husband has been arrested and being detained"
+        },
+        {
+          "orig_row": "14402",
+          "direction": "Received",
+          "text": "Cause I was trying to process everything that my friend may have been murdered and trying to keep Olivia safe and have her actually listen t[o me]..."
+        },
+        {
+          "orig_row": "14485",
+          "direction": "Received",
+          "date": "2025-10-02",
+          "text": "My backup would be Amelia bout with her mom just dying and all and not knowing if that was murder that's not an option anymore"
+        }
+      ],
+      "classification": "RF-14 primary Sev-1 — Olivia present during active homicide investigation at Melissa's neighborhood Sep 18, 2025. Crime scene unit on site; neighbor's husband arrested for suspected murder of wife. Melissa confirms Olivia was present and she was attempting to 'keep Olivia safe' during the event. Oct 2 follow-up confirms the victim (Melissa's friend, Amelia's mother) died and circumstances were potentially homicidal. This represents a traumatic third-party violence event to which Olivia was exposed in Melissa's care environment. ARC-RF14-002 Genuine Safety Documentation Signal 9.",
+      "addendum_applied": "No specific addendum maps to this event type. Classified under RF-14 'unsafe environment' — exposure to active homicide investigation, traumatic violent event, and associated instability.",
+      "cross_rf_note": "No RF-15 overlap (not a fabricated allegation). Potential RF-11 cross-reference (environmental instability, household/neighborhood safety). Standalone RF-14 primary."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals in B-029. ACTIVE state holds. 8 cumulative signals.",
+      "state": "ACTIVE",
+      "signals_cumulative": 8
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "S-016: Homicide investigation Sep 18, 2025 — Olivia present at active crime scene in Melissa's neighborhood; neighbor's husband arrested. Signal 9.",
+      "state": "ACTIVE",
+      "signals_cumulative": 9
+    }
+  ]
+}

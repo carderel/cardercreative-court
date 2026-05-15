@@ -1,0 +1,57 @@
+{
+  "batch_id": "B-024",
+  "date_range": {
+    "start": "2025-03-04",
+    "end": "2025-04-30"
+  },
+  "message_count": "~503",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 13,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Mar-Apr 2025. S-013: Olivia skateboards at Melissa's without safety gear, falls and injures leg (Mar 13, 2025). Eli notes safety gear absence. Melissa dismisses: 'When she first started learning. She's been doing skateboard fit forever.' Medical attention sought (urgent care). Eli's concern per ADD-004 pattern (safety compliance failures at Melissa's). ARC-RF14-002 signal 6."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-013",
+      "row_ref": "ROW-9398/12034",
+      "date": "2025-03-13",
+      "direction": "Sent",
+      "severity": 1,
+      "arc": "ARC-RF14-002",
+      "arc_signal_num": 6,
+      "type": "Safety compliance \u2014 inadequate protective equipment at Melissa's",
+      "description": "ROW-12024 [Received]: 'Olivia says her right leg is hurting from where she fell on the skateboard yesterday.' ROW-12026: 'Her lil hand needs looked at today' [different message context]. ROW-12034 [Sent]: 'Well, that's what I suspected. Surprised she wasn't wearing any pads or safety gear, though \u2014 I thought that was something we both agreed on being important.' Melissa's response (ROW-12036): 'When she first started learning. She's been doing skateboard fit forever.' Dismissed: 'Pads wouldn't have helped anyways' (ROW-12038). Eli documents failure to provide safety gear for Olivia's skateboarding at Melissa's; Melissa dismisses the concern. Pulled calf muscles confirmed; urgent care attendance per Melissa.",
+      "addenda_applied": [
+        "RF14-ADD-004"
+      ]
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals \u2014 ACTIVE (8 signals)",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "RF14-S-013: No safety gear + injury at Melissa's household. Signal count now 6. Expanding pattern of safety compliance failures at Melissa's. ACTIVE maintained.",
+      "state": "ACTIVE"
+    }
+  ]
+}

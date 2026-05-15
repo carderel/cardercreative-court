@@ -1,0 +1,138 @@
+{
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "arc_state_version": "final",
+  "last_updated": "2026-04-28",
+  "dataset_close": "2026-04-12",
+
+  "arcs": [
+    {
+      "arc_id": "ARC-RF13-001",
+      "arc_name": "Escalation Trajectory",
+      "status": "ACTIVE",
+      "unresolved_at_dataset_close": true,
+      "signal_count": 21,
+      "severity_distribution": { "1": 7, "2": 12, "3": 2 },
+      "lifecycle": [
+        { "state": "CANDIDATE", "batch": "B-001", "event": "Trajectory arc initialized. Phase A cooperative baseline established. EP-0009 (Aug 28 2022) is the single tense episode — no trajectory pattern yet." },
+        { "state": "WATCHING", "batch": "B-003", "event": "Nov 2022 cluster: 3 hostile episodes in 3 days (Nov 13-15). Trajectory shift from isolated tense events to sustained hostile cluster. First worsening trajectory signal." },
+        { "state": "ACTIVE", "batch": "B-017", "event": "EP-0854 (Aug 4 2024, 311 msgs, Sev-3): largest hostile episode in dataset confirms worsening trajectory beyond doubt. Phase A escalation reaches extreme peak." }
+      ],
+      "phase_trajectory": {
+        "phase_a_early": "Cooperative baseline (Jan-Oct 2022). Isolated tense episodes. Trajectory: flat.",
+        "phase_a_mid": "First hostile cluster Nov 2022. Holiday pattern emerges. Trajectory: rising.",
+        "phase_a_escalating": "2023 hostile episodes: Valentine's Day mega-cluster (104 msgs), Mar cluster (62 msgs). Trajectory: moderate rise.",
+        "phase_a_sustained": "2024 June cluster (4 hostile eps), Aug mega-cluster (311 msgs). Trajectory: steep rise.",
+        "phase_a_peak": "Oct 2024 EP-0917 (173 msgs). Post-EP-0917 behavioral silence (Oct-Dec 2024). Trajectory: peak then withdrawal.",
+        "phase_b": "Jan-Feb 2025 cluster (5 hostile eps, 365 total msgs). May 2025 EP-1078 (170 msgs, AI-guided start). Jul-Aug 2025 Phase B cluster. Trajectory: sustained high.",
+        "phase_c": "Fewer direct-exchange hostile episodes (4 total) but qualitative escalation: legal proceedings, visit refusal, police report, harm allegations. Trajectory: structural shift, not decline."
+      },
+      "key_milestones": [
+        "EP-0093 (Oct 31 2022): First hostile episode — Halloween; establishes pattern",
+        "Nov 2022 cluster: First multi-episode hostile cluster",
+        "EP-0219 (Feb 14 2023): Valentine's Day 104-msg mega-cluster; first Sev-2",
+        "June 2024 cluster: 4 hostile episodes in 17 days",
+        "EP-0854 (Aug 4 2024): 311-msg mega-cluster; Sev-3 peak",
+        "EP-0917 (Oct 2 2024): 173-msg hostile episode; followed by unexplained behavioral silence",
+        "B-022 (Jan-Feb 2025): 5 hostile episodes including EP-0996 (106 msgs) + EP-1018 (164 msgs); Sev-3 cluster",
+        "EP-1078 (May 4 2025): AI-guided communication start; Melissa escalates anyway",
+        "Phase B cluster (Jul-Aug 2025): 7+ hostile episodes despite AI-guided measured responses",
+        "Phase C: Visit-refusal conflict replaces direct-exchange hostility as dominant mechanism"
+      ],
+      "arc_synthesis": "The trajectory arc documents a clear worsening pattern from 2022 through 2025 Phase B peak, followed by a structural shift in Phase C. The Phase A trajectory (2022-2024) shows escalating frequency and intensity of hostile episodes. The Phase B peak (2025) demonstrates that even Eli's adoption of AI-guided communication strategy (confirmed CP2 Q2/Q5) did not reduce Melissa's hostile escalation — she escalated regardless. The Phase C shift from direct-exchange hostility to legal/visit-refusal conflict does not represent de-escalation: it represents the conflict moving into legal-proceedings territory. The absence of a clear worst-exchange memory in Eli's recall (CP2 Q6 — emotional numbing) is itself an impact finding: normalization of hostile patterns occurs when exposure is sustained enough that individual events lose salience.",
+      "add005_note": "Post-EP-0917 behavioral silence (Oct-Dec 2024) has no known explanation (CP2 Q4). Conservative treatment: documented as trajectory feature without causal classification."
+    },
+    {
+      "arc_id": "ARC-RF13-002",
+      "arc_name": "Role Consistency",
+      "status": "ACTIVE",
+      "unresolved_at_dataset_close": true,
+      "signal_count": 21,
+      "severity_distribution": { "1": 7, "2": 12, "3": 2 },
+      "lifecycle": [
+        { "state": "CANDIDATE", "batch": "B-001", "event": "EP-0009 (Aug 28 2022): baseline asymmetric pattern. Melissa = escalator (received_total_delta +2.0); Eli = de-escalator (sent_total_delta -0.5). First data point." },
+        { "state": "WATCHING", "batch": "B-002", "event": "EP-0093 (Oct 31 2022, Halloween): second instance of asymmetric pattern. Melissa escalates with flooding; Eli responds with measured tone. Role consistency: 2/2." },
+        { "state": "ACTIVE", "batch": "B-003", "event": "Nov 2022 cluster (3 hostile episodes, 3 consecutive days): third+ instance of asymmetric pattern. Melissa = consistent escalator across multiple independent hostile episodes. Eli = consistent de-escalator across all three. Role consistency confirmed." }
+      ],
+      "role_analysis": {
+        "melissa_role": "Consistent escalator across all 46 hostile episodes. Direction imbalance from triage: 86 received / 39 sent RF-13 keyword hits (69% received). RF-04 directionality (93 flags, majority received) provides independent confirmation. Melissa initiates or re-escalates in the large majority of hostile episodes. Flooding detected in 40/46 hostile episodes — rapid-sequence messaging is a consistent escalation mechanism.",
+        "eli_role": "Consistent de-escalator, increasingly strategic over time. Phase A: natural de-escalation tendency (fewer messages, measured tone). Phase B/C: AI-guided de-escalation strategy (CP2 Q2/Q5). In zero instances across the dataset does Eli's sent-direction delta exceed Melissa's received-direction delta in hostile episodes.",
+        "asymmetry_persistence": "The asymmetric role pattern (Melissa escalates, Eli de-escalates) persists from the first tense episode (EP-0009, Aug 2022) through the dataset close (B-031, Apr 2026). No attenuation observed across Phase A, B, or C. The asymmetry actually intensifies in Phase B/C because Eli's de-escalation becomes more deliberate (AI-guided) while Melissa's escalation continues."
+      },
+      "arc_synthesis": "ARC-RF13-002 is the most consistently documented arc in the dataset. Across 46 hostile episodes spanning 4+ years, Melissa is the consistent initiator/escalator and Eli is the consistent de-escalator. This pattern is documented by: (1) triage direction imbalance (69% received keyword hits); (2) RF-04 direction imbalance (majority received primary flags); (3) RF-07 flooding pattern (Melissa floods; Eli responds measured or not at all); (4) Eli's CP2 Q2 confirmation of deliberate de-escalation strategy adoption. The role consistency arc has the highest cross-RF corroboration of any RF-13 arc."
+    },
+    {
+      "arc_id": "ARC-RF13-003",
+      "arc_name": "De-Escalation Resistance",
+      "status": "ACTIVE",
+      "unresolved_at_dataset_close": true,
+      "signal_count": 21,
+      "severity_distribution": { "1": 7, "2": 12, "3": 2 },
+      "lifecycle": [
+        { "state": "CANDIDATE", "batch": "B-001", "event": "EP-0009: Eli's one de-escalation attempt not acknowledged by Melissa (she deploys DARVO pivot instead). First resistance data point." },
+        { "state": "WATCHING", "batch": "B-002", "event": "EP-0093 (Oct 31): second instance of de-escalation resistance. Eli responds to flooding with measured tone; Melissa continues hostile pattern without acknowledging Eli's shift." },
+        { "state": "ACTIVE", "batch": "B-005", "event": "EP-0219 (Feb 14 2023, 104 msgs): confirmed de-escalation resistance across mega-cluster. Eli makes multiple de-escalation attempts across the 104-message exchange; Melissa does not acknowledge or respond to them and maintains escalated tone throughout. Three independent instances of resistance confirmed." }
+      ],
+      "resistance_mechanism": {
+        "phase_a": "Eli's natural de-escalation attempts (measured responses, returning to logistics, shorter messages) are consistently ignored. Melissa re-escalates in response to Eli's de-escalation attempts — the supplement delta for 'ignored de-escalation' (+1.5) applies across Phase A hostile episodes.",
+        "phase_b_c": "Eli shifts to AI-guided communication strategy (CP2 Q2/Q5). This means Phase B/C de-escalation attempts are professionally optimized — Eli is using best-practice communication protocols. Melissa's escalation over these intentional, strategically calibrated attempts is the strongest possible de-escalation resistance evidence. Any hostile escalation in Phase B/C over Eli's AI-guided responses earns maximum resistance delta."
+      },
+      "arc_synthesis": "ARC-RF13-003 documents that Melissa's hostile escalation pattern is not responsive to Eli's communication choices. From the first tense episode (EP-0009) through the AI-guided Phase B/C period, Melissa consistently escalates when Eli de-escalates. The Phase B/C evidence is strongest: Eli adopted a professionally-guided communication strategy specifically to reduce conflict, and Melissa's hostile pattern continued unabated. This arc supports the conclusion that Melissa's escalation behavior is internally driven rather than reactive to Eli's communication."
+    }
+  ],
+
+  "cycle_objects": [
+    {
+      "cycle_id": "CYC-001",
+      "cycle_name": "Abby-Content Escalation Cycle",
+      "trigger_type": "content_correlated",
+      "trigger_note": "Per ADD-001: Eli cannot confirm Abby references as reliable triggers. Content correlation observed from text record.",
+      "episodes_involved": ["EP-0854", "EP-0917", "multiple B-017 through B-019"],
+      "pattern": "Abby-adjacent content (Abby's involvement with children, Eli's household, relationship references) appears in cluster contexts for the Aug 2024 mega-cluster. Not independently confirmed as a trigger.",
+      "status": "content_correlated_confirmed"
+    },
+    {
+      "cycle_id": "CYC-002",
+      "cycle_name": "Schedule/Logistics Spike Cycle",
+      "trigger_type": "content_correlated",
+      "trigger_note": "Minor logistical requests appear as precursors to hostile escalation in multiple episodes.",
+      "episodes_involved": ["scattered across Phase A"],
+      "pattern": "Logistical requests (scheduling, pickup/dropoff, child activities) precede hostile escalation in multiple smaller hostile episodes. Pattern visible in B-007, B-012, B-015 episodes.",
+      "status": "content_correlated_inferred"
+    },
+    {
+      "cycle_id": "CYC-003",
+      "cycle_name": "Holiday Escalation Cycle",
+      "trigger_type": "temporal_confirmed",
+      "trigger_note": "Eli confirmed holiday + Halloween volatility (CP2 Q3). Five temporal windows: Halloween (Oct 25-Nov 2), Thanksgiving (Nov 20-Dec 1), Christmas (Dec 22-27), Valentine's Day (Feb 14-15), New Year's (Jan 1-7).",
+      "episodes_involved": ["EP-0093 (Oct 31 2022)", "EP-0111/0112/0114 (Nov 13-15 2022)", "EP-0160/0161 (Dec 22-23 2022)", "EP-0219 (Feb 14 2023)", "EP-0589/0591 (Dec 22-24 2023)", "EP-0996 (Jan 15 2025)", "EP-1011/1018 (Feb 9/15 2025)"],
+      "pattern": "Hostile episodes cluster at holiday-adjacent dates across multiple calendar years. Pattern confirmed across 2022, 2023, 2025. Temporal trigger is the most reliably documented cycle type.",
+      "status": "confirmed_temporal"
+    },
+    {
+      "cycle_id": "CYC-004",
+      "cycle_name": "Legal-Threat Ceiling Cycle",
+      "trigger_type": "cross_rf_confirmed",
+      "trigger_note": "RF-05 ARC-RF05-001 documents legal threats as escalation peaks. RF-13 cycle confirms legal threats appear at peak moments of hostile escalation.",
+      "episodes_involved": ["EP-0854 (Aug 2024, contains RF-05 signals S-016)", "EP-0917 (Oct 2024)", "B-027-B-028 Phase B hostile cluster (contains RF-05 S-021/S-022)"],
+      "pattern": "Legal threats (contempt, sole-custody filing, attorney engagement) are deployed at escalation peaks — they are the ceiling of the hostile cycle. Pattern: TRIGGER → ESCALATION → PEAK → LEGAL THREAT deployed → brief plateau or withdrawal. Cross-confirmed with RF-05 arc.",
+      "status": "confirmed_cross_rf"
+    },
+    {
+      "cycle_id": "CYC-005",
+      "cycle_name": "Child-Welfare Allegation Deployment Cycle",
+      "trigger_type": "cross_rf_confirmed",
+      "trigger_note": "RF-01/RF-04/RF-08 cross-reference: harm allegations and Olivia-relay content appear at escalation peaks.",
+      "episodes_involved": ["EP-0854 (Aug 2024, RF-08 S005 harm allegations via Olivia)", "B-027-B-028 Phase B hostile cluster", "B-029 Phase C visit-refusal"],
+      "pattern": "Child-welfare allegations (harm, inadequate parenting, unsafe environment) are deployed at escalation peaks or in the immediate aftermath of hostile episodes. Cross-confirmed with RF-01, RF-04, RF-08 compound patterns.",
+      "status": "confirmed_cross_rf"
+    }
+  ],
+
+  "compound_cross_rf_summary": {
+    "rf04_overlap": "RF-04 DARVO sequences are the primary mechanism of escalation maintenance. RF-13 hostile episodes and RF-04 primary flags co-occur in the same clusters. Every Sev-2+ RF-13 episode has co-occurring RF-04 flags.",
+    "rf05_overlap": "RF-05 legal threats serve as escalation ceiling mechanisms. RF-13 Sev-3 episodes (EP-0854, B-022 cluster) contain RF-05 primary signals.",
+    "rf07_overlap": "RF-07 flooding events are the most visible escalation mechanism. EP-0854 (311 msgs), EP-0917 (173 msgs), EP-1078 (170 msgs) all involve flooding patterns. 40/46 hostile episodes have flooding_detected=true in triage data.",
+    "rf01_rf08_overlap": "Child-welfare allegations and coaching-relay signals appear at escalation peaks (CYC-005). RF-01 and RF-08 compound with RF-13 at Phase A/B peak episodes."
+  }
+}

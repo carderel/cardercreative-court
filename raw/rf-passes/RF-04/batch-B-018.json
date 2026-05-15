@@ -1,0 +1,157 @@
+{
+  "batch_id": "B-018",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2024-08-06", "end": "2024-09-08" },
+  "row_range": { "start": 6557, "end": 7055 },
+  "message_count": 499,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "mixed — predominantly cooperative (Olivia's staph recovery Aug 6-14, school prep Aug 14-20, lemonade stand Aug 11, birthday parties, Labor Day weekend activities, first week of school Sep 3-6) with three RF-04 clusters against that cooperative backdrop",
+    "conflict_ratio": "~0.10",
+    "rf04_activity": "moderate — 2 Sev-1 primaries; Aug 20-21 inadequate-father cluster includes ROW-6819 coaching admission (cross-ref RF-01 ADD-004); Sep 5-6 bike incident includes 'dumbass' 6th ADD-002 instance + new baby/Abby weaponization (4th pregnancy weaponization in dataset)",
+    "notable_context": "Olivia's staph infection treatment and monitoring (Aug 6-14 — cooperative). School supply night Aug 19 (Eli attends briefly). First days of school Aug 20-21. ROW-6819 (Aug 21): coaching admission — 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so that she will share' — confirms ADD-004 relay mechanism. Sep 5-6 bike incident: 'How are you having another kid when you have no clue how to parent?' + 'I feel bad for Milo and that poor unborn child' — 4th pregnancy weaponization. 'dumbass' 6th instance ROW-6985. DARVO: 'playing a victim' ROW-7019."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B018-001",
+      "severity": 1,
+      "date": "2024-08-20",
+      "row_ref": "ROW-6783-6831",
+      "type": "sustained_inadequate_father_cluster + coaching_admission_cross_ref + DARVO_adjacent + victim_framing",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "cross_arc": "ARC-RF04-002-S13",
+      "summary": "Aug 20-21 inadequate-father sustained cluster + coaching admission. Context: School supply night (Aug 19) — Eli attended briefly (~12 minutes); Melissa launches extended parenting critique starting Aug 20 01:31am. ROW-6783: 'Feels like you just wanted to make an appearance to look involved' — contemptuous motive-attribution for Eli's school visit. ROW-6784: 'Without actually being involved.' ROW-6795: 'Be more present in her life and maybe she will feel more connected to you and tell you stuff like she does with me' — inadequate-father + implicit Olivia-father relationship damage framing. ROW-6796-6800: Detailed narrative critique of Eli's 12 minutes at school event ('called saying you couldn't find the room,' 'went to the drive thru,' 'made her get her cold dinner to carry around the store'). ROW-6809: 'Tell em again how busy you are and don't have time for her' — contemptuous sarcasm. ROW-6814: 'You can bust your ass all you want when it amounts to 12 minutes does it really matter?' — contemptuous dismissal of Eli's effort. ROW-6819 (CRITICAL CROSS-REF): 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so that she will share' — explicit coaching admission; confirms Melissa scripts/prompts Olivia's communications with Eli; structural anchor for RF-01 ADD-004 relays. ROW-6829: 'You spend a lot of time on the phone playing video games as she stated yesterday she can hear the gun noises as she talks to you' — child-stated observation deployed as parenting quality attack. ARC-RF04-002-S13. ROW-6830: 'You also spend time talking to Milo and Abby and clanging dishes and other stuff while you talk to her.' Pattern: contemptuous motive-attribution → inadequate-father sustained lecture → coaching admission (reveals ADD-004 mechanism) → child relay character attack. ARC-RF04-001-S47.",
+      "verbatim_key_messages": [
+        "ROW-6783 (Received): \"Feels like you just wanted to make an appearance to look involved\"",
+        "ROW-6784 (Received): \"Without actually being involved\"",
+        "ROW-6795 (Received): \"Be more present in her life and maybe she will feel more connected to you and tell you stuff like she does with me\"",
+        "ROW-6809 (Received): \"Tell em again how busy you are and don't have time for her\"",
+        "ROW-6814 (Received): \"You can 'bust your ass' all you want when it amounts to 12 minutes does it really matter?\"",
+        "ROW-6819 (Received): \"I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so that she will share\"",
+        "ROW-6829 (Received): \"You spend a lot of time on the phone playing video games as she stated yesterday she can hear the gun noises as she talks to you\"",
+        "ROW-6830 (Received): \"You also spend time talking to Milo and Abby and clanging dishes and other stuff while you talk to her.\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B018-002",
+      "severity": 1,
+      "date": "2024-09-05",
+      "row_ref": "ROW-6953-7023",
+      "type": "contemptuous_parenting_attack + dumbass_6th_instance + new_baby_weaponization + milo_proxy + DARVO_victim_framing",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "summary": "Sep 5-6 bike incident parenting attack — 'dumbass' 6th ADD-002 instance + 4th pregnancy weaponization. Context: Eli taught Olivia to ride her bike; she got a calf scratch; Eli put an antibacterial bandage on it. Melissa challenged his parenting response. ROW-6966: 'Pay attention' — contemptuous dismissal. ROW-6971: 'How are you having another kid when you have no clue how to parent?' — contemptuous parenting attack using Abby's pregnancy as evidence of Eli's unfitness; 4th weaponization of pregnancy in dataset (prior: B-015 ROW-5270 false rape context; B-017 ROW-6436 housing stability; B-017 ROW-6440 second income; now: parenting incompetence). ROW-6976: 'I feel bad for Milo and that poor unborn child' — contemptuous proxy attack via Milo + anticipated parenting failure for the unborn child; extends the Milo-proxy mechanism (prior: ROW-5862 B-016) to the unborn child. ROW-6985: 'You're such a dumbass' — ADD-002 6th 'dumbass' instance; delivered when Eli correctly points out that knee/elbow pads would not have protected her calf. ROW-7011: 'You're just so hellbent on being defensive that you aren't listening to what I'm saying' — DARVO-adjacent (Eli's factual counter reframed as defensiveness). ROW-7017: 'I mean I am questioning your parenting skills' — explicit contemptuous admission. ROW-7019: 'I shouldn't have picked defensive. More so trying to play a victim' — DARVO: Eli's reasonable self-defense reframed as victim-playing. ARC-RF04-001-S48.",
+      "verbatim_key_messages": [
+        "ROW-6966 (Received): \"Pay attention\"",
+        "ROW-6971 (Received): \"How are you having another kid when you have no clue how to parent?\"",
+        "ROW-6976 (Received): \"I feel bad for Milo and that poor unborn child\"",
+        "ROW-6985 (Received): \"You're such a dumbass\"",
+        "ROW-7011 (Received): \"You're just so hellbent on being defensive that you aren't listening to what I'm saying\"",
+        "ROW-7017 (Received): \"I mean I am questioning your parenting skills\"",
+        "ROW-7019 (Received): \"I shouldn't have picked defensive. More so trying to play a victim\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B018-P01",
+      "row_ref": "ROW-6582-6585",
+      "date": "2024-08-08",
+      "type": "absent_parent_continuation_attack",
+      "note": "ROW-6582: 'I don't want to hear about me being off work cause frankly my use of time is not your business but secondly you never take off work for her' + ROW-6583: 'If I don't take off she has no one to care for her' + ROW-6585: 'I don't have the opportunity to be an absent parent and just be like no I'm not doing anything. You do it' — continuation of Aug 4-5 mega-cluster attack (absent-parent framing); brief (4 messages); unprovoked Aug 8 re-opening of closed Aug 4-5 dispute."
+    },
+    {
+      "flag_id": "RF04-B018-P02",
+      "row_ref": "ROW-6869-6871",
+      "date": "2024-08-27",
+      "type": "contemptuous_parenting_critique_idiot_slur",
+      "note": "ROW-6869-6870: 'Why do you think it's a good idea to buy candy cigs anyways? / Not something she needs to be learning' + ROW-6871: 'She could've gotten in trouble for that idiot' — 'idiot' ADD-002 adjacent slur; brief contemptuous parenting critique re: candy cigarettes. New slur variant ('idiot') — not in established ADD-002 list but consistent with intelligence-attack family."
+    },
+    {
+      "flag_id": "RF04-B018-P03",
+      "row_ref": "ROW-6873-6874",
+      "date": "2024-08-27",
+      "type": "child_relay_as_parenting_accusation",
+      "note": "ROW-6873: 'Did you yell at her or something?' + ROW-6874: 'She called me crying from the bus' — child emotional state (crying) relayed as implicit accusation that Eli did something to cause it. Eli denies (ROW-6875). Brief; no escalation. ARC-RF04-002 peripheral."
+    },
+    {
+      "flag_id": "RF04-B018-P04",
+      "row_ref": "ROW-7029",
+      "date": "2024-09-07",
+      "type": "child_relay_inadequate_father",
+      "note": "ROW-7029: 'Olivia said you told her you wanted to do something with her today and now you won't answer the phone' — child relay used to build inadequate-father framing; Eli clarifies the misunderstanding (ROW-7030). Brief; no escalation."
+    },
+    {
+      "flag_id": "RF04-B018-P05",
+      "row_ref": "ROW-7047, ROW-7051-7055",
+      "date": "2024-09-08",
+      "type": "contempt_threat + inadequate_father_questioning",
+      "note": "ROW-7047: 'So... you're in contempt for that' — contempt threat re: daycare payment (RF-05 primary); RF-04 peripheral. ROW-7051-7055: 'why didn't you think to invite Olivia?' + 'You guys went to a festival and the movies. Why was there not a thought about your daughter?' + 'Did you not think that she might want to go?' — inadequate-father questioning (Eli went to honey festival and Beetlejuice without inviting Olivia); brief; no escalation into cluster. Note: batch ends mid-cluster (continues in B-019)."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S47",
+          "batch": "B-018",
+          "date": "2024-08-20",
+          "row": "ROW-6783-6831",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Aug 20-21 inadequate-father cluster: 'just wanted to make an appearance to look involved' + 'when it amounts to 12 minutes does it really matter?' + ROW-6819 coaching admission ('I give her things to tell you about' — cross-ref RF-01 ADD-004) + child relay character attack ('gun noises' ROW-6829). ARC-RF04-002-S13 overlap."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S48",
+          "batch": "B-018",
+          "date": "2024-09-05",
+          "row": "ROW-6953-7023",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Sep 5-6 bike incident: 'How are you having another kid when you have no clue how to parent?' (ROW-6971) + 'I feel bad for Milo and that poor unborn child' (ROW-6976, 4th pregnancy weaponization) + 'dumbass' 6th ADD-002 instance (ROW-6985) + DARVO ('trying to play a victim' ROW-7019)."
+        }
+      ],
+      "signal_count_after": 48
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S13",
+          "batch": "B-018",
+          "date": "2024-08-21",
+          "row": "ROW-6829",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'You spend a lot of time on the phone playing video games as she stated yesterday she can hear the gun noises as she talks to you' — child's stated observation deployed as parenting-quality attack vector. Olivia's account of Eli's phone behavior used to build inadequate-father case. Part of Aug 20-21 inadequate-father cluster; ARC-RF04-001-S47 overlap."
+        }
+      ],
+      "signal_count_after": 13
+    }
+  },
+
+  "compound_patterns": [],
+
+  "cp3_item": {
+    "id": "CP3-RF04-018",
+    "batch": "B-018",
+    "summary": "ROW-6819 (Aug 21 B-018) — COACHING ADMISSION: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so that she will share' — explicit confirmation that Melissa scripts/prompts Olivia's communications with Eli; structural anchor for RF-01 ADD-004 relays and ARC-RF01-001 required-intermediary mechanism. Delivered within Aug 20-21 inadequate-father sustained cluster (RF04-B018-001; ARC-RF04-001-S47). Notable also: ROW-6971 + ROW-6976 (Sep 5-6) — 'How are you having another kid when you have no clue how to parent?' + 'I feel bad for Milo and that poor unborn child' — 4th pregnancy weaponization; 'dumbass' 6th ADD-002 instance ROW-6985."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 2,
+    "severity_1": 2,
+    "severity_2": 0,
+    "peripheral_flags": 5,
+    "compound_patterns": 0,
+    "arc_rf04_001_signals_added": 2,
+    "arc_rf04_002_signals_added": 1
+  }
+}

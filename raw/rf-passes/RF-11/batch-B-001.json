@@ -1,0 +1,56 @@
+{
+  "batch_id": "B-001",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2022-01-11",
+    "end": "2022-10-02"
+  },
+  "row_range": {
+    "start": 2,
+    "end": 366
+  },
+  "message_count": 365,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [],
+  "pass_context": {
+    "triage_profile": {
+      "keyword_hit_count": 2,
+      "phase_distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 2
+      },
+      "hot_periods": [
+        "2026-02"
+      ],
+      "priority_rank_triage": 15,
+      "tier_triage": "Tier 3",
+      "cp1_override": "Elevated to Tier 1 \u2014 Eli flagged as concern; Nov 22 2025 police report is anchor event; Feb 2026 incident (children hiding during argument) identified as bilateral signal"
+    },
+    "bilateral_note": "RF-11 analysis covers both directions. Melissa: parentification, fear-framing, exposing Olivia to legal proceedings, coaching Olivia's emotional responses. Eli: Feb 15 2026 domestic argument while Olivia present; alleged child-adjacent discussion of legal framing (ROW-15103 allegation). BOTH directions receive equal rigor per pipeline protocol.",
+    "cross_rf_signal_pool": {
+      "rf08_row6819": "ROW-6819 coaching admission is RF-11 context \u2014 Melissa scripting Olivia's communications = inappropriate child involvement in adult conflict relay. RF-08 primary; RF-11 contextual.",
+      "rf04_b030_amplification": "RF-04 COMP-RF04-029 (Feb 15 2026 admitted-incident amplification) directly overlaps RF-11 primary zone. The hiding incident is documented in RF-04 B-030 batch summary.",
+      "rf02_visit_refusal": "RF-02 visit-refusal cascade (B-028-B-031) is structurally linked \u2014 Olivia placed in role of determining visit compliance = parentification dimension.",
+      "anticipated_primary_batches": [
+        "B-028",
+        "B-029",
+        "B-030",
+        "B-031",
+        "possibly B-007",
+        "possibly B-009"
+      ]
+    }
+  },
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jan\u2013Oct 2022 calibration batch. Zero primary RF-11 flags. This is the cooperative baseline period \u2014 messaging is logistical and cooperative per prior pass analysis. No RF-11 behavioral indicators present: no discussion of legal proceedings in Olivia's presence, no emotional-confidant language, no parentification signals. B-001 keyword hits ('responsible for' in RF-04 analysis context; 'Olivia said you' in B-001 scan) are analytical labels, not message text \u2014 no primary signals. Expected signal concentration: Phase C (B-028-B-031) with the highest density around Feb 2026 (hiding incident) and Oct 2025 (visit-refusal fear relay). Bilateral signal expected in B-030 (Feb 2026) from both directions."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

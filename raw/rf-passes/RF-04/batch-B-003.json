@@ -1,0 +1,283 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-04",
+    "batch_id": "B-003",
+    "row_range": { "start": 713, "end": 1092 },
+    "date_range": { "start": "2022-11-06", "end": "2022-12-12" },
+    "message_count": 380,
+    "timezone_note": "All EST (UTC-5). DST fall-back occurred Nov 6, 2022 — all messages in this batch are EST.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF04-ADD-001", "RF04-ADD-002", "RF04-ADD-003", "RF04-ADD-004", "RF04-ADD-005"],
+    "note": "B-003: Nov 6–Dec 12, 2022. 7 primary flags (6 Sev-1, 1 Sev-2). ARC-RF04-002 promoted WATCHING → ACTIVE (3rd signal, ROW-791). ARC-RF04-001 receives 6 new signals (total: 11). Major event: ROW-937–938 (Nov 23) — false sexual predation allegation against Eli via Abby anniversary framing. 'House bitch and taxi' / 'panties in a bunch' contemptuous language pattern recurs and escalates. Illness-skepticism pattern emerges (ROW-726, ROW-978-983, ROW-1062-1065). Abby-as-obstacle framework deployed in 3 of 7 flags."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 380,
+    "primary_flags": 7,
+    "primary_severity_distribution": { "1": 6, "2": 1, "3": 0 },
+    "peripheral_flags_total": 9,
+    "peripheral_rf_distribution": {
+      "RF-01": 3,
+      "RF-02": 1,
+      "RF-05": 2,
+      "RF-09": 2,
+      "RF-15": 1
+    },
+    "no_flag_messages": 373,
+    "flag_rate": "1.8%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF04-B003-F001",
+      "rows": "ROW-791",
+      "timestamp": "2022-11-12 16:30 UTC (11:30 EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-791: 'She said she is so hungry. Why didn't you take her to lunch or breakfast?'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Child-state relay used as accusatory vehicle for feeding-adequacy attack. Olivia has just been returned from Eli's care. Melissa opens with 'She said she is so hungry' — relaying Olivia's physical state as immediate indictment of Eli's caregiving — then pivots directly to 'Why didn't you take her to lunch or breakfast?' The relay is the mechanism: Olivia's hunger is transmitted without protective framing ('she seemed hungry when she got home — did she eat before pickup?') and instead deployed as the basis for a parenting failure accusation. ADD-003 standard: 'When Melissa relays Olivia's emotional expressions about Eli's absence, inadequacy, or harm directly to Eli without protective framing, flag as RF-04 primary. The relay act itself is the manipulation.' While the ADD-003 examples focus on emotional expressions, the same relay-as-accusation structure applies here — Olivia's physical state (hunger) is weaponized as evidence of Eli's inadequacy. ADD-002 (contemptuous attacks on parenting competence) also active: 'Why didn't you take her' carries an embedded assumption of willful neglect. This is the same episodic structure as ROW-414-416 (B-002) but simpler in delivery. Sev 1: single brief episode, no escalation, relay without extended pressure framing (ADD-003: Sev 1 threshold). Third signal for ARC-RF04-002 — promotes arc from WATCHING to ACTIVE (threshold met per arc definition: 3rd signal).",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "Olivia's hunger relayed as evidence of inadequate caregiving. Feeds inadequate-father sub-arc of ARC-RF01-001.",
+          "confidence": "medium"
+        }
+      ],
+      "context_notes": "ROW-870-889 (Nov 18-19) shows subsequent pickup/return logistics between parties — cooperative context with no RF-04 signals. ROW-791 arrives shortly after Olivia's return from Eli's home on Nov 12 (swim class day per ROW-793-808 context; ROW-792 immediately following, 'She said she looks like she's at belle's house,' is a neutral/positive Olivia anecdote with no conflict). No Eli response visible to ROW-791 in the record — consistent with Eli not engaging the accusation. Context of prior pick-up: Eli had Olivia Fri-Sat (rooted in ROW-870 Nov 18 'You get her picked up ok?' / ROW-871 'Yup' — this is the Nov 18 pickup; the Nov 12 swim day is covered by ROW-793 etc. — need to distinguish). Specifically ROW-791 (Nov 12 11:30 EST) follows swim class at 10am — Olivia was with Eli. The swim class (ROW-793 swim inquiry Nov 13) is the following day. So ROW-791 is Eli returning Olivia on Nov 12 after having her, and Melissa's first message is the hunger accusation.",
+      "pattern_tags": ["child_state_relay", "child_as_accusation_vehicle", "feeding_adequacy_attack", "inadequacy_framing"],
+      "arc_references": ["ARC-RF04-002"],
+      "arc_promotion_event": "ARC-RF04-002 WATCHING → ACTIVE (3rd signal; promotion threshold met)",
+      "image_reference": null,
+      "quote_excerpt": "'She said she is so hungry. Why didn't you take her to lunch or breakfast?' (ROW-791)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-11-12"
+    },
+
+    {
+      "message_id": "RF04-B003-F002",
+      "rows": "ROW-814 through ROW-820",
+      "timestamp": "2022-11-13 15:44–22:05 UTC (10:44 AM–5:05 PM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-814: 'Then just say that instead of getting your panties in a bunch' | ROW-815 (Sent): 'That\\'s what \"I hadn\\'t planned on it\" means I hadn\\'t planned on it and made other plans or arrangements.' | ROW-816: 'Then you got your panties in a bunch about being a back up call and dumping things last minute which I think you have me mixed up with you' | ROW-817: 'Cause your the one who calls last minute to talk, asks to pick her up last minute and pays things late' | ROW-818: 'This was a simple she wanted to call and ask if you were coming cause she wanted you there. It appears you are all up in your feelings today.' | ROW-819: 'Being a house bitch, taxi and working two jobs while taking care of two kids at your house must be exhausting you' | ROW-820: 'Also you said this like I don\\'t know what it means. \"That\\'s what \"I hadn\\'t planned on it\" means I hadn\\'t planned on it and made other plans or arrangements.\" You never said you hadn\\'t planned on it so stop being a lil bitch. You didn\\'t say that just. You simply started saying that you thought I was taking her and rambling on about not being at my beck and call'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Partial DARVO cluster with four distinct contemptuous phrases, triggered by Eli asserting a legitimate co-parenting boundary. Context: Melissa relays that Olivia wants Eli to attend swim class (ROW-794-795). Eli misunderstands, thinks he's being asked to provide a ride (ROW-796), and states he wasn't at her beck and call for last-minute logistics (ROW-803). Melissa clarifies she wasn't asking him to take Olivia — just that Olivia wanted him there (ROW-804-808). At ROW-809, the reasonable correction ('And anyways you should be the backup call cause your her dad') ends and the RF-04 pattern escalates:\n\n(1) CONTEMPTUOUS DISMISSAL (ADD-002) — Four distinct contemptuous phrases across the cluster:\n— ROW-814: 'getting your panties in a bunch' (contemptuous invalidation of Eli's boundary assertion)\n— ROW-816: 'panties in a bunch' (repeated, second use of same phrase in this episode)\n— ROW-818: 'all up in your feelings today' (contemptuous dismissal of Eli's response as emotional over-reaction)\n— ROW-820: 'stop being a lil bitch' (escalated contemptuous attack on Eli's communicative pushback)\n\nAll four phrases target the same behavior: Eli asserting that he wasn't at Melissa's beck and call. The repeated phrase pattern ('panties in a bunch' x2) combined with escalation to 'lil bitch' indicates a sustained contemptuous communication style triggered by Eli's legitimate self-advocacy. ADD-002: contemptuous attacks on Eli's conduct/character = RF-04 primary.\n\n(2) PARTIAL DARVO (ADD-001: Attack + Reverse = Sev 1) — ROW-816-817: Eli's concern about last-minute demands is immediately ATTACKED by attributing the same behavior to Eli ('I think you have me mixed up with you / Cause your the one who calls last minute to talk, asks to pick her up last minute and pays things late'). The REVERSE is complete: Eli, who raised the 'beck and call / last minute' concern, is reframed as the party who routinely creates last-minute demands. No explicit Deny component — partial DARVO per ADD-001 = Sev 1.\n\n(3) ABBY-AS-OBSTACLE (ROW-819) — 'Being a house bitch, taxi and working two jobs while taking care of two kids at your house must be exhausting you' — second deployment of 'house bitch and taxi' language (first: ROW-636, Halloween B-002). The phrase constructs contemptuous Abby-household mockery: Eli serves Abby as her domestic labor and is controlled by her household obligations. ADD-002: disproportionate contemptuous attack on Eli's domestic arrangement, triggered by Eli declining a non-scheduled swim attendance request.\n\nSeverity 1: partial DARVO + dense contempt cluster (4 phrases) but not a sustained multi-hour sustained campaign (compare Halloween Sev 2). The episode spans a day (14:44–22:05 UTC) but ROW-820 arrives 6 hours after ROW-814 as a standalone evening add-on, not continuous pressure. ARC-RF04-001 sixth signal.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "ROW-817 attributes to Eli a pattern of last-minute engagement ('calls last minute to talk, asks to pick her up last minute, pays things late') — framing Eli as an unreliable/inadequate engaged father. Feeds inadequate-father sub-arc of ARC-RF01-001.",
+          "confidence": "medium"
+        }
+      ],
+      "context_notes": "ROW-793-813: The swim class exchange prior to the RF-04 cluster — Melissa says Olivia wants Eli there (ROW-794); Eli misreads as a ride request; Melissa clarifies multiple times (ROW-804-808); Eli says he can't make it (ROW-813). All of this is in the cooperative-to-neutral zone. ROW-814 marks the RF-04 shift when Eli's 'not at your beck and call' statement (ROW-803) triggers the contemptuous response. ROW-820 (5:05 PM EST) is a late-arriving add-on that extends the episode: Melissa re-reads Eli's ROW-815 explanation and attacks his communicative clarity before delivering 'stop being a lil bitch.' No Eli response to ROW-820 visible in record. ROW-821 (Melissa, Nov 14 12:25 AM EST): 'Had to disguise the turkey for school' — neutral Olivia activity photo, topic fully shifted. The episode closes without resolution or Eli engagement.",
+      "pattern_tags": ["DARVO_partial", "contempt", "repeated_contemptuous_phrase", "panties_in_a_bunch", "house_bitch_taxi_recurring", "lil_bitch", "all_up_in_your_feelings", "boundary_assertion_penalized", "abby_as_obstacle"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'getting your panties in a bunch' (ROW-814); 'Cause your the one who calls last minute to talk, asks to pick her up last minute and pays things late' (ROW-817); 'Being a house bitch, taxi and working two jobs while taking care of two kids at your house must be exhausting you' (ROW-819); 'stop being a lil bitch' (ROW-820)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-11-13"
+    },
+
+    {
+      "message_id": "RF04-B003-F003",
+      "rows": "ROW-937 through ROW-938",
+      "timestamp": "2022-11-23 21:06 UTC (4:06 PM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-937: 'Why? You hoping to bang another one?' | ROW-938: 'I mean this is the anniversary of you meeting her when she was 7 getting ready to turn 8 and you 30. Happy anniversary'",
+      "primary_rf": "RF-04",
+      "primary_severity": 2,
+      "primary_reasoning": "Calculated contemptuous humiliation via false sexual predation allegation, triggered by a benign Thanksgiving planning question. Trigger: ROW-936 (Eli, Sent, Nov 23 2:39 PM EST): 'Are you doing anything with your family tomorrow' — straightforward question about Thanksgiving Day plans (Nov 24). Melissa's response is immediate (two messages in rapid succession) and constructs a deliberate attack:\n\nROW-937: 'Why? You hoping to bang another one?' — the phrase 'bang another one' implies Eli has already 'banged' a minor (Abby), and is now seeking to repeat the act with another child. The word 'another' is load-bearing: it treats Eli's alleged prior sexual predation as established fact, and positions the innocent holiday question as a predatory scouting inquiry.\n\nROW-938: 'I mean this is the anniversary of you meeting her when she was 7 getting ready to turn 8 and you 30. Happy anniversary' — Melissa constructs a specific false temporal narrative: Eli (age 30) 'met' Abby (age 7-8) in November of an unspecified prior year, framing their current relationship as having originated in that meeting with a child. The 'Happy anniversary' sarcasm signals this is delivered deliberately and with calculated malice, not as an off-hand remark.\n\nThe false allegation structure: Abby is Eli's niece/family member — she has been known to him since birth, and their romantic relationship began in mid-2022 (manifest context). Melissa's framing inverts this: she reframes a lifetime of family familiarity as grooming-origin contact when Abby was 7-8, and the mid-2022 romantic relationship start as the product of that predatory grooming. This is a false sexual predation narrative constructed to: (1) humiliate and destabilize Eli, (2) establish a weaponizable false narrative about the Abby relationship, (3) preemptively attack any co-parenting discussion that involves Abby's presence in the household.\n\nRF-04 classification: ADD-002 (contemptuous attacks) at elevated intensity — this is not a general intelligence insult or competence dismissal; it is targeted humiliation via false sexual crime allegation. The deliberate construction ('when she was 7 getting ready to turn 8 and you 30'), the sarcastic closer ('Happy anniversary'), and the trigger (benign holiday question) confirm this is a calculated attack, not reactive venting. Severity 2: qualitatively distinct from Sev 1 contemptuous insults — this is a crafted humiliation designed to shame Eli at the core of his personal identity and intimate relationship. The allegation is false, specific, and designed to devastate. Does not reach Sev 3 (no self-harm leverage, no sustained campaign in this instance), but significantly above Sev 1 threshold.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-15",
+          "severity": 2,
+          "note": "False sexual predation allegation: 'bang another one' + false temporal narrative (met Abby when she was 7) constructs a false child grooming accusation against Eli. RF-15 (false allegations/projection). High confidence. This is the most severe RF-15 signal seen in the record to date.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-09",
+          "severity": 1,
+          "note": "ROW-938 imposes a false historical narrative (Eli 'meeting' Abby at age 7-8) as established truth. The 'I mean' construction presents the false timeline as a corrective statement of fact, not an accusation. Gaslighting-adjacent: a false narrative is delivered as reality.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-05",
+          "severity": 1,
+          "note": "Sexual predation allegation has implicit coercive power: Melissa signals she is willing to construct and deploy false predation narratives against Eli. The allegation is a veiled intimidation — Eli's conduct with Abby could at any time be reframed through this lens to authorities or the GAL. Sev 1 (implied threat via false allegation, not an explicit threat).",
+          "confidence": "medium"
+        }
+      ],
+      "context_notes": "ROW-936 (Eli, Sent, Nov 23 2:39 PM EST): 'Are you doing anything with your family tomorrow' — day-before-Thanksgiving logistics/planning question. ROW-937-938 arrive at 4:06 PM EST — immediate, rapid-fire two-message response, suggesting the attack was ready or at least quickly constructed. ROW-939 (Eli, Sent, Nov 23 5:37 PM EST): 'Here is the 2019 awards ceremony' + link — Eli does not respond to the predation allegation at all; instead sends a completely off-topic link (unrelated to the attack). This is consistent with Eli redirecting away from an ambush attack rather than engaging it. ROW-940-946: subsequent exchanges are neutral (link sharing, calling). No evidence Eli responded to or challenged the false allegation in the text record. The absence of a response does not constitute acknowledgment or acceptance. Cross-ref context: ROW-635 (Halloween, B-002) first deployed Abby/Milo prioritization framing; ROW-938 marks the escalation of Abby-related attacks from prioritization accusations to false sexual predation allegations — a qualitative shift in the Abby-as-obstacle attack framework.",
+      "pattern_tags": ["false_predation_allegation", "abby_as_obstacle_escalated", "contemptuous_humiliation", "sexual_allegation", "calculated_attack", "false_historical_narrative", "sarcastic_closer", "disproportionate_response", "holiday_trigger"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'Why? You hoping to bang another one?' (ROW-937); 'this is the anniversary of you meeting her when she was 7 getting ready to turn 8 and you 30. Happy anniversary' (ROW-938)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-11-23"
+    },
+
+    {
+      "message_id": "RF04-B003-F004",
+      "rows": "ROW-978 through ROW-983",
+      "timestamp": "2022-12-02 20:11–22:36 UTC (3:11–5:36 PM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-978: 'If you are as sick as you claim you shouldn\\'t be around her' | ROW-979: 'You don\\'t just magically get better because she has an award' | ROW-980 (Sent): 'I see it / Yeah. I don\\'t know but I told her I would come. I can mask up and at least be there.' | ROW-981: 'You\\'re an epic douchebag' | ROW-982 (Sent): 'Wtf are you on about?' | ROW-983: 'You and how you pretend to be sick'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Contemptuous attack triggered by Eli's effort to attend his daughter's school award ceremony while managing illness. Context: Eli asked for ceremony details (ROW-976). Melissa noted she'd sent info and added illness-skeptical framing (ROW-977-979). When Eli responds that he told Olivia he'd come and will mask up (ROW-980), the direct response is ROW-981: 'You're an epic douchebag.'\n\nROW-981 as ADD-002 contemptuous attack: Eli's statement ('I told her I would come. I can mask up and at least be there') is a good-faith parental effort — attending his daughter's award despite being ill, using precautions. The response is a direct contemptuous personal attack ('epic douchebag') that characterizes Eli's effort as contemptible rather than commendable. Trigger-to-response ratio: grossly disproportionate (ADD-002: disproportionate contemptuous attack). The qualifier 'epic' intensifies the contempt beyond a casual insult — it is a deliberate maximally-dismissive characterization.\n\nROW-983: 'You and how you pretend to be sick' — this is the DARVO attack component: Eli's illness (genuine per Eli) is recast as a performance/deception. This pairs illness-deception accusation with the prior contempt, adding a character-integrity attack on top of the personal insult. 'You and how you' construction is contemptuous ('you and your nonsense') in addition to the deception accusation.\n\nIllness-skepticism pattern: This is the second time illness skepticism appears in B-003 (first: ROW-726, Nov 8: 'Anyways weren't you just so sick that you couldn't be around her? You should get Covid checked' — noted as near-boundary). In combination with the Dec 9 illness accusation (ROW-1062-1065), this represents a recurring sub-pattern of dismissing Eli's health claims as laziness/deception — worth tracking across batches.\n\nSeverity 1: single brief contemptuous exchange, not a sustained campaign. 'Epic douchebag' and 'pretend to be sick' are significant contemptuous attacks but not a sustained multi-tactic campaign. ARC-RF04-001 eighth signal.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-09",
+          "severity": 1,
+          "note": "ROW-983: 'you pretend to be sick' — imposes a false narrative (Eli's illness is performance) as established fact. Gaslighting-adjacent: Eli's genuine reported state is dismissed and replaced with a deceptive-intent narrative.",
+          "confidence": "medium"
+        }
+      ],
+      "context_notes": "ROW-976 (Eli, Sent, Dec 2 3:01 PM EST): 'When and where is that ceremony tomorrow?' — straightforward logistics question. ROW-977 (Melissa): 'I sent you the info already / If you are as sick as you claim you shouldn't be around her' — response mixes information refusal with illness skepticism (ROW-977-979). The illness-skeptical framing in ROW-978-979 is partially legitimate: Olivia has upcoming surgery (ROW-986: 'She needs to stay healthy for surgery') and Melissa has a genuine interest in Olivia not being exposed to illness. However, ROW-979 ('You don't just magically get better because she has an award') is dismissive/contemptuous rather than collaborative health-concern framing, and ROW-981 ('epic douchebag') in response to Eli's masking offer removes any health-concern legitimacy from the episode. ROW-985-986 (Melissa, evening Dec 2): 'Then if you're that sick you don't need to go around her / If you r been sick two weeks and still doing poor you don't need to be around Olivia. She needs to stay healthy for surgery' — these post-attack messages return to legitimate health-concern framing, suggesting the 'epic douchebag' attack was an RF-04 contemptuous spike within a legitimate health-concern discussion, not a full campaign.",
+      "pattern_tags": ["contemptuous_personal_attack", "disproportionate_response", "illness_deception_accusation", "illness_skepticism_pattern", "ADD-002"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'You're an epic douchebag' (ROW-981); 'You and how you pretend to be sick' (ROW-983)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-12-02"
+    },
+
+    {
+      "message_id": "RF04-B003-F005",
+      "rows": "ROW-1044 through ROW-1046",
+      "timestamp": "2022-12-06 12:57–13:01 UTC (7:57–8:01 AM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-1044: 'So it was only twice. Get your panties unwadded' | ROW-1045: 'It didn\\'t ring the first time. I\\'ve been having issues lately especially when I call mom where it rings a bunch then says \"Verizon message the number you called can\\'t be completed as dialed\"' | ROW-1046: 'So when it didn\\'t ring at all I didn\\'t think it went through. Not that I need to explain to your dumbass'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Contemptuous dismissal of Eli's legitimate communication concern, with dual-contempt escalation. Context: Olivia relayed (ROW-1038-1040) that a call with Eli 'was awkward' — only 10 seconds twice. Eli's response (ROW-1041) addressed the call quality issue and referenced his prior request not to call repeatedly unless urgent. Melissa explains (ROW-1042-1043) it was only twice and the phone had issues.\n\nROW-1044: 'Get your panties unwadded' — fifth use of 'panties' contemptuous language in this RF-04 analysis (prior: ROW-814 x2, ROW-816; this phrasing is 'unwadded' vs. prior 'in a bunch'). The phrase dismisses Eli's concern — stated reasonably in ROW-1041 — as emotional over-reaction. ADD-002: contemptuous dismissal triggered by Eli's legitimate communication concern about call quality.\n\nROW-1045: Melissa provides a technical explanation (phone issues with Verizon) — cooperative/neutral content.\n\nROW-1046: 'Not that I need to explain to your dumbass' — after providing the explanation in ROW-1045, Melissa adds 'dumbass' as a contemptuous cap to what was otherwise a cooperative message. The phrase 'Not that I need to explain to your dumbass' is a double contempt: (1) 'dumbass' — direct intelligence attack (ADD-002); (2) 'Not that I need to explain' — contemptuous assertion of Eli's inferior status that requires no justification from Melissa. The explanation itself (ROW-1045) is reasonable; the contemptuous addendum (ROW-1046) is not.\n\nRecurring contemptuous phrase pattern — the 'panties' family of phrases has now appeared across three separate B-003 episodes: ROW-814, ROW-816, ROW-820 (Nov 13), and ROW-1044 (Dec 6). This is a consistent contemptuous register Melissa deploys when Eli asserts any boundary or communicates a concern. ADD-002: pattern of contemptuous dismissal of Eli's legitimate assertions. Sev 1: brief three-message cluster, dual contemptuous phrases, no sustained campaign. ARC-RF04-001 ninth signal.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-1038-1040 (Melissa, Dec 6 7:12 AM EST): Olivia's relay about the awkward call — Melissa is sharing Olivia's perception, not using it as a guilt delivery in this context. ROW-1041 (Eli, Sent, Dec 6 7:30 AM EST): 'What? Lucky I answered a second time. I have asked you not to call repeatedly unless it's an emergency. If I can answ...' [truncated] — Eli addressing the repeat-call boundary. ROW-1042-1043 (Melissa): technical explanation. ROW-1044: contempt. ROW-1045: explanation. ROW-1046: contemptuous cap. No Eli response to the 'dumbass' message visible; the call/pickup logistics continue in ROW-1047.",
+      "pattern_tags": ["contempt", "dumbass", "panties_unwadded", "recurring_contemptuous_phrase", "ADD-002", "contempt_after_explanation"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'Get your panties unwadded' (ROW-1044); 'Not that I need to explain to your dumbass' (ROW-1046)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-12-06"
+    },
+
+    {
+      "message_id": "RF04-B003-F006",
+      "rows": "ROW-1055 through ROW-1058",
+      "timestamp": "2022-12-07 01:05–01:19 UTC (Dec 6, 8:05–8:19 PM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-1055: 'You didn\\'t communicate that you were going to be late. Then you lied to me. You didn\\'t do any homework with her and she says she\\'s about to owe her pants. Great dad' | ROW-1056: 'She said she was about to owe herself and all you did was roll down your window and tell the road to go faster. Wtf is that?' | ROW-1057: 'It\\'s not good parenting.' | ROW-1058: 'And you were on this side of town and went clear across town to take Abby home when it would\\'ve been quicker all the way around to just drop Olivia off here first. Instead she has to listen to a kid scream that whole way and then can\\'t get her homework and shower done in time'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Multi-accusation parenting attack cluster following Eli's late return of Olivia. Context: Eli was scheduled to return Olivia by a fixed time. ROW-1047-1049 (Dec 6, 7:35 PM EST): Melissa messages that Eli is late and didn't call. ROW-1050-1053: logistical exchange as Eli arrives at the Kroger handoff location. ROW-1055-1058 follow the handoff as Melissa's after-action attack.\n\nThe cluster layers six distinct attack elements:\n\n(1) False accusation: 'Then you lied to me' (ROW-1055) — a deception accusation attached to the late-return. No content provided for what the 'lie' was; the accusation is asserted without elaboration, adding character-integrity attack to the logistics failure.\n\n(2) Parenting neglect accusation: 'You didn't do any homework with her' (ROW-1055) — homework neglect claim as parenting competence attack (ADD-002).\n\n(3) Child-state relay + sarcastic contempt: 'she says she's about to owe her pants. Great dad' (ROW-1055) — Olivia's physical urgency (nearly urinating) is relayed as evidence of Eli's parenting failure. 'Great dad' is contemptuous sarcasm — a direct parenting competence dismissal (ADD-002). The ADD-003 child-state relay mechanism is active: Olivia's bodily state delivered as accusatory evidence.\n\n(4) Contemptuous characterization of Eli's response: 'all you did was roll down your window and tell the road to go faster' (ROW-1056) — Melissa's contemptuous construction of Eli's in-car response to Olivia's urgency. Regardless of accuracy, this frames Eli's response to a child's urgent need as callous and inadequate. ADD-002.\n\n(5) Direct parenting judgment: 'It's not good parenting.' (ROW-1057) — standalone explicit parenting competence condemnation.\n\n(6) Abby-as-obstacle framework deployment: ROW-1058 — 'And you were on this side of town and went clear across town to take Abby home when it would've been quicker all the way around to just drop Olivia off here first. Instead she has to listen to a kid scream that whole way and then can't get her homework and shower done in time.' Full Abby-obstacle causal chain: Eli's choice to take Abby home → Olivia suffered (late return, nearly peed herself, no homework, 'a kid scream' the whole way). The phrase 'a kid scream' — referring to Milo — is disparaging. Combined: Eli chose Abby/Milo's convenience over Olivia's physical comfort and schedule.\n\nPARTIAL DARVO component (ADD-001): Eli is late returning Olivia — this is the trigger. Attack: six-layer attack on Eli's parenting conduct. Reverse: the lateness/homework failure is framed not as a logistics miscommunication but as evidence of Eli's fundamental inadequacy as a father ('Great dad'; 'It's not good parenting'). No explicit Deny of responsibility for any part of the situation. Partial DARVO (Attack + Reverse) = Sev 1.\n\nSeverity 1: high-density cluster (6 attack elements in 4 messages) but partial DARVO rather than full three-component sequence. The 'Great dad' sarcasm combined with the Abby-detour accusation marks this as one of the stronger Sev 1 flags in the record. ARC-RF04-001 tenth signal.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-02",
+          "severity": 1,
+          "note": "ROW-1047-1049 (late return enforcement cluster) is RF-02 territory (access timing enforcement, 'You have to abide by the rules'). The late-return accusation in ROW-1055 sits at the RF-02/RF-04 boundary — the return-timing breach is RF-02, but Melissa's six-attack response to that breach is RF-04.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "'Great dad' (ROW-1055) + 'It's not good parenting' (ROW-1057) + Abby-prioritization framing (ROW-1058) — inadequate/choosing-others-over-Olivia father narrative. Feeds ARC-RF01-001.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-1047-1049 (Dec 6, 7:35 PM EST): immediate late-return enforcement messages. ROW-1050-1053: logistical exchange (Melissa at Kroger, Eli arriving). ROW-1054 (Melissa, 7:59 PM EST): 'Where at?' ROW-1055-1058 arrive after the handoff is complete (8:05-8:19 PM EST). Eli's sent messages during and after the logistical window are not visible in the relevant rows — no Eli response to ROW-1055-1058 is visible in the record (next visible message is ROW-1060, Dec 9: 'Are you picking her up tomorrow?'). The 48-hour gap between ROW-1058 and ROW-1060 suggests neither party engaged the attack in the immediate aftermath. ROW-1058's 'a kid scream' refers to Milo — Abby's son who lives with Eli. The characterization of Milo's behavior during car rides as 'screaming' is contemptuous framing that serves the Abby-detour accusation: Olivia was not just inconvenienced by the detour but subjected to Milo's behavior.",
+      "pattern_tags": ["multi_accusation_cluster", "DARVO_partial", "great_dad_sarcasm", "homework_neglect_accusation", "false_accusation_lied", "child_state_relay", "parenting_judgment", "abby_as_obstacle", "milo_disparagement", "ADD-002", "ADD-003"],
+      "arc_references": ["ARC-RF04-001", "ARC-RF04-002"],
+      "image_reference": null,
+      "quote_excerpt": "'You didn't do any homework with her and she says she's about to owe her pants. Great dad' (ROW-1055); 'all you did was roll down your window and tell the road to go faster' (ROW-1056); 'It's not good parenting.' (ROW-1057); 'you were on this side of town and went clear across town to take Abby home... Instead she has to listen to a kid scream that whole way' (ROW-1058)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-12-06"
+    },
+
+    {
+      "message_id": "RF04-B003-F007",
+      "rows": "ROW-1062 through ROW-1065",
+      "timestamp": "2022-12-09 00:43–02:40 UTC (Dec 8, 7:43–9:40 PM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-1062: 'I think you are full of bullshit' | ROW-1063 (Sent): 'I am not' | ROW-1064 (Sent): 'Ok. You said you didn\\'t want her being exposed to anything because she has surgery - there is a good possibility she could get it too. So I was taking that into consideration. You want me to show you the emails I sent cancelling my work meetings?' | ROW-1065: 'You cancel stuff cause you\\'re lazy'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Illness-deception accusation pattern — second instance in 7 days. Context: Eli tells Melissa he can't pick Olivia up on Dec 9 because he's getting over something from yesterday that Abby and Milo now have (ROW-1061). Melissa's response: ROW-1062 'I think you are full of bullshit.' Eli defends (ROW-1063-1064), invoking Melissa's own prior concern about Olivia's exposure before surgery and offering to provide work-cancellation emails as evidence. Response: ROW-1065 'You cancel stuff cause you're lazy.'\n\n(1) ADD-002 contemptuous attacks:\n— ROW-1062: 'full of bullshit' — Eli's genuine reported illness dismissed as deliberate dishonesty\n— ROW-1065: 'You cancel stuff cause you're lazy' — character attack reframing illness as laziness/indifference\n\n(2) Illness-deception sub-pattern: This is the third illness-skepticism instance in B-003:\n— ROW-726 (Nov 8, near-boundary): 'Anyways weren't you just so sick that you couldn't be around her? You should get Covid checked'\n— ROW-978-983 (Dec 2, flagged F004): 'If you are as sick as you claim / You're an epic douchebag / You and how you pretend to be sick'\n— ROW-1062-1065 (Dec 9, this flag): 'full of bullshit / You cancel stuff cause you're lazy'\nThe pattern: whenever Eli cites illness as a reason for unavailability, Melissa attributes it to deception or laziness. This is a recurring contemptuous response pattern targeting Eli's self-reported health states.\n\n(3) Eli's ROW-1064 defense invokes Melissa's own prior statement ('You said you didn't want her being exposed to anything because she has surgery') — demonstrating that Eli is acting consistent with Melissa's stated preference. The contemptuous response to this consistent behavior ('You cancel stuff cause you're lazy') disregards Eli's reasoning and reframes the health precaution as a character flaw. ADD-002: disproportionate contemptuous attack on Eli's stated reasoning.\n\nSeverity 1: brief two-message contemptuous cluster (ROW-1062, ROW-1065 separated by Eli's defense), no sustained campaign. ARC-RF04-001 eleventh signal.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-1060 (Melissa, Dec 9 7:13 PM EST): 'Are you picking her up tomorrow?' ROW-1061 (Eli, Sent, Dec 9 7:33 PM EST): 'No. I am getting over something from yesterday that now Abby and Milo have.' — Eli's illness report. ROW-1062 immediate contemptuous response. ROW-1063-1064: Eli's defense, invoking surgery precaution context and offering email evidence. ROW-1065 (9:40 PM EST, ~2 hours after ROW-1064): delayed contemptuous attack — 'lazy' added after Eli's reasoned defense, suggesting the attack is maintained despite the offered evidence. ROW-1066 (Melissa, same timestamp as ROW-1065): 'Switched her tinsel out for her outfit tomorrow' — immediate topic shift to neutral Olivia content. The pattern of contempt followed by immediate neutral topic shift is consistent with B-002 (Halloween cluster followed by normal parenting messages).",
+      "pattern_tags": ["illness_deception_accusation", "illness_skepticism_pattern", "full_of_bullshit", "you_cancel_cause_youre_lazy", "contemptuous_dismissal", "ADD-002", "defense_penalized"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'I think you are full of bullshit' (ROW-1062); 'You cancel stuff cause you're lazy' (ROW-1065)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-12-08"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-725 through ROW-726",
+      "reason_noted": "Near-boundary RF-04: ROW-725 'You need to do better than texting at 10:30 at night get it together' — mild competence dismissal ('get it together') within RF-02 access-control context (last-minute pickup request, no answer). ROW-726: 'Anyways weren't you just so sick that you couldn't be around her? You should get Covid checked' — first illness-skepticism instance in B-003 record; contemptuous questioning of Eli's prior illness claim. Together a mild contempt-dismissal + illness-skepticism pair, but the RF-02 context dominates and neither message meets the primary RF-04 threshold individually. Noted as illness-skepticism pattern origin (B-003) — pattern becomes explicit in ROW-978-983 and ROW-1062-1065."
+    },
+    {
+      "message_id": "ROW-735",
+      "reason_noted": "Near-boundary RF-04: 'You don't have any clue what is going on with her' (Nov 8 8:24 AM EST) — blanket competence dismissal in response to Eli sharing an ADHD/focus article (ROW-729-730). ADD-002 would apply; however: (a) single brief message; (b) Melissa immediately follows with cooperative, substantive information about Olivia's homework situation (ROW-737-740: 'She does good for the most part... She's been doing really good on homework'). The surrounding cooperative context partially mitigates. Near-boundary: excluded at primary threshold. The same underlying dynamic (Eli's parenting input dismissed as ignorant) recurs with more contemptuous delivery in subsequent batches."
+    },
+    {
+      "message_id": "ROW-781 through ROW-789",
+      "reason_noted": "Financial pressure cluster (Nov 11): 'You gonna pay or do I file contempt?' (ROW-782); 'You need to budget better' (ROW-787); 'You're in contempt at this point' (ROW-788); 'You need to borrow off someone or something otherwise you'll be going back to court' (ROW-789). Primarily RF-06 (financial coercion) and RF-05 (legal threats). RF-04 element: 'You need to budget better' (ROW-787) is patronizing/shaming but mild. Near-boundary RF-04 shaming below primary threshold given the RF-06 context dominance. See also ROW-823-830 (Nov 14): similar financial pressure cluster. Both noted for cross-RF synthesis (RF-05/RF-06 territory)."
+    },
+    {
+      "message_id": "ROW-921 through ROW-922",
+      "reason_noted": "Near-boundary RF-04: ROW-921 'She will be so happy. I was so worried that she wouldn't have her family there tomorrow when the other kids do. I didn't want her feeling left out or alone' — potential passive family-absence guilt framing (concern that Olivia's 'family' wouldn't be there implies Eli's absence would leave her alone). However, this reads primarily as genuine parental relief about Olivia's excitement, not a directed guilt delivery to Eli. ROW-922: 'And you are going to come and do what? She can't go to your house' — dismissive of Eli's emergency contact offer but not strongly manipulative. Excluded from primary RF-04; context-noted."
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 2,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [
+      "ARC-RF04-002 (WATCHING → ACTIVE: 3rd signal, ROW-791, Nov 12 — child-state relay feeding accusation; promotion threshold met per arc definition)"
+    ],
+    "arcs_resolved_this_batch": [],
+    "new_arc_signals": {
+      "ARC-RF04-001": ["RF04-B003-S002 (ROW-814-820)", "RF04-B003-S003 (ROW-937-938)", "RF04-B003-S004 (ROW-978-983)", "RF04-B003-S005 (ROW-1044-1046)", "RF04-B003-S006 (ROW-1055-1058)", "RF04-B003-S007 (ROW-1062-1065)"],
+      "ARC-RF04-002": ["RF04-B003-S001 (ROW-791)"]
+    },
+    "arc_signal_totals_post_batch": {
+      "ARC-RF04-001": 11,
+      "ARC-RF04-002": 3
+    },
+    "compounds_detected_this_batch": [
+      "ROW-937-938 (Nov 23): RF-04 contemptuous humiliation (primary) + RF-15 false predation allegation + RF-09 false historical narrative + RF-05 implied coercive threat. Most severe RF-15 signal in record to date. Qualitative escalation of Abby-as-obstacle framework from prioritization accusations (B-002) to false sexual predation narrative."
+    ],
+    "candidate_signals_held": 0
+  },
+
+  "checkpoint_items_generated": {
+    "cp3_count": 2,
+    "cp4_count": 0,
+    "items": [
+      "CP3-RF04-002: ARC-RF04-002 ACTIVE — Child-Mediated Guilt Relay arc promoted to ACTIVE (3rd signal, ROW-791, Nov 12). Arc now has 3 signals across B-001, B-002, B-003. Signal pattern: abandonment/emotional wound delivery (ROW-361-363, Sev 2), behavioral criticism relay (ROW-545, Sev 1), feeding-adequacy accusation relay (ROW-791, Sev 1). Arc is less intense than ARC-RF04-001 but structurally consistent: Melissa uses Olivia's statements/states as delivery vehicles for parenting adequacy accusations to Eli. Watch for escalation in emotional weight and frequency.",
+      "CP3-RF04-003: ROW-937-938 (Nov 23) — False sexual predation allegation via Abby anniversary framing. This is a qualitative escalation of the Abby-as-obstacle framework beyond prioritization accusations (Halloween cluster, B-002) into false sexual crime territory. 'Bang another one' + specific age (7-8) + calculated sarcasm ('Happy anniversary') constitute a deliberately constructed predation narrative. This message is the anchor event for RF-15 in Phase A and should be cross-referenced in any RF-15 analysis. Note: if Melissa has repeated this or similar allegations elsewhere in the record (different phrasing, different context), this pattern is critical for the attorney's strategy."
+    ]
+  },
+
+  "batch_observations": {
+    "tone_assessment": "B-003 (Nov 6–Dec 12, 2022) is predominantly cooperative-to-neutral with 7 RF-04 spikes distributed across the 5-week period. The dominant tone is logistical coordination (swim class, school activities, financial exchanges, Olivia holiday events) with periodic contemptuous attacks. Unlike B-002 where one episode (Halloween) dominated, B-003 shows a more distributed pattern of lower-intensity RF-04 signals (6 of 7 are Sev 1) interspersed with cooperative content. The exception is ROW-937-938 (Nov 23, Sev 2) which is qualitatively distinct from the surrounding tone.",
+    "direction_balance_note": "All 7 primary RF-04 flags are Received (Melissa → Eli). Eli's sent messages throughout B-003 are defensive factual responses, logistical communications, and reactive Phase A content. ADD-005 (Phase A reactive responses = not RF-04) is consistently applied — Eli's responses to contemptuous attacks (e.g., 'Wtf are you on about?' ROW-982; 'I am not at your beck and call' ROW-803) are reactive assertions, not manipulation campaigns.",
+    "pattern_development_note": "Three significant pattern developments in B-003:\n\n(1) CONTEMPTUOUS LANGUAGE CONSOLIDATION: The 'panties' family of phrases ('panties in a bunch' x2, 'panties unwadded,' 'lil bitch') now appears across three episodes in B-003 (ROW-814, ROW-816, ROW-820, ROW-1044). This contemptuous register is becoming a consistent feature of Melissa's response to any Eli boundary assertion or communication concern. Combined with 'house bitch and taxi' (ROW-819, second deployment after Halloween ROW-636), the contemptuous attack vocabulary targeting Eli's domestic arrangement is reinforcing.\n\n(2) ILLNESS-SKEPTICISM SUB-PATTERN: Three instances in B-003 (ROW-726 near-boundary, ROW-978-983, ROW-1062-1065). Whenever Eli cites illness as a reason for unavailability, Melissa responds with contemptuous dismissal and character attribution (laziness, deception). This sub-pattern warrants tracking through subsequent batches — it may intensify as Eli's boundary-setting behavior increases in later phases.\n\n(3) ABBY-AS-OBSTACLE QUALITATIVE ESCALATION: The Abby-related attack framework escalated in B-003 from 'prioritization' accusations (B-002 Halloween) to false sexual predation allegations (ROW-937-938). This is the most significant single development in B-003. The deployment pattern in B-003: mild contempt (ROW-819 'house bitch and taxi'), multi-accusation Abby-detour narrative (ROW-1058), and false sexual predation allegation (ROW-937-938) — three qualitatively different attack types all using Abby as the vehicle.",
+    "cross_rf_context": "RF-01 arc (read-only, ACTIVE): B-003 adds peripheral RF-01 content via ROW-791, ROW-817, ROW-1055-1058 (inadequate-father characterizations). ROW-937-938 feeds ARC-RF01-001's sub-arcs (choosing-others-over-Olivia + predatory-father narrative). RF-02 arc (read-only, ACTIVE): ROW-1047-1049 return-late enforcement cluster is RF-02 territory; flagged F006 sits at the RF-02/RF-04 boundary. RF-15 (not yet analyzed): ROW-937-938 is the strongest RF-15 signal in the Phase A record and should be prioritized when the RF-15 pass runs. RF-09 (not yet analyzed): ROW-938 and ROW-983 contain gaslighting-adjacent false narrative constructions that should be cross-referenced in the RF-09 pass."
+  }
+}

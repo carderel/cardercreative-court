@@ -1,0 +1,181 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-007",
+    "row_range": {"start": 2229, "end": 2580},
+    "date_range": {"start": "2023-04-03", "end": "2023-06-02"},
+    "episode_range": {"start": "EP-0278", "end": "EP-0350"},
+    "message_count": 352,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": "B-007 used date-based row extraction (2023-04-03 to 2023-06-02) due to anomalous triage row range (2229-10927). Actual extracted rows: 2229-2580 (352 messages). ARC-RF02-001 receives a significant signal (ROW-2550 — Melissa explicitly confirms DND active at 8:30, offers to turn it off). ARC-RF02-002 promoted to ACTIVE (7 cumulative signals, well above 3-signal threshold). New CANDIDATE arc ARC-RF02-005 opened: Melissa conditioning Olivia's visit attendance on Abby's exclusion (ROW-2395-2409). Three child preference relays in this batch (ROW-2308, ROW-2362, ROW-2417)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 352,
+    "primary_flags": 6,
+    "primary_severity_distribution": {"1": 5, "2": 1, "3": 0},
+    "peripheral_flags_total": 3,
+    "peripheral_rf_distribution": {"RF-04": 1, "RF-05": 2},
+    "no_flag_messages": 346,
+    "flag_rate": "1.7%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-2308",
+      "date": "2023-04-13",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't want to call back",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Eli had just called; Melissa relays Olivia's preference not to call back. Per CA-RF02-02: the preference cannot be independently verified under the DND infrastructure. This is the fifth CA-RF02-02 pattern signal across the dataset (joining ROW-2077, ROW-2201 in B-006).",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2314",
+      "date": "2023-04-14",
+      "direction": "Received",
+      "verbatim_message": "She is not calling you this late even if she is awake.",
+      "severity": 1,
+      "rf_indicators": ["phone_access_control", "cutoff_enforcement"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "Direct late-night access refusal. Context: Eli texted 'If she is still awake she can call to say hi' (ROW-2313) at approximately 9:49pm. Melissa's response is categorical: Olivia is 'not calling you this late even if she is awake' — Melissa's own decision, not Olivia's preference. The cutoff (8:30pm) is the operational frame. This is distinct from the child-preference relay pattern (CA-RF02-02): here Melissa is not relaying a preference but imposing her own judgment that the call will not happen. ARC-RF02-001 enforcement signal.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2362",
+      "date": "2023-04-20",
+      "direction": "Received",
+      "verbatim_message": "She said to tell you that she loves you but doesn't really want to talk right now",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay with reassurance softener. Context: Eli had been on a work call, his part was over, he offered Olivia the option to call (ROW-2361). Melissa relays that Olivia 'doesn't really want to talk right now' but cushions with 'she loves you.' Per CA-RF02-02: the softening tag ('but she loves you') is consistent with the pattern — it closes out the contact while minimizing apparent rejection. The DND infrastructure is active; the preference cannot be independently verified.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2395-2409",
+      "date": "2023-04-28",
+      "direction": "Received",
+      "verbatim_message": "ROW-2395: 'Will you be leaving her in the car by herself?' | ROW-2396: 'She said she doesn't want Abby around' | ROW-2398: 'She said she doesn't want Abby around cause Abby was mean to her last time' | ROW-2399: 'She said that she doesn't want to go if Abby is there' | ROW-2407: 'She actually told me this morning that she wants me to pick her up from primrose and that you can pick her up from here and if Abby's in the car she won't have to go' | ROW-2408: 'That was her making that plan all on her own.' | ROW-2409: 'She is adamant that she doesn't want to go with you if Abby is with you. She says milo can come'",
+      "severity": 2,
+      "rf_indicators": ["conditional_access", "visit_access_condition", "third_party_exclusion_demand"],
+      "arc_signal": "ARC-RF02-005",
+      "flag_reasoning": "Melissa conditions Olivia's visit attendance on the absence of Eli's partner Abby: 'she won't go if Abby is there' (ROW-2399); 'if Abby's in the car she won't have to go' (ROW-2407). This functions as a visit gate — Eli's parenting time is conditioned on who accompanies him. Melissa frames this entirely as Olivia's autonomous preference ('That was her making that plan all on her own'), but the relay functions to insert Melissa's veto over Eli's companionship during his parenting time. Note: the triggering incident (Abby allegedly saying 'sounds like Olivia doesn't want any peeps' after Olivia said she would tell Melissa about being left in the car) is itself disputed and involves Melissa's account. ROW-2401 provides Melissa's version: Abby made the comment in response to Olivia's threat to report, which Olivia interpreted as a punishment for telling the truth. Even if Abby's comment was unfortunate, Melissa relaying 'she won't go' as a standing visit condition — rather than addressing the specific incident — is the RF-02 behavior.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2417",
+      "date": "2023-05-02",
+      "direction": "Received",
+      "verbatim_message": "My ringer was still off from work. She said she doesn't want to call though.",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Melissa explains ringer was off (from work), then relays Olivia's preference not to call. The explanation for the ringer adds context but does not change the relay pattern — Olivia's preference is being relayed by Melissa as the intermediary, with no independent verification possible. The ringer-off detail is notable: mirrors the DND context where Melissa controls the communication channel state.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2550",
+      "date": "2023-05-29",
+      "direction": "Received",
+      "verbatim_message": "I don't even see that you called. If you called at 8:30 my do not disturb is on. I'll turn it off since she can sleep in and you can call back",
+      "severity": 1,
+      "rf_indicators": ["phone_access_control", "dnd_confirmation", "selective_enforcement"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "Melissa explicitly confirms the DND system is active at 8:30pm and offers real-time selective control: 'If you called at 8:30 my do not disturb is on. I'll turn it off since she can sleep in.' This is the second on-record instance of Melissa voluntarily disabling the DND (first: ROW-1186, B-004: 'I'll take the do not disturb off if you wanna call her in 5 minutes'). Both instances confirm CA-RF02-01's selective enforcement finding: when Melissa wants contact to happen, she removes the restriction; when she does not, the restriction stands. The 8:30pm DND is not an automated system that cannot be modified — it is under Melissa's direct real-time control.",
+      "confidence": "high"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-2293-2295",
+      "reason_noted": "Melissa unilaterally decides to cancel Eli's visit when he's delayed by a physical therapy appointment he forgot about (ROW-2288): 'We're not playing wait and see. I'll just pick her up since you are going back on your promise to her' (ROW-2294). Melissa then offers a scaled-back version: 'You want to at least pick her up and take her to lunch then take her back?' (ROW-2295). Not flagged as primary RF-02: Eli was genuinely late due to a forgotten PT appointment, providing legitimate basis for Melissa's frustration. Melissa also offered an alternative rather than full cancellation. Noting as a visit-management conflict instance."
+    },
+    {
+      "message_id": "ROW-2327-2334",
+      "reason_noted": "Eli misses the 8:30pm call window by 2 minutes ('Didn't realize what time it was. Saw it 8:32', ROW-2329). Melissa responds with shaming: 'You've literally had all day' (ROW-2330), 'She didn't cross your mind at all?' (ROW-2331). Melissa then sends an Amazon link to a 'Dementia Clock' (ROW-2334) in response to Eli's acknowledgment that he has trouble keeping track of time. The 2-minute miss is the operational context; the shaming escalation is the RF-05 behavior. Not flagged as primary RF-02 because the call was not explicitly blocked (Eli asked 'She want to call?', Melissa redirected with shaming rather than facilitating or denying). The 'Dementia Clock' is flagged as peripheral RF-05."
+    },
+    {
+      "message_id": "ROW-2380",
+      "reason_noted": "Melissa relays a double preference check: 'She said she didn't want to call back when I got off the phone awhile ago. I just asked her again and she said no.' The double-check (Melissa asked twice) is a cooperative gesture that diminishes the CA-RF02-02 flag strength. Not flagged as primary. The willingness to re-offer the call-back opportunity is analytically positive — this is one of the cleaner examples of cooperative preference relay in the dataset."
+    },
+    {
+      "message_id": "ROW-2415",
+      "reason_noted": "Melissa relays Olivia's preference not to call: 'She said she didn't want to. Owen had tried to FaceTime a few times too and she didn't want to talk to him either. Sometimes she just wants to chillax.' The parallel data (Owen also turned down) provides meaningful mitigation — Olivia's reluctance to take calls was not specific to Eli. Not flagged as CA-RF02-02 primary: the cross-reference to Owen's rejected FaceTime suggests a genuine 'chillax' preference rather than managed contact denial."
+    },
+    {
+      "message_id": "ROW-2460-2463",
+      "reason_noted": "ROW-2460: 'She's screaming when she pees cause you did something to her vagina when you picked her up.' Initial alarming language. ROW-2463 clarification: 'For clarity she said you hurt it because you picked her up and her outfit went up and gave her a wedgie in the front and she screamed and you put her down. She is not saying you touched it or anything.' Melissa corrected the framing within the same exchange. Not flagged as RF-15 primary because: (1) Melissa explicitly walked back the allegation; (2) the clarification was unprompted; (3) the incident has a mundane explanation (wardrobe wedgie). However, the initial language ('you did something to her vagina') is notable for the RF-15 future pass — alarming framing before clarification."
+    },
+    {
+      "message_id": "ROW-2534",
+      "reason_noted": "Melissa denies Eli's visit request (May 26) with 'No. It's her last day and I'm already getting off work early to do parent pick up.' Visit denial with a legitimate stated reason (last day of school, Melissa already committed to parent pickup). Not flagged as RF-02 primary — the reason is specific and event-driven rather than a pattern-based restriction."
+    },
+    {
+      "message_id": "ROW-2566",
+      "reason_noted": "Melissa relays Olivia's conditional preference for a June 1 visit: 'She said she only wants you to pick her up if you take her to the house and swim with her.' This functions as a visit condition (swimming required). Context: the pool at Melissa's house was just completed (ROW-2548). Eli can't swim for another week due to a healing skin condition (ROW-2568-2572). The visit does not happen. Near CA-RF02-02 boundary (preference relay as visit condition), but the condition (swimming) reflects Olivia's excitement about the new pool rather than a manipulation tactic. The medical barrier to swimming is the operative obstacle. Not flagged as primary RF-02 but noting for the visit-condition pattern."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-2373",
+      "peripheral_rf": "RF-05",
+      "severity": 2,
+      "note": "'And Abby doesn't need to tell her that she can't have a treat if she tells me what's going on. That bitch can shut her fucking whore mouth' — Extreme derogatory language directed at Eli's partner. 'Bitch' and 'fucking whore mouth' about Abby in a co-parenting communication is among the most severe RF-05 language in the dataset. This is sent in the context of the April 22 conflict cluster, alongside contempt threats (ROW-2375-2376) and access ultimatums (ROW-2377-2379).",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2375-2376",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "ROW-2375: 'And don't be leaving her in the car with Abby alone either. That's contempt of court.' ROW-2376: 'Don't ever leave olivia in the car by herself or with just Abby. I will file contempt charges.' Melissa asserts that Abby being alone with Olivia in the car constitutes contempt of court. The legal basis for this claim is unclear — dissolution agreements typically address primary and secondary caregivers, not whether a parent's partner may be present in a vehicle. The contempt threat appears to be leveraging legal language to control who may be with Olivia during Eli's parenting time. RF-04 (legal weaponization/control threat).",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2334",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "After Eli acknowledges he has trouble keeping track of time, Melissa sends an Amazon link to a 'Dementia Clock 2.0 with 15 Custom Reminders' (product designed for dementia patients). Mocking through implied diagnosis — Eli's time-management difficulty reframed as cognitive impairment. Consistent with the B-005 pattern of using Eli's acknowledged difficulties to ridicule him.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 2,
+    "watching_arc_count": 2,
+    "candidate_arc_count": 2,
+    "arcs_promoted_this_batch": ["ARC-RF02-002"],
+    "arcs_opened_this_batch": ["ARC-RF02-005"],
+    "arcs_resolved_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": ["ROW-2314", "ROW-2550"],
+      "ARC-RF02-002": ["ROW-2308", "ROW-2362", "ROW-2417"],
+      "ARC-RF02-003": [],
+      "ARC-RF02-004": [],
+      "ARC-RF02-005": ["ROW-2395-2409"]
+    },
+    "arc_001_cumulative_signals": 13,
+    "arc_002_cumulative_signals": 7,
+    "arc_002_promotion_note": "ARC-RF02-002 promoted WATCHING → ACTIVE. Cumulative signal count: 7 (far exceeds 3-signal threshold). Pattern has evolved from 'Melissa objecting to Eli making plans directly with Olivia' (ROW-299, ROW-416) to a consistent pattern of Melissa as sole communication intermediary — relaying preferences, controlling call access, and positioning herself between Eli and Olivia. The CA-RF02-02 preference relay signals (ROW-2077, ROW-2201, ROW-2308, ROW-2362, ROW-2417) are structural expressions of the same intermediary architecture.",
+    "arc_005_open_note": "ARC-RF02-005 CANDIDATE opened: 'Visit Access Conditioned on Abby's Exclusion.' Basis: ROW-2395-2409 — Melissa relays and reinforces Olivia's alleged refusal to attend visits if Eli's partner Abby is present. The relay functions as a visit gate, giving Melissa implicit veto over who accompanies Eli during parenting time. One signal. Watch for recurrence in subsequent batches.",
+    "arc_001_note": "ROW-2550 is analytically among the most significant arc signals to date — Melissa's own explicit confirmation that DND is active at 8:30pm ('If you called at 8:30 my do not disturb is on') combined with the real-time control offer ('I'll turn it off'). This is the second documented instance of selective DND disabling (first: ROW-1186, B-004)."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

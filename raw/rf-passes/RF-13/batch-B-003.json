@@ -1,0 +1,84 @@
+{
+  "batch_id": "B-003",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2022-11-06",
+    "end": "2022-12-12"
+  },
+  "row_range": {
+    "start": 875,
+    "end": 1378
+  },
+  "message_count": 504,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "CANDIDATE",
+    "ARC-RF13-002": "WATCHING",
+    "ARC-RF13-003": "WATCHING"
+  },
+  "arc_signals_cumulative": 1,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 3,
+    "note": "Nov 13-15 2022 holiday cluster: 3 hostile episodes in 3 consecutive days (EP-0111, EP-0112, EP-0114; 27+5+31=63 total msgs). ADD-003 Thanksgiving temporal window confirmed (Nov 13-15 falls in Nov 20-Dec 1 window adjacent). First multi-episode cluster \u2014 trajectory worsening. ARC-RF13-001 promoted to WATCHING. ARC-RF13-002 promoted to ACTIVE (3+ consistent role instances). ARC-RF13-003 WATCHING with second-cluster resistance confirmed."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B003-001",
+      "episode_cluster": [
+        "EP-0111",
+        "EP-0112",
+        "EP-0114"
+      ],
+      "dates": "2022-11-13 through 2022-11-15",
+      "total_messages": 63,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "cluster \u2014 ramp across 3 consecutive days",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured responses across 3 episodes",
+        "received_direction": "escalating hostile tone with flooding; 3 episodes in 3 days = cluster escalation",
+        "net_escalation": "elevated (Sev-2: cluster effect \u2014 individual episodes Sev-1 but concentrated in 3-day window)",
+        "de_escalation_resistance": "Eli de-escalates or disengages between episodes; Melissa re-initiates new hostile episode next day"
+      },
+      "cycle_classification": "CYC-003 \u2014 holiday temporal window. Nov 13-15 pre-Thanksgiving period. First confirmed multi-episode cluster.",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 2,
+      "cross_rf_note": "Nov 2022 cluster is Phase A escalation onset. Consistent with RF-04 Phase A ramp. Three flooding detections in 3 days indicates sustained hostile initiation from received direction."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Nov 2022 cluster: 3 hostile episodes in 3 days. Trajectory escalating \u2014 isolated episodes have become sustained clusters. WATCHING state: worsening trajectory pattern emerging.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF13-002",
+      "event": "Nov cluster confirms role consistency across 3 consecutive independent hostile episodes: Melissa = escalator all 3; Eli = de-escalator/disengager all 3. Third+ data point \u2014 pattern confirmed.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "Melissa re-initiates new hostile episode each day despite Eli disengaging. Classic de-escalation resistance: Eli withdraws \u2192 Melissa restarts. 2nd cluster of resistance evidence.",
+      "state": "WATCHING"
+    }
+  ]
+}

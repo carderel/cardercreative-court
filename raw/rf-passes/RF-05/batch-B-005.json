@@ -1,0 +1,54 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-005",
+    "row_range": { "start": 1462, "end": 1839 },
+    "date_range": { "start": "2023-01-18", "end": "2023-02-21" },
+    "message_count": 378,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 378,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 1,
+    "peripheral_rf_distribution": { "RF-04": 1 },
+    "no_flag_messages": 378,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-1759 through ROW-1795",
+      "timestamp": "2023-02-15 02:18–02:24 UTC",
+      "direction": "mixed",
+      "message_text": "ROW-1759 [Sent]: 'Bad stuff like throat punching someone...' | ROW-1761 [Sent]: 'Or Threatening to assault staff' | ROW-1768 [Received]: 'I have never threatened anyone' | ROW-1770 [Received]: 'I don't. I have never threatened anyone. That's not how you act. That can lead to jail especially in these days.' | ROW-1771 [Sent]: 'I have heard you tell her that you will punch her in her stupid face or something similar and you would punch that one little girl' | ROW-1780 [Received]: 'You said I threatened olivia. I have never' | ROW-1785 [Received]: 'Don't ever say I called Olivia stupid or threatened her or anyone else. I have never threatened to hurt anyone nor would I hurt anyone'",
+      "assessment": "Analytically significant for ADD-004/ADD-005 context: Eli directly confronts Melissa about prior threatening behavior — specifically asserting that Melissa told Olivia she would 'punch her [another child] in her stupid face' or similar. Melissa denies. This is the first on-record surfacing of the RF-05 pattern as a topic of discussion between parties. Eli's willingness to raise this suggests it is a recurring observed behavior from the pre-record period (ADD-004: Melissa 'more dangerous' pre-2022). Melissa's ROW-1770 'That can lead to jail especially in these days' is notable: Melissa herself frames physical threats as jail-worthy conduct — her own standard applied to the behavior Eli is alleging. No new RF-05 threat from Melissa here; the exchange is Eli-initiated confrontation. Not flagged as primary. Documented for synthesis: demonstrates Eli's threat-awareness posture (ADD-005) and provides a text-record anchor for the pre-record threatening behavior Eli described.",
+      "cp2_flag": false,
+      "cp2_question": null
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF05-001 ACTIVE. No new arc signals in B-005. The triage '2023-02' hot period keyword hits appear to be false positives (lawyer mentions = Eli's personal injury case, not Melissa legal threats; threat mentions = the prior-threatening-behavior discussion, not new threats by Melissa)."
+  },
+
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+
+  "batch_observations": {
+    "tone_assessment": "B-005 (Jan-Feb 2023) has zero RF-05 primary signals despite the triage '2023-02' hot period designation. The keyword hits are false positives: the lawyer cluster (ROW-1716-1754) relates to Melissa criticizing Eli's personal injury legal consultation, not Melissa threatening legal action against Eli. The threat exchange (ROW-1759-1795) is Eli confronting Melissa about pre-record threatening behavior. The hot-period designation reflects keyword density rather than actual RF-05 signals.",
+    "cross_rf_context": "RF-04 B-005: The Feb 15 2023 date is within the car accident context. No major RF-04 compounds in B-005 per the RF-04 session manifest CP3 items (B-005 not listed as notable CP3)."
+  }
+}

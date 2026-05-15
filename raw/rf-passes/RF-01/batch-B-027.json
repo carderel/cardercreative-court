@@ -1,0 +1,37 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-027",
+    "row_range": { "start": 7943, "end": 8061 },
+    "date_range": { "start": "2025-07-01", "end": "2025-08-02" },
+    "message_count": 119,
+    "timezone_note": "Entirely EDT (UTC-4). RF-02 B-027 sms_secondary_section states ROW-7944-8062; RF-01 starts at ROW-7943 (off-by-one pattern). RF-02 reports 481 messages for this batch — anomalous row convention accounts for discrepancy; actual SMS count is 119.",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Phase B — summer cooperative period. Predominantly Eli-sent. Olivia's birthday Jul 14 (ROW-7967-7971); Olivia sick during Melissa's trip Jul 15-17 (cooperative medical coordination across households). New office address (Jul 1 ROW-7944-7945). Zero RF-01 indicators."
+  },
+
+  "primary_flags": [],
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [],
+  "peripheral_flag_count": 0,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "signal_count": 26,
+      "notes": "B-027 produces no RF-01 signals. 119 messages (Jul 1 – Aug 2 2025) predominantly Sent by Eli. Received messages are cooperative throughout. Key events: Olivia's birthday Jul 14 (Eli wishes happy birthday; Olivia's phone to voicemail but Melissa facilitates); Olivia sick during trip Jul 15-17 (both parents cooperating on medical care — alternating Tylenol/ibuprofen, Rocky Mountain fever concern, hydration advice); tap dancing interest Jul 28 (Melissa invites Eli to open house). No RF-01 content in any Received messages."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Cooperative throughout. Eli's messages dominate. Key clusters: Jul 1-7 (new office, pickup logistics), Jul 10-12 (routine), Jul 14 (Olivia's birthday — Eli calls, phone to voicemail; Melissa facilitates 'Tell her I love her and happy birthday'), Jul 15-17 (Olivia sick during trip — genuinely collaborative medical coordination across households), Jul 18-19 (pickup timing — minor tension around return time, resolved), Jul 24-31 (summer logistics, food list request, tap dancing).",
+    "birthday_note": "ROW-7967-7971 (Jul 14): Olivia's birthday. Eli calls; phone goes to voicemail (ROW-7967). ROW-7969: Eli says 'Tell her I love her and happy birthday.' ROW-7970: 'Text first because Alice is asleep.' ROW-7971: 'Nope. Never' (context unclear — possibly response to Melissa asking if Eli called her). RF-02 likely flagged Olivia's phone to voicemail on birthday; no RF-01 indicator in Melissa's Received messages for this date.",
+    "medical_cooperation": "Jul 15-17 (ROW-7980-8013): Olivia sick during Melissa's trip (fever, vomiting, possible Rocky Mountain spotted fever concern). Eli actively participates in medical guidance from a distance — alternating meds advice, hydration, symptom list for Rocky Mountain fever, monitoring. Melissa responds cooperatively. One of the most genuinely collaborative medical co-parenting sequences in Phase B.",
+    "tap_dancing": "ROW-8047-8050 (Jul 28): Melissa informs Eli that Olivia wants to do tap dancing; invites Eli to the open house on Aug 16. Cooperative co-parenting moment — Melissa including Eli in extracurricular decisions."
+  }
+}

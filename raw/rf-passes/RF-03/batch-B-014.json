@@ -1,0 +1,54 @@
+{
+  "batch_id": "B-014",
+  "date_range": {
+    "start": "2024-03-28",
+    "end": "2024-05-09",
+    "note": "date-filtered batch"
+  },
+  "message_count": 488,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "calibration_addenda_active": [
+    "RF03-ADD-001",
+    "RF03-ADD-002",
+    "RF03-ADD-003",
+    "RF03-ADD-004",
+    "RF03-ADD-005",
+    "RF03-ADD-006",
+    "RF03-ADD-007"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 1,
+    "note": "Cat allergy lawyer letter event (ROW-4912, Mar 31 2024). RF-15+RF-02 primary; RF-03 peripheral per ADD-001."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [
+    {
+      "id": "P-RF03-001",
+      "direction": "Received",
+      "primary_rf": "RF-15+RF-02",
+      "orig_rows": [
+        "4912"
+      ],
+      "date": "2024-03-31",
+      "text": "'You didn't respect her allergies. I had to have my lawyer send you a letter to get you to stop subjecting her to them' (ROW-4912)",
+      "classification": "RF-03 peripheral \u2014 cat allergy scheme logistical obstruction component. RF-15 Category B + RF-02 primary per ADD-001. RF-03 peripheral: visitation denied by creating environmental logistics condition Eli chose not to meet."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF03-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0,
+      "event": "No new signals in B-014. CANDIDATE state holds."
+    },
+    {
+      "arc": "ARC-RF03-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0,
+      "event": "No Activity Enrollment Obstruction signals."
+    }
+  ]
+}

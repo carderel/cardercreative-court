@@ -1,0 +1,52 @@
+{
+  "batch_id": "B-030",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2025-12-16",
+    "end": "2026-04-07"
+  },
+  "row_range": {
+    "start": 14921,
+    "end": 15539
+  },
+  "message_count": 501,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 4,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Feb 2026: 1 bilateral RF-11 primary flag. S005 \u2014 hiding incident. Final primary signal. Arc ACTIVE (5 signals)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF11-B030-001",
+      "signal_id": "S005",
+      "severity": 2,
+      "date": "2026-02-15",
+      "row_ref": "ROW-15098-15175",
+      "direction": "bilateral",
+      "type": "bilateral_child_exposure_domestic_argument + eli_direction_verbal_abuse_framing_to_children + melissa_direction_trauma_narrative_deployment",
+      "arc_ref": "ARC-RF11-001",
+      "addenda_applied": [
+        "RF11-ADD-001",
+        "RF11-ADD-003",
+        "RF11-ADD-006"
+      ],
+      "compound_pattern": "COMP-RF11-005",
+      "cross_rf": "RF-04 (COMP-RF04-029 admitted-incident amplification, B-030); RF-09 (S011 amplification sequence, B-030)",
+      "message_text": "ROW-15102 (Received): 'Her, Milo and Alice were hiding in her room. Milo was telling Olivia if it kept going they might need to leave and they discussed going out the window because they were both scared. She almost called the police.' | ROW-15103 (Received): 'She said it sounded like verbal abuse and you pulled your phone out and said let\\'s educate ourselves today. Looked up verbal abuse and told them it\\'s not illegal.'",
+      "summary": "Feb 15 2026: Bilateral RF-11 signal \u2014 both directions produce documentable child-involvement concerns from the same incident. DIRECTION: SENT (Eli-direction, Sev-2): CP2 Q1 confirmed \u2014 children ages 10 (Olivia), 6 (Milo), and 1 (Alice) were home in a small house during an adult argument between Eli and Abby. Eli was yelling. The 10 and 6-year-old were directly affected (hiding, discussing leaving through a window, frightened). Eli confirms he looked up 'verbal abuse' on his phone because the children were asking, and told them 'it's not illegal.' This is RF-11 from Eli's direction: (1) children directly present during adult domestic argument (Sev-2 minimum); (2) Eli explaining adult legal-definitional content (verbal abuse) to children in response to their distress. Mitigating context: out-of-character incident; health factors (sinus infection, steroid use, sleep deprivation); Eli apologized to everyone; Eli's explanation of 'verbal abuse' was responsive to children's question, not proactive. These mitigating factors do not eliminate the RF-11 classification but contextualize Sev-2 (not Sev-3). DIRECTION: RECEIVED (Melissa-direction, contextual/compound): Melissa relays the detailed trauma narrative (ROW-15102-15103) to Eli, using it as a visit-refusal engine through Apr 2026. The relay itself is RF-04/RF-09 primary (COMP-RF04-029, RF-09 S011). RF-11 compound from Melissa's direction: Melissa's deployment of the children's hiding/fear narrative amplifies and weaponizes the children's trauma experience, extending it as an ongoing adult-conflict tool. ADD-006 context: Olivia-as-stabilizer \u2014 this incident likely became a significant emotional-stabilization event between Olivia and Melissa. ADD-001 bilateral: Eli-direction signal is primary; Melissa-direction is compound. Compound COMP-RF11-005: RF-11+RF-04+RF-09 (triple compound)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF11-001",
+      "event": "S005 \u2014 final primary signal; arc ACTIVE unresolved at dataset close",
+      "new_state": "ACTIVE",
+      "signal_count": 5
+    }
+  ]
+}

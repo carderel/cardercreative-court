@@ -1,0 +1,179 @@
+{
+  "batch_id": "B-018",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "batch_status": "complete",
+
+  "date_range": {
+    "start": "2024-08-06",
+    "end": "2024-09-03"
+  },
+
+  "row_range": {
+    "sms_start": "ROW-6558",
+    "sms_end": "ROW-6944",
+    "mms_start": "ROW-12107",
+    "mms_end": "ROW-12246",
+    "note": "Date-based extraction used per B-007+ protocol. SMS rows sequential; MMS rows anomalous (ROW-12xxx range)."
+  },
+
+  "message_count": 527,
+
+  "primary_flags": [
+    {
+      "flag_id": "B018-RF02-001",
+      "severity": 2,
+      "arc_id": "ARC-RF02-002",
+      "arc_signal_number": 38,
+      "message_ids": ["ROW-6820"],
+      "date": "2024-08-21",
+      "signal_type": "conversation_content_curation_explicit_admission",
+      "flag_summary": "Melissa explicitly admits scripting and curating Olivia's conversation content for calls with Eli — new sub-pattern: content mediation beyond access mediation",
+      "excerpts": [
+        {"row": "ROW-6818", "direction": "Sent", "text": "Look I get your point of view. That's not what I am trying to discuss because that is a bigger issue than I care to delve into tonight. Back to the original issue I was discussing. I do want to talk on the phone with her. If it was reversed and she was doing it to you how would you react?"},
+        {"row": "ROW-6820", "direction": "Received", "text": "I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so get off your high horse"}
+      ],
+      "analysis": "Sev 2 designation. Eli's ROW-6818 raises the issue of call quality and direct communication with Olivia. Melissa's defensive response (ROW-6820) contains three distinct admissions: (1) 'I've told her to have conversations' — Melissa instructs Olivia to engage in calls with Eli, confirming she directs the conduct of those calls; (2) 'I also give her things to tell you about' — Melissa actively curates the content of what Olivia conveys to Eli, functioning as a content intermediary in addition to an access intermediary; (3) 'I remind her of some of the things she's told me' — Olivia shares information with Melissa that Melissa then recirculates back to Olivia as call topics, creating a triangulated information loop: Eli → Olivia → Melissa → reminders → Olivia → Eli. This is analytically the most significant B-018 signal and represents a new sub-pattern within ARC-RF02-002. Prior signals established Melissa as required intermediary for access (DND control, call facilitation) and bidirectional call initiation (ROW-3151, ROW-4383-4385: 'I'm the reason she calls you most days'). ROW-6820 adds a third dimension: content mediation. Melissa does not merely control whether and when calls happen — she scripts and curates what is discussed. The 'get off your high horse' dismissal is a defensive posture consistent with genuine disclosure, not rhetorical construction. Severity elevated to 2: this is a spontaneous, self-incriminating admission adding a qualitatively new analytical dimension to the arc.",
+      "arc_impact": "ARC-RF02-002 signal count: 37 → 38. New sub-pattern opened: conversation content curation. Arc description updated to reflect three-dimensional required-intermediary model: (1) access/call initiation control, (2) content curation/scripting, (3) conflict-relay mechanism."
+    },
+    {
+      "flag_id": "B018-RF02-002",
+      "severity": 1,
+      "arc_id": "ARC-RF02-002",
+      "arc_signal_number": 39,
+      "message_ids": ["ROW-6874", "ROW-6875"],
+      "date": "2024-08-27",
+      "signal_type": "contact_conflict_relay_sixth_instance",
+      "flag_summary": "Sixth contact-conflict relay — 'Did you yell at her or something? / She called me crying from the bus' — accusation framing before verifying cause; Olivia's distress was separation-related, not Eli-caused",
+      "excerpts": [
+        {"row": "ROW-6874", "direction": "Received", "text": "Did you yell at her or something?"},
+        {"row": "ROW-6875", "direction": "Received", "text": "She called me crying from the bus"},
+        {"row": "ROW-6876", "direction": "Sent", "text": "No. I got off the phone with her and she was fine"},
+        {"row": "ROW-6880", "direction": "Sent", "text": "I talked to her. She's fine. Just missed you"}
+      ],
+      "analysis": "Sixth instance of the contact-conflict relay sub-pattern. Melissa's opening question ('Did you yell at her or something?') immediately attributes Olivia's distress to Eli's conduct before any verification. This is structurally consistent with prior instances: Apr 4 ('You got her crying'), Apr 8 ('She said you hung up on her'), May 1 ('She mad because you hung up on her'), Jul 2 ('You got her crying' — B-016), Jul 16 ('She was crying earlier when I tried to call you' — B-017). Eli denies the accusation (ROW-6876) and later confirms Olivia was fine post-call, just missed Melissa (ROW-6880) — the crying was separation-related, not conflict-related. The relay mechanism is structurally identical to prior instances: Olivia's distress is immediately channeled through Melissa and attributed to Eli's conduct before the cause is established. Sub-pattern now spans 5 months (Apr–Aug 2024) with six documented instances.",
+      "arc_impact": "ARC-RF02-002 signal count: 38 → 39. Contact-conflict relay sub-pattern: six documented instances spanning Apr 4 – Aug 27, 2024."
+    }
+  ],
+
+  "primary_flag_count": 2,
+  "primary_flag_severity_distribution": {"1": 1, "2": 1},
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B018-P001",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "message_ids": ["ROW-6583", "ROW-6584", "ROW-6585", "ROW-6586"],
+      "date": "2024-08-08",
+      "flag_summary": "Parental delegitimizing — 'you never take off work to help her. You always have excuses' — Eli's work schedule characterized as habitual negligence",
+      "excerpts": [
+        {"row": "ROW-6583", "direction": "Received", "text": "I don't want to hear about me being off work cause frankly my use of time is not your business but secondly you never take off work to help her. You always have excuses so I don't want to hear it"},
+        {"row": "ROW-6584", "direction": "Received", "text": "If I don't take off she has Boone to care for her"},
+        {"row": "ROW-6586", "direction": "Received", "text": "I don't have the opportunity to be an absent parent and just be like 'no I'm not doing anything. You do it'"}
+      ],
+      "context": "Triggered by Eli noting Melissa's schedule during Olivia's staph infection recovery period. Melissa preemptively reframes as a negligence comparison: characterizes Eli as habitually excusing himself from childcare versus her own full engagement. 'Absent parent' framing.",
+      "cross_pass_priority": false
+    },
+    {
+      "flag_id": "B018-P002",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "message_ids": ["ROW-6784", "ROW-6785", "ROW-6796", "ROW-6797", "ROW-6802", "ROW-6812", "ROW-6815", "ROW-6817"],
+      "date": "2024-08-20",
+      "flag_summary": "Sustained parental delegitimizing attack — 'Feels like you just wanted to make an appearance to look involved / Without actually being involved' — 8-message attack on Eli's fitness and engagement spanning Aug 20-21",
+      "excerpts": [
+        {"row": "ROW-6784", "direction": "Received", "text": "Feels like you just wanted to make an appearance to look involved"},
+        {"row": "ROW-6785", "direction": "Received", "text": "Without actually being involved"},
+        {"row": "ROW-6796", "direction": "Received", "text": "Be more present in her life and maybe she will feel more connected to you and tell you stuff like she does with me"},
+        {"row": "ROW-6797", "direction": "Received", "text": "I mean you're not very present. You got to the school and I sent you the room number at 6:01. At 6:13 you were calling saying you were done"},
+        {"row": "ROW-6802", "direction": "Received", "text": "You can't be too busy for your daughter."},
+        {"row": "ROW-6812", "direction": "Received", "text": "You had no clue who her teacher was, what her bus schedule or number was or what PowerSchool even was"},
+        {"row": "ROW-6815", "direction": "Received", "text": "You can 'bust your ass' all you want when it amounts to 12 minutes does it really matter?"},
+        {"row": "ROW-6817", "direction": "Received", "text": "What's got you so busy that you don't have time for this sweet little girl that you helped bring into the world?"}
+      ],
+      "context": "Triggered by Eli spending 12 minutes at school supply drop-off event (Aug 19 — see CDP-003). Melissa's attack is sustained across Aug 20-21, characterizing Eli's brief school visit as performative involvement, citing ignorance of teacher/bus/PowerSchool details as evidence of disengagement, and contrasting with her own full-service parenting (ROW-6804-6810). Also contains content noteworthy for RF-02: ROW-6796 'Be more present in her life and maybe she will feel more connected to you and tell you stuff like she does with me' — frames the information asymmetry (Olivia tells Melissa more than she tells Eli) as Eli's relational failure rather than Melissa's communication control.",
+      "cross_pass_priority": false,
+      "rf02_cross_note": "ROW-6796 uses Melissa's privileged information access (Olivia confides in her) as a shaming lever rather than acknowledging ARC-RF02-002 content curation role. Contextually relevant to B018-RF02-001 (ROW-6820)."
+    },
+    {
+      "flag_id": "B018-P003",
+      "rf_category": "RF-11",
+      "severity": 1,
+      "message_ids": ["ROW-6882"],
+      "date": "2024-08-29",
+      "flag_summary": "Contempt filing threat over child support arrears",
+      "excerpts": [
+        {"row": "ROW-6882", "direction": "Received", "text": "You still haven't paid support like you said you would. I'm filing contempt"}
+      ],
+      "context": "Child support dispute context. Eli responds (ROW-6883-6884) that payment has been set up through ODJFS and is processing. Threat is a single message rather than sustained legal escalation. Lower severity than B-017 RF-11 Sev 2 (ROW-6313 sole custody threat). Documented as pattern continuation.",
+      "cross_pass_priority": false
+    }
+  ],
+
+  "peripheral_flag_count": 3,
+
+  "cooperative_data_points": [
+    {
+      "cdp_id": "B018-CDP-001",
+      "date": "2024-08-10",
+      "message_ids": ["ROW-6648", "ROW-6649", "ROW-6650", "ROW-6668", "ROW-6671", "ROW-6672", "ROW-6675", "ROW-6677"],
+      "summary": "Melissa invites Eli to Olivia's lemonade stand; provides real-time updates on sales totals throughout the day; Eli attends and contributes ($6 tip); cooperative shared celebration of Olivia's initiative",
+      "quality": "high_quality_facilitation"
+    },
+    {
+      "cdp_id": "B018-CDP-002",
+      "date": "2024-08-13",
+      "message_ids": ["ROW-6710", "ROW-6711", "ROW-6712", "ROW-6714", "ROW-6715", "ROW-6716"],
+      "summary": "Melissa proactively offers Eli opportunity to take Olivia school shoe shopping; offers to reimburse; provides sizing info and fit guidance; cooperative school-prep facilitation",
+      "quality": "high_quality_facilitation"
+    },
+    {
+      "cdp_id": "B018-CDP-003",
+      "date": "2024-08-19",
+      "message_ids": ["ROW-6753", "ROW-6754", "ROW-6755", "ROW-6756", "ROW-6761", "ROW-6762"],
+      "summary": "Melissa creatively coordinates school supply drop-off logistics to allow Eli to meet Olivia's teacher despite schedule conflict; playful tone; child-centered facilitation",
+      "quality": "high_quality_facilitation"
+    },
+    {
+      "cdp_id": "B018-CDP-004",
+      "date": "2024-08-25",
+      "message_ids": ["ROW-6848", "ROW-6849", "ROW-6851", "ROW-6852", "ROW-6854", "ROW-6858", "ROW-6859"],
+      "summary": "Melissa proactively offers Eli opportunity to take Olivia to friend's birthday party; coordinates gift pickup logistics; division of labor on card vs. curbside pickup",
+      "quality": "high_quality_facilitation"
+    },
+    {
+      "cdp_id": "B018-CDP-005",
+      "date": "2024-08-30",
+      "message_ids": ["ROW-6894", "ROW-6896", "ROW-6897", "ROW-6900"],
+      "summary": "Melissa proactively offers Eli Labor Day weekend access; outlines her own schedule transparently and invites Eli to coordinate around it; child-focused weekend planning",
+      "quality": "routine_cooperation"
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF02-001": {"signal_added": false, "note": "ROW-6886 (Eli: 'Didst thou not return her precious mobile device, good sir?') implies prior phone restriction but is Eli's indirect query rather than Melissa's direct statement — insufficient for primary flag. Contextual note only."},
+    "ARC-RF02-002": {
+      "signal_added": true,
+      "signals_added_count": 2,
+      "new_signal_count": 39,
+      "last_signal_batch": "B-018",
+      "last_signal_date": "2024-08-27",
+      "sub_pattern_note": "Content curation sub-pattern opened: ROW-6820 (Aug 21) is the first explicit admission of conversation content scripting. Contact-conflict relay sub-pattern: sixth instance (Aug 27 ROW-6874-6875)."
+    },
+    "ARC-RF02-003": {"signal_added": false},
+    "ARC-RF02-004": {"signal_added": false},
+    "ARC-RF02-005": {"signal_added": false, "note": "No new exclusion signals. Counter-signal pattern from B-017 continues. Arc remains WATCHING."},
+    "ARC-RF02-006": {"signal_added": false, "note": "ROW-6731 (Aug 15): 'I think we're going to TN' — Tennessee reference, not NC; does not meet WATCHING arc signal criteria. Not logged."}
+  },
+
+  "batch_notes": [
+    "B-018 contains the analytically most significant ARC-RF02-002 signal since ROW-3151 (B-009: 'I'm the reason she calls you most days'). ROW-6820 reveals content curation as a third dimension of Melissa's required-intermediary role, beyond access control and call initiation control. The prior bidirectional control signals established WHO initiates calls and WHETHER they happen; ROW-6820 establishes that WHAT IS DISCUSSED is also intermediated. This deepens the arc from a communication access pattern to a full communication architecture.",
+    "Contact-conflict relay sub-pattern: six instances now documented spanning Apr 4 – Aug 27, 2024. The structural pattern is consistent: Olivia's distress is relayed to Eli with implicit or explicit attribution to Eli's conduct before cause is verified. Four of six instances (Apr 4, Apr 8, May 1, Aug 27) include direct or implied accusation framing. The Aug 27 instance resolved within hours: Olivia's crying was because she missed Melissa, not because of conflict with Eli.",
+    "ROW-6700 (Aug 13): 'She said you can pick her up tomorrow so long as everyone is Rona free.' COVID-conditional access with Olivia-as-condition-relay. Not flagged as primary: condition is medically defensible (Olivia has active staph infection, school year beginning in days, COVID would compound recovery). Mechanism is consistent with ARC-RF02-002 but the health rationale provides adequate mitigation at this threshold.",
+    "ROW-6731 (Aug 15): 'I think we're going to TN.' Tennessee reference. Not an ARC-RF02-006 signal (that arc tracks NC specifically). No action steps, no directional specificity toward relocation.",
+    "ROW-6886 (Aug 30): 'Didst thou not return her precious mobile device, good sir?' — Eli's rhetorical query implies Olivia's phone was withheld and is being returned. Indirect evidence consistent with ARC-RF02-001 pattern but insufficient for primary flag as Eli's query rather than Melissa's direct statement. Contextual note only.",
+    "B-018 has the highest cooperative facilitation density in the dataset to date: five cooperative data points including four that provide Eli meaningful access to school-related and social milestone events. This cooperative density provides important analytical context alongside the Sev 2 content curation signal — the pattern is not uniform withholding but selective, mechanism-specific control.",
+    "ROW-6784-6832 (Aug 20-21) extended RF-04 attack warrants note for Phase 2: the frame 'Be more present in her life and maybe she will feel more connected to you and tell you stuff like she does with me' (ROW-6796) occurs the night before Melissa's explicit content curation admission (ROW-6820). The sequencing is significant: Melissa uses the information asymmetry (Olivia confides in her more than in Eli) as a shaming lever the night before admitting she actively curates/scripts what Olivia tells Eli. These two messages together are among the strongest evidence of ARC-RF02-002's content mediation dimension."
+  ]
+}

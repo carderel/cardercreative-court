@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-004",
+  "date_range": {
+    "start": "2022-12-14",
+    "end": "2023-01-18",
+    "orig_row_start": 1109,
+    "orig_row_end": 1479
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-002: 'filing contempt again' Jan 1 2023 (ROW-1326). References prior Jun 2022 summons. ARC-RF06-001 promotes to WATCHING at Signal 2."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-002",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 2,
+      "date": "2023-01-01",
+      "orig_rows": [
+        "1326"
+      ],
+      "messages": [
+        {
+          "orig_row": "1326",
+          "direction": "Received",
+          "date": "2023-01-01",
+          "text": "I'm tired of this conversation. If you don't start paying stuff when you're supposed to I'm filing contempt again and moving forward with automatically taking daycare out of your check"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 'filing contempt again' explicitly references a prior filing (the June 3, 2022 contempt summons confirmed at CP2). Melissa threatens both contempt filing AND automatic garnishment of daycare from Eli's paycheck. The New Year's Day timing and 'tired of this conversation' framing frame Eli's payment timing as a chronic problem requiring legal enforcement. ARC-RF06-001 Signal 2. ARC-RF06-001 promotes to WATCHING.",
+      "addendum_applied": "ADD-002 (executed court action \u2014 'again' confirms prior summons). ADD-004 (war of attrition setup \u2014 legal enforcement threat)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "WATCHING",
+      "signals_cumulative": 2
+    }
+  ]
+}

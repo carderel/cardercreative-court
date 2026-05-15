@@ -1,0 +1,73 @@
+{
+  "batch_id": "B-029",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2025-10-16",
+    "end": "2025-12-16"
+  },
+  "row_range": {
+    "start": 14547,
+    "end": 14920
+  },
+  "message_count": 505,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 2,
+  "batch_summary": {
+    "primary_flags": 2,
+    "peripheral_flags": 0,
+    "note": ""
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF11-B029-001",
+      "signal_id": "S003",
+      "severity": 2,
+      "date": "2025-11-22",
+      "row_ref": "ROW-8436-8438 adjacent (Nov 21-24 window); police report date Nov 22 2025",
+      "direction": "received",
+      "type": "legal_proceedings_exposure_police_report + child_informed_of_custody_enforcement_filing",
+      "arc_ref": "ARC-RF11-001",
+      "addenda_applied": [
+        "RF11-ADD-001",
+        "RF11-ADD-003",
+        "RF11-ADD-005",
+        "RF11-ADD-006"
+      ],
+      "compound_pattern": "COMP-RF11-003",
+      "cross_rf": "RF-02 (visit-refusal cascade anchor event; police report is RF-02 escalation context)",
+      "message_text": "Nov 22 2025: No text messages exchanged (police report date gap in record). Context: Eli filed police report because Olivia refused court-ordered visit Nov 22. CP2 Q4 confirmed: Melissa told Olivia about the police report filing. Documented emotional impact: Olivia did not speak to Eli for over a week.",
+      "summary": "Nov 22 2025: Melissa informed Olivia that Eli filed a police report related to her refusal to come for his court-ordered visit. CP2 Q4 confirmed: Olivia was home when the police phone call happened; Melissa told Olivia; Olivia was mad at Eli and stopped talking to him for over a week. RF-11 mechanism: parent involves child in the awareness of law-enforcement proceedings arising from the child's own court-ordered-visit refusal. The child becomes emotionally responsible for the legal consequence (Eli 'called the police on her'). This is documented by behavioral impact (week-long silent treatment toward Eli) rather than a text quote \u2014 no text messages were exchanged on Nov 22 (consistent with police report gap). Note per ADD-005: Eli believes text evidence of Melissa referencing the police report to Olivia may exist; flag this note for text-record search in B-029 ROW range. Sev-2: legal-proceedings exposure with documented behavioral impact on child. ADD-006 context: police-report disclosure is consistent with Olivia-as-stabilizer pattern \u2014 Melissa recruits Olivia's anger as a conflict tool. Compound COMP-RF11-003: RF-11+RF-02 (police report is RF-02 gatekeeping escalation context)."
+    },
+    {
+      "flag_id": "RF11-B029-002",
+      "signal_id": "S004",
+      "severity": 2,
+      "date": "2025-11-25",
+      "row_ref": "ROW-14841 area",
+      "direction": "received",
+      "type": "explicit_parentification_court_compliance_decision + visit_refusal_autonomous_choice_framing",
+      "arc_ref": "ARC-RF11-001",
+      "addenda_applied": [
+        "RF11-ADD-001",
+        "RF11-ADD-002",
+        "RF11-ADD-003",
+        "RF11-ADD-006"
+      ],
+      "compound_pattern": "COMP-RF11-004",
+      "cross_rf": "RF-02 (visit-refusal cascade; non-accountability positioning); RF-04 (COMP-RF04-028 'big contempt case' cluster)",
+      "message_text": "ROW-14841 area: 'I did nothing wrong with her not going to your house because I didn\\'t keep her from going. It was her choice not to go and I am not expected to forcibly remove her from the home'",
+      "summary": "Nov 2025: Melissa explicitly frames Olivia's court-ordered visit refusal as Olivia's autonomous choice, positioning herself as non-accountable for enforcement. Text-documented: 'It was her choice not to go and I am not expected to forcibly remove her from the home.' RF-11 parentification mechanism per ADD-002: court-order compliance is presented to Olivia as Olivia's decision to make, not a legal requirement Melissa must enforce. The child bears the burden of deciding whether to comply with a court order. This is distinct from RF-02 (gatekeeping = parent preventing access): here Melissa explicitly transfers the non-compliance decision to the child while framing her own role as neutral. CP2 Q5 confirmed: Melissa has said this framing explicitly; Eli's view is that it is sometimes genuine child preference and sometimes Melissa-directed. The text-record evidence is the explicit 'it was her choice' statement. Sev-2: systematic framing (not isolated) + documented visit-refusal cascade across multiple weekends. ADD-006 context: placing court-compliance burden on Olivia is consistent with emotional-stabilizer parentification \u2014 Olivia must manage her own legal compliance while Melissa maintains deniability. Compound COMP-RF11-004: RF-11+RF-02+RF-04."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF11-001",
+      "event": "S003+S004 \u2014 arc WATCHING\u2192ACTIVE (4 signals)",
+      "new_state": "ACTIVE",
+      "signal_count": 4
+    }
+  ]
+}

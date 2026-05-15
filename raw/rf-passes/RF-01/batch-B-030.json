@@ -1,0 +1,54 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-030",
+    "row_range": { "start": 8404, "end": 8498 },
+    "date_range": { "start": "2025-11-02", "end": "2025-12-26" },
+    "message_count": 95,
+    "timezone_note": "EST (UTC-5) throughout. DST fall-back Nov 2, 2025 at 2:00 AM EDT (06:00 UTC). First message ROW-8404 (Nov 2 19:31 EST = Nov 3 00:31 UTC) is post-fall-back. No messages cross the DST boundary ambiguously (last EDT message in B-029 was Oct 30). RF-02 B-030 date_range.end states Jan 2, 2026; actual last message in extracted range is ROW-8498 (Dec 26 17:21 EST) — Dec 27, 2025 – Jan 7, 2026 is a real gap in the messaging record.",
+    "phase": "B/C",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Phase B/C boundary. Contains Nov 22, 2025 police report anchor event (Olivia refused to come for Eli's weekend; Melissa aware). Nov 7 pickup refusal (ROW-8418-8423) precedes the Nov 22 incident. Melissa's Received messages in B-030 are limited and do not contain explicit RF-01 primary content — the Nov 7 and Nov 22 events are primarily RF-02 territory. Christmas Eve coordination (ROW-8482-8489) is cooperative."
+  },
+
+  "primary_flags": [],
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B030-P001",
+      "row": "ROW-8423",
+      "date": "2025-11-07",
+      "rf_tags": ["RF-01", "RF-02"],
+      "severity": "peripheral",
+      "summary": "November 7 — 'Call her cause she refuses to come out. It was a mess to get her out of the car even' (ROW-8423). ADD-004 peripheral: Melissa relays Olivia's physical resistance to going with Eli — 'refuses to come out' of the car for Eli's pickup. Characterizes Olivia's refusal as so strong it was 'a mess' to even get Olivia out of the car. RF-02 primary (visit refusal); RF-01 peripheral (ADD-004 relay of Olivia's physical resistance to Eli as parenting-context information). This message follows a dispute about whether Eli verbally agreed to let Olivia go to a movie instead of coming for pickup (ROW-8418-8421)."
+    },
+    {
+      "flag_id": "RF01-B030-P002",
+      "row": "ROW-8431",
+      "date": "2025-11-19",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "November 19 — 'You never answer. Why are you so hard to get along with' (ROW-8431). ADD-002 adjacent: characterizes Eli as chronically unresponsive and difficult; 'You never answer' — habitual framing (not episodic). Three days before the Nov 22, 2025 police report. Context: Eli's communication pattern around the visit refusal cascade period. Peripheral — single brief message."
+    }
+  ],
+
+  "peripheral_flag_count": 2,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "signal_count": 27,
+      "notes": "B-030 produces no RF-01 primary signals. 95 messages (Nov 2 – Dec 26 2025). Nov 22 police report anchor event documented in RF-02 and pipeline context; Melissa's RF-01-relevant communication in this period is sparse (2 peripheral messages). Christmas Eve coordination (Dec 24, ROW-8486-8489) is cooperative. Dec 27-Jan 7 is a real gap."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Mostly Eli-sent with sparse Received messages. Nov 2-7: visit refusal continuation — Nov 7 Olivia refuses to come out of car for pickup; dispute about whether Eli verbally agreed to a schedule change (ROW-8412-8423). Nov 8-21: quiet period, Eli-dominant. Nov 19: Melissa's 'Why are you so hard to get along with' (ROW-8431). Nov 22 police report (documented in pipeline manifest context; Eli filed police report when Olivia refused to come for weekend; Melissa aware). Nov 22-27: no Received messages visible. Nov 28: $60 payment (ROW-8443). Dec 14: '3:00' (ROW-8461 — timing). Dec 23-24: Christmas coordination — cooperative. Dec 26: Childcare request for Jan 2 (cooperative).",
+    "nov22_police_report": "The Nov 22, 2025 police report is the key anchor event for Phase C analysis (per pipeline manifest). RF-01 analysis cannot directly assess what happened on Nov 22 from the text record alone — no messages visible around that exact date. The police report establishes that Olivia refused to come for Eli's scheduled weekend and Melissa was aware. This is primarily RF-02 territory (visit refusal resulting in police contact) but feeds RF-01 context (the abandonment arc — Olivia now actively refusing visits — is the culmination of the ADD-004 relay pattern). Phase synthesis will need to connect the Aug-Nov visit refusal cascade to the Nov 22 anchor event.",
+    "christmas_cooperation": "ROW-8482-8489 (Dec 23-24): Christmas Eve pickup coordination is cooperative — Melissa runs a few minutes late (ROW-8486-8487), both parties communicate smoothly. No RF-01 indicators."
+  }
+}

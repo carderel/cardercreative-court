@@ -1,0 +1,65 @@
+{
+  "batch_id": "B-017",
+  "date_range": {
+    "start": "2024-07-16",
+    "end": "2024-08-05",
+    "note": "date-filtered batch"
+  },
+  "message_count": 464,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-006: financial record compilation Aug 4 2024 (ROW-6334) \u2014 'show all the times you've paid daycare late.' ARC-RF06-001 promotes to ACTIVE at Signal 6."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-006",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 6,
+      "date_range": "2024-07-20 to 2024-08-04",
+      "orig_rows": [
+        "6077",
+        "6334"
+      ],
+      "messages": [
+        {
+          "orig_row": "6077",
+          "direction": "Received",
+          "date": "2024-07-20",
+          "text": "You're late on the daycare payment"
+        },
+        {
+          "orig_row": "6334",
+          "direction": "Received",
+          "date": "2024-08-04",
+          "text": "Then show all the times you've paid daycare late, not paid child support, not showed up to parent teacher conferences for two years"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 ROW-6334 is a significant escalation: Melissa challenges Eli to 'show all the times' he's paid late/missed support/missed conferences \u2014 this is a financial record compilation framing, building a legal narrative of financial non-compliance. Deployed within the EP-0854 311-message mega-cluster (Aug 4, 2024). Per ADD-004: using financial history to establish war-of-attrition leverage. ARC-RF06-001 Signal 6. ARC-RF06-001 promotes to ACTIVE.",
+      "addendum_applied": "ADD-004 (war of attrition \u2014 financial history invoked as leverage). ADD-005 (payment pressure co-deployed with conflict escalation \u2014 EP-0854 context)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "ACTIVE",
+      "signals_cumulative": 6
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-030",
+    "row_range": { "start": 8467, "end": 15539 },
+    "date_range": { "start": "2025-12-16", "end": "2026-04-07" },
+    "message_count": 420,
+    "phase": "C",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 420,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 419,
+    "flag_rate": "0.2%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B030-001",
+      "row_range": "ROW-15097 + ROW-15480",
+      "timestamp": "2026-03-21",
+      "direction": "received",
+      "phase": "C",
+      "message_text": "ROW-15097 (Received, Feb 14): 'Do I need to file contempt for the money you aren't paying and because you won't let me talk to her?'; ROW-15480 (Received, Mar 21): 'I'm not going to keep asking. I'm just going to file contempt on Monday. You made your choice that you'd like to pay what you owe plus the court costs and lawyer fees so that's what you can do. I'll let my lawyer handle it. You're just getting yourself further in debt with bad choices but you do you boo.'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "REPEAT FINANCIAL CONTEMPT FILING THREATS — TWO INCIDENTS, FIVE WEEKS APART. ADD-002 temporal rule: repeat financial contempt filing threats = Sev-1 (paper tiger trajectory confirmed across prior arc). ROW-15097 (Feb 14): 'Do I need to file contempt for the money you aren't paying and because you won't let me talk to her?' — contempt framing presented as rhetorical question; dual-ground threat (payment non-compliance + phone-access restriction). The interrogative framing ('Do I need to...?') adds a coercive element: Eli's response or non-response determines whether the threat is executed. ROW-15480 (Mar 21): 'I'm not going to keep asking. I'm just going to file contempt on Monday' — declarative filing announcement with specific timing ('Monday'). Unlike prior contempt threats with date/day specificity absent, this is the first time a specific day-of-week is given. 'I'll let my lawyer handle it' — attorney delegation; consistent with the confirmed-engagement pattern established in S-021, S-022, S-025. 'You're just getting yourself further in debt with bad choices but you do you boo' — 'do you boo' fifth confirmed dataset instance (B-025 ROW-9655 first; B-027 ROW-14162 second; B-027 ROW-14207 third; B-028 ROW-14275 fourth; B-030 ROW-15480 fifth), here deployed as the closing dismissal before a legal filing announcement. The 'deeper in debt' financial judgment adds contemptuous life-characterization. Both incidents are grouped as a single signal because they share the same mechanism (financial contempt threat) and occur within a 5-week window in a low-conflict batch period. ADD-005 observation: this is the last documented RF-05 primary signal in the dataset; Eli's sustained vigilance posture (documentation, measured responses throughout the Phase C period) has been maintained without deviation across the full 2022-2026 arc.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-15097: RF-04 B-030 peripheral (RF04-B030-P001) explicitly noted as 'RF-05 primary.' Feb 14 context: day before the Feb 15 Eli-Abby argument incident (COMP-RF04-029). ROW-15480: RF04-B030-004 (Sev-1 'do you boo' 5th instance) with cross_rf: RF-05 confirmed. Mar 21 context: in the extended Phase C visit-refusal/drinking-insinuation period. The 'do you boo' closing combined with a legal filing announcement is a first in the dataset — prior 'do you boo' instances were contemptuous dismissals without an embedded legal threat. Note: ROW-15480's 'I'm just going to file contempt on Monday' specificity contrasts with the broader arc of legal threats that were never executed (paper tiger trajectory); attorney should verify whether a contempt filing was actually made around Mar 23, 2026.",
+      "pattern_tags": ["repeat_financial_contempt_threat", "attorney_delegation", "day_specific_filing_announcement", "do_you_boo_5th_instance", "paper_tiger_trajectory"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'I'm not going to keep asking. I'm just going to file contempt on Monday...You're just getting yourself further in debt with bad choices but you do you boo.' (ROW-15480)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. B-030 adds S-026 (Sev-1 financial contempt threats — two incidents in low-conflict period). The arc signal frequency has declined from the B-027/B-028 peak (2 Sev-2 signals per batch) to a single Sev-1 in B-030, consistent with Phase C extended period of reduced overt legal pressure despite ongoing visit refusal and behavioral escalation (COMP-RF04-029 Feb 15 incident) occurring primarily in RF-04/RF-11/RF-02 territory. The RF-05 arc closes with a paper-tiger financial contempt threat, consistent with the overall arc trajectory established through B-016 forward: Sev-2 new mechanisms at each escalation node, with repeat-mechanism Sev-1 between. No physical threats (Sev-3 events) in the dataset."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-030 (Dec 2025–Apr 2026): Single Sev-1 RF-05 signal in a low-conflict extended Phase C batch. The financial contempt threats (ROW-15097, ROW-15480) continue the paper-tiger financial compliance sub-pattern from throughout the arc but do not escalate to new mechanisms. The RF-04 primary events in B-030 (Feb 15 incident amplification, drinking-problem insinuation) are significant but occur in RF-04/RF-11/RF-02 territory without RF-05 legal threat components. The RF-05 arc contribution from B-030 is low-density; the most significant RF-05-adjacent development is the Feb 15 incident being amplified to 'verbal abuse'/'traumatized' framing, which could have future legal threat implications not yet materialized in the text record.",
+    "cross_rf_context": "RF-04 B-030: RF04-B030-P001 (ROW-15097 Feb 14 contempt threat) confirmed RF-05 primary. RF04-B030-004 (ROW-15480 Mar 21 contempt + 'do you boo' 5th) confirmed RF-05 cross-tag. RF04-B030-002 COMP-RF04-029 (Feb 15 incident amplification: RF-04+RF-11+RF-02) has no RF-05 compound component despite its significance. RF04-B030-006 (Mar 28 drinking-problem insinuation: RF-04+RF-15) has no RF-05 component."
+  }
+}

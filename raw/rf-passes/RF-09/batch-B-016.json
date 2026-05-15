@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-016",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2024-06-14",
+    "end": "2024-07-15"
+  },
+  "row_range": {
+    "start": 5626,
+    "end": 6012
+  },
+  "message_count": 518,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 4,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jun\u2013Jul 2024: No RF-09 primary signals. Approaching Aug 2024 mega-cluster period (B-017). ROW-6819 coaching admission anticipated in next batch."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

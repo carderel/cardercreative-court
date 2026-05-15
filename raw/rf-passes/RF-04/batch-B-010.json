@@ -1,0 +1,254 @@
+{
+  "batch_id": "B-010",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "analysis_date": "2026-04-23",
+
+  "batch_metadata": {
+    "row_range": { "start": 3343, "end": 3722 },
+    "message_count": 380,
+    "date_range": { "start": "2023-08-21", "end": "2023-10-04" },
+    "phase": "Phase_A",
+    "batch_character": "Heavily administrative. First week of school (Aug 21-22), cheer season wrapping up, eye/dentist appointments, school photos, payment dispute escalation (multiple contempt threats). Co-parenting events include capybara outing (Sep 4), first day of school (Aug 21-22), farm visit (Sep 9), cheer game (Sep 10). Melissa's dog Marshall possibly diagnosed with cancer (Sep 7). Three distinct RF-04 events against an otherwise cooperative baseline."
+  },
+
+  "cumulative_statistics": {
+    "messages_analyzed_this_batch": 380,
+    "primary_flags_this_batch": 3,
+    "severity_distribution_this_batch": { "1": 2, "2": 1, "3": 0 },
+    "peripheral_flags_this_batch": 5,
+    "compound_patterns_this_batch": 1
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B010-001",
+      "severity": 2,
+      "date": "2023-08-27",
+      "row_range": "ROW-3388",
+      "type": "fifth_predation_framing_DARVO_reverse_triggered_by_legitimate_parenting_question",
+      "arc_signals": ["ARC-RF04-001-S26"],
+      "compound_pattern": "COMP-RF04-010",
+      "messages": [
+        {
+          "row": "ROW-3384",
+          "timestamp": "2023-08-27 03:03:24",
+          "direction": "Sent",
+          "text": "After this yr do really think it appropriate for her to be spending the night there?"
+        },
+        {
+          "row": "ROW-3385",
+          "timestamp": "2023-08-27 03:04:15",
+          "direction": "Received",
+          "text": "She will be fine. She's going v to be sleeping in olives room.  That's one of the entertainment rooms"
+        },
+        {
+          "row": "ROW-3386",
+          "timestamp": "2023-08-27 03:04:24",
+          "direction": "Received",
+          "text": "They were watching a movie"
+        },
+        {
+          "row": "ROW-3387",
+          "timestamp": "2023-08-27 03:04:51",
+          "direction": "Received",
+          "text": "They're kids. As a teen absolutely not"
+        },
+        {
+          "row": "ROW-3388",
+          "timestamp": "2023-08-27 14:49:12",
+          "direction": "Received",
+          "text": "Also who are you to talk about what's appropriate?   Banging your niece, that you met when you were 30 and she was getting ready to turn 8,"
+        }
+      ],
+      "analysis": "Eli raises a legitimate co-parenting question about Olivia sleeping over at a male friend's house. Melissa answers the practical question that evening (ROW-3385-3387: explains the sleeping arrangements, notes it would be inappropriate as a teen). The following afternoon, Melissa returns with ROW-3388 — a full DARVO Reverse deployment: 'Also who are you to talk about what's appropriate? Banging your niece, that you met when you were 30 and she was getting ready to turn 8.' DARVO structure: no Deny phase; Attack + Reverse. Attack: accusing Eli of sexual predation. Reverse: Eli's legitimate parenting question — about protecting his daughter — reframed as hypocrisy given his allegedly predatory relationship. The reversal neutralizes Eli's parenting authority; by framing him as the predatory actor, any parenting concern he raises can be dismissed as coming from an inappropriate person. This is the fifth deployment of the predation narrative. Key markers: (1) 'Banging your niece' — explicit sexual predation framing, same escalation level as B-006 'fucking his niece' (ROW-2167). (2) 'Getting ready to turn 8' — same factual framing used in ROW-937-938 (B-003), ROW-1287 (B-004), ROW-2167 (B-006), ROW-3271 (B-009). (3) Premeditated timing: the practical co-parenting response was given at 3:04am; the predation attack arrives at 2:49pm the next day — a deliberate return to the attack after the immediate co-parenting issue was resolved. (4) Trigger: a legitimate protective parenting concern (sleepover appropriateness) is the activation context — the attack deploys specifically when Eli exercises parental judgment. Sev 2: DARVO Reverse + explicit predation language + fifth confirmed instance. COMP-RF04-010."
+    },
+    {
+      "flag_id": "RF04-B010-002",
+      "severity": 1,
+      "date": "2023-08-28",
+      "row_range": "ROW-3397-3403",
+      "type": "child_complaint_relay_jerk_yelling_framing",
+      "arc_signals": ["ARC-RF04-002-S08"],
+      "compound_pattern": null,
+      "messages": [
+        {
+          "row": "ROW-3395",
+          "timestamp": "2023-08-28 00:48:25",
+          "direction": "Sent",
+          "text": "Ok.  Why did she hang up on me?"
+        },
+        {
+          "row": "ROW-3397",
+          "timestamp": "2023-08-28 00:52:10",
+          "direction": "Received",
+          "text": "She said cause you're a jerk"
+        },
+        {
+          "row": "ROW-3398",
+          "timestamp": "2023-08-28 00:53:00",
+          "direction": "Received",
+          "text": "And she said yes in the second one cause you keep yelling at her"
+        },
+        {
+          "row": "ROW-3399",
+          "timestamp": "2023-08-28 01:05:17",
+          "direction": "Sent",
+          "text": "That was not yelling.  She is going to have a very hard time in her life if she thinks that was yelling at her.  I am not mad."
+        },
+        {
+          "row": "ROW-3403",
+          "timestamp": "2023-08-28 01:28:29",
+          "direction": "Received",
+          "text": "She said to tell you 'not everything in life goes your way'"
+        }
+      ],
+      "analysis": "Eli asks why Olivia hung up on him. Melissa relays three child-positioned criticisms without protective framing: (1) 'She said cause you're a jerk' — relay of a contemptuous child-label for Eli with no qualification. (2) 'She said yes... cause you keep yelling at her' — relay that frames Eli as chronically intimidating ('keep yelling'), not just in this instance. The word 'keep' is editorial — it converts a single call into an ongoing pattern. (3) 'She said to tell you not everything in life goes your way' — Melissa delivers Olivia's apparent dismissive message to Eli. Whether or not this is verbatim Olivia's language, Melissa's choice to relay it functions as a vehicle for the child's rejection of Eli. ARC-RF04-002 mechanism: Olivia's stated criticisms of Eli are amplified and relayed in sequence without buffer, framing. ADD-003 applies (child relay text-record sufficiency). Context: no preceding Eli content visible in the record showing actual yelling; Eli's immediate response (ROW-3399) provides a calm, measured explanation. ARC-RF04-002 signal 8."
+    },
+    {
+      "flag_id": "RF04-B010-003",
+      "severity": 1,
+      "date": "2023-09-26",
+      "row_range": "ROW-3605-3637",
+      "type": "illness_deception_accusation_cluster_inadequate_father_contempt",
+      "arc_signals": ["ARC-RF04-001-S27"],
+      "compound_pattern": null,
+      "messages": [
+        {
+          "row": "ROW-3603",
+          "timestamp": "2023-09-26 22:59:34",
+          "direction": "Sent",
+          "text": "Well.  Can't take her tomorrow.  Just come from urgent care we are all under quarantine until Fri."
+        },
+        {
+          "row": "ROW-3605",
+          "timestamp": "2023-09-26 23:00:23",
+          "direction": "Received",
+          "text": "I don't believe you"
+        },
+        {
+          "row": "ROW-3609",
+          "timestamp": "2023-09-26 23:30:10",
+          "direction": "Received",
+          "text": "Dumbass"
+        },
+        {
+          "row": "ROW-3620",
+          "timestamp": "2023-09-26 23:47:17",
+          "direction": "Received",
+          "text": "You just don't want to talk her cause you're mad."
+        },
+        {
+          "row": "ROW-3621",
+          "timestamp": "2023-09-26 23:47:31",
+          "direction": "Received",
+          "text": "No one is sick or quarantined"
+        },
+        {
+          "row": "ROW-3623",
+          "timestamp": "2023-09-26 23:49:19",
+          "direction": "Received",
+          "text": "Thinking you're making things difficult for me but you're not. I am scheduled to go in late tomorrow anyway cause I know I can't trust you"
+        },
+        {
+          "row": "ROW-3624",
+          "timestamp": "2023-09-26 23:56:23",
+          "direction": "Received",
+          "text": "So lame and petty that you have to make up an illness to try to (in your mind) inconvenience me cause I am holding you accountable for your [payments]"
+        },
+        {
+          "row": "ROW-3628",
+          "timestamp": "2023-09-27 00:12:25",
+          "direction": "Received",
+          "text": "You miss out on seeing her all the time."
+        },
+        {
+          "row": "ROW-3629",
+          "timestamp": "2023-09-27 00:13:32",
+          "direction": "Received",
+          "text": "You did better while she was in cheerleading the. Quit when she quit.  I really hope you weren't just making yourself available because ther[e were events]..."
+        },
+        {
+          "row": "ROW-3635",
+          "timestamp": "2023-09-27 00:34:08",
+          "direction": "Received",
+          "text": "You make no sense and yet you continue the lies."
+        },
+        {
+          "row": "ROW-3637",
+          "timestamp": "2023-09-27 00:36:04",
+          "direction": "Received",
+          "text": "You really don't know how to lie very well. You give it the college try but suck at it cause I'm not a dumbass"
+        }
+      ],
+      "analysis": "Eli informs Melissa he can't take Olivia to the dentist because the household came from urgent care and is under quarantine. Melissa immediately rejects the explanation: 'I don't believe you' (ROW-3605). Sequence of attacks: (1) 'Dumbass' (ROW-3609) — ADD-002 contemptuous label, 7th+ 'dumbass' instance in record. (2) Illness-deception framing: 'No one is sick or quarantined' (ROW-3621) + extended medical argument questioning the validity of the quarantine. This is illness-skepticism sub-pattern instance 5: a health-related explanation from Eli is rejected as a fabrication — same pattern as ROW-978-983 (B-003), ROW-1062-1065 (B-003), ROW-1683 (B-005), ROW-3605-3637 (this batch). (3) Motivation attribution: ROW-3620 'You just don't want to take her cause you're mad' + ROW-3624 'so lame and petty that you have to make up an illness' — false causation assigned to Eli's decision (manufactured from payment dispute context). (4) Inadequate-father framing: ROW-3628 'You miss out on seeing her all the time' + ROW-3629 'You did better while she was in cheerleading. Quit when she quit. I really hope you weren't just making yourself available because [there were events]' — implies Eli's parenting engagement was only cheer-event-driven rather than genuine. (5) 'Continue the lies' / 'don't know how to lie very well / suck at it' (ROW-3635, ROW-3637) — repeated lie-labeling with contemptuous framing. ARC-RF04-001 signal: illness-skepticism instance 5 + inadequate-father + contemptuous attacks. Sev 1 per ADD-001 (sustained but no DARVO structure, no extreme language)."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "row": "ROW-3353-3355",
+      "date": "2023-08-22",
+      "text": "I usually do. That's why you are called most mornings. Because I ask. Despite what you think I try hard to foster a relationship between you two",
+      "note": "Third iteration of 'I'm the reason she calls you' gatekeeping-positioning statement (prior: B-009 ROW-3151). Framing Eli as doubting Melissa's facilitation work. RF-02 primary; RF-04 peripheral. Consistent pattern."
+    },
+    {
+      "row": "ROW-3520",
+      "date": "2023-09-10",
+      "text": "She kept looking for you. First thing she said when she sat back down was 'dad missed all of it'",
+      "note": "Cheer performance guilt relay — Eli apparently missed Olivia's performance. Direct Olivia-quote delivery: 'dad missed all of it.' Borderline ARC-RF04-002; kept peripheral given single message and ambiguous context."
+    },
+    {
+      "row": "ROW-3545-3546",
+      "date": "2023-09-20",
+      "text": "I deleted her off of pickup / Abby. Lol",
+      "note": "Melissa announces she removed Abby from Olivia's authorized pickup list; 'Lol' conveys casual contempt for the action. RF-02 primary (gatekeeping — unilateral Abby exclusion from pickup authorization); RF-04 peripheral (contemptuous dismissal of Eli's domestic partner). RF-02 pass should flag as primary signal."
+    },
+    {
+      "row": "ROW-3555-3561",
+      "date": "2023-09-21",
+      "text": "You lied. / You weren't on the phone with your mom / You called your mom at 6:37 / No way you were on the phone for two hours / You're a liar",
+      "note": "Five-message liar accusation sequence based on Melissa's inference about call duration. Eli provides a truthful clarification (remote desktop/Teams session). RF-09 primary (false accusation / Eli's explanation rejected); RF-04 peripheral (contemptuous liar framing). Watch for RF-09 pattern."
+    },
+    {
+      "row": "ROW-3596",
+      "date": "2023-09-25",
+      "text": "Maybe work more less PlayStation",
+      "note": "Contemptuous character attack — implies Eli prioritizes gaming over earning income to pay child-related expenses. Single-message ADD-002 adjacent insult. Peripheral."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "signals_added": 2,
+      "new_signal_refs": ["ARC-RF04-001-S26", "ARC-RF04-001-S27"],
+      "signal_summary": "S26: ROW-3388 (Aug 27) — fifth predation framing + DARVO Reverse: 'who are you to talk about what's appropriate? Banging your niece / getting ready to turn 8.' Premeditated; triggered by legitimate parenting question. COMP-RF04-010. S27: ROW-3605-3637 (Sep 26-27) — illness-deception accusation cluster; illness-skepticism instance 5; 'dumbass' × 1; inadequate-father framing; repeated liar-labeling.",
+      "new_total": 27
+    },
+    "ARC-RF04-002": {
+      "signals_added": 1,
+      "new_signal_refs": ["ARC-RF04-002-S08"],
+      "signal_summary": "S08: ROW-3397-3403 (Aug 28) — child complaint relay: 'She said cause you're a jerk' + 'she said yes cause you keep yelling at her' + 'not everything in life goes your way.' Three sequential child-positioned criticisms relayed without protective framing.",
+      "new_total": 8
+    }
+  },
+
+  "compound_pattern_detected": {
+    "compound_id": "COMP-RF04-010",
+    "label": "Fifth Predation Framing + DARVO Reverse on Parenting Question",
+    "date": "2023-08-27",
+    "rows": "ROW-3388",
+    "rfs_active": ["RF-04", "RF-15"],
+    "description": "Tenth compound multi-RF episode. RF-04 (primary, Sev 2 — DARVO Reverse: legitimate parenting question ('is it appropriate for Olivia to sleep over at a male friend's house') met with reversal of moral authority; 'who are you to talk about what's appropriate?') + RF-15 (ROW-3388: 'Banging your niece, that you met when you were 30 and she was getting ready to turn 8' — fifth predation-framing deployment; explicit language matches B-003/B-006 level; same 'getting ready to turn 8' factual framing as all prior instances). Notable: (1) most targeted trigger context of any predation deployment — activated specifically when Eli exercises protective parenting judgment; (2) premeditated timing (attack arrives 11+ hours after practical co-parenting exchange was resolved)."
+  },
+
+  "cp3_items_generated": [
+    "CP3-RF04-010: ROW-3388 (Aug 27 2023) — fifth predation-framing deployment; DARVO Reverse triggered by Eli's legitimate co-parenting question about sleepover appropriateness; 'Banging your niece, that you met when you were 30 and she was getting ready to turn 8'; same factual framing as all 4 prior instances; premeditated (attack arrives 11+ hours after practical question resolved); COMP-RF04-010 (RF-04+RF-15). Pattern now 5 confirmed deployments across B-003/B-004/B-006/B-009/B-010."
+  ],
+
+  "notable_observations": {
+    "predation_framing_trigger_pattern": "The fifth deployment (ROW-3388) reveals an important trigger pattern. Deployments 1-3 (B-003, B-004, B-006) were activated in high-conflict contexts (anniversary of Abby, surgery morning, late-return dispute). Deployment 4 (B-009, Aug 14) arrived unprompted at a co-parenting event. Deployment 5 (B-010, Aug 27) is activated specifically when Eli exercises protective parenting judgment — asking whether a sleepover arrangement is appropriate. The predation framing is now functioning as a mechanism to neutralize Eli's parental authority: the moment he raises a concern about what's 'appropriate' for Olivia, Melissa deploys the predation narrative to strip him of moral standing to do so.",
+    "illness_skepticism_fifth_instance": "ROW-3605-3637 is the 5th confirmed illness-skepticism instance. Pattern by batch: B-003 (ROW-978-983 award ceremony mask-up), B-003 (ROW-1062-1065 'full of bullshit / you cancel stuff cause you're lazy'), B-005 (ROW-1683 'magically better' Abby illness), B-010 (ROW-3605-3637 quarantine fabrication). Every instance follows the same structure: Eli cites health-related reason for a change → Melissa immediately labels it as deception.",
+    "abby_pickup_exclusion": "ROW-3545-3546 'I deleted her off of pickup / Abby. Lol' — significant RF-02 action. Melissa has unilaterally removed Abby from the authorized pickup list for Olivia's school. The 'Lol' suggests Melissa views this as satisfying or amusing. This is a concrete gatekeeping action against Eli's domestic partner in an institutional context."
+  }
+}

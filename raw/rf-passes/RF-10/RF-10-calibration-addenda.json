@@ -1,0 +1,119 @@
+{
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "generated": "2026-05-05",
+  "cp2_completed": "2026-05-05",
+  "source": "CP2 answers provided 2026-05-05",
+
+  "addenda": [
+
+    {
+      "id": "RF10-ADD-001",
+      "title": "Structural Gap Analysis Methodology",
+      "status": "ACTIVE",
+      "rule": "RF-10 primary detection requires active gap analysis — silence and selective responsiveness are the signal, not explicit refusal language. At each batch apply: (1) scan Eli-sent messages that are requests for information, scheduling, medical, school, or activity coordination; (2) check subsequent messages for a substantive response; (3) flag non-responses on legitimate co-parenting requests as RF-10 Sev-1. Distinguish: (a) silence on hostile or emotionally escalated Eli messages = appropriate non-engagement, NOT RF-10; (b) silence on substantive, non-hostile co-parenting requests = RF-10 primary; (c) hostile response to substantive request = RF-10 secondary + RF-04/RF-13 compound. Note: only 2 triage keyword hits means most RF-10 signals will be zero-keyword structural gaps. The co-parenting functional baseline from B-001 is the measure: cooperative = she handles medical/school/scheduling; deterioration = exclusion from communications, unilateral decisions, information friction.",
+      "why": "Q1(a): She handles medical, school, and scheduling but Eli has had to remind her he's supposed to be on everything too. Q3(a): info shared once; she gets annoyed at follow-up. Structural gap methodology confirmed as the correct detection approach."
+    },
+
+    {
+      "id": "RF10-ADD-002",
+      "title": "RF-10 / RF-02 Compound Rule",
+      "status": "ACTIVE",
+      "rule": "RF-02 flags access DENIAL. RF-10 flags co-parenting REFUSAL (information, decisions, communication). When co-parenting refusal directly accompanies or enables an access denial: RF-02 primary + RF-10 secondary compound. When co-parenting refusal is independent of a specific access event (e.g., ignoring a medical information request during a period without active visit dispute): RF-10 primary, standalone. Do not double-count: each event gets a primary assignment; the compound tag on the secondary signals the mechanism relationship.",
+      "why": "Proposed addendum confirmed. CP2 answers confirm both mechanisms are present and analytically distinct."
+    },
+
+    {
+      "id": "RF10-ADD-003",
+      "title": "Simulated Cooperation — Cooperative If It Agrees",
+      "status": "ACTIVE",
+      "rule": "Melissa makes a show of being cooperative — she 'runs things by' Eli as required — but if he disagrees or offers a different view, she proceeds with what she wants regardless. This is simulated consultation, not genuine co-parenting. When documented in messages: a message where Melissa presents a decision as a consultation followed by confirmation she acted contrary to Eli's expressed objection = RF-10 primary Sev-1 (unilateral decision with cooperative facade). Distinguished from: (1) genuine consultation where disagreement is resolved through compromise; (2) emergencies requiring unilateral action. The key marker is Eli's objection being documented and then disregarded.",
+      "why": "Q2(a): 'She makes a show about it being cooperative and will run it by me as she is required to but if I disagree or have a different take on it, that doesn't matter she does what she wants. So she's cooperative as long as it agrees with what she wants.'"
+    },
+
+    {
+      "id": "RF10-ADD-004",
+      "title": "Vacation Pre-Commitment Trap",
+      "status": "ACTIVE",
+      "rule": "Melissa plans vacations or activities, tells Olivia about them in advance, and THEN 'runs it by' Eli — constructing a situation where Eli's refusal means disappointing Olivia rather than simply disagreeing with Melissa. This is deliberate: the consultation is performed after the child's buy-in has been secured, weaponizing Eli's parental relationship with Olivia against his decision-making authority. When documented: RF-10 primary Sev-1 (unilateral planning that manufactures Eli's consent through child pre-commitment) + RF-11 secondary compound (child placed in the middle of a parental decision as leverage). Classification note: the consultation message (where Melissa presents the plan after telling Olivia) is the flag-triggering message.",
+      "why": "Q2(b): 'She is manipulative she often puts me in a position that makes it difficult for me to say no. Like vacations, she'll plan the vacation and tell Olivia about it and then runs it by me, and then if I say no. It's me letting Olivia down.'"
+    },
+
+    {
+      "id": "RF10-ADD-005",
+      "title": "Constructed Irrefusability — Fait Accompli Medical Pattern",
+      "status": "ACTIVE",
+      "rule": "Melissa structures some decisions in a framework where Eli objecting would seem unreasonable, and then presents them as consultations. The allergy specialist example: taking Olivia to an allergy specialist is ostensibly appropriate medical care — 'What am I going to say? No, don't seek medical advice for the health of my child?' — but the result of the visit was used to manufacture a medical pretext for access denial (cat allergy documentation scheme, RF-15+RF-02+RF-14). The manipulation is in the construction: a reasonable-seeming action designed to produce an output that can be weaponized. When documented: RF-10 primary Sev-1 (constructed irrefusability — decision structured to preclude meaningful objection) + cross-reference RF-15 if the medical output becomes a false allegation vehicle, RF-03 if it creates conditional logistics. The allergy specialist visit itself is the primary historical example; watch for the same pattern in future medical or activity decisions.",
+      "why": "Q2(c): 'It was done in a very manipulative way.' + Q2(b) context. Already captured in RF-15 record (cat allergy scheme) — this addendum flags the RF-10 component of that pattern and applies it forward to similar medical-decision structures."
+    },
+
+    {
+      "id": "RF10-ADD-006",
+      "title": "Single-Disclosure Friction — Information Access Barrier",
+      "status": "ACTIVE",
+      "rule": "Melissa provides required information once and becomes annoyed when Eli asks follow-up questions — 'I sent it to you, you should have marked it down.' This is not full withholding but constructive information-access friction: information is technically disclosed, but the single-disclosure, follow-up-aversion pattern creates a structural barrier for Eli's meaningful participation. When documented: RF-10 Sev-1 (information access friction — constructive withholding). Note: the friction is most significant when applied to time-sensitive information (upcoming appointments, school events) where Eli's inability to follow up results in missed participation. Distinguish from a single reminder that was genuinely ignored (not RF-10 if Eli received the information and didn't follow up without asking).",
+      "why": "Q3(a): 'It's never repeated more than once and she tends to get annoyed when I ask follow up later. Like when was this appointment? She will say I sent it to you, you should have marked it down.'"
+    },
+
+    {
+      "id": "RF10-ADD-007",
+      "title": "Medical Record Exclusion — Information Blackout",
+      "status": "ACTIVE",
+      "rule": "Eli does not have access to any of Olivia's medical records or files. As a legal parent he is entitled to these. This is a structural information blackout operating below the message level: it does not require a specific refusal message to be an RF-10 signal — the absence of access is itself the signal. For batch analysis: (1) when Eli requests medical records, test results, or provider information in messages, flag any non-response or deflection as RF-10 primary Sev-2; (2) when Eli makes decisions or is unable to make decisions due to lack of medical information, note as RF-10 Sev-1 contextual signal; (3) cross-reference RF-14 (medical compliance failures: allergy meds, glasses) — Eli's inability to enforce compliance is partly downstream of his information exclusion. Add this as a structural arc note under ARC-RF10-002.",
+      "why": "Q3(b): 'It's never come up but now that I think about it. I don't have any access to any of her medical records or files.' Structural exclusion confirmed — not a single event but a sustained access denial."
+    },
+
+    {
+      "id": "RF10-ADD-008",
+      "title": "Therapist Gatekeeping — Narrative Control Motive Confirmed",
+      "status": "ACTIVE",
+      "rule": "Eli wants to pursue therapy for Olivia but Melissa 'put up a fight' because she wants to control the contact and narrative. Q1(b): 'If she can't control the contact and narrative she gets defensive, argumentative and controlling.' Cross-reference RF-11 record: Melissa drops therapists when they are called out or cannot be controlled. This is a consistent pattern: Melissa resists any therapeutic relationship she cannot steer. When documented in messages: RF-10 primary Sev-1 (refusal to co-parent on therapeutic access) + RF-11 secondary compound (narrative control over child's therapeutic relationships). Note: Eli has not pushed hard on this — the resistance is primarily manifested as friction and conflict about involvement rather than outright refusal. If Eli pursues this in the message record and Melissa stonewalls: flag as RF-10 primary Sev-2.",
+      "why": "Q1(b): 'I do want to get Olivia a therapist/counselor but Melissa wants to be involved and kind of put up a fight about it. I haven't pushed too hard on that. If she can't control the contact and narrative she gets defensive, argumentative and controlling.' Narrative control motive explicitly confirmed."
+    }
+
+  ],
+
+  "arc_state_post_cp2": {
+    "ARC-RF10-001": {
+      "name": "Co-Parenting Refusal",
+      "description": "Melissa's pattern of refusing genuine co-parenting participation — unilateral decisions, simulated cooperation, and narrative control resistance.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "received",
+      "note": "Signal criteria: (1) Simulated consultation — runs decision by Eli, ignores objection (ADD-003); (2) vacation/activity pre-commitment trap using Olivia as leverage (ADD-004); (3) constructed irrefusable decisions (ADD-005); (4) therapist gatekeeping / narrative control resistance (ADD-008). First documented signal promotes CANDIDATE to WATCHING. CP2 confirms pattern is real and systematic — signal expected as early as Phase A escalation onset."
+    },
+    "ARC-RF10-002": {
+      "name": "Information Blackout",
+      "description": "Melissa's structural and tactical exclusion of Eli from information about Olivia's medical, school, and household life.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "received",
+      "note": "Signal criteria: (1) Single-disclosure friction — sends once, refuses follow-up (ADD-006); (2) medical record exclusion — structural denial of access (ADD-007); (3) curated/editorialized information sharing (Q3(c): 'shares info but it's editorialized'); (4) guardedness about household details when legitimate co-parenting questions asked. Medical record exclusion is structural (ongoing at CP2 date) — this likely contributes to arc signal count at first documented instance."
+    }
+  },
+
+  "post_cp2_processing_instructions": {
+    "primary_signal_criteria": [
+      "Unresponded substantive co-parenting requests (ADD-001 structural gap analysis) — most signals will be zero-keyword",
+      "Simulated consultation — message where Eli's input is solicited then disregarded (ADD-003)",
+      "Vacation / activity pre-commitment trap sequence — plan → tell Olivia → consult Eli (ADD-004)",
+      "Eli requests medical records or specific provider information → no response (ADD-007)",
+      "Therapist/counselor conflict — Melissa resisting Eli-initiated therapeutic access (ADD-008)"
+    ],
+    "peripheral_only_categories": [
+      "Cat allergy specialist visit — RF-15+RF-02 primary, RF-10 compound element (ADD-005)",
+      "Hostile responses to substantive requests — RF-04/RF-13 primary, RF-10 secondary"
+    ],
+    "arc_promotion_criteria": {
+      "ARC-RF10-001": "2+ simulated consultation or unilateral decision signals → promote CANDIDATE to WATCHING",
+      "ARC-RF10-002": "2+ information withholding or access-barrier signals → promote CANDIDATE to WATCHING"
+    },
+    "hot_periods_watch": [
+      "B-002/B-003 (Oct 2022 – Jan 2023): escalation onset — first simulated cooperation patterns expected",
+      "B-007/B-008 (Apr-Jun 2023): cat allergy / urgent care area — ADD-005 constructed irrefusability compound",
+      "B-014/B-018 (Mar-Aug 2024): dense Phase A activity — vacation pre-commitment traps likely in this range",
+      "B-018 (Aug 2024): EP-0854 311-message cluster — check for RF-10 structural gaps in logistics coordination",
+      "B-023 onward: Olivia self-harm period — Eli seeking therapist, Melissa resistance likely"
+    ]
+  }
+}

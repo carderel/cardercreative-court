@@ -1,0 +1,41 @@
+{
+  "batch_id": "B-029",
+  "date_range": {
+    "start": "2025-09-14",
+    "end": "2025-10-31",
+    "note": "date-filtered batch"
+  },
+  "message_count": 482,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "calibration_addenda_active": [
+    "RF10-ADD-001",
+    "RF10-ADD-002",
+    "RF10-ADD-003",
+    "RF10-ADD-004",
+    "RF10-ADD-005",
+    "RF10-ADD-006",
+    "RF10-ADD-007",
+    "RF10-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Structural gap analysis: no new standalone RF-10 primary signals. Ongoing dance schedule conflict (from S-001 B-028) continues \u2014 Olivia has dance Thursdays, creates standing logistics conflict affecting Eli's parenting time. Arc state: ARC-RF10-001 CANDIDATE (1 signal), ARC-RF10-002 CANDIDATE (0 signals). Structural medical record exclusion (ADD-007) remains ongoing throughout dataset."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF10-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 1
+    },
+    {
+      "arc": "ARC-RF10-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    }
+  ]
+}

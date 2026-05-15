@@ -1,0 +1,54 @@
+{
+  "batch_id": "B-009",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2023-07-15",
+    "end": "2023-08-20"
+  },
+  "row_range": {
+    "start": 2955,
+    "end": 3343
+  },
+  "message_count": 508,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 2,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Aug 2023: 1 primary RF-09 signal. S003 arc activation \u2014 ARC-RF09-001 WATCHING\u2192ACTIVE."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B009-001",
+      "signal_id": "S003",
+      "severity": 1,
+      "date": "2023-08-05",
+      "row_ref": "ROW-2992",
+      "direction": "received",
+      "evidence_level": "E",
+      "type": "darvo_inversion_gaslight_accusation",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-003",
+        "ADD-004"
+      ],
+      "compound_pattern": "COMP-RF09-003",
+      "cross_rf": "RF-04 (DARVO context B-009)",
+      "message_text": "Your gaslighting doesn't work on me",
+      "summary": "Aug 2023: Melissa accuses Eli of gaslighting \u2014 third documented instance. ROW-2992: 'Your gaslighting doesn't work on me' \u2014 explicit DARVO inversion: Melissa positions herself as the victim of Eli's alleged psychological manipulation, while the text record documents Melissa's sustained emotional-manipulation campaign (RF-04 ARC-RF04-001 ACTIVE). Evidence Level E: reality-questioning language without a specific denied claim and without cross-referenceable contradiction. Arc transition: 3rd signal \u2192 ARC-RF09-001 WATCHING\u2192ACTIVE. This is the arc activation event: three Level E signals in Phase A confirm a systematic pattern of accusing Eli of the behavior Melissa is demonstrably engaging in. ADD-004 arc escalation: Level E sustained across multiple conflict periods \u2192 Sev-1 arc confirmed ACTIVE. ADD-003 compound: DARVO sequence includes explicit gaslight accusation \u2192 RF-09+RF-04 COMP-RF09-003. Sub-pattern: DARVO-inversion (accusing Eli of gaslighting while engaging in documented DARVO) is the dominant early RF-09 mechanism."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S003 signal added; arc WATCHING\u2192ACTIVE",
+      "new_state": "ACTIVE",
+      "signal_count": 3
+    }
+  ]
+}

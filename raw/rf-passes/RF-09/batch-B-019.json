@@ -1,0 +1,53 @@
+{
+  "batch_id": "B-019",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2024-09-09",
+    "end": "2024-10-18"
+  },
+  "row_range": {
+    "start": 7056,
+    "end": 7557
+  },
+  "message_count": 502,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 4,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Sep 2024: 1 primary RF-09 signal. S005 \u2014 reality denial via Olivia relay. Arc ACTIVE (5 signals)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B019-001",
+      "signal_id": "S005",
+      "severity": 1,
+      "date": "2024-09-15",
+      "row_ref": "ROW-7326-7332",
+      "direction": "received",
+      "evidence_level": "E",
+      "type": "reality_questioning_via_olivia_relay",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-004"
+      ],
+      "compound_pattern": null,
+      "cross_rf": "RF-08 (Olivia relay mechanism B-019)",
+      "message_text": "ROW-7326: 'I don't know what you're talking about.' | ROW-7329: 'She said you're lying. She said she didn't say anything disrespectful at the dr' | ROW-7332: 'She said she didn't say anything disrespectful or sassy at the dr and you are just making it up'",
+      "summary": "Sep 2024: Melissa deploys Olivia to deny Eli's account of a doctor's visit incident. Context: Eli reported that Olivia was disrespectful or sassy at the doctor's office. Melissa relays Olivia's counter-account as definitional truth: ROW-7326 'I don't know what you're talking about' (dismissal), ROW-7329 'She said you're lying. She said she didn't say anything disrespectful at the dr' \u2014 Olivia deployed as witness to deny Eli's reality, ROW-7332 'you are just making it up' \u2014 global credibility attack using Olivia's account as anchor. Evidence Level E: 'you're making it up' language attacks Eli's perception; the Olivia relay mechanism adds RF-08 compound dimension. Sev-1: no prior text record of the doctor's office incident to cross-reference (Level A not achievable). ADD-004: 'making it up' is the 4th documented instance of Melissa attacking Eli's perception of reality. Note: the RF-09+RF-08 compound here is the first instance of Olivia being used as a tool to deny Eli's account \u2014 distinct from RF-08 emotional/narrative relay (coaching Olivia's communications TO Eli) because this is deploying Olivia's account to DENY Eli's version of events."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S005 signal added",
+      "new_state": "ACTIVE",
+      "signal_count": 5
+    }
+  ]
+}

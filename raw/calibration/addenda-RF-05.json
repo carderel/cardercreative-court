@@ -1,0 +1,41 @@
+{
+  "rf_pass": "RF-05",
+  "generated_from_cp2": "2026-04-24",
+  "addenda": [
+    {
+      "id": "RF05-ADD-001",
+      "title": "Abby-Framework Attacks — NOT RF-05 Primary",
+      "rule": "Melissa's predation-framing attacks about Eli's relationship with Abby (uncle/niece framing, 'she was 7 when they met,' incest allegations, pregnancy weaponization) do NOT constitute RF-05 primary signals. Eli researched the relationship and confirmed it is legal (marriage-only, not blood — no incest basis). He never feared CPS involvement. These attacks are RF-04 primary (contemptuous manipulation, Abby-as-obstacle/attack-vector) and RF-15 primary (false allegations). RF-05 role is peripheral only: aggressive tone element (Sev-1) when the attack language is particularly hostile. Do NOT promote predation-framing instances to RF-05 primary and do NOT form a separate RF-05 'Abby predation intimidation arc.'",
+      "why": "Eli confirmed he was never worried about CPS and had already established the relationship was legally unproblematic. The attacks are contemptuous and manipulative but do not create the fear or compliance pressure that constitutes RF-05's core harm.",
+      "how_to_apply": "When Abby-framework predation attacks appear: RF-04 primary, RF-15 primary or secondary as appropriate, RF-05 peripheral Sev-1 for aggressive tone only. This applies to all 10 predation-framing instances catalogued in the RF-04 pass (B-003, B-004, B-006, B-009, B-010, B-012, B-014, B-019, B-026, B-028)."
+    },
+    {
+      "id": "RF05-ADD-002",
+      "title": "Legal Threats — Temporal Calibration (Genuine Fear → Paper Tiger Trajectory)",
+      "rule": "Legal threat language (custody filing, contempt threats, attorney consultation disclosures, 'agreement ready to sign') follows a temporal arc: (A) Early-phase legal threats were genuinely fear-inducing for Eli — classify as RF-05 Sev-2 primary when direct and early in the record (Phase A escalation periods, first instances in each threat category). (B) As Eli recognized the pattern ('paper tiger' — repeated threats with no follow-through), later instances of the same threat type carry diminished subjective intimidation. For the GAL report, however, the PATTERN of weaponizing the legal system remains analytically significant regardless of whether Eli eventually stopped fearing specific threats: the early period established a compliance environment that shaped his co-parenting behavior. Classify later-phase legal threats as RF-05 Sev-1 (sustained pattern) rather than Sev-2 (active fear), noting the paper-tiger recognition in the analysis. The pattern of legal-threat escalation and non-follow-through is itself a behavioral finding.",
+      "why": "Eli confirmed legal threats were initially fear-inducing (lawfare and losing Olivia were the primary early threats) but became recognized as empty over time due to no follow-through. Both phases are analytically valid — the early fear and the subsequent normalization both tell the GAL something about the dynamic.",
+      "how_to_apply": "First instance in each legal-threat category = RF-05 Sev-2 (direct, initially credible). Repeated instances of the same threat type (after pattern established) = RF-05 Sev-1 (pattern continuation, paper tiger recognized). Legal threat categories: (1) custody modification threats, (2) contempt filing threats, (3) attorney consultation disclosure, (4) formal reporting threats (CPS, police as non-safety leverage). Note 'paper tiger trajectory' in compound pattern descriptions when relevant. Phase A legal threats: Sev-2 candidate. Phase B repeat legal threats in same category: Sev-1."
+    },
+    {
+      "id": "RF05-ADD-003",
+      "title": "Physical Harm Allegations — Limited RF-05 Component",
+      "rule": "When Melissa makes physical harm allegations (choking claim B-019, DV prior-relationship reference B-019, abuse framing, visual-artifact harm allegation B-028), include an RF-05 Sev-1 peripheral component: the allegations create some fear of legal action even if Eli understands the amplification mechanism. Do NOT elevate physical harm allegations to RF-05 primary — RF-04+RF-15 remains the compound primary. The RF-05 component is a note that formal-action fear exists at a low level. Flag this explicitly in compound pattern descriptions.",
+      "why": "Eli confirmed 'a little bit' of fear from physical harm allegations, but he now understands Melissa amplifies Olivia's benign statements. The fear exists but is not the dominant harm mechanism — the manipulation (RF-04) and false-allegation (RF-15) components dominate.",
+      "how_to_apply": "Physical harm allegation clusters (especially child-relay harm allegations): RF-04+RF-15 primary compound with RF-05 Sev-1 peripheral note. Phrase in analysis: 'RF-05 peripheral — physical harm framing creates low-level fear of formal action; RF-04 and RF-15 are primary harm vectors.' This applies retroactively to COMP-RF04-017 (B-019 choke claim), COMP-RF04-025 (B-028 image-based harm), and any Phase B/C harm-allegation compounds."
+    },
+    {
+      "id": "RF05-ADD-004",
+      "title": "Pre-2022 Dataset Gap — Heightened Baseline Context",
+      "rule": "Eli characterizes Melissa as 'more dangerous' in the pre-2022 period (iPhone messages 2020–2022, not yet processed and not part of this dataset). The 2022-2026 text record may represent a REDUCED threat period relative to the baseline Eli experienced. When analyzing RF-05 signals in this dataset: (1) Note that the intimidation environment was established prior to the record; patterns appearing in Phase A may be continuations of pre-existing dynamics, not new formations. (2) The paper-tiger recognition (ADD-002) likely developed in part from pre-2022 experience — Eli's threat-assessment sophistication in Phase A reflects prior exposure. (3) For GAL purposes: the attorney should be advised that the pre-2022 communication record is a gap in the evidence base and may contain the dataset's highest-severity RF-05 signals. Flag this at synthesis stage.",
+      "why": "Eli's direct statement: 'I felt she was more dangerous pre text dates.' This recontextualizes the entire RF-05 pass — the pattern being analyzed is the residual phase, not the peak. This is important for the GAL report's framing of the intimidation pattern.",
+      "how_to_apply": "At synthesis stage (Phase 2): include explicit note that the pre-2022 iPhone record is unprocessed and that Eli identifies this period as higher-severity. When describing RF-05 arc origins, frame as 'continuation of established pattern' rather than 'pattern formation.' Do not adjust individual flag classifications based on this context — it is a framing note for synthesis, not a signal-level calibration."
+    },
+    {
+      "id": "RF05-ADD-005",
+      "title": "Eli's Sustained Vigilance Posture — Pattern Impact Evidence",
+      "rule": "Eli disclosed: 'I always look at every interaction for potential threat risk.' This sustained threat-monitoring posture is itself analytically significant RF-05 impact evidence — the early intimidation environment (lawfare threats, access denial) successfully established a compliance/vigilance dynamic that persists throughout the dataset even after specific threats became 'paper tigers.' For the GAL report, this is an important behavioral finding: the RF-05 pattern's harm is not limited to individual threat instances but includes the sustained defensive posture it imposed on Eli's co-parenting experience. Note this in arc synthesis. Do not use this context to inflate individual flag severity — it is a pattern-level impact observation, not a per-signal calibration.",
+      "why": "Eli's threat-monitoring stance indicates the intimidation pattern had lasting behavioral effects beyond specific threat instances. This is the kind of functional-impact evidence that distinguishes an intimidation pattern from isolated aggressive behavior.",
+      "how_to_apply": "At synthesis stage: include as a named behavioral impact of the RF-05 arc — 'Eli's co-parenting engagement is conducted through a sustained threat-assessment lens established by early lawfare and access-denial threats.' This context supports characterizing the RF-05 pattern as a sustained environmental condition rather than episodic incidents. Note in synthesis report."
+    }
+  ]
+}

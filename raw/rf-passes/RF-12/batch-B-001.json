@@ -1,0 +1,84 @@
+{
+  "batch_id": "B-001",
+  "date_range": {
+    "start": "2022-01-11",
+    "end": "2022-10-02"
+  },
+  "row_range": {
+    "start": 2,
+    "end": 366
+  },
+  "message_count": 365,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [],
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "pass_context": {
+    "rf12_definition": "RF-12 flags: evidence that a party is crafting messages for a legal audience rather than genuine communication. Key mechanisms: bait-and-switch sequences (provoke \u2192 pivot to reasonable \u2192 capture reaction); performative reasonableness (sounds reasonable but is crafted for exhibits); sudden formality inconsistent with established baseline; 'for the record' documentation language; timing correlation with legal events; creating misleading paper trails.",
+    "methodology": "RF-12 requires RF-12-SUPPLEMENT.md methodology: (1) build tone profiles for both parties across Phase A baseline before flagging; (2) detect tone-shift magnitude + duration; (3) identify bait-and-switch sequences (bait \u2192 pivot \u2192 capture \u2192 optional escalation blame); (4) score performative reasonableness (PRS 0-3). B-001 is PRIMARILY a baseline-building batch.",
+    "cross_rf_foundation": {
+      "full_tier1_context_available": "All 10 Tier 1 passes complete \u2014 maximum cross-RF context for tone-shift vs. genuine-improvement disambiguation. Critical: Eli's Phase B/C AI-guided communication (ChatGPT from EP-1078 May 2025) IS genuine improvement, not strategic communication. Any tone improvement from Eli in Phase B/C should be attributed to genuine change, not RF-12 flagging.",
+      "rf04_bait_context": "RF-04 complete (93 flags). DARVO mechanism inherently contains bait-and-switch elements: Melissa provokes with DARVO, then pivots to victim positioning. Key RF-04 compounds are also RF-12 candidates: COMP-RF04-029 (Feb 2026 amplification: raised voice \u2192 verbal abuse \u2192 traumatized) is a strategic narrative construction sequence.",
+      "rf09_context": "RF-09 XREF-001 (ROW-9964 'There's no threats' vs. ROW-9957 documented threat) \u2014 strategic denial with documentation awareness. This is a Level A cross-reference pair and also a strong RF-12 signal (performative denial for legal audience).",
+      "rf13_phase_bc": "RF-13 ADD-002: Eli's AI-guided communication from EP-1078 May 2025. Melissa escalated regardless \u2014 de-escalation resistance. Melissa's communication pattern did NOT genuinely improve in response. Any 'reasonable' Melissa messages in Phase B/C occurring around hostility should be assessed for strategic bait-and-switch framing.",
+      "known_bait_triggers": [
+        "Abby-content: any mention of Abby or the uncle/niece dynamic triggers strong reactions from Melissa",
+        "Holiday windows: Halloween, Thanksgiving, Christmas, Valentine's, New Year's \u2014 multi-year confirmed escalation triggers",
+        "Logistics/scheduling requests: RF-03 candidates also serve as bait topics",
+        "Legal/contempt references: Melissa's paper-tiger legal threats (RF-05) may be strategic documentation"
+      ]
+    },
+    "tone_profile_building": {
+      "priority": "PRIMARY goal of B-001 pass is baseline establishment for both parties",
+      "melissa_baseline_note": "Phase A (Jan 2022 - May 2025): RF-04 record (93 flags) establishes volatile, DARVO-heavy baseline. RF-12 must determine when 'reasonable' messages are genuine vs. performative against this backdrop.",
+      "eli_baseline_note": "Phase A: RF-13 confirms consistent de-escalator role. Phase B/C (May 2025+): genuine communication change via ChatGPT guidance. Eli's tone shift in Phase B/C is documented context, not RF-12 flagging.",
+      "legal_timeline": "[TO BE FILLED BY CP2 \u2014 request key legal dates from Eli for correlation analysis]"
+    },
+    "anticipated_arcs": [
+      "ARC-RF12-001: Strategic Communication Campaign \u2014 sustained strategic messaging pattern",
+      "ARC-RF12-002: Bait-and-Switch Cycle \u2014 recurring provoke-pivot-capture sequences"
+    ],
+    "not_this_boundaries": [
+      "Eli's Phase B/C AI-guided communication improvement \u2014 genuine, not strategic",
+      "Documenting legitimate concerns for legal purposes",
+      "Using formal tone to de-escalate (healthy unless pattern shows performative)",
+      "Following attorney advice to communicate in writing"
+    ]
+  },
+  "calibration_episode": {
+    "batch_tone": "Cooperative baseline Jan-Oct 2022. PRE-AWARENESS period for both parties \u2014 neither is expected to be crafting messages strategically. B-001 is the most important batch for RF-12: establishes Phase A communication baseline for both directions. Tone profiles are the primary deliverable from this batch.",
+    "rf12_flag": false,
+    "reason_not_flagged": "Jan-Oct 2022 cooperative baseline \u2014 pre-awareness, pre-legal-strategy period. No strategic communication expected. Triage hot periods (2025-02, 2025-08) are in Phase B \u2014 consistent with strategic communication emerging after legal involvement increases. Confirming zero RF-12 primary flags for B-001. Primary output: Phase A tone profile initialization for both parties."
+  },
+  "tone_profile_snapshot": {
+    "melissa_phase_a_initial": {
+      "formality_level": "casual-to-mixed",
+      "note": "Phase A baseline = B-001 through B-003 minimum. RF-04 record establishes volatile/DARVO baseline as Phase A norm. Strategic communication would be a DEPARTURE from this volatile baseline."
+    },
+    "eli_phase_a_initial": {
+      "formality_level": "casual-to-measured",
+      "note": "Phase A Eli: de-escalator role confirmed by RF-13. Communication measured but not formal. Phase B/C shift (May 2025) is genuine \u2014 AI-guided."
+    }
+  },
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jan-Oct 2022 calibration batch. Zero RF-12 primary flags. Phase A baseline establishment in progress \u2014 tone profiles to be built across B-001 through B-003. Strategic communication expected to emerge in Phase B (B-025+, 2025 area) based on triage hot periods and legal timeline context (attorney engagement confirmed Sep 2025 per RF-05 S-021). Arc ARC-RF12-001 and ARC-RF12-002 initialized at CANDIDATE."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF12-001",
+      "event": "Strategic Campaign arc initialized \u2014 B-001 baseline building begins; no strategic communication in cooperative pre-awareness period",
+      "state": "CANDIDATE"
+    },
+    {
+      "arc": "ARC-RF12-002",
+      "event": "Bait-and-Switch arc initialized \u2014 bait detection requires tone baseline before reliable identification; baseline in progress",
+      "state": "CANDIDATE"
+    }
+  ]
+}

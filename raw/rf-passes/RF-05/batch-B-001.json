@@ -1,0 +1,84 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-001",
+    "row_range": { "start": 2, "end": 366 },
+    "date_range": { "start": "2022-01-11", "end": "2022-10-02" },
+    "message_count": 365,
+    "timezone_note": "EST (UTC-5) Jan 11 only (ROW-2); EDT (UTC-4) Aug 21 onward. DST spring-forward Mar 13, 2022 07:00 UTC. No messages between Jan 11 and Aug 21 — 7-month data gap within B-001 row range.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": [],
+    "note": "RF-05 CALIBRATION BATCH. Zero primary RF-05 flags. B-001 (Jan-Oct 2022) represents the dataset's earliest communication period — predominantly cooperative/logistical. The RF-05 triage profile (127 hits, 82% received, Phase A hot periods 2023-02 and 2025-06/07) confirms that the pass signal is concentrated in later Phase A batches and Phase B; B-001 is the low-baseline calibration reference. Halted at CP2 for calibration review per protocol. Calibration prior: RF04-ADD-002 confirmed ROW-335-336 'Are you stupid?' is RF-04 contemptuous intelligence attack — RF-05 role is peripheral aggressive-tone element only."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 365,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": {
+      "RF-02": 1,
+      "RF-04": 1
+    },
+    "no_flag_messages": 365,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-124 through ROW-125",
+      "timestamp": "2022-09-03 00:47 UTC (20:47 EDT)",
+      "direction": "received",
+      "message_text": "ROW-124: 'It goes to voicemail after 8:30 because you've been told not to call after 8:30' | ROW-125: 'Since you wouldn't listen I set it long time ago to do not disturb at 8:30 so you couldn't just keep calling after I tell you not to'",
+      "assessment": "RF-02 primary (unilateral DND blocking of co-parenting contact). RF-05 peripheral only: the 'you've been told' / 'you wouldn't listen' formulation is assertive compliance-demand language that asserts unilateral authority over call timing, but it does not rise to intimidation or threat. No consequence threatened, no fear-inducing element. The blocking is the control mechanism (RF-02), not the language. The taxonomy's 'Not This' ('firm boundary-setting') encompasses this framing in isolation. Held as near-boundary RF-05 for CP2 calibration context: does this type of unilateral-authority assertion, repeated across the dataset, create a co-parenting environment where Eli feels compliance pressure?",
+      "cp2_flag": true,
+      "cp2_question": "Does Melissa's unilateral-authority framing ('you've been told,' 'you wouldn't listen') create compliance pressure that Eli experiences as intimidating? Or is this experienced primarily as RF-02 gatekeeping rather than RF-05 threat/intimidation?"
+    },
+    {
+      "message_id": "ROW-335 through ROW-336",
+      "timestamp": "2022-10-01 16:06–16:08 UTC (12:06–12:08 EDT)",
+      "direction": "received",
+      "message_text": "ROW-335: 'Are you stupid?' | ROW-336: 'When you thought you heard your parents talking about your brother being slow are you sure they weren't talking about you?'",
+      "assessment": "RF-04 primary (confirmed by RF04-ADD-002 — contemptuous intelligence/competence attack; general insult not targeted family-trauma weaponization). RF-05 peripheral: 'Are you stupid?' plus ROW-336 humiliation attack constitutes aggressive tone element (RF-05 Sev-1 indicator: 'aggressive tone, vague implied consequences, intimidating language'). However, the taxonomy's 'Not This' includes 'expressing anger without threatening action' — these messages express contemptuous anger without a threat of consequences. The RF-04 primary classification captures the harm; RF-05 peripheral is confirmed at Sev-1 level (aggressive/contemptuous tone). Already cross-tagged as RF-05 peripheral in RF-04 B-001 batch.",
+      "cp2_flag": false,
+      "cp2_question": null
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "Zero primary signals in B-001. No arcs initialized. RF-05 arc structure will begin forming in later Phase A batches where triage heatmap confirms signal concentration (2023-02 hot period estimated ~B-004 to B-007 range; 2025-06/07 hot period in Phase B). CP1 calibration context confirms Abby relationship attacks are RF-05 primary (CP1 known_context: uncle/niece framing, 'she was 7 when they met' — flag as RF-05, RF-04, RF-15). Abby relationship entered picture mid-2022 (INF-001 confirmed; Sep 2022 detection); first Abby-specific RF-05 signals likely B-002 or B-003 based on RF-04 pass cross-tagging (RF-04 B-003 and B-004 include the first predation framings)."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 1,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": [
+      "CP2-RF05-001: B-001 calibration batch — HALT for CP2 review. Zero primary flags. Calibration questions require Eli's input before proceeding."
+    ]
+  },
+
+  "batch_observations": {
+    "tone_assessment": "B-001 (Jan-Oct 2022) is the dataset's earliest communication period and the lowest-conflict phase overall (conflict_ratio 0.09). 365 messages with a 7-month internal data gap (Jan 11 then Aug 21 onward). The Aug-Oct 2022 window is predominantly cooperative logistics (school, medical, activities, custody exchange). No intimidation, explicit threats, or fear-inducing language appears. The two peripheral RF-05 notes represent the batch's aggressive-tone ceiling: one compliance-demand assertion (ROW-124-125, RF-02 primary) and one contemptuous insult burst (ROW-335-336, RF-04 primary). Neither meets the RF-05 primary threshold.",
+    "baseline_note": "This batch establishes the RF-05 baseline: the dataset's opening period contained no RF-05 primary signals. The triage heatmap Phase A concentration (87 of 127 hits) is weighted toward later Phase A months — this batch's absence of signal is expected. Calibration should establish: (a) what RF-05 primary versus peripheral looks like when Abby-framework attacks arrive; (b) whether legal-threat language (later Phase B) is RF-05 primary or RF-04 compound secondary; (c) whether the compliance-pressure framing of 'you've been told / you wouldn't listen' constitutes a recurring RF-05 pattern across the dataset or remains RF-02 primary.",
+    "direction_balance_note": "B-001 keyword scanning found 9 Received messages with any RF-05-adjacent language, 0 of which meet primary threshold. Eli's Sent messages in this batch show no RF-05 indicators. The 82% received direction from triage heatmap is confirmed as consistent with B-001 — all near-boundary signals are Received.",
+    "cross_rf_context": "RF-04 arc state (read-only, complete): ARC-RF04-001 and ARC-RF04-002 both closed at full dataset span with no attenuation. Relevant cross-RF4 context: ROW-335-336 is RF-04-S002 (calibrated; contempt attack). ROW-361-363 is RF-04-S003 (Savage Love guilt relay). RF-02 arc state (read-only, complete): ROW-124-125 are in the RF-02 B-001 primary flag cluster (phone-blocking arc). RF-01 arc state (read-only, complete): ROW-362-363 is RF-01 primary (abandonment framing in Olivia's voice). These completed arc states are imported read-only for compound detection context.",
+    "cp2_calibration_questions": [
+      "RF-05 calibration — Eli's experience: Looking at the full 3.5-year record, what do you experience as Melissa's most intimidating or threatening communications? Are there specific recurring patterns where you felt fear or pressure to comply with something you didn't want to do because of what Melissa said?",
+      "Abby attacks as RF-05: CP1 context established that Melissa's references to Eli's relationship with Abby as inappropriate (uncle/niece framing, 'she was 7 when they met') should be flagged as RF-05, RF-04, and RF-15. When these attacks appear (starting in B-002/B-003 based on RF-04 pass cross-tags), how severe should the RF-05 component be? Do these attacks create fear or compliance pressure, or are they primarily contemptuous/manipulative (RF-04 primary)?",
+      "Legal threats — primary vs. compound: In Phase B, Melissa makes direct legal threats: 'agreement ready to sign' (B-028 Sep 17, ROW flagged as COMP-RF04-025), 'big contempt case' / 'I just called the lawyer' (B-029 Nov 25, COMP-RF04-028), 'She better check herself' direct threat (B-024 COSI cluster). Should these be RF-05 primary (weaponizing the legal system as intimidation) or RF-04 primary with RF-05 secondary? The taxonomy defines RF-05 Sev-2 as 'direct threats to use legal system as weapon.' Does Eli experience these as intimidation/fear-inducing, or primarily as manipulation/DARVO?",
+      "Compliance-demand language ('you've been told,' 'you wouldn't listen'): This framing appears in B-001 ROW-124-125 and likely recurs across the dataset. Does this create a compliance environment that contributes to an RF-05 pattern, or is it best captured entirely within RF-02 (unilateral gatekeeping authority)? Calibration will determine whether this sub-pattern gets its own RF-05 arc or remains RF-02 primary throughout.",
+      "Physical harm language: B-019 (Sep 2024) contains 'she said you choked her' (ROW-7164) and 'You used to do that shit with me and tell me you weren't hurting me' (ROW-7168) — physical harm framing. RF-04 pass flagged this as RF-04+RF-15+RF-11 compound (COMP-RF04-017). Should the 'you used to do that shit with me' (prior DV allegation) carry an RF-05 component — is Melissa using DV allegation language to create an environment where Eli fears legal action? Or does RF-15 (false allegations) capture the harm adequately?"
+    ]
+  }
+}

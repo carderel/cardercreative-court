@@ -1,0 +1,57 @@
+{
+  "batch_id": "B-030",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2025-12-16",
+    "end": "2026-04-07"
+  },
+  "row_range": {
+    "start": 11101,
+    "end": 11483
+  },
+  "message_count": 501,
+  "phase": "C",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 14,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B030-001",
+      "date": "2026-03-28",
+      "row_ref": "ROW-15498-15500",
+      "severity": 2,
+      "rf15_category": "B",
+      "direction": "received",
+      "summary": "Alcoholism fabrication. Mar 28 2026. ROW-15498: 'Is this the problem? Do you have a drinking problem? If you are trying to convince her to come with you is showing up and asking her to get in a vehicle with you while you smell of beer a good way to convince her?' Category B (distorted incident weaponized into pattern allegation): Eli confirmed one beer with dinner before pickup; Olivia noted breath smell; Eli acknowledged it. Clean record \u2014 no DUI, no substance history. Melissa converts single documented minor incident into 'drinking problem' pattern allegation. Sev-2: distortion is deliberate pattern framing, not genuine concern (clean record documented). Phase C ADD-002 active.",
+      "exact_quote": "ROW-15498: 'Do you have a drinking problem? ...showing up...while you smell of beer'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 16,
+      "compound_patterns": [
+        "RF-04+RF-15"
+      ],
+      "cross_rf_note": "RF-04 B-030 RF04-B030-006 Sev-2 primary flag. RF-15 primary: Category B alcohol distortion. CP2 Q4: one beer with dinner; clean record; Eli acknowledged breath smell honestly to Olivia. Pattern allegation not supported by any documented incident beyond this single event."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

@@ -1,0 +1,97 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "generated": "2026-04-28",
+  "status": "complete",
+  "completed": "2026-04-28",
+
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "tone_assessment": "Cooperative baseline. Zero RF-15 primary signals. No false allegations, projection, or fabricated incidents in the pre-escalation period. Cross-RF pre-identification confirms the signal pool begins with the first Abby-attack clusters (B-006/B-007, Apr 2023) and peaks in B-015/B-016 (May-Jun 2024 incest-framing cluster). Phase B/C signals include harm allegations via Olivia relay and the Phase C alcoholism fabrication.",
+    "note": "Zero primary flags is the correct calibration result for B-001. RF-15 primary signal concentration is in Phase A escalation batches (B-006 onward) and Phase B/C (B-025-B-031). The cross-RF pre-identification pool provides a strong foundation — most major RF-15 signals are already cross-referenced in RF-04 and RF-01 compound records."
+  },
+
+  "calibration_questions": [
+    {
+      "id": "CP2-RF15-Q1",
+      "topic": "The rape / sexual predation allegation — confirmed extent",
+      "question": "The text record (ROW-5301-5316, May 14 2024) contains language that was classified as a 'false rape allegation' context in the RF-04 pass, and ROW-5862 (Jun 30 2024) contains the statement 'doesn't know that she shouldn't fuck her uncle' referring to Abby's relationship with you. (a) Has Melissa ever explicitly alleged — in text, verbally, to family, or in any court document/GAL communication — that you sexually abused or were sexually inappropriate with Olivia? (b) Has she ever explicitly alleged that your relationship with Abby is incestuous or sexually abusive? (c) Has this framing reached any official body (court, CPS, police, GAL)?",
+      "why_asked": "The May 2024 cluster (ROW-5301-5316) and June 2024 incest-framing (ROW-5862) are the highest-severity RF-15 signals in the dataset. Knowing whether these allegations were made only in text or also communicated to third parties determines the arc severity and the GAL relevance.",
+      "classification_impact": "High — if allegations reached official bodies or third parties, arc severity elevates to Sev-3 (filing unfounded reports / communicating false allegations to gain legal advantage)"
+    },
+    {
+      "id": "CP2-RF15-Q2",
+      "topic": "The physical harm allegations via Olivia — accuracy",
+      "question": "The RF-04 pass (B-025, Jun 7-8 2025) documented Melissa relaying two allegations from Olivia: (1) that you vaped in front of her and she has asthma; (2) that you 'threatened to pinch her.' (a) Did either of these incidents occur in any form? For the vaping: do you vape at all, and if so, were you ever vaping in Olivia's presence? For the pinching threat: was there any interaction that could have been misinterpreted as a physical threat? (b) Phase C (B-028/B-029) appears to contain additional harm allegations via Olivia — are there others you recall? (c) The RF-04 B-031 batch (Apr 12 2026) documented a situation where Olivia had a bruise and Melissa accused you of 'trying to make her think I'm abusing her.' What actually happened — what did you say to Olivia about the bruise?",
+      "why_asked": "RF-15 distinguishes genuine misunderstandings from fabricated allegations. The harm-via-relay mechanism (RF-08 + RF-15) is only a false allegation if the underlying incident is fabricated or distorted beyond recognition. Knowing the accurate version of each incident calibrates the severity classification.",
+      "classification_impact": "High — determines whether harm relays are RF-08 primary (coaching through Olivia) with RF-15 secondary (false content), or RF-15 primary if the incidents are wholly fabricated"
+    },
+    {
+      "id": "CP2-RF15-Q3",
+      "topic": "Formal reports by Melissa — CPS, police, court filings",
+      "question": "The RF-15 taxonomy flags 'filing unfounded reports with authorities' as a Sev-3 indicator. (a) Has Melissa ever filed a CPS (child protective services) report against you or Abby? If yes, was it investigated and what was the outcome? (b) Has she ever filed a police report against you (other than any reports relating to custody violations you're aware of)? (c) Has she made formal allegations in court documents (motions, affidavits, GAL submissions) that she has not made in text — things the GAL should be aware of that are not in the text record?",
+      "why_asked": "Formal report filings are the highest-severity RF-15 indicator. If Melissa has filed with CPS or made sworn court statements containing false allegations, these are Sev-3 events that may not appear in the text record at all.",
+      "classification_impact": "High — any confirmed CPS filing or false sworn statement generates a Sev-3 flag outside the text record; also relevant to GAL's independent investigation scope"
+    },
+    {
+      "id": "CP2-RF15-Q4",
+      "topic": "The alcoholism allegation — what happened",
+      "question": "The RF-04 pass (B-030, Mar 28 2026) documented: ROW-15498 — 'Is this the problem? Do you have a drinking problem? If you are trying to convince her to come with you is showing up and asking her to get in a vehicle with you while you smell of beer a good way to convince her?' (a) What actually happened at that custody exchange? Were you drinking or had you been drinking before arriving? (b) Is this a one-time characterization or has Melissa made this allegation multiple times? (c) Has she communicated the 'drinking problem' allegation to Olivia, other family members, or any official body?",
+      "why_asked": "The alcoholism allegation is a Phase C escalation that appears to be based on a single incident (smell of beer at one exchange). If it is being communicated as a sustained pattern to third parties or to Olivia, it is a Sev-2+ false allegation. The accurate context determines whether this is an exaggeration, a distortion, or a fabrication.",
+      "classification_impact": "Medium-high — if the allegation is being communicated to Olivia or official bodies as a pattern, it escalates to Sev-2; if fabricated entirely, Sev-2-3"
+    },
+    {
+      "id": "CP2-RF15-Q5",
+      "topic": "Projection pattern — Melissa accusing Eli of her documented behaviors",
+      "question": "RF-15 projection is when Melissa accuses you of behaviors she herself is demonstrably engaging in. The cross-RF record already documents several candidates: (a) She has accused you of 'gaslighting everything' (ROW-7740, B-022) — while the RF-09 pass documents a systematic reality-distortion pattern by Melissa. Does this 'you gaslight' accusation appear more than once in the record? (b) She has accused Abby of 'making false allegations' (ROW-5862, B-016) — is Melissa aware of any actual false allegation by Abby, or is this itself a projection of Melissa's own allegation pattern? (c) She has accused you of coaching Olivia / telling Olivia what to say — while ROW-6819 documents her own coaching admission. Has she explicitly accused you of coaching Olivia in text? (d) Are there other examples you can think of where Melissa accuses you of something and your reaction was 'but that's exactly what you're doing'?",
+      "why_asked": "The projection pattern (accusing the other party of one's own behavior) is the structural core of RF-15. The stronger the cross-documentation — Melissa accuses Eli of X AND Melissa is documented doing X — the higher the arc severity.",
+      "classification_impact": "High — each confirmed projection instance generates a primary RF-15 flag; sustained systematic projection elevates the arc to Sev-2-3"
+    },
+    {
+      "id": "CP2-RF15-Q6",
+      "topic": "The self-danger framing — calibration",
+      "question": "The RF-01/RF-15 compound (B-015, ROW-5302) included the statement 'That's also really concerning that you don't trust yourself either' — Melissa took Eli's reasonable caution about summer childcare (Olivia going to unfamiliar caregivers) and framed it as Eli admitting he is a danger to his own daughter. (a) What was the context of that exchange — what specifically were you saying that Melissa reframed this way? (b) Has this pattern appeared elsewhere: Melissa taking a legitimate parenting concern you expressed and reframing it as self-incrimination? (c) More broadly, has Melissa ever alleged that you are physically dangerous to Olivia — not just emotionally, but a physical threat?",
+      "why_asked": "The self-danger framing (converting Eli's legitimate parenting concerns into admissions of danger) is one of the most strategically sophisticated RF-15 mechanisms in the dataset. Calibrating whether this is a one-time tactic or a recurring pattern determines arc classification.",
+      "classification_impact": "Medium-high — if this pattern recurs, it elevates ARC-RF15-001 and contributes to the projection arc (ARC-RF15-002) because Melissa is creating a danger narrative that is the inverse of the documented record"
+    }
+  ],
+
+  "addenda_proposed": [
+    {
+      "id": "RF15-ADD-001-PROPOSED",
+      "title": "False Allegation Classification Framework",
+      "rule_draft": "[PENDING CP2] Primary RF-15 flag categories: (A) Fabricated physical harm allegations — incidents alleged to have occurred that Eli denies completely; (B) Distorted incidents — real events exaggerated beyond recognition (e.g., 'smell of beer' → 'drinking problem'); (C) Sexual predation framing — incest/rape implication about Eli/Abby relationship; (D) Projection — Melissa accuses Eli of documented-Melissa behaviors; (E) Self-danger conversion — Eli's legitimate parenting concerns reframed as self-incrimination. Severity: Category A/C = Sev-2 minimum; Category B/D/E = Sev-1 for isolated instance, Sev-2 for pattern; Sev-3 reserved for formal report filings with authorities or sworn false statements.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF15-ADD-002-PROPOSED",
+      "title": "Incest/Sexual Predation Arc Rule",
+      "rule_draft": "[PENDING CP2 Q1] Melissa's use of 'uncle/niece' and incest framing is a sustained false-allegation pattern targeting the Eli/Abby relationship. Flag each instance as RF-15 Category C. First documented instance (B-007 Apr 2023 'whore mouth') = Sev-1 (character attack without explicit sexual predation claim). B-015 false-danger-to-self framing (May 2024) = Sev-2. B-016 explicit incest statement (Jun 2024) = Sev-3 if reached official bodies, Sev-2 if text-only. B-029 predation DARVO ('fucking her cousin') = Sev-2 sustained pattern. If Q1 confirms allegation reached GAL/court, elevate all instances by 1 severity.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF15-ADD-003-PROPOSED",
+      "title": "Harm-via-Relay Compound Rule",
+      "rule_draft": "[PENDING CP2 Q2] When Melissa delivers physical harm allegations attributed to Olivia's report, compound RF-15 + RF-08. RF-15 primary when the underlying incident is demonstrably false or distorted; RF-08 primary when the coaching/relay mechanism is the dominant concern. Apply: if Eli confirms the vaping/pinching incidents are fabricated (no basis), RF-15 primary (Category A). If Eli confirms they are distortions of something minor, RF-15 secondary (Category B, RF-08 primary).",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF15-ADD-004-PROPOSED",
+      "title": "Systematic Projection Rule",
+      "rule_draft": "[PENDING CP2 Q5] When Melissa accuses Eli of a behavior that Melissa herself is documented engaging in, flag RF-15 Category D (projection). Projection is confirmed when: (1) Melissa makes explicit accusation of behavior X against Eli; AND (2) behavior X is documented in the record as Melissa's own behavior. Cross-RF confirmation required. Priority projection pairs from cross-RF record: 'you gaslight' (RF-09 documents Melissa's gaslighting pattern); 'you coach Olivia' (ROW-6819 is Melissa's coaching admission); 'Abby makes false allegations' (RF-15 documents Melissa's false allegation pattern). Each confirmed projection pair = Sev-1 per instance, Sev-2 when the same projection is repeated.",
+      "status": "pending_cp2"
+    }
+  ],
+
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda. Update calibration file. Set cp2_status to complete. Resume B-002. Use cross-RF pre-identification pool as primary signal source — RF-04 and RF-01 compound records contain the majority of RF-15 primary signals. Initialize ARC-RF15-001 and ARC-RF15-002 at CANDIDATE.",
+    "signal_sourcing_note": "RF-15 is highly cross-RF dependent. Most primary signals are already documented in RF-04 compound records (14 batches with RF-15 references) and RF-01 (2 batches). The full pass should: (1) promote cross-RF pre-identified signals to RF-15 primary where appropriate; (2) scan remaining batches for standalone RF-15 signals not captured by RF-04/RF-01; (3) generate projection pair documentation for ARC-RF15-002.",
+    "sev3_threshold_note": "Sev-3 is reserved for: (1) confirmed formal report filings with authorities (CPS, police) containing false allegations; (2) sworn false statements in court documents; (3) sustained sexual predation narrative that has been communicated to the GAL or official bodies. The B-015 ROW-5301-5316 cluster is currently Sev-3 in RF-04 — retain Sev-3 if Q1 confirms allegation reached official bodies; downgrade to Sev-2 if text-only.",
+    "arc_activation_expected": "ARC-RF15-001 WATCHING at B-007 (first Abby false allegation: suppression claim + sexual slur); ACTIVE at B-015/B-016 (incest-framing cluster, multi-instance false allegation pattern confirmed). ARC-RF15-002 WATCHING when first confirmed projection pair documented; ACTIVE when 3+ projection pairs confirmed."
+  }
+}

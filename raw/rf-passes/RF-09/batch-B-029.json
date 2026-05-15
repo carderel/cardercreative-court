@@ -1,0 +1,54 @@
+{
+  "batch_id": "B-029",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2025-10-16",
+    "end": "2025-12-16"
+  },
+  "row_range": {
+    "start": 14547,
+    "end": 14920
+  },
+  "message_count": 505,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 9,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Nov 2025: 1 primary RF-09 signal. S010 Sev-2 \u2014 'You are delusional' global sanity attack. Arc ACTIVE (10 signals)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B029-001",
+      "signal_id": "S010",
+      "severity": 2,
+      "date": "2025-11-07",
+      "row_ref": "ROW-14755",
+      "direction": "received",
+      "evidence_level": "E",
+      "type": "global_sanity_attack_delusional_accusation",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-003",
+        "ADD-004"
+      ],
+      "compound_pattern": "COMP-RF09-007",
+      "cross_rf": "RF-04 (DARVO cluster B-029; ARC-RF04-001 signal; 'you haven't gone along' visit-refusal DARVO)",
+      "message_text": "ROW-14755: 'You are delusional'",
+      "summary": "Nov 2025: Melissa calls Eli delusional in the context of a Phase C visit-refusal dispute. ROW-14755: 'You are delusional' \u2014 direct global sanity attack: not a dispute about a specific fact but a wholesale challenge to Eli's capacity to accurately perceive reality. Evidence Level E per ADD-001: reality-questioning language (global 'you are delusional' without specific denied claim). Severity elevation to Sev-2: this is the 7th+ documented instance of Melissa attacking Eli's perception of reality (ADD-004 arc escalation: sustained across multiple distinct conflict periods from 2022 through 2025). 'Delusional' is the highest-severity reality-attacking word in the dataset \u2014 more clinical and extreme than 'lying' or 'gaslight.' Phase C context: the November 2025 period is the most legally consequential window in the dataset (police report filed Nov 22 2025, visit refusals sustained). ADD-003 compound: 'delusional' accusation occurs within DARVO cluster (RF-04 B-029 primary) \u2192 RF-09+RF-04 COMP-RF09-007."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S010 signal added; 'delusional' language marks escalation of sanity-attack severity in Phase C",
+      "new_state": "ACTIVE",
+      "signal_count": 10
+    }
+  ]
+}

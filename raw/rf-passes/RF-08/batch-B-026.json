@@ -1,0 +1,96 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-026",
+    "row_range": {
+      "start": 7868,
+      "end": 9916
+    },
+    "date_range": {
+      "start": "2025-06-11",
+      "end": "2025-07-16"
+    },
+    "message_count": 300,
+    "phase": "B",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 300,
+    "primary_flags": 1,
+    "primary_severity_distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 299,
+    "flag_rate": "0.33%"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B026-S008",
+      "arc_signal_ref": "ARC-RF08-001-S008",
+      "rows": "ROW-7875+",
+      "date": "2025-06-13",
+      "severity": 1,
+      "rf_tags": [
+        "RF-08",
+        "RF-01"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "ACTIVE: 8 signals",
+      "compound_id": "COMP-RF08-008",
+      "summary": "Olivia preference relay used to advance incest-framing conflict. Context: Eli asserted the parenting plan's 9-month significant-other introduction rule (ROW-7872). Melissa responds by attacking Eli's relationship with Abby (RF-01 ADD-001: incest framing) and relaying Olivia's stated preferences about relationship introductions to reframe the parenting plan dispute. ROW-7875: 'She wants...' framing used to advance Melissa's position that Olivia's wishes override the parenting plan structure \u2014 Olivia's reported preferences deployed as leverage in an adult co-parenting dispute. RF-08 classification: Olivia's stated position relayed as pressure instrument in a parenting-plan argument; ADD-001 Sev-1 (relay not clearly coached-content mirroring but advances adult conflict through child's reported preferences). Cross-reference RF-01 ADD-004 (RF01-B026-F001).",
+      "exact_quotes": [
+        "ROW-7873 (Received): 'How was that different than you and Abby besides it being more fucked up that it\\'s her niece'",
+        "ROW-7875 (Received): 'She wants...' [relay of Olivia's preference in parenting-plan dispute]"
+      ],
+      "rf08_mechanism": "Preference relay in adult dispute: Olivia's stated preference invoked to pressure Eli in a parenting-plan argument. Sev-1 \u2014 relay advances conflict rather than delivering narrative content."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-008"
+    ],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 ACTIVE: 8 signals. Phase B batch. S008 is a lower-severity relay instance \u2014 Olivia's preferences used as pressure in an adult dispute rather than scripted narrative delivery."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-008",
+      "rf_passes": [
+        "RF-08",
+        "RF-01"
+      ],
+      "rf01_ref": "RF01-B026-F001",
+      "description": "Preference relay in incest-framing context: RF-08 (Olivia's preferences relayed as co-parenting leverage) + RF-01 ADD-004 (child relay in parental alienation context). The RF-08 component is Sev-1; the RF-01 compound elevates the significance of the relay."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase B. Jun-Jul 2025. S008 is lower severity than Phase A pre-signals but documents the relay mechanism in a different sub-context: preference relay in parenting-plan dispute.",
+    "rf08_assessment": "One Sev-1 primary flag. The relay mechanism in B-026 is preference-relay rather than emotional-state or harm-allegation relay. Lower severity but confirms the arc's persistence into Phase B.",
+    "cross_rf_context": "RF-01 ADD-004 compound. The incest-framing context (Melissa's Abby attacks) is consistent with ADD-004 intelligence-gathering: Melissa's specific Abby-monitoring questions noted by Eli at CP2 Q5(a) may be sourced through Olivia's reports of Abby's behavior at Eli's household."
+  }
+}

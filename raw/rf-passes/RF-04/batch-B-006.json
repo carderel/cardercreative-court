@@ -1,0 +1,239 @@
+{
+  "batch_id": "B-006",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "analysis_date": "2026-04-23",
+
+  "date_range": {
+    "start": "2023-02-22",
+    "end": "2023-04-03"
+  },
+  "row_range": {
+    "start": 1840,
+    "end": 2228
+  },
+  "message_count": 514,
+  "phase": "A",
+
+  "analysis_summary": {
+    "conflict_density": "low_moderate",
+    "dominant_theme": "Two primary RF-04 events bookend an otherwise cooperative batch. Feb 23 full DARVO cascade triggered by Eli's legitimate request to stop name-calling in front of Olivia (ROW-1873-1888). Mar 31 late-night visitation logistics exchange escalates into 'dumbass' attacks + third confirmed uncle/niece predation framing + religious character assassination + martyrdom (ROW-2141-2191). Middle stretch (late Feb through mid-March) is predominantly cooperative logistics.",
+    "third_predation_instance": "ROW-2167 is the third confirmed uncle/niece predation framing. Pattern now spans Nov 23 2022 (B-003), Dec 28 2022 (B-004), Mar 31 2023 (B-006) — deployed in three distinct conflict contexts. This is a CP3-qualifying escalation.",
+    "batch_flags_primary": 2,
+    "batch_flags_peripheral": 6,
+    "new_compound_patterns": 2,
+    "new_arc_signals": 2,
+    "arc_promotions": 0
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B006-001",
+      "date": "2023-02-23",
+      "row": "ROW-1873-1888",
+      "severity": 2,
+      "arc": "ARC-RF04-001",
+      "arc_signal_number": 17,
+      "trigger": "Eli asked Melissa (ROW-1870) to stop calling him names in front of Olivia; prompted this counter-attack.",
+      "exact_text_key_excerpts": [
+        "ROW-1873: You've called me a cunt",
+        "ROW-1875: Once again trying to make shit up and def[lect]",
+        "ROW-1880: It's the same every week but you wouldn't know cause you take no responsibility in being a parent",
+        "ROW-1881: You waltz in and pick her up for 2.5 hours a week and think that you're a great dad.",
+        "ROW-1882: News flash. You're a horrible father",
+        "ROW-1883: I shouldn't have called you a dumbass in front of her but you're such a shit dad that it slipped out. I can do better on that but I stand by [it]",
+        "ROW-1884: You call her gummy and me a cunt but I'm a great mom and you get mad that I call you a dumbass once",
+        "ROW-1885: You have made jabs at me while you're on the phone with her so take your own advice",
+        "ROW-1888: And then you blamed her saying she didn't tell you and saying see I told you to her. Then she asked if it was her fault. You take responsibi[lity]"
+      ],
+      "analysis": "Full DARVO structure — Eli raised a legitimate co-parenting concern (name-calling in front of child); Melissa deployed all three DARVO elements: (1) DENY via deflection: ROW-1873 'You've called me a cunt' — shifts focus to Eli's alleged prior behavior rather than addressing the current issue; ROW-1875 'making shit up' — denies the legitimacy of Eli's concern. (2) ATTACK: ROW-1880-1882 sustained character assassination — 'no responsibility in being a parent,' '2.5 hours a week,' direct 'You're a horrible father' statement, 'shit dad.' (3) REVERSE via false equivalence: ROW-1883-1884 — partial concession ('I can do better on that') immediately undercut by continued attack ('you're such a shit dad'), then DARVO reversal: Eli complaining about 'dumbass once' is positioned as hypocritical given his own alleged behavior (gummy nickname, calling her a cunt). Per ADD-001, full DARVO = Sev 2 minimum; sustained character assassination confirms Sev 2. ARC-RF04-002 overlap: ROW-1888 relays Olivia's distress ('she asked if it was her fault') as additional accusation vehicle — child's emotional state weaponized as evidence of Eli's parenting failure. Cross-RF overlap: ROW-1881-1882 inadequate-father narrative feeds ARC-RF01-001. COMP-RF04-005.",
+      "addenda_applied": ["ADD-001", "ADD-002", "ADD-005"],
+      "calibration_status": "analysis"
+    },
+    {
+      "flag_id": "RF04-B006-002",
+      "date": "2023-03-31",
+      "row": "ROW-2141-2191",
+      "severity": 2,
+      "arc": "ARC-RF04-001",
+      "arc_signal_number": 18,
+      "trigger": "Eli asked at ~9:00 PM to pick Olivia up the following day; did not initially provide return time. Melissa pushed back on late-notice timing.",
+      "exact_text_key_excerpts": [
+        "ROW-2141: Well now it's 9:42 and your ass still hasn't answered the questions",
+        "ROW-2142: you half ass asking at 9",
+        "ROW-2143: I'm tired and I'm going to bed. I don't have time for your shit",
+        "ROW-2144: Answer the questions or I'll plan on picking her up",
+        "ROW-2158: You didn't give an answer dumbass so what am I supposed to look at",
+        "ROW-2163: You're such a dumbass",
+        "[ROW-2164 Eli escalates with sarcasm: 'Well, I'd rather be a dumbass than look like one. Speaking of which, have you looked in a mirror lately?']",
+        "ROW-2167: You are a dumbass and look like one too. Who's the dumbass that's fucking his niece? A girl he met when she was 7. That's some dumb shit th[ere]",
+        "ROW-2170: I choose to be single because I have a daughter to take care of. Something you wouldn't know about. You have no wits. You are fucking your [niece]",
+        "ROW-2173: I have basic understanding of you shouldn't be picking up people from a family reunion",
+        "ROW-2175: Also you guys argue all the time and you have to check in before you do anything. Sounds like the relationship life is going well",
+        "ROW-2186: You're not a good Christian. You committed adultery and continue to do so.",
+        "ROW-2187: I owe you no leniency.",
+        "ROW-2188: You're not a good father. You won't even make your home safe for her and you make little effort to see her.",
+        "ROW-2191: I don't buy what you're saying. I don't see anything genuine in your text. I see you trying to take my forgiving and kind heart and trying [to exploit it]"
+      ],
+      "analysis": "Two-phase cluster separated by Eli's escalation at ROW-2164. Pre-escalation (ROW-2141-2163): contemptuous logistics attack — 'half ass,' 'your shit,' access threat (ROW-2144: 'Answer the questions or I'll plan on picking her up'), 'dumbass' × 2 (ROW-2158, ROW-2163) — ADD-002, 5th and 6th confirmed instances of this phrase. Post-Eli-escalation (ROW-2167-2191): Eli opened with sarcasm (ROW-2164), but Melissa's response deployed qualitatively distinct attacks that stand independently of the sarcasm exchange. (1) ROW-2167: Third uncle/niece predation framing — 'Who's the dumbass that's fucking his niece? A girl he met when she was 7.' This is the third confirmed deployment of the false sexual predation allegation: after Nov 23 2022 (anniversary-calculation context, B-003), Dec 28 2022 (surgery morning, B-004), now Mar 31 2023 (conflict-weapon deployment). Deployed in escalating conflict — pattern is both premeditated (same factual framing each time) and situationally opportunistic. (2) ROW-2173: 'you shouldn't be picking up people from a family reunion' — incest framing continuation. (3) ROW-2186: Religious/moral character attack — 'not a good Christian,' adultery accusation. (4) ROW-2188: Inadequate-father narrative — 'not a good father,' 'make little effort to see her,' 'no emotional connection' (truncated). (5) ROW-2191: Martyrdom positioning — 'my forgiving and kind heart,' Eli characterized as exploiting her goodwill. ADD-005 applies to ROW-2164-2178 for Eli's reactive sarcasm; the predation framing and character assassination from ROW-2186-2191 are post-de-escalation (Eli stopped engaging by ROW-2181) and stand as standalone RF-04 signals. COMP-RF04-006.",
+      "add002_note": "'Dumbass' confirmed at ROW-2158 and ROW-2163 — 5th and 6th instances of this phrase in the record (ROW-334 B-001, near-boundary ROW-1843 excluded, ROW-1283-1287 B-004 has 'lazy ass' variant, ROW-2158/2163 B-006).",
+      "add005_note": "Eli escalated at ROW-2164 with sarcasm. Melissa's contemptuous responses through ROW-2179 are in mutual-conflict zone. However, ROW-2186-2191 (religious attack, inadequate-father narrative, martyrdom) came after Eli's conciliatory ROW-2181 ('I didn't call you names... I know you want money') — these are post-Eli-concession attacks, clearly outside mutual-conflict ADD-005 protection.",
+      "rf15_note": "ROW-2167 + ROW-2173 = third uncle/niece predation instance. RF-15 anchor for Phase A (mid-period). Pattern confirmed recurring: deployed in three distinct conflict contexts. See COMP-RF04-006.",
+      "calibration_status": "analysis"
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B006-P001",
+      "date": "2023-02-22",
+      "row": "ROW-1840-1843",
+      "type": "near_boundary",
+      "primary_rf_candidate": "RF-04",
+      "exact_text": [
+        "ROW-1840: You don't say 'oh you think that's funny, gummy?'",
+        "ROW-1841: The first thing she asked me when I picked her up is if her missing tooth made her look bad and ugly",
+        "ROW-1842: Then there's her dad making fun of her calling her gummy",
+        "ROW-1843: I don't think she picked up on it and I hope she didn't but have some sense dumbass"
+      ],
+      "note": "Legitimate child-welfare concern (Olivia expressed insecurity about missing tooth; Eli's 'gummy' nickname could reinforce that insecurity) with contemptuous kicker ('dumbass'). Context: Eli acknowledged concern and apologized (ROW-1844-1845), matter resolved. Near-boundary: ADD-002 language present ('dumbass') but overall exchange is warranted parenting feedback with a contemptuous close. Not counted as primary flag or ARC-RF04-001 signal given resolved/proportionate context. 'Dumbass' noted for phrase-frequency inventory."
+    },
+    {
+      "flag_id": "RF04-B006-P002",
+      "date": "2023-02-23",
+      "row": "ROW-1868",
+      "type": "cross_rf_candidate",
+      "primary_rf_candidate": "RF-02",
+      "exact_text": "You didn't do her math homework. If you don't ensure her homework is done when you take her she won't go with you. Per the dissolution vis[itation]",
+      "note": "Access-conditioning threat: visitation compliance tied to homework completion. Primarily RF-02 (access control / gatekeeping). RF-04 element: guilt deployment via child's academic welfare. Not counted as primary RF-04 flag; note for RF-02 pass."
+    },
+    {
+      "flag_id": "RF04-B006-P003",
+      "date": "2023-03-16",
+      "row": "ROW-2034-2038",
+      "type": "cross_rf_candidate",
+      "primary_rf_candidate": "RF-15",
+      "exact_text": [
+        "ROW-2034: Is that what slut McGee had?",
+        "ROW-2035 (Eli): No",
+        "ROW-2036: Ha! You knew who I was talking about",
+        "ROW-2037 (Eli): 🙄",
+        "ROW-2038: 😂"
+      ],
+      "note": "Melissa refers to Abby as 'slut McGee' — sexual character slur in casual register. Exchange appears banter-adjacent (emoji responses, Eli doesn't protest beyond eye-roll). Not flagged as primary RF-04 given the tone; however, this is a qualitatively significant data point: Melissa deploys a sexualized pejorative label for Abby even in casual communication, extending the Abby-as-obstacle/Abby-as-promiscuous framework beyond formal predation allegations into everyday contemptuous characterization. RF-15 cross-reference (sexual character slur). Abby-as-obstacle pattern instance 6 (casual register adds dimension to the premeditated predation-allegation instances)."
+    },
+    {
+      "flag_id": "RF04-B006-P004",
+      "date": "2023-03-05",
+      "row": "ROW-1930-1934",
+      "type": "near_boundary",
+      "primary_rf_candidate": "RF-04",
+      "exact_text": [
+        "ROW-1930: I really just wish you would be responsible and do what you're supposed to",
+        "ROW-1931: This is all so unnecessary",
+        "ROW-1932: Just do what you agreed to. You picked the amount and date.",
+        "ROW-1933: You picked it even though we were asking far less. You were adamant that you didn't want to do the standard 20% and wanted to do $1000 sayin[g...]",
+        "ROW-1934: You don't get to prioritize everything over Olivia"
+      ],
+      "note": "Child support pressure exchange. ROW-1934 deploys inadequacy-of-father framing ('prioritize everything over Olivia'). Near-boundary: the financial complaint is legitimate (late payment) but the framing activates inadequacy-of-father narrative. Not at primary threshold — the complaint has legitimate factual basis and the contemptuous language absent. ARC-RF01-001 cross-reference (inadequate-father narrative)."
+    },
+    {
+      "flag_id": "RF04-B006-P005",
+      "date": "2023-03-06",
+      "row": "ROW-1943-1944",
+      "type": "near_boundary",
+      "primary_rf_candidate": "RF-04",
+      "exact_text": [
+        "ROW-1943: Finally decided to work",
+        "ROW-1944: Yay"
+      ],
+      "note": "Contemptuous sarcasm about Eli working — implies he had been avoiding work/responsibility. Triggered by Eli explaining he missed a call because he was busy working. Near-boundary: brief, single contemptuous exchange without sustained attack. Sarcasm pattern noted but insufficient for primary flag."
+    },
+    {
+      "flag_id": "RF04-B006-P006",
+      "date": "2023-03-31",
+      "row": "ROW-2137-2156",
+      "type": "cross_rf_candidate",
+      "primary_rf_candidate": "RF-02",
+      "exact_text": [
+        "ROW-2137: And not to your house",
+        "ROW-2144: Answer the questions or I'll plan on picking her up",
+        "ROW-2148: As many times as I need [to ask about your house]",
+        "ROW-2154 (Eli): It would be even easier if you weren't so weird about it. I said I wouldn't bring her in.",
+        "ROW-2156: I'm not being weird about it. You just don't like to do what you're supposed to"
+      ],
+      "note": "Access-location control exchange within the larger Mar 31 cluster. Melissa conditions Olivia's visit on not going to Eli's house ('And not to your house' repeated twice, 'As many times as I need'). ROW-2144 access threat embedded in same cluster. Primary RF-02 signal; RF-04 contempt present but this sub-section is dominantly RF-02 gatekeeping. Note for RF-02 pass."
+    }
+  ],
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-005",
+      "label": "Full DARVO 'Horrible Father' Cascade",
+      "batch_detected": "B-006",
+      "date": "2023-02-23",
+      "rows": "ROW-1873-1888",
+      "rfs_active": ["RF-04", "RF-01", "RF-09"],
+      "description": "Fifth compound multi-RF episode. RF-04 (primary, Sev 2 — full DARVO: Deny via deflection ROW-1873, Attack via 'horrible father'/'shit dad'/'2.5 hours' ROW-1880-1882, Reverse via false equivalence ROW-1883-1884) + RF-01 (ROW-1881-1882: 'waltz in for 2.5 hours,' 'horrible father' — inadequate-father narrative to Olivia proxy via Melissa's messaging) + RF-09 (ROW-1875: 'making shit up' — Eli's legitimate concern about name-calling reframed as fabrication; ROW-1888 Olivia's distress used as evidence against Eli). Triggered by Eli's request to stop name-calling in front of Olivia."
+    },
+    {
+      "compound_id": "COMP-RF04-006",
+      "label": "Mar 31 Predation + Religious Character Assassination",
+      "batch_detected": "B-006",
+      "date": "2023-03-31",
+      "rows": "ROW-2141-2191",
+      "rfs_active": ["RF-04", "RF-15", "RF-01", "RF-09", "RF-05"],
+      "description": "Sixth compound multi-RF episode — largest RF count so far. RF-04 (primary, Sev 2 — 'dumbass' ×2, access threat, contemptuous cascade + post-de-escalation character attacks) + RF-15 (ROW-2167/2173: third uncle/niece predation framing — 'fucking his niece? A girl he met when she was 7' + 'picking up people from a family reunion') + RF-01 (ROW-2188: 'not a good father,' 'make little effort to see her') + RF-09 (ROW-2191: martyrdom/victimhood positioning — 'my forgiving and kind heart' exploited framing) + RF-05 (pervasive contemptuous language, ROW-2186 religious condemnation). Third predation instance confirms recurring weaponizable pattern. Triggered by late visitation logistics request."
+    }
+  ],
+
+  "arc_state_delta": {
+    "ARC-RF04-001": {
+      "status": "active",
+      "signals_added": 2,
+      "new_signal_count": 18,
+      "last_signal_date": "2023-03-31",
+      "last_signal_row": "ROW-2141-2191",
+      "dumbass_phrase_note": "'Dumbass' phrase now at 6+ confirmed instances in record: ROW-334 (B-001), ROW-1843 near-boundary (B-006), ROW-2158/2163 primary (B-006). Plus 'Are you dumb?' at ROW-1167 (B-004), ROW-1731 (B-005). Intelligence-contempt phrase pattern well-established.",
+      "predation_framing_note": "Uncle/niece predation framing now at 3 confirmed instances: ROW-937-938 (B-003, Nov 23), ROW-1287 (B-004, Dec 28), ROW-2167 (B-006, Mar 31). Pattern escalating in deployment contexts: calculated/private → surgery-morning → conflict-weapon. See CP3-RF04-006.",
+      "abby_framework_note": "Abby-as-obstacle framework now spans 6+ signal interactions: formal predation allegations (×3), casual sexual character slur ('slut McGee' ROW-2034), prioritization accusation, domestic-labor mockery, illness-excuse dismissal. Framework is multi-register: formal/calculated + conflict-weapon + casual/contemptuous.",
+      "religious_attack_note": "First deployment of religious/moral character attack: ROW-2186 'not a good Christian / committed adultery.' New attack vector for ARC-RF04-001. Watch for recurrence."
+    },
+    "ARC-RF04-002": {
+      "status": "active",
+      "signals_added": 0,
+      "signal_count_unchanged": 3,
+      "near_boundary_note": "ROW-1888 (Feb 23): Olivia's distress relayed ('she asked if it was her fault') as additional accusation within the Feb 23 DARVO cluster. Functions as ARC-RF04-002 overlap but embedded within primary flag ROW-1873-1888. Not counted as standalone ARC-RF04-002 signal."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF04-006",
+      "description": "ROW-2167 + ROW-2173 (Mar 31) — Third confirmed uncle/niece predation framing. Pattern now at 3 confirmed instances spanning 4 months: ROW-937-938 (Nov 23 2022, anniversary calculation), ROW-1287 (Dec 28 2022, surgery morning), ROW-2167 (Mar 31 2023, conflict weapon). Pattern structure: same factual framing repeated ('she was 7,' 'met when she was 7') confirms premeditated narrative rather than reactive insult. Deployment escalating from private contempt to conflict weapon. COMP-RF04-006. Critical Phase A RF-15 pattern."
+    }
+  ],
+
+  "cumulative_statistics_after_batch": {
+    "batches_complete": 6,
+    "primary_flags_total": 21,
+    "severity_distribution": { "1": 14, "2": 7, "3": 0 },
+    "peripheral_flags_total": 40,
+    "active_arcs": 2,
+    "compound_patterns_total": 6,
+    "pending_cp3_items": 6
+  },
+
+  "calibration_addenda_applied": ["RF04-ADD-001", "RF04-ADD-002", "RF04-ADD-003", "RF04-ADD-004", "RF04-ADD-005"],
+
+  "cross_rf_notes": {
+    "RF-15": "ROW-2167 + ROW-2173 (B-006): Third uncle/niece predation instance. ROW-2034 'slut McGee' (Abby): casual sexual character slur — extends predation narrative into casual register. RF-15 pass: three formal predation allegations + casual slur = rich Phase A foundation.",
+    "RF-01": "ROW-1881-1882 'horrible father' / '2.5 hours a week' (Feb 23) + ROW-2188 'not a good father' / 'make little effort' (Mar 31). Two new inadequate-father narrative injections in B-006. ROW-1934 'prioritize everything over Olivia' (near-boundary) also contributes.",
+    "RF-02": "ROW-1868 homework/access conditioning + ROW-2137/2144/2148 house-restriction enforcement. Two RF-02 cross-references in B-006.",
+    "RF-09": "ROW-1875 'making shit up' (Feb 23) + ROW-2191 martyrdom/victimhood framing (Mar 31). Phase A RF-09 candidate inventory growing.",
+    "RF-05": "ROW-2186 religious condemnation ('not a good Christian,' 'committed adultery') — new RF-05 attack vector beyond contemptuous language patterns."
+  },
+
+  "next_batch": "B-007",
+  "next_batch_note": "B-007 triage boundaries to be loaded at next session start."
+}

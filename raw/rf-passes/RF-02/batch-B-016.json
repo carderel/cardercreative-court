@@ -1,0 +1,193 @@
+{
+  "batch_id": "B-016",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "batch_status": "complete",
+
+  "date_range": {
+    "start": "2024-06-14",
+    "end": "2024-07-15"
+  },
+
+  "row_range": {
+    "sms_start": "ROW-5626",
+    "sms_end": "ROW-6013",
+    "mms_start": "ROW-11939",
+    "mms_end": "ROW-12069",
+    "note": "Date-based extraction used per B-007+ protocol. SMS rows sequential; MMS rows anomalous (ROW-11xxx range)."
+  },
+
+  "message_count": 519,
+
+  "primary_flags": [
+    {
+      "flag_id": "B016-RF02-001",
+      "severity": 1,
+      "arc_id": "ARC-RF02-002",
+      "arc_signal_number": 34,
+      "message_ids": ["ROW-5769", "ROW-5770", "ROW-5771", "ROW-5772"],
+      "date": "2024-06-25",
+      "signal_type": "parallel_contact_channel_restriction",
+      "flag_summary": "Melissa provides Becky's contact info to Eli then immediately restricts its use: 'Don't be calling her unless you really need to'",
+      "excerpts": [
+        {"row": "ROW-5769", "direction": "Sent", "text": "I ne÷d Becky phone number and addy"},
+        {"row": "ROW-5770", "direction": "Received", "text": "614-560-0762"},
+        {"row": "ROW-5771", "direction": "Received", "text": "337 marjoram dr Gahanna"},
+        {"row": "ROW-5772", "direction": "Received", "text": "Don't be calling her unless you really need to"}
+      ],
+      "analysis": "Melissa grants the information Eli needs to reach Olivia's childcare provider, then immediately attaches a restriction: Eli may not use that channel except for genuine emergencies. This is ARC-RF02-002 extended to a parallel contact channel. The pattern logic is consistent: Melissa is the sanctioned conduit for contact with Olivia; third-party caregivers are not an alternative route. The instruction is not framed as a courtesy to Becky (e.g., 'she's busy') but as a directive to Eli about what he is permitted to do. Sub-pattern: intermediary gate extended to childcare context.",
+      "arc_impact": "ARC-RF02-002 signal count: 33 → 34"
+    },
+    {
+      "flag_id": "B016-RF02-002",
+      "severity": 1,
+      "arc_id": "ARC-RF02-002",
+      "arc_signal_number": 35,
+      "message_ids": ["ROW-5795", "ROW-5797", "ROW-5799", "ROW-5800", "ROW-5801", "ROW-5802"],
+      "date": "2024-06-28",
+      "signal_type": "access_conditioned_on_prior_responsiveness_plus_permission_framing",
+      "flag_summary": "Melissa conditions Olivia visit access on Eli's prior phone responsiveness and explicitly states Eli must always ask her permission to see his daughter",
+      "excerpts": [
+        {"row": "ROW-5795", "direction": "Sent", "text": "Pick her up tonight? About 5:30 or 6 - however long it takes to to beckys?"},
+        {"row": "ROW-5797", "direction": "Received", "text": "Should've answered the phone last night asshole then we could have made plans if you wanted to see her"},
+        {"row": "ROW-5800", "direction": "Received", "text": "Why do I have to follow up"},
+        {"row": "ROW-5801", "direction": "Received", "text": "If you want to see her you're supposed to ask anyhow"}
+      ],
+      "analysis": "Two ARC-RF02-002 sub-patterns appear in a single exchange: (1) Visit access conditioned on prior responsiveness — Melissa uses Eli's failure to answer the prior night's call as the stated reason he cannot see Olivia today. The logic is explicitly causal: 'Should've answered... then we could have made plans.' This operationalizes a new gatekeeping condition: Eli must be immediately available to Melissa's calls or he forfeits access opportunities. (2) Explicit permission framing — 'If you want to see her you're supposed to ask anyhow' states unambiguously that Eli must seek Melissa's approval before seeing Olivia. This is among the clearest direct articulations of the required-intermediary dynamic in the dataset. Compare to ROW-3151 ('I'm the reason she calls you most days') and ROW-4383-4385 ('She normally only calls because I ask if she wants to or I just dial you').",
+      "arc_impact": "ARC-RF02-002 signal count: 34 → 35"
+    },
+    {
+      "flag_id": "B016-RF02-003",
+      "severity": 1,
+      "arc_id": "ARC-RF02-001",
+      "arc_signal_number": 24,
+      "message_ids": ["ROW-5802"],
+      "date": "2024-06-28",
+      "signal_type": "phone_removal_contact_channel_blocked",
+      "flag_summary": "Olivia's phone removed again — direct contact channel eliminated, all contact routed through Melissa",
+      "excerpts": [
+        {"row": "ROW-5802", "direction": "Received", "text": "She doesn't have her phone"}
+      ],
+      "analysis": "Occurring in the same exchange as B016-RF02-002, the phone removal is confirmed when Eli asks about reaching Olivia directly. 'She doesn't have her phone' eliminates the direct contact channel in the same moment Melissa has (1) blocked the childcare parallel channel (Becky) and (2) asserted that Eli must ask her permission to see Olivia. The convergence of all three gatekeeping mechanisms in a single 48-hour window (Jun 25-28) is analytically significant. ARC-RF02-001 pattern: phone removal is a recurring mechanism — disciplinary or otherwise — that structurally concentrates all Eli-Olivia contact through Melissa's mediation.",
+      "arc_impact": "ARC-RF02-001 signal count: 23 → 24"
+    },
+    {
+      "flag_id": "B016-RF02-004",
+      "severity": 1,
+      "arc_id": "ARC-RF02-002",
+      "arc_signal_number": 36,
+      "message_ids": ["ROW-5888"],
+      "date": "2024-07-02",
+      "signal_type": "contact_conflict_relay_fourth_instance",
+      "flag_summary": "'You got her crying' — fourth contact-conflict relay event; Melissa mediates and attributes negative emotional outcome to Eli as contact barrier",
+      "excerpts": [
+        {"row": "ROW-5888", "direction": "Received", "text": "You got her crying"}
+      ],
+      "analysis": "The fourth instance of the contact-conflict relay sub-pattern (prior: Apr 4 ROW-4947-4952, Apr 8 ROW-4991-4994, May 1 ROW-5155-5158). The message is unelaborated — no context, no explanation — deploying child distress as an accusation and a contact barrier in three words. The mechanism is consistent across all four instances: Melissa relays a negative emotional state in Olivia and attributes it to Eli's conduct, framing continued contact as harmful. Eli cannot contest or clarify because the relay is one-directional. Context of this exchange: the same morning Eli was to take Olivia to Becky's. The accusation arrives mid-logistics with no follow-up explanation (see ROW-5889: Melissa then pivots immediately to 'correcting' Eli on which days childcare was needed). The emotional charge is deployed and then functionally dropped.",
+      "arc_impact": "ARC-RF02-002 signal count: 35 → 36"
+    }
+  ],
+
+  "primary_flag_count": 4,
+  "primary_flag_severity_distribution": {"1": 4, "2": 0, "3": 0},
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B016-P001",
+      "rf_category": "RF-15",
+      "severity": 2,
+      "message_ids": ["ROW-5863"],
+      "date": "2024-06-30",
+      "flag_summary": "Sixth incest narrative deployment — Melissa deploys false-allegations arsenal against Eli's parenting input to rebuff legitimate concern about hospital visit",
+      "excerpts": [
+        {"row": "ROW-5863", "direction": "Received", "text": "I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong, seeks attention without regard for others, is a liar, makes false allegations and doesn't know that she shouldn't fuck her uncle"}
+      ],
+      "rf02_nexus": "Melissa deploys the incest narrative to delegitimize Eli's parenting concern (ROW-5854: Eli flags that his sister Kristi thinks the hospital visit may be difficult for Olivia). The false-allegations arsenal is weaponized to assert Melissa's unilateral parenting authority and rebuff Eli's co-parenting input — the same dynamic that appeared in B-015 ROW-5307-5317 where the assault insinuation was explicitly tethered to 'reservations about her staying with you.' In both instances, the RF-15 content is deployed to reinforce Melissa's exclusive authority over access-adjacent decisions.",
+      "cross_pass_priority": true,
+      "cross_pass_note": "Sixth incest narrative in dataset. Previous deployments: B-009 (third, ROW-3271), B-010 (fourth ROW-3389, pedophilia ROW-3630), B-012 (fifth ROW-4094), B-015 (ROW-5307-5317, most severe — sexual assault insinuation tethered to access restriction rationale). This deployment targets Eli's parenting credibility broadly rather than being directly tethered to a specific visit denial, but occurs in the immediate context of a parenting dispute about Olivia's access to a potentially distressing situation."
+    },
+    {
+      "flag_id": "B016-P002",
+      "rf_category": "RF-11",
+      "severity": 1,
+      "message_ids": ["ROW-5670", "ROW-5700", "ROW-5701"],
+      "date": "2024-06-17",
+      "flag_summary": "Legal leverage threats — contempt, court costs, and attorneys' fees threatened in response to child support / work address compliance dispute",
+      "excerpts": [
+        {"row": "ROW-5670", "direction": "Received", "text": "I can contemot you for paying late all those times and for not updating me with your work address and phone number which you still haven't given"},
+        {"row": "ROW-5700", "direction": "Received", "text": "See you in court"},
+        {"row": "ROW-5701", "direction": "Received", "text": "You want to be bullheaded you can pay court costs and contempt fees"}
+      ],
+      "rf02_nexus": "Legal leverage deployed in context where Eli's court-ordered obligations are disputed; no direct access restriction gatekeeping nexus in this exchange. RF-11 primary classification."
+    }
+  ],
+
+  "peripheral_flag_count": 2,
+
+  "cooperative_data_points": [
+    {
+      "cdp_id": "B016-CDP-001",
+      "date": "2024-06-16",
+      "message_ids": ["ROW-5635", "ROW-5636", "ROW-5643", "ROW-5644", "ROW-5646", "ROW-5647"],
+      "summary": "Father's Day facilitation — Melissa coordinates Olivia handoff for Father's Day pickup despite Marshall (dog) vet logistics complication; Olivia spends multi-hour Father's Day visit with Eli",
+      "quality": "genuine_facilitation"
+    },
+    {
+      "cdp_id": "B016-CDP-002",
+      "date": "2024-07-04",
+      "message_ids": ["ROW-5909", "ROW-5910", "ROW-5911"],
+      "summary": "Melissa proactively offers to take Eli's birthday gift for Olivia on Canada vacation: 'If you want to send something for Olivia to open on her birthday you can... I can hide it and pull it out on her birthday'",
+      "quality": "high_quality_unprompted_facilitation"
+    },
+    {
+      "cdp_id": "B016-CDP-003",
+      "date": "2024-07-12",
+      "message_ids": ["ROW-5991", "ROW-5992"],
+      "summary": "Melissa cooperatively receives Eli's birthday gift before Canada trip departure; logistics handled without friction",
+      "quality": "routine_cooperation"
+    },
+    {
+      "cdp_id": "B016-CDP-004",
+      "date": "2024-07-08",
+      "message_ids": ["ROW-5952", "ROW-5953", "ROW-5957", "ROW-5958"],
+      "summary": "Eli facilitates contact between Olivia and Melissa's hospitalized father at Melissa's request; Melissa expresses genuine appreciation ('I appreciate you putting her on the phone' / 'Thanks for trying' / 'I appreciate you guys')",
+      "quality": "mutual_cooperation"
+    },
+    {
+      "cdp_id": "B016-CDP-005",
+      "date": "2024-07-13",
+      "message_ids": ["ROW-5999", "ROW-6000", "ROW-6001", "ROW-6002", "ROW-6003", "ROW-6004", "ROW-6005", "ROW-6013"],
+      "summary": "Melissa proactively shares Canada vacation updates, photos, and Olivia anecdotes with Eli throughout trip; offers to make Facebook album public so Eli can see it",
+      "quality": "proactive_sharing"
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF02-001": {
+      "signal_added": true,
+      "new_signal_count": 24,
+      "last_signal_batch": "B-016",
+      "last_signal_date": "2024-06-28"
+    },
+    "ARC-RF02-002": {
+      "signals_added": 3,
+      "new_signal_count": 36,
+      "last_signal_batch": "B-016",
+      "last_signal_date": "2024-07-02",
+      "sub_pattern_note": "Contact-conflict relay sub-pattern: fourth instance (Jul 2 ROW-5888). Parallel-channel restriction sub-pattern: first instance via childcare provider (Jun 25 ROW-5772). Permission framing explicit (Jun 28 ROW-5801): 'If you want to see her you're supposed to ask anyhow.'"
+    },
+    "ARC-RF02-003": {"signal_added": false},
+    "ARC-RF02-004": {"signal_added": false, "note": "Arc naturally suspended following Tahko's death (Apr 2024); no new restriction events. Bug inquiry (ROW-5831-5832 Jun 29) resolved cooperatively."},
+    "ARC-RF02-005": {"signal_added": false},
+    "ARC-RF02-006": {"signal_added": false, "note": "Canada trip is to Niagara Falls area, not NC. No new NC relocation references."}
+  },
+
+  "batch_notes": [
+    "Mechanistic convergence Jun 25-28: three ARC-RF02-001/002 gatekeeping mechanisms appear within four days — childcare channel restriction (ROW-5772, Jun 25), visit access conditioned on prior responsiveness + explicit permission framing (ROW-5797/5801, Jun 28), phone removal (ROW-5802, Jun 28). First time all three primary mechanisms appear in compressed sequence within a single batch segment.",
+    "Canada trip context (Jul 12-15): Olivia in Canada with Melissa; Olivia has no independent phone during trip so all contact is structurally Melissa-mediated. Not a gatekeeping event — environmental condition. Signal noted Jun 28 that 'She doesn't have her phone' is the relevant access-restriction flaggable event.",
+    "Bug inquiry (ROW-5831-5832, Jun 29): Melissa asks about bed bugs and roaches. Potential ARC-RF02-004 location-restriction rationale-building monitored; resolved cooperatively (ROW-5848-5850). No flag elevated.",
+    "Contact-conflict relay sub-pattern now has 4 documented instances: Apr 4 (ROW-4947-4952), Apr 8 (ROW-4991-4994), May 1 (ROW-5155-5158), Jul 2 (ROW-5888). Three-month gap between third and fourth instance.",
+    "ROW-5863 (Jun 30) — RF-15 sixth incest narrative: Deployed to rebuff Eli's hospital visit concern. Distinct from B-015's most severe instance (ROW-5307-5317) which was explicitly tethered to access restriction ('reservations about her staying with you'). This instance targets Eli's parenting credibility broadly. Monitoring whether this pattern accelerates as court proceedings approach.",
+    "Batch is characterized by meaningful cooperative engagement (Father's Day, birthday gift coordination, Canada updates) alongside the concentrated Jun 25-28 gatekeeping cluster and the Jul 2 contact-conflict relay. This is consistent with the dual-track pattern observed across the dataset."
+  ]
+}

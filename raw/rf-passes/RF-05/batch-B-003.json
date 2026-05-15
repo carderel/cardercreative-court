@@ -1,0 +1,73 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-003",
+    "row_range": { "start": 713, "end": 1092 },
+    "date_range": { "start": "2022-11-06", "end": "2022-12-12" },
+    "message_count": 380,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 380,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 0, "2": 1, "3": 0 },
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": { "RF-04": 2 },
+    "no_flag_messages": 379,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B003-001",
+      "row_range": "ROW-783 through ROW-828",
+      "timestamp": "2022-11-11 through 2022-11-14",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-783: 'You gonna pay or do I file contempt?' | ROW-789: 'You're in contempt at this point' | ROW-790: 'You need to borrow off someone or something otherwise you'll be going back to court' | ROW-824: 'You still haven't paid your half of daycare and swim which was due last Thursday. If I don't see payment soon I'll reach out to the lawyer. She's still on retainer' | ROW-828: 'This isn't pay when you feel like it. Your ordered by the court to pay within 7 days'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST contempt filing threat in dataset. ROW-783 'You gonna pay or do I file contempt?' is the first explicit threat to initiate formal legal contempt proceedings against Eli. ROW-789 escalates to 'You're in contempt at this point' (declaration of legal status). ROW-790 adds 'you'll be going back to court' (future legal action threat). ROW-824 introduces the lawyer-on-retainer disclosure: 'I'll reach out to the lawyer. She's still on retainer' — the 'still on retainer' element signals active legal infrastructure, not just a hypothetical threat. ROW-828 cites the court order ('ordered by the court to pay within 7 days'). ADD-002 temporal rule: first instance of contempt-filing category = Sev-2 (initially credible, fear-inducing). Per Eli's CP2 answer, legal threats were 'genuinely fear-inducing' initially. Both the contempt filing and lawyer-retainer disclosure are first instances. Context: Eli confirms he was late on child support/expense payments (genuine underlying obligation). The threats are deployed in an escalatory pattern across Nov 11-14 — two separate days with escalating legal language. The phrasing 'She's still on retainer' is particularly designed to convey organizational readiness for legal action. ADD-002: paper-tiger recognition develops over repeated non-follow-through; at this early stage (B-003, Nov 2022), these threats were credible.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-820-821: 'Being a house bitch, taxi and working two jobs...' + 'stop being a lil bitch' — Abby-framework contempt attack (RF-04 primary; ADD-001: RF-05 peripheral aggressive-tone only). Not RF-05 primary.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-1047: 'Not that I need to explain to your dumbass' — contemptuous intelligence attack (RF04-ADD-002 pattern). RF-04 primary.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Eli was late on child support and shared expense payments — the underlying obligation is real (genuine non-payment). The contempt threat is technically legitimate (she can file contempt). The RF-05 element is the aggressive deployment of legal threat language as compliance pressure during co-parenting exchanges, and the escalation from 'do I file' to 'you're already in contempt' in a single conversation.",
+      "pattern_tags": ["contempt_filing_threat", "first_instance_contempt", "lawyer_on_retainer", "legal_compliance_pressure", "court_order_citation"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'You gonna pay or do I file contempt?' (ROW-783); 'She's still on retainer' (ROW-824)"
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": ["ARC-RF05-001: CANDIDATE → WATCHING. Second distinct episode (B-002 = Halloween implied threat; B-003 = first contempt filing Sev-2). First Sev-2 signal. Threshold for ACTIVE = third distinct episode with primary signal."],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0
+  },
+
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+
+  "batch_observations": {
+    "tone_assessment": "B-003 (Nov-Dec 2022) introduces the first contempt filing threat — the more serious legal-threat category that aligns with Eli's stated primary fear (lawfare). The threat language is direct and escalatory across two days, with the 'still on retainer' disclosure signaling active legal infrastructure.",
+    "cross_rf_context": "RF-04 B-003 includes first predation framing instances (RF-04 CP3 items from B-003). The contempt threats here are distinct from the Abby-attack content and should be tracked on the RF-05 arc independently."
+  }
+}

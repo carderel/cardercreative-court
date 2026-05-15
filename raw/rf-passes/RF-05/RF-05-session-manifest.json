@@ -1,0 +1,120 @@
+{
+  "rf_pass": "RF-05",
+  "rf_name": "Intimidation/Threats",
+  "pass_status": "complete",
+  "priority": 4,
+  "tier": 1,
+  "eli_signal": "confirmed_high",
+
+  "progress": {
+    "total_batches": 31,
+    "batches_completed": 31,
+    "batches_remaining": 0,
+    "last_batch_completed": "B-031",
+    "next_batch": null,
+    "halt_reason": null
+  },
+
+  "date_coverage": {
+    "covered_through": "2026-04-12",
+    "remaining_from": null
+  },
+
+  "cumulative_statistics": {
+    "messages_analyzed": 10637,
+    "primary_flags": 26,
+    "severity_distribution": { "1": 14, "2": 12, "3": 0 },
+    "peripheral_flags": 2,
+    "active_arcs": 1,
+    "watching_arcs": 0,
+    "candidate_arcs": 0,
+    "resolved_arcs": 0,
+    "compound_patterns": 8,
+    "cp3_items_generated": 4,
+    "arc_ids": ["ARC-RF05-001"]
+  },
+
+  "cross_rf_context": {
+    "rf01_arc_state": "analysis-output/arc-states/RF-01-arc-state.json",
+    "rf01_status": "complete",
+    "rf01_active_arcs": ["ARC-RF01-001"],
+    "rf02_arc_state": "analysis-output/arc-states/RF-02-arc-state-final.json",
+    "rf02_status": "complete",
+    "rf02_active_arcs": ["ARC-RF02-001", "ARC-RF02-002", "ARC-RF02-004", "ARC-RF02-006"],
+    "rf04_arc_state": "analysis-output/arc-states/RF-04-arc-state-B003.json",
+    "rf04_status": "complete",
+    "rf04_active_arcs": ["ARC-RF04-001", "ARC-RF04-002"],
+    "cross_rf_note": "RF-01, RF-02, and RF-04 final arc states loaded read-only. RF-04 pass identified 20+ compound patterns with RF-05 peripheral tags — these are the primary candidate pool for RF-05 primary flags. CP2 calibration will determine which RF-04-compound RF-05 peripherals should be reclassified as RF-05 primary in this pass."
+  },
+
+  "calibration_addenda": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"],
+  "calibration_addenda_file": "analysis-output/calibration/addenda-RF-05.json",
+
+  "cp2_status": "complete",
+  "cp2_generated": "2026-04-24",
+  "cp2_completed": "2026-04-24",
+  "cp2_file": "analysis-output/checkpoints/cp2-RF-05-review.json",
+
+  "triage_profile": {
+    "keyword_hit_count": 127,
+    "direction": { "sent": 23, "received": 104, "pct_received": 82 },
+    "phase_distribution": { "A": 87, "B": 29, "C": 11 },
+    "hot_periods": ["2025-07", "2023-02", "2025-06"],
+    "pass_mode": "full_pass_all_31_batches"
+  },
+
+  "pending_cp2_items": [],
+
+  "pending_cp3_items": [
+    "CP3-RF05-001 (MEDIUM, B-013): Retainer-free court access structural advantage",
+    "CP3-RF05-002 (HIGH, B-015): Rape/sexual assault allegation cluster",
+    "CP3-RF05-003 (HIGH, B-017): First explicit sole-custody filing threat",
+    "CP3-RF05-004 (HIGH, B-028): Peak legal threat — consultation complete + agreement ready to sign"
+  ],
+
+  "arc_state_file": "analysis-output/arc-states/RF-05-arc-state-B001.json",
+
+  "pass_summary": {
+    "arc_count": 1,
+    "primary_arc": "ARC-RF05-001 (Legal and Compliance-Demand Threat Pattern)",
+    "arc_status": "ACTIVE — UNRESOLVED at dataset close",
+    "trajectory": "paper_tiger_with_escalating_specificity",
+    "peak_batch": "B-028",
+    "peak_signal": "ARC-RF05-001-S022 (Sep 17 2025: consultation complete + agreement ready to sign)",
+    "arc_gap_notable": "6-month gap B-020 through B-023 (Oct 2024 – May 2025) — longest quiet period in arc",
+    "dataset_gap_flag": "Pre-2022 iPhone record unprocessed (ADD-004); Eli characterizes as more dangerous period"
+  },
+
+  "session_log": [
+    {
+      "session": 1,
+      "date": "2026-04-24",
+      "batches_processed": ["B-001"],
+      "primary_flags_added": 0,
+      "peripheral_flags_added": 2,
+      "arcs_updated": [],
+      "compounds_added": 0,
+      "notes": "RF-05 pass initialized. B-001 calibration batch processed (365 messages, Jan-Oct 2022). Zero primary RF-05 flags — B-001 is the low-baseline reference confirming RF-05 signal is concentrated in later Phase A and Phase B. Arc state initialized at zero. CP2 calibration questions generated. Halted per protocol."
+    },
+    {
+      "session": 1,
+      "date": "2026-04-24",
+      "batches_processed": ["CP2 review"],
+      "primary_flags_added": 0,
+      "peripheral_flags_added": 0,
+      "arcs_updated": [],
+      "compounds_added": 0,
+      "notes": "CP2 COMPLETE. 5 addenda confirmed (RF05-ADD-001 through RF05-ADD-005). Key calibration outcomes: (1) Abby-framework predation attacks NOT RF-05 primary — no CPS fear, RF-04+RF-15 primary confirmed (ADD-001). (2) Legal threats follow temporal arc: early = Sev-2 genuine fear; later = Sev-1 paper tiger, but pattern remains analytically significant for GAL (ADD-002). (3) Physical harm allegations: RF-05 Sev-1 peripheral only, RF-04+RF-15 primary (ADD-003). (4) Pre-2022 iPhone record is an unprocessed dataset gap — Eli characterizes that period as MORE dangerous; 2022-2026 is the reduced-threat phase; flag for attorney at synthesis (ADD-004). (5) Eli's sustained threat-monitoring posture across all interactions is itself an RF-05 impact finding (ADD-005). Pass may now proceed to B-002."
+    },
+    {
+      "session": 2,
+      "date": "2026-04-24",
+      "batches_processed": ["B-002", "B-003", "B-004", "B-005", "B-006", "B-007", "B-008", "B-009", "B-010", "B-011", "B-012", "B-013", "B-014", "B-015", "B-016", "B-017", "B-018", "B-019", "B-020", "B-021", "B-022", "B-023", "B-024", "B-025", "B-026", "B-027", "B-028", "B-029", "B-030", "B-031"],
+      "primary_flags_added": 26,
+      "peripheral_flags_added": 0,
+      "arcs_updated": ["ARC-RF05-001 (promoted B-003, 26 signals through B-030)"],
+      "compounds_added": 8,
+      "notes": "PASS COMPLETE. All 31 batches processed. ARC-RF05-001 (Legal and Compliance-Demand Threat Pattern) active with 26 signals (Sev-1:14, Sev-2:12). Key milestones: S-002 arc formation (Nov 2022 first contempt filing threat); S-010 structural advantage disclosed (Feb 2024 retainer-free access); S-013 extreme allegation (May 2024 rape/assault); S-014 'See you in court' first instance (Jun 2024); S-016 first sole-custody filing threat (Aug 2024); S-019 communication-suppression legal threat (May 2025); S-020 DARVO-denial mechanism (Jul 2025); S-021 confirmed attorney engagement (Aug 2025); S-022 peak threat — consultation complete + agreement ready (Sep 2025); S-025 gatekeeping-to-contempt inversion (Nov 2025). 4 CP3 items generated. Arc unresolved at dataset close — Sep 2025 'agreement ready to sign' execution status unknown. Arc state updated in analysis-output/arc-states/RF-05-arc-state-B001.json."
+    }
+  ]
+}

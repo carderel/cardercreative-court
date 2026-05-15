@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-012",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2023-11-26",
+    "end": "2024-01-31"
+  },
+  "row_range": {
+    "start": 4053,
+    "end": 4447
+  },
+  "message_count": 504,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 3,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Nov 2023\u2013Jan 2024: No RF-09 primary signals. Communication volume moderate; conflict clusters present (RF-04). General lying/lied language in accusatory context but no documentable denial claims cross-referenceable to text."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

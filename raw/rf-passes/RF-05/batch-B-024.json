@@ -1,0 +1,59 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-024",
+    "row_range": { "start": 7798, "end": 9568 },
+    "date_range": { "start": "2025-03-12", "end": "2025-05-04" },
+    "message_count": 309,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 309,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 0, "2": 1, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 308,
+    "flag_rate": "0.3%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B024-001",
+      "row_range": "ROW-9536",
+      "timestamp": "2025-05-04",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-9536 (Received): 'If you don't have anything constructive or a solution stop texting me. Otherwise it's harassment and I will file harassment'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST HARASSMENT FILING THREAT. ADD-002 temporal rule: first instance of new legal-threat sub-category = Sev-2. Prior RF-05 legal threats in the arc used: contempt filings (financial compliance), custody filings (parenting conduct), court order invocation, and 'See you in court' direct confrontation. ROW-9536 introduces 'harassment' as a new legal charge framing — threatening to file a legal harassment complaint to silence Eli's co-parenting communication itself. This is a distinct threat mechanism: prior threats targeted specific violations (non-payment, parenting plan infractions, parenting conduct); this threat criminalizes the act of communicating in a disagreement. Functional effect: if Eli continued to communicate after receiving this, he could be accused of continued harassment; if he stopped, Melissa achieved communication suppression. Context: May 4 COSI trip dispute (COMP-RF04-020: RF-04+RF-05 per RF-04 pass). The harassment threat is embedded in a cluster that also includes 'idiot' ADD-002 slur (ROW-9526), DARVO 'Stop rewriting the narrative' (ROW-9529), child abandonment framing (ROW-9540-9542), and Abby threat 'She better check herself' (ROW-9568). The harassment filing threat is the RF-05 primary component of COMP-RF04-020.",
+      "peripheral_flags": [],
+      "context_notes": "COMP-RF04-020 (RF-04+RF-05 per RF-04 pass). The harassment threat is at ROW-9536 within the May 4 COSI cluster (ROW-9523-9568). Trigger: scheduling conflict between Olivia attending COSI with Milo's birthday group and church attendance; dispute over whether Abby called Olivia 'rude.' The harassment threat is deployed mid-dispute to terminate the exchange, not as a closing statement — it functions as a conversation-suppression tool rather than a standalone warning. Note: The threat toward Abby ('She better check herself' ROW-9568) is RF-04 primary Abby-as-antagonist framing; RF-05 peripheral aggressive tone only.",
+      "pattern_tags": ["first_harassment_filing_threat", "communication_suppression_legal_threat", "COMP_RF04_020"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'If you don't have anything constructive or a solution stop texting me. Otherwise it's harassment and I will file harassment' (ROW-9536)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF04-020 (RF-04+RF-05 per RF-04 pass)"],
+    "note": "ARC-RF05-001 ACTIVE. B-024 adds S-019: first harassment filing threat (ROW-9536). New sub-category: legal threat used to suppress communication rather than enforce compliance. The arc sub-pattern catalog now includes a communication-suppression legal mechanism, distinct from all prior financial/custody/parenting threats. Note: B-020 through B-024 represents a 6-month gap in RF-05 primary signals after B-019 (Oct 2024 to May 2025) — the longest arc gap since B-011 (Oct-Nov 2023)."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-024 (Mar-May 2025): Single Sev-2 RF-05 signal after a 6-month arc gap. The harassment filing threat is a new mechanism — it weaponizes legal process to silence communication rather than to enforce specific obligations. Combined with the COSI cluster's contempt, DARVO, and child abandonment framing (COMP-RF04-020), May 4 represents the first Phase A/B transition-period RF-05 escalation. The extended arc gap (B-020 through B-023) suggests a reduced legal threat frequency following the Oct 2024 period.",
+    "cross_rf_context": "RF-04 B-024: COMP-RF04-020 (May 4 COSI cluster: RF-04+RF-05; 'idiot' ADD-002, DARVO, child abandonment relay, Abby threat). RF-05 confirmed as compound component. Apr 2 'Be a parent' echo (ROW-9446) is RF-04 peripheral."
+  }
+}

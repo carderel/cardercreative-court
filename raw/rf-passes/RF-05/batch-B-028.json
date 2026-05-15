@@ -1,0 +1,85 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-028",
+    "row_range": { "start": 8197, "end": 14546 },
+    "date_range": { "start": "2025-08-28", "end": "2025-10-16" },
+    "message_count": 502,
+    "phase": "B/C",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 502,
+    "primary_flags": 2,
+    "primary_severity_distribution": { "1": 1, "2": 1, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 500,
+    "flag_rate": "0.4%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B028-001",
+      "row_range": "ROW-14276 + ROW-14343-14344 + ROW-14362-14372",
+      "timestamp": "2025-09-17",
+      "direction": "received",
+      "phase": "B/C",
+      "message_text": "ROW-14276 (Received, Aug 31): 'You're behind on daycare. You owed $360 due by August 28'; ROW-14343 (Received, Sep 14): 'You're in contempt for not paying daycare'; ROW-14344 (Received, Sep 14): 'Per the spp you have 7 days to pay it after receipt and that was yesterday'; ROW-14366 (Received, Sep 17): 'This just further demonstrates why you shouldn't have shared parenting'; ROW-14367 (Received, Sep 17): 'My lawyer already said I had a strong case this further demonstrates that'; ROW-14371 (Received, Sep 17): 'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started. You're only helping my case.'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "PEAK LEGAL THREAT IN DATASET — FIRST 'CONSULTATION COMPLETE + AGREEMENT READY TO SIGN.' ADD-002 temporal rule: 'legal action at actionable-ready state' = new sub-category → Sev-2. All prior custody filing threats in the arc operated in future or ongoing tense: 'I will file' (S-016 Aug 2024), 'I'm filing' (S-018 Oct 2024), 'I'll be contacting my lawyer' (S-020 Jul 2025), 'Already been talking to the lawyer about it' (S-021 Aug 2025). ROW-14371 'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started' is the first instance in the dataset where the legal action is described as being in a concrete, imminent execution state — not a threat to begin but a report that legal intake is complete and the engagement is ready to initiate. This represents the highest legal threat specificity in the RF-04/RF-05 record. ROW-14367 'My lawyer already said I had a strong case this further demonstrates that' adds attorney-validated confidence: the threat is no longer Melissa's subjective assessment but a professional legal opinion (as Melissa characterizes it). ROW-14366 'This just further demonstrates why you shouldn't have shared parenting' — shared parenting termination demand deployed within the Sep 17 cluster; the trigger is a homework completion failure, which functions as additional evidence accumulation under an active legal strategy. The Aug 31 daycare arrears claim (ROW-14276) and Sep 14 contempt-for-daycare claim (ROW-14343-14344) form the financial-compliance escalation series in the weeks prior to the Sep 17 custody escalation — establishing a multi-front legal pressure environment. Functional effect: Eli is now operating under confirmed legal engagement by Melissa's attorney, which materially changes the compliance environment relative to all prior threat periods. ADD-001 scope: Abby-negative-influence relay (ROW-14362, ROW-14365) is RF-04+RF-11 primary; RF-05 scope is limited to custody/contempt legal threat components only.",
+      "peripheral_flags": [],
+      "context_notes": "COMP-RF04-025 (RF-04+RF-05). Sep 17 cluster. Trigger: homework (iReady) failure + Abby-negative-influence relay. The full Sep 17 cluster includes Abby-undermining-authority relay (ROW-14362-14365: RF-04+RF-11 primary) + parenting plan weaponization (ROW-14364) + shared parenting termination demand (ROW-14366) + attorney-validated threat (ROW-14367, ROW-14371) + child relay of home-safety concern (ROW-14372 'pincher bugs'). The attorney-validated custody legal threat (ROW-14367, ROW-14371) and shared parenting termination demand (ROW-14366) are RF-05 primary. Note: Sep 14 daycare contempt claim (ROW-14343-14344) and Aug 31 arrears claim (ROW-14276) are included in this signal's row_range as the pre-escalation financial pressure series — consistent with the arc pattern of financial-compliance threats used as mounting pressure leading to custody escalations. Precedes the Oct 10 second visit refusal and Nov 2025 police report.",
+      "pattern_tags": ["peak_legal_threat", "consultation_complete_agreement_ready", "attorney_validated_legal_threat", "shared_parenting_termination_demand", "financial_contempt_escalation", "COMP_RF04_025"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started. You're only helping my case.' (ROW-14371)"
+    },
+    {
+      "message_id": "RF05-B028-002",
+      "row_range": "ROW-14419-14421 + ROW-14447-14451",
+      "timestamp": "2025-09-28",
+      "direction": "received",
+      "phase": "B/C",
+      "message_text": "ROW-14419 (Received, Sep 19): 'You don't you are now withhholding her from me'; ROW-14420 (Received, Sep 19): 'You don't you are now withhholding her from me'; ROW-14421 (Received, Sep 19): 'Have fun paying contempt charges, court costs and lawyer fees'; ROW-14447 (Received, Sep 28): 'You really want contempt charges don't you'; ROW-14448 (Received, Sep 28): 'You think I won't file again?'; ROW-14451 (Received, Sep 28): 'Too late. I'm filing cause I'm tired of your shit'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "REPEAT CONTEMPT FILING THREAT CLUSTER — TWO INCIDENTS, NINE DAYS APART. ADD-002 temporal rule: repeat contempt filing threats = Sev-1 (paper tiger trajectory confirmed by prior non-execution). Sep 19 cluster (ROW-14419-14421): Triggered by a pickup timing dispute; Melissa frames Eli's scheduling as child withholding and closes with 'Have fun paying contempt charges, court costs and lawyer fees' — the contemptuous framing of the legal threat (adversarial mockery rather than a statement of intention) is distinct from the Sep 28 cluster. Sep 28 cluster (ROW-14447-14451): Triggered by Eli returning Olivia slightly late (dinner delay). ROW-14447 rhetorical framing ('You really want contempt charges don't you') + ROW-14448 challenge ('You think I won't file again?') + ROW-14451 filing declaration ('Too late. I'm filing') followed by contemptuous profanity ('tired of your shit'). The 'file again' phrasing in ROW-14448 is notable: it references prior contempt filings as established precedent, reinforcing the compliance-through-repeated-threat mechanism. Functional effect of both clusters: contempt filing threat density increases in B-028 (two incidents vs. one in most prior batches), which is consistent with Phase B/C escalation trajectory despite the individual threats being Sev-1 by ADD-002 repeat-instance rule.",
+      "peripheral_flags": [],
+      "context_notes": "Two-incident cluster. Sep 19: Eli running late to dropoff; Melissa characterizes as 'withholding' (ROW-14419-14420) then threatens contempt, court costs, and lawyer fees (ROW-14421). Sep 28: Eli returning Olivia ~15 min late; minor delay triggers six-message contempt threat sequence (ROW-14445-14455). ROW-14499 (Oct 4, child-fear COMP-RF04-026 cluster) also includes 'I'm still contemplating contempt charges' — this late-October additional reference is RF-05 peripheral within COMP-RF04-026 but not elevated to primary status (embedded in child-fear cluster where RF-04+RF-11 are primary). The B-028 contempt threat density (two separate incidents within nine days) is the highest per-batch contempt threat frequency in the dataset.",
+      "pattern_tags": ["repeat_contempt_filing_threat", "paper_tiger_trajectory", "adversarial_contempt_framing"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'Too late. I'm filing cause I'm tired of your shit' (ROW-14451) / 'Have fun paying contempt charges, court costs and lawyer fees' (ROW-14421)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF04-025 (RF-04+RF-05 Sep 17)"],
+    "note": "ARC-RF05-001 ACTIVE. B-028 adds S-022 (Sev-2 peak legal threat) and S-023 (Sev-1 repeat contempt cluster). S-022 ROW-14371 'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started' is the arc's highest-severity legal threat by specificity — past-tense confirmed consultation + actionable agreement. Combined with attorney-validated case strength (ROW-14367), S-022 represents the point at which RF-05 legal threat activity crosses from intention-signaling to confirmed-engagement. The paper tiger question becomes: was the 'agreement ready to sign' actually filed, or does this continue the pattern of non-execution? CP3-RF05-004 generated for attorney review."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": [
+      {
+        "item_id": "CP3-RF05-004",
+        "priority": "HIGH",
+        "trigger_rows": "ROW-14367, ROW-14371",
+        "trigger_date": "2025-09-17",
+        "title": "Peak Legal Custody Threat — Confirmed Attorney Consultation + Agreement Ready to Sign",
+        "description": "ROW-14371 (Sep 17, 2025): 'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started.' This is the most legally specific custody threat in the dataset. Prior threats were forward-looking ('I'll file,' 'I'll contact my lawyer'); this is past-completed (consultation done) with present-ready status (agreement ready). ROW-14367: 'My lawyer already said I had a strong case this further demonstrates that.' Attorney review required: (1) Was a custody filing actually made near or after Sep 17, 2025? (2) Does the filing status change Eli's response posture? (3) Does the 'agreement ready to sign' describe a formal custody agreement or a retainer/engagement letter? (4) How does confirmed legal consultation interact with the Nov 2025 police report context? Eli's documentation posture (sustained vigilance per ADD-005) is directly relevant if filing occurred.",
+        "cross_references": ["COMP-RF04-025", "ARC-RF05-001-S022", "CP3-RF05-003"]
+      }
+    ]
+  },
+  "batch_observations": {
+    "tone_assessment": "B-028 (Aug-Oct 2025): The RF-05 arc reaches its documented peak in this batch. The Sep 17 'agreement ready to sign' signal (S-022) is the highest legal threat specificity in the dataset — confirmed attorney consultation, validated case strength, and actionable agreement state. The Sep 19 and Sep 28 contempt clusters (S-023) add density: two contempt threat incidents within nine days. Combined with the Phase B/C boundary and the Labor Day visit refusal cascade, B-028 is the most legally pressured batch in the RF-05 record. Whether the Sep 17 legal engagement resulted in an actual filing is the central unresolved question for attorney strategy.",
+    "cross_rf_context": "RF-04 B-028: COMP-RF04-025 (Sep 17 full-custody 'agreement ready to sign': RF-04+RF-05 compound confirmed). COMP-RF04-026 (Oct 4-7 child-fear relay 'so afraid of you': RF-04+RF-11; RF-05 peripheral ROW-14499 'contemplating contempt charges'). Aug 28-30 visit refusal DARVO (RF04-B028-001 Sev-2) and Sep 2 image-based harm allegation (RF04-B028-002) have no RF-05 compound component. RF-04 peripheral ROW-14276 (daycare arrears) and ROW-14343-14344 (daycare contempt) included in RF-05 S-022 row range as financial-compliance escalation context."
+  }
+}

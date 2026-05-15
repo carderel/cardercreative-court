@@ -1,0 +1,65 @@
+{
+  "batch_id": "B-028",
+  "date_range": {
+    "start": "2025-08-03",
+    "end": "2025-09-12",
+    "note": "date-filtered batch"
+  },
+  "message_count": 483,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-007: dance lesson lifestyle leverage Aug 2025 (ROW-14263/14276). 'Can't afford tap' deployed to Olivia. RF-06+RF-10+RF-03 compound. ARC-RF06-001 Signal 7."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-007",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 7,
+      "date_range": "2025-08-14 to 2025-08-28",
+      "orig_rows": [
+        "14263",
+        "14276"
+      ],
+      "messages": [
+        {
+          "orig_row": "14263",
+          "direction": "Received",
+          "date": "2025-08-28",
+          "text": "She said you haven't talked to her about it only that you couldn't afford tap"
+        },
+        {
+          "orig_row": "14276",
+          "direction": "Received",
+          "date": "2025-08-31",
+          "text": "You're behind on daycare. You owed $360 due by August 28"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 ROW-14263: Melissa tells Olivia that Eli 'couldn't afford tap' dance \u2014 using Eli's financial objection to the dance lesson as a negative characterization to Olivia. This is ADD-006 (lifestyle differential weaponized to child) + ADD-007 (dance lesson forced payment \u2014 Melissa enrolled despite Eli's SPP-backed objection at ROW-8107). Eli cited the SPP activity cost provision; Melissa enrolled anyway and then framed Eli's refusal to pay as 'can't afford it.' ROW-14276: concurrent daycare arrears pressure. ARC-RF06-001 Signal 7. Cross-ref RF-10 (unilateral enrollment) and RF-03 (Thursday schedule conflict from dance).",
+      "addendum_applied": "ADD-006 (lifestyle differential \u2014 'can't afford tap' deployed to Olivia). ADD-007 (dance lesson forced payment \u2014 enrolled despite SPP objection)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "ACTIVE",
+      "signals_cumulative": 7
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "batch_id": "B-003",
+  "date_range": {
+    "start": "2022-11-08",
+    "end": "2022-12-14"
+  },
+  "row_range": {
+    "start": 738,
+    "end": 1108
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Nov-Dec 2022. ROW-1097 (Dec 13): allergy appointment canceled \u2014 cooperative medical coordination. No safety allegations or substance concerns. Both arcs CANDIDATE."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No signals",
+      "state": "CANDIDATE"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No signals",
+      "state": "CANDIDATE"
+    }
+  ]
+}

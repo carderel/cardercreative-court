@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-031",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2026-04-08",
+    "end": "2026-04-12"
+  },
+  "row_range": {
+    "start": 15540,
+    "end": 15600
+  },
+  "message_count": 61,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 11,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Apr 2026 dataset close (Apr 8-12): S011 (B-030) preceded. Apr 12 DARVO bruise/abuse reversal cluster (RF-04 COMP-RF04-030, RF-08 S011). No RF-09 primary signals \u2014 DARVO bruise cluster is RF-04 primary; Melissa's reversal framing does not include documentable 'I never said' reality-denial claims meeting cross-reference threshold. ROW-6819 coaching admission stands undenied at dataset close. Arc ARC-RF09-001 ACTIVE, unresolved."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

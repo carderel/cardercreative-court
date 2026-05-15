@@ -1,0 +1,48 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-009",
+    "row_range": { "start": 2955, "end": 3343 },
+    "date_range": { "start": "2023-07-15", "end": "2023-08-20" },
+    "message_count": 389,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 389,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": { "RF-04": 2 },
+    "no_flag_messages": 389,
+    "flag_rate": "0.0%"
+  },
+  "flagged_messages": [],
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-3241 and ROW-3272",
+      "message_text": "ROW-3241: 'Abby pregnant or just fat?' | ROW-3272: 'Abby preggers? If so I need to prep Olivia for a brother cousin'",
+      "assessment": "4th and partial predation-framing cluster. ADD-001: RF-04+RF-15 primary (COMP-RF04-009 per RF-04 pass). RF-05 peripheral aggressive-tone only. Not RF-05 primary."
+    },
+    {
+      "message_id": "ROW-3341",
+      "message_text": "ROW-3341: 'Call back now bitch'",
+      "assessment": "Aggressive commanding language with contemptuous slur. RF-04 contempt (aggressive tone). RF-05 taxonomy 'Not This' — expressing anger without threatening action. Not RF-05 primary; RF-04 Sev-1 peripheral note."
+    }
+  ],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. No new signals in B-009. Low RF-05 period — July-Aug 2023."
+  },
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+  "batch_observations": {
+    "tone_assessment": "B-009 (Jul-Aug 2023): Zero RF-05 primary flags. The Abby pregnancy references are ADD-001 peripherals. 'Call back now bitch' is RF-04 contemptuous aggression without threat. Arc pattern pauses for one batch.",
+    "cross_rf_context": "RF-04 B-009: COMP-RF04-009 (Abby pregnancy framing). No RF-05 primary cross-tags."
+  }
+}

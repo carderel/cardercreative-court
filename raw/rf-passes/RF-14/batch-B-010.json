@@ -1,0 +1,46 @@
+{
+  "batch_id": "B-010",
+  "date_range": {
+    "start": "2023-08-20",
+    "end": "2023-10-01"
+  },
+  "row_range": {
+    "start": 3335,
+    "end": 3705
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 4,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Aug-Oct 2023. ROW-3411: glasses/eye appointment confirmation (cooperative). ROW-3548: 'Did she find her glasses?' (cooperative inquiry). Glasses non-compliance pattern (per ADD-004) not yet firmly established \u2014 no specific compliance failure documented here. Strep/quarantine dispute in batch (Eli expressing genuine concern about Olivia's exposure; Melissa dismissive) \u2014 below RF-14 threshold (illness management, not safety/substance). Gary DV case dismissal window (Sep 19, 2023) \u2014 Gary case dismissal COMPLETELY SILENT in text record. No primary flags."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "Gary DV case dismissed Sep 19, 2023 \u2014 no messages about Gary in this window",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 WATCHING maintained (1 signal)",
+      "state": "WATCHING"
+    }
+  ]
+}

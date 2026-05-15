@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-016",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2024-06-14",
+    "end": "2024-07-15"
+  },
+  "row_range": {
+    "start": 5565,
+    "end": 5966
+  },
+  "message_count": 518,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "WATCHING",
+    "ARC-RF15-002": "WATCHING"
+  },
+  "arc_signals_cumulative": 6,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B016-001",
+      "date": "2024-06-30",
+      "row_ref": "ROW-5862",
+      "severity": 3,
+      "rf15_category": "C",
+      "direction": "received",
+      "summary": "Most explicit incest/predation statement in dataset. Jun 30 2024. ROW-5862: 'I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong, seeks attention without regard for others, is a liar, makes false allegations and doesn't know that she shouldn't fuck her uncle.' Category C Sev-3: (1) most explicit incest-framing in text record; (2) third-party reach confirmed (Q1: family, Facebook, professional contacts \u2014 systematic false narrative meets Sev-3 threshold); (3) contains PROJ-002 embedded: 'makes false allegations' accusation directed at Abby while Melissa is engaged in documented false allegation campaign. ARC-RF15-001 ACTIVE. ARC-RF15-002 ACTIVE (PROJ-002 confirms projection arc).",
+      "exact_quote": "ROW-5862: 'doesn't know that she shouldn't fuck her uncle'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 8,
+      "compound_patterns": [
+        "RF-04+RF-15",
+        "RF-01+RF-15"
+      ],
+      "cross_rf_note": "RF-01 B-016 RF01-B016-F001 Sev-2 is the primary RF-01 flag. RF-15 primary flag Sev-3 based on ADD-002: third-party reach confirmed Q1, systematic false narrative. RF-04 B-016 also references this ROW.",
+      "projection_pair_id": "PROJ-002"
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

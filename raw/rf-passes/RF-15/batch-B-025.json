@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-025",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2025-05-04",
+    "end": "2025-06-10"
+  },
+  "row_range": {
+    "start": 9288,
+    "end": 9667
+  },
+  "message_count": 501,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 10,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B025-001",
+      "date": "2025-06-07",
+      "row_ref": "ROW-9735-9751",
+      "severity": 2,
+      "rf15_category": "B_A",
+      "direction": "received",
+      "summary": "Vaping/asthma distortion + pinching false allegation, Jun 7-8 2025. ROW-9735: 'Olivia said you vaped in front of her and threatened to pinch her.' Vaping (Category B): partially real incident \u2014 Eli confirmed vaping occasionally outside. However, embedded in manufactured cat-allergy/asthma gatekeeping scheme (ADD-006: Olivia raised with pets from birth; allergy specialist visit manufactured asthma documentation used to deny visitation). Pinching threat (Category A): Eli has no recollection of any such incident. Compound RF-15+RF-08 (relay mechanism) + RF-02 (manufactured medical pretext for gatekeeping). ROW-9736: 'She said Abby laughed at her for coughing' \u2014 Abby-as-harmful-actor framing, Category C secondary.",
+      "exact_quote": "ROW-9735: 'Olivia said you vaped in front of her and threatened to pinch her' | ROW-9736: 'She said Abby laughed at her for coughing'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 12,
+      "compound_patterns": [
+        "RF-04+RF-15",
+        "RF-08+RF-15",
+        "RF-02+RF-15"
+      ],
+      "cross_rf_note": "RF-04 B-025 RF04-B025-001 Sev-2 is the primary RF-04 flag. RF-08 relay mechanism. ADD-006: cat-allergy manufactured pretext context applies \u2014 vaping allegation weaponized within an allergy/asthma documentation scheme used to deny visitation."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

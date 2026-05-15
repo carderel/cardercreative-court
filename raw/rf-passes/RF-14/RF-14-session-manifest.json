@@ -1,0 +1,295 @@
+{
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "status": "COMPLETE",
+  "generated": "2026-05-05",
+  "sessions": ["2026-04-28", "2026-05-05"],
+  "batches_complete": 31,
+  "batch_range": "B-001 through B-031",
+  "date_range_analyzed": "2022-01-11 through 2026-04-12",
+  "total_messages_analyzed": 15464,
+
+  "cp2_status": "COMPLETE",
+  "cp2_date": "2026-05-05",
+  "cp2_addenda_count": 8,
+  "cp2_addenda_file": "RF-14-calibration-addenda.json",
+
+  "totals": {
+    "primary_flags": 20,
+    "peripheral_flags": 8,
+    "not_flagged_documented_events": 4
+  },
+
+  "primary_flags_index": [
+    {
+      "id": "S-000",
+      "batch": "B-004",
+      "date": "2022-12",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-001",
+      "arc_signal": 1,
+      "orig_rows": ["1218", "1221", "1240"],
+      "summary": "Cat-allergy/asthma safety allegation; Melissa refuses Christmas visit citing Eli's cat; 'You've had 11 months to get rid of that damn cat' — manufactured safety pretext. First ARC-RF14-001 signal."
+    },
+    {
+      "id": "S-001",
+      "batch": "B-007",
+      "date": "2023-04",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-001",
+      "arc_signal": 2,
+      "orig_rows": ["2373", "2402", "2403"],
+      "summary": "Car unattended allegation (Apr 22-28, 2023) — Melissa claims Eli left Olivia unattended in car as safety allegation."
+    },
+    {
+      "id": "S-002",
+      "batch": "B-007",
+      "date": "2023-05",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-001",
+      "arc_signal": 3,
+      "orig_rows": ["2464", "2465", "2466", "2467", "2468", "2469"],
+      "summary": "Injury relay + 'always getting hurt by you' (May 10, 2023) — Melissa relays alleged physical harm from Eli via Olivia; unsubstantiated."
+    },
+    {
+      "id": "S-003",
+      "batch": "B-009",
+      "date": "2023-07",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 1,
+      "orig_rows": ["3139", "3140", "3141"],
+      "summary": "Vaping device early observation (Jul 30, 2023) — Eli's first genuine safety observation re vaping/device presence. First ARC-RF14-002 signal."
+    },
+    {
+      "id": "S-004",
+      "batch": "B-014",
+      "date": "2024-03",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-001",
+      "arc_signal": 4,
+      "orig_rows": ["4912"],
+      "summary": "Cat-allergy lawyer letter escalation (Mar 31, 2024) — 'I had to have my lawyer send you a letter to get you to stop subjecting her to them.' Manufactured medical safety allegation weaponized with legal threat."
+    },
+    {
+      "id": "S-005",
+      "batch": "B-015",
+      "date": "2024-06",
+      "direction": "Sent",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 2,
+      "orig_rows": ["5570"],
+      "summary": "Allergy medication reminder (Jun 9, 2024) — Eli: 'Might be good idea to make sure she has allergy meds.' Genuine medical compliance observation per ADD-004."
+    },
+    {
+      "id": "S-006",
+      "batch": "B-016",
+      "date": "2024-06",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-001",
+      "arc_signal": 5,
+      "orig_rows": ["5735", "7729", "7730"],
+      "summary": "Milo water balloon bruises (Jun 17, 2024) — Melissa reports Olivia has bruises from water balloon fight with Milo, framed in hostile context as safety allegation."
+    },
+    {
+      "id": "S-007",
+      "batch": "B-017",
+      "date": "2024-08",
+      "direction": "Sent",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 3,
+      "orig_rows": ["6256", "8391"],
+      "summary": "Allergy medication ragweed alert (Aug 4, 2024) — Eli: 'double up in allergy meds today ragweed is very high.' Genuine medical compliance documentation. ARC-RF14-002 promoted to ACTIVE."
+    },
+    {
+      "id": "S-008",
+      "batch": "B-019",
+      "date": "2024-09",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-001",
+      "arc_signal": 6,
+      "orig_rows": ["6984", "9266"],
+      "summary": "Bike safety gear dispute (Sep 6, 2024) — Melissa disputes Eli's safety gear requirements for Olivia when biking."
+    },
+    {
+      "id": "S-009",
+      "batch": "B-019",
+      "date": "2024-09",
+      "direction": "Sent",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 4,
+      "orig_rows": ["7037", "9322"],
+      "summary": "Skateboard unsafe trucks (Sep 8, 2024) — Eli discovers and fixes Olivia's skateboard unsafe hardware. Genuine safety observation and remediation."
+    },
+    {
+      "id": "S-010",
+      "batch": "B-019",
+      "date": "2024-09",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-001",
+      "arc_signal": 7,
+      "orig_rows": ["7165", "9456", "9457", "9458", "9459", "9460", "9461", "9462", "9463"],
+      "summary": "Choking/arm-twisting harm relay (Sep 15, 2024) — Melissa relays alleged physical harm by Eli (choking, arm-twisting) via Olivia. Unsubstantiated harm relay, manufactured safety allegation."
+    },
+    {
+      "id": "S-011",
+      "batch": "B-019",
+      "date": "2024-10",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-001",
+      "arc_signal": 8,
+      "orig_rows": ["7459", "9768"],
+      "summary": "Melatonin 'drugging' accusation (Oct 3, 2024) — Melissa accuses Eli of 'drugging' Olivia with melatonin. ARC-RF14-001 promoted to ACTIVE at this signal."
+    },
+    {
+      "id": "S-012",
+      "batch": "B-023",
+      "date": "2025-02",
+      "direction": "Received",
+      "severity": "Sev-2",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 5,
+      "orig_rows": ["9164", "11446"],
+      "summary": "Olivia self-harm (Feb 15, 2025) — Olivia hitting herself; Melissa confirms: 'You knew she used to do that.' Escalated to Sev-2 given self-harm behavior history confirmed by both parents."
+    },
+    {
+      "id": "S-013",
+      "batch": "B-024",
+      "date": "2025-03",
+      "direction": "Sent",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 6,
+      "orig_rows": ["9398", "12034"],
+      "summary": "Skateboard fall without safety gear at Melissa's (Mar 13, 2025) — Eli: 'Surprised she wasn't wearing any pads or safety gear.' Genuine safety compliance concern at Melissa's household."
+    },
+    {
+      "id": "S-014",
+      "batch": "B-027",
+      "date": "2025-07-19",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 7,
+      "orig_rows": ["9942", "13954", "13960"],
+      "summary": "Melissa Percocet disclosure (Jul 19, 2025) — 'I'm getting my prescriptions now but I'm going to take a Percocet and sleep'; 'I'm taking medicine that I'm not allowed to drive a vehicle or make legal decisions while on.' Narcotic use while caregiving responsibility active."
+    },
+    {
+      "id": "S-015",
+      "batch": "B-028",
+      "date": "2025-08-18",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 8,
+      "orig_rows": ["14171", "14174"],
+      "summary": "Gary first documented overnight (Aug 18, 2025) — 'Sunday morning may be better if I have Gary over Saturday night' + 'We like the overnights.' Gary has DV arrest history (05/23/2023, dismissed 09/19/2023). Per ADD-003."
+    },
+    {
+      "id": "S-016",
+      "batch": "B-029",
+      "date": "2025-09-18",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 9,
+      "orig_rows": ["14383", "14384", "14385", "14402"],
+      "summary": "Homicide investigation at Melissa's neighborhood (Sep 18, 2025) — 'They breached the house / Crime scene unit is on site / The husband has been arrested and being detained.' Olivia present during active homicide investigation; Melissa's friend (Amelia's mother) died (possibly murdered, per Oct 2 follow-up)."
+    },
+    {
+      "id": "S-017",
+      "batch": "B-030",
+      "date": "2025-11-05",
+      "direction": "Sent",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 10,
+      "orig_rows": ["14744"],
+      "summary": "Gary parenting plan formal challenge (Nov 5, 2025) — Eli: 'I don't think Gary or whoever is coming over qualifies as one of the exceptions in our parenting plan... I don't think having Gary around her is wise.' First formal invocation of 9-month protective clause."
+    },
+    {
+      "id": "S-018",
+      "batch": "B-031",
+      "date": "2026-02-18",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 11,
+      "orig_rows": ["15116"],
+      "summary": "Gary visit post-formal-challenge (Feb 18, 2026) — 'We're getting ready to go to Gary's for a bit.' Melissa continues Gary contact with Olivia despite Eli's Nov 2025 formal parenting plan challenge. DV history applies per ADD-003."
+    },
+    {
+      "id": "S-019",
+      "batch": "B-031",
+      "date": "2026-02-27",
+      "direction": "Received",
+      "severity": "Sev-1",
+      "arc": "ARC-RF14-002",
+      "arc_signal": 12,
+      "orig_rows": ["15151"],
+      "summary": "Melissa seizure while responsible for Olivia (Feb 27, 2026) — 'I had a seizure this morning and wasn't feeling well enough to get Olivia up and ready... I'm still feeling pretty rough.' Caregiver medical incapacitation; vision impairment noted; no backup care evident."
+    }
+  ],
+
+  "arc_final_state": {
+    "ARC-RF14-001": {
+      "name": "Safety Allegation Pattern",
+      "final_state": "ACTIVE",
+      "signals_total": 8,
+      "direction": "Received",
+      "trajectory": "CANDIDATE (B-001) → WATCHING (S-000, B-004, Dec 2022) → ACTIVE (S-010/S-011, B-019, Oct 2024)",
+      "description": "Melissa's manufactured false safety allegations against Eli — 8 documented instances from Dec 2022 through Oct 2024. All compound with RF-15 (false allegation pattern). Pattern includes cat-allergy weaponization, harm relay events, melatonin accusation, bike safety weaponization. Distinct from ARC-RF14-002 genuine safety observations.",
+      "key_signals": ["S-000 (cat-allergy Christmas refusal)", "S-001 (car unattended)", "S-002 (injury relay)", "S-004 (lawyer letter cat-allergy)", "S-006 (Milo bruises hostile framing)", "S-008 (bike safety gear)", "S-010 (choking arm-twist relay)", "S-011 (melatonin drugging)"]
+    },
+    "ARC-RF14-002": {
+      "name": "Genuine Safety Documentation",
+      "final_state": "ACTIVE",
+      "signals_total": 12,
+      "direction": "Bidirectional (Received dominant)",
+      "trajectory": "CANDIDATE (B-001) → WATCHING (S-003, B-009, Jul 2023) → ACTIVE (S-007, B-017, Aug 2024)",
+      "description": "Legitimate bi-directional genuine safety observations. Received direction: Melissa household indicators (vaping, Percocet use, Gary DV history, seizure, homicide event at neighborhood, self-harm, inadequate safety gear). Sent direction: Eli's appropriate welfare documentation (allergy meds compliance, skateboard safety remediation, Gary formal challenge). Olivia self-harm (S-012) is the only Sev-2 event.",
+      "key_signals": [
+        "S-003 (vaping device Jul 2023)", "S-005 (allergy meds Jun 2024)", "S-007 (allergy meds ragweed Aug 2024)",
+        "S-009 (skateboard unsafe trucks)", "S-012 (Olivia self-harm Sev-2)", "S-013 (skateboard fall no safety gear at Melissa's)",
+        "S-014 (Melissa Percocet Jul 2025)", "S-015 (Gary documented overnight Aug 2025)",
+        "S-016 (homicide investigation Sep 2025)", "S-017 (Gary parenting plan challenge Nov 2025)",
+        "S-018 (Gary visit post-challenge Feb 2026)", "S-019 (Melissa seizure Feb 2026)"
+      ]
+    }
+  },
+
+  "signal_direction_summary": {
+    "sent_primary_flags": 5,
+    "received_primary_flags": 15,
+    "note": "Dominant Received direction confirms Melissa household is the primary genuine safety concern source. Eli's Sent-direction signals are appropriate parenting welfare observations (allergy meds, skateboard repair, Gary formal challenge) — not RF-14 concerns about Eli. Both arcs are internally consistent with this direction pattern."
+  },
+
+  "key_calibration_decisions": [
+    "ADD-001: All known RF-15 false allegations (alcoholism accusation ROW-15498, vaping/asthma B-025/B-026, pinching relay, Abby drunk allegation) → RF-15 primary, RF-14 peripheral only. Applied consistently across all batches.",
+    "ADD-002: Feb 2026 bilateral argument (ROW-15098-15103) → RF-11 primary, RF-14 peripheral mitigated Sev-1. Not RF-14 primary.",
+    "ADD-003: Gary DV arrest history (05/23/2023, dismissed 09/19/2023) applied to S-015 (Gary documented overnight) and S-018 (Gary post-challenge visit). Sev-1 genuine safety concern.",
+    "ADD-004: Allergy medication non-compliance confirmed ongoing — applied to S-005 and S-007.",
+    "ADD-007: Pre-2023 manufactured safety allegations — ARC-RF14-001 WATCHING correctly triggered at S-000 (Dec 2022 cat-allergy Christmas refusal).",
+    "Bruise welfare check (B-031 ROW-15590-15597): NOT flagged RF-14. RF-15 Category D DARVO. Eli's welfare check is appropriate parenting behavior — explicitly not an RF-14 flag per ADD-001."
+  ],
+
+  "synthesis_notes": [
+    "The ARC-RF14-001/ARC-RF14-002 distinction is the central classification contribution of RF-14. The same fact pattern (safety language) means entirely different things in Received vs. Sent direction, and distinguishing manufactured false allegations (RF-15 compound) from genuine welfare concerns is the core analytical value.",
+    "Gary's presence arc (S-015 Aug 2025 first documented overnight → S-017 Nov 2025 formal challenge → S-018 Feb 2026 post-challenge continuation) is a compound RF-14/RF-02 safety narrative worth flagging for synthesis.",
+    "Melissa's medical/substance disclosures cluster in late 2025 - early 2026: Percocet Jul 2025 (S-014) and seizure Feb 2026 (S-019) — two separate caregiver incapacitation events within 7 months. Escalating pattern in ARC-RF14-002.",
+    "Olivia self-harm (S-012, Sev-2, Feb 2025) is the only elevated-severity primary flag in RF-14. Both parents acknowledge this. Synthesis should treat as genuine welfare concern requiring cross-pass analysis (RF-09 and RF-11 intersections possible).",
+    "ARC-RF14-001 effectively closed after B-019 (Oct 2024) — no new manufactured safety allegations in 2025-2026. The pattern shifted from outright false allegations to documentation of genuine Melissa household concerns."
+  ]
+}

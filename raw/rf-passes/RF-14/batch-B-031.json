@@ -1,0 +1,140 @@
+{
+  "batch_id": "B-031",
+  "date_range": {
+    "start": "2026-01-08",
+    "end": "2026-04-12"
+  },
+  "row_range": {
+    "orig_row_min": 8500,
+    "orig_row_max": 15588,
+    "note": "Date-filtered batch; orig_row range reflects unsorted Excel order within date window"
+  },
+  "message_count": 464,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": {
+    "ARC-RF14-001": "ACTIVE",
+    "ARC-RF14-002": "ACTIVE"
+  },
+  "arc_signals_cumulative_at_batch_start": {
+    "ARC-RF14-001": 8,
+    "ARC-RF14-002": 10
+  },
+  "calibration_addenda_active": [
+    "RF14-ADD-001", "RF14-ADD-002", "RF14-ADD-003", "RF14-ADD-004",
+    "RF14-ADD-005", "RF14-ADD-006", "RF14-ADD-007", "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 2,
+    "peripheral_flags": 1,
+    "arc_signals_this_batch": {
+      "ARC-RF14-001": 0,
+      "ARC-RF14-002": 2
+    },
+    "note": "B-031 is the final batch. Two genuine primary signals: (1) S-018 — Melissa takes Olivia to Gary's household (Feb 18) despite Eli's formal parenting plan challenge (Nov 5, S-017); Gary's DV arrest history applies. (2) S-019 — Melissa discloses seizure while responsible for Olivia (Feb 27); caregiver medical incapacitation. One peripheral compound: Feb 15-16 bilateral argument per ADD-002 (RF-11 primary, RF-14 peripheral mitigated). Two known RF-15 events correctly routed per ADD-001: alcoholism accusation (ROW-15498, RF-15 Cat-B primary, no RF-14) and bruise welfare check DARVO (ROW-15590-15597, RF-15 Cat-D primary, no RF-14)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-018",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF14-002",
+      "arc_signal_number": 11,
+      "date": "2026-02-18",
+      "orig_rows": ["15116"],
+      "messages": [
+        {
+          "orig_row": "15116",
+          "direction": "Received",
+          "text": "We're getting ready to go to Gary's for a bit. I'll see if I can get her to call on the way there. She is pretty upset at you"
+        }
+      ],
+      "classification": "RF-14 primary Sev-1 — Melissa takes Olivia to Gary's household Feb 18, 2026. Significance: (1) Gary has a documented DV arrest record (05/23/2023, charges dismissed 09/19/2023) per ADD-003; (2) Eli formally challenged Gary's presence under the 9-month parenting plan clause (S-017, Nov 5, 2025) — Melissa has not acknowledged or complied with Eli's concern; (3) Gary and Melissa had an apparent separation in Oct 2025 but appear to have resumed contact by Dec 2025 — ongoing contact with a DV-history individual is the sustained safety concern. ARC-RF14-002 Genuine Safety Documentation Signal 11.",
+      "addendum_applied": "ADD-003 (Gary DV arrest context — ongoing Gary contact with Olivia is a genuine RF-14 signal). ADD-008 (Gary timeline context).",
+      "cross_rf_note": "Potential RF-02 cross-reference (parenting plan non-compliance re: 9-month clause). Standalone RF-14 primary."
+    },
+    {
+      "flag_id": "S-019",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF14-002",
+      "arc_signal_number": 12,
+      "date": "2026-02-27",
+      "orig_rows": ["15151"],
+      "messages": [
+        {
+          "orig_row": "15151",
+          "direction": "Received",
+          "text": "I had a seizure this morning and wasn't feeling well enough to get Olivia up and ready.  I planned on taking her to school a little late when I had my vision back but I'm still feeling pretty rough."
+        }
+      ],
+      "classification": "RF-14 primary Sev-1 — Melissa discloses a seizure episode Feb 27, 2026 that left her unable to get Olivia ready for school. Caregiver medical incapacitation: (1) seizure event of unspecified cause/severity; (2) vision impairment noted post-seizure ('when I had my vision back'); (3) Melissa remained 'pretty rough' — ongoing incapacitation. Olivia's school routine disrupted. No indication of backup caregiver present or contacted. This is a genuine safety/welfare concern — caregiver medical emergency with child present and no secondary care plan evident. ARC-RF14-002 Genuine Safety Documentation Signal 12.",
+      "addendum_applied": "No specific addendum — core RF-14 safety classification: caregiver medical incapacitation affecting child welfare.",
+      "cross_rf_note": "Standalone RF-14 primary. Note: Melissa's seizure history (if recurrent) would escalate severity. Context does not indicate this is the first seizure on record; treat as Sev-1 given single documented occurrence."
+    }
+  ],
+  "peripheral_flags": [
+    {
+      "flag_id": "P-011",
+      "severity": "Sev-1",
+      "direction": "Bidirectional",
+      "arc": "ARC-RF14-002",
+      "primary_rf": "RF-11",
+      "date_range": "2026-02-15 to 2026-02-16",
+      "orig_rows": ["15098", "15099", "15103"],
+      "messages": [
+        {
+          "orig_row": "15098",
+          "direction": "Received",
+          "text": "Disagreements are going to happen but you guys need to tone that stuff down while Olivia is around. She called me saying she was scared because you and Abby were fighting and you were yelling, screami[ng]..."
+        },
+        {
+          "orig_row": "15099",
+          "direction": "Sent",
+          "text": "I did raise my voice during a disagreement. That should not have happened in front of the kids. I apologized to Olivia and took responsibility for letting my frustration show.\n\nThere was no physical a[ltercation]..."
+        },
+        {
+          "orig_row": "15103",
+          "direction": "Received",
+          "text": "She said it sounded like verbal abuse and you pulled your phone out and said let's educate ourselves today. Looked up verbal abuse and told them it's not illegal"
+        }
+      ],
+      "classification": "RF-14 peripheral Sev-1 compound with RF-11 (mitigated). Per ADD-002: Feb 2026 bilateral signal — RF-11 is primary; RF-14 is peripheral only. Mitigating factors confirmed: (1) Eli acknowledges the incident, takes responsibility, apologizes to Olivia; (2) 'very out of character' per CP2; (3) post-incident guardrails adopted (Eli and Abby). No endangerment threshold reached. Eli's self-assessment and corrective response are protective factors.",
+      "addendum_applied": "ADD-002 (Feb 2026 Bilateral Safety Event — isolated, below endangerment threshold; RF-11 primary, RF-14 peripheral Sev-1 mitigated)."
+    }
+  ],
+  "not_flagged_events": [
+    {
+      "id": "NF-B031-001",
+      "date": "2026-03-28",
+      "orig_row": "15498",
+      "event": "Alcoholism accusation — 'Olivia smelled beer on you... Do you have a drinking problem?'",
+      "ruling": "NOT RF-14 primary. RF-15 Category B primary per ADD-001. One beer at dinner distorted to 'drinking problem.' This is the documented false substance allegation in the RF-15 record (B-030 ROW-15498). Per RF-15/RF-14 compound boundary rule (ADD-001): RF-15 primary, RF-14 peripheral only.",
+      "rf14_peripheral_note": "RF-14 peripheral reference: false substance allegation re Eli. Compound note filed under RF-15 record."
+    },
+    {
+      "id": "NF-B031-002",
+      "date": "2026-04-12",
+      "orig_rows": ["15589", "15590", "15591", "15592", "15594", "15596", "15597"],
+      "event": "Bruise welfare check DARVO — Eli notices bruise on Olivia's arm, asks what happened; Melissa reframes as 'Why do you keep trying to make Olivia think I'm abusing her?' and claims 'You asked her if she was being abused.'",
+      "ruling": "NOT RF-14 primary. NOT RF-14 peripheral. RF-15 Category D primary per ADD-001 (DARVO: Eli's protective welfare check reframed as abuse-planting). Eli's welfare check (asking about a bruise) is appropriate protective parenting behavior — not itself a safety concern. No RF-14 flag generated. Per ADD-001: 'a welfare check is appropriate protective behavior, not a safety concern.'"
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals in B-031. ACTIVE state holds. Final cumulative count: 8 signals.",
+      "state": "ACTIVE",
+      "signals_cumulative": 8,
+      "final_note": "ARC-RF14-001 (Safety Allegation Pattern — Melissa's manufactured false safety allegations) closed at end of dataset. 8 signals documented across B-004 through B-019. All known false allegations properly routed to RF-15 primary."
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "S-018 (Gary visit Feb 18) and S-019 (Melissa seizure Feb 27) — Signals 11 and 12. Final cumulative count: 12 signals.",
+      "state": "ACTIVE",
+      "signals_cumulative": 12,
+      "final_note": "ARC-RF14-002 (Genuine Safety Documentation — bidirectional genuine safety observations) closed at end of dataset. 12 signals documented across B-009 through B-031. Dominant direction: Received (Melissa household indicators). Sent direction: Eli's appropriate parenting welfare observations (S-009, S-012/S-013, S-017). Signal density highest in 2024-2026."
+    }
+  ]
+}

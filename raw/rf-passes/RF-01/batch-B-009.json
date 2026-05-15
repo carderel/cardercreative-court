@@ -1,0 +1,142 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-009",
+    "row_range": {"start": 2959, "end": 3342},
+    "date_range": {"start": "2023-07-15", "end": "2023-08-20"},
+    "message_count": 384,
+    "mms_note": "MMS for this date range exist on a separate MMS sheet and are not separately analyzed in this batch; SMS-only analysis.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "timezone_note": "All source timestamps are UTC. Entire B-009 date range is EDT (UTC-4).",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. One primary RF-01 flag (Sev 2). Dominant event: Jul 29-31 vaping incident (ROW-3127-3158) — disputed vaping on FaceTime escalates to Olivia crying, refusing to look at Eli, demanding apology; Melissa characterizes Eli as lying to Olivia ('Don't lie to her. She doesn't deserve that'); ROW-3151 contains the most significant gatekeeping admission in the record to date: 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days.' This is a direct admission that Melissa mediates and drives Olivia's communication with Eli. Secondary notable: ROW-3240/3271 'Abby pregnant or just fat?' + 'I need to prep Olivia for a brother cousin' — maintains uncle/niece narrative (RF-15 primary), near-boundary RF-01. Strong cooperative content: cheer practice coordination, school supply drop-off, first-day-of-school photos. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 11 signals (2 Sev-1, 9 Sev-2)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 384,
+    "primary_flags": 1,
+    "primary_severity_distribution": {"1": 0, "2": 1, "3": 0},
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {"RF-04": 2, "RF-15": 1, "RF-04_near_RF01": 1},
+    "no_flag_messages": 383,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "flag_id": "RF01-B009-S001",
+      "message_ids": ["ROW-3127", "ROW-3128", "ROW-3129", "ROW-3131", "ROW-3135", "ROW-3136", "ROW-3137", "ROW-3143", "ROW-3144", "ROW-3151", "ROW-3158"],
+      "date_range": {"start": "2023-07-29", "end": "2023-07-31"},
+      "severity": 2,
+      "flag_type": "primary",
+      "rf_category": "RF-01",
+      "calibration_addenda_triggered": ["RF01-ADD-002", "RF01-ADD-004"],
+      "arc_signal": true,
+      "arc_ref": "ARC-RF01-001",
+      "cp3_item": true,
+      "cp3_ref": "CP3-RF01-B009-001",
+      "confidence": "high",
+
+      "message_texts": {
+        "ROW-3127": "Olivia is over here crying",
+        "ROW-3128": "[Eli]: Wgat / What",
+        "ROW-3129": "[Eli]: What",
+        "ROW-3131": "She's crying cause you upset her",
+        "ROW-3135": "She said she doesn't want to look at you cause you hurt her feelings",
+        "ROW-3136": "She doesn't want to Google meet you",
+        "ROW-3137": "Don't lie to her. She doesn't deserve that",
+        "ROW-3143": "And you forgot this time",
+        "ROW-3144": "I've seen you do it on FaceTime with her before",
+        "ROW-3151": "I normally ask her if she wants to call you in the am. I'm the reason she calls you most days. She didn't want to today. She's still mad at you",
+        "ROW-3158": "Olivia said you need to give an apology right now and not a fake one either. A real one"
+      },
+
+      "context_notes": "Jul 29: During a FaceTime/call with Eli, Olivia became upset, believing she saw Eli vaping — she described a green light and smoke. Eli denied vaping, suggesting the green light may have been the TV reflecting on an Apple Pencil, and noting he may have been steaming laundry (ROW-3146-3150). Melissa immediately framed the incident as Eli lying to Olivia (ROW-3137). Jul 31 (two days later): Melissa reports Olivia is 'still mad' and did not want to call. ROW-3151: 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days. She didn't want to today. She's still mad at you.' ROW-3158: Melissa relays Olivia's demand for an apology 'right now' and 'not a fake one.' The vaping dispute itself is unresolved — Eli denied vaping; Olivia reported what she believed she saw.",
+
+      "rf01_analysis": "This cluster is significant at two levels: (1) The incident-level pattern: Melissa validates Olivia's belief that Eli lied to her (ROW-3137: 'Don't lie to her. She doesn't deserve that'), characterizes Eli as a habitual FaceTime-vaper (ROW-3144: 'I've seen you do it on FaceTime with her before'), and channels Olivia's anger toward Eli in a sustained way ('she's still mad at you,' ROW-3151; demanding apology, ROW-3158). Whether Eli was actually vaping, Melissa's response amplifies and extends Olivia's anger rather than de-escalating. ROW-3158's 'not a fake one' qualifier — preemptively framing Eli's apology as potentially insincere — models skepticism of Eli's authenticity to Olivia (coaching Olivia to distrust Eli's expressions of remorse). ROW-3135: 'She said she doesn't want to look at you' — alienation indicator. (2) The structural admission (ROW-3151): 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days.' This is the most significant gatekeeping admission in the record. Melissa explicitly claims she is the active mechanism behind Olivia calling Eli — meaning when Melissa stops asking, calls stop. Combined with the 'phone-refusal' pattern documented across B-007 and B-008, this admission explains the mechanics of why Olivia's calls to Eli fluctuate with Melissa's emotional state toward Eli. RF01-ADD-002: 'Don't lie to her / She doesn't deserve that' constitutes framing Eli as untrustworthy/dishonest to his daughter — inadequate-father characterization at Sev 2 level in context of emotional manipulation of the child. RF01-ADD-004: ROW-3131, ROW-3135, ROW-3151, ROW-3158 all relay Olivia's emotional state (crying, won't look at Eli, still mad, demanding apology) as evidence of Eli's failure.",
+
+      "arc_note": "ARC-RF01-001 +1 Sev-2 signal. ROW-3151 is analytically the most important sentence in B-009 and one of the most important in the record: 'I'm the reason she calls you most days.' This is direct written evidence of Melissa's role as the gatekeeper of Olivia's communication with Eli."
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-3075-3079",
+      "reason_noted": "Jul 22: Melissa relays Olivia's conditions for a pickup visit: ROW-3076 'She said she wants you to take her to kalahari'; ROW-3077 'She said if she is going with you you're going to kalahari'; ROW-3079 (after Eli says he can't do Kalahari right now): 'She said then I'm not going to go with you.' Melissa relays that Olivia will not go with Eli unless he agrees to a specific expensive activity. This is the third instance of Olivia's pickup being conditioned on a specific activity or exclusion (B-007: Abby absent; B-007/B-008: swimming at Melissa's house; B-009: Kalahari). Whether these conditions reflect Olivia's genuine preferences or coached/amplified demands via Melissa is unknown. Pattern watch: escalating conditionality of Olivia's pickup consent. Near-boundary RF-01: using Olivia's voiced demand to make Eli's access contingent on fulfilling a request. RF-04 peripheral."
+    },
+    {
+      "message_id": "ROW-3087",
+      "reason_noted": "Jul 23: Melissa had agreed to let Eli take Olivia to swim. Morning of pickup: 'She says she doesn't want to go today. She wants to sleep in.' Olivia declines the planned activity, preferring to stay home. Single instance; children declining outings is normal. Pattern watch: Olivia declining planned activities with Eli has occurred in multiple batches."
+    },
+    {
+      "message_id": "ROW-3240-3271",
+      "reason_noted": "Aug 13-14: ROW-3240 'Abby pregnant or just fat?' — body-shaming, contemptuous inquiry about Abby. ROW-3271 'Abby preggers? If so I need to prep Olivia for a brother cousin' — maintains the uncle/niece framing in a concrete context: if Abby is pregnant, Melissa intends to 'prep Olivia' using the uncle/niece narrative ('brother cousin'). Near-boundary RF-01: ROW-3271's 'prep Olivia' language suggests Melissa would communicate the uncle/niece narrative to Olivia in the context of discussing a potential sibling for Olivia. Primary for RF-15 (false allegation / projection of inappropriate relationship). Peripheral for RF-01: coaching Olivia on the uncle/niece framing is a direct RF-01 signal if it occurs."
+    },
+    {
+      "message_id": "ROW-3215-3216",
+      "reason_noted": "Aug 7: 'Get a letter together for olivia / I want to pack a letter from me and one from you in her book bag for her first day letting her know her year is going to be great and we are proud of her.' Melissa explicitly includes Eli in the first-day school tradition — asking him to write a letter and saying 'we are proud of her.' This is significant cooperative data: Melissa presenting both parents as a unified support team for Olivia's first day. Directly contradicts the 'you've never asked to do anything with her' narrative from B-008."
+    },
+    {
+      "message_id": "ROW-3151",
+      "reason_noted": "Jul 31: 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days. She didn't want to today. She's still mad at you.' Captured in primary flag S001. Separately noted here for evidentiary emphasis: this is a direct written admission of Melissa's gatekeeping function. The full implication: Melissa initiates Olivia's calls to Eli on most days. When Melissa's emotional state toward Eli is negative, she can withhold this initiation. The phone-refusal clusters documented in B-007 and B-008 are now mechanistically explained."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-2997",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Jul 16: 'I don't care if you like them or agree with them as you are someone unable to make good decisions.' Context: screen protector dispute for Olivia's iPad. RF-04: contemptuous characterization of Eli as incapable of good judgment. RF-01 adjacent: if communicated to Olivia, 'your dad can't make good decisions' contributes to the incompetent-father narrative.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3075-3079",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Jul 22: Melissa relays Olivia's Kalahari ultimatum — 'She said if she is going with you you're going to kalahari' / 'She said then I'm not going to go with you.' RF-04: using Olivia's voiced condition (whether coach-generated or genuine) as a gating mechanism on Eli's access. Near-boundary RF-01: this is the third conditioned-pickup pattern (B-007: Abby absent; B-007-B-008: swim at Melissa's house; B-009: Kalahari). Escalating pattern of Olivia's access being mediated by specific demands relayed through Melissa.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-3231",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Aug 10: 'You make her look weird with all the adjustments you make.' Context unclear (may refer to photo editing or appearance adjustments during a visit). RF-04: contemptuous criticism of Eli's parenting judgment in context of Olivia's appearance. Minor but consistent with ongoing pattern of Melissa commenting on Eli's competence.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-3240-3271",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "Aug 13-14: ROW-3240 'Abby pregnant or just fat?' — RF-04/RF-15 (contemptuous body-shaming + inappropriate-relationship echo). ROW-3271 'Abby preggers? If so I need to prep Olivia for a brother cousin' — RF-15 primary: maintains the uncle/niece framing with 'prep Olivia' intent language. Near-boundary RF-01: if Melissa communicates the 'brother cousin' framing to Olivia, this is direct coaching of the false allegation narrative that feeds the 'uncle/niece/inappropriate relationship' RF-15 pattern which in turn feeds RF-01 (positioning Eli's relationship with Abby as morally disqualifying for parental authority).",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_continuation_note": "ARC-RF01-001 (Abandonment/Blame Attribution Narrative): ACTIVE, +1 Sev-2 signal (RF01-B009-S001). Total signals: 11 (2 Sev-1, 9 Sev-2). The Jul 29-31 cluster adds a new RF-01 variant: the 'untrustworthy/dishonest father' framing arising from a disputed incident. ROW-3151's explicit gatekeeping admission ('I'm the reason she calls you most days') provides the mechanical explanation for the phone-refusal patterns observed in B-007 and B-008. The arc now spans four distinct thematic components: (1) abandonment narrative, (2) Abby-prioritization framing, (3) Abby-as-obstacle framing (B-008), (4) untrustworthy/dishonest father framing (B-009)."
+  },
+
+  "batch_narrative_note": "B-009 is broadly cooperative with significant activity: Olivia starts cheerleading (Jul 26), iPad and school supply logistics, school year begins (Aug 16, first day of school). Eli takes first-day photos, attends cheer practices, coordinates pickups. Melissa invites Eli to swim with Olivia (Jul 18), includes Eli in school letter tradition (Aug 7), invites him to school supply drop-off and first day. The batch has a normal-co-parenting feel for large stretches, interrupted by the Jul 29-31 vaping incident. The incident itself is ambiguous — Eli denied vaping, offered alternative explanations, and the dispute was never resolved. What is analytically significant is Melissa's response: immediate characterization of Eli as a liar ('Don't lie to her'), sustained amplification of Olivia's anger ('she's still mad at you' two days later), and the ROW-3151 gatekeeping admission. The Kalahari conditioned-pickup pattern (ROW-3075-3079) and Olivia's continuing declination of calls/visits ('she doesn't want to go today') continue the post-Apr-21 access pattern.",
+
+  "cooperative_data_notes": "Strong cooperative content: Melissa invites Eli to swim with Olivia (Jul 18, ROW-3012); coordinates cheer practice pickups extensively (Jul 21, Jul 22, Jul 26-27, Aug 7, Aug 18-19); keeps Eli updated on Olivia's allergy/asthma reactions at practice (ROW-3123); asks Eli to write a letter for Olivia's first day of school (ROW-3215-3216) saying 'we are proud of her'; invites Eli to school supply drop-off (Aug 15); facilitates first-day-of-school photography (Aug 16); asks if Eli wants to be at eye appointment (ROW-3312). Melissa shares Olivia's swim class info, cheer coach's 'stop / collaborate and listen' yell, hamster time-out antics (ROW-2789-2793), first day of school preparation with warmth.",
+
+  "checkpoint_items_generated": {
+    "cp3_count": 1,
+    "cp3_items": [
+      {
+        "cp3_ref": "CP3-RF01-B009-001",
+        "message_ids": ["ROW-3151"],
+        "date": "2023-07-31",
+        "attorney_flag": "ROW-3151: 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days. She didn't want to today. She's still mad at you.' Attorney relevance: Melissa explicitly admits in writing that she is the primary driver of Olivia's communication with Eli — that Olivia calls Eli most days because Melissa asks her if she wants to. This is the mechanical admission that explains the phone-refusal patterns documented in B-007 and B-008: when Melissa is in conflict with Eli, she stops initiating Olivia's calls, and calls decline. Combined with the 'she's still mad at you' framing, this shows both the gatekeeping mechanism and Melissa's use of Olivia's emotional state (amplified or mediated by Melissa) to communicate to Eli that he has failed."
+      }
+    ],
+    "cp4_count": 0
+  }
+}

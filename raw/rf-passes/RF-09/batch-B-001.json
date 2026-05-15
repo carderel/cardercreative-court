@@ -1,0 +1,67 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-09",
+    "batch_id": "B-001",
+    "row_range": {
+      "start": 2,
+      "end": 366
+    },
+    "date_range": {
+      "start": "2022-01-11",
+      "end": "2022-10-02"
+    },
+    "message_count": 365,
+    "phase": "A",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [],
+    "note": "CP2 CALIBRATION BATCH. RF-09 Gaslighting pass initialized. Triage heatmap: 37 keyword hits total across dataset (medium signal); 24 Phase A; hot periods Aug 2025, Aug 2024, Jan 2025. Pass elevated by RC-PIPELINE: benefits from RF-04 context. RF-09-SUPPLEMENT.md cross-reference methodology active. Cross-reference index initialized at crossref-index.json."
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 365,
+    "primary_flags": 0,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 1,
+    "no_flag_messages": 365,
+    "flag_rate": "0.0%"
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-50-61",
+      "timestamp": "2022-08-28",
+      "direction": "received",
+      "message_text": "ROW-50: 'You want to tell her about being respectful at church but you text me while church is going on and sit and draw' / ROW-58: 'I've sat next to you. You bring a notebook. I've seen you' / ROW-61: 'Check your own etiquette'",
+      "assessment": "DARVO pivot following Eli's legitimate co-parenting concern about church behavior \u2014 flagged as RF-04 primary (B-001-001). RF-09 peripheral: the DARVO mechanism involves implicit reality-reframing ('Eli has no standing to raise this concern because he does the same thing'). However, no specific reality claim with a documentable contradiction is present. No RF-09 primary flag. CP2 question: was there a verbal conversation surrounding this incident that Melissa later denied or characterized differently?",
+      "cp2_flag": true
+    }
+  ],
+  "cross_references_this_batch": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "RF-09 arc state initialized at zero. B-001 is the lowest-conflict period (Jan-Oct 2022, 355/365 messages produce no flags in RF-04). No RF-09 primary signals detected. Triage Phase A concentration (24 of 37 keyword hits) is expected \u2014 gaslighting often concentrates in early conflict as the manipulative party establishes narrative control. However, the calibration batch itself is pre-escalation. Expected arc activation: around B-017-B-019 (Aug-Oct 2024 mega-cluster period, when DARVO mechanisms became documented in RF-04)."
+  },
+  "compound_patterns": [],
+  "checkpoint_items_generated": {
+    "cp2_count": 6,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": [
+      "CP2-RF09: 6 calibration questions generated \u2014 see cp2-RF-09-review.json"
+    ]
+  },
+  "batch_observations": {
+    "tone_assessment": "Lowest-conflict period in dataset. Jan-Oct 2022. Pre-escalation baseline. RF-04 documented 3 flags (DARVO sequence, contempt attack, child-mediated guilt delivery) but all are pattern-framing attacks rather than reality-denial claims. No RF-09 primary signals in the calibration batch is the correct result.",
+    "rf09_assessment": "Zero primary RF-09 flags. The triage Phase A concentration likely reflects: (1) 'you're remembering wrong' type language in mid-2023 onward escalation batches; (2) Eli's Sent-direction corrections ('that's not what you said') which generate keyword hits without constituting RF-09 signals against Eli; (3) early DARVO-adjacent sequences that tip into denial patterns. B-001 confirms the cooperative-baseline period does not contain documentable reality claims. CP2 calibration is critical before proceeding \u2014 the cross-reference methodology requires knowing which denials are most significant.",
+    "cross_rf_context": "RF-04 B-001 DARVO pivot (ROW-50-61) is the most relevant adjacent signal. RF-05 S-020 (Jul 2025) 'DARVO-denial mechanism' is the strongest anticipated RF-09 compound anchor in Phase B. RF-04 COMP-RF04-029 (Feb 2026 admitted-incident amplification: raised voice \u2192 verbal abuse \u2192 traumatized \u2192 drinking problem) is a strong Level C-D distortion candidate. ROW-6819 coaching admission (B-018) is a forward-looking RF-09 anchor: any subsequent denial of coaching is Level A gaslighting."
+  }
+}

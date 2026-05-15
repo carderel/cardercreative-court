@@ -1,0 +1,116 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-027",
+    "row_range": { "start": 8014, "end": 14235 },
+    "date_range": { "start": "2025-07-17", "end": "2025-08-28" },
+    "message_count": 503,
+    "phase": "B",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Aug 2025 hot period batch. Three-block data structure: (1) Sequential ROW-8014-8200+ (Jul 17-Aug 28, mixed Sent/Received); (2) Second parallel block ROW-9917-9964; (3) Third parallel block (Melissa messages) ROW-13922-14235. Aug 2025 is confirmed RF-07 triage hot period. S-004 (Aug 14-15 mega-cluster) and S-005 (Aug 21 read-receipt pressure) both occur this batch."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 503,
+    "primary_flags": 2,
+    "primary_severity_distribution": { "1": 1, "2": 1, "3": 0 },
+    "peripheral_flags_total": 1,
+    "no_flag_messages": 501,
+    "flag_rate": "0.4%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF07-B027-001",
+      "flag_id": "ARC-RF07-001-S004",
+      "timestamp": "2025-08-14 through 2025-08-15",
+      "direction": "received",
+      "phase": "B",
+      "row_ref": "ROW-14000–ROW-14187 (approximate; B-027 third block)",
+      "message_text": "[Aug 14-15 sustained mega-cluster — ~80+ messages spanning Aug 14-15 2025; COMP-RF04-024 anchor. Opening messages include inadequate-father, 'shit father,' 'dumbass,' 'asshole,' custody threats, access withdrawal, counselor relay framing.]",
+      "primary_rf": "RF-07",
+      "primary_severity": 2,
+      "sub_pattern": "sustained_dense_cluster_flooding_candidate",
+      "primary_reasoning": "Aug 14-15 sustained mega-cluster — second major flooding candidate in the dataset (parallel to Aug 4-5 2024 S-001). ~80+ messages across Aug 14-15 2025. Aug 2025 is a confirmed RF-07 triage hot period (third hot period: 2024-08, 2025-05, 2025-08). Cluster structure mirrors S-001: sustained dense episode triggered by conflict escalation into comprehensive character attack. COMP-RF04-024 (RF-04 Sev-3 mega-cluster: 'shit father' + 'dumbass' 8th + 'asshole' ADD-002 + custody threats + access withdrawal + Dr advice framing + counselor relay). RF-07 mechanism: message volume and density during Aug 14-15 constitutes flooding candidate. Without individual per-message timestamps from raw Excel data, the 5+/10-minute threshold cannot be confirmed from RF-04 batch record. However: (1) Aug 2025 is confirmed RF-07 triage hot period; (2) ~80+ messages over two days with established rapid-cluster structure consistent with prior mega-cluster pattern; (3) ADD-001 flooding threshold probable. Sev-2 assigned: hot-period anchor + probable flooding pending synthesis timestamp confirmation. ARC-RF07-001-S004.",
+      "verbatim_key_messages": [
+        "[ROW-14000+ range] (Received): 'shit father' — new slur escalation within cluster",
+        "[ROW-14000+ range] (Received): 'dumbass' — continued contempt slur deployment",
+        "[ROW-14000+ range] (Received): custody threats + access withdrawal framing"
+      ],
+      "pattern_tags": ["flooding_candidate", "sustained_dense_episode", "aug_2025_hot_period", "mega_cluster"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": ["COMP-RF07-003"],
+      "calibration_notes": "Sev-2 assigned based on hot-period anchor and probable flooding consistent with ~80+ message density. Timestamp confirmation required from raw Excel data at synthesis."
+    },
+    {
+      "message_id": "RF07-B027-002",
+      "flag_id": "ARC-RF07-001-S005",
+      "timestamp": "2025-08-21",
+      "direction": "received",
+      "phase": "B",
+      "row_ref": "ROW-14188–ROW-14190",
+      "message_text": "ROW-14188 (Received): 'I'll assume you are not picking her up since I haven't heard back from you' | ROW-14189 (Received): '[You read my message at 3:11]' | ROW-14190 (Received): 'Could've responded when you read it'",
+      "primary_rf": "RF-07",
+      "primary_severity": 1,
+      "sub_pattern": "read_receipt_pressure_response_demand",
+      "primary_reasoning": "Three-message read-receipt pressure sequence. ROW-14188: unilateral scheduling assumption framed as consequence of Eli's non-response — 'I'll assume...' mechanism forces Eli to respond or lose parenting-time opportunity. ROW-14189: read-receipt cited as evidence Eli saw and ignored the message — surveil-and-document behavior. ROW-14190: 'Could've responded when you read it' — contemptuous accusation of deliberate non-response, transforming message receipt into accountability evidence. Mechanism: deploying read-receipt status as a communication pressure/surveillance tool. Per ADD-004 Sev-2 threshold: response-demand framing ('why aren't you answering?') meets the sub-pattern. Sev-1 assigned: three-message cluster; no flooding volume. Sev-2 would require confirmed parenting-time context or more aggressive response-demand language. ARC-RF07-001-S005.",
+      "verbatim_key_messages": [
+        "ROW-14188 (Received): 'I'll assume you are not picking her up since I haven't heard back from you'",
+        "ROW-14189 (Received): '[You read my message at 3:11]'",
+        "ROW-14190 (Received): 'Could've responded when you read it'"
+      ],
+      "pattern_tags": ["read_receipt_pressure", "response_demand", "surveillance_documentation", "unilateral_assumption"],
+      "arc_references": ["ARC-RF07-001"],
+      "compound_references": [],
+      "calibration_notes": "Sev-1: three-message read-receipt pressure sequence; peripheral per RF-04 analysis; elevated to RF-07 primary Sev-1 under ADD-004 response-demand sub-pattern. Aug 21 date: Aug 2025 hot period active."
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-14000+-jul19-cluster",
+      "timestamp": "2025-07-19",
+      "direction": "received",
+      "message_text": "Jul 19 full-custody threat mega-cluster (COMP-RF04-023)",
+      "assessment": "Jul 19 RF-04+RF-05 compound. Full-custody threat cluster. Assessed for RF-07 flooding component: Jul 19 is between the May 2025 and Aug 2025 hot periods, in inter-hot-period territory. Flooding threshold confirmation requires timestamp granularity. Without timestamps, held as peripheral. Aug 14-15 (S-004) is the Aug hot-period anchor; Jul 19 is pre-hot-period in this batch.",
+      "cp2_flag": false
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF07-003"],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. S-004 and S-005 added. Arc now at 5 signals: S-001 (Aug 2024 Sev-2), S-002 (Dec 2024 Sev-1), S-003 (May 2025 Sev-2), S-004 (Aug 2025 mega-cluster Sev-2), S-005 (Aug 2025 read-receipt Sev-1). Sub-patterns active: flooding_candidate (S-001, S-004), response_demand (S-002, S-005), continuation_after_self_demand (S-003), read_receipt_pressure (S-005). Aug 2025 hot period confirmed active. COMP-RF07-003 generated."
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF07-003",
+      "date": "2025-08-14",
+      "row_ref": "ROW-14000–ROW-14187 (approximate)",
+      "rf_tags": ["RF-04", "RF-07"],
+      "summary": "RF-04+RF-07 compound. RF-04 (Sev-3 COMP-RF04-024: Aug 14-15 mega-cluster — 'shit father' new slur escalation, 'dumbass' 8th signal, 'asshole' ADD-002, custody threats, access withdrawal, Dr advice framing, counselor relay; ARC-RF04-001 + ARC-RF04-002) + RF-07 (Sev-2: ~80+-message dense cluster in Aug 2025 hot period; flooding candidate; ARC-RF07-001-S004). Sustained character attack and flooding pressure in a single sustained episode.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001", "ARC-RF07-001-S004"]
+    }
+  ],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "High escalation — Aug 2025 hot period. Jul 19 full-custody threat cluster. Aug 8-9 'dingus' contempt. Aug 14-15 sustained mega-cluster (the defining event). Aug 21 read-receipt pressure. Aug 25-26 contempt continuation. This batch is among the highest-intensity periods in the dataset.",
+    "rf07_assessment": "B-027 contains two primary RF-07 signals: S-004 (Aug 14-15 flooding candidate Sev-2) and S-005 (Aug 21 read-receipt pressure Sev-1). Aug 2025 is the third confirmed hot period. The Aug 14-15 mega-cluster parallels the Aug 4-5 2024 S-001 event in mechanism: sustained dense messaging triggered by conflict escalation. S-005 adds the read-receipt-as-surveillance mechanism to the arc.",
+    "custodial_context": "Aug 14-15 occurs mid-week. Aug 21 read-receipt pressure may involve Eli's scheduled parenting time. ADD-004 custodial-time-overstepping elevated consideration for S-005 (Aug 21 — potential parenting-time context; not confirmed from available data)."
+  }
+}

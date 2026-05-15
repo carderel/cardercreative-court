@@ -1,0 +1,46 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-031",
+    "row_range": { "start": 8499, "end": 8594 },
+    "date_range": { "start": "2026-01-08", "end": "2026-03-18" },
+    "message_count": 96,
+    "timezone_note": "EST (UTC-5) throughout. DST spring-forward 2026 is Mar 8 at 2:00 AM EST (07:00 UTC). ROW-8594 (Mar 18) is post-spring-forward (EDT), but the transition falls within B-031's range. ROW-8595+ is MMS data (dates jump back to Nov 2024) — B-031 ends at ROW-8594 as the final SMS row in the dataset.",
+    "phase": "C",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Final RF-01 batch. Phase C (post-Nov 22 police report). Jan 8 – Mar 18, 2026. Predominantly Eli-sent; Received messages sparse and predominantly routine. Feb 27 visit refusal relay (ROW-8575) is sole RF-01 signal — peripheral. Feb 11 scheduling dispute (ROW-8545-8547 Received) and Feb 26 note-on-windshield event (ROW-8569) are RF-02/RF-05 territory without RF-01 primary content. ROW-8595+ MMS table boundary confirmed. Dec 27, 2025 – Jan 7, 2026 gap documented in B-030."
+  },
+
+  "primary_flags": [],
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B031-P001",
+      "row": "ROW-8575",
+      "date": "2026-02-27",
+      "rf_tags": ["RF-01", "RF-02"],
+      "severity": "peripheral",
+      "summary": "February 27 — 'You can come but she says she's not coming out' (ROW-8575). ADD-004 peripheral: Melissa relays Olivia's refusal to come for Eli's scheduled visit in Olivia's reported voice. Structurally identical to the Nov 7 B-030 relay ('refuses to come out,' ROW-8423) — same mechanism, same reported-speech framing. RF-02 primary (visit refusal relay); RF-01 peripheral (ADD-004 delivery of Olivia's refusal as parenting-context information, in the pattern established through the Aug-Nov 2025 refusal cascade). No primary threshold met — brief single message, no expanded complaint list or inadequate-father framing appended. Part of the continued Phase C visit refusal pattern."
+    }
+  ],
+
+  "peripheral_flag_count": 1,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "signal_count": 27,
+      "notes": "B-031 produces no RF-01 primary signals. 96 messages (Jan 8 – Mar 18 2026). RF-01 pass now complete across all 31 batches. Final signal count: 27 (2 Sev-1, 25 Sev-2). Last primary signal: RF01-B028-S001 (Aug 24-28, 2025 — visit refusal cascade with comprehensive ADD-004 relay). Post-B-028 Phase C period (B-029-031) shows continued visit refusals (RF-02) and a real messaging gap (Dec 27-Jan 7) but no RF-01 primary content — Melissa's Received messages in this period are sparse and do not carry the complaint-relay or abandonment-framing content that characterized the Phase A-B primary signals."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Predominantly Eli-sent. Received messages limited and mostly routine. Jan 8-Feb 10: sparse coordination. Feb 11 (ROW-8545-8547 Received): scheduling dispute — Eli did not communicate pick-up change; Melissa had already made plans with Olivia ('you didn't say anything so we made plans'). Feb 12-25: quiet period. Feb 26 (ROW-8569): note-on-windshield event — Eli left a note on Melissa's car (RF-07 boundary territory; not RF-01 primary). Feb 27 (ROW-8575 Received): 'You can come but she says she's not coming out' — visit refusal relay. Mar 1-18: routine scheduling and childcare. Mar 18 (ROW-8594 Sent — Eli): references Olivia's stated hesitancy about food at Eli's; context for ongoing household dynamics but no Received RF-01 content.",
+    "dataset_boundary": "ROW-8594 is the final SMS row. ROW-8595 begins MMS data with dates reverting to Nov 2024 (non-sequential; different data table). The RF-01 pass therefore covers the complete SMS record: ROW-1 (approximate) through ROW-8594, spanning the full custody dispute communication history through Mar 18, 2026.",
+    "phase_c_summary": "Phase C (post-Nov 22, 2025 police report) RF-01 content: B-030 produced 2 peripheral flags (ROW-8423 Nov 7 refusal relay, ROW-8431 Nov 19 'hard to get along with'); B-031 produced 1 peripheral flag (ROW-8575 Feb 27 refusal relay). No Phase C primary signals. The visit refusal continues as an RF-02 pattern; Melissa's RF-01 delivery mechanism (complaint relay in Olivia's voice with inadequate-father framing) is not active in Phase C Received messages. Phase synthesis will note the Phase C behavioral shift: Melissa appears to let the physical refusal speak for itself without appended complaint narratives."
+  }
+}

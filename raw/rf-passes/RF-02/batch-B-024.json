@@ -1,0 +1,123 @@
+{
+  "batch_id": "B-024",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-03-04",
+    "end": "2025-04-30"
+  },
+  "row_range": {
+    "sms_start": "ROW-9312",
+    "sms_end": "ROW-9504",
+    "sms_secondary_section": "ROW-7775 to ROW-7805 (secondary SMS table section, Mar 4 – Apr 10)",
+    "mms_start": "ROW-13169",
+    "mms_end": "ROW-15376"
+  },
+  "message_count": 503,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B024-PF-001",
+      "row_ref": "ROW-9466-ROW-9468",
+      "date": "2025-04-13",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 49,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "She's in the meta [ROW-9466] / She said you took so long that now she's on the vr [ROW-9467]",
+      "context": "Eli (ROW-9464): 'In the bathroom' — briefly unavailable when Olivia called. Eli (ROW-9465): 'Calling her back on her phone.' Melissa relays (ROW-9466-9467): 'She's in the meta / She said you took so long that now she's on the vr.' Eli disputes (ROW-9468): 'It was less than ten minutes.' Also appears in MMS as ROW-13344-13346. Background: Eli had been calling Olivia and stepped away briefly for a bathroom break; when he called back within 10 minutes, Melissa relayed that Olivia had moved to Meta Quest VR.",
+      "analytical_note": "Eighth contact-relay accusation instance in ARC-RF02-002. Structural mechanism: Melissa narrates Olivia's behavioral response to Eli's brief unavailability — casting Eli as the agent of contact failure ('you took so long'). The softest instance in the sub-pattern: Olivia moved to VR (not crying or upset), and the behavioral response is understandable (child found other activity after brief wait). However, the relay mechanism — Melissa as required narrator of why contact did not occur, with temporal accusation language — remains structurally consistent with the preceding seven instances. Previous strongest instances attributed more severe emotional responses (Olivia crying, upset, mad about 'hanging up'); this instance continues the pattern at lower intensity.",
+      "arc_promotion": null
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B024-PERIPH-001",
+      "row_ref": "ROW-7777",
+      "date": "2025-03-04",
+      "rf_category": "RF-05",
+      "severity": 1,
+      "verbatim": "Sounds like the abster just doesn't want you going",
+      "note": "RF-05 Sev 1. Eli had declined to attend Olivia's (Melissa-organized) birthday party (ROW-9316: 'I don't think it'd be the best idea for me to come. I don't want to take away from Olivia's day'). Melissa responds: 'Sounds like the abster just doesn't want you going' — attributing Eli's decision to Abby rather than his stated rationale. RF-05 Abby-blame for Eli's access decision. Also appears in MMS as ROW-13173 area. Consistent with prior RF-05 Abby-attribution pattern."
+    },
+    {
+      "flag_id": "B024-PERIPH-002",
+      "row_ref": "ROW-7786-ROW-7796 / ROW-9371 / ROW-9401-ROW-9402",
+      "date": "2025-03-10 to 2025-03-13",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "Having surgery so you will need to be a parent to our child [ROW-7786] / I'm having a surgery and I'm going to take the time I need to recover so I can parent when she returns home. This means you need to step up and actually be a parent for a bit. [ROW-7791] / The only thing that's frustrating is you and your lack of involvement with your first born [ROW-7796] / Because she was educated dumbass [ROW-9371] / I think what you meant to say was thanks for taking care of her especially since you just had surgery and I'm too much of a selfish, uninvolved parent to help out [ROW-9401]",
+      "note": "RF-04 Sev 1 cluster during Melissa's kidney stone surgery recovery and Olivia illness period (Mar 10-13). Eli had Olivia during Melissa's surgery recovery; Olivia was also sick (fever). Melissa criticizes Eli's handling ('Who sends their kid who has a fever to school'; 'Can't believe you saying that's not going to work cause I have to work' — ROW-7787-7790); ROW-7796: 'lack of involvement with your first born.' Mar 13 sarcastic indictment (ROW-9401): 'I think what you meant to say was thanks for taking care of her especially since you just had surgery and I'm too much of a selfish, uninvolved parent to help out' — preemptive sarcastic characterization of Eli as selfish after he noted Olivia wasn't wearing safety gear for skateboarding. Also includes ROW-9371: 'Because she was educated dumbass / Medicated' — derogatory language during co-parenting discussion. RF-04 Sev 1 (no explicit permanence judgment, but multi-day sustained parental fitness attacks); derogatory also cross-references RF-05. Also appears in MMS as ROW-13218-13272 area."
+    },
+    {
+      "flag_id": "B024-PERIPH-003",
+      "row_ref": "ROW-9485",
+      "date": "2025-04-28",
+      "rf_category": "RF-15",
+      "severity": 1,
+      "verbatim": "https://www.10tv.com/article/news/crime/keeping-you-safe/canal-winchester-custodian-arrested-pandering-sexually-oriented-matter-involving-minor/530-cb1816c9-e249-4bc9-9f8e-922e8e6825b8",
+      "note": "RF-15 Sev 1. Melissa sends Eli a local news article about a Canal Winchester school custodian arrested for 'pandering sexually oriented matter involving a minor' — without explanatory text or context. Analytically significant only in the context of B-022 RF-15 Sev 3 (ROW-8961-8966: explicit pedophilia/grooming allegations against Eli, including 'My sister said you always gave her pedophile vibes' and 'I should be happy you have limited time around Olivia'). The isolated link-share is ambiguous in isolation — it could be general community safety awareness. However, in the context of the ongoing RF-15 arc, the transmission of a pedophilia-arrest news article to the parent accused of 'pedophile vibes' in the prior batch warrants RF-15 Sev 1 notation as implied continued association. Also appears in MMS as ROW-13382. Cross-pass priority: RF-15 arc."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-9350",
+      "date": "2025-03-09",
+      "description": "Melissa proactively offers Eli access: 'Want to take Olivia to dinner tonight?' — unsolicited dinner visit offer during a weekend."
+    },
+    {
+      "row_ref": "ROW-7798-ROW-7801 / ROW-9324-ROW-9329",
+      "date": "2025-03-05 to 2025-03-17",
+      "description": "Melissa asks Eli to watch Olivia on her new Saturday work rotation (every 4 weeks starting April). Eli agrees. Proactive childcare coordination with Eli as preferred caretaker. Olivia also asked Ha directly (ROW-9329), showing she independently sought her own childcare solution — noted without flagging."
+    },
+    {
+      "row_ref": "ROW-9431-ROW-9441",
+      "date": "2025-03-31",
+      "description": "Melissa asks Eli to take Olivia to school spring fling (Apr 10); Eli agrees. Melissa shares Olivia's creative homework photo; Eli sends Olivia an encouraging message. Cooperative academic engagement and facilitation."
+    },
+    {
+      "row_ref": "ROW-9480-ROW-9484",
+      "date": "2025-04-26",
+      "description": "Eli asks Melissa for photos from Olivia's performance; Melissa sends multiple photos promptly and offers to get more the next day. Proactive sharing of Olivia's activities."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-9343-ROW-9345",
+      "date": "2025-03-09",
+      "consideration": "ARC-RF02-002 near-miss. Melissa relays: 'Olivia wanted me to talk you into not bringing Alice to her 101 dalmations' because Alice might cry and disrupt the show. This is a child-preference relay via Melissa, but the subject is Alice (Eli's infant daughter) being present at a performance — a reasonable parenting concern, not systematic exclusion. Not flagged as ARC-RF02-005 (Abby-exclusion arc — Alice is not Abby). Eli responds cooperatively."
+    },
+    {
+      "row_ref": "ROW-9386",
+      "date": "2025-03-12",
+      "consideration": "ARC-RF02-001 near-miss. 'Don't call. She just fell asleep.' — Melissa managing Eli's call window at bedtime; Olivia had been sick. Natural timing management (child asleep, sick recovery). Not flagged: natural context provides clear explanation."
+    },
+    {
+      "row_ref": "ROW-9409-ROW-9410",
+      "date": "2025-03-24",
+      "consideration": "ARC-RF02-002 near-miss. Eli (ROW-9409): 'Did she want me to pick her up after work?' Melissa (ROW-9410): 'She said sure but pick her up first. I'm not going back out though so you'd have to bring her home.' Relay mechanism and condition present (Eli must bring her home), but access is facilitated. Not flagged as primary: consistent with baseline relay mechanism, facilitative context."
+    },
+    {
+      "row_ref": "ROW-9454-ROW-9456",
+      "date": "2025-04-04",
+      "consideration": "ARC-RF02-002 near-miss. Melissa (ROW-9454-9455): 'She wants to go sleepover at ha's / She said she was torn cause she felt guilty.' Relay of Olivia's internal conflict about a sleepover (presumably during Eli's time). The emotional state ('torn,' 'guilty') is relayed through Melissa. Not flagged as primary: single relay instance, access choice within a visit, Eli supportively releases her (ROW-9456: 'That's why I was giving her an out this morning and telling her it was fine')."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; near-misses: ROW-9386 (Mar 12, 'Don't call. She just fell asleep' — bedtime, sick child, natural); ROW-9460/9477 (Apr 8/Apr 21 phone dead — natural); signal_count remains 26",
+    "ARC-RF02-002": "signal_count now 49; one signal this batch — ROW-9466-9468 (Apr 13, eighth contact-relay accusation, signal 49); softest instance in sub-pattern (Olivia moved to VR after <10 min wait, not crying/upset); relay mechanism and temporal accusation language ('you took so long') structurally consistent with prior instances",
+    "ARC-RF02-004": "no new signals; remains ACTIVE",
+    "ARC-RF02-005": "no new signals; remains WATCHING; Mar 9 Alice-exclusion relay noted but not relevant to Abby-exclusion arc",
+    "ARC-RF02-006": "no new signals; remains WATCHING"
+  },
+
+  "batch_notes": "Lower RF-02 primary flag density (1 flag) over a long date range (Mar 4 – Apr 30, 503 messages). Contextually dominated by Melissa's medical situation (kidney stone surgery, recovery, UTI) and Olivia illness management — both parents cooperating effectively through health crises. RF-04 cluster (Mar 10-13) is contextually linked to Melissa's surgery recovery and reflects her frustration at needing Eli's parenting support while incapacitated. The Apr 28 RF-15 Sev 1 (news link about a custodian arrested for crimes involving a minor) is analytically low-confidence in isolation but warrants notation given the B-022 RF-15 Sev 3 context. Four cooperative data points. Eli continues to route access requests through Melissa (ROW-9409: 'Did she want me to pick her up' — internalized required-intermediary norm for scheduling). Spring fling facilitation and homework encouragement represent strong cooperative engagement."
+}

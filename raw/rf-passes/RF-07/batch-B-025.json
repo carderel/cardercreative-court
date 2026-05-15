@@ -1,0 +1,52 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-025",
+    "row_range": { "start": 7806, "end": 9762 },
+    "date_range": { "start": "2025-05-05", "end": "2025-06-10" },
+    "message_count": 337,
+    "phase": "A/B",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Phase A/B boundary batch. May-Jun 2025 continued escalation. Jun 7-8 harm allegation cluster (RF-04+RF-05 compound). Three-block data structure applies from B-024 forward."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 337,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 337,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. No new primary RF-07 signals this batch. Jun 7-8 harm allegation cluster (RF-04+RF-05 primary) assessed for RF-07 flooding component: cluster is significant in RF-04+RF-05 context but RF-07 flooding threshold confirmation requires timestamp granularity not available from RF-04 batch data for this specific episode. Outside the triage hot-period peak (May spike concentrated around May 4). Held without RF-07 primary flag."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Elevated — May-Jun 2025 escalation continues. Jun 7-8 harm allegation cluster is a Phase B escalation marker. RF-04+RF-05 compound events present but RF-07 does not generate a primary signal this batch.",
+    "rf07_assessment": "Zero RF-07 primary signals. Jun 7-8 cluster assessed but RF-07 flooding threshold not confirmable from available data. S-003 in B-024 represents the May 2025 hot-period anchor. This batch contains continued elevated communication but no confirmed flooding window or continuation-after-stop episode meeting the primary threshold.",
+    "custodial_context": "May-Jun 2025 parenting-time weekends. Elevated contact volume but without a concentrated non-urgent cluster during identified parenting-time windows at ADD-004 threshold."
+  }
+}

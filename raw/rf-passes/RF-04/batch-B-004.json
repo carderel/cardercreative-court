@@ -1,0 +1,166 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-04",
+    "batch_id": "B-004",
+    "row_range": { "start": 1093, "end": 1461 },
+    "date_range": { "start": "2022-12-12", "end": "2023-01-18" },
+    "message_count": 369,
+    "timezone_note": "All EST (UTC-5).",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF04-ADD-001", "RF04-ADD-002", "RF04-ADD-003", "RF04-ADD-004", "RF04-ADD-005"],
+    "note": "B-004: Dec 12 2022 – Jan 18 2023. Includes Olivia's tonsil surgery (Dec 28). 3 primary flags (2 Sev-1, 1 Sev-2). Surgery period (Dec 29–Jan 15) is predominantly cooperative — medication coordination, recovery sharing, mutual positive engagement around Olivia. RF-04 spikes concentrated in Dec 20-28 pre-surgery window. ROW-1287 (Dec 28): second deployment of uncle/dad predation framing (first: ROW-937-938 Nov 23 B-003). ARC-RF04-001 receives 3 new signals (total: 14). ARC-RF04-002: no new signals this batch."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 369,
+    "primary_flags": 3,
+    "primary_severity_distribution": { "1": 2, "2": 1, "3": 0 },
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {
+      "RF-01": 3,
+      "RF-15": 1
+    },
+    "no_flag_messages": 366,
+    "flag_rate": "0.8%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF04-B004-F001",
+      "rows": "ROW-1167 through ROW-1169",
+      "timestamp": "2022-12-20 12:33–12:34 UTC (7:33–7:34 AM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-1166: 'Can't pick her up at 2:30' | ROW-1167: 'School gets out at 1:30 dumbass. I just told you that over and over' | ROW-1168 (Sent): 'What time she getting let out?' | ROW-1169: 'Are you dumb?'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Dual contemptuous intelligence attack triggered by a scheduling error. Context: Melissa asks Eli to put in writing his plans for the next day's early-dismissal pickup (ROW-1163-1164). Eli responds with '2:30' (ROW-1165) — the wrong pickup time. Melissa correctly notes school lets out at 1:30 (ROW-1166) and in the same breath delivers the first attack: ROW-1167 'School gets out at 1:30 dumbass. I just told you that over and over.' Eli then asks 'What time she getting let out?' (ROW-1168) — likely already typed before reading ROW-1167, or a confusion response. Melissa responds: ROW-1169 'Are you dumb?'\n\nADD-002 (contemptuous intelligence attacks) active on both messages:\n— ROW-1167: 'dumbass' — direct intelligence insult attached to a factual correction. The informational content (1:30 dismissal) is correct; the contemptuous delivery ('dumbass... I just told you that over and over') is disproportionate to a scheduling miscommunication.\n— ROW-1169: 'Are you dumb?' — a second standalone direct intelligence attack delivered as Eli asks the clarifying question. The question pattern ('Are you dumb?') is structurally identical to ROW-334-336 B-001 ('Are you stupid?') — a recurring contemptuous phrase Melissa deploys for Eli's scheduling/comprehension errors.\n\nTrigger: Eli wrote 2:30 instead of 1:30 for pickup time. Response: two direct intelligence attacks in rapid sequence within one minute. ADD-002: contemptuous attacks on Eli's intelligence, disproportionate to a minor time-entry error. ROW-1174 (Melissa, 12:46 EST): '👏' — sarcastic clap emoji after Eli confirms he understands 1:30, extending the contemptuous register.\n\nSeverity 1: brief two-message intelligence attack cluster — consistent with prior calibration (ROW-334-336 B-001 = Sev 1 for 'Are you stupid?'). ARC-RF04-001 twelfth signal.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "ROW-1171-1173 + ROW-1174 sarcastic clap: framing Eli as someone who doesn't track school communications, is inattentive to Olivia's schedule. Mild inadequate-father framing. Feeds ARC-RF01-001.",
+          "confidence": "low"
+        }
+      ],
+      "context_notes": "ROW-1163-1164 (Melissa, Dec 20 7:20 AM EST): request to put pickup/dropoff times in writing — logistical management. ROW-1165 (Eli, Sent, 7:29 AM): '2:30' — simple scheduling error (early dismissal = 2 hours earlier than normal pickup). ROW-1174: '👏' condescending clap after Eli self-corrects to 1:30. ROW-1175: confirms logistics going forward ('picking her up at 1:30 and home by 8 and not to your house'). Episode closes cooperatively despite the contemptuous opening. The Dec 21 actual pickup (ROW-1192-1205) proceeds without RF-04 incident — no further contempt after this brief episode.",
+      "pattern_tags": ["contempt", "intelligence_attack", "dumbass", "are_you_dumb", "ADD-002", "scheduling_error_trigger", "recurring_intelligence_attack_phrase"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'School gets out at 1:30 dumbass. I just told you that over and over' (ROW-1167); 'Are you dumb?' (ROW-1169)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-12-20"
+    },
+
+    {
+      "message_id": "RF04-B004-F002",
+      "rows": "ROW-1235 through ROW-1244",
+      "timestamp": "2022-12-23 16:11–16:40 UTC (11:11–11:40 AM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-1235 (Sent): 'and you get upset at me. Did you end up leaving to go to work today....?' | ROW-1236: 'Well I don't know what the fuck you are going on about' | ROW-1237: 'Obviously you don't pay attention to shit' | ROW-1238: 'Daycare has been scheduled to be closed today since the beginning of the year which is why I scheduled a vacation day for today back in March' | ROW-1239: 'Cause I knew I couldn't ask you to watch her since you refuse to make your home a safe environment for her' | ROW-1240: 'Then a couple weeks ago I decided to add yesterday as a vacation day too since school was out so she wouldn't have to spend the whole day at daycare' | ROW-1241: 'Besides that my work made the decision to close yesterday because of the forecasted weather' | ROW-1242: 'I don\\'t understand why you said \"and you get mad at me\". This is a clear example of why I do. You send some random unclear message asking if we ended up leaving. Leaving for what? Vacation? A sleepover? The store? Church?' | ROW-1243: 'If you were involved in her life in anyway you would know that the daycare was never going to be open today. They scheduled to be closed today for the holidays.' | ROW-1244: 'And you\\'re welcome that you didn\\'t have to pay an extra $25 for daycare since I took yesterday off'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Partial DARVO cluster with multiple attack vectors triggered by a mildly ambiguous logistics question. Context: Eli sent a brief ambiguous message asking if Melissa ended up leaving (ROW-1233, prior day context: severe weather forecast, McDonald's evacuation in prior exchange). Melissa responds 'What?' (ROW-1234), then Eli rephrases with 'and you get upset at me. Did you end up leaving to go to work today?' (ROW-1235) — the mild parenthetical 'and you get upset at me' is a subtle reciprocal criticism. Melissa's response is a sustained multi-message counter-attack:\n\n(1) CONTEMPTUOUS DISMISSAL (ADD-002) — ROW-1236: 'Well I don't know what the fuck you are going on about' — aggressive contemptuous dismissal of Eli's question. ROW-1237: 'Obviously you don't pay attention to shit' — direct contemptuous attack on Eli's attentiveness/engagement.\n\n(2) SAFE-HOME ACCUSATION (ADD-002) — ROW-1239: 'Cause I knew I couldn't ask you to watch her since you refuse to make your home a safe environment for her' — 'refuse to make' frames the cat-allergy issue as willful negligence, not an unresolved accommodation challenge. This characterizes Eli as deliberately endangering Olivia rather than managing a complex situation. ADD-002: contemptuous attack framing Eli's parenting as willful harm.\n\n(3) CONTEMPTUOUS COMMUNICATION MOCKING — ROW-1242: Melissa mocks Eli's message as 'random unclear' and sarcastically enumerates possible interpretations ('Leaving for what? Vacation? A sleepover? The store? Church?'). The enumerative sarcasm is a contemptuous communication attack — Eli's question was contextually clear (they had been discussing the storm and McDonald's evacuation the prior day).\n\n(4) INADEQUATE-FATHER FRAMING (ADD-002) — ROW-1243: 'If you were involved in her life in anyway you would know that the daycare was never going to be open today.' — blanket 'not involved' inadequacy accusation. Trigger: Eli not knowing daycare was closed (a scheduling detail). Response: 'not involved in her life in any way.'\n\n(5) MARTYRDOM POSITIONING — ROW-1244: 'And you're welcome that you didn't have to pay an extra $25 for daycare since I took yesterday off' — positions Melissa's personal schedule choice as a sacrifice Eli should be grateful for.\n\nPARTIAL DARVO (ADD-001: Sev 1) — Eli's mild implicit criticism ('and you get upset at me') is the trigger. Attack: ROW-1236-1244 (contemptuous dismissal, safe-home accusation, communication mocking, inadequacy framing). Reverse: ROW-1242-1244 reframe Eli's communication as the problem and Melissa as the competent, sacrificing parent. No explicit Deny. Partial DARVO (Attack + Reverse) = Sev 1.\n\nNote on ROW-1238-1241: these messages provide factual explanation of Melissa's schedule. The factual content (daycare closed, vacation day planned, weather closure) is cooperative in substance. The RF-04 elements are concentrated in ROW-1237, ROW-1239, ROW-1242-1244. The factual explanation is sandwiched within the contemptuous attacks, partially cushioning but not eliminating the manipulation pattern. Sev 1: partial DARVO + 4 attack elements, not a sustained high-intensity campaign. ARC-RF04-001 thirteenth signal.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "ROW-1243: 'If you were involved in her life in anyway you would know...' — inadequate-father/uninvolved-parent framing. Feeds ARC-RF01-001 inadequate-father sub-arc.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-1228-1231 (Dec 22, prior day): McDonald's evacuation narrative — Melissa had to vacate the McDonald's near Eli's house during the storm. ROW-1230: hose shutoff question. These exchanges establish the 'did you leave?' question context — Eli was asking whether Melissa went to work given the storm and daycare closure. ROW-1234 'What?' suggests Melissa either lost context or treated the question as opaque. ROW-1235: Eli re-asks, adding the mild criticism. No Eli response to ROW-1236-1244 visible in the immediate record — next Eli-sent message is ROW-1245 (Dec 24 7:13 PM EST, sharing a video). Eli does not engage the attack.",
+      "pattern_tags": ["DARVO_partial", "contempt", "safe_home_accusation", "dont_pay_attention_to_shit", "inadequacy_framing", "communication_mocking", "martyrdom_positioning", "ADD-002", "disproportionate_response"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'Obviously you don't pay attention to shit' (ROW-1237); 'you refuse to make your home a safe environment for her' (ROW-1239); 'If you were involved in her life in anyway you would know' (ROW-1243)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-12-23"
+    },
+
+    {
+      "message_id": "RF04-B004-F003",
+      "rows": "ROW-1284 through ROW-1287",
+      "timestamp": "2022-12-28 15:15–15:18 UTC (10:15–10:18 AM EST)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-1282 (Received): 'We have to be at surgery center at 9:30. Surgery at 11:30' | ROW-1283 (Sent): 'Where is the surgery center? This works out. Milo has a specialist apt at 7:45 supposed to go until 9 or so. Gives me time to run them back and be there shortly by 10.' | ROW-1284: 'Nobody gives a shit what you\\'re doing' | ROW-1285: 'This appointment was made months ago and should take priority over milos anyhow since she is your kid and he\\'s not and hers is surgery' | ROW-1286: 'Abby could reschedule, take a taxi, Uber, Lyft or bus or get off her lazy ass and get a license' | ROW-1287: 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic'",
+      "primary_rf": "RF-04",
+      "primary_severity": 2,
+      "primary_reasoning": "Multi-tactic contemptuous attack triggered by Eli's cooperative morning logistics communication on the day of Olivia's surgery. Trigger: Eli receives surgery center timing (ROW-1282) and immediately responds with helpful logistics (ROW-1283): the timing works because Milo's specialist appointment ends at 9, giving Eli time to get to the surgery center by 10. This is a cooperative, positive message — Eli is explicitly communicating that he has arranged the morning so he can attend his daughter's surgery. Melissa's response (4 messages in 3 minutes) is an immediate contemptuous multi-vector attack:\n\n(1) BLANKET CONTEMPTUOUS DISMISSAL (ADD-002) — ROW-1284: 'Nobody gives a shit what you're doing.' This is the starkest contemptuous dismissal of Eli's communication in the record to date. Eli's message was cooperative logistics aimed at being present for his daughter's surgery. The response dismisses not just the logistics but Eli's relevance as a parent entirely. ADD-002: grossly disproportionate contemptuous attack.\n\n(2) OLIVIA-VS-MILO PRIORITIZATION ATTACK (Abby-as-obstacle framework) — ROW-1285: 'This appointment was made months ago and should take priority over milos anyhow since she is your kid and he's not and hers is surgery.' Melissa treats Eli mentioning Milo's appointment as evidence of misplaced priorities — despite Eli explicitly stating the timing WORKS OUT, not that he's choosing Milo over Olivia. The attack imposes a false choice and attributes a wrong priority to Eli. Third deployment of the Olivia-vs-Milo comparative attack vector (first: Halloween ROW-628/635/646, B-002; second: ROW-1058 late-return, B-003).\n\n(3) CONTEMPTUOUS ABBY ATTACK — ROW-1286: 'Abby could reschedule, take a taxi, Uber, Lyft or bus or get off her lazy ass and get a license.' This is a direct contemptuous attack on Abby ('lazy ass') embedded within the Abby-as-obstacle framework: the implication is that Eli's household accommodations for Abby (driving her, attending Milo's appointment) are unnecessary and beneath Eli's parental obligations to Olivia. ADD-002: contemptuous personal attack on Abby as an attack vector against Eli.\n\n(4) RENEWED UNCLE/DAD FALSE PREDATION FRAMING (RF-04 + RF-15) — ROW-1287: 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic.' Second deployment of the uncle/dad predation framing (first: ROW-937-938 Nov 23, B-003). Melissa takes Eli's mention of Milo's specialist appointment and inverts it: Milo doesn't need a specialist for a medical reason — he needs one because Eli (Abby's uncle acting as Milo's father figure) is the source of trauma. The 'uncle/dad' construction specifically targets the Eli-Abby relationship, implying the uncle/niece dynamic is inherently harmful to Milo. This is a continuation of the false predation narrative from Nov 23.\n\nSEVERITY 2: Four distinct attack vectors deployed in 3 minutes on the morning of Olivia's surgery, triggered by a cooperative logistics message. The combination of: (1) maximally contemptuous dismissal ('nobody gives a shit'); (2) false prioritization accusation against a parent arranging to attend his child's surgery; (3) contemptuous personal attack on Abby; and (4) renewed false predation allegation constitutes a multi-tactic sustained contemptuous attack meeting the Sev 2 threshold. The surgery context — Eli communicating that he has arranged his morning to be present — makes the contemptuous dismissal qualitatively more significant than a routine attack. ARC-RF04-001 fourteenth signal.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-15",
+          "severity": 2,
+          "note": "ROW-1287: 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic.' Second deployment of false predation framing after ROW-937-938 (Nov 23, B-003). Melissa consistently frames the Eli-Abby uncle/niece relationship as traumatic/predatory when Milo is mentioned. This is the second RF-15 anchor event in Phase A.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "ROW-1285: 'she is your kid and he's not' — Olivia-vs-Milo prioritization framing; inadequate-father narrative (Eli doesn't naturally prioritize Olivia). Feeds ARC-RF01-001 Abby/Milo prioritization sub-arc.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-1282 (Dec 28 10:06 AM EST): Melissa notifies surgery center timing. ROW-1283 (Sent, 10:09 AM): Eli's cooperative logistics response — framing Milo's appointment as enabling his attendance, not competing with it. ROW-1284-1287: 4-message attack (10:15-10:18 AM). ROW-1288 (Dec 29): financial billing resumes — no Eli visible response to ROW-1284-1287. ROW-1289-1319: post-surgery period is entirely cooperative (medication log, recovery updates, mutual positive parenting). The surgery itself and the recovery period produce no RF-04 signals — Melissa and Eli coordinate Olivia's recovery cooperatively, with Eli showing genuine concern (ROW-1293-1303). The RF-04 attack is isolated to the pre-surgery morning; the actual surgery day and recovery are RF-04-free.",
+      "pattern_tags": ["nobody_gives_a_shit", "contemptuous_dismissal", "olivia_vs_milo_prioritization", "abby_as_obstacle", "lazy_ass_abby", "uncle_dad_predation_renewed", "false_predation_allegation", "ADD-002", "multi_vector_attack", "surgery_context", "disproportionate_response"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'Nobody gives a shit what you're doing' (ROW-1284); 'she is your kid and he's not and hers is surgery' (ROW-1285); 'get off her lazy ass and get a license' (ROW-1286); 'Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic' (ROW-1287)",
+      "calibration_status": "analysis",
+      "journal_crossref_date": "2022-12-28"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-1217 through ROW-1219",
+      "reason_noted": "Near-boundary RF-04: ROW-1217 'You've had 11 months to get rid of that damn cat and make your home safe for her' — contemptuous framing of Eli's cat-allergy accommodation failure, but in context of a genuine health concern (surgery upcoming). ROW-1219: 'I don't trust your cleaning and you lie. You told me before that you'd keep her in the basement and didn't so I don't trust that' — contains a deception accusation ('you lie') with a specific reference (Eli previously said cat would stay in basement). Embedded within a predominantly legitimate health-concern discussion (ROW-1216-1220), and the specific accusation cites a prior commitment. Near-boundary: deception accusation is present but the dominant context is health/safety, not manipulation. Excluded from primary RF-04 flag. Note: 'you lie' accusation is consistent with the B-003 illness-deception sub-pattern."
+    },
+    {
+      "message_id": "ROW-1262 through ROW-1263",
+      "reason_noted": "Near-boundary RF-04: 'I guess you're not dropping anything off to her since you've not been able to communicate anything' (Christmas Day). Mild passive-aggressive implication. Single brief message. ROW-1264: Eli explains the timing issue. Excluded; passive frustration rather than deliberate manipulation, and Melissa's cooperative ROW-1265-1266 follow immediately on Eli's explanation."
+    },
+    {
+      "message_id": "ROW-1324 through ROW-1340",
+      "reason_noted": "Financial pressure cluster (Jan 1–3): 'You going to pay or do I need to file contempt?' (ROW-1324); 'If you don't start paying stuff when you're supposed to I'm filing contempt again' (ROW-1325); 'Pay your responsibilities' (ROW-1338); 'I don't get what is so hard about it. If I have to take you to court again that's going to be more lawyer fees for you' (ROW-1340). Primarily RF-06 (financial coercion) and RF-05 (legal threats). RF-04 shaming elements ('pay your responsibilities,' 'I don't get what's so hard') are below primary threshold given the financial-pressure-context dominance. Consistent with the prior B-003 financial clusters (ROW-781-789, ROW-823-830)."
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 2,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "new_arc_signals": {
+      "ARC-RF04-001": ["RF04-B004-S001 (ROW-1167-1169)", "RF04-B004-S002 (ROW-1235-1244)", "RF04-B004-S003 (ROW-1284-1287)"],
+      "ARC-RF04-002": []
+    },
+    "arc_signal_totals_post_batch": {
+      "ARC-RF04-001": 14,
+      "ARC-RF04-002": 3
+    },
+    "compounds_detected_this_batch": [
+      "ROW-1284-1287 (Dec 28, surgery morning): RF-04 (primary, Sev 2 — contemptuous dismissal + Abby attack + false prioritization) + RF-15 (renewed uncle/dad predation framing, ROW-1287) + RF-01 (Olivia-vs-Milo prioritization accusation, ROW-1285). Three-RF compound. Second instance of false predation compound pattern."
+    ],
+    "candidate_signals_held": 0
+  },
+
+  "checkpoint_items_generated": {
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": [
+      "CP3-RF04-004: ROW-1287 (Dec 28) — Second deployment of uncle/dad false predation framing ('Milo need to go to a specialist cause he has an uncle/dad. That would be traumatic'). First instance: ROW-937-938 (Nov 23, B-003). The pattern is now confirmed as recurring: Melissa deploys the uncle/niece predation narrative whenever Milo is mentioned in a context where Eli's parenting of Milo is visible. Both instances occur when Eli references Milo's medical appointments. The repeated and specific deployment suggests this is not off-hand contempt but a sustained false narrative being constructed. Critical RF-15 cross-reference anchor."
+    ]
+  },
+
+  "batch_observations": {
+    "tone_assessment": "B-004 is the most cooperative batch in the record to date. The post-surgery period (Dec 29 – Jan 15, ROW-1289-1461) is almost entirely positive co-parenting content: Melissa sends detailed medication logs, recovery updates, and warm Olivia anecdotes; Eli responds with concern, support, and positive engagement. Zero RF-04 primary flags in the 25-day post-surgery recovery window. The batch's 3 primary flags are concentrated in the 8-day pre-surgery window (Dec 20-28), with the surgery morning (Dec 28) producing the most significant cluster (F003, Sev 2). The post-surgery cooperative period suggests Olivia's medical event temporarily de-escalated the co-parenting conflict dynamic.",
+    "direction_balance_note": "All 3 primary flags in B-004 are Received (Melissa → Eli). Eli's sent messages are consistently cooperative, logistical, or positive throughout the batch. ADD-005 continues to apply throughout Phase A.",
+    "pattern_development_note": "Two significant pattern observations:\n\n(1) UNCLE/DAD PREDATION PATTERN CONFIRMED RECURRING: ROW-1287 is the second deployment of the uncle/dad false predation framing (first: ROW-937-938, B-003). Both instances occur when Eli mentions Milo. The pattern: Eli references Milo's medical or logistical needs → Melissa inverts to claim the uncle/niece relationship itself is the source of Milo's need for specialist care. This is not coincidental contempt; it is a deliberate false narrative being reinforced. CP3 item queued.\n\n(2) SURGERY CONTRAST EFFECT: The Dec 28 surgery morning attack (F003 Sev 2) is immediately followed by a fully cooperative post-surgery recovery period. This contrast is analytically significant for the attorney: Melissa's RF-04 behavior is not constant but contextually deployed — she is capable of cooperative co-parenting when circumstances require it (medical crisis), but the manipulation pattern returns when the acute situation passes. This undermines any 'high stress / unusual circumstances' defense for the contemptuous attacks.",
+    "cross_rf_context": "RF-01 (read-only): ROW-1285 and ROW-1243 add peripheral signals to ARC-RF01-001 (inadequate-father, Abby/Milo prioritization). RF-15 (not yet analyzed): ROW-1287 is the second Phase A RF-15 anchor. RF-02 (read-only): ROW-1209 'Take Abby and them home first' is a mild access/scheduling directive (RF-02 territory, not primary RF-04)."
+  }
+}

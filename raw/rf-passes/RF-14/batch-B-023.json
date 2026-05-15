@@ -1,0 +1,57 @@
+{
+  "batch_id": "B-023",
+  "date_range": {
+    "start": "2025-02-15",
+    "end": "2025-03-03"
+  },
+  "message_count": "~495",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 12,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Feb-Mar 2025. S-012: Olivia observed hitting herself (self-harm behavior) at Eli's household (Feb 15, 2025). Sev-2 \u2014 child welfare concern. Both parents aware; Melissa confirms 'You knew she used to do that. It's not new but I thought she was done with that.' Cooperative response to address it. Mar 3: Melissa has kidney stone emergency \u2014 Eli coordinates childcare (cooperative). No substance concerns. ARC-RF14-002 signal 5."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-012",
+      "row_ref": "ROW-9164/11446",
+      "date": "2025-02-15",
+      "direction": "Sent",
+      "severity": 2,
+      "arc": "ARC-RF14-002",
+      "arc_signal_num": 5,
+      "type": "Child welfare \u2014 self-harm behavior",
+      "description": "ROW-11446: 'I want to make sure Olivia is okay, which is why I brought this up. Her hitting herself is concerning, and I'll be talking to her about it. Since this is something you should also be aware of, I wanted to bring it to your attention so we can both keep an eye on it.' Eli observed Olivia hitting herself and brought it to Melissa's attention. Melissa confirms the behavior is not new: ROW-11452: 'You knew she used to do that. It's not new but I thought she was done with that.' ROW-11460: 'I just talked to her about it.' Olivia self-harm behavior is an elevated welfare concern (Sev-2) requiring monitoring. Cooperative response in this instance.",
+      "addenda_applied": [
+        "RF14-ADD-004"
+      ]
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals \u2014 ACTIVE (8 signals)",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "RF14-S-012: Olivia self-harm behavior documented. Signal count now 5. Sev-2 welfare concern. ACTIVE maintained \u2014 genuine safety documentation expanding to child welfare domain.",
+      "state": "ACTIVE"
+    }
+  ]
+}

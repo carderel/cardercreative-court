@@ -1,0 +1,78 @@
+{
+  "batch_id": "B-030",
+  "date_range": {
+    "start": "2025-11-02",
+    "end": "2026-01-02",
+    "note": "date-filtered batch"
+  },
+  "message_count": 401,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "calibration_addenda_active": [
+    "RF03-ADD-001",
+    "RF03-ADD-002",
+    "RF03-ADD-003",
+    "RF03-ADD-004",
+    "RF03-ADD-005",
+    "RF03-ADD-006",
+    "RF03-ADD-007"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-005: transport offloading Nov-Dec 2025 (ROW-14743/14897/14899). ARC-RF03-001 promotes to ACTIVE at Signal 5."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-005",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF03-001",
+      "arc_signal": 5,
+      "date_range": "2025-11-05 to 2025-12-10",
+      "orig_rows": [
+        "14743",
+        "14897",
+        "14899"
+      ],
+      "messages": [
+        {
+          "orig_row": "14743",
+          "direction": "Received",
+          "date": "2025-11-05",
+          "text": "I've got company tomorrow. If you can bring her home tomorrow after I can drop her off to you Friday to pick her up from you Sunday"
+        },
+        {
+          "orig_row": "14897",
+          "direction": "Received",
+          "date": "2025-12-09",
+          "text": "So next time she is at your house you can bring her home"
+        },
+        {
+          "orig_row": "14899",
+          "direction": "Received",
+          "date": "2025-12-10",
+          "text": "I'm not going back out today so you'd need to bring her home. I had a seizure today and it's shitty outside"
+        }
+      ],
+      "classification": "RF-03 primary Sev-1 \u2014 Three transport offloading instances. ROW-14743: Melissa has company (Gary \u2014 same date as B-030 S-017 RF-14 flag), so Eli must bring Olivia home. ROW-14897: standing declaration that Eli brings Olivia home next visit. ROW-14899: seizure invoked as reason Eli must bring Olivia home (Dec 10 \u2014 same event as RF-14 B-031 S-019 seizure disclosure context). Transport offloading has become a default expectation, not an occasional request. ARC-RF03-001 Signal 5. ARC-RF03-001 promotes to ACTIVE.",
+      "addendum_applied": "ADD-004 (transport offloading). Note: ROW-14743 is the same day as S-017 RF-14 Gary parenting plan challenge. Cross-reference RF-14."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF03-001",
+      "state": "WATCHING",
+      "signals_cumulative": 5,
+      "event": "No new signals in B-030. WATCHING state holds."
+    },
+    {
+      "arc": "ARC-RF03-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0,
+      "event": "No Activity Enrollment Obstruction signals."
+    }
+  ]
+}

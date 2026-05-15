@@ -1,0 +1,155 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-04",
+    "batch_id": "B-001",
+    "row_range": { "start": 2, "end": 366 },
+    "date_range": { "start": "2022-01-11", "end": "2022-10-02" },
+    "message_count": 365,
+    "timezone_note": "EST (UTC-5) Jan 11 only (ROW-2); EDT (UTC-4) Aug 21 onward. DST spring-forward Mar 13, 2022 07:00 UTC. No messages between Jan 11 and Aug 21 — 7-month data gap within B-001 row range.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF04-ADD-001", "RF04-ADD-002", "RF04-ADD-003", "RF04-ADD-004", "RF04-ADD-005"],
+    "note": "RF-04 CALIBRATION BATCH (CP2 complete 2026-04-23). Three primary flags confirmed by Eli. Key calibration outcomes: DARVO pattern confirmed as structural/recurrent (ADD-001); ROW-336 brother reference is general intelligence insult not targeted family-trauma weaponization (ADD-002); Savage Love relay kept Sev 2 on text-record basis despite Eli not recalling specific message (ADD-003); ROW-292-293 twerking context confirmed inside joke, correct exclusion (ADD-004); Eli Phase A reactive sarcasm excluded from RF-04 (ADD-005)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 365,
+    "primary_flags": 3,
+    "primary_severity_distribution": { "1": 2, "2": 1, "3": 0 },
+    "peripheral_flags_total": 7,
+    "peripheral_rf_distribution": {
+      "RF-01": 3,
+      "RF-02": 2,
+      "RF-05": 2
+    },
+    "no_flag_messages": 355,
+    "flag_rate": "2.2%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-50 through ROW-61",
+      "timestamp": "2022-08-28 24:28–25:02 UTC (20:28–21:02 EDT)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-50: 'You want to tell her about being respectful at church but you text me while church is going on and sit and draw' | ROW-51: 'I'm not sure that follows proper protocol.' | ROW-57: 'Do you not draw during service?' | ROW-58: 'I've sat next to you. You bring a notebook. I've seen you' | ROW-59: 'I texted you at 10 am. You didn't respond until 12:01 which is during service' | ROW-60: 'I've seen you laughing or trying to hold back when some of the older people yell amen or something' | ROW-61: 'Check your own etiquette'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "DARVO sequence following Eli's co-parenting communication about Olivia's church behavior. Context: Eli raised a concern (ROW-44-47) that Olivia invoked 'my mom said' to override his church guidance and then became upset; Eli asked to coordinate on expectations. Melissa partially acknowledged his point (ROW-48-49: 'I'm fine with her sitting') but then executed a DARVO pivot: Attack — ROW-50 targets Eli's own church behavior ('text me while church is going on and sit and draw'); Reverse Victim/Offender — ROW-61 'Check your own etiquette' converts the co-parenting discussion into an accusation against Eli, repositioning him as the party with the etiquette problem. ROW-57-60 provide the attack substance: Melissa documents Eli drawing, texting during service, and suppressing laughter. The trigger was Eli's legitimate co-parenting concern; the response pivots to attacking Eli's personal conduct in a way that forecloses the co-parenting discussion. Taxonomic match: 'DARVO — Attack the person confronting' and 'Reframing reasonable requests as attacks.' Severity 1: single exchange, not a sustained campaign; Melissa does acknowledge some cooperative intent (ROW-49); the DARVO pivot is real but not maximally escalated. Phase A context: early in record; Eli's unguided reactive communication (his initial concern was legitimate if imprecisely framed). RF-01 cross-reference: ROW-43 immediately preceding this cluster uses Olivia's account to frame the initial complaint ('Olivia said you were yelling at her / someone saw her crying'); already analyzed as RF-01 primary in RF-01 B-001.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "ROW-43: Olivia's account used to frame Eli's behavior as harmful to child ('someone saw her crying'); cross-household authority override. Analyzed as RF-01 Sev-1 primary in RF-01 B-001.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-44-47 (Eli, Sent): explains his perspective on the church etiquette discussion and asks to coordinate. ROW-48-49 (Melissa, Received): acknowledges Olivia can sit. ROW-50-61 (Melissa, Received): the DARVO pivot. Eli's ROW-55-56 ('Huh? / I have no clue what your talking about') shows genuine confusion at the pivot, which Melissa then reinforces with specifics (ROW-57-60). The DARVO is followed by no further escalation in this episode — the topic drops after ROW-61.",
+      "pattern_tags": ["DARVO", "reframing_request_as_attack", "contempt", "co_parenting_concern_deflected"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'Check your own etiquette' (ROW-61); 'You want to tell her about being respectful at church but you text me while church is going on and sit and draw' (ROW-50)",
+      "calibration_status": "calibrated",
+      "journal_crossref_date": "2022-08-28"
+    },
+    {
+      "message_id": "ROW-334 through ROW-336",
+      "timestamp": "2022-10-01 16:05–16:08 UTC (12:05–12:08 EDT)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-334: 'Why would you pick her up at 6 to go to a party that ends at 6:30 that is a half hour away' | ROW-335: 'Are you stupid?' | ROW-336: 'When you thought you heard your parents talking about your brother being slow are you sure they weren't talking about you?'",
+      "primary_rf": "RF-04",
+      "primary_severity": 1,
+      "primary_reasoning": "Contemptuous humiliation attack following Eli's scheduling error. Context: Eli confirmed he would pick Olivia up at 6 for a skating party ending at 6:30 that is 30 minutes away — a genuine scheduling error. ROW-334 identifies the logical problem (Sev 0; reasonable). ROW-335 escalates to direct contemptuous attack: 'Are you stupid?' — RF-04 indicator 'reframing reasonable requests as attacks' applied to what amounts to a scheduling mistake. ROW-336 is the highest-severity element: Melissa references Eli's family situation (brother described as 'slow'), using it to suggest Eli shares his brother's cognitive limitations ('are you sure they weren't talking about you?'). This is designed to humiliate through deliberate invocation of a family vulnerability — it moves from frustration about a scheduling error into a targeted personal attack on Eli's intelligence using his family circumstances as ammunition. Taxonomic match: 'Reframing reasonable requests as attacks'; contempt as emotional manipulation (designed to shame and destabilize rather than address the scheduling issue). Severity 1: single exchange; triggered by a genuine error; the attack is severe in quality but isolated. Not yet a sustained campaign. Phase A context: no prior pattern to reference yet. RF-05 cross-tag (aggressive/contemptuous language — 'Are you stupid?'; ROW-336 may rise to personal threat-adjacent territory).",
+      "peripheral_flags": [
+        {
+          "rf": "RF-05",
+          "severity": 1,
+          "note": "ROW-335-336: Contemptuous/aggressive language — 'Are you stupid?' plus personal humiliation attack. RF-05 Sev 1 (aggressive tone without direct threat).",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Eli's ROW-332 confirmed pickup at 6 without catching the timing error. ROW-334 identifies the problem (reasonable); ROW-335-336 escalate to contempt/humiliation. There is no prior hostile exchange in this episode — the escalation is zero-to-contemptuous with no buildup. ROW-337-340 return to logistical content (party cost, location), suggesting Melissa de-escalated immediately after the attack.",
+      "pattern_tags": ["contempt", "humiliation_attack", "cognitive_attack", "disproportionate_response"],
+      "arc_references": ["ARC-RF04-001"],
+      "image_reference": null,
+      "quote_excerpt": "'Are you stupid?' (ROW-335); 'When you thought you heard your parents talking about your brother being slow are you sure they weren't talking about you?' (ROW-336)",
+      "calibration_status": "calibrated",
+      "journal_crossref_date": "2022-10-01"
+    },
+    {
+      "message_id": "ROW-361 through ROW-363",
+      "timestamp": "2022-10-02 20:33–20:34 UTC (16:33–16:34 EDT)",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-361: 'We were singing savage love in the car.' | ROW-362: 'I sang \"did somebody break your heart?\"' | ROW-363: 'She said \"yeah. My dad when he left me\"'",
+      "primary_rf": "RF-04",
+      "primary_severity": 2,
+      "primary_reasoning": "Child-mediated guilt delivery. Melissa relays Olivia's emotional response to the lyric 'did somebody break your heart?' — Olivia reportedly answered 'yeah. My dad when he left me.' Melissa then promptly transmits this directly to Eli. The RF-04 behavioral indicator 'Using children's emotions as leverage' applies: Olivia's expressed grief about abandonment is the vehicle for delivering a guilt message to Eli. The mechanics: Melissa poses the emotionally leading question ('did somebody break your heart?') in the car with Olivia; receives Olivia's emotionally charged response; then immediately relays it to Eli. Regardless of whether Olivia's response was spontaneous or prompted, Melissa's choice to relay it to Eli in real time is the RF-04 act — she converted Olivia's emotional statement into a directed communication to Eli designed to cause guilt. Severity 2: 'Using children's emotions as leverage' is a specifically enumerated RF-04 indicator; this delivery mechanism (child's grief → Eli's guilt) is deliberate and is a structurally significant pattern element. It differs from Sev 1 (occasional guilt-tripping) in that it uses the child as the emotional weapon rather than making direct attacks. Phase A context: appears in the same batch as the DARVO cluster and the contempt attack — but this is a qualitatively distinct tactic. RF-01 cross-tag: ROW-363 contains the 'My dad when he left me' abandonment framing, analyzed as RF-01 Sev-2 primary in RF-01 B-001 S003 (elevated from Sev 1 at CP2 calibration).",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 2,
+          "note": "ROW-363: 'My dad when he left me' — coached abandonment narrative in Olivia's voice; analyzed as RF-01 Sev-2 primary (RF01-B001-S003) in RF-01 pass.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "No prior exchange context in this episode — Melissa opens a new topic with the car singing relay. Eli's ROW-364 ('Aww') is the only response — brief, possibly deflecting. ROW-365 (Melissa, same day): 'She's sending you to voicemail not me' — immediately after the guilt relay, the topic shifts to contact access. The juxtaposition is worth noting: guilt delivery followed immediately by contact access framing. Whether intentional or not, this sequence places Eli's guilt about the abandonment framing alongside his inability to directly call Olivia.",
+      "pattern_tags": ["child_as_guilt_vector", "abandonment_guilt_delivery", "child_emotions_weaponized", "car_context_prompted_relay"],
+      "arc_references": ["ARC-RF04-002"],
+      "image_reference": null,
+      "quote_excerpt": "'She said \"yeah. My dad when he left me\"' (ROW-363); 'I sang \"did somebody break your heart?\"' (ROW-362)",
+      "calibration_status": "confirmed",
+      "journal_crossref_date": "2022-10-02"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-292 through ROW-293",
+      "reason_noted": "Near-boundary RF-04: 'You taught her that / Always remember that' (Sep 26). Context uncertain — from RF-01 CP2 review, ROW-292-293 relates to twerking, which CP2 confirmed as a family inside joke. If the framing ('you taught her that / always remember that') is playful within the inside joke, this is not RF-04. If Melissa is using it as guilt-attribution ('you are responsible for this embarrassing behavior'), it would be Sev 1 guilt-tripping. Held for CP2 calibration — flagged here for Eli's context."
+    },
+    {
+      "message_id": "ROW-220",
+      "reason_noted": "Near-boundary RF-04: 'You're going to make her late' (Sep 17) when Eli was ~5 minutes behind schedule. Mild accusatory tone when Eli corrected the record (ROW-221: 'No we got here plenty of time'). Single brief message, borderline — excluded at primary threshold."
+    },
+    {
+      "message_id": "ROW-42",
+      "reason_noted": "Near-boundary RF-04: 'Why does it matter' (Aug 28) in response to Eli asking where photos were taken. Dismissive but not manipulative — excluded."
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": ["ARC-RF04-001 (CANDIDATE → WATCHING: 2 signals in batch)"],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 1
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 3,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": [
+      "CP2-RF04-001: pending_review — all B-001 primary flags held for calibration",
+      "CP2-RF04-002: arc state WATCHING promotion (ARC-RF04-001) pending confirmation",
+      "CP2-RF04-003: arc state CANDIDATE (ARC-RF04-002) pending confirmation"
+    ]
+  },
+
+  "batch_observations": {
+    "tone_assessment": "B-001 is predominantly cooperative-to-neutral (355/365 messages produce no flags). The data spans Jan 11, 2022 (ROW-2, single message) then resumes Aug 21, 2022 — a 7-month gap in the record. Aug 21-Oct 1: mostly routine coordination (school, medical, logistics, Olivia activities). RF-04 signals appear in three distinct episodes: (1) Aug 28 church incident DARVO (ROW-50-61); (2) Oct 1 skating party contempt attack (ROW-334-336); (3) Oct 2 Savage Love guilt relay (ROW-361-363). Eli's messages are largely factual and cooperative throughout.",
+    "direction_balance_note": "All 3 primary RF-04 flags are Received (Melissa → Eli). Eli's Sent messages in this batch show no RF-04 indicators. The 84% received direction from the triage heatmap is consistent with B-001 findings. The direction audit is baseline-established.",
+    "cross_rf_context": "RF-01 arc state (read-only): ARC-RF01-001 ACTIVE with 3 signals through B-001 (church incident S001, Savage Love S003). RF-02 arc state (read-only): ARC-RF02-001 WATCHING/early-active with signals ROW-122/124/125 (DND infrastructure) and ROW-299. These cross-RF signals inform peripheral tagging but do not receive new primary analysis in this pass.",
+    "cp2_calibration_questions": [
+      "ROW-361-363 (Savage Love relay): Is this primarily RF-04 emotional manipulation (using Olivia's grief to make Eli feel guilty) or does Eli see it as RF-01 coaching evidence? The Sev-2 classification assumes the relay is deliberate guilt delivery — does this match Eli's experience?",
+      "ROW-292-293 ('You taught her that / Always remember that'): What was this about? Was this the twerking inside joke confirmed in RF-01 CP2? If so, is the 'always remember that' framing playful or does it carry genuine guilt intent that Eli experienced as manipulative?",
+      "ROW-334-336 (brother reference): Does Eli have a sibling with intellectual disability? If so, was Melissa's ROW-336 reference a deliberate weaponization of a known sensitive topic — and is this part of a pattern Eli has experienced?",
+      "General RF-04 calibration: Looking ahead at the 2022-2026 record, are there specific emotional manipulation patterns Eli has experienced that RF-04 should be calibrated to recognize? For example: specific guilt-tripping framings that recur; specific DARVO triggers (when does Melissa deploy DARVO — after Eli asserts parenting authority? After financial disputes? After visit conflicts?); any martyrdom/victim-positioning Eli has noticed.",
+      "Direction note: B-001 shows RF-04 entirely in the Received direction. Eli's Phase A responses are sometimes reactive (ROW-291 dismissive emoji, ROW-340 sarcastic 'donation' comment). Should these occasional sarcastic/dismissive Sent messages be flagged as RF-04 signal from Eli's direction, or are they normal frustration responses that fall under RF-04's 'Not This' (genuine emotional expression, boundary-setting)?"
+    ]
+  }
+}

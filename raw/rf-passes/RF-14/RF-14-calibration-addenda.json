@@ -1,0 +1,122 @@
+{
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "generated": "2026-05-05",
+  "cp2_completed": "2026-05-05",
+  "source": "CP2 answers provided across two sessions (2026-04-28 and 2026-05-05)",
+
+  "addenda": [
+
+    {
+      "id": "RF14-ADD-001",
+      "title": "RF-15/RF-14 Compound Boundary Rule",
+      "status": "ACTIVE",
+      "rule": "For all known RF-15 false allegations with safety content: RF-15 is the primary flag; RF-14 is peripheral only. Do NOT generate standalone RF-14 primary flags for known false allegations. Known intersections: (1) Alcoholism accusation (B-030 ROW-15498) — one beer at dinner distorted to 'drinking problem/alcoholism'; RF-15 Category B primary, RF-14 peripheral. (2) Vaping/asthma allegation (B-025) — partially true but weaponized as gatekeeping pretext; RF-15 Category B primary + RF-02 compound; RF-14 peripheral. (3) Pinching allegation (B-025/B-026, via Olivia relay) — Eli confirms: 'nothing ever came of it; Olivia misrepresented and Melissa coached'; RF-15 Category A primary; RF-14 peripheral. (4) Bruise welfare check DARVO (B-031) — Eli's protective welfare check reframed as planting abuse suspicion; RF-15 Category D primary; NO RF-14 flag (a welfare check is appropriate protective behavior, not a safety concern). Apply to any new instances of the same pattern throughout B-002–B-031.",
+      "why": "CP2 Q2 confirmed: Eli has concerns about Melissa's household but nothing concrete to document as a substance concern. Eli's alcohol references in messages are factual observations, not admissions. The RF-15 record is the authoritative source for known false allegation content."
+    },
+
+    {
+      "id": "RF14-ADD-002",
+      "title": "Feb 2026 Bilateral Safety Event — Isolated, Below Endangerment Threshold",
+      "status": "ACTIVE",
+      "rule": "B-030 bilateral signal (children hiding during Eli/Abby argument Feb 2026): confirmed isolated. RF-11 is primary. For RF-14: classify as RF-14 peripheral Sev-1 compound with RF-11 (mitigated — isolated incident, out of character, guardrails adopted post-incident). Do NOT classify as RF-14 primary. Mitigating factors on record: (1) Eli confirms 'very out of character for me'; (2) children were scared partly because of how unusual it was; (3) Eli and Abby adopted guardrails post-incident. No endangerment threshold reached.",
+      "why": "CP2 Q3: isolated incident, heated argument, no one in danger, no history of conflict endangering anyone. Post-incident guardrails adopted. Honest self-assessment by Eli (looked up 'verbal abuse') is a mitigating factor."
+    },
+
+    {
+      "id": "RF14-ADD-003",
+      "title": "Gary DV Arrest Context",
+      "status": "ACTIVE",
+      "rule": "Gary (Melissa's partner/frequent overnight presence): DV complaint filed 05/22/2023, arrest warrant issued, arrested 05/23/2023. Both charges DISMISSED 09/19/2023 at prosecutor's request on day of rescheduled jury trial. Costs also dismissed. He does NOT reside with Olivia and Melissa but stays there frequently. For RF-14 classification: (1) If Gary's arrest or DV history is referenced in messages, this is genuine context for a Sev-1 RF-14 primary flag from Eli's perspective (legitimate safety observation about a person with a DV record who has frequent overnight access to Olivia). (2) The dismissal means no conviction — weigh accordingly at Sev-1 not Sev-2. (3) If Melissa references Gary in messages around May-Sep 2023, note for arc context. (4) Olivia sleeping in Melissa's bed when Gary is present (per CP2) is a genuine welfare observation — flag if referenced in messages as Sev-1 RF-14.",
+      "why": "CP2 Q1c: Eli aware of Gary's DV arrest and dismissal. Eli has concerns though outcome was dismissal. Gary stays frequently though doesn't reside there. This represents a genuine (not manufactured) safety context that distinguishes Eli's Sent-direction RF-14 signals from the false-allegation pattern."
+    },
+
+    {
+      "id": "RF14-ADD-004",
+      "title": "Medical Compliance Pattern — Ongoing Genuine RF-14 Signal",
+      "status": "ACTIVE",
+      "rule": "Olivia has two documented ongoing medical compliance failures at Melissa's household: (1) Allergy medication — inconsistently administered (not consistent per Eli CP2 Q4b clarification on 2026-05-05). (2) Glasses — Olivia does not wear them as prescribed (as far as Eli knows, confirmed 2026-05-05). Both are genuine Sev-1 RF-14 signals when documented in messages. Classify as RF-14 primary Sev-1 (Received direction) when: Melissa acknowledges missed meds; when Eli raises the concern and Melissa dismisses or deflects; when Olivia's medical non-compliance is evident from message context. Do NOT flag Eli raising the concern as RF-14 — Eli observing/reporting the failure is appropriate parenting behavior.",
+      "why": "CP2 Q4b: regular missed allergy meds and consistent non-wearing of glasses confirmed ongoing. These are RF-14 indicators under 'Failure to administer prescribed medication' and 'Neglect indicators.'"
+    },
+
+    {
+      "id": "RF14-ADD-005",
+      "title": "Parent-of-Friend Caregiver — Not RF-14",
+      "status": "ACTIVE",
+      "rule": "The caregiver Eli expressed concern about (CP2 Q4a) is the parent of one of Olivia's friends. Eli has met her more than once (in passing). This does not constitute an inappropriate caregiver concern rising to RF-14. Do NOT flag childcare with Olivia's friend's parent as RF-14 unless specific concerning behavior is documented in the messages. Eli's limited familiarity alone is insufficient.",
+      "why": "CP2 Q4a follow-up 2026-05-05: clarified it is the parent of Olivia's friend, met in passing multiple times. Not an inappropriate caregiver — just not well-known to Eli."
+    },
+
+    {
+      "id": "RF14-ADD-006",
+      "title": "Eli's Substance References in Messages — Factual, Not Admissions",
+      "status": "ACTIVE",
+      "rule": "Per CP2 Q2c: Eli's references to alcohol or substances in his own messages are factual observations or genuine concerns, not admissions of problematic use. The RF-15 record already documents Melissa's distortion of a single beer at dinner into 'drinking problem/alcoholism' — this is RF-15 Category B. When Eli mentions alcohol/substances in messages: (1) factual disclosures (e.g., 'I had a beer with dinner') are NOT RF-14 signals; (2) Eli raising genuine concerns about substance use at Melissa's IS appropriate and classifiable as RF-14 Sent Sev-1 if specific. Do not create circular logic where Eli's refutation of Melissa's false allegations reads as a substance admission.",
+      "why": "CP2 Q2: no genuine substance concern about Melissa confirmed, but Olivia mentions her mom drinks (degree unknown). Eli's own references are factual."
+    },
+
+    {
+      "id": "RF14-ADD-007",
+      "title": "Pre-2023 Safety Allegations — Manufactured Narrative Pattern",
+      "status": "ACTIVE",
+      "rule": "Per CP2 Q5b: Melissa has raised safety concerns about Olivia in Eli's care multiple times without real basis, with the purpose of creating a narrative to keep Olivia away from Eli. The 2022-10 triage hot period represents early-stage manufactured safety allegations, NOT genuine concerns. Arc ARC-RF14-001 (Safety Allegation Pattern) should be classified as Received-direction signals triggered by these manufactured allegations. Expected: first signals around B-002 (Oct 2022) through B-003/B-004 (Nov 2022 – Jan 2023). No Abby-related safety allegations exist before April 2023 (RF-01 Abby-attack pattern start, B-007) — per CP2 Q5c.",
+      "why": "CP2 Q5: no specific recall of Oct 2022 safety conversations, but Melissa has repeatedly raised baseless safety concerns to create a restrictive narrative. This anchors ARC-RF14-001 pre-history and calibrates early batches."
+    },
+
+    {
+      "id": "RF14-ADD-008",
+      "title": "Gary DV Charge Timeline Context",
+      "status": "ACTIVE",
+      "rule": "For batch sequencing awareness: Gary's DV arrest was 05/23/2023 (B-008 date range). Case dismissed 09/19/2023 (B-010 date range). If Gary is mentioned in messages around these dates, apply ADD-003 context. Oli sleeping in Melissa's bed when Gary is present (mentioned by Eli in CP2) — if documented in messages, flag as Sev-1 RF-14 genuine safety observation.",
+      "why": "Timeline context for directing attention to the right batch windows."
+    }
+
+  ],
+
+  "arc_state_post_cp2": {
+    "ARC-RF14-001": {
+      "name": "Safety Allegation Pattern",
+      "description": "Melissa's manufactured false safety allegations against Eli — RF-15 compound arc. Distinct from genuine safety observations.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "received",
+      "note": "First genuine signal will promote to WATCHING. Signal criteria: Melissa makes a safety allegation about Eli's household that is (a) unsubstantiated, (b) contextually manufactured, or (c) part of the documented RF-15 false allegation pattern. Compound with RF-15 primary throughout."
+    },
+    "ARC-RF14-002": {
+      "name": "Genuine Safety Documentation",
+      "description": "Legitimate bi-directional safety observations — Eli's genuine concerns about Melissa's household or bilateral events.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "bidirectional",
+      "note": "Signal criteria: (a) Eli documents a genuine safety concern about Melissa's household (Gary, medical compliance, instability); (b) bilateral events confirmed as genuine (Feb 2026, per ADD-002, is RF-11 primary + RF-14 peripheral compound). First standalone Eli-direction genuine signal promotes to WATCHING."
+    }
+  },
+
+  "post_cp2_processing_instructions": {
+    "primary_signal_criteria": [
+      "Melissa safety allegations NOT already captured as RF-15 primary — rare, flag as RF-14 primary if genuinely new safety content",
+      "Eli's documented concerns about Gary's DV history in messages (ADD-003)",
+      "Medical compliance failures documented in messages: allergy meds, glasses (ADD-004)",
+      "Any reference to domestic instability, unsafe caregivers, or child endangerment not already RF-15 compound"
+    ],
+    "peripheral_only_categories": [
+      "All known RF-15 false allegations (alcoholism, vaping/asthma, pinching, bruise DARVO) — RF-15 primary",
+      "Feb 2026 bilateral argument — RF-11 primary",
+      "Feb 2026 verbal abuse allegation — RF-09 primary"
+    ],
+    "arc_promotion_criteria": {
+      "ARC-RF14-001": "3+ manufactured safety allegations (received direction) → promote CANDIDATE to WATCHING",
+      "ARC-RF14-002": "2+ genuine safety observations (sent direction, separate incidents) → promote CANDIDATE to WATCHING"
+    },
+    "hot_periods_watch": [
+      "B-002 (Oct 2022): triage hot period — first safety-adjacent language expected",
+      "B-004 (Jan 2023): second triage hot period — watch",
+      "B-008 (May 2023): Gary DV arrest date window",
+      "B-010 (Sep 2023): Gary dismissal date window",
+      "B-018 (Aug 2024): 311-message cluster — medical/safety concerns possible",
+      "B-025 (Jun 2025): vaping/asthma RF-15 compound — already known",
+      "B-030 (Nov 2025 – Jan 2026): alcoholism accusation + Feb 2026 bilateral — already known",
+      "B-031 (Apr 2026): bruise welfare check — already known as RF-15 primary, no RF-14"
+    ]
+  }
+}

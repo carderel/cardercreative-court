@@ -1,0 +1,46 @@
+{
+  "batch_id": "B-008",
+  "date_range": {
+    "start": "2023-06-03",
+    "end": "2023-07-16"
+  },
+  "row_range": {
+    "start": 2593,
+    "end": 2963
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 3,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jun-Jul 2023. Gary DV arrest window (May 23, 2023 arrest, documented in ADD-003/ADD-008) \u2014 Gary's DV arrest is COMPLETELY SILENT in text message record. No mention of Gary, DV arrest, or related safety concerns in messages spanning this period. ROW-3411 area (not in this batch) contains glasses/eye appointment references. No primary RF-14 flags."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "Gary DV arrest (May 23, 2023) silent in text record \u2014 no messages about Gary in this window",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No signals \u2014 CANDIDATE",
+      "state": "CANDIDATE"
+    }
+  ]
+}

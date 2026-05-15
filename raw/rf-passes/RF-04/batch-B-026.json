@@ -1,0 +1,159 @@
+{
+  "batch_id": "B-026",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2025-06-11", "end": "2025-07-16" },
+  "row_range": { "start": 7868, "end": 9916 },
+  "message_count": 300,
+  "phase": "B",
+  "analysis_date": "2026-04-24",
+
+  "batch_notes": "Data structure: Sequential block ROW-7868–8013 (Jun 11–Jul 16, predominantly Sent/Eli messages); parallel block ROW-9763–9916 (Jun 11–Jul 16, predominantly Received/Melissa messages). Unique messages ~300. Note on row_range: triage lists B-026 end row as 13911 (corrupt); actual parallel block end for this date range is ROW-9916 (last Jul 16 message in parallel block); ROW-9917 begins B-027 (Jul 17). Phase B (post-Phase A/B boundary at B-025).",
+
+  "batch_summary": {
+    "dominant_tone": "predominantly cooperative with one major RF-04 event (Jun 14 predation #9 DARVO) and two minor events; significant cooperative periods: Jun 11–13 logistics, Jun 15–26 logistics, Jul 1–Jul 16 vacation/illness-sharing; Jun 14 is the primary RF-04 event; Jun 27 Abby-liar validation and Jul 12 contempt are lower-severity standalone events",
+    "conflict_ratio": "~0.25 within Jun 14 exchange; ~0.10 batch overall",
+    "rf04_activity": "low-moderate — 3 primary flags (1 Sev-2, 2 Sev-1): Jun 14 predation #9 DARVO compound; Jun 27 Abby-liar validation; Jul 12 'dingus' ADD-002 adjacent contempt; COMP-RF04-022",
+    "notable_context": "Jun 13-14: Eli invokes 9-month parenting plan clause regarding Melissa's new partner (ROW-7873) — Melissa responds with predation framing #9 as DARVO deflection; 'like you and Abby were' false equivalence (ROW-9765) followed by 'it's more fucked up that it's her niece / why are they making out' (ROW-7874/7878). Jun 21: Melissa relays complaint about Eli/Abby telling mom not to bring Olivia to Milo's game (ROW-9793 — appears cooperative resolution 'Ok' ROW-9794). Jun 27: Abby apologized to 'mom' for something; Melissa characterizes apology as confirming Abby 'was a liar / the false accusations she made' (ROW-9817-9819). Jun 28: Eli requests Olivia attend Milo's soccer game; minor dismissal cluster 'Your cleaning is irrelevant' (ROW-9936). Jul 11-16: Olivia's birthday plane ride trip to Tennessee (cooperative); Olivia gets sick on Jul 15-16; Melissa shares thorough medical updates with Eli — significantly cooperative period. Jul 12: Olive (Melissa's niece) pees herself; Eli confused about Olivia's whereabouts; Melissa responds 'She's been with me since 6:00 dingus' (ROW-9857)."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B026-001",
+      "severity": 2,
+      "date": "2025-06-13",
+      "row_ref": "ROW-7874-7879 + ROW-9765-9766",
+      "type": "predation_framing_9 + DARVO + sexualized_child_perspective_construction + false_equivalence",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "compound_pattern": "COMP-RF04-022",
+      "summary": "Jun 13-14 predation framing #9 deployed as DARVO in response to Eli's parenting plan invocation. Context: Eli invokes legitimate 9-month new-partner introduction clause in shared parenting plan (ROW-7873: 'I've reviewed the shared parenting plan and it clearly states that new partners aren't to be introduced for nine months'). ROW-9765 (Jun 13 parallel, pre-framing): 'I was looking at the dissolution it says can't introduce for 9 months but she's already been introduced before we started dating like you and Abby were.' — false equivalence pre-framing; positions her partner introduction as equivalent to Eli/Abby situation. ROW-9766: 'So I don't know that it will apply here either' — attempts to nullify parenting plan clause. ROW-7874 (Jun 14 sequential): 'How was that different than you and Abby besides it being more fucked up that it's her niece' — 9th predation framing deployment; deploys uncle/niece taboo framing as DARVO counter to Eli's legitimate parenting plan invocation; 'besides it being more fucked up' characterizes Eli/Abby relationship as sexually/morally inferior. ROW-7878: 'You haven't respected that. She wants to meet him and like I said she has already been introduced so there's no introducing. It's more fucked uo to see your dad dating your cousin. That's more confusing. That's my dad and my cousin why are they making out' — escalation: constructs Olivia's hypothetical interior sexual monologue ('That's my dad and my cousin why are they making out') as 9-year-old child's perspective on her father's relationship; places sexual imagery into the child's frame of reference and weaponizes it as DARVO to deflect Eli's parenting plan argument. ROW-7879: 'Like I said I'm not asking for permission. Just letting you know. Have a great night' — contemptuous dismissal close. COMP-RF04-022 (RF-04+RF-15). ARC-RF04-001-S61. Predation framing trajectory: B-003 → B-004 → B-006 → B-009 → B-010 → B-012 → B-014 → B-019 → B-026. 9th confirmed instance. New mechanism: sexualized child viewpoint construction ('why are they making out') — child's hypothetical interior monologue used as evidence of Eli's harmful conduct.",
+      "verbatim_key_messages": [
+        "ROW-9765 (Received): \"I was looking at the dissolution it says can't introduce for 9 months but she's already been introduced before we started dating like you and Abby were.\"",
+        "ROW-7874 (Received): \"How was that different than you and Abby besides it being more fucked uo that it's her niece\"",
+        "ROW-7878 (Received): \"You haven't respected that. She wants to meet him and like I said she has already been introduced so there's no introducing. It's more fucked uo to see your dad dating your cousin. That's more confusing. That's my dad and my cousin why are they making out\"",
+        "ROW-7879 (Received): \"Like I said I'm not asking for permission. Just letting you know. Have a great night\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B026-002",
+      "severity": 1,
+      "date": "2025-06-27",
+      "row_ref": "ROW-9817-9819",
+      "type": "abby_liar_validation + abby_character_attack + contemptuous_confirmation",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Jun 27 Abby-liar validation cluster. Context: ROW-7928 (Received): 'Abby called mom and apologized gif [for] lying about her' — Abby apparently apologized to someone's mother for something she had said. Melissa uses this apology to confirm her prior characterization of Abby as a liar: ROW-9817: 'Heard Abby finally apologized for lying about mom' — frames apology as confirmation of lying, not as act of reconciliation. ROW-9818: 'Told you she was a liar' — contemptuous vindication; weaponizes Abby's apology as proof of Melissa's prior accusations. ROW-9819: 'The false accusations she made' — extends characterization to 'false accusations' (plural), implying pattern. Three-message cluster: observed apology → liar-confirmation → false-accusations-characterization. ARC-RF04-001-S62. Mechanism: Melissa converts Abby's conciliatory gesture into evidence of character deficiency; denies possibility of good faith; maintains Abby-negative frame despite resolution.",
+      "verbatim_key_messages": [
+        "ROW-9817 (Received): \"Heard Abby finally apologized for lying about mom\"",
+        "ROW-9818 (Received): \"Told you she was a liar\"",
+        "ROW-9819 (Received): \"The false accusations she made\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B026-003",
+      "severity": 1,
+      "date": "2025-07-12",
+      "row_ref": "ROW-9857-9860",
+      "type": "ADD-002_adjacent_slur + contemptuous_dismissal + parental_inquiry_dismissed",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Jul 12 'dingus' contempt slur + dismissal. Context: Eli called Olivia and was told she was still at Ha's house; Eli sent multiple check-in messages about Olivia's whereabouts after getting conflicting information (ROW-7959-7967). ROW-9857: 'She's been with me since 6:00 dingus' — contempt slur 'dingus' (ADD-002 adjacent); Eli's legitimate parental check-in reframed as stupidity. ROW-9859: 'How the fuck would I know' — contemptuous dismissal in response to Eli's question about what happened. ROW-9860: 'And I don't think that's your business anyways' — dismisses Eli's parental inquiry about Olivia as outside his purview. Trigger: genuine communication confusion about Olivia's location. Pattern: Eli's legitimate parenting communication met with contemptuous response. 'Dingus' is a new ADD-002 variant (mild slur, contemptuous intelligence/competence attack). ARC-RF04-001-S63.",
+      "verbatim_key_messages": [
+        "ROW-9857 (Received): \"She's been with me since 6:00 dingus\"",
+        "ROW-9859 (Received): \"How the fuck would I know\"",
+        "ROW-9860 (Received): \"And I don't think that's your business anyways\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B026-P01",
+      "row_ref": "ROW-7935-7937",
+      "date": "2025-06-28",
+      "type": "contemptuous_dismissal_minor",
+      "note": "ROW-7935: 'You can't be upset when you waited until 10:00 the night before' — dismissal of Eli's last-minute soccer game request; framing Eli as unreasonable. ROW-7936: 'Your cleaning is irrelevant' — contemptuous minimization of Eli's explanation. ROW-7937: 'I'm trying to teach her that she has responsibilities' — framing Eli's request against child's development. Minor three-message contempt cluster; no escalation; peripheral."
+    },
+    {
+      "flag_id": "RF04-B026-P02",
+      "row_ref": "ROW-9793",
+      "date": "2025-06-21",
+      "type": "third_party_complaint_relay",
+      "note": "ROW-9793: 'I was told that you guys told mom not to bring Olivia with her to Milo's game. Is that true?' — Melissa relays third-party report that Eli/Abby excluded Olivia from a family event; framing is accusatory but resolved cooperatively (ROW-9794: 'Ok'). Peripheral — watch for recurrence of exclusion-allegation via third-party relay in Phase B."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S61",
+          "batch": "B-026",
+          "date": "2025-06-14",
+          "row": "ROW-7874-7879 + ROW-9765-9766",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Predation framing #9 as DARVO against Eli's parenting plan invocation: 'like you and Abby were' false equivalence (ROW-9765) + 'How was that different than you and Abby besides it being more fucked up that it's her niece' (ROW-7874) + sexualized child viewpoint construction 'That's my dad and my cousin why are they making out' (ROW-7878) + contemptuous dismissal 'Have a great night' (ROW-7879). COMP-RF04-022 (RF-04+RF-15). 9th predation framing instance."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S62",
+          "batch": "B-026",
+          "date": "2025-06-27",
+          "row": "ROW-9817-9819",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Abby-liar validation: 'Heard Abby finally apologized for lying about mom' (ROW-9817) + 'Told you she was a liar' (ROW-9818) + 'The false accusations she made' (ROW-9819) — Abby's apology weaponized as character confirmation; contemptuous vindication framing."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S63",
+          "batch": "B-026",
+          "date": "2025-07-12",
+          "row": "ROW-9857-9860",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'dingus' ADD-002 adjacent slur (ROW-9857) + 'How the fuck would I know' (ROW-9859) + 'And I don't think that's your business anyways' (ROW-9860) — contemptuous dismissal of Eli's parental check-in; parental inquiry characterized as outside Eli's purview. New ADD-002 variant: 'dingus.'"
+        }
+      ],
+      "signal_count_after": 63
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [],
+      "signal_count_after": 19,
+      "note": "No new ARC-RF04-002 signals in B-026. Jun 29 ROW-9828 ('Said she cried a lot cause she missed me') noted but assessed as incidental relay rather than weaponized guilt delivery — context is cooperative vacation check-in; no escalation."
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-022",
+      "date": "2025-06-14",
+      "row_ref": "ROW-7874-7879 + ROW-9765-9766",
+      "rf_combination": ["RF-04", "RF-15"],
+      "summary": "RF-04 (Emotional Manipulation) + RF-15 (False Allegations): triggered by Eli's invocation of 9-month parenting plan clause. RF-04 (Sev-2: predation framing deployed as DARVO deflection; 'How was that different than you and Abby besides it being more fucked up that it's her niece' — Eli's legitimate parenting plan argument reframed as hypocrisy; sexualized child viewpoint construction 'That's my dad and my cousin why are they making out' weaponizes child's hypothetical perspective as emotional attack; contemptuous dismissal close 'Have a great night'; false equivalence pre-framing ROW-9765; ARC-RF04-001-S61) + RF-15 (9th predation framing instance; 'more fucked up that it's her niece' + sexualized child interior monologue construction constitute false allegation deployment; escalation: prior predation framings used explicit factual framing, covert mechanisms, or Dr-directed threat — this instance constructs child's hypothetical sexual consciousness to make allegation viscerally compelling). Mechanism: parenting plan invocation → deflection via predation comparison → emotional escalation via child's sexual viewpoint construction → contemptuous close.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001-S61"]
+    }
+  ],
+
+  "cp3_item": {
+    "cp3_id": "CP3-RF04-026",
+    "batch": "B-026",
+    "type": "pattern_escalation",
+    "priority": "medium",
+    "summary": "Jun 14 COMP-RF04-022 (RF-04+RF-15): 9th predation framing instance. Notable for: (1) New mechanism — sexualized child viewpoint construction: Melissa writes Olivia's hypothetical interior sexual monologue ('That's my dad and my cousin why are they making out') as 9-year-old's perspective on her father's relationship; prior predation framings deployed factual framing or implied allegation; this instance places sexual imagery directly in the child's experiential frame; (2) Deployed as DARVO in response to Eli's legitimate parenting plan invocation — predation framing used not as standalone attack but as deflection weapon to neutralize Eli's parenting plan argument; (3) 'like you and Abby were' false equivalence pre-framing (ROW-9765) establishes false parallel before main attack. Predation framing trajectory: 9 deployments across 9 batches (B-003, B-004, B-006, B-009, B-010, B-012, B-014, B-019, B-026). Phase B first deployment."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 3,
+    "severity_1": 2,
+    "severity_2": 1,
+    "severity_3": 0,
+    "peripheral_flags": 2,
+    "compound_patterns": 1,
+    "arc_rf04_001_signals_added": 3,
+    "arc_rf04_002_signals_added": 0
+  }
+}

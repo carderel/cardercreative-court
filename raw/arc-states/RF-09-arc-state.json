@@ -1,0 +1,233 @@
+{
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "generated": "2026-04-27",
+  "arc_id": "ARC-RF09-001",
+  "arc_name": "Systematic Reality-Distortion Pattern",
+  "status": "ACTIVE",
+  "resolution": "unresolved_at_dataset_close",
+  "signal_count": 11,
+  "severity_distribution": {
+    "1": 7,
+    "2": 4,
+    "3": 0
+  },
+  "arc_lifecycle": {
+    "CANDIDATE": "B-001 (initialized at calibration)",
+    "WATCHING": "B-005 (S002 \u2014 2nd signal Jan 2023)",
+    "ACTIVE": "B-009 (S003 \u2014 3rd signal Aug 2023)"
+  },
+  "phase_distribution": {
+    "A": 6,
+    "B": 2,
+    "C": 3
+  },
+  "dominant_mechanism": "DARVO-inversion (accusing Eli of gaslighting while Melissa is engaged in documented DARVO/emotional manipulation)",
+  "signals": [
+    {
+      "signal_id": "S001",
+      "batch": "B-003",
+      "date": "2022-11-28",
+      "row_ref": "ROW-1055",
+      "severity": 1,
+      "evidence_level": "E",
+      "mechanism": "lying_accusation",
+      "anchor_quote": "Then you lied to me",
+      "compound": "COMP-RF09-001 (RF-09+RF-04)",
+      "arc_state_after": "CANDIDATE (1 signal)"
+    },
+    {
+      "signal_id": "S002",
+      "batch": "B-005",
+      "date": "2023-01-31",
+      "row_ref": "ROW-1722",
+      "severity": 1,
+      "evidence_level": "E",
+      "mechanism": "darvo_inversion_gaslight_accusation",
+      "anchor_quote": "So nice try trying to gaslight and place blame",
+      "compound": "COMP-RF09-002 (RF-09+RF-04)",
+      "arc_state_after": "WATCHING (2 signals)"
+    },
+    {
+      "signal_id": "S003",
+      "batch": "B-009",
+      "date": "2023-08-05",
+      "row_ref": "ROW-2992",
+      "severity": 1,
+      "evidence_level": "E",
+      "mechanism": "darvo_inversion_gaslight_accusation",
+      "anchor_quote": "Your gaslighting doesn't work on me",
+      "compound": "COMP-RF09-003 (RF-09+RF-04)",
+      "arc_state_after": "ACTIVE (3 signals) \u2014 arc activation event"
+    },
+    {
+      "signal_id": "S004",
+      "batch": "B-014",
+      "date": "2024-04-10",
+      "row_ref": "ROW-4909",
+      "severity": 1,
+      "evidence_level": "B",
+      "mechanism": "agreement_denial",
+      "anchor_quote": "You agreed to things then didn't do them",
+      "compound": null,
+      "arc_state_after": "ACTIVE (4 signals)"
+    },
+    {
+      "signal_id": "S005",
+      "batch": "B-019",
+      "date": "2024-09-15",
+      "row_ref": "ROW-7326-7332",
+      "severity": 1,
+      "evidence_level": "E",
+      "mechanism": "reality_denial_via_olivia_relay",
+      "anchor_quote": "She said you're lying. She said she didn't say anything disrespectful at the dr | you are just making it up",
+      "compound": "RF-09+RF-08 (Olivia relay mechanism)",
+      "arc_state_after": "ACTIVE (5 signals)"
+    },
+    {
+      "signal_id": "S006",
+      "batch": "B-022",
+      "date": "2025-01-15",
+      "row_ref": "ROW-7724-7740",
+      "severity": 2,
+      "evidence_level": "E",
+      "mechanism": "sustained_darvo_inversion_global_accusation",
+      "anchor_quote": "You gaslight | You gaslight everything",
+      "compound": "COMP-RF09-004 (RF-09+RF-04)",
+      "arc_state_after": "ACTIVE (6 signals) \u2014 arc severity escalated to Sev-2 (ADD-004 sustained threshold reached)",
+      "note": "First use of 'everything' qualifier \u2014 global indictment of Eli's entire perception of reality; highest-severity Level E signal in Phase A/B"
+    },
+    {
+      "signal_id": "S007",
+      "batch": "B-025",
+      "date": "2025-06-08",
+      "row_ref": "ROW-9735-9751",
+      "severity": 1,
+      "evidence_level": "C",
+      "mechanism": "event_rewrite_allegation_minimization",
+      "anchor_quote": "I never said Abby abused anyone. I simply told you what Olivia said so that you knew and could respond.",
+      "compound": null,
+      "arc_state_after": "ACTIVE (7 signals)"
+    },
+    {
+      "signal_id": "S008",
+      "batch": "B-027",
+      "date": "2025-07-19",
+      "row_ref": "ROW-9957-9964",
+      "severity": 2,
+      "evidence_level": "A",
+      "mechanism": "direct_textual_contradiction_threat_denial",
+      "anchor_quote": "There's no threats",
+      "contradiction_quote": "I'll screenshot this and file for full custody",
+      "xref_pair": "XREF-001",
+      "compound": "COMP-RF09-005 (RF-09+RF-05)",
+      "arc_state_after": "ACTIVE (8 signals) \u2014 first Level A confirmed cross-reference pair",
+      "note": "Strongest individual evidence point in the pass: both threat and denial in the same cluster, Level A requires no corroboration."
+    },
+    {
+      "signal_id": "S009",
+      "batch": "B-028",
+      "date": "2025-08-29",
+      "row_ref": "ROW-14243",
+      "severity": 1,
+      "evidence_level": "E",
+      "mechanism": "darvo_inversion_gaslight_accusation_via_olivia",
+      "anchor_quote": "The conversation led her to scream into the couch and cry cause you kept trying to gaslight her about it",
+      "compound": "COMP-RF09-006 (RF-09+RF-04; RF-08 relay context)",
+      "arc_state_after": "ACTIVE (9 signals)"
+    },
+    {
+      "signal_id": "S010",
+      "batch": "B-029",
+      "date": "2025-11-07",
+      "row_ref": "ROW-14755",
+      "severity": 2,
+      "evidence_level": "E",
+      "mechanism": "global_sanity_attack",
+      "anchor_quote": "You are delusional",
+      "compound": "COMP-RF09-007 (RF-09+RF-04)",
+      "arc_state_after": "ACTIVE (10 signals)",
+      "note": "Most extreme sanity-attack language in the dataset ('delusional'); Phase C period \u2014 highest legal consequence window."
+    },
+    {
+      "signal_id": "S011",
+      "batch": "B-030",
+      "date": "2026-02-15",
+      "row_ref": "ROW-15098-15175",
+      "severity": 2,
+      "evidence_level": "C",
+      "mechanism": "admitted_fact_amplification_event_rewrite",
+      "anchor_quote": "Feb 15 amplification: raised voice \u2192 verbal abuse \u2192 traumatized \u2192 drinking problem \u2192 alcoholism allegation",
+      "compound": "COMP-RF09-008 (RF-09+RF-04; COMP-RF04-029)",
+      "arc_state_after": "ACTIVE (11 signals) \u2014 final signal; arc unresolved at dataset close",
+      "note": "Amplification drives Phase C visit-refusal engine through Apr 5 2026 (7+ weeks). Level C because Q4 confirmed no prior contradicting written statement from Melissa about Eli's conduct."
+    }
+  ],
+  "compound_patterns": [
+    {
+      "id": "COMP-RF09-001",
+      "batch": "B-003",
+      "signal": "S001",
+      "type": "RF-09+RF-04",
+      "description": "lying accusation within DARVO-adjacent sequence"
+    },
+    {
+      "id": "COMP-RF09-002",
+      "batch": "B-005",
+      "signal": "S002",
+      "type": "RF-09+RF-04",
+      "description": "gaslight accusation within DARVO cluster (first explicit projection)"
+    },
+    {
+      "id": "COMP-RF09-003",
+      "batch": "B-009",
+      "signal": "S003",
+      "type": "RF-09+RF-04",
+      "description": "gaslight accusation \u2014 arc activation; DARVO-inversion pattern established"
+    },
+    {
+      "id": "COMP-RF09-004",
+      "batch": "B-022",
+      "signal": "S006",
+      "type": "RF-09+RF-04",
+      "description": "'You gaslight everything' \u2014 global DARVO-inversion at sustained threshold"
+    },
+    {
+      "id": "COMP-RF09-005",
+      "batch": "B-027",
+      "signal": "S008",
+      "type": "RF-09+RF-05",
+      "description": "threat denial (Level A cross-ref) + RF-05 DARVO-denial mechanism S020"
+    },
+    {
+      "id": "COMP-RF09-006",
+      "batch": "B-028",
+      "signal": "S009",
+      "type": "RF-09+RF-04+RF-08",
+      "description": "gaslight accusation via Olivia relay (triple: RF-09+RF-04 DARVO + RF-08 relay context)"
+    },
+    {
+      "id": "COMP-RF09-007",
+      "batch": "B-029",
+      "signal": "S010",
+      "type": "RF-09+RF-04",
+      "description": "'You are delusional' within Phase C DARVO cluster"
+    },
+    {
+      "id": "COMP-RF09-008",
+      "batch": "B-030",
+      "signal": "S011",
+      "type": "RF-09+RF-04",
+      "description": "admitted-fact amplification sequence = COMP-RF04-029 + RF-09 event rewrite overlay"
+    }
+  ],
+  "arc_synthesis": {
+    "primary_mechanism": "DARVO-inversion: Melissa systematically accuses Eli of gaslighting while engaging in the documented DARVO + emotional manipulation campaign (RF-04 ARC-RF04-001). This is the most distinctive RF-09 sub-pattern in the dataset \u2014 the manipulating party names their own behavior and projects it onto the target.",
+    "secondary_mechanism": "Amplification of admitted facts (S011 Feb 2026): single admitted incident escalated through qualitative distortion chain into sustained visit-refusal justification.",
+    "strongest_evidence": "XREF-001 (Level A): ROW-9957 threat denied by ROW-9964 within same cluster \u2014 textual self-contradiction requiring no corroboration.",
+    "phase_pattern": "Phase A (B-003, B-005, B-009, B-014, B-019): DARVO-inversion establishes arc. Phase B (B-022, B-025): escalation \u2014 'everything' global qualifier, Abby allegation minimization. Phase C (B-027, B-028, B-029, B-030): Level A threat denial, delusional accusation, admitted-fact amplification drive visit-refusal engine.",
+    "add004_escalation": "Level E instances across 7 distinct conflict periods (Nov 2022 through Nov 2025): S001, S002, S003, S005, S006, S009, S010. ADD-004 arc severity: Sev-2 from S006 (Jan 2025) onward \u2014 sustained threshold met.",
+    "coaching_forward_anchor": "ROW-6819 stands undenied at dataset close per ADD-002. Eli's CP2 observation that Melissa's comfort with the admission suggests normalized coaching across all subjects is a narrative synthesis point for Phase 2.",
+    "cross_rf_density": "8 of 11 signals are RF-09+RF-04 compounds. 1 is RF-09+RF-05. 1 involves RF-08 relay context (S009). 1 has no RF cross-compound (S004 standalone Level B agreement denial). RF-09 is structurally embedded in RF-04 DARVO mechanism \u2014 cannot be separated in Phase 2 synthesis."
+  }
+}

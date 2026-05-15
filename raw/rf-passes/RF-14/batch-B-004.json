@@ -1,0 +1,68 @@
+{
+  "batch_id": "B-004",
+  "date_range": {
+    "start": "2022-12-14",
+    "end": "2023-01-18"
+  },
+  "row_range": {
+    "start": 1109,
+    "end": 1479
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 1,
+    "note": "Dec 22-23 2022: Cat-allergy/asthma safety allegation cluster. Melissa refuses to allow Olivia's Christmas visit to Eli's household due to cat (Tahko). 'You've had 11 months to get rid of that damn cat' (ROW-1218). Olivia has documented asthma/allergies and upcoming surgery (ROW-1248, Dec 24). Eli proposes mitigation plan (ROW-1216). Melissa refuses. This IS a genuine allergy concern but is deployed as a blanket access restriction. ARC-RF14-001 first signal \u2014 arc promoted CANDIDATE\u2192WATCHING."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-000",
+      "row_ref": "ROW-1218/1221/1240",
+      "date": "2022-12-22/2022-12-23",
+      "direction": "Received",
+      "severity": 1,
+      "arc": "ARC-RF14-001",
+      "arc_signal_num": 1,
+      "type": "Safety allegation \u2014 household environment",
+      "description": "Melissa refuses Christmas visit citing cat dander/asthma risk: 'You've had 11 months to get rid of that damn cat and make your home safe for her' (ROW-1218); 'I'm not going to have her having an asthma attack on Christmas' (ROW-1221); 'I knew I couldn't ask you to watch her since you refuse to make your home a safe environment for her' (ROW-1240). Eli proposes HEPA filter + basement confinement + thorough cleaning mitigation (ROW-1216). Melissa refuses entirely. Olivia has upcoming surgery (ROW-1248). Genuine allergy concern deployed as absolute access restriction.",
+      "addenda_applied": [
+        "RF14-ADD-001"
+      ],
+      "rf15_compound": "RF-15 peripheral \u2014 access restriction weaponization of genuine health concern; precursor to weaponized-allergy scheme documented in RF-15 B-025"
+    }
+  ],
+  "peripheral_flags": [
+    {
+      "row_ref": "ROW-1218/1221/1240",
+      "type": "RF-15 compound",
+      "note": "Cat-allergy access restriction is precursor to B-025 vaping/asthma weaponization scheme. RF-15 peripheral note."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "RF14-S-000: Cat-allergy safety allegation \u2014 first signal. ARC-RF14-001 promoted CANDIDATE\u2192WATCHING. Arc established: Melissa deploys safety allegations to restrict Eli's parenting time.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No signals",
+      "state": "CANDIDATE"
+    }
+  ]
+}

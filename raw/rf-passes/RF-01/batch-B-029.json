@@ -1,0 +1,46 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-029",
+    "row_range": { "start": 8229, "end": 8403 },
+    "date_range": { "start": "2025-09-13", "end": "2025-10-30" },
+    "message_count": 175,
+    "timezone_note": "Entirely EDT (UTC-4). DST fall-back Nov 2, 2025 at 2:00 AM EDT (06:00 UTC) occurs after B-029's last message (Oct 30 EDT). RF-02 B-029 date_range.start states Sep 14; RF-01 starts at ROW-8229 (Sep 13 — the row immediately following B-028's last row).",
+    "phase": "B",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "note": "Phase B — visit refusal cascade continues but RF-01 content is sparse. Predominantly Eli-sent. Received messages are routine coordination. Sep 19 police threat (ROW-8261) is RF-05 territory. No RF-01 primary signals."
+  },
+
+  "primary_flags": [],
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B029-P001",
+      "row": "ROW-8261",
+      "date": "2025-09-19",
+      "rf_tags": ["RF-05", "RF-01"],
+      "severity": "peripheral",
+      "summary": "September 19 — 'If you're not there when I get there I'm calling the police' (ROW-8261). RF-05 primary (intimidation/threat — threatening police involvement over a scheduling dispute). RF-01 peripheral: the police threat, if followed through and reported to Olivia, could function as an inadequate-father narrative element (Eli characterized to Olivia as someone requiring police involvement). Context: pickup timing dispute. Note for attorney: subsequent messages (ROW-8268 'Stop fucking texting me') escalate the same dispute. No RF-01 primary threshold met."
+    }
+  ],
+
+  "peripheral_flag_count": 1,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "signal_count": 27,
+      "notes": "B-029 produces no RF-01 primary signals. 175 messages (Sep 13 – Oct 30 2025) — Received messages sparse and predominantly routine. Visit refusal cascade continues in RF-02 but RF-01 delivery mechanism (ADD-004 complaint relay) is absent in B-029. Oct 2025 is cooperative overall: school coordination, birthday parties (ROW-8296-8297), Halloween coordination (ROW-8402-8403)."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Predominantly cooperative and Eli-sent. Received messages limited to routine coordination. Sep 14 (ROW-8232-8238): cooperative childcare request (Janette colonoscopy). Sep 19 (ROW-8261/8268): brief escalation around pickup timing and police threat; resolved. Sep 24 (ROW-8272): Olivia knee update — cooperative. Sep 28-30 (ROW-8286-8297): routine and birthday party coordination. Oct 2-27: routine coordination. Oct 24 (ROW-8350-8365): friend's birthday party logistics — cooperative. Oct 27-29 (ROW-8392-8401): Olivia's phone/homework routine.",
+    "police_threat_note": "ROW-8261 (Sep 19): 'If you're not there when I get there I'm calling the police' — triggered by pickup timing dispute. Part of the ongoing pattern of Melissa using institutional threat as escalation tactic (RF-05). ROW-8268 (Sep 19): 'Stop fucking texting me' — same dispute.",
+    "halloween_note": "ROW-8402-8403 (Oct 29-30): Halloween logistics — 'Does she have black pants or leggings? / We are here. 8:30 drop off as we planned.' Cooperative. No RF-01 indicators."
+  }
+}

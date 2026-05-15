@@ -1,0 +1,53 @@
+{
+  "batch_id": "B-030",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2025-12-16",
+    "end": "2026-04-07"
+  },
+  "row_range": {
+    "start": 14921,
+    "end": 15539
+  },
+  "message_count": 501,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 10,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Feb 2026: 1 primary RF-09 signal. S011 Sev-2 \u2014 Feb 15 amplification sequence, Level C. Final arc signal. Arc ACTIVE unresolved at dataset close (11 signals)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B030-001",
+      "signal_id": "S011",
+      "severity": 2,
+      "date": "2026-02-15",
+      "row_ref": "ROW-15098-15175",
+      "direction": "received",
+      "evidence_level": "C",
+      "type": "admitted_fact_amplification_sequence_event_rewrite",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-003"
+      ],
+      "compound_pattern": "COMP-RF09-008",
+      "cross_rf": "RF-04 (COMP-RF04-029 Feb 15 amplification B-030; ARC-RF04-001 signal)",
+      "message_text": "Feb 15 2026 amplification sequence: Eli admitted raising voice \u2192 Melissa's framing: verbal abuse \u2192 traumatized child \u2192 drinking problem \u2192 ongoing alcoholism allegation",
+      "summary": "Feb 2026: Melissa amplifies an admitted fact (Eli raising his voice during a domestic argument while Olivia was present) through a sustained escalation sequence into qualitatively different characterizations. Admitted fact: Eli raised his voice during an argument (Feb 15 2026). Amplification sequence documented in RF-04 COMP-RF04-029: (1) raised voice acknowledged \u2192 (2) reframed as 'verbal abuse' \u2192 (3) 'traumatized child' framing \u2192 (4) 'drinking problem' characterization \u2192 (5) sustained 'alcoholism' allegation deployed through Apr 5 2026 (ongoing visit-refusal engine). Evidence Level C per ADD-001: event rewrite \u2014 the admitted fact (raised voice) is qualitatively different from the amplified characterizations (verbal abuse, traumatized, alcoholism). Sev-2 elevation: the amplification produces a sustained visit-refusal justification that drives Phase C behavior through dataset close. ADD-001 Sev-2 criteria: event rewrite of 'significant' event (Level C high-significance) \u2014 this amplification sequence becomes the primary visit-refusal engine in Phase C. Q4 calibration: no prior written statements from Melissa acknowledging Eli had never been physically violent (which would create Level A anchor). This is therefore Level C (not Level A-B). ADD-003 compound: amplification sequence occurs within sustained DARVO cluster (RF-04 B-030 primary) \u2192 RF-09+RF-04 COMP-RF09-008. Note: Eli confirmed the admitted incident at CP2 (Q4). The distortion is not the incident itself but the amplification chain from one admitted incident to alcoholism allegations sustained for 7+ weeks."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S011 signal added; final primary signal; arc unresolved at dataset close",
+      "new_state": "ACTIVE",
+      "signal_count": 11
+    }
+  ]
+}

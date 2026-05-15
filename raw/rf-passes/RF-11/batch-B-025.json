@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-025",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2025-05-05",
+    "end": "2025-06-10"
+  },
+  "row_range": {
+    "start": 9605,
+    "end": 9762
+  },
+  "message_count": 501,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "May\u2013Jun 2025: 'Olivia said you...' harm allegation relay (B-025 RF-04 COMP-RF04-021, RF-08 S007). RF-11 contextual: Olivia positioned as harm reporter. No standalone RF-11 primary flag \u2014 mechanism is RF-08 relay primary."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

@@ -1,0 +1,193 @@
+{
+  "batch_id": "B-012",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2023-11-26", "end": "2024-01-31" },
+  "row_range": { "start": 4053, "end": 4447 },
+  "message_count": 395,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "mixed — cooperative/administrative with two notable RF-04 clusters and one Sev-2 Christmas Eve event",
+    "conflict_ratio": "~0.10",
+    "rf04_activity": "moderate — 3 primary flags including first Sev-2 in several batches; Christmas Eve cluster most significant",
+    "notable_context": "Holiday period (Thanksgiving → Christmas → New Year). Olivia's injured hand (Jan 28, urgent care — sprain). Olivia bullying incident (Aston, Jan 5 — cooperative co-parenting resolution). Calling control admission (Jan 24). ROW-4197 Melissa: 'She can't go to your house' — RF-02 primary. Christmas Day access conflict resolved cooperatively after Christmas Eve attack."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B012-001",
+      "severity": 1,
+      "date": "2023-12-02",
+      "row_ref": "ROW-4072-4079",
+      "type": "child_relay_abby_causal_attribution + false_claim_deflection",
+      "arc_ref": ["ARC-RF04-001", "ARC-RF04-002"],
+      "addenda_applied": [],
+      "summary": "Dec 2 ice skating event. ROW-4072: 'Olivia is upset that Abby led you guys out of the thing last night. She said she didn't get to ice skate.' ROW-4073: 'She said you just follow Abby around and Abby led you to the car.' Child-voiced complaint relayed to deliver Abby-causal-attribution: Abby's control is responsible for Olivia's disappointing experience. Eli defends factually (skates weren't available). ROW-4075: Melissa advances additional false claim — 'She didn't get to see Santa either.' Eli refutes with photo evidence. ROW-4078: Melissa walks back — 'Now she said she did.' ROW-4079: 'That's terrible' — contemptuous dismissal despite proven false claim, without acknowledgment of error. Dual arc: ARC-RF04-001 (Abby-causal-attribution via child relay) and ARC-RF04-002 (child complaint as Abby-exclusion lever).",
+      "verbatim_key_messages": [
+        "ROW-4072 (Received): \"Olivia is upset that Abby led you guys out of the thing last night. She said she didn't get to ice skate\"",
+        "ROW-4073 (Received): \"She said you just follow Abby around and Abby led you to the car\"",
+        "ROW-4074 (Sent): \"They didn't have skates for her. There were people queued for them and no idea how long her size would have taken\"",
+        "ROW-4075 (Received): \"She didn't get to see Santa either\"",
+        "ROW-4076 (Sent): \"Yes she did\"",
+        "ROW-4077 (Sent): \"I have a picture of her with Santa\"",
+        "ROW-4078 (Received): \"Now she said she did\"",
+        "ROW-4079 (Received): \"That's terrible\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B012-002",
+      "severity": 1,
+      "date": "2023-12-13",
+      "row_ref": "ROW-4093",
+      "type": "predation_framing_sixth_instance",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "6th predation framing deployment. ROW-4093: 'So if you and Abby get married my sister would have the same in hers. Daughter/sister in law   Gross' — inserted mid-stream during casual evening exchange (ROW-4092 Olivia relay → ROW-4093 predation comment). New mechanism: marriage-scenario framing emphasizes kinship inappropriateness via hypothetical marriage rather than the 'she was 7/getting ready to turn 8' temporal framing used in instances 1-5. 'Gross' is disgust expression. Prior instances: ROW-937-938 (B-003), ROW-1287 (B-004), ROW-2167/2173 (B-006), ROW-3271 (B-009), ROW-3388 (B-010). RF-15 cross-tag. Pattern note: 6 confirmed deployments across 5 batches; delivery mechanism now diversifying beyond the 'she was 7' factual framing.",
+      "verbatim_key_messages": [
+        "ROW-4093 (Received): \"So if you and Abby get married my sister would have the same in hers. Daughter/sister in law   Gross\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B012-003",
+      "severity": 2,
+      "date": "2023-12-24",
+      "row_ref": "ROW-4175-4184",
+      "type": "contempt_cluster + inadequate_father + abby_causal_attribution_relationship_damage",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "compound": "COMP-RF04-011",
+      "summary": "Christmas Eve sustained contempt attack. Context: Eli proposes picking Olivia up for a movie on Christmas Eve (ROW-4170). Cluster: ROW-4175 'probably be there the majority of the day since you said you weren't going to see her' (historical reframe of Eli's position). ROW-4176: 'You told her you would come then claimed you didn't remember saying that then kept giving excuses' — assigns deceptive memory + excuse-pattern as fixed character traits. ROW-4177: 'you aren't capable of communicating or making a decision' — sweeping cognitive/character incapacity attack. ROW-4181: 'fuck up our plans.' ROW-4183: 'Since you can't grow a pair and stand up for yourself and your daughter' — contemptuous masculinity attack + inadequate-father framing. ROW-4184: 'You let Abby dictate everything which is why your relationship with your daughter isn't very good' — **escalation peak of Abby-causal-attribution arc**: Abby is now directly attributed as cause of damaged parent-child relationship quality (prior B-008: 'it's Abby that's not letting you go'; B-011: 'you're trying to not fight with Abby'; B-012: 'which is why your relationship with your daughter isn't very good'). Compound: RF-04 + RF-01 (Abby-as-obstacle alienation) + RF-05 ('can't grow a pair' — contemptuous character attack).",
+      "verbatim_key_messages": [
+        "ROW-4176 (Received): \"You told her you would come then claimed you didn't remember saying that then kept giving excuses. I told you we weren't doing any of that.\"",
+        "ROW-4177 (Received): \"I tried to include you for her sake but you aren't capable of communicating or making a decision\"",
+        "ROW-4181 (Received): \"I'm not going to have you take her in the middle of the day and fuck up our plans\"",
+        "ROW-4183 (Received): \"Since you can't grow a pair and stand up for yourself and your daughter.\"",
+        "ROW-4184 (Received): \"You let Abby dictate everything which is why your relationship with your daughter isn't very good\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B012-P01",
+      "row_ref": "ROW-4157",
+      "date": "2023-12-22",
+      "type": "child_emotional_lever_mild",
+      "note": "'Olivia said that if she doesn't see you on Christmas she will be upset' — child emotional state relayed as pressure. Mild ARC-RF04-002 adjacent; cooperative intent present. Kept peripheral."
+    },
+    {
+      "flag_id": "RF04-B012-P02",
+      "row_ref": "ROW-4312",
+      "date": "2024-01-10",
+      "type": "inadequate_father_jab",
+      "note": "ROW-4312: 'Or you could be a dad and do homework with her' — contemptuous inadequate-father framing inserted when Eli proposes a drop-off time. Brief; no escalation."
+    },
+    {
+      "flag_id": "RF04-B012-P03",
+      "row_ref": "ROW-4313",
+      "date": "2024-01-11",
+      "type": "child_relay_complaint",
+      "note": "'Olivia keeps going on about how she can't believe you said pussy and that I need to talk to you about it because you're a parent' — child-voiced complaint relay + parental instruction framing. Mild ARC-RF04-002 adjacent."
+    },
+    {
+      "flag_id": "RF04-B012-P04",
+      "row_ref": "ROW-4375",
+      "date": "2024-01-21",
+      "type": "contemptuous_slur",
+      "note": "ROW-4375: 'Bitch what' — contemptuous slur in response to Eli setting a boundary on back-to-back calling. Brief; RF-05 cross-tag primary."
+    },
+    {
+      "flag_id": "RF04-B012-P05",
+      "row_ref": "ROW-4382-4384",
+      "date": "2024-01-24",
+      "type": "cross_rf_admission",
+      "note": "RF-01/RF-02 cross-reference admission (not RF-04 primary): ROW-4382: 'She normally only calls because I ask if she wants to or I just dial you.' ROW-4383: 'I didn't ask her so she didn't call.' Melissa is admitting she controls Olivia's call initiation. Significant for RF-01/RF-02 analysis; noted here as peripheral cross-ref."
+    },
+    {
+      "flag_id": "RF04-B012-P06",
+      "row_ref": "ROW-4392-4393",
+      "date": "2024-01-25",
+      "type": "inadequate_father_contempt",
+      "note": "ROW-4392: 'She has homework that needs done. You able to actually get some homework done?' ROW-4393: 'I don't want excuses as to why you couldn't do it' — preemptive dismissal of any explanation + contemptuous framing of Eli's parenting capability. Peripheral; no escalation."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S30",
+          "batch": "B-012",
+          "date": "2023-12-02",
+          "row": "ROW-4072-4079",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Dec 2 ice skating — child relay Abby-causal-attribution: 'you just follow Abby around and Abby led you to the car.' False Santa claim advanced → proven false → 'That's terrible' dismissal without acknowledgment."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S31",
+          "batch": "B-012",
+          "date": "2023-12-13",
+          "row": "ROW-4093",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "6th predation framing — marriage scenario mechanism: 'So if you and Abby get married my sister would have the same in hers. Daughter/sister in law   Gross.' Casual mid-stream deployment."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S32",
+          "batch": "B-012",
+          "date": "2023-12-24",
+          "row": "ROW-4175-4184",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Christmas Eve contempt cluster Sev-2. 'You aren't capable of communicating or making a decision' + 'can't grow a pair and stand up for yourself and your daughter' + 'You let Abby dictate everything which is why your relationship with your daughter isn't very good.' Escalation peak of Abby-causal-attribution: first explicit attribution of damaged parent-child relationship quality to Abby's influence."
+        }
+      ],
+      "signal_count_after": 32
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S09",
+          "batch": "B-012",
+          "date": "2023-12-02",
+          "row": "ROW-4072-4079",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Dec 2 ice skating — child complaint relay as Abby lever: Olivia's expressed disappointment about Abby leading them out used to deliver Abby-causal-attribution framing. Dual-arc (also ARC-RF04-001-S30)."
+        }
+      ],
+      "signal_count_after": 9
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-011",
+      "batch": "B-012",
+      "date": "2023-12-24",
+      "row_ref": "ROW-4175-4184",
+      "rf_tags": ["RF-04", "RF-01", "RF-05"],
+      "summary": "Christmas Eve cluster: RF-04 (contempt/inadequate-father/Abby-causal-attribution for relationship damage) + RF-01 (Abby-as-obstacle alienation narrative — 'you let Abby dictate everything which is why your relationship with your daughter isn't very good') + RF-05 (contemptuous character attack — 'can't grow a pair'). First explicit Abby-causal-attribution for poor parent-child relationship quality."
+    }
+  ],
+
+  "cp3_item": {
+    "id": "CP3-RF04-012",
+    "batch": "B-012",
+    "summary": "ROW-4093 (Dec 13) — 6th predation framing, new marriage-scenario mechanism ('Daughter/sister in law   Gross'); ROW-4175-4184 (Dec 24) Christmas Eve cluster Sev-2: 'You let Abby dictate everything which is why your relationship with your daughter isn't very good' — most explicit Abby-causes-relationship-damage statement to date; COMP-RF04-011 (RF-04+RF-01+RF-05); ROW-4382-4384 (Jan 24) calling-control admission (RF-01/RF-02 cross-ref); ARC-RF04-001 signals 30-32; ARC-RF04-002 signal 9."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 3,
+    "severity_1": 2,
+    "severity_2": 1,
+    "peripheral_flags": 6,
+    "compound_patterns": 1,
+    "arc_rf04_001_signals_added": 3,
+    "arc_rf04_002_signals_added": 1
+  }
+}

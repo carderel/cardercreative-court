@@ -1,0 +1,54 @@
+{
+  "batch_id": "B-005",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2023-01-18",
+    "end": "2023-02-22"
+  },
+  "row_range": {
+    "start": 1462,
+    "end": 1839
+  },
+  "message_count": 505,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 1,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Jan 2023: 1 primary RF-09 signal. S002 \u2014 DARVO-inversion gaslight accusation. Arc\u2192WATCHING."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B005-001",
+      "signal_id": "S002",
+      "severity": 1,
+      "date": "2023-01-31",
+      "row_ref": "ROW-1715-1722",
+      "direction": "received",
+      "evidence_level": "E",
+      "type": "darvo_inversion_gaslight_accusation",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-003",
+        "ADD-004"
+      ],
+      "compound_pattern": "COMP-RF09-002",
+      "cross_rf": "RF-04 (DARVO cluster B-005 ROW-1715-1789)",
+      "message_text": "So nice try trying to gaslight and place blame",
+      "summary": "Jan 2023: Melissa accuses Eli of gaslighting within a DARVO sequence. ROW-1715-1722 cluster context: Eli seeks clarification or sets a boundary; Melissa responds with DARVO pivot. ROW-1722: 'So nice try trying to gaslight and place blame' \u2014 DARVO inversion: Melissa names gaslighting and projects the accusation onto Eli. This is the first explicit gaslight-accusation in the record. Evidence Level E per ADD-001: reality-questioning language directed at Eli's perception without a specific denied claim and without a cross-referenceable contradiction. Arc transition: 2nd signal \u2192 ARC-RF09-001 CANDIDATE\u2192WATCHING. ADD-004 applied: 2nd 'you're gaslighting' instance; arc escalation tracking. Compound per ADD-003: DARVO sequence (RF-04 primary ROW-1715-1789) includes explicit reality-questioning language against Eli \u2192 RF-09+RF-04 compound."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S002 signal added; arc CANDIDATE\u2192WATCHING",
+      "new_state": "WATCHING",
+      "signal_count": 2
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "batch_id": "B-025",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2025-05-05", "end": "2025-06-10" },
+  "row_range": { "start": 7806, "end": 9762 },
+  "message_count": 337,
+  "phase_boundary": "A/B — this batch spans the Phase A/B transition (triage-designated boundary batch)",
+  "analysis_date": "2026-04-24",
+
+  "batch_notes": "Phase A/B boundary batch per triage. Sequential block ROW-7806-7867 covers May 22-Jun 10; parallel block ROW-9607-9762 covers May 7-Jun 10 with additional unique content. RF-04 primary event at end of batch (Jun 7-8 harm allegation cluster).",
+
+  "batch_summary": {
+    "dominant_tone": "predominantly cooperative with major RF-04+RF-15+RF-11 event at end of batch period; May 5-Jun 6 largely cooperative (counseling disclosure, new partner introduction, logistics, shared parenting positive moments); Jun 7-8 triggers multi-allegation child relay cluster when Olivia returns from Eli's; Abby-as-harmful-actor framing introduced as new vector",
+    "conflict_ratio": "~0.65 within Jun 7-8 cluster; ~0.08 batch overall",
+    "rf04_activity": "moderate — 1 Sev-2 primary (Jun 7-8 child relay harm allegation cluster); May 27 car-safety fear relay peripheral (ARC-RF04-002); Jun 7-8 adds 'asshole' ADD-002, DARVO, Abby-as-harmful-actor framing, child-harm-fear relay; COMP-RF04-021 (RF-04+RF-15+RF-11)",
+    "notable_context": "May 19: Melissa discloses Olivia has started counseling — cooperative. May 21 minor friction: Melissa sends message 'Cause that seems like something that the two parents should know about / But you do you boo' (ROW-9654-9655) after Eli redirects to text. May 28: New partner discussion — Melissa informs Eli about man she is dating; invokes parenting plan 9-month rule (cooperative). May 27: ROW-9692-9693 — child car-safety fear relay: Olivia asked Melissa to track her location 'cause my dads always crashing his cars' — peripheral ARC-RF04-002 signal. Jun 7-8 cluster (ROW-9735-9751): Olivia returns and Melissa deploys child relay multi-allegation: vaping in front of Olivia (ROW-9735), threatened to pinch (ROW-9735), Abby laughed at coughing (ROW-9736), no dinner given (ROW-9737), Abby pinches Milo (ROW-9738), Olivia 'felt like you were going to hurt her' (ROW-9739), vaping while child has asthma (ROW-9744), 'asshole' Abby-causal-attribution (ROW-9750), DARVO dismissal (ROW-9751). New Abby-as-harmful-actor vector established."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B025-001",
+      "severity": 2,
+      "date": "2025-06-07",
+      "row_ref": "ROW-9735-9751",
+      "type": "child_relay_harm_allegation_cluster + ADD-002_slur + DARVO + abby_as_harmful_actor",
+      "arc_ref": "ARC-RF04-001, ARC-RF04-002",
+      "addenda_applied": ["ADD-002"],
+      "compound_pattern": "COMP-RF04-021",
+      "summary": "Jun 7-8 child relay harm allegation cluster. Context: Olivia returns from Eli's on Saturday and Melissa relays multi-allegation harm report. ROW-9735: 'Olivia said you vaped in front of her and threatened to pinch her' — two-allegation delivery: (1) vaping exposure (child has asthma per ROW-9744); (2) physical threat allegation ('threatened to pinch her'). ROW-9736: 'She said that Abby laughed at her for coughing' — Abby-as-harmful-actor framing; Abby positioned as deriving satisfaction from child's respiratory distress. ROW-9737: 'And you didn't give her dinner' — parenting inadequacy allegation. ROW-9738: 'And Abby pinches Milo' — Abby physical conduct toward Milo introduced as corroborating context for Abby-harm framing. ROW-9739: 'She said she felt like you were going to hurt her cause I asked if you were just joking. That's when she said that she thought you'd do it because Abby does it.' — child's fear of harm by Eli escalated and anchored to Abby as behavioral model ('because Abby does it'); links alleged threat behavior to existing Abby-pinching characterization. ROW-9744: 'Normal parenting choices should not involve threatening to hurt her and making her scared or valing around her when she has asthma.' — parenting judgment framing; 'making her scared' escalates from allegation to characterization. ROW-9750: 'You and Abby must be arguing cause you act like an asshole everytime you are' — ADD-002 slur ('asshole') + Abby-causal-attribution: Eli's conduct reframed as Abby-conflict spillover. ROW-9751: 'I never said Abby abused anyone. I simply told you what Olivia said so that you knew and could respond. Seems like you are very defensive for someone who didn't do any wrong.' — DARVO: Eli's denial of allegations reframed as suspicious defensiveness. COMP-RF04-021 (RF-04+RF-15+RF-11). ARC-RF04-001-S60; ARC-RF04-002-S19. Continuation of physical-harm allegation trajectory: Sep 15 choking claim (B-019) → Oct 3 DV false allegation (B-019) → Jun 7 vaping+threat+harm-fear relay (B-025).",
+      "verbatim_key_messages": [
+        "ROW-9735 (Received): \"Olivia said you vaped in front of her and threatened to pinch her\"",
+        "ROW-9736 (Received): \"She said that Abby laughed at her for coughing\"",
+        "ROW-9739 (Received): \"She said she felt like you were going to hurt her cause I asked if you were just joking. That's when she said that she thought you'd do it because Abby does it.\"",
+        "ROW-9744 (Received): \"Normal parenting choices should not involve threatening to hurt her and making her scared or valing around her when she has asthma.\"",
+        "ROW-9750 (Received): \"You and Abby must be arguing cause you act like an asshole everytime you are\"",
+        "ROW-9751 (Received): \"I never said Abby abused anyone. I simply told you what Olivia said so that you knew and could respond. Seems like you are very defensive for someone who didn't do any wrong.\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B025-P01",
+      "row_ref": "ROW-9692-9693",
+      "date": "2025-05-27",
+      "type": "child_safety_fear_relay",
+      "arc_ref": "ARC-RF04-002-S19_adjacent",
+      "note": "ROW-9692: 'She said cause my dads always crashing his cars and I wanted to make sure you could see where I was' — Melissa relays Olivia's request for location tracking; 'always crashing his cars' mischaracterizes two accidents Eli states were not his fault (ROW-7824: 'I was hit and neither were my fault'). ROW-9693: 'She was afraid you were going to wreck your car with her in it' — child's safety fear relayed as unsafe-driver framing. Pattern-note: car-danger framing is distinct from prior physical harm vectors; watch for recurrence in later batches."
+    },
+    {
+      "flag_id": "RF04-B025-P02",
+      "row_ref": "ROW-9654-9655",
+      "date": "2025-05-21",
+      "type": "contemptuous_dismissal_brief",
+      "note": "ROW-9654: 'Cause that seems like something that the two parents should know about' — parenting-expectation assertion after Eli redirected Melissa to text. ROW-9655: 'But you do you boo' — contemptuous dismissal phrase; low-severity standalone. No escalation."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S60",
+          "batch": "B-025",
+          "date": "2025-06-07",
+          "row": "ROW-9735-9751",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Jun 7-8 child relay harm allegation cluster: vaping + physical threat + Abby-laughing-at-coughing + no dinner + Abby-pinches-Milo (ROW-9735-9738) + Olivia 'felt like you were going to hurt her / because Abby does it' (ROW-9739) + 'asshole' ADD-002 + Abby-causal-attribution (ROW-9750) + DARVO 'very defensive for someone who didn't do any wrong' (ROW-9751). COMP-RF04-021 (RF-04+RF-15+RF-11). Physical-harm allegation trajectory: choking claim B-019 → vaping/threat/harm-fear relay B-025."
+        }
+      ],
+      "signal_count_after": 60
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S19",
+          "batch": "B-025",
+          "date": "2025-06-07",
+          "row": "ROW-9735-9739",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Child used as harm-allegation delivery vehicle: Olivia's reported experiences (vaping, threat, fear) relayed through Melissa; escalates with Olivia's fear framing ('felt like you were going to hurt her') and Abby-behavioral-model linking ('because Abby does it'). Child's stated emotional state weaponized as harm corroboration. ARC-RF04-001-S60 overlap."
+        }
+      ],
+      "signal_count_after": 19
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-021",
+      "date": "2025-06-07",
+      "row_ref": "ROW-9735-9751",
+      "rf_combination": ["RF-04", "RF-15", "RF-11"],
+      "summary": "RF-04 (Emotional Manipulation) + RF-15 (False Allegations) + RF-11 (Inappropriate Child Involvement): RF-04 (Sev-2: multi-allegation child relay as emotional manipulation weapon; Abby-as-harmful-actor framing; ADD-002 'asshole' ROW-9750; DARVO ROW-9751; ARC-RF04-001-S60; ARC-RF04-002-S19) + RF-15 (vaping exposure + physical threat + harm-fear allegations relayed through child; 'felt like you were going to hurt her'; DARVO ROW-9751 — Eli's denial reframed as suspicious defensiveness) + RF-11 (Olivia positioned as harm-reporter; child's stated fear amplified and weaponized; Abby-behavioral-model linking places Olivia in role of verifying Eli/Abby conduct). Structural parallel: COMP-RF04-017 (B-019 Sep 15 choking claim, RF-04+RF-15+RF-11). New elements: (1) Abby-as-harmful-actor framing extends to Abby pinching/laughing-at-distress; (2) vaping-as-harm vector (child has asthma); (3) 'thought you'd do it because Abby does it' links Eli's alleged threat to Abby's established conduct.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001-S60", "ARC-RF04-002-S19"]
+    }
+  ],
+
+  "cp3_item": {
+    "cp3_id": "CP3-RF04-025",
+    "batch": "B-025",
+    "type": "pattern_escalation",
+    "priority": "high",
+    "summary": "Jun 7-8 COMP-RF04-021 (RF-04+RF-15+RF-11): Sev-2 child relay harm allegation cluster. Notable for: (1) Physical-harm allegation trajectory continues: Sep 15 B-019 choking → Jun 7 B-025 vaping/threat/harm-fear — 9 months later, same mechanism (child relay post-Eli-custody), new modalities; (2) NEW Abby-as-harmful-actor vector: 'Abby laughed at her for coughing' + 'Abby pinches Milo' + 'thought you'd do it because Abby does it' — first time Abby is framed as the behavioral model for Eli's alleged harm rather than as obstacle/predatory-relationship subject; (3) May 27 car-safety fear relay (ROW-9692-9693): Olivia asking for location tracking because 'dad always crashing his cars' — new vehicle-danger framing sub-pattern; watch for recurrence; (4) B-025 is Phase A/B boundary batch — this cluster may indicate trajectory shift toward more severe harm-allegation pattern in Phase B."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 1,
+    "severity_1": 0,
+    "severity_2": 1,
+    "severity_3": 0,
+    "peripheral_flags": 2,
+    "compound_patterns": 1,
+    "arc_rf04_001_signals_added": 1,
+    "arc_rf04_002_signals_added": 1
+  }
+}

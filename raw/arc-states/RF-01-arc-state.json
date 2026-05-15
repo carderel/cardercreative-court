@@ -1,0 +1,304 @@
+{
+  "arc_state_metadata": {
+    "rf_pass": "RF-01",
+    "last_updated_batch": "B-031",
+    "last_updated_timestamp": "2026-04-23",
+    "total_active_arcs": 1,
+    "total_watching_arcs": 0,
+    "total_candidate_arcs": 0,
+    "total_resolved_arcs": 0,
+    "total_compound_patterns": 1
+  },
+
+  "active_arcs": [
+    {
+      "arc_id": "ARC-RF01-001",
+      "arc_name": "Abandonment/Blame Attribution Narrative",
+      "status": "active",
+      "primary_rf": "RF-01",
+      "promoted_to_watching_batch": "B-001",
+      "promoted_to_active_batch": "B-002",
+      "promoted_to_watching_reason": "CP2 calibration confirmed the pattern is not emerging — it has been ongoing since the beginning of the divorce (Eli: 'this has been ongoing since day one'). Olivia has expressed abandonment language directly to Eli in person, by phone, and via Melissa. Melissa has repeatedly stated in front of Olivia that Eli 'left to start a new family.' Two confirmed post-calibration signals in B-001, including one Sev 2. Cross-household authority override confirmed as recurring. Pattern is established; WATCHING status appropriate going into B-002.",
+      "signal_count": 27,
+      "last_signal_batch": "B-028",
+      "last_signal_date": "2025-08-28",
+      "first_signal_date": "2022-08-29",
+      "signals": [
+        {
+          "signal_ref": "RF01-B001-S001",
+          "batch": "B-001",
+          "date": "2022-08-29",
+          "row": "ROW-43",
+          "severity": 1,
+          "calibration_status": "confirmed",
+          "summary": "Church incident: Melissa uses Olivia's account to challenge Eli's parenting; Olivia invokes 'my mom said' to override Eli during his custodial time — confirmed as recurring pattern"
+        },
+        {
+          "signal_ref": "RF01-B001-S003",
+          "batch": "B-001",
+          "date": "2022-10-02",
+          "row": "ROW-361-363",
+          "severity": 2,
+          "calibration_status": "elevated",
+          "summary": "Savage Love / 'My dad when he left me' — elevated to Sev 2; confirmed coached abandonment narrative maintained by Melissa since divorce filing"
+        },
+        {
+          "signal_ref": "RF01-B002-S001",
+          "batch": "B-002",
+          "date": "2022-10-31",
+          "row": "ROW-619-621",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Halloween: 'We don't need you / She deserves a better dad' — first explicit written documentation of inadequate-father narrative; Abby attack vector activated"
+        },
+        {
+          "signal_ref": "RF01-B002-S002",
+          "batch": "B-002",
+          "date": "2022-10-31",
+          "row": "ROW-635-656",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Halloween sustained cluster: 'Clear who you prefer / My biggest issue is you don't prioritize Olivia / Your daughter is begging you to go' — Abby/Milo comparison; Olivia's emotional state weaponized; Eli's arrival contradicts narrative"
+        },
+        {
+          "signal_ref": "RF01-B003-S001",
+          "batch": "B-003",
+          "date": "2022-12-07",
+          "row": "ROW-1056-1059",
+          "severity": 1,
+          "calibration_status": "confirmed",
+          "summary": "Dec 7 late dropoff: 'It's not good parenting / went clear across town to take Abby home when it would've been quicker all the way [to Melissa's]' — third written Abby-prioritization-over-Olivia instance; Olivia's physical discomfort relayed as evidence of parental inadequacy"
+        },
+        {
+          "signal_ref": "RF01-B004-S001",
+          "batch": "B-004",
+          "date": "2022-12-28",
+          "row": "ROW-1285-1288",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Surgery morning: 'she is your kid and he's not' + 'Milo need to go to a specialist cause he has an uncle/dad' — most explicit written statement of real-daughter vs. not-your-child abandonment framing; uncle/dad inappropriate-relationship sarcasm; Eli was in fact attempting to attend surgery (directly contradicts Melissa's narrative)"
+        },
+        {
+          "signal_ref": "RF01-B006-S001",
+          "batch": "B-006",
+          "date": "2023-02-23",
+          "row": "ROW-1881-1884",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Math homework incident: 'You waltz in and pick her up for 2.5 hours a week and think that you're a great dad / News flash. You're a horrible father / I shouldn't have called you a dumbass in front of her but you're such a shit dad that it slipped out' — written admission of calling Eli names in front of Olivia; next morning ROW-1889 Olivia asked 'if it was her fault'"
+        },
+        {
+          "signal_ref": "RF01-B006-S002",
+          "batch": "B-006",
+          "date": "2023-03-31",
+          "row": "ROW-2168-2192",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Mar 30-31 escalation: 'I choose to be single because I have a daughter to take care of. Something you wouldn't know about' + 'You're not a good father' + third false allegation invocation ('his niece / a girl he met when she was 7') + 'You committed adultery and continue to do so' — full written iteration of the inadequate-father/moral-failure narrative cluster"
+        },
+        {
+          "signal_ref": "RF01-B007-S001",
+          "batch": "B-007",
+          "date": "2023-04-21 to 2023-04-28",
+          "row": "ROW-2373-2409",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Apr 21-28 Abby exclusion campaign: Melissa characterizes Abby as 'bitch/whore' (ROW-2373), relays Olivia 'crying' and wanting Abby excluded (ROW-2379), then Apr 27-28 conditions pickup on Abby's absence using Olivia's 'adamant' refusal (ROW-2399), claiming 'that was her making that plan all on her own' (ROW-2408). First instance of Eli's custodial contact conditioned on Abby's exclusion via Olivia's voiced preferences — Abby attack vector fully operationalized"
+        },
+        {
+          "signal_ref": "RF01-B008-S001",
+          "batch": "B-008",
+          "date": "2023-07-14",
+          "row": "ROW-2924-2940",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Olivia's birthday: 'Can't even eat dinner with your daughter on her bday as she's begging you' + 'You've never asked to do anything with her' + 'We all know it's Abby that's not letting you go because she is insecure and immature' + 'You should dump her and date an honest person that will support your relationship with your daughter' + 'You're a shit dad.' First written statement explicitly attributing Eli's absence to Abby's control — 'Abby as obstacle' framing replacing/supplementing 'Abby harms Olivia directly'"
+        },
+        {
+          "signal_ref": "RF01-B009-S001",
+          "batch": "B-009",
+          "date": "2023-07-29 to 2023-07-31",
+          "row": "ROW-3127-3158",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Vaping incident: Melissa frames Eli as lying to Olivia ('Don't lie to her. She doesn't deserve that'); channels Olivia's anger at Eli for two days; ROW-3151 contains direct gatekeeping admission: 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days.' Olivia demands apology 'not a fake one either' mediated by Melissa (ROW-3158) — untrustworthy/dishonest-father framing + structural admission of communication gatekeeping"
+        },
+        {
+          "signal_ref": "RF01-B010-S001",
+          "batch": "B-010",
+          "date": "2023-09-26",
+          "row": "ROW-3629-3630",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Sep 26 predatory-implication cluster: 'You miss out on seeing her all the time.' (ROW-3629) followed by 'Quit when she quit. I really hope you weren't just making yourself available because there were young girls there.' (ROW-3630) — explicit written implication that Eli's attendance at Olivia's cheer activities was motivated by predatory interest in other children rather than Olivia. Most serious false allegation variant to date; escalates Abby attack vector into direct character assassination framing Eli as a danger to children"
+        },
+        {
+          "signal_ref": "RF01-B012-S001",
+          "batch": "B-012",
+          "date": "2023-12-02",
+          "row": "ROW-4073-4080",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Dec 2 Christmas event: Melissa relays Olivia's account that Abby controlled the family's departure — 'She said you just follow Abby around and Abby led you to the car' (ROW-4074). Olivia also reported missing ice skating and Santa; Eli corrects both (no skates in her size; sends Santa photo ROW-4078). Melissa acknowledges Santa error ('Now she said she did,' ROW-4079) but does not address or retract the Abby-control attribution. ADD-001 (Abby-as-controller framing presented as fact) + ADD-004 (Olivia's distress relayed as parental inadequacy evidence)"
+        },
+        {
+          "signal_ref": "RF01-B012-S002",
+          "batch": "B-012",
+          "date": "2023-12-24",
+          "row": "ROW-4177-4185",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Christmas Eve sustained cluster: 'You let Abby dictate everything which is why your relationship with your daughter isn't very good' (ROW-4185) + 'Since you can't grow a pair and stand up for yourself and your daughter' (ROW-4184) + 'you aren't capable of communicating or making a decision' (ROW-4178). Most explicit causal statement to date: Abby directly cited as reason Eli's relationship with Olivia 'isn't very good.' ADD-001 (Abby-as-controller) + ADD-002 (inadequate father framing). Third seasonal-holiday trigger (Halloween 2022, Christmas Eve 2023)"
+        },
+        {
+          "signal_ref": "RF01-B013-S001",
+          "batch": "B-013",
+          "date": "2024-03-17",
+          "row": "ROW-4792-4801",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "Mar 17 phone call escalation: 'She tells me about how it hurts her that you don't have time for her' (ROW-4794) — systemic statement that Olivia regularly confides in Melissa about Eli's chronic unavailability; 'your selfish self fucked up' (ROW-4795); 'Quit playing with her feelings' (ROW-4799); 'Such a worthless dick' (ROW-4801). ADD-004 (Olivia's emotional pain as systemic parental inadequacy evidence — not episodic but recurring) + ADD-002 (inadequate/selfish/worthless father framing). Melissa positions herself as repository for Olivia's ongoing hurt about Eli's time."
+        },
+        {
+          "signal_ref": "RF01-B015-S001",
+          "batch": "B-015",
+          "date": "2024-05-14",
+          "row": "ROW-5301-5316",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "May 14 escalating attack cluster — most extreme single-flag escalation in the record. Context: summer childcare discussion. ROW-5301: 'I'm way more comfortable with her spending a whole day with them than you' — direct written statement Melissa trusts third parties over Eli as Olivia's caregiver. ROW-5303: 'That's also really concerning that you don't trust yourself either' — implies Eli self-aware as danger to daughter. ROW-5306-5308: numbered 'reservations about her staying with you' — '1. You chose a cat over your daughter / 2. You have the ability to see her but choose to do so for about 3 hours a week' (ADD-002). ROW-5309-5316: full sexual assault narrative: alleges Eli deliberately intoxicated Abby, stood over her with breast exposed, may have raped her, may have been a prior rapist who exploited her known prior sexual trauma to silence her. ADD-002 + ADD-005. Escalates predatory-father arc component from oblique implication (B-010, ROW-3629-3630) to constructed rape narrative. RF-15 heavily implicated."
+        },
+        {
+          "signal_ref": "RF01-B016-S001",
+          "batch": "B-016",
+          "date": "2024-06-30",
+          "row": "ROW-5862",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "June 30 — Most explicit incest-framing of Eli/Abby relationship in the record. Context: Eli expressed concern about Olivia visiting Melissa's seriously ill father in hospital. Melissa: 'I'm not taking parenting advice from someone who raised a kid that has no morals, no sense of right and wrong, seeks attention without regard for others, is a liar, makes false allegations and doesn't know that she shouldn't fuck her uncle.' ADD-001 (Abby attack vector — full character assassination using 'raised a kid' to tie Eli's parenting judgment to Abby's alleged moral failures) + ADD-005 (uncle/niece incest framing — most sexually explicit iteration in the record). Characterization of Abby as making 'false allegations' is ironic given B-015 rape narrative. RF-15 implicated."
+        },
+        {
+          "signal_ref": "RF01-B017-S001",
+          "batch": "B-017",
+          "date": "2024-08-04",
+          "row": "ROW-6282-6524",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "August 4 — Most sustained single-day inadequate-father attack in the record. 80+ messages: 'I can't understand why you have shared custody since you do nothing for her' (ROW-6287); 'Your answers are good evidence to show the court as to why you shouldn't have custody' (ROW-6290); 'You don't act like a father at all / You grump at her all the time' (ROW-6296-6298); 'I'm going to show these messages to the lawyer and file for sole custody' (ROW-6312); 'She is all sad cause she was looking forward to seeing you / You let her down once again' (ROW-6324-6325 — ADD-004); '2.5 hours a week sometimes skipping a week' (ROW-6344 — fourth written iteration); 'walked out of her life like nothing' (ROW-6514 — abandonment arc core); 'I try to overcompensate for your shortcomings' (ROW-6524). ADD-002 sustained multi-cluster + ADD-004. Third consecutive batch with primary signal (B-015, B-016, B-017)."
+        },
+        {
+          "signal_ref": "RF01-B018-S001",
+          "batch": "B-018",
+          "date": "2024-08-20",
+          "row": "ROW-6783-6831",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "August 19-20 — Inadequate-father cluster triggered by Eli's 12-minute school supply drop-off visit and child support payment delay. Key elements: ROW-6783-6784 'Feels like you just wanted to make an appearance to look involved / Without actually being involved' (motivational attack on school visit); ROW-6795-6831 sustained ADD-002 cluster quantifying Eli's 12-minute visit as evidence of inadequacy; ROW-6811 'You had no clue who her teacher was, what her bus schedule or number was or what PowerSchool even was'; ROW-6814 'You can bust your ass all you want when it amounts to 12 minutes does it really matter?'; CRITICAL ROW-6819: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me' — first explicit written admission of coaching Olivia's conversations with Eli (scripting content, directing conversations, cueing recall); ROW-6824 'your lack of attention to her and making her low priority leads to difficulty connecting with you' (ADD-002 + ADD-004); ROW-6829-6830 Olivia's reported video game sounds + Abby/Milo presence during calls weaponized (ADD-004 + ADD-001). ROW-6819 coaching admission creates the structural loop: Melissa scripts Olivia's conversations with Eli then cites Olivia's reliance on Melissa as intermediary as evidence of Eli's failure to connect."
+        },
+        {
+          "signal_ref": "RF01-B019-S001",
+          "batch": "B-019",
+          "date": "2024-09-05",
+          "row": "ROW-6953-7023",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "September 5 — Bike riding/staph cluster with pregnancy incompetence attacks. ROW-6971: 'How are you having another kid when you have no clue how to parent?' (ADD-002 + ADD-001 — fifth reference to Abby's pregnancy as attack vector); ROW-6976: 'I feel bad for Milo and that poor unborn child' (ADD-001 — Alice not yet born; Milo and Alice extended as targets of Eli's inadequate parenting); ROW-6985: 'You're such a dumbass'; ROW-7015: 'I don't know how you're going to have another kid when you don't understand the basics of protection and cleaning wounds'; ROW-7017: 'I mean I am questioning your parenting skills.' Trigger: Olivia got a calf scratch during bike riding without training wheels; Eli had helmet on her and used antibiotic bandage. Attack disproportionate to trigger."
+        },
+        {
+          "signal_ref": "RF01-B019-S002",
+          "batch": "B-019",
+          "date": "2024-09-14",
+          "row": "ROW-7161-7170",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "September 14 — Physical harm allegations relayed via Olivia; Alice used as concern extension. Alice born approximately Sep 11-12 (within days of this cluster). ROW-7163: arm twisting allegation; ROW-7164: 'she said that you choked her and she couldn't breathe for a bit' (most serious physical allegation in the record); ROW-7165-7166: Olivia's 'worry' that Eli will harm Alice; ROW-7168: Melissa alleges Eli 'used to physically harm me too' (first personal physical harm allegation in the record). ADD-004 + ADD-005. Cluster uses Olivia as (1) alleged victim, (2) source, (3) vehicle for Alice safety concern. Physical harm narrative restated Oct 2 at ROW-7364-7366."
+        },
+        {
+          "signal_ref": "RF01-B019-S003",
+          "batch": "B-019",
+          "date": "2024-10-02",
+          "row": "ROW-7325-7490",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "October 2 — 165-message comprehensive inadequate-father dump. Key nodes: ROW-7332 Olivia's contrary account relayed to challenge Eli's observation (ADD-004); ROW-7348 'This coming from the guy that regularly tells her that her mom is crazy' (ADD-005 — unsubstantiated counter-allegation); ROW-7364 restatement of Alice safety concern; ROW-7365 'I have first hand experience with that cause you used to physically harm me too' (ADD-005); ROW-7367 'Did you tell the Dr you made her a new sister/cousin' (ADD-001 — incest framing of Alice); ROW-7459 'You walked out on her' (abandonment arc — fourth written iteration); ROW-7460 'She sees you raising another family while giving her no time' (ADD-001); ROW-7461 CUSTODY STRATEGY ACKNOWLEDGMENT: 'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody'; ROW-7478 THIRD GATEKEEPING ADMISSION: 'I used to ask her if she wanted to call you in the mornings to keep communication going'. ADD-002 + ADD-001 + ADD-004 + ADD-005."
+        },
+        {
+          "signal_ref": "RF01-B020-S001",
+          "batch": "B-020",
+          "date": "2024-11-18",
+          "row": "ROW-7624-7678",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "November 17-18 — Parenting-competence cluster triggered by Olivia's picky eating during a 2-hour dinner visit. ADD-002 sustained: ROW-7624 'Are you not able to parent for 2 hrs'; ROW-7625 'Be a parent'; ROW-7636 'She is at your house. You should be able to parent'; ROW-7638 'Do I need to come do what you should be doing?' (ADD-003 — cross-household override offer; most explicit in Phase A); ROW-7654 'She's with me more because you make no time for her'; ROW-7671 'You need to be a parent'; ROW-7678 'Are you going to give her dinner or send her home without eating again?' (next-day extension). Eli did handle the situation; framing contradicts his actual behavior."
+        },
+        {
+          "signal_ref": "RF01-B022-S001",
+          "batch": "B-022",
+          "date": "2025-01-15",
+          "row": "ROW-7714-7749",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "January 15 — 36-message escalation around pickup cancellation. ADD-002 core: ROW-7726 'You are completely useless as a father... not a soerm donor cause that's mostly what you are at this point. You have no fatherly instincts' — first 'sperm donor' characterization in the record; escalates inadequate-father framing to categorical denial of Eli's parental status. ROW-7727 'She deserves so much better.' ROW-7731 'couple hours every week or every other week and you tell her to go play Roblox with Milo instead of spending time with her' (ADD-002 + ADD-001). ROW-7745-7747 'breaking her heart all the time' (ADD-002). ADD-004: ROW-7748 'Olivia is currently at Janette's house crying cause you cancelled last minute.' Context: real access conflict (Eli communicated pickup conditions to Olivia, not Melissa; ROW-7742); response disproportionate."
+        },
+        {
+          "signal_ref": "RF01-B022-S002",
+          "batch": "B-022",
+          "date": "2025-02-04",
+          "row": "ROW-7751-7753",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "February 4 — Abandonment arc relay via Olivia's reported question. ROW-7752: 'Last night as we are going to bed she asked why you used to visit everyday and now you barely do' — ADD-004; Olivia's question relays the abandonment arc's core premise (Eli once present, now absent) through the child's own voice. Structurally suspect given ROW-6819 coaching admission. ROW-7753: Milo/Olivia eating-competition friction relayed via Olivia (ADD-001). First explicit abandonment-arc relay using Olivia's reported speech in Phase B."
+        },
+        {
+          "signal_ref": "RF01-B026-S001",
+          "batch": "B-026",
+          "date": "2025-06-13",
+          "row": "ROW-7873-7878",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "June 13 — Incest-framing cluster triggered by Eli enforcing parenting plan 9-month significant-other rule. ADD-001: ROW-7873 'How was that different than you and Abby besides it being more fucked uo that it's her niece' — incest attack as deflection from parenting plan issue. ADD-005: 'it's her niece / her cousin.' ADD-004 new escalation: ROW-7877 'It's more fucked uo to see your dad dating your cousin. That's more confusing. That's my dad and my cousin why are they making out' — first use of Olivia's imagined first-person voice to deliver incest characterization; Melissa attributes to Olivia the internal experience of watching her dad date her cousin. Prior incest iterations (B-004, B-006, B-016) were Melissa's own characterizations; this instance implicates Olivia as observer of harm."
+        },
+        {
+          "signal_ref": "RF01-B028-S001",
+          "batch": "B-028",
+          "date": "2025-08-24 to 2025-08-28",
+          "row": "ROW-8127-8177",
+          "severity": 2,
+          "calibration_status": "confirmed",
+          "summary": "August 24-28 — Visit refusal cascade with ADD-004 comprehensive complaint relay. First multi-day visit refusal in the record. Sequence: Melissa signals Olivia's preference (Aug 24 ROW-8127) → Olivia characterized as 'adamant' (Aug 27 ROW-8131) → Olivia's Abby complaint relayed (Aug 27 ROW-8139: 'She said all you do is follow Abby around and not let them do anything then leave' — ADD-001; first iteration of this attack vector in Olivia's alleged voice rather than Melissa's own) → visit enforcement resistance ('drag her out,' ROW-8148-8149 Aug 28) → comprehensive complaint list (Aug 28 ROW-8177: 'She has trouble sleeping there, Milo and her fight too much, you dont have food she likes, she doesn't feel like she has space since her room is now Alice's room and covered in baby stuff, you only let her go in certain parts of the house and it's boring there. She just doesn't like it.' — most extensive ADD-004 relay in the record, touching every prior Melissa attack vector in Olivia's reported voice). ADD-002 explicit: ROW-8161 'Your refusal to provide a healthy home was your refusal to be a consistent or proper parent'; ROW-8162 'Once the cats were gone I don't know why you still never chose to see her and your visitations have been very inconsistent sometimes going weeks between' (abandonment arc extension). Structurally significant: visit refusal functions as RF-01 delivery mechanism — Olivia's refusal rationale becomes the vehicle for the inadequate-home/inadequate-father narrative. ROW-6819 coaching admission context makes the comprehensiveness and specificity of the complaint list suspect."
+        }
+      ],
+      "dismissed_signals": [
+        {
+          "signal_ref": "RF01-B001-S002",
+          "batch": "B-001",
+          "date": "2022-09-27",
+          "row": "ROW-292-293",
+          "dismiss_reason": "CP2: twerking context is a family inside joke since Olivia was ~2 years old. 'You taught her that' in this specific instance is not a genuine negative behavior attribution. Pattern type remains valid for future batches."
+        }
+      ],
+      "compound_pattern_note": "RF-01/RF-02 active compound: Halloween contact denial (RF-02 gatekeeping of in-person visit) combined with sustained inadequate-father narrative delivered to Olivia before Eli's arrival (RF-01). Melissa told Olivia Eli was not coming before the evening was over — confirmed by ROW-656 ('begging'). Eli arrived anyway, contradicting the narrative.",
+      "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+      "phase_coverage": "A/B/C (B-001 through B-031)",
+      "notes": "RF-01 PASS COMPLETE. All 31 batches processed. Final count: 27 signals (2 Sev-1, 25 Sev-2). Last signal: RF01-B028-S001 (Aug 24-28, 2025 — visit refusal cascade with comprehensive ADD-004 relay; most extensive child-voice complaint delivery in the record). Post-B-028 Phase C period (B-029-031) shows continued visit refusals (RF-02 primary) but no RF-01 primary signals — Melissa's Received messages in Sep 2025-Mar 2026 are sparse with only 3 peripheral ADD-004/ADD-002 adjacents. Phase C behavioral shift: Melissa lets the physical refusal speak for itself without appended complaint narratives. 20 CP3 items total. Arc remains ACTIVE for Phase 2 synthesis; pattern culminates in the Aug-Nov 2025 visit refusal cascade where Olivia's physical refusal becomes the embodiment of the coached inadequate-father narrative."
+    }
+  ],
+
+  "watching_arcs": [],
+
+  "candidate_arcs": [],
+
+  "resolved_arcs": [],
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF01-001",
+      "pattern_name": "Contact Denial + Abandonment Narrative Delivery",
+      "rfs_involved": ["RF-01", "RF-02"],
+      "arc_refs": ["ARC-RF01-001", "ARC-RF02-001"],
+      "first_detected_batch": "B-002",
+      "description": "Halloween 2022 establishes the compound pattern: Melissa denies in-person contact (RF-02 gatekeeping) and simultaneously delivers the abandonment/inadequate-father narrative to Olivia (RF-01), so that Eli's absence is experienced by Olivia as confirmation of the coached narrative rather than the result of a scheduling conflict. When Olivia's contact is blocked AND she is told 'daddy chose not to come,' Eli cannot correct the narrative through presence.",
+      "status": "active"
+    }
+  ]
+}

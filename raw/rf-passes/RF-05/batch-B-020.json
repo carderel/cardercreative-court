@@ -1,0 +1,42 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-020",
+    "row_range": { "start": 7558, "end": 7705 },
+    "date_range": { "start": "2024-10-19", "end": "2024-12-06" },
+    "message_count": 148,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 148,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 148,
+    "flag_rate": "0.0%"
+  },
+  "flagged_messages": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. No new signals in B-020. Following the Oct 3 mega-cluster (B-019), October-December 2024 shows a behavioral low-density period consistent with the post-major-cluster pattern observed after B-010 (Oct-Nov 2023). RF-04 primary content (Nov 17-18 food-incident parenting judgment cluster) contains no RF-05 legal threats or custody implications."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-020 (Oct-Dec 2024): Zero RF-05 primary flags. Low-density batch (148 messages over ~7 weeks). Legal threat arc pauses following Oct 3 COMP-RF04-018. RF-04 primary is Nov 17-18 food-incident parenting judgment cluster (Sev-1, no legal threat component).",
+    "cross_rf_context": "RF-04 B-020: ARC-RF04-001-S53 (Nov 17-18 parenting judgment, Sev-1). No RF-05 cross-tags in B-020 RF-04 analysis."
+  }
+}

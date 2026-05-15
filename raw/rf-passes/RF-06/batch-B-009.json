@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-009",
+  "date_range": {
+    "start": "2023-07-16",
+    "end": "2023-08-20",
+    "orig_row_start": 2964,
+    "orig_row_end": 3334
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-005: payment pressure Aug 25 2023 (ROW-3378). ADD-008 Sep 2023 deferral context. ARC-RF06-001 Signal 5."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-005",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 5,
+      "date": "2023-08-25",
+      "orig_rows": [
+        "3378"
+      ],
+      "messages": [
+        {
+          "orig_row": "3378",
+          "direction": "Received",
+          "date": "2023-08-25",
+          "text": "Remember to pay for your half of daycare. Current total $180"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 Continuing payment pressure. This batch is the ADD-008 hot period: CP2 confirmed a Sep 2023 payment deferral event (Eli could not pay his half on the due date, deferred until payday). ROW-3378 (Aug 25) is the leading payment demand preceding the deferral. Per ADD-008: evaluate Melissa's response to the Sep 2023 deferral for escalation to RF-06 leverage. ARC-RF06-001 Signal 5.",
+      "addendum_applied": "ADD-008 (Sep 2023 hot period \u2014 payment deferral context)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "WATCHING",
+      "signals_cumulative": 5
+    }
+  ]
+}

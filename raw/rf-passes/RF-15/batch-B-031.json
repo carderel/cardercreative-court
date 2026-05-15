@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-031",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2026-04-08",
+    "end": "2026-04-12"
+  },
+  "row_range": {
+    "start": 11484,
+    "end": 11545
+  },
+  "message_count": 61,
+  "phase": "C",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 15,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B031-001",
+      "date": "2026-04-12",
+      "row_ref": "ROW-15588-15596",
+      "severity": 2,
+      "rf15_category": "D",
+      "direction": "received",
+      "summary": "Bruise welfare check DARVO reversal. Apr 12 2026. ROW-15588: 'Why do you keep trying to make Olivia think I'm abusing her?' \u2014 Eli noticed a bruise on Olivia's forearm, asked what happened, Olivia said she didn't know, Eli noted it looked like a thumb-mark and asked if someone grabbed her arm, Olivia said it might be horseplaying. CP2 Q2: this was an appropriate parental welfare check \u2014 Eli did not press, did not coach, and accepted Olivia's explanation. Melissa's DARVO response converts protective parental behavior into a campaign to plant abuse suspicions. Category D (projection \u2014 PROJ-004): Melissa accuses Eli of making Olivia think Melissa is abusing her, while RF-11 documents Melissa's own child-exposure pattern. Sev-2 (sustained projected accusation; PROJ-004 confirmed; inverts the parent-protective-behavior dynamic at the dataset close).",
+      "exact_quote": "ROW-15588: 'Why do you keep trying to make Olivia think I'm abusing her?'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 17,
+      "compound_patterns": [
+        "RF-04+RF-15",
+        "RF-11+RF-15"
+      ],
+      "cross_rf_note": "RF-04 B-031 RF04-B031-001 Sev-2 (DARVO bruise reversal). RF-11 compound. RF-15 primary: Category D projection. CP2 Q2 calibrates: welfare check was appropriate. Eli: asked about bruise, accepted Olivia's horseplaying explanation, left it at that.",
+      "projection_pair_id": "PROJ-004"
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

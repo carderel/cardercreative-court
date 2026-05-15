@@ -1,0 +1,211 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-001",
+    "row_range": {"start": 2, "end": 366},
+    "date_range": {"start": "2022-01-11", "end": "2022-10-03"},
+    "episode_range": {"start": "EP-0001", "end": "EP-0053"},
+    "message_count": 365,
+    "phase": "A",
+    "processing_timestamp": "2026-04-22",
+    "calibration_addenda_active": [],
+    "notes": "CALIBRATION BATCH — CP2 review required before proceeding to B-002"
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 365,
+    "primary_flags": 5,
+    "primary_severity_distribution": {"1": 3, "2": 2, "3": 0},
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {"RF-01": 2, "RF-04": 1, "RF-05": 1},
+    "no_flag_messages": 356,
+    "flag_rate": "1.4%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-122",
+      "timestamp": "2022-09-03 00:46:39 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "She said she doesn't want to talk ",
+      "primary_rf": "RF-02",
+      "primary_severity": 1,
+      "primary_reasoning": "Melissa acts as gatekeeper for Eli's access to Olivia by phone, relaying that Olivia 'doesn't want to talk.' Per RF-02 behavioral indicators: 'claiming children don't want to see/talk to the other parent without independent verification.' Severity 1 because this is the first occurrence and child preference may be genuine; however, it is immediately followed by Melissa revealing a deliberate phone blocking system (ROW-124-125), which elevates concern that this stated preference is managed rather than independent.",
+      "peripheral_flags": [],
+      "context_notes": "Eli called and went to voicemail (ROW-119-120). Melissa responded 'What do you need?' then relayed that Olivia doesn't want to talk. Two messages later, Melissa reveals she has set up Do Not Disturb after 8:30pm specifically to prevent Eli from calling.",
+      "pattern_tags": ["phone_access_blocking", "child_preference_relay"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "She said she doesn't want to talk",
+      "calibration_status": "pending_review",
+      "journal_crossref_date": "2022-09-03"
+    },
+    {
+      "message_id": "ROW-124",
+      "timestamp": "2022-09-03 00:47:01 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "It goes to voicemail after 8:30 because you've been told not to call after 8:30 ",
+      "primary_rf": "RF-02",
+      "primary_severity": 2,
+      "primary_reasoning": "Melissa reveals a unilaterally instituted system blocking Eli's calls to Olivia after 8:30pm. Per RF-02 behavioral indicators: 'blocking or filtering communication between child and other parent.' Severity 2 because this is not an isolated incident but a deliberate, designed system that systematically restricts Eli's access to phone contact with Olivia during evening hours. The passive framing 'it goes to voicemail' obscures that this is a deliberately engineered restriction.",
+      "peripheral_flags": [],
+      "context_notes": "Eli had tried to call multiple times (ROW-119: 'It goes straight to vm when I call'). Melissa's response reveals the calls going to voicemail are not technical — they are intentional. The phrase 'you've been told not to call after 8:30' frames this as Eli's fault for not complying with Melissa's unilateral rule.",
+      "pattern_tags": ["phone_access_blocking", "unilateral_restriction", "communication_control"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "It goes to voicemail after 8:30 because you've been told not to call after 8:30",
+      "calibration_status": "pending_review",
+      "journal_crossref_date": "2022-09-03"
+    },
+    {
+      "message_id": "ROW-125",
+      "timestamp": "2022-09-03 00:47:44 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "Since you wouldn't listen I set it long time ago to do not disturb at 8:30 so you couldn't just keep calling after I tell you not to",
+      "primary_rf": "RF-02",
+      "primary_severity": 2,
+      "primary_reasoning": "This message confirms the deliberate, unilateral setup of the phone blocking system. Per RF-02: 'blocking or filtering communication between child and other parent.' Severity 2 because: (1) it is a permanent system rather than a temporary restriction, (2) it was installed specifically to circumvent Eli's behavior rather than negotiated as a mutual boundary, (3) the language 'so you couldn't just keep calling' frames any call after 8:30 as unwanted regardless of urgency. This is gatekeeping infrastructure — a designed mechanism to control access.",
+      "peripheral_flags": [],
+      "context_notes": "This is a clarifying message explaining ROW-124. 'Set it long time ago' indicates this system has been in place for an extended period without Eli's knowledge. 'Since you wouldn't listen' is a DARVO framing — presenting Eli's calls to his daughter as misconduct that justified Melissa's restriction.",
+      "pattern_tags": ["phone_access_blocking", "unilateral_restriction", "communication_control", "darvo_framing"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "I set it long time ago to do not disturb at 8:30 so you couldn't just keep calling after I tell you not to",
+      "calibration_status": "pending_review",
+      "journal_crossref_date": "2022-09-03"
+    },
+    {
+      "message_id": "ROW-185",
+      "timestamp": "2022-09-12 00:26:26 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "She sent you to voicemail She said she doesn't want to talk ",
+      "primary_rf": "RF-02",
+      "primary_severity": 1,
+      "primary_reasoning": "Second occurrence of Melissa relaying that Olivia 'doesn't want to talk' as justification for Eli's calls going to voicemail. Per RF-02: 'claiming children don't want to see/talk to the other parent without independent verification.' With the confirmed DND blocking system already established, this phrasing conflates the phone restriction (voicemail) with child preference ('she said she doesn't want to talk'), making it impossible to verify whether Olivia's preference is independently expressed or managed. Severity 1 — second signal in an emerging pattern.",
+      "peripheral_flags": [],
+      "context_notes": "Row 184: Eli asks 'She send me to vm?' — confirming he again went to voicemail. Melissa's response bundles the voicemail (the blocking system) with the child's stated preference, which may be used to cover for the DND restriction.",
+      "pattern_tags": ["phone_access_blocking", "child_preference_relay", "pattern_second_signal"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "She sent you to voicemail She said she doesn't want to talk",
+      "calibration_status": "pending_review",
+      "journal_crossref_date": "2022-09-12"
+    },
+    {
+      "message_id": "ROW-365",
+      "timestamp": "2022-10-02 23:35:44 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "She's sending you to voicemail not me ",
+      "primary_rf": "RF-02",
+      "primary_severity": 1,
+      "primary_reasoning": "Third occurrence of the phone voicemail pattern. The phrase 'not me' is analytically significant — Melissa distinguishes that she can reach Olivia by phone but Eli cannot. This framing positions Olivia's communication avoidance as selective (Olivia doesn't want to talk to Eli specifically) rather than general unavailability. Per RF-02: communication filtering between child and other parent. Severity 1 as part of the established arc.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-01",
+          "severity": 1,
+          "note": "Framing that Olivia answers for Melissa but not Eli may reinforce differential attachment narrative",
+          "confidence": "low"
+        }
+      ],
+      "context_notes": "Fifth signal in the phone blocking arc. The 'not me' framing is a new element — previously messages attributed voicemail to the 8:30pm DND or child preference; this message adds a comparison suggesting Olivia is available to Melissa but not Eli.",
+      "pattern_tags": ["phone_access_blocking", "differential_access", "pattern_third_plus_signal"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "She's sending you to voicemail not me",
+      "calibration_status": "pending_review",
+      "journal_crossref_date": "2022-10-02"
+    },
+    {
+      "message_id": "ROW-299",
+      "timestamp": "2022-09-27 11:32:14 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "Yes but do better about figuring it out the night before. I've told you this before but you keep making plans with her ",
+      "primary_rf": "RF-02",
+      "primary_severity": 1,
+      "primary_reasoning": "Melissa grants parenting access but attaches a directive and implicit criticism. Per RF-02: 'adding conditions or requirements to agreed-upon access.' The phrase 'keep making plans with her' suggests Melissa objects to Eli coordinating directly with Olivia — a gatekeeping indicator. Severity 1 — single instance with ambiguous framing (could be a legitimate scheduling preference). Flagged as pending CP2 clarification.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "Conditional approval with embedded criticism is mild emotional manipulation — approval contingent on behavior change",
+          "confidence": "low"
+        }
+      ],
+      "context_notes": "Row 298: Eli asks 'So I am good to pick her up today around 5.' The question is straightforward. Melissa's response grants access but lectures him about planning ahead. 'Keep making plans with her' may indicate Melissa views Eli's direct communication with Olivia about parenting time as a problem.",
+      "pattern_tags": ["conditional_access", "direct_olivia_contact_objection"],
+      "arc_references": [],
+      "image_reference": null,
+      "quote_excerpt": "Yes but do better about figuring it out the night before. I've told you this before but you keep making plans with her",
+      "calibration_status": "pending_review",
+      "journal_crossref_date": "2022-09-27"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-43",
+      "reason_noted": "Melissa intervenes in Eli's parenting during his custodial time (church behavior). Near-boundary for RF-02 (overstepping during other parent's time). Stronger peripheral signal for RF-01 (relaying child's complaint to challenge Eli's parenting). Not flagged as RF-02 primary because church attendance/behavior is a legitimate co-parenting discussion topic."
+    },
+    {
+      "message_id": "ROW-73",
+      "reason_noted": "Row 73: 'And not to your house' — minor condition on pickup location. Not flagged because it could reflect a prior agreement or routine. Noting for CP2: Is there a standing agreement about where Olivia is or isn't taken?"
+    },
+    {
+      "message_id": "ROW-363",
+      "reason_noted": "Peripheral RF-01 indicator: Melissa relays that Olivia said 'yeah. My dad when he left me' in response to 'did somebody break your heart?' This is a near-boundary RF-01 item — child's statement about Eli abandoning her, relayed by Melissa during a car conversation. Not flagged as RF-02 but will be relevant to the RF-01 pass."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-363",
+      "peripheral_rf": "RF-01",
+      "severity": 2,
+      "note": "Melissa relays Olivia's statement 'My dad when he left me' as a candid child disclosure. Whether coached or organic, the relay of this statement to Eli is a parental alienation indicator — child has internalized a narrative of abandonment. High confidence.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-43",
+      "peripheral_rf": "RF-01",
+      "severity": 1,
+      "note": "Melissa's intervention in Eli's parenting at church ('she doesn't have to stand up...be glad she wants to go to church') undermines Eli's parenting authority during his custodial time. Mild alienation indicator.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-335",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "Row 335: 'Are you stupid?' — derogatory language in response to scheduling miscommunication. Minor intimidation indicator.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-336",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "Row 336: Comment implying Eli may have intellectual disability (referencing his brother being 'slow' and asking if family was actually talking about Eli). Personal attack using family members.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": ["ARC-RF02-001"],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 1
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 6,
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": ["CP2: All 6 primary flags pending calibration review", "CP3-001: ARC-RF02-001 promoted to ACTIVE (phone contact blocking pattern, 5 signals in B-001)"]
+  }
+}

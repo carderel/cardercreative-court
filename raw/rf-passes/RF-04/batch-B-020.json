@@ -1,0 +1,96 @@
+{
+  "batch_id": "B-020",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2024-10-19", "end": "2024-12-06" },
+  "row_range": { "start": 7558, "end": 7705 },
+  "message_count": 148,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "predominantly cooperative — low-density Phase A late period (Oct 2024 behavioral drop following intense Oct 3 mega-cluster); mostly logistics (school coordination, pickup scheduling, daycare costs, Halloween/Nov activities); one RF-04 primary cluster (Nov 17-18 food-incident parenting-judgment attack), one peripheral contemptuous attribution Nov 26",
+    "conflict_ratio": "~0.30 within Nov 17-18 cluster; ~0.07 batch overall",
+    "rf04_activity": "low-moderate — 1 Sev-1 primary; Nov 17-18 parenting-judgment contempt + DARVO-adjacent framing + next-day reopening; Nov 26 Abby-causal-attribution peripheral",
+    "notable_context": "Oct 2024 behavioral drop confirmed: messaging volume sharply reduced from ~500-message batches to ~148 messages over 7 weeks. Molluscum contagiosum resolving (ROW-7583-7586 last bump). Oct 31 Halloween cooperative (Olivia giving citations at bus stop). Nov 17-18 food incident: Eli texting Melissa about Olivia's food refusal at his house (Red Robin leftovers with lettuce scraped off) → triggers sustained contemptuous parenting-judgment attack ('Are you not able to parent for 2 hrs,' 'Be a parent,' 'Do I need to come do what you should be doing?'). Nov 26 ROW-7703 reopens with Abby-causal-attribution ('huffy with Olivia that night... talking to Abby. Next time pay attention')."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B020-001",
+      "severity": 1,
+      "date": "2024-11-17",
+      "row_ref": "ROW-7621-7678",
+      "type": "contemptuous_parenting_judgment + inadequate_father_attack + DARVO_adjacent + next_day_reopening",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Nov 17-18 food-incident parenting-judgment attack. Context: Eli texts Melissa about Olivia refusing to eat her Red Robin dinner (lettuce removed per her preference but still refusing); co-parenting communication. Melissa's response launches contemptuous inadequate-father attack. ROW-7624: 'Omg. Are you not able to parent for 2 hrs' — contemptuous rhetorical disqualification. ROW-7625: 'Be a parent.' — contemptuous directive. ROW-7626: 'Stop texting me unless something is wrong.' ROW-7636: 'She is at your house. You should be able to parent' — repeated parenting-adequacy challenge. ROW-7637: 'What do you want from me? I'm not there. Should o come tell her that if she doesn't eat it she can't have anything else' — contemptuous implication that Eli needs Melissa to model basic parenting. ROW-7638: 'Do I need to come do what you should be doing?' — contemptuous parenting-disqualification question. ROW-7644: 'You should be able to handle it. Do you not think she's going to see what she can get by with there?' — contemptuous judgment. ROW-7645: 'Instead of handling it you keep texting me then blaming me for shit I'm not doing' — DARVO-adjacent: Eli's co-parenting communication reframed as blame-shifting incompetence. ROW-7647: 'Sounds like you are' — contemptuous agreement that Eli is relenting. ROW-7648: 'Cause she's still not eating. Instead you're going to pack it up and make it my problem.' ROW-7649: 'Great job 👏 👏 👏' — contemptuous sarcasm. ROW-7654: 'She's with me more because you make no time for her' — mid-cluster inadequate-father framing. ROW-7671: 'You need to be a parent' — closing contemptuous directive. ROW-7672: 'It's sad that you can't handle it and your solution is to pack up her meal and make it my problem.' — contemptuous dismissal with inadequate-father judgment. ROW-7676: 'Are you still talking?' — contemptuous conversation-ender (same phrase as B-019 ROW-7557 close). Next-day reopening: ROW-7678 (Nov 19): 'Are you going to give her dinner or send her home without eating again?' — deploys Nov 17-18 incident as ongoing inadequate-father characterization. ARC-RF04-001-S53.",
+      "verbatim_key_messages": [
+        "ROW-7624 (Received): \"Omg. Are you not able to parent for 2 hrs\"",
+        "ROW-7625 (Received): \"Be a parent.\"",
+        "ROW-7637 (Received): \"What do you want from me? I'm not there. Should o come tell her that if she doesn't eat it she can't have anything else\"",
+        "ROW-7638 (Received): \"Do I need to come do what you should be doing?\"",
+        "ROW-7645 (Received): \"Instead of handling it you keep texting me then blaming me for shit I'm not doing\"",
+        "ROW-7649 (Received): \"Great job 👏 👏 👏\"",
+        "ROW-7654 (Received): \"She's with me more because you make no time for her\"",
+        "ROW-7671 (Received): \"You need to be a parent\"",
+        "ROW-7676 (Received): \"Are you still talking?\"",
+        "ROW-7678 (Received): \"Are you going to give her dinner or send her home without eating again?\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B020-P01",
+      "row_ref": "ROW-7582",
+      "date": "2024-10-24",
+      "type": "contemptuous_insinuation",
+      "note": "ROW-7582: 'So she should call at 9:29 like you did all the time' — contemptuous insinuation that Eli routinely violated the 9:30pm calling cutoff; delivered in response to Eli explaining why he answered a late call. Brief; no escalation."
+    },
+    {
+      "flag_id": "RF04-B020-P02",
+      "row_ref": "ROW-7703",
+      "date": "2024-11-26",
+      "type": "abby_causal_attribution + contemptuous_parenting_critique",
+      "note": "ROW-7703: 'You were huffy with Olivia that night. Acting all irritated and talking to Abby. Next time pay attention' — Day-10 retrospective contemptuous critique of Eli's Nov 17 parenting; attributes his 'huffy' demeanor to distraction by Abby ('talking to Abby'); Abby-causal-attribution framework; contemptuous directive ('Next time pay attention'). Unprovoked reopening of closed Nov 17 incident. ARC-RF04-001 peripheral."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S53",
+          "batch": "B-020",
+          "date": "2024-11-17",
+          "row": "ROW-7621-7678",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Nov 17-18 food-incident parenting-judgment attack: 'Are you not able to parent for 2 hrs' (ROW-7624) + 'Be a parent' (ROW-7625) + 'Do I need to come do what you should be doing?' (ROW-7638) + DARVO-adjacent 'you keep texting me then blaming me' (ROW-7645) + 'Great job 👏 👏 👏' contemptuous sarcasm (ROW-7649) + 'She's with me more because you make no time for her' inadequate-father framing (ROW-7654). Next-day reopening ROW-7678: 'Are you going to give her dinner or send her home without eating again?'"
+        }
+      ],
+      "signal_count_after": 53
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [],
+      "signal_count_after": 15
+    }
+  },
+
+  "compound_patterns": [],
+
+  "cp3_item": null,
+
+  "batch_statistics": {
+    "primary_flags": 1,
+    "severity_1": 1,
+    "severity_2": 0,
+    "severity_3": 0,
+    "peripheral_flags": 2,
+    "compound_patterns": 0,
+    "arc_rf04_001_signals_added": 1,
+    "arc_rf04_002_signals_added": 0
+  }
+}

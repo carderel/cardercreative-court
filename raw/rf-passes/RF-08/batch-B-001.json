@@ -1,0 +1,63 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-001",
+    "row_range": { "start": 2, "end": 366 },
+    "date_range": { "start": "2022-01-11", "end": "2022-10-02" },
+    "message_count": 365,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": [],
+    "note": "CP2 CALIBRATION BATCH. RF-08 Triangulation pass initialized. Triage heatmap: 5 keyword hits total across dataset (low); all Phase A; CP1 elevated to full pass because keywords do not capture relay-through-Olivia pattern. Aug 2022 is the sole triage hot period within this batch."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 365,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 1,
+    "no_flag_messages": 365,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-124–ROW-125 area",
+      "timestamp": "2022-09-03",
+      "direction": "received",
+      "message_text": "ROW-124 (Received): 'It goes to voicemail after 8:30 because you've been told not to call after 8:30' | ROW-125 (Received): 'Since you wouldn't listen I set it long time ago to do not disturb at 8:30 so you couldn't just keep calling after I tell you not to'",
+      "assessment": "RF-08 peripheral consideration: Melissa's characterization of Eli's calling pattern implies Olivia (or a third party) may be aware of the call restrictions and the framing of Eli as a non-listener. If Melissa has communicated this 'Eli doesn't listen' framing to Olivia, it would constitute early RF-08 triangulation (building Olivia's perception of Eli through Melissa's narrative). However, from the text alone this is Melissa characterizing Eli to Eli — not through Olivia. No RF-08 primary flag. Cross-ref RF-02 primary (phone-blocking arc). CP2 question: did Melissa discuss this 8:30 rule with Olivia in ways that framed Eli as defiant?",
+      "cp2_flag": true
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "RF-08 arc state initialized at zero. B-001 is the lowest-conflict period in the dataset (Jan-Oct 2022). No RF-08 primary signals detected. Abby enters picture mid-2022 (Sep 2022 detection per CP1) — this is a potential future triangulation activation point (Melissa's Abby-targeting may recruit Olivia as a third party). Triage Aug 2022 hot period: assessed as likely Sent-direction false positive (Eli messaging about family logistics) or very low-level Received reference to Melissa's family plans. Neither constitutes RF-08 primary threshold in calibration batch context."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 5,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": [
+      "CP2-RF08: 5 calibration questions generated — see cp2-RF-08-review.json"
+    ]
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Lowest-conflict period in dataset. Jan-Oct 2022. Pre-Abby-detection for most of the batch. Communication pattern cooperative-baseline. No triangulation episodes identified at RF-08 primary threshold.",
+    "rf08_assessment": "Zero primary RF-08 flags. The triage heatmap's 5 keyword hits appear to reflect Sent-direction logistics mentions (Eli referencing family plans) and possibly one or two Received mentions of Melissa's family — neither constituting RF-08 triangulation. The CP1 override ('keywords don't capture relay-through-Olivia pattern') is confirmed by this batch: the actual RF-08 signal will surface in the coaching and relay behaviors documented throughout the dataset, not in explicit triangulation keywords. CP2 calibration is critical before proceeding.",
+    "cross_rf_context": "RF-01 ADD-004 (Olivia-as-relay for alienating content) is the primary cross-RF anchor for RF-08. The relay-through-Olivia mechanism is shared between RF-01 (parental alienation content delivered through Olivia) and RF-08 (Olivia triangulated into parental conflict). These are distinct: RF-01 = what Olivia is made to say; RF-08 = the structural use of Olivia as a communication/alliance channel. Both arcs will need to be tracked but RF-08 focuses on the triangulation mechanism itself, not the alienating content. ROW-6819 coaching admission (B-018, Aug 2024) is the strongest RF-08 primary candidate in the dataset — it documents Melissa explicitly scripting Olivia's conversations with Eli."
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "batch_id": "B-023",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-02-15",
+    "end": "2025-03-03"
+  },
+  "row_range": {
+    "sms_start": "ROW-9100",
+    "sms_end": "ROW-9311",
+    "sms_secondary_section": "ROW-7763 to ROW-7774 (secondary SMS table, Feb 24 – Mar 3)",
+    "mms_start": "ROW-12927",
+    "mms_end": "ROW-15333"
+  },
+  "message_count": 495,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B023-PF-001",
+      "row_ref": "ROW-9131 / ROW-9141-ROW-9143",
+      "date": "2025-02-15",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 48,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "Her being nervous to talk to you isn't new. We've had conversations about that before where I told you she wanted me to call and talk to you about something because she was afraid to talk to you [ROW-9131] / She asked me to talk to you. That's what you aren't understanding. [ROW-9141] / She didn't feel comfortable talking to you about it. She asked me to. [ROW-9142] / That's why I'm involved [ROW-9143]",
+      "context": "Part of the Feb 15 'chair dispute' — Melissa contacted Eli claiming Olivia has to sit on the floor to eat at his house and has no proper chair (ROW-9100-9115). Eli disputed (ROW-9106, 9108, 9121: 'There is a chair she can use / Nobody is making her sit on the floor / Olivia has a chair to sit in'). Melissa escalated the dispute by asserting Olivia is too afraid/nervous to raise concerns with Eli directly. Eli explicitly rejected mediated communication (ROW-9133: 'I'll check in with her myself'; ROW-9137: 'I don't need a mediated conversation. Olivia and I have always been able to talk'; ROW-9144: 'I'll check in with Olivia myself. If she truly feels uncomfortable talking to me, I want to address that directly with her so we can work through it together.'). Also appears in MMS: ROW-12958, ROW-12968-12970. ROW-9134 (Melissa): 'With all 3 in the conversation she would feel more comfortable voicing her concerns' — explicitly advocates for Melissa-mediated three-way conversations for Olivia-Eli communication.",
+      "analytical_note": "Signal 48 extends the required-intermediary framework from scheduling/access domains into affective and grievance communication. Previously documented intermediary pattern: Melissa gates Eli's direct communication with Olivia about scheduling and plans. Here Melissa asserts permanent intermediary necessity for any substantive Olivia-Eli communication about feelings or concerns: Olivia is 'nervous,' has always been 'afraid' to talk to Eli directly, and asks Melissa to relay her concerns to Eli. This structural claim — if accepted — would make Melissa the permanent intermediary for the child's emotional communications with the other parent, not merely for scheduling. Eli actively resists this extension (ROW-9133, 9137, 9144), which is the first explicit on-record rejection of the intermediary claim. The resistance itself is analytically significant: contrast with Eli's full internalization of the scheduling intermediary norm (ROW-7206, ROW-12439). Eli appears to recognize the stakes of the affective-communication extension even as he has fully accepted the scheduling extension.",
+      "arc_promotion": null
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B023-PERIPH-001",
+      "row_ref": "ROW-9116-ROW-9118 / ROW-9144-ROW-9151",
+      "date": "2025-02-15",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "You are ruining her self esteem and self worth [ROW-9116] / She goes to your house and doesn't have a seat at the table, you compare her to Milo, the new baby has taken over her room. She sees you being a dad to Milo and Alice but she gets the bare minimum fro[m you] [ROW-9117] / I didn't need to ask you about this because I believe Olivia. She had lots of details that she wouldn't just be making up [ROW-9118] / I want her to as well. I also want you to not disregard her feelings. You really need to look at how the things you do make her feel even if they seem trivial to you [ROW-9151]",
+      "note": "RF-04 Sev 1 parental fitness attack embedded in chair dispute. Key elements: (1) self-esteem/self-worth destruction claim ('ruining her self esteem'); (2) systemic neglect narrative — no seat at table, displaced by new baby, treated as second-tier compared to Milo (stepson) and Alice (newborn); (3) unilateral belief of Olivia over Eli ('I didn't need to ask you about this because I believe Olivia'); (4) sustained messaging across multiple texts through ROW-9151. RF-09 intersection: ROW-9118 dismisses Eli's contradicting account without investigation ('I believe Olivia. She had lots of details'). Also appears in MMS as ROW-12943-12945, ROW-12978. Milo/Alice comparison is new element — previously RF-04 attacks targeted Eli's parental fitness generally; here the comparison to the new family unit (Abby's son Milo, newborn Alice) is explicit."
+    },
+    {
+      "flag_id": "B023-PERIPH-002",
+      "row_ref": "ROW-9279",
+      "date": "2025-03-01",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "Plans more important than Olivia",
+      "note": "RF-04 Sev 1 quick shot. Eli (ROW-9278): 'Idk. I had made plans after.' — he had already taken Olivia to her friend's birthday party at Rule 3 and had made post-party plans; Melissa is now asking him to also take Olivia to an impromptu same-day second party (3-5 PM Get Air). Melissa frames Eli's hesitation about a last-minute second event as choosing plans over his daughter. Context: Eli had proactively arranged his day to be available for the originally planned party; the second event was not pre-planned. Also appears as ROW-13127 in MMS dataset. Standalone Sev 1; no new pattern element."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-9191-ROW-9194",
+      "date": "2025-02-22",
+      "description": "Eli resolves chair dispute proactively — 'FYI, I took what you said into account, and we all ate at the table so that there's no favoritism and everyone has a seat.' Melissa acknowledges: 'I'm glad you listened and took her feelings into consideration.' Collaborative correction and positive acknowledgment."
+    },
+    {
+      "row_ref": "ROW-9236-ROW-9238",
+      "date": "2025-02-24",
+      "description": "Melissa proactively informs Eli that Olivia has no school Friday and that Olivia would rather go to Eli's house than Becky's — preemptive access offer relaying Olivia's preference toward Eli. Eli unable to accommodate but Melissa made the offer."
+    },
+    {
+      "row_ref": "ROW-9266-ROW-9282",
+      "date": "2025-03-01",
+      "description": "Melissa actively coordinates double birthday party access — gives Eli permission to take Olivia to first party, then spontaneously invites him to take her to a same-day second party so Olivia doesn't miss out. Eli attends both events."
+    },
+    {
+      "row_ref": "ROW-9289-ROW-9311",
+      "date": "2025-03-03",
+      "description": "Melissa's medical emergency (likely kidney stone, blood in urine). Eli picks up Olivia from social activity, takes her to dinner, coordinates drop-off and prescription logistics while Melissa is at urgent care. High-quality cooperative emergency response."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-9183",
+      "date": "2025-02-21",
+      "consideration": "ARC-RF02-002 near-miss. Eli (ROW-9182): 'She want .e to pick her up tomorrow after work?' Melissa (ROW-9183): 'She said sure.' Relay mechanism present but this is access facilitation, not restriction. Eli is also still operating under the required-intermediary norm (asking Melissa rather than Olivia directly). Not flagged: consistent with baseline relay mechanism already well-documented in arc; facilitative context."
+    },
+    {
+      "row_ref": "ROW-9209-ROW-9213",
+      "date": "2025-02-23",
+      "consideration": "ARC-RF02-002 near-miss. Melissa relays Olivia's emotional distress (snail death) and desire to call Eli: 'One of her snails died / She wants to talk to you' and 'She still wants you / to call.' Contact-facilitation relay — Melissa is enabling access, not restricting it. The relay mechanism structure is the same (Olivia's desire mediated through Melissa) but the direction is access-enabling. Not flagged as primary."
+    },
+    {
+      "row_ref": "ROW-9231-ROW-9233",
+      "date": "2025-02-24",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-9231): 'Still going to voicemail.' Melissa (ROW-9232): 'It's dead.' Olivia's phone was dead; Melissa relays context (ROW-9233: homework, 15-minute window offered, Olivia's morning-call preference relayed). Dead phone provides natural explanation for voicemail; no DND or blocking mechanism. Not flagged."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; signal_count remains 26; Feb 24 voicemail (dead phone) near-miss — natural explanation",
+    "ARC-RF02-002": "signal_count now 48; one signal this batch — ROW-9131/9141-9143 (required-intermediary extension into affective communication domain, Feb 15, signal 48); analytically significant: Melissa asserts permanent intermediary necessity for Olivia's grievance/concern communications with Eli, citing prior history of similar mediations; Eli explicitly rejects extension (ROW-9133, 9137, 9144) — first on-record rejection of intermediary claim, contrasting with full internalization of scheduling intermediary norm",
+    "ARC-RF02-004": "no new signals; remains ACTIVE",
+    "ARC-RF02-005": "no new signals; remains WATCHING",
+    "ARC-RF02-006": "no new signals; remains WATCHING"
+  },
+
+  "batch_notes": "Quietest RF-02 batch since B-011. One primary flag (ARC-RF02-002 signal 48) from the Feb 15 chair dispute — analytically significant for extending the required-intermediary framework into affective communication but lower structural weight than the scheduling-domain signals. The Feb 15 spike (164 messages) is dominated by co-parenting dispute about a chair, which resolves cooperatively (ROW-9191-9194). Highest cooperative facilitation density in recent batches: four distinct cooperative data points including two proactive access offers (Feb 24 school-free Friday, Mar 1 birthday parties), Eli's responsive conflict resolution, and joint medical emergency response (Mar 3). The RF-04 content (Feb 15 Milo/Alice comparison, Mar 1 'Plans more important than Olivia') is Sev 1 and notable primarily for the Milo/Alice comparison — new element in the RF-04 pattern that positions Eli as a more invested parent to his other children than to Olivia. Medical context: Melissa likely has a kidney stone (Mar 3 — blood in urine, urgent care, CT scan needed)."
+}

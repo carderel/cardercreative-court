@@ -1,0 +1,68 @@
+{
+  "batch_id": "B-006",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2023-02-22",
+    "end": "2023-04-03"
+  },
+  "row_range": {
+    "start": 1840,
+    "end": 2026
+  },
+  "message_count": 514,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "CANDIDATE",
+    "ARC-RF15-002": "CANDIDATE"
+  },
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B006-001",
+      "date": "2023-03-31",
+      "row_ref": "ROW-2141-2164",
+      "severity": 1,
+      "rf15_category": "C_precursor",
+      "direction": "received",
+      "summary": "First incest-adjacent contemptuous cluster. Mar 31 2023. Melissa's attacks on Eli begin incorporating character-attack language that feeds the predation-framing narrative. Earlier instances of contemptuous characterization establish the rhetorical pattern before explicit incest language appears in B-007+.",
+      "exact_quote": "Contemptuous character attacks establishing predation-framing baseline \u2014 see RF-04 B-006 for exact text.",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 1,
+      "compound_patterns": [
+        "RF-04+RF-15 peripheral"
+      ],
+      "cross_rf_note": "RF-04 B-006 Sev-2 flag (Mar 31 2023) contains RF-15 precursor language. Establishes character-attack baseline before first explicit Category C instance in B-007."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF15-001",
+      "event": "B-006: First precursor instance. ARC-RF15-001 WATCHING \u2014 1 signal; needs 2nd for confirmation.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF15-002",
+      "event": "B-006: Projection pattern baseline \u2014 no confirmed projection pair yet.",
+      "state": "CANDIDATE"
+    }
+  ]
+}

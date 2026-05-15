@@ -1,0 +1,54 @@
+{
+  "batch_id": "B-006",
+  "date_range": {
+    "start": "2023-02-22",
+    "end": "2023-04-02"
+  },
+  "row_range": {
+    "start": 1851,
+    "end": 2221
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 1,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 1,
+    "note": "Feb-Apr 2023. ROW-2189 (Mar 31): 'You're not a good father. You won't even make your home safe for her' \u2014 continuation of cat-allergy safety allegation combined with RF-04 parental fitness attack. Not a standalone RF-14 primary (no new safety allegation content beyond B-004 pattern); flagged as peripheral. ARC-RF14-001 maintains WATCHING state."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [
+    {
+      "row_ref": "ROW-2189",
+      "date": "2023-03-31",
+      "direction": "Received",
+      "type": "RF-14 peripheral + RF-04 primary",
+      "note": "'You won't even make your home safe for her' \u2014 cat-allergy household safety allegation continuation. RF-04 primary. RF-14 peripheral (no new substantive content beyond B-004 S-000 pattern)."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "ROW-2189 peripheral note \u2014 arc pattern continues; no new standalone signal",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No signals",
+      "state": "CANDIDATE"
+    }
+  ]
+}

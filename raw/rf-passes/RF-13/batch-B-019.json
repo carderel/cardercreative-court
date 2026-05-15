@@ -1,0 +1,79 @@
+{
+  "batch_id": "B-019",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2024-09-05",
+    "end": "2024-10-03"
+  },
+  "row_range": {
+    "start": 6737,
+    "end": 7164
+  },
+  "message_count": 574,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "ACTIVE",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 11,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 3,
+    "note": "Sep-Oct 2024 cluster: EP-0893 Sep 8 (73 msgs, FLOOD) + EP-0906 Sep 20 (16 msgs) + EP-0917 Oct 2 (173 msgs, FLOOD). 262 total hostile msgs. Phase A final peak. EP-0917 followed by B-020 behavioral silence (ADD-005)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B019-001",
+      "episode_cluster": [
+        "EP-0893",
+        "EP-0906",
+        "EP-0917"
+      ],
+      "dates": "2024-09-08 through 2024-10-02",
+      "total_messages": 262,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "ramp \u2014 three hostile episodes escalating to EP-0917 peak",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured responses across all 3 episodes",
+        "received_direction": "ramp: 73 msgs then 16 msgs then 173 msgs \u2014 EP-0917 is the batch peak",
+        "net_escalation": "high Sev-2 (262 total hostile msgs; EP-0917 alone is 173 msgs)",
+        "de_escalation_resistance": "Eli measured through EP-0917 (173 msgs); no de-escalatory effect; post-EP-0917 silence is Melissa's withdrawal"
+      },
+      "cycle_classification": "CYC-001 + CYC-004 compound; ADD-005 applies to post-EP-0917 silence",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 12,
+      "cross_rf_note": "B-019 RF-04: 4 flags (2 Sev-2). EP-0917 co-occurs with RF-04 and RF-05 signals. Post-EP-0917 silence begins B-020 \u2014 cause unknown per CP2 Q4."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "EP-0917 (173 msgs Oct 2 2024) is Phase A final peak. Followed by unexplained behavioral silence. Trajectory: Phase A extreme peak documented.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "Eli measured throughout 173-msg exchange; no effect. Post-EP-0917 silence is Melissa's withdrawal per ADD-005.",
+      "state": "ACTIVE"
+    }
+  ]
+}

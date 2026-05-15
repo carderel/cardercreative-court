@@ -1,0 +1,75 @@
+{
+  "batch_id": "B-005",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2023-01-18",
+    "end": "2023-02-22"
+  },
+  "row_range": {
+    "start": 1462,
+    "end": 1839
+  },
+  "message_count": 505,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "WATCHING",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "WATCHING"
+  },
+  "arc_signals_cumulative": 3,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 1,
+    "note": "Valentine's Day mega-cluster: EP-0219 Feb 14 2023 (104 msgs, FLOOD). First mega-cluster in dataset. ADD-003 Valentine's Day temporal window confirmed. Eli makes multiple de-escalation attempts within the 104-message exchange; Melissa does not acknowledge any \u2014 de-escalation resistance confirmed within a single extended episode. ARC-RF13-003 promoted to ACTIVE."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B005-001",
+      "episode_id": "EP-0219",
+      "date": "2023-02-14",
+      "message_count": 104,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "ramp \u2014 sustained hostile escalation across 104-message exchange",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "multiple de-escalation attempts within episode (measured responses, logistics redirects, shorter messages)",
+        "received_direction": "sustained hostile escalation across 104 messages; multiple DARVO sequences within episode (RF-04 co-flags)",
+        "net_escalation": "high (Sev-2: 104-msg mega-cluster with confirmed de-escalation resistance within episode)",
+        "de_escalation_resistance": "CONFIRMED WITHIN-EPISODE: Eli makes de-escalation attempts at multiple points; Melissa escalates or ignores each attempt and continues hostile trajectory"
+      },
+      "cycle_classification": "CYC-003 \u2014 Valentine's Day temporal window (Feb 14-15). First confirmed within-episode de-escalation resistance (vs. between-episode in prior batches).",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 4,
+      "cross_rf_note": "EP-0219 contains RF-04 primary flags (Sev-1, B-005: 2 flags). RF-04/RF-13 compound: DARVO sequences within the mega-cluster maintain escalation despite Eli's attempts to return to logistics."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "EP-0219 (104 msgs) is first mega-cluster. Trajectory escalating significantly \u2014 from 5-48 msg hostile episodes to 104-msg sustained hostile exchange.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "Within-episode de-escalation resistance confirmed: Eli attempts de-escalation multiple times across 104-message exchange; Melissa escalates past each attempt. This is the strongest de-escalation resistance evidence to date. ARC-RF13-003 ACTIVE.",
+      "state": "ACTIVE"
+    }
+  ]
+}

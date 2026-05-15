@@ -1,0 +1,136 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-012",
+    "row_range": { "start": 4054, "end": 4448 },
+    "date_range": { "start": "2023-11-26", "end": "2024-01-31" },
+    "message_count": 395,
+    "timezone_note": "Entirely EST (UTC-5). DST ended Nov 5, 2023; next transition (EDT) is Mar 10, 2024. All timestamps are local EST.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B012-S001",
+      "row": "ROW-4073-4080",
+      "date": "2023-12-02",
+      "severity": 2,
+      "calibration_status": "confirmed",
+      "arc_ref": "ARC-RF01-001",
+      "addenda_triggered": ["RF01-ADD-001", "RF01-ADD-004"],
+      "summary": "Dec 2 — Christmas event: Melissa relays Olivia's account that Abby controlled the departure: 'Olivia is upset that Abby led you guys out of the thing last night. She said she didn't get to ice skate' (ROW-4073) + 'She said you just follow Abby around and Abby led you to the car' (ROW-4074). Eli provides corrective account: no skates available in her size (ROW-4075); sends photo proving Olivia did see Santa (ROW-4077-4078). Melissa partly acknowledges error re Santa ('Now she said she did,' ROW-4079) but does not address or correct the Abby-control attribution. Ends with 'That's terrible' (ROW-4080) — ambiguous but applied to the skate situation without challenging the Abby framing. Key elements: (1) Abby-as-controller attribution presented as fact (ADD-001); (2) Olivia's distress relayed as parental inadequacy evidence (ADD-004); (3) Partial acknowledgment of factual error without retracting the Abby framing. Continues Abby-as-obstacle arc component from B-008.",
+      "key_messages": [
+        { "row": "ROW-4073", "direction": "Received", "text": "Olivia is upset that Abby led you guys out of the thing last night. She said she didn't get to ice skate" },
+        { "row": "ROW-4074", "direction": "Received", "text": "She said you just follow Abby around and Abby led you to the car" },
+        { "row": "ROW-4075", "direction": "Sent", "text": "They didn't have skates for her. There were people queued for them and no idea how long her size would have taken" },
+        { "row": "ROW-4076", "direction": "Received", "text": "She didn't get to see Santa either" },
+        { "row": "ROW-4077", "direction": "Sent", "text": "Yes she did" },
+        { "row": "ROW-4078", "direction": "Sent", "text": "I have a picture of her with Santa" },
+        { "row": "ROW-4079", "direction": "Received", "text": "Now she said she did" },
+        { "row": "ROW-4080", "direction": "Received", "text": "That's terrible" }
+      ],
+      "cp3_item": "CP3-RF01-B012-001"
+    },
+    {
+      "flag_id": "RF01-B012-S002",
+      "row": "ROW-4177-4185",
+      "date": "2023-12-24",
+      "severity": 2,
+      "calibration_status": "confirmed",
+      "arc_ref": "ARC-RF01-001",
+      "addenda_triggered": ["RF01-ADD-001", "RF01-ADD-002"],
+      "summary": "Dec 24 Christmas Eve — sustained cluster across logistics dispute over Eli seeing Olivia: ROW-4177 'You told her you would come then claimed you didn't remember saying that then kept giving excuses'; ROW-4178 'I tried to include you for her sake but you aren't capable of communicating or making a decision'; ROW-4184 'Since you can't grow a pair and stand up for yourself and your daughter'; ROW-4185 'You let Abby dictate everything which is why your relationship with your daughter isn't very good.' ROW-4185 is the most explicit written causal statement to date: Abby is directly cited as the reason Eli's relationship with Olivia 'isn't very good.' ROW-4184 frames the failure as Eli's inability to assert himself against Abby on Olivia's behalf. Cluster combines ADD-001 (Abby-as-controller) and ADD-002 (inadequate-father because of Abby). Second consecutive seasonal holiday trigger (Halloween B-002/B-011; Christmas Eve here). Compare to Jul 14 birthday (B-008 S001) and Dec 24 dynamics.",
+      "key_messages": [
+        { "row": "ROW-4177", "direction": "Received", "text": "You told her you would come then claimed you didn't remember saying that then kept giving excuses. I told you we weren't going to keep waiting on you" },
+        { "row": "ROW-4178", "direction": "Received", "text": "I tried to include you for her sake but you aren't capable of communicating or making a decision" },
+        { "row": "ROW-4184", "direction": "Received", "text": "Since you can't grow a pair and stand up for yourself and your daughter." },
+        { "row": "ROW-4185", "direction": "Received", "text": "You let Abby dictate everything which is why your relationship with your daughter isn't very good" }
+      ],
+      "cp3_item": "CP3-RF01-B012-002"
+    }
+  ],
+
+  "primary_flag_count": 2,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B012-P001",
+      "row": "ROW-4094",
+      "date": "2023-12-12",
+      "rf_tags": ["RF-15", "RF-01"],
+      "severity": "peripheral",
+      "summary": "Dec 12 — 'So if you and Abby get married my sister would have the same in hers. Daughter/sister in law Gross' — continuing the inappropriate-relationship framing of the Abby/Eli/Olivia triad; explicit 'Gross' characterization. RF-15 primary (false allegation vector); RF-01 peripheral (Abby attack vector — the characterization of the relationship as inherently inappropriate/disgusting undermines Abby's legitimacy in Olivia's life)."
+    },
+    {
+      "flag_id": "RF01-B012-P002",
+      "row": "ROW-4313, ROW-4343",
+      "date": "2024-01-10 / 2024-01-18",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "Jan 10: 'Or you could be a dad and do homework with her' (ROW-4313) — when Eli arranges early drop-off so Olivia can complete homework; Jan 18: 'Part of being a dad is taking care of the responsibilities too' (ROW-4343) — during homework/pickup negotiation. Both invoke inadequate-father framing (ADD-002 adjacent) in response to Eli's normal parenting logistics. RF-04/RF-01 compound peripherals; pattern of inserting 'a real dad would...' framing in routine exchanges."
+    },
+    {
+      "flag_id": "RF01-B012-P003",
+      "row": "ROW-4367-4369",
+      "date": "2024-01-20",
+      "rf_tags": ["RF-02", "RF-01"],
+      "severity": "peripheral",
+      "summary": "Jan 20 — Third written gatekeeping admission: 'Did you try calling her?' / 'It's usually me asking her if she wants to call you' / 'I was busy and didn't do that yesterday' (ROW-4367-4369). Eli responds he tried to call her. Melissa's explanation: Olivia didn't call because Melissa forgot to prompt her. Third written confirmation of the gatekeeping mechanism first admitted in ROW-3151 (B-009 primary) and corroborated in ROW-3353-3355 (B-010 peripheral). RF-02 primary for that pass; RF-01 peripheral corroborating the phone-refusal cluster mechanism."
+    },
+    {
+      "flag_id": "RF01-B012-P004",
+      "row": "ROW-4383-4385",
+      "date": "2024-01-23",
+      "rf_tags": ["RF-02", "RF-01"],
+      "severity": "peripheral",
+      "summary": "Jan 23 — Fourth written gatekeeping admission: 'She normally only calls because I ask if she wants to or I just dial you' / 'I didn't ask her so she didn't call' / 'Once in awhile she asks on her own' (ROW-4383-4385). Eli notes he expected Olivia to call. Melissa explains Olivia's calls are primarily Melissa-initiated. This is the clearest and most explicit of the four written admissions: 'She normally only calls because I ask if she wants to or I just dial you' — four written admissions across B-009, B-010, B-012 (x2) collectively constitute a structural documentary record of communication gatekeeping. RF-02 primary; RF-01 peripheral."
+    },
+    {
+      "flag_id": "RF01-B012-P005",
+      "row": "ROW-4389",
+      "date": "2024-01-24",
+      "rf_tags": ["RF-02"],
+      "severity": "peripheral",
+      "summary": "Jan 24 — 'I just told her you called and told her she should call you back but she said not right now' (ROW-4389). Melissa mediating whether Olivia returns Eli's call; Olivia declines via Melissa as intermediary. RF-02 gatekeeping peripheral; consistent with established phone-refusal mediation pattern."
+    }
+  ],
+
+  "peripheral_flag_count": 5,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "add_signals",
+      "signals_added": 2,
+      "new_signal_refs": ["RF01-B012-S001", "RF01-B012-S002"],
+      "new_total": 14,
+      "new_severity_distribution": { "1": 2, "2": 12 },
+      "notes": "B-012 adds 2 Sev-2 signals — first multi-signal batch since B-006 (also 2 signals). ROW-4185 Christmas Eve cluster ('You let Abby dictate everything which is why your relationship with your daughter isn't very good') is a structural development: Abby-causation of Olivia relationship damage stated as explicit fact. This is the five-component arc's third component (Abby-as-obstacle/controller) reaching its most direct written expression. B-012 also adds three more gatekeeping admissions (ROW-4367-4369, ROW-4383-4385, ROW-4389) bringing the written-admission count to six total."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B012-001",
+      "row": "ROW-4073-4074",
+      "date": "2023-12-02",
+      "description": "Abby-control attribution delivered via Olivia: 'She said you just follow Abby around and Abby led you to the car.' Eli's corrective account acknowledged only partially (Santa) while Abby framing left intact."
+    },
+    {
+      "cp3_id": "CP3-RF01-B012-002",
+      "row": "ROW-4185",
+      "date": "2023-12-24",
+      "description": "Christmas Eve: 'You let Abby dictate everything which is why your relationship with your daughter isn't very good.' Most explicit written causal statement: Abby directly responsible for damaged Olivia relationship. Key CP3 quote."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "Moderate conflict with significant holiday escalation. November–December period shows cooperative baseline (Christmas planning, passport coordination, sharing Olivia's activities) punctuated by two RF-01 primary clusters (Dec 2 Christmas event; Dec 24 Christmas Eve). January is largely logistics-heavy with several Eli pickup dates, Aston bullying situation (cooperative co-parenting response), and Olivia's hand injury Jan 28 (Melissa facilitates Eli's involvement, ROW-4426-4428).",
+    "positive_indicator_note": "Two notable counter-indicators: (1) ROW-4275 — Melissa corrects Olivia's misperception that Eli was mocking her ('I told her that you weren't mocking her. You were just copying her. I told her there is a difference cause there was no ill intent') — an instance of Melissa actively defending Eli's intent to Olivia; (2) ROW-4426 — When Olivia got hurt, 'the first thing she wanted to do was call you' — Eli is still a primary attachment figure despite the ongoing alienation pattern. These are important counter-data points for the arc.",
+    "gatekeeping_admission_count": "B-012 adds three more written gatekeeping admissions: ROW-4367-4369, ROW-4383-4385, ROW-4389. Combined with B-009 ROW-3151 and B-010 ROW-3353-3355, there are now six written admissions documenting Melissa as the primary initiator of Olivia's calls to Eli.",
+    "christmas_holiday_pattern": "Dec 24 cluster mirrors Halloween 2022 (B-002) and Halloween 2023 (B-011 near-boundary): holiday occasions trigger Abby-prioritization framing. Eli's access on Christmas Day was ultimately limited (ROW-4192-4195: 'We're not home / She's been having too much fun at Aston's'). Christmas Day is identified as a point of limited access.",
+    "aston_bullying_context": "ROW-4266-4281 documents collaborative parenting around Aston hitting Olivia. Both parents engaged constructively. Melissa's plan to let Olivia address it first is sound and Eli agrees. Resolution follows (ROW-4282-4287). This extended cooperative exchange is notable contrast to the Dec 24 escalation three weeks earlier.",
+    "passport_application": "ROW-4153-4156, ROW-4195: Passport application in progress for Olivia. Eli provides birthplace information. Destination context unclear (Outer Banks is domestic; passport suggests potential international travel not previously disclosed). Monitoring for RF-02 implications."
+  }
+}

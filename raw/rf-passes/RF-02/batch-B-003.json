@@ -1,0 +1,131 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-003",
+    "row_range": {"start": 713, "end": 1092},
+    "date_range": {"start": "2022-11-06", "end": "2022-12-12"},
+    "episode_range": {"start": "EP-0102", "end": "EP-0145"},
+    "message_count": 380,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": ""
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 380,
+    "primary_flags": 2,
+    "primary_severity_distribution": {"1": 1, "2": 1, "3": 0},
+    "peripheral_flags_total": 3,
+    "peripheral_rf_distribution": {"RF-05": 2, "RF-01": 1},
+    "no_flag_messages": 378,
+    "flag_rate": "0.5%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-857-861",
+      "timestamp": "2022-11-16 02:12:56 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "[Cluster] ROW-857: 'You take my don't call after 8:30 to mean wait until 8:30ish to call' / ROW-860: 'I changed the cutoff time because you couldn't respect boundaries and would call at 8:59, 9:02, etc' / ROW-861: 'I'm just no longer making exceptions every night for you because you want to disregard the rules and call whenever you want.'",
+      "primary_rf": "RF-02",
+      "primary_severity": 2,
+      "primary_reasoning": "This cluster provides the most significant textual confirmation in the record to date of both key elements of CA-RF02-01. (1) MOVING TARGET CONFIRMED: ROW-860 — Melissa states in her own words that she changed the cutoff from a later time to 8:30pm because Eli 'would call at 8:59, 9:02, etc.' This is Eli's documented observation (ROW-859: 'The reason its 8:30 was because you didn't like me calling at 8:55 so you moved it to 8:30') confirmed by Melissa. (2) SELECTIVE ENFORCEMENT CONFIRMED: ROW-861 — 'I'm just no longer making exceptions every night for you' explicitly acknowledges that exceptions were previously being made, and announces their revocation. This is Melissa confirming that the DND/cutoff rule was selectively applied at her discretion, not a fixed household routine. Severity 2: this is not just a new enforcement event but a self-documenting confession of the gatekeeping architecture.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-846: Eli texts Melissa at 8:33pm asking her to pass along that he loves Olivia and to tell Olivia to call if she wants — he is not calling past 8:30, he is texting as an alternative. ROW-853: Melissa responds 'You know I said not to call after 8:30 not wait until 8:39 to call, right?' — applying the rule to the text message itself and expanding it to cover any communication. ROW-855: Eli points out 'I didn't try to call. I texted you at 8:33.' ROW-859: Eli explicitly names the moving target pattern. ROW-860-861: Melissa confirms moving target and selective enforcement history. The cluster shows Eli attempting to work within the stated rule; Melissa retroactively expanding the rule's scope.",
+      "pattern_tags": ["phone_access_blocking", "moving_cutoff_confirmed", "selective_enforcement_confirmed", "rule_scope_expansion"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "I changed the cutoff time because you couldn't respect boundaries / I'm just no longer making exceptions every night for you",
+      "calibration_status": "confirmed",
+      "calibration_addendum_applied": "CA-RF02-01",
+      "journal_crossref_date": "2022-11-16"
+    },
+    {
+      "message_id": "ROW-893",
+      "timestamp": "2022-11-20 01:35:09 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "Cause it's 8:30",
+      "primary_rf": "RF-02",
+      "primary_severity": 1,
+      "primary_reasoning": "Brief but unambiguous 8:30pm enforcement — continuation signal in ARC-RF02-001. Eli reports going to voicemail (ROW-891-892: 'Just went to VM. Tried to call.') and Melissa provides a one-line explanation: the time. No alternative offered, no callback facilitated. This is now the ninth signal in the phone-blocking arc across three batches.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-891-892: Eli sends two messages: 'Just went to VM.' and 'Tried to call.' The voicemail is explicitly attributed to the 8:30pm DND system in Melissa's response. No offer to have Olivia call back; no alternative time given. At this point in the record (Nov 20), Melissa has announced (ROW-861) that she is no longer making exceptions, so the enforced cutoff is now absolute rather than selectively applied.",
+      "pattern_tags": ["phone_access_blocking", "8pm_cutoff_enforcement", "no_alternative_offered"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "Cause it's 8:30",
+      "calibration_status": "confirmed",
+      "calibration_addendum_applied": "CA-RF02-01",
+      "journal_crossref_date": "2022-11-20"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-726",
+      "reason_noted": "Melissa denies Eli's pickup request for Nov 8 ('We have plans already. I was going to try to change them but you won't answer the phone so I'll pick her up'). Contextual mitigator: Eli texted at 3:25am (ROW-725), which is a genuinely unreasonable hour to coordinate. Denial appears linked to the timing of the request and Melissa's inability to reach Eli by phone. Not flagged as RF-02 because the denial has a facially reasonable basis. Noting in case a pattern of last-minute request denials emerges in later batches."
+    },
+    {
+      "message_id": "ROW-923",
+      "reason_noted": "Eli offers his number as emergency contact while Olivia is at an event (ROW-921: 'Give them my number as well I can be there faster'). Melissa responds 'And you are going to come and do what? She can't go to your house.' This could reflect an agreed custody restriction or scheduling constraint, or it could reflect gatekeeping framing (treating Eli's emergency presence as unauthorized). Not flagged without knowing the custody order details at this time. Noting for CP2/CP5 context: does a restriction on unscheduled custody exchanges exist?"
+    },
+    {
+      "message_id": "ROW-978-980",
+      "reason_noted": "Melissa discourages Eli from attending Olivia's award ceremony by invoking his illness ('If you are as sick as you claim you shouldn't be around her,' 'You don't just magically get better because she has an award'). Near-boundary RF-02 (health conditions applied to block attendance at child's event). Not flagged because Eli himself confirmed being sick (ROW-982-987 context). The 'as sick as you claim' phrasing introduces doubt. Would escalate to a flag if health conditions are invoked to block school events or activities where no genuine illness is present."
+    },
+    {
+      "message_id": "ROW-1041",
+      "reason_noted": "Melissa relays Olivia's complaint about Eli: 'she said he was on the phone 10 seconds then only another 10 seconds' — child criticism of Eli's attentiveness during a phone call, transmitted to Eli by Melissa. Third instance of child-complaint-relay pattern (previous: ROW-545 B-002, ROW-43 B-001). Peripheral RF-01. Will be relevant to RF-01 pass."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-938",
+      "peripheral_rf": "RF-05",
+      "severity": 2,
+      "note": "Eli asks if Melissa is doing anything with her family tomorrow (Thanksgiving). Melissa responds: 'Why? You hoping to bang another one?' (ROW-938) and then 'I mean this is the anniversary of you meeting her when she was 7 getting ready to turn 8 and you 30. Happy anniversary' (ROW-939). Sexual insinuation ('bang another one') combined with grooming narrative ('met her when she was 7... and you 30') — using Eli's relationship with Abby as an attack vector. High-severity intimidation/defamation. Per cp1-context.json: Abby is Eli's girlfriend AND Olivia's cousin; these messages are attack language, not substantiated allegations.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1056",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "Melissa attacks Eli's parenting during custodial time: 'You didn't communicate that you were going to be late. Then you lied to me. You didn't do any homework with her and she says she's about to [pee] her pants. Great dad.' (ROW-1056). Followed by ROW-1059: criticism that Eli detoured across town to take Abby home before dropping Olivia, using Abby as the attack vector again. Derogatory parenting characterization during custodial time.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1041",
+      "peripheral_rf": "RF-01",
+      "severity": 1,
+      "note": "Melissa relays Olivia's complaint about Eli's phone engagement ('he was on the phone 10 seconds then only another 10 seconds'). Third instance of child-complaint-relay targeting Eli's parenting/engagement quality. Mild alienation indicator — repeated relay of child's negative feedback about Eli normalizes a critical narrative.",
+      "confidence": "medium"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": ["ROW-857-861", "ROW-893"],
+      "ARC-RF02-002": [],
+      "ARC-RF02-003": []
+    },
+    "arc_001_cumulative_signals": 10,
+    "notable_this_batch": "ROW-860-861 provide in-record textual confirmation of moving cutoff and selective enforcement — the most analytically significant single cluster in the arc to date."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

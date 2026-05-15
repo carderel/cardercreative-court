@@ -1,0 +1,98 @@
+{
+  "batch_id": "B-028",
+  "date_range": {
+    "start": "2025-08-03",
+    "end": "2025-09-12",
+    "note": "date-filtered batch"
+  },
+  "message_count": 483,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "calibration_addenda_active": [
+    "RF10-ADD-001",
+    "RF10-ADD-002",
+    "RF10-ADD-003",
+    "RF10-ADD-004",
+    "RF10-ADD-005",
+    "RF10-ADD-006",
+    "RF10-ADD-007",
+    "RF10-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-001: dance enrollment unilateral Aug-Sep 2025 despite Eli's SPP-based objection. Eli's position misrepresented to Olivia. ARC-RF10-001 Signal 1."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-001",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF10-001",
+      "arc_signal": 1,
+      "date_range": "2025-08-13 to 2025-09-04",
+      "orig_rows": [
+        "14056",
+        "8089",
+        "8107",
+        "14263",
+        "14300",
+        "14301"
+      ],
+      "messages": [
+        {
+          "orig_row": "14056",
+          "direction": "Received",
+          "date": "2025-08-13",
+          "text": "But she needs to go to the dance studio to check it out on Saturday. Meet me there at 11:30?"
+        },
+        {
+          "orig_row": "8089",
+          "direction": "Sent",
+          "date": "2025-08-14",
+          "text": "I'm not taking her to the dance studio visit on Saturday at 11:30. My understanding is we agreed to wait until she's 12 because follow-through has been an issue"
+        },
+        {
+          "orig_row": "8107",
+          "direction": "Sent",
+          "date": "2025-08-14",
+          "text": "[If a particular activity is not agreed upon, the parent enrolling the child in the activity shall pay for 100% of the costs and expenses...] (SPP cited by Eli)"
+        },
+        {
+          "orig_row": "14263",
+          "direction": "Received",
+          "date": "2025-08-28",
+          "text": "She said you haven't talked to her about it only that you couldn't afford tap"
+        },
+        {
+          "orig_row": "14300",
+          "direction": "Received",
+          "date": "2025-09-03",
+          "text": "Just remembered Thursday doesn't work either cause she has her first dance class."
+        },
+        {
+          "orig_row": "14301",
+          "direction": "Received",
+          "date": "2025-09-03",
+          "text": "So my plans worked out. You can pick her up tomorrow if you get her to dance class at 8. She won't be able to dance but at least she can learn the rules and see the studio"
+        }
+      ],
+      "classification": "RF-10 primary Sev-1 (ARC-RF10-001) \u2014 Simulated cooperation pattern (ADD-003) confirmed: Melissa consulted Eli about dance enrollment, Eli objected and cited SPP (ROW-8089/8107). Melissa enrolled Olivia anyway, creating a standing Thursday schedule conflict during Eli's parenting time. Then: (1) characterized Eli's objection to Olivia as 'couldn't afford tap' rather than the SPP cost-allocation position Eli actually stated (ROW-14263); (2) made Eli's parenting time conditional on him taking Olivia to dance class (ROW-14301). This is the clearest ADD-003 simulated-cooperation event in the dataset. Compound: RF-10+RF-06 (forced payment per RF-06 S-007) + RF-03 (schedule conflict per RF-03 S-003).",
+      "addendum_applied": "ADD-003 (simulated cooperation \u2014 consultation performed, Eli's objection ignored). ADD-006 (characterizing Eli's SPP position as financial inability to Olivia \u2014 single-disclosure distortion)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF10-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 1
+    },
+    {
+      "arc": "ARC-RF10-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    }
+  ]
+}

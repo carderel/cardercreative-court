@@ -1,0 +1,118 @@
+{
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "pass_status": "complete",
+  "priority": 9,
+  "tier": 1,
+  "eli_signal": "confirmed_high",
+  "progress": {
+    "total_batches": 31,
+    "batches_completed": 31,
+    "batches_remaining": 0,
+    "last_batch_completed": "B-031",
+    "next_batch": null,
+    "halt_reason": null
+  },
+  "date_coverage": {
+    "covered_through": "2026-04-12",
+    "remaining_from": null
+  },
+  "cumulative_statistics": {
+    "messages_analyzed": 10637,
+    "primary_flags": 20,
+    "severity_distribution": {
+      "1": 7,
+      "2": 11,
+      "3": 2
+    },
+    "peripheral_flags": 0,
+    "active_arcs": 3,
+    "watching_arcs": 0,
+    "candidate_arcs": 0,
+    "resolved_arcs": 0,
+    "compound_patterns": 0,
+    "hostile_episodes_flagged": 46,
+    "cycles_confirmed": 5
+  },
+  "triage_profile": {
+    "keyword_hit_count": 125,
+    "direction": {
+      "sent": 39,
+      "received": 86,
+      "pct_received": 69
+    },
+    "phase_distribution": {
+      "A": 99,
+      "B": 15,
+      "C": 11
+    },
+    "hot_periods": ["2025-08", "2024-08", "2022-11"],
+    "pass_mode": "full_pass_all_31_batches_meta_analysis",
+    "key_note": "RF-13 is a META pass — analyzes escalation shape across all 46 hostile episodes using delta scoring and cycle detection. Primary source: 46 hostile episodes from triage + cross-RF foundation (RF-04: 93 flags; RF-05: 26 flags; RF-07: 12 flags). Direction imbalance (69% received) confirms Melissa as consistent escalator pre-analysis."
+  },
+  "calibration_addenda": ["RF13-ADD-001", "RF13-ADD-002", "RF13-ADD-003", "RF13-ADD-004", "RF13-ADD-005"],
+  "calibration_addenda_file": "analysis-output/calibration/addenda-RF-13.json",
+  "cp2_status": "complete",
+  "cp2_generated": "2026-04-28",
+  "cp2_completed": "2026-04-28",
+  "cp2_file": "analysis-output/checkpoints/cp2-RF-13-review.json",
+  "pending_cp2_items": [],
+  "pending_cp3_items": [
+    {
+      "id": "CP3-RF13-001",
+      "description": "Emotional numbing impact finding (ADD-004): Eli reports being numb to hostile exchanges. Present to GAL as normalization of sustained hostile exposure, not indifference. Reference arc synthesis note in ARC-RF13-001.",
+      "priority": "medium"
+    }
+  ],
+  "arc_state_file": "analysis-output/arc-states/RF-13-arc-state.json",
+  "key_findings": {
+    "primary_signal": "20 primary flags across 46 hostile episodes. Three arcs all ACTIVE and unresolved at dataset close. Melissa is the consistent escalator (69% received direction); Eli is the consistent de-escalator.",
+    "peak_episodes": [
+      "EP-0854 Aug 4 2024 (311 msgs) — Sev-3, largest hostile episode in dataset",
+      "B-022 Jan-Feb 2025 cluster (365 hostile msgs in 32 days, 5 hostile episodes) — Sev-3",
+      "EP-0917 Oct 2 2024 (173 msgs) — Sev-2",
+      "EP-1018 Feb 15 2025 (164 msgs) — in B-022 Sev-3 cluster",
+      "EP-1078 May 4 2025 (170 msgs) — AI-guided inflection point"
+    ],
+    "trajectory": "Worsening Phase A (2022-2024) → extreme Phase A peak (Aug-Oct 2024) → brief unexplained silence → Phase B peak (Jan-May 2025) → structural shift Phase C (legal/visit-refusal). No attenuation at any phase boundary.",
+    "role_consistency": "Melissa = consistent escalator across all 46 hostile episodes. Eli = consistent de-escalator, increasingly strategic (AI-guided from May 2025). Role asymmetry is the defining characteristic of the escalation pattern.",
+    "de_escalation_resistance": "Confirmed across all phases. Strongest in Phase B/C: Eli adopted AI-guided communication specifically to reduce conflict; Melissa escalated regardless. EP-1078 (170-msg hostile episode over AI-guided responses) is the definitional evidence.",
+    "temporal_pattern": "Five holiday windows confirmed: Halloween, Thanksgiving/November, Christmas, Valentine's Day, New Year's. Multi-year recurrence documented. EP-0093 (Oct 31 2022) is the first hostile episode in the dataset — Halloween day.",
+    "trigger_unpredictability": "Eli cannot identify reliable triggers (CP2 Q1 — walking-on-eggshells dynamic). Escalation is internally driven, not reactive to Eli's communication choices.",
+    "ai_guided_inflection": "Eli implemented AI-guided communication strategy starting ~May 2025 (EP-1078). Melissa's hostile escalation continued unabated — confirms escalation is not a response to Eli's communication style.",
+    "emotional_impact": "Eli reports emotional numbing (CP2 Q6 — no memorable worst exchange). ADD-004 documents this as a normalization impact finding.",
+    "cycles_confirmed": [
+      "CYC-001: Abby-content correlated escalation (Phase A/B peaks)",
+      "CYC-002: Logistics/scheduling spike cycles (scattered Phase A)",
+      "CYC-003: Holiday escalation cycle — 5 temporal windows, multi-year confirmed",
+      "CYC-004: Legal-threat ceiling cycle — RF-05 cross-confirmed",
+      "CYC-005: Child-welfare allegation deployment — RF-01/RF-04/RF-08 cross-confirmed"
+    ]
+  },
+  "session_log": [
+    {
+      "session": 1,
+      "date": "2026-04-28",
+      "batches_processed": ["B-001"],
+      "primary_flags_added": 0,
+      "peripheral_flags_added": 0,
+      "arcs_updated": ["ARC-RF13-001 CANDIDATE", "ARC-RF13-002 CANDIDATE", "ARC-RF13-003 CANDIDATE"],
+      "cycles_added": 0,
+      "notes": "RF-13 pass initialized. B-001 calibration batch processed (365 messages, Jan 11 2022 - Oct 2 2022). Zero primary flags — cooperative baseline. Hostile episode inventory (46 eps) embedded. Three arcs initialized CANDIDATE. Five anticipated cycles listed. CP2 review file generated with 6 questions. Halted per protocol."
+    },
+    {
+      "session": 2,
+      "date": "2026-04-28",
+      "batches_processed": ["B-002","B-003","B-004","B-005","B-006","B-007","B-008","B-009","B-010","B-011","B-012","B-013","B-014","B-015","B-016","B-017","B-018","B-019","B-020","B-021","B-022","B-023","B-024","B-025","B-026","B-027","B-028","B-029","B-030","B-031"],
+      "primary_flags_added": 20,
+      "peripheral_flags_added": 0,
+      "arcs_updated": [
+        "ARC-RF13-002 CANDIDATE→WATCHING (B-002); WATCHING→ACTIVE (B-003)",
+        "ARC-RF13-003 CANDIDATE→WATCHING (B-002); WATCHING→ACTIVE (B-005, EP-0219 within-episode resistance)",
+        "ARC-RF13-001 CANDIDATE→WATCHING (B-003); WATCHING→ACTIVE (B-017, EP-0854 311-msg mega-cluster)"
+      ],
+      "cycles_added": 5,
+      "notes": "CP2 calibration completed (Q1-Q6 answered). 5 addenda confirmed. Full pass completed B-002 through B-031 in single session. 20 primary flags: Sev-1 x7 (B-002,004,007,012,015,023,030), Sev-2 x11 (B-003,005,006,016,018,019,025,026,027,028,029), Sev-3 x2 (B-017 EP-0854 311 msgs; B-022 Jan-Feb 2025 cluster 365 msgs). All three arcs ACTIVE and unresolved at dataset close. Key CP2 findings: trigger unpredictability (walking-on-eggshells); AI-guided communication from May 2025 (EP-1078); Halloween + holiday temporal pattern confirmed; emotional numbing impact finding. 5 cycles confirmed including CYC-003 multi-year holiday pattern."
+    }
+  ]
+}

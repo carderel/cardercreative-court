@@ -1,0 +1,183 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-010",
+    "row_range": {"start": 3344, "end": 3723},
+    "date_range": {"start": "2023-08-21", "end": "2023-10-04"},
+    "episode_range": {"start": "EP-0444", "end": "EP-0504"},
+    "message_count": 380,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": "Back-to-school and fall cheer season (Aug–Oct 2023). Key signals: ROW-3353-3356 — Melissa explicitly reiterates that morning calls are Melissa-initiated ('That's why you are called most mornings. Because I ask.'), second confirmation of ROW-3151 bidirectional control pattern. ROW-3435 — DND explicitly named again ('Do not disturb kicks on at 8:30'). ROW-3546-3547 — Melissa unilaterally removes Abby from school pickup authorization ('I deleted her off of pickup ... Abby. Lol') — ARC-RF02-005 second signal, extending Abby exclusion from visit access to institutional access. ARC-RF02-005 promoted to WATCHING (2 signals, both Sev 2, across two distinct exclusion contexts). Peripheral: ROW-3389 (fourth incest narrative deployment — RF-15 Sev 2) and ROW-3630 (first explicit pedophilia insinuation regarding cheerleading — RF-15 Sev 2, distinct escalation from prior incest framing). Financial contempt threat cluster (ROW-3603–3657) is background noise throughout batch, not RF-02 relevant."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 380,
+    "primary_flags": 7,
+    "primary_severity_distribution": {"1": 6, "2": 1, "3": 0},
+    "peripheral_flags_total": 3,
+    "peripheral_rf_distribution": {"RF-15": 2, "RF-04": 1},
+    "no_flag_messages": 373,
+    "flag_rate": "1.8%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-3353-3356",
+      "date": "2023-08-22",
+      "direction": "Received",
+      "verbatim_message": "ROW-3354: 'I usually do. That's why you are called most mornings.' | ROW-3355: 'Because I ask' | ROW-3356: 'Despite what you think I try hard to foster a relationship between you two'",
+      "severity": 1,
+      "rf_indicators": ["bidirectional_communication_control_confirmed", "intermediary_role_reiterated"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Second explicit confirmation of the bidirectional communication control pattern first revealed in ROW-3151 (B-009). Context: Eli texted 'See if she wants to call on the way' (ROW-3353). Melissa responds: 'I usually do. That's why you are called most mornings. Because I ask.' She then frames this as cooperative ('Despite what you think I try hard to foster a relationship between you two'). Analytically, the framing shift does not change the structural reality: Melissa explicitly states that the morning calls appearing to originate from Olivia are initiated by Melissa asking the question. The cooperative framing is itself significant — Melissa is aware that this intermediary control is observable and is now contextualizing it as benevolent. The structural architecture is confirmed either way. Sev 1 because this is a repeat confirmation, not a new escalation.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3375",
+      "date": "2023-08-25",
+      "direction": "Received",
+      "verbatim_message": "Yeah. It's last 8:30 [corrected to 'past' in ROW-3376]",
+      "severity": 1,
+      "rf_indicators": ["dnd_cutoff_enforcement", "phone_access_control"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "Eli's call was blocked by the 8:30pm DND cutoff. Eli requested Olivia call him (ROW-3374: 'Have her call. I just tried to call.'). Melissa declines, citing past-8:30 (ROW-3375-3376: 'Yeah. It's past 8:30'). Per CA-RF02-01: DND is confirmed active and enforced at 8:30. Selective enforcement documented five times in prior batches; this is routine enforcement. Sev 1.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3435",
+      "date": "2023-08-31",
+      "direction": "Received",
+      "verbatim_message": "Yeah. Do not disturb kicks on at 8:30",
+      "severity": 1,
+      "rf_indicators": ["dnd_named_explicitly", "phone_access_control"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "Melissa explicitly names the DND mechanism for the second time in two batches: 'Do not disturb kicks on at 8:30.' Context: Eli reported his call went to voicemail (ROW-3433-3434: 'I tried to call but it goes to VM'). Melissa confirms the DND blocked the call. Per CA-RF02-01: this is routine enforcement of the confirmed DND architecture. Analytically, Melissa's phrasing 'kicks on' treats the DND as automatic/inevitable — consistent with her prior characterizations. Sev 1.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3480",
+      "date": "2023-09-06",
+      "direction": "Received",
+      "verbatim_message": "Well never mind. She said she doesn't want to talk",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Melissa had texted 'Call u back. Doing homework' (ROW-3478). She then relays Olivia's preference not to talk (ROW-3480), but immediately reverses within seconds: 'Well now she does' (ROW-3481). The rapid reversal is analytically informative — it demonstrates Melissa's moment-to-moment gatekeeper role: she initially communicates a preference that closes contact, then recalibrates and facilitates. Whether the reversal reflects Olivia's genuine instant change of mind or Melissa deciding to facilitate is unverifiable under the intermediary architecture (CA-RF02-02). Positive outcome (Olivia spoke with Eli), but the relay-and-reverse sequence exposes the gatekeeper function in real time. Medium confidence given positive outcome.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-3546-3547",
+      "date": "2023-09-20",
+      "direction": "Received",
+      "verbatim_message": "ROW-3546: 'I deleted her off of pickup' | ROW-3547: 'Abby. Lol'",
+      "severity": 2,
+      "rf_indicators": ["abby_exclusion_institutional", "unilateral_access_restriction", "partner_exclusion_extended"],
+      "arc_signal": "ARC-RF02-005",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Melissa announces she has unilaterally removed Abby from Olivia's school pickup authorization. The 'Lol' signals this is deliberate and carries a satisfaction component. ARC-RF02-005 second signal. First signal (ROW-2395-2409, B-007) was Olivia refusing visits if Abby was present — a preference relay functioning as a visit access condition. This signal extends the Abby exclusion pattern to institutional access: Melissa has removed Abby's authorization to pick up Olivia from school. This is a unilateral action, not a preference relay, and directly restricts Abby's ability to facilitate Eli's parenting logistics. The 'Lol' confirms intentionality and a dismissive attitude toward the exclusion. Sev 2: unilateral institutional action with demonstrable access-restriction effect. ARC-RF02-005 promoted to WATCHING this batch (2 signals, both Sev 2, across two distinct Abby exclusion contexts). Note: if Melissa holds exclusive legal custody of school records, this action may be within her authority — medium-high confidence pending custody order review.",
+      "confidence": "medium-high"
+    },
+    {
+      "message_id": "ROW-3575",
+      "date": "2023-09-22",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't want to talk today",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Eli had jumped in the shower and offered callback availability (ROW-3574: 'Alright jumping in the shower'). Melissa relays Olivia's preference not to talk 'today.' Per CA-RF02-02: preference cannot be independently verified under the DND/intermediary architecture. Routine CA-RF02-02 pattern. Sev 1.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-3661-3669",
+      "date": "2023-09-27",
+      "direction": "Received",
+      "verbatim_message": "ROW-3661: 'It's past time' | ROW-3669: 'You've been told to call before 8:30' | ROW-3672: 'You need to respect boundaries' | ROW-3673: 'But when she gets out I'll see if she wants to call but she can't be on long cause it's bedtime'",
+      "severity": 1,
+      "rf_indicators": ["dnd_cutoff_enforcement", "phone_access_control", "cutoff_as_contact_terminator"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "DND cutoff enforcement cluster at ~8:47–8:57pm. Eli requested a call for Olivia after a prolonged contentious exchange about the quarantine/illness situation (ROW-3660: 'She want give me a call?'). Melissa refuses multiple times citing the 8:30pm cutoff: 'It's past time' (ROW-3661) / 'You've been told to call before 8:30' (ROW-3669) / 'You need to respect boundaries' (ROW-3672). Melissa eventually offers to 'see if she wants to call but she can't be on long cause it's bedtime' (ROW-3673). The cutoff is used to close out the contact request following a heated exchange — the conflict-to-cutoff sequence mirrors the vaping conflict pattern from B-009 (ROW-3135-3151). Note: Eli was engaged in the quarantine dispute throughout the evening and did not attempt a call until after 8:30; Melissa's 'You obviously had a phone in your hand' has partial contextual merit. Even so, the DND cutoff functions as the contact-denial mechanism. Per CA-RF02-01: enforcement is confirmed, selective enforcement well-documented. Sev 1.",
+      "confidence": "high"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-3481",
+      "reason_noted": "Immediate same-breath reversal of preference relay: 'Well now she does' — within seconds of relaying Olivia's preference not to talk, Melissa reverses. Olivia ultimately spoke with Eli. Positive outcome. Analytically paired with ROW-3480 (flagged). The reversal demonstrates the real-time gatekeeper function operating in both closing and opening directions."
+    },
+    {
+      "message_id": "ROW-3523",
+      "reason_noted": "Melissa compliments Eli's parenting: 'You did good making time for her yesterday.' Positive cooperative acknowledgment. Eli had attended Olivia's cheerleading performance (partially — Eli missed part of the performance due to work, ROW-3521). Melissa affirms the effort. Cooperative gesture; noted as evidence of Melissa facilitating contact acknowledgment when she chooses."
+    },
+    {
+      "message_id": "ROW-3714",
+      "reason_noted": "Melissa discloses a seizure: 'I had seizure and left work shortly after getting there.' Health context for the Oct 2 period. Not RF-02 relevant, noted for case timeline context."
+    },
+    {
+      "message_id": "ROW-3703-3705",
+      "reason_noted": "Melissa facilitates Eli's pickup visit (ROW-3703-3705). Oct 1 pickup appears to have gone smoothly. Cooperative facilitation noted."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-3389",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "'Also who are you to talk about what's appropriate? Banging your niece, that you met when you were 30 and she was getting ready to turn 8, while your daughter and wife are upstairs asleep.' Fourth deployment of the incest/grooming narrative (prior: B-004 ROW-1288; B-006 ROW-2168-2171; B-009 ROW-3271). Context: Eli questioned whether it was appropriate for Olivia to spend the night at a male friend's house. Melissa's response invokes the incest narrative as a counter-attack on Eli's authority to question any social arrangement. Pattern: incest framing deployed each time Eli raises a concern about Olivia's social environment. Sev 2.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3630",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "'You did better while she was in cheerleading then quit when she quit. I really hope you weren't just making yourself available because there were young girls there.' First explicit pedophilia insinuation in the dataset — distinct from the prior incest narrative (which targeted Abby/Eli's relationship). Melissa insinuates Eli attended cheerleading to access young girls, not to see Olivia. Context: Eli had said 'I was looking forward to seeing her' regarding the dentist pickup (ROW-3628); Melissa pivots to questioning his motives for cheerleading attendance. This is a qualitatively different false allegation from the incest framing: it targets Eli's character as a potential predator toward unrelated children. Sev 2. Pattern expansion: RF-15 escalates from incest narrative (targeting Abby) to broader predatory insinuation (targeting Eli's conduct around children generally).",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-3597",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "'Maybe work more less PlayStation' — in response to Eli's delayed daycare payment. Derogatory characterization of Eli's work ethic and use of leisure time in co-parenting communications. RF-04 (Delegitimization). Sev 1. Part of a broader contempt-threat cluster (ROW-3586–3657) that runs throughout late September.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 2,
+    "watching_arc_count": 2,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": ["ARC-RF02-005"],
+    "arcs_resolved_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": ["ROW-3375", "ROW-3435", "ROW-3661-3669"],
+      "ARC-RF02-002": ["ROW-3353-3356", "ROW-3480", "ROW-3575"],
+      "ARC-RF02-003": [],
+      "ARC-RF02-004": [],
+      "ARC-RF02-005": ["ROW-3546-3547"]
+    },
+    "arc_001_cumulative_signals": 20,
+    "arc_002_cumulative_signals": 19,
+    "arc_004_cumulative_signals": 3,
+    "arc_005_cumulative_signals": 2,
+    "arc_005_promotion_note": "ARC-RF02-005 promoted CANDIDATE → WATCHING this batch. Two signals now, both Sev 2: (1) ROW-2395-2409 (B-007) — visit access conditioned on Abby's absence (preference relay); (2) ROW-3546-3547 (B-010) — school pickup authorization removed (unilateral action). Pattern now spans two distinct exclusion contexts. Promotion threshold met (2 signals, Sev 2 confirmed).",
+    "arc_002_note": "ARC-RF02-002 receives second explicit confirmation of bidirectional communication control (ROW-3353-3356). Melissa's cooperative reframing ('I try hard to foster a relationship') does not alter the structural architecture — she controls call initiation in both directions.",
+    "arc_001_note": "ARC-RF02-001 routine enforcement signals. ROW-3435 provides another explicit DND name-drop ('Do not disturb kicks on at 8:30'). ROW-3661-3669 documents cutoff enforcement following conflict — consistent with conflict-to-cutoff sequence noted in B-009."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

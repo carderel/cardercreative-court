@@ -1,0 +1,127 @@
+{
+  "batch_id": "B-021",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2024-12-18",
+    "end": "2025-01-08"
+  },
+  "row_range": {
+    "sms_start": "ROW-7707",
+    "sms_end": "ROW-8927",
+    "mms_start": "ROW-12473",
+    "mms_end": "ROW-15254"
+  },
+  "message_count": 482,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B021-PF-001",
+      "row_ref": "ROW-8734-ROW-8735",
+      "date": "2024-12-21",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 44,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "You know she keeps wanting to talk to you and you keep hanging up to do other things. / That's not nice",
+      "context": "Melissa frames Eli as the agent of contact failure — characterizing him as repeatedly cutting short calls with Olivia who 'keeps wanting to talk' to him. Context: Eli was in the bathroom and asked to call back. Also appears in MMS as ROW-12491-12492. Notably, the Dec 27 exchange (ROW-8765-8767) reveals Melissa was calling to show Eli Meta Quest gameplay ('She didn't know I was calling / I wanted to show you her playing the metaquest') — calling on Olivia's behalf without Olivia's initiation. Supporting Dec 18 instance: ROW-8718-8719 (Melissa): 'Answer the phone / Your daughter doesn't feel well and wants to talk to her daddy' — Olivia's ill-child call desire relayed through Melissa rather than Olivia calling directly.",
+      "analytical_note": "Seventh contact-relay/accusation instance in the arc. Melissa positions herself as reporter of Olivia's frustrated contact desire while attributing the contact deficit to Eli's behavior. The framing inverts the structural pattern: where the arc documents Melissa as the gatekeeper, these relay accusations cast Eli as the one obstructing connection. Combined with ROW-8719 (sick child relay), both instances show Olivia's contact desire being narrativized and transmitted through Melissa rather than through direct Olivia-to-Eli communication.",
+      "arc_promotion": null
+    },
+    {
+      "flag_id": "B021-PF-002",
+      "row_ref": "ROW-8909",
+      "date": "2025-01-08",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 45,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "She said sure for tomorrow but you better do something fun",
+      "context": "Eli asks (ROW-8906): 'Friday then pick up?' Melissa responds ROW-8907-8908: 'Idk / I'll ask her when she wakes up' — Melissa confirms Olivia's visit preference is gated through her consultation before Eli can plan. ROW-8909: Melissa conveys Olivia's agreement but attaches a behavioral condition: 'you better do something fun.' Also appears as ROW-12692 in MMS dataset.",
+      "analytical_note": "Two-part signal: (1) relay mechanism — Olivia's willingness to see her father is not communicated directly but through Melissa's intermediary (consistent with ARC-RF02-002 baseline pattern); (2) conditional framing — visit approval is attached to a behavioral expectation ('you better do something fun'). The conditional framing is lighter in tone than prior explicit conditions (e.g., homework-conditional-access sub-pattern) but maintains the structural position of Melissa as arbiter of visit quality and terms. Eli's access to his daughter is never simply scheduled — it passes through Melissa's consultation, approval, and conditions.",
+      "arc_promotion": null
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B021-PERIPH-001",
+      "row_ref": "ROW-8721",
+      "date": "2024-12-18",
+      "rf_category": "RF-05",
+      "severity": 1,
+      "verbatim": "We don't want to see yo ass",
+      "note": "Derogatory language directed at Eli in response to his explanation that he'd call Olivia back in a moment. Also appears as ROW-12476 in MMS dataset. RF-05 Sev 1."
+    },
+    {
+      "flag_id": "B021-PERIPH-002",
+      "row_ref": "ROW-8865-ROW-8877",
+      "date": "2025-01-05",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "Why is your first thought someone else's mom to watch her? [ROW-8865] / You haven't even seen her in two weeks [ROW-8868] / Shouldn't take 3.5 hours to get an answer if you can be a decent parent or not [ROW-8877]",
+      "note": "Sustained parental competence attack during snow-day childcare coordination. Melissa criticizes Eli for suggesting alternatives (Jeanette/Ha) before agreeing to watch Olivia himself, characterizes his work obligations as insufficient excuse, uses his illness-driven absence of the prior two weeks as a character indictment, and frames his three-hour response time as evidence of inadequate parenting. Also appears in MMS as ROW-12645/12648/12657. RF-04 Sev 1."
+    },
+    {
+      "flag_id": "B021-PERIPH-003",
+      "row_ref": "ROW-8914-ROW-8927",
+      "date": "2025-01-08",
+      "rf_category": "RF-04",
+      "severity": 2,
+      "verbatim": "She thinks you like kilo better and can you blame her for thinking that when you choose him first and spend everyday with him and only see her once a week or every two weeks [ROW-8914] / I completely understand why she feels the way she does with the little effort you put in. Always getting grumpy and annoyed and not spending time with her [ROW-8922] / She is an amazing little girl with a heart of gold that deserves a better father. [ROW-8924] / She deserves to have one that will be present in her life and make her a priority [ROW-8925] / Unfortunately that's not something I think you will ever give her [ROW-8926]",
+      "note": "Most severe RF-04 attack in the dataset to date. Multi-message sustained assault on Eli's fitness as a father, delivered while Eli was en route to pick up Olivia. Key elements: (1) Olivia's emotions used as evidentiary ammunition ('She thinks you like kilo better'); (2) Eli's visit frequency framed as his failure ('once a week or every two weeks') without acknowledging Melissa's role in scheduling; (3) direct parental fitness declaration ('deserves a better father'); (4) categorical permanence judgment ('not something I think you will ever give her'). Also appears as ROW-12698–ROW-12711 in MMS dataset. Cross-pass priority: RF-04 Sev 2 — highest parental delegitimizing severity in dataset. Note RF-02 intersection: framing Eli's visit frequency as his failure while Melissa controls scheduling is a structural gaslighting element (RF-09 cross-reference)."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-8753",
+      "date": "2024-12-25",
+      "description": "Melissa shares warm Christmas story: 'Olivia knew exactly what to get you. She said my dad said his speaker broke so I want to get him a new one.' — sharing Olivia's thoughtful gift initiative with Eli."
+    },
+    {
+      "row_ref": "ROW-8759",
+      "date": "2024-12-25",
+      "description": "Melissa affirms Eli's Christmas gift choice: 'You did good with a robot dog. I looked it up yesterday when I approved the app' — cooperative gift acknowledgment."
+    },
+    {
+      "row_ref": "ROW-8793-ROW-8812",
+      "date": "2024-12-31",
+      "description": "Sustained co-parenting discussion about Olivia's emotional sensitivity ('why do you treat me like a princess? I don't deserve it'). Melissa shares parenting initiative (daily three-good-things exercise), Eli contributes his approach (unconditional love framing). High-quality cooperative engagement on child's emotional development."
+    },
+    {
+      "row_ref": "ROW-8879",
+      "date": "2025-01-06",
+      "description": "During school snow day, Melissa proactively offers to bring Olivia to Eli at 8 AM if she has to work: 'So school is out. If I have to work tomorrow I can bring her by at 8' — access facilitation offer during weather emergency."
+    },
+    {
+      "row_ref": "ROW-8895-ROW-8904",
+      "date": "2025-01-08",
+      "description": "Detailed update on Olivia's day with Ha (doctor visit for sinus infection, Arby's, shopping, toys, Urban Air) — proactive information sharing about child's health and activities."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-8869",
+      "date": "2025-01-05",
+      "consideration": "ARC-RF02-004 near-miss. Melissa relays: 'She wants to know why she can't go to your house.' Eli's response (ROW-8870): 'She hasn't been here because we all got sick and I didn't want to recirculate anything.' The house restriction in this instance originated from Eli's health concern (illness in his household), not Melissa's gatekeeping. Not flagged as ARC-RF02-004. Also functions as ARC-RF02-002 mechanism (Olivia's question about access routing through Melissa), noted contextually in PF-001."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new signals; signal_count remains 26",
+    "ARC-RF02-002": "signal_count now 45; two signals this batch — ROW-8734-8735 (contact-relay accusation, Dec 21, signal 44) and ROW-8909 (visit relay + conditional framing, Jan 8, signal 45); contact-relay accusation pattern continues as seventh instance; relay mechanism documented in both direct call mediation (ROW-8718-8719) and visit-preference mediation (ROW-8908-8909)",
+    "ARC-RF02-004": "no new signals; remains ACTIVE; near-miss Jan 5 (illness-based restriction, Eli's initiative)",
+    "ARC-RF02-005": "no new signals; remains WATCHING",
+    "ARC-RF02-006": "no new signals; remains WATCHING"
+  },
+
+  "batch_notes": "Mixed batch analytically: quieter on structural gatekeeping (2 primary RF-02 flags) but notable for the most severe RF-04 attack in the dataset (ROW-8914-8927, Jan 8 — 'She deserves a better father / Unfortunately that's not something I think you will ever give her'). This RF-04 Sev 2 attack intersects with RF-02 structurally: Melissa frames Eli's visit frequency as his failure while controlling the scheduling apparatus. The Dec 31 Olivia emotional sensitivity discussion is the highest-quality cooperative engagement in the batch and possibly the most substantive child-centered co-parenting conversation in recent batches. Olivia has a sinus infection as of Jan 8. Melissa's father's health continues to be a background stressor (22 lbs of fluid noted Dec 29)."
+}

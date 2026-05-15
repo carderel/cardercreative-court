@@ -1,0 +1,59 @@
+{
+  "batch_id": "B-007",
+  "date_range": {
+    "start": "2023-04-02",
+    "end": "2023-06-03",
+    "orig_row_start": 2222,
+    "orig_row_end": 2592
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-003: payment pressure May 15 2023 (ROW-2478). Pattern reinforcement. ARC-RF06-001 Signal 3."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-003",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 3,
+      "date": "2023-05-15",
+      "orig_rows": [
+        "2478"
+      ],
+      "messages": [
+        {
+          "orig_row": "2478",
+          "direction": "Received",
+          "date": "2023-05-15",
+          "text": "You going to pay the daycare?"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 Continued daycare payment pressure. In context of established pattern (prior contempt threats B-003/B-004), even a single payment query carries coercive weight \u2014 it carries the implicit threat of the prior contempt escalations. Per ADD-005: payment reminders co-deployed within the broader pattern of financial leverage. ARC-RF06-001 Signal 3.",
+      "addendum_applied": "ADD-005 (payment reminder in context of established coercion pattern)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "WATCHING",
+      "signals_cumulative": 3
+    }
+  ]
+}

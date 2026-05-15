@@ -1,0 +1,78 @@
+{
+  "batch_id": "B-028",
+  "date_range": {
+    "start": "2025-08-03",
+    "end": "2025-09-12"
+  },
+  "row_range": {
+    "orig_row_min": 8063,
+    "orig_row_max": 14339,
+    "note": "Date-filtered batch; orig_row range reflects unsorted Excel order within date window"
+  },
+  "message_count": 483,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": {
+    "ARC-RF14-001": "ACTIVE",
+    "ARC-RF14-002": "ACTIVE"
+  },
+  "arc_signals_cumulative_at_batch_start": {
+    "ARC-RF14-001": 8,
+    "ARC-RF14-002": 7
+  },
+  "calibration_addenda_active": [
+    "RF14-ADD-001", "RF14-ADD-002", "RF14-ADD-003", "RF14-ADD-004",
+    "RF14-ADD-005", "RF14-ADD-006", "RF14-ADD-007", "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "arc_signals_this_batch": {
+      "ARC-RF14-001": 0,
+      "ARC-RF14-002": 1
+    },
+    "note": "Gary overnight first explicitly documented: ROW-14171 (Aug 18) Melissa states 'Sunday morning may be better if I have Gary over Saturday night'; ROW-14174 'We like the overnights.' First direct textual confirmation of Gary overnight access while Olivia is scheduled to be at Melissa's household. Per ADD-003: Gary has a DV arrest record (05/23/2023, dismissed 09/19/2023). This is a genuine Sev-1 RF-14 signal."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-015",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF14-002",
+      "arc_signal_number": 8,
+      "date": "2025-08-18",
+      "orig_rows": ["14171", "14174"],
+      "messages": [
+        {
+          "orig_row": "14171",
+          "direction": "Received",
+          "text": "Sunday morning may be better if I have Gary over Saturday night"
+        },
+        {
+          "orig_row": "14174",
+          "direction": "Received",
+          "text": "We like the overnights"
+        }
+      ],
+      "classification": "RF-14 primary Sev-1 — First direct textual confirmation of Gary overnight presence in Melissa's household. Gary has a documented DV arrest (05/23/2023, charges dismissed 09/19/2023 at prosecutor request). Per ADD-003: Eli's concern about Gary's overnight access to Olivia is a genuine (not manufactured) safety observation. 'We like the overnights' suggests Gary overnights are a pattern, not a one-off. ARC-RF14-002 Genuine Safety Documentation Signal 8.",
+      "addendum_applied": "ADD-003 (Gary DV arrest context — Sev-1 RF-14 when Gary referenced as overnight presence in Melissa's household). ADD-008 (Gary timeline context).",
+      "cross_rf_note": "No RF-15 overlap. Standalone RF-14 primary. Context: scheduling dispute about Olivia's Saturday night / Sunday morning — Gary's presence shapes Melissa's availability preferences."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals in B-028. ACTIVE state holds. 8 cumulative signals.",
+      "state": "ACTIVE",
+      "signals_cumulative": 8
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "S-015: Gary first documented overnight Aug 18, 2025 — DV-arrest-history individual with overnight access to Olivia. Signal 8.",
+      "state": "ACTIVE",
+      "signals_cumulative": 8
+    }
+  ]
+}

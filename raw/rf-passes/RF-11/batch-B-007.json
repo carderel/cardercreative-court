@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-007",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2023-04-03",
+    "end": "2023-06-02"
+  },
+  "row_range": {
+    "start": 2229,
+    "end": 2579
+  },
+  "message_count": 502,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Apr\u2013Jun 2023: Melissa reports 'Abby told Olivia she couldn't have a treat if she told Melissa' (ROW-2372-2376 area). Ambiguous \u2014 one-sided account from Melissa; cannot cross-reference. Per ADD-001, flag only when text-record evidence is documentable from Eli's direction; Eli did not confirm this allegation at CP2. Treating as unresolved peripheral (behavioral note only, no primary flag)."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

@@ -1,0 +1,59 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-007",
+    "row_range": {
+      "start": 2229,
+      "end": 2580
+    },
+    "date_range": {
+      "start": "2023-04-03",
+      "end": "2023-06-02"
+    },
+    "message_count": 352,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": [
+      "RF07-ADD-001",
+      "RF07-ADD-002",
+      "RF07-ADD-003",
+      "RF07-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 352,
+    "primary_flags": 0,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 352,
+    "flag_rate": "0.0%"
+  },
+  "flagged_messages": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 watching state maintained. No new signals this batch."
+  },
+  "compound_patterns": [],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Moderate \u2014 spring 2023 co-parenting logistics, periodic conflict. No identified RF-07 threshold events.",
+    "rf07_assessment": "Zero RF-07 primary signals. Watching arc state unchanged.",
+    "custodial_context": "Eli's parenting time (weekends) occurs throughout this batch. No Received-direction contact into identified parenting-time windows at density sufficient for ADD-004 custodial-time-overstepping flag."
+  }
+}

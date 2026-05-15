@@ -1,0 +1,194 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-012",
+    "row_range": {"start": 4054, "end": 4448},
+    "date_range": {"start": "2023-11-26", "end": "2024-01-31"},
+    "episode_range": {"start": "EP-0564", "end": "EP-0634"},
+    "message_count": 395,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": "Holiday season (Nov–Jan) and new year. Analytically significant batch for multiple reasons: (1) ROW-4198 — 'She can't go to your house' (December 26) with no justification — ARC-RF02-004 fourth signal, lacks mitigation for first time since post-surgery context, triggers promotion to ACTIVE. (2) ROW-4383-4385 — 'She normally only calls because I ask if she wants to or I just dial you. I didn't ask her so she didn't call. Once in awhile she asks on her own.' Fourth and most comprehensive explicit statement of Melissa's bidirectional communication control architecture — Melissa is now treating her gatekeeper role as unremarkable routine. (3) ROW-4368-4369 — 'It's usually me asking her if she wants to call you. I was busy and didn't ask her yesterday.' Third explicit confirmation. (4) Two homework-conditional-access events (ROW-4336-4348; ROW-4393-4411). (5) Christmas Eve access gating cluster (ROW-4180-4183). ARC-RF02-004 promoted to ACTIVE this batch. Cooperative counter-pattern: ROW-4426-4428 (Olivia hurt, 'first thing she wanted to do was call you' — Melissa proactively facilitates); ROW-4119 (Olivia chose Eli because he'd arrive earlier); ROW-4280 ('I'll follow up with her tomorrow and let you know what happened'). Note: triage estimated 504 messages; date-based extraction yields 395 actual messages."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 395,
+    "primary_flags": 8,
+    "primary_severity_distribution": {"1": 6, "2": 2, "3": 0},
+    "peripheral_flags_total": 3,
+    "peripheral_rf_distribution": {"RF-15": 1, "RF-05": 2},
+    "no_flag_messages": 387,
+    "flag_rate": "2.0%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-4128-4129",
+      "date": "2023-12-17",
+      "direction": "Received",
+      "verbatim_message": "ROW-4128: 'She wants to know if she can just stay here and play with her friend' | ROW-4129: 'Sorry'",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "visit_declined_via_relay"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay closing out a planned Eli pickup. Context: Eli was at Five Below shopping (ROW-4127), coordinating pickup. Melissa relays Olivia's preference to stay with a friend at the birthday party rather than go with Eli. The 'Sorry' acknowledges the disruption to Eli's plans. Per CA-RF02-02: preference cannot be independently verified. The visit did not happen. Sev 1.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-4180-4183",
+      "date": "2023-12-24",
+      "direction": "Received",
+      "verbatim_message": "ROW-4180: 'Look she wanted you to come here probably so she could show you her new stuff and you guys could play together. I'm fine with that cause it makes her happy.' | ROW-4182: 'I'm not going to have you take her in the middle of the day and fuck up our plans' | ROW-4183: 'We can call you when we're back home and you can see if there is a movie then'",
+      "severity": 1,
+      "rf_indicators": ["holiday_access_gating", "visit_timing_controlled", "access_alternative_offered"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Christmas Eve access gating. Eli proposed a 1pm pickup for a 1:30pm movie (ROW-4171). Melissa refused the proposed timing ('I'm not going to have you take her in the middle of the day and fuck up our plans') and conditioned access on their schedule: 'We can call you when we're back home and you can see if there is a movie then.' Melissa controls the window in which access is available — she permits Eli to come for an hour or two in the morning but refuses the structured afternoon outing. She offers a callback-based alternative that is contingent on her own schedule. Context is complicated by prior plan disputes (ROW-4177 describes Eli making/forgetting/excusing prior commitments). Nevertheless, Melissa's function as gatekeeper of holiday timing and access structure is documented here. Sev 1 given contextual complexity.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-4198",
+      "date": "2023-12-26",
+      "direction": "Received",
+      "verbatim_message": "She can't go to your house",
+      "severity": 2,
+      "rf_indicators": ["location_restriction_no_justification", "house_restriction_recurrence"],
+      "arc_signal": "ARC-RF02-004",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "ARC-RF02-004 fourth signal — 'She can't go to your house' with no justification. Context: Eli proposed taking Olivia somewhere to open presents on Dec 26 (ROW-4196). Melissa asks 'Where are you going to take her to open presents?' (ROW-4197) then states 'She can't go to your house' (ROW-4198). Eli confirms he has other locations in mind and the visit proceeds. No medical, environmental, or other justification offered. This is the first 'not to your house' instance since B-008 (June 2023 air quality, mitigated) — a 6-month gap — but the restriction reappears without any stated reason. Per arc watch condition: 'evaluate for promotion if next appearance lacks justification.' Justification is absent. ARC-RF02-004 promoted to ACTIVE this batch. Sev 2.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-4336-4348",
+      "date": "2024-01-18",
+      "direction": "Received",
+      "verbatim_message": "ROW-4336: 'She needs to do homework though. So if you take her you have to do a half hour of iready or alexia.' | ROW-4337: 'Otherwise she can't go'",
+      "severity": 1,
+      "rf_indicators": ["homework_conditional_access", "visit_conditioned_on_compliance"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Second homework-conditional-access event in the dataset (first: ROW-1869, B-006). Eli's visit request is conditioned on his agreement to enforce homework completion during the visit. 'Otherwise she can't go' (ROW-4337) is an explicit conditional: access is denied if Eli doesn't comply with Melissa's homework requirements. Context: Eli asked to pick Olivia up with less than 24-hour notice (ROW-4333). Melissa's homework condition has some legitimacy (school assignments), but the 'otherwise she can't go' framing positions Melissa as the arbiter of access conditions. The visit ultimately happened after Eli agreed. Sev 1.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-4368-4369",
+      "date": "2024-01-20",
+      "direction": "Received",
+      "verbatim_message": "ROW-4368: 'It's usually me asking her if she wants to call you' | ROW-4369: 'I was busy and didn't ask her yesterday'",
+      "severity": 1,
+      "rf_indicators": ["bidirectional_communication_control_confirmed", "call_facilitation_withheld_busyness"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Third explicit confirmation of the bidirectional communication control architecture (first: ROW-3151 B-009; second: ROW-3353-3356 B-010). Context: Eli texted 'Surprised I didn't hear from her today' (ROW-4366); Melissa responds by explaining the causal mechanism: 'It's usually me asking her if she wants to call you. I was busy and didn't ask her yesterday.' Analytically: (1) Melissa confirms that Olivia's calls are normally initiated by Melissa's daily prompt; (2) when Melissa is busy, the prompt doesn't happen; (3) the absence of the prompt directly causes the absence of contact. The 'I was busy' explanation is casual and unremarkable to Melissa — she treats the prompt-to-call function as routine. Sev 1 (third confirmation, not new information, but causal busyness-to-no-contact link is explicit).",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-4383-4385",
+      "date": "2024-01-24",
+      "direction": "Received",
+      "verbatim_message": "ROW-4383: 'She normally only calls because I ask if she wants to or I just dial you' | ROW-4384: 'I didn't ask her so she didn't call' | ROW-4385: 'Once in awhile she asks on her own'",
+      "severity": 2,
+      "rf_indicators": ["bidirectional_communication_control_explicit_comprehensive", "call_architecture_fully_stated"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Fourth and most comprehensive explicit statement of Melissa's bidirectional communication control architecture. Context: Eli noticed Olivia hadn't called (ROW-4382: 'I looked to see if she was on roblox'). Melissa's explanation: (1) 'She normally only calls because I ask if she wants to' — confirms morning prompt controls call initiation; (2) 'or I just dial you' — Melissa also directly dials Eli herself on Olivia's behalf; (3) 'I didn't ask her so she didn't call' — causal mechanism: no prompt → no call; (4) 'Once in awhile she asks on her own' — acknowledges Olivia's independent initiative as the exception. This is the most complete architectural statement in the dataset. Melissa now describes the communication gatekeeping as a two-channel system: she either prompts Olivia to call, or she dials directly. Olivia's autonomous calling is rare. When Melissa doesn't act, contact doesn't happen. Sev 2 — this clarifies and extends the ROW-3151 finding with explicit channel detail. Fourth confirmation makes the architecture analytically beyond doubt.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-4389",
+      "date": "2024-01-25",
+      "direction": "Received",
+      "verbatim_message": "I just told her you called and told her she should call you back but she said not right now",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay closing out a callback. Context: Eli had called, Melissa tells Olivia and encourages a callback. Olivia declines ('not right now'). Per CA-RF02-02: preference cannot be independently verified. Melissa's encouragement of the callback is noted as a cooperative gesture, but the relay function ultimately closes out the contact. Sev 1.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-4393-4411",
+      "date": "2024-01-25",
+      "direction": "Received",
+      "verbatim_message": "ROW-4393: 'She has homework that needs done. You able to actually get some homework done?' | ROW-4394: 'I don't want excuses as to why you couldn't do it'",
+      "severity": 1,
+      "rf_indicators": ["homework_conditional_access", "visit_conditioned_on_compliance"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Second homework-conditional-access event within this batch. Eli requested a last-minute visit (cancelled meeting, ROW-4392). Melissa conditions the visit on homework completion: 'She has homework that needs done. You able to actually get some homework done? I don't want excuses as to why you couldn't do it' (ROW-4393-4394). Eli cooperates, confirms he'll do homework with Olivia, and the visit happens. The pattern: Melissa conditions visit access on Eli's compliance with her homework enforcement standards. The question 'You able to actually get some homework done?' implies skepticism of Eli's parenting capability — RF-04 adjacent. Sev 1.",
+      "confidence": "medium"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-4119",
+      "reason_noted": "Melissa relays Olivia's pickup preference: 'She said she wanted me to pick her up then I said it wouldn't be until 6 so she said you cause it will be a little earlier.' Olivia chose Eli because he would arrive at 5:30 instead of 6. Cooperative facilitation — Melissa relays Olivia's preference for Eli's earlier availability. Counter-pattern evidence."
+    },
+    {
+      "message_id": "ROW-4158",
+      "reason_noted": "'Olivia said that if she doesn't see you on Christmas she will be upset.' Melissa proactively relaying Olivia's stated desire to see Eli on Christmas. Cooperative facilitation — Melissa is advocating for Eli-Olivia Christmas contact. Counter-pattern."
+    },
+    {
+      "message_id": "ROW-4267-4280",
+      "reason_noted": "Co-parenting coordination about a bullying incident (Aston hitting Olivia). Eli and Melissa exchange multiple substantive messages working through a joint response strategy. Melissa: 'I'll follow up with her tomorrow and let you know what happened. As I usually do, I'll keep you informed if anything else happens.' This is genuine cooperative co-parenting around a child safety issue. Strong counter-pattern evidence."
+    },
+    {
+      "message_id": "ROW-4426-4428",
+      "reason_noted": "'She got hurt and the first thing she wanted to do was call you.' Melissa proactively texts Eli that Olivia's injury prompted her to want Eli. Melissa immediately facilitates the medical visit and provides precise urgent care location instructions. Counter-pattern: when Olivia's emotional need involves Eli, Melissa facilitates promptly. Particularly significant contrast against contact-blocking patterns."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-4073-4074",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "'Olivia is upset that Abby led you guys out of the thing last night. She said she didn't get to ice skate.' / 'She said you just follow Abby around and Abby led you to the car.' Melissa relays Olivia's alleged complaint that Abby controlled the outing and caused Olivia to miss ice skating. Eli disputes: skates were unavailable (ROW-4075), and Olivia did see Santa (ROW-4077-4078). Melissa: 'Now she said she did' (ROW-4079) — acknowledging the complaint was inaccurate. The relay of a false Abby-controlling narrative (corrected by Eli's photographic evidence) is RF-05 (derogatory about partner). The quick 'now she said she did' reversal after evidence shows the relay was not fact-checked. Sev 1.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-4094",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "'So if you and Abby get married my sister would have the same in hers. Daughter/sister in law Gross.' Fifth deployment of the incest narrative (prior: B-004 ROW-1288; B-006 ROW-2168-2171; B-009 ROW-3271; B-010 ROW-3389). Context: Olivia was calling Melissa's Roblox game while Eli was on the toilet (ROW-4092-4093) — casual domestic moment. Melissa inserts the incest framing unprompted into a mundane interaction. Pattern: incest framing appears in casual contexts as well as confrontational ones — it is a persistent narrative rather than a reactive defense. Sev 2. Five deployments across 12 batches.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-4185",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "'You let Abby dictate everything which is why your relationship with your daughter isn't very good.' Christmas Eve cluster. Melissa attributes Eli's parenting choices and relationship quality to Abby's control over him. RF-05 (derogatory about partner, framing partner as destructive to Eli's parenting). Sev 1.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 3,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": ["ARC-RF02-004"],
+    "arcs_resolved_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": [],
+      "ARC-RF02-002": ["ROW-4128-4129", "ROW-4180-4183", "ROW-4336-4348", "ROW-4368-4369", "ROW-4383-4385", "ROW-4389", "ROW-4393-4411"],
+      "ARC-RF02-003": [],
+      "ARC-RF02-004": ["ROW-4198"],
+      "ARC-RF02-005": []
+    },
+    "arc_001_cumulative_signals": 21,
+    "arc_002_cumulative_signals": 26,
+    "arc_004_cumulative_signals": 4,
+    "arc_004_promotion_note": "ARC-RF02-004 promoted WATCHING → ACTIVE this batch. ROW-4198 (December 26 2023) is the fourth 'not to your house' signal, the first since June 2023 (B-008), and the first without any stated justification since the B-006 post-surgery signals. The arc watch condition ('evaluate for promotion if next appearance lacks justification') is met. Arc now ACTIVE.",
+    "arc_002_note": "ARC-RF02-002 receives 7 signals this batch — highest single-batch signal count for any arc. Cumulative now 26. ROW-4383-4385 is the fourth and most comprehensive explicit statement of Melissa's communication control architecture: 'She normally only calls because I ask if she wants to or I just dial you. Once in awhile she asks on her own.' The architecture is now stated with four independent confirmations across multiple months.",
+    "arc_001_note": "No ARC-RF02-001 signals this batch. No DND blocking events. The B-011 and B-012 quiet period for ARC-RF02-001 is notable — the cutoff mechanism appears less active during the fall/winter period compared to summer 2023."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

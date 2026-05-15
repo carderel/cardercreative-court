@@ -1,0 +1,139 @@
+{
+  "batch_id": "B-030",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-11-02",
+    "end": "2026-01-02"
+  },
+  "row_range": {
+    "sms_start": "ROW-8405",
+    "sms_end": "ROW-8499",
+    "sms_note": "SMS data falls in the secondary SMS table section (ROW-8xxx); no separate primary SMS section entries for this date range.",
+    "mms_start": "ROW-14650",
+    "mms_end": "ROW-14969"
+  },
+  "message_count": 415,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B030-PF-001",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 58,
+      "row_ref": "ROW-14756 / ROW-14757 / ROW-14773 / ROW-8424 / ROW-14779",
+      "date": "2025-11-07 to 2025-11-08",
+      "severity": 2,
+      "verbatim": "She says she doesn't want to go with you this weekend anyways [ROW-14756] / This is a struggle every weekend. She doesn't like going. [ROW-14757] / She said she doesn't want to spend the night with you for the next 5 years [ROW-14773] / Call her cause she refuses to come out. It was a mess to get her out of the car even [ROW-8424] / She said she doesn't want to talk to you. I'm trying [ROW-14779]",
+      "note": "ARC-RF02-002 Signal 58, Sev 2. Nov 7-8. Visit-refusal relay escalates to most extreme stated duration in dataset. Nov 7 dispute over school movie night: Melissa relays Olivia's refusal to attend Eli's weekend (ROW-14756), characterizes chronic reluctance as ongoing norm ('This is a struggle every weekend. She doesn't like going.' ROW-14757), and transmits the extreme relay claim: 'She said she doesn't want to spend the night with you for the next 5 years' (ROW-14773). Eli arrives for pickup; ROW-8424 (Nov 8): 'Call her cause she refuses to come out. It was a mess to get her out of the car even' — physical visit-refusal at the threshold, requiring Eli to call into the car to reach Olivia. ROW-14779 (Nov 8 post-pickup): 'She said she doesn't want to talk to you. I'm trying' — phone-contact relay following the forced pickup. The 'next 5 years' claim (ROW-14773) is the most extreme duration assertion in the dataset for Olivia's stated visit reluctance. Sev 2: (1) explicit characterization of visit refusal as chronic ('every weekend'), (2) 5-year timeframe relay claim, (3) physical refusal-at-threshold requiring intermediary intervention. Also note ROW-14769 (same exchange): 'keep pouting or whatever you are doing and miss out on time with your daughter. Ask yourself Is it worth it?' — Melissa frames Eli's insistence on exercising parenting time as a personal defect ('pouting')."
+    },
+    {
+      "flag_id": "B030-PF-002",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 59,
+      "row_ref": "ROW-14789 / ROW-14805 / ROW-14807 / ROW-14837 / ROW-14838 / ROW-14849",
+      "date": "2025-11-18 to 2025-11-25",
+      "severity": 1,
+      "verbatim": "Also Olivia says she doesn't want to stay at your house this weekend [ROW-14789] / She said she's not going cause she doesn't want to put up with all the fights with Milo [ROW-14805] / She said she's not coming out tomorrow [ROW-14807] / She said she doesn't want to go [ROW-14837] / I'm fine with her going but she said she doesn't want to [ROW-14838] / Not my fault she doesn't want to go. You need to fix the things she says she's upset about so she wants to go [ROW-14849]",
+      "note": "ARC-RF02-002 Signal 59. Nov 18-25. Extended multi-weekend visit-refusal relay pattern across at least three weekends in November. Pattern: Melissa relays Olivia's refusal each weekend (ROW-14789 Nov 18, ROW-14805/14807 Nov 21, ROW-14837 Nov 24), distances herself from the refusal ('I'm fine with her going but she said she doesn't want to' ROW-14838), and finally frames the ongoing refusals as Eli's remediation responsibility: 'Not my fault she doesn't want to go. You need to fix the things she says she's upset about so she wants to go' (ROW-14849, Nov 25). The Nov 25 framing is analytically significant: Melissa has now explicitly articulated a framework in which (1) Olivia's visit refusals are relayed through Melissa, (2) Melissa disclaims responsibility for the refusals, and (3) restoring Olivia's willingness to visit is conditioned on Eli addressing complaints Melissa has relayed. This completes a loop: Melissa is the exclusive channel for both transmitting Olivia's objections and the arbiter of when those objections are sufficiently resolved. ROW-14839 (same period) is also analytically significant: Melissa relays a cluster of Olivia's grievances including 'Abby saying that I'm mean and Milo shit talking me all the time' — incorporating disparagement of Melissa herself as grounds for visit refusal."
+    },
+    {
+      "flag_id": "B030-PF-003",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 60,
+      "row_ref": "ROW-14866 / ROW-14867 / ROW-14868 / ROW-14869 / ROW-14870",
+      "date": "2025-12-01",
+      "severity": 1,
+      "verbatim": "Could you please talk to her about things she's voiced concerns about? [ROW-14866] / Help her feel at ease [ROW-14867] / She's still saying she's not going this weekend and that when she talks to you about it you change the subject. [ROW-14868] / That's fine. That's why I'm telling you to talk to her so that maybe she will go [ROW-14869] / The biggest reason she gives is Milo always fighting with her. Any ideas of how that can be remedied would help her [ROW-14870]",
+      "note": "ARC-RF02-002 Signal 60. Dec 1. Melissa explicitly positions herself as the broker negotiating the conditions for Olivia's visit attendance. Eli must ask Melissa what Olivia's concerns are (ROW-14866-14867), Melissa transmits Olivia's stated reasons (ROW-14868-14870), and Eli is expected to remedy those conditions to secure Olivia's willingness to attend. This is the most explicit and structured intermediary-gating of parenting time access in the arc: the channel by which Olivia's objections are conveyed, the conditions that must be met to access parenting time, and the evaluation of whether those conditions are met all run exclusively through Melissa. 'That's why I'm telling you to talk to her so that maybe she will go' (ROW-14869) makes the conditional structure explicit: compliance with Melissa's relay prompts the possibility of a visit. Consistent with ROW-14849 framework (B030-PF-002): Melissa has now articulated a complete gating model for parenting time access."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B030-PERIPH-001",
+      "row_ref": "ROW-14841 / ROW-14842 / ROW-14843 / ROW-14845 / ROW-14846 / ROW-14847 / ROW-14848 / ROW-14850 / ROW-14851 / ROW-14852",
+      "date": "2025-11-25",
+      "rf_category": "RF-11",
+      "severity": 2,
+      "verbatim": "I'll file contempt if you don't pay what you owe [ROW-14841] / Then you'll have to pay the $300 plus court costs and lawyer fees [ROW-14842] / I just called the lawyer [ROW-14850] / I also found out that you can be in contempt for all the times you chose not to have visitation with her. You didn't remedy your home to be safe and chose to still not have visitation after the last contempt... [ROW-14851] / So this will be a big contempt case [ROW-14852]",
+      "note": "RF-11 Sev 2. Nov 25. Sustained contempt escalation sequence culminating in legally significant paradox: ROW-14851 — Melissa threatens contempt against Eli for missing visitation, when those missed visits were the direct result of Melissa's own relayed visit-refusals (Signal 58: Oct 10 cascade, Signal 59: Nov weekends). The contempt-for-missed-visits framing creates a structural loop: Melissa transmits Olivia's visit refusals → visits don't occur → Melissa threatens contempt for the non-occurring visits she relayed into existence. ROW-14851 also introduces a new theory ('you didn't remedy your home to be safe') — referencing a prior contempt case and imposing a home-safety remediation condition on future visitation. 'I just called the lawyer' (ROW-14850) continues the B-029 trajectory ('agreement ready to sign'). Sev 2: lawyer action claimed, contempt-for-relay-blocked-visits paradox, multi-message sustained escalation."
+    },
+    {
+      "flag_id": "B030-PERIPH-002",
+      "row_ref": "ROW-14752 / ROW-14753",
+      "date": "2025-11-06",
+      "rf_category": "RF-11",
+      "severity": 1,
+      "verbatim": "This is the exact shit that makes it easy to get full custody because you don't respond to questions. [ROW-14752] / Keep it up. It's great evidence [ROW-14753]",
+      "note": "RF-11 Sev 1. Nov 6. Full-custody evidence framing: Melissa characterizes Eli's response-time to a scheduling question as building her full-custody case. 'Keep it up. It's great evidence' — court-record framing of routine co-parenting communication. Consistent with the escalating specificity trajectory from B-027 through B-030."
+    },
+    {
+      "flag_id": "B030-PERIPH-003",
+      "row_ref": "ROW-14800 / ROW-14801",
+      "date": "2025-11-19",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "thanks for being such a great coparent and making time for the daughter you helped bring into the world [ROW-14800] / piece of shit [ROW-14801]",
+      "note": "RF-04/RF-05 Sev 1. Nov 19. Weaponization of medical emergency: Melissa texts Eli that she is having biopsies for 'cancerous type cells' (ROW-14796-14799) and needs to know if Eli can watch Olivia that afternoon. Eli (ROW-8433-8434) responded: 'This is the first I've heard about any procedure. I'm not available right now. Send the exact times you need covered.' Melissa responds with 'thanks for being such a great coparent and making time for the daughter you helped bring into the world / piece of shit' (ROW-14800-14801). The context — a cancer-scare medical disclosure — makes the attack particularly notable: Melissa's inability to secure immediate childcare assistance while disclosing a serious medical situation is immediately reframed as a fitness attack and personal insult. The medical context did not yield cooperative support; it was weaponized within the same message thread."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-14650-14680 / ROW-14681-14736",
+      "date": "2025-11-02 to 2025-11-04",
+      "description": "Canada trip photo facilitation: Melissa sent extensive Niagara Falls photos and videos to Eli during the Nov 1-4 Canada trip — zipline video, wax hand photos, Niagara Falls views, hotel view. High-volume real-time sharing of Olivia's experience. Proactive inclusion of Eli in the trip experience. Consistent with Olivia's birthday float plane facilitation quality (B-027)."
+    },
+    {
+      "row_ref": "ROW-14792-14799 / ROW-8433-8435",
+      "date": "2025-11-19",
+      "description": "Cancer biopsy disclosure: Melissa informed Eli that she was having biopsies taken for cancerous type cells, explained the procedure, and asked if Eli could watch Olivia in case she felt ill. Proactive medical disclosure — Eli was kept informed of a serious health development. (Note: the exchange subsequently escalated to an RF-04 attack, documented in PERIPH-003.)"
+    },
+    {
+      "row_ref": "ROW-14877-14878 / ROW-14907-14908",
+      "date": "2025-12-07 to 2025-12-13",
+      "description": "Saturday childcare coordination: Melissa asked Eli if he could watch Olivia on a Saturday she had to work (Dec 13), providing specific pickup/dropoff times. Eli accommodated. Cooperative parenting-as-childcare use of Eli during Melissa's work schedule."
+    },
+    {
+      "row_ref": "ROW-14920-14928 / ROW-8464-8468",
+      "date": "2025-12-16 to 2025-12-17",
+      "description": "Olivia ER visit: Olivia sick (vomiting, dehydration, pale lips). Melissa took Olivia to ER; received IV Zofran and fluids. Melissa sent photos and updates to Eli throughout, including discharge status. Eli (ROW-8464-8468) provided medical guidance (anti-nausea medication disclosure, electrolyte imbalance concern). Cooperative medical coordination."
+    },
+    {
+      "row_ref": "ROW-14929-14931 / ROW-8480",
+      "date": "2025-12-18",
+      "description": "New Year's week coordination: Melissa proactively asked Eli to help cover Olivia's care during the week she had to work (Janette unavailable for Jan 2). Advance notice, cooperative logistics. Eli confirmed availability for Jan 2."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-8407 / ROW-8408",
+      "date": "2025-11-04",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-8407): 'Her phone says can't complete the call.' Olivia in Canada (Niagara Falls). International call connection error, not a deliberate blocking mechanism. Eventually resolved (ROW-8411: 'That worked'). Not flagged. ARC-RF02-001 extends quiet streak to 13 consecutive batches."
+    },
+    {
+      "row_ref": "ROW-8470",
+      "date": "2025-12-19",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-8470): 'Why is her phone saying it's disconnected.' Melissa (ROW-14932-14933): 'I don't know. I just called and talked to her to test it / It rang and she answered.' Technical issue; phone confirmed operational. Not flagged."
+    },
+    {
+      "row_ref": "ROW-14695 / ROW-14696",
+      "date": "2025-11-04",
+      "consideration": "ARC-RF02-002 near-miss. Melissa (ROW-14695): 'She complained that you tell her to call once but you keep calling'; (ROW-14696): 'I told her to call you back and she said she didn't want to. I told her she should text them to make sure you are ok.' Child-preference relay (Olivia declining to call back), but Melissa encouraged Olivia to at least text Eli. During Canada trip. Not flagged: Melissa actively facilitated alternative contact."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; ARC-RF02-001 quiet for 13 consecutive batches (B-021 through B-030, Dec 2024 – Jan 2026); near-misses: ROW-8407-8408 (Nov 4, Canada international call error — resolved), ROW-8470 (Dec 19, phone disconnected error — resolved); signal_count remains 26",
+    "ARC-RF02-002": "3 new primary signals (58-60); Signal 58 (ROW-14756/14773/8424, Nov 7-8, Sev 2): visit-refusal relay escalates to 'She said she doesn't want to spend the night with you for the next 5 years' + physical refusal-at-threshold; Signal 59 (ROW-14789-14849, Nov 18-25, Sev 1): extended multi-weekend refusal relay with explicit frame-shift: 'Not my fault she doesn't want to go. You need to fix the things she says she's upset about'; Signal 60 (ROW-14866-14870, Dec 1, Sev 1): Melissa explicitly positions herself as the broker-intermediary conditioning Eli's parenting time access on his remediation of relayed Olivia grievances; signal_count advances to 60; last_signal_batch=B-030; last_signal_date=2025-12-01",
+    "ARC-RF02-004": "no new primary signals; remains ACTIVE; signal_count remains 4",
+    "ARC-RF02-005": "no new signals; remains WATCHING; signal_count remains 2",
+    "ARC-RF02-006": "no new signals; ACTIVE at 4 signals; no new relocation evidence",
+    "ARC-RF02-003": "no new signals; remains CANDIDATE"
+  },
+
+  "batch_notes": "B-030 (Nov 2 – Jan 2, 2026, 415 messages) is analytically dominated by the ongoing visit-refusal cascade, which intensified into a structural pattern. Three new ARC-RF02-002 primary signals (58-60), all in the visit-access domain. Signal 58 produces the most extreme stated duration in the arc: 'She said she doesn't want to spend the night with you for the next 5 years' (ROW-14773) and the first documented physical visit-refusal at threshold (ROW-8424: 'refuses to come out. It was a mess to get her out of the car'). Signal 59 produces the most explicit framework statement yet: Melissa explicitly disclaims responsibility for the refusals while conditioning their resolution on Eli addressing complaints she has relayed — completing the structural loop. Signal 60 formalizes Melissa as the broker-intermediary for Olivia's visit attendance, explicitly directing Eli to engage Melissa as the access negotiator. RF-11 contains analytically significant legal paradox: Melissa threatens contempt for Eli's missed visitation (ROW-14851), when those missed visits resulted from Melissa's own relayed refusals. ARC-RF02-001 extends quiet streak to 13 consecutive batches. Cooperative density is moderate; the Canada trip facilitation is high-quality and the ER coordination is competent. The Nov 19 cancer-biopsy disclosure is cooperative in form but was immediately weaponized into an RF-04 attack when Eli could not immediately assist."
+}

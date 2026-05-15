@@ -1,0 +1,111 @@
+{
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "generated": "2026-05-05",
+  "cp2_completed": "2026-05-05",
+  "source": "CP2 answers provided 2026-05-05",
+
+  "addenda": [
+
+    {
+      "id": "RF06-ADD-001",
+      "title": "Financial Arrangement Baseline",
+      "status": "ACTIVE",
+      "rule": "Established financial arrangement as of CP2: (1) Eli pays child support to the state; (2) Eli pays childcare directly to Melissa when she sends receipts; (3) Court-ordered shared expenses: medical, school activities, childcare; (4) Supplemental/external activities (dance, gymnastics, tap dance add-ons, etc.) are each parent's discretion — Melissa can pay for supplemental activities she wants; Eli has no court obligation to fund activities he did not agree to. Apply as baseline calibration for all financial language in the dataset. Any financial dispute must be evaluated against this baseline before classification: legitimate cost sharing ≠ RF-06; compelled payment beyond court obligations, weaponized billing, and deceptive expense bundling = RF-06 primary.",
+      "why": "Q1(a): 'I pay child support to the state and childcare directly to Melissa when she sends the receipts.' Q2(a): shared expenses are medical, school activities, childcare; external activities are per-parent discretion. Baseline required before any signal classification can proceed."
+    },
+
+    {
+      "id": "RF06-ADD-002",
+      "title": "Child Support Court Action — Confirmed Executed (Not Just Threatened)",
+      "status": "ACTIVE",
+      "rule": "Melissa actually took Eli to court over child support — she 'threatened to take me to court and actually did' because 'in her words I wasn't paying fast enough.' This is an executed RF-05/RF-06 compound, not merely a threatened one. When the court action and surrounding messages are located: classify as RF-06 primary Sev-2 + RF-05 secondary (legal coercion to enforce financial demand). Context note: Melissa has never withheld Olivia due to arrears — the court action was purely financial pressure, not access-linked. Sev-2 (not Sev-3) because no documented access denial tied to child support.",
+      "why": "Q1(b): 'She has threatened to take me to court and actually did. In her words I wasn't paying fast enough. She has never withheld Olivia due to arrears though.' Executed court action confirmed. Locate in messages for date range."
+    },
+
+    {
+      "id": "RF06-ADD-003",
+      "title": "Childcare Billing on Refused Visitation Time",
+      "status": "ACTIVE",
+      "rule": "When Olivia is scheduled to be at Eli's for parenting time but Melissa fails to facilitate the exchange (Olivia does not come), and Melissa then bills Eli for childcare costs incurred during that missed time: classify as RF-06 primary Sev-1 (weaponized childcare billing). Per ADD-001 baseline: if Olivia were at Eli's as scheduled, no childcare fee would exist — Eli has no obligation to pay for childcare costs that exist only because of Melissa's facilitation failure. Melissa 'slipping it in with other expenses' = RF-06 primary Sev-1 with deceptive-bundling note. Eli's refusal to pay in this scenario = appropriate response, NOT an RF-06 signal from Eli. Phase C confirmed: Q4(a) explicitly describes this pattern (Olivia didn't come for Eli's weekend, Melissa had to work, Olivia went to childcare, Eli refused to pay). Compound with RF-02 when the underlying facilitation failure is documented.",
+      "why": "Q2(b): 'I have refused to pay for childcare when Olivia is supposed to be at my residence and she refused to come so Melissa has to pay for childcare on my weekend. But then she has tricked me and put it in with other expenses.' Q4(a): Phase C confirmation of the same pattern. Deceptive bundling explicitly stated."
+    },
+
+    {
+      "id": "RF06-ADD-004",
+      "title": "War of Attrition / Financial Disparity Threat",
+      "status": "ACTIVE",
+      "rule": "Eli confirmed Melissa uses her financial advantage deliberately: 'She knows she has more money than me and can win a war of attrition. So she does threaten legal repercussions and the financial burden that would cause me.' When Melissa references legal action framed around the financial burden it would impose on Eli (not just the legal outcome itself): classify as RF-06 primary + RF-05 secondary compound (financial intimidation via disparity). Distinguished from pure RF-05 legal threat by the explicit financial burden framing: she is weaponizing not just the legal process but the cost asymmetry. Sev-1 when referenced subtly; Sev-2 when explicitly invoked as leverage in a specific dispute.",
+      "why": "Q4(b): 'She knows she has more money that me and can win a war of attrition. So she does threaten legal repercussions and the financial burden that would cause me.' Intentional use of financial asymmetry as intimidation tool confirmed."
+    },
+
+    {
+      "id": "RF06-ADD-005",
+      "title": "Payment Timing Reminder Co-Deployed with Conflict Escalation",
+      "status": "ACTIVE",
+      "rule": "Eli confirmed a recurring co-deployment pattern: when Melissa escalates with emotional attacks or baiting (incest allegations, accusations), she typically also 'reminds' Eli he is late on a payment. Q3(b): 'Whenever she throws out incest allegations or related accusations its usually because she is trying to bait me into conflict. Chances are she was also reminding me that I'm late on a payment.' When financial references appear in the same exchange as emotional escalation/baiting: classify as RF-06 secondary + RF-04 primary compound (financial pressure co-deployed with emotional manipulation). The financial reminder is strategic — delivered when Eli is already emotionally engaged. Do NOT flag casual payment acknowledgments in otherwise neutral exchanges.",
+      "why": "Q3(b): Pattern confirmed — incest allegations and payment reminders co-occur. Financial leverage is deployed alongside emotional escalation as a compounding pressure tactic."
+    },
+
+    {
+      "id": "RF06-ADD-006",
+      "title": "Lifestyle Differential as Subtle Financial Leverage",
+      "status": "ACTIVE",
+      "rule": "Eli confirmed Melissa uses the income/lifestyle differential as subtle leverage: 'It's subtle. Like I can't afford the same lifestyle as her and she uses that but it's not overt.' When Melissa references or implies financial superiority, resource advantage, or lifestyle differences in the context of co-parenting negotiations or disputes: classify as RF-06 Sev-1 (financial intimidation by disparity, subtle form). Examples to watch for: comparisons implying Eli cannot provide adequately; references to what Melissa can afford versus Eli; framing Olivia's material preferences around Melissa's household advantages. Note: subtle — will require pattern recognition across multiple messages rather than single clear statements.",
+      "why": "Q1(c): 'Kind of. It's subtle. Like I can't afford the same lifestyle as her and she uses that but it's not overt.' Confirmed but requires careful calibration to avoid over-flagging general financial disparity references."
+    },
+
+    {
+      "id": "RF06-ADD-007",
+      "title": "Dance Lesson Forced Payment — RF-06 Primary",
+      "status": "ACTIVE",
+      "rule": "Melissa attempted to compel Eli to pay for tap dance add-on lessons for Olivia against his explicit objection. Per ADD-001 financial baseline: supplemental/external activity costs are each parent's discretion. Melissa cannot unilaterally obligate Eli to fund supplemental activities he does not agree to. When documented in messages: classify as RF-06 primary Sev-1 (compelled payment beyond court-ordered obligations). Cross-reference RF-03 (ADD-006) if the enrollment also created a scheduling conflict with Eli's parenting time.",
+      "why": "Q2(a): 'She wanted to sign her up for dance lessons and I didn't want to pay the extra and she tried to force me.' Clear attempt to compel payment for discretionary activity outside court obligations."
+    },
+
+    {
+      "id": "RF06-ADD-008",
+      "title": "Sep 2023 Hot Period — Payment Deferral Context",
+      "status": "ACTIVE",
+      "rule": "CP2 Q3(c) identified a Sep 2023 financial event: Eli could not pay his half of childcare on the due date and deferred until payday. When located in messages: evaluate whether Melissa used this deferral as leverage (RF-06 signal) or simply acknowledged it (not RF-06). A legitimate request to pay by a specific date is not RF-06. RF-06 triggers if she threatened court action, conditioned co-parenting cooperation on immediate payment, or amplified the deferral into a pattern allegation. Apply ADD-002 (child support court action confirmed) to calibrate whether the court action occurred around this period.",
+      "why": "Q3(c): 'Reading through it looks like I couldn't pay Melissa my half of childcare on the day I was supposed to but deferred until payday.' Confirms the Sep 2023 hot period has a payment-timing event. Locate for calibration."
+    }
+
+  ],
+
+  "arc_state_post_cp2": {
+    "ARC-RF06-001": {
+      "name": "Financial Leverage Pattern",
+      "description": "Melissa's use of child support timing, childcare billing, payment pressure, court action, and financial disparity as co-parenting control mechanisms.",
+      "state": "CANDIDATE",
+      "signals": 0,
+      "direction": "received",
+      "note": "Signal criteria: (1) Child support payment pressure or executed court action (ADD-002); (2) childcare billing on refused visitation time (ADD-003); (3) war-of-attrition financial intimidation via disparity (ADD-004); (4) payment reminder co-deployed with emotional escalation (ADD-005); (5) compelled supplemental activity payment (ADD-007). First confirmed signal promotes CANDIDATE to WATCHING. Court action confirmed by CP2 = strong signal expected in Phase A dataset. 86% received triage direction — Melissa is overwhelmingly the financial coercion source."
+    }
+  },
+
+  "post_cp2_processing_instructions": {
+    "primary_signal_criteria": [
+      "Child support court action messaging (ADD-002) — executed, not just threatened; locate date range in messages",
+      "Childcare billing during Eli's refused parenting time (ADD-003) — Phase C confirmed, also watch Phase A/B",
+      "Legal/financial burden threat framing invoking cost asymmetry (ADD-004)",
+      "Dance lesson forced payment documentation (ADD-007)",
+      "Payment pressure co-deployed with emotional escalation (ADD-005)"
+    ],
+    "peripheral_only_categories": [
+      "Eli's payment deferral acknowledgment (Sep 2023 area) — evaluate Melissa's response for RF-06; Eli's deferral itself is context",
+      "Melissa paying for supplemental activities Eli chooses not to fund — not RF-06 (her choice per baseline)"
+    ],
+    "arc_promotion_criteria": {
+      "ARC-RF06-001": "2+ financial coercion signals (any type from criteria above) → promote CANDIDATE to WATCHING; 5+ signals → promote to ACTIVE"
+    },
+    "hot_periods_watch": [
+      "Phase A (B-002 through B-015): 29 of 36 triage hits in Phase A — dense signal concentration expected; child support court action likely here",
+      "B-018 (Aug 2024): EP-0854 311-message cluster — Q3(a) says financial coercion not the main driver, but check for ADD-005 co-deployment",
+      "B-016 (Jun 2024): incest framing cluster — ADD-005 applies (payment reminder likely co-deployed)",
+      "B-009 area (Sep 2023): payment deferral event (ADD-008)",
+      "B-028 onward (Phase C): childcare billing on refused visits (ADD-003) confirmed"
+    ],
+    "direction_note": "86% received direction confirmed. Eli-sent financial signals: evaluate as legitimate expense sharing or appropriate dispute responses, not RF-06. Only flag Eli if he uses financial compliance as a condition of co-parenting cooperation (not documented in CP2)."
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-019",
+    "row_range": { "start": 6944, "end": 7523 },
+    "date_range": { "start": "2024-09-04", "end": "2024-10-03" },
+    "message_count": 580,
+    "timezone_note": "Entirely EDT (UTC-4) through batch end. DST change Nov 3, 2024 ahead (B-021+). ROW-6944 is Sep 4 20:57 EDT — the first message after B-018's Sep 2 endpoint. RF-02 B-019 date range states start '2024-09-05' but sms_start ROW-6944 is confirmed Sep 4; B-019 for RF-01 uses ROW-6944 as start to maintain sequential coverage. Last row ROW-7523 is Oct 3 16:47 EDT.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "inflection_event": "Alice (Abby's daughter/Eli's daughter) born approximately Sep 11-12, 2024. Evidence: ROW-7114 (Sep 11, Eli at hospital); ROW-7186 (Sep 17, Eli references 'dealing with jaundice' the prior evening); ROW-7189-7207 (Sep 17-18, jaundice light therapy coordination). Alice's birth immediately activates new attack vectors against Eli's fitness to parent."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B019-F001",
+      "arc_signal_ref": "RF01-B019-S001",
+      "row": "ROW-6953-7023",
+      "date": "2024-09-05",
+      "rf_tags": ["RF-01", "RF-05"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-002", "RF01-ADD-001"],
+      "arc": "ARC-RF01-001",
+      "summary": "September 5 — Bike riding/staph cluster with pregnancy incompetence attacks. Context: Olivia got a calf scratch while Eli taught her to ride without training wheels. Melissa launches critique of Eli's parenting judgment over protective gear and wound care. Inadequacy attacks embedded in 70-message practical debate: ROW-6971: 'How are you having another kid when you have no clue how to parent?' (ADD-002 + ADD-001 — pregnancy used as proof of parental incompetence; fifth reference to Abby's pregnancy as attack vector); ROW-6976: 'I feel bad for Milo and that poor unborn child' (ADD-001 — both Milo and the unborn Alice extended as targets of Eli's inadequate parenting; Alice not yet born at this date — about 1 week before birth); ROW-6985: 'You're such a dumbass' (ADD-002); ROW-7009: 'If she would have gotten hurt you would've felt bad. She would've had unnecessary pain and you wouldn't be involved in any of the after care' (ADD-002 — predictive inadequacy: Eli would not participate in aftercare); ROW-7015: 'I don't know how you're going to have another kid when you don't understand the basics of protection and cleaning wounds' (ADD-002 + ADD-001 — explicit restatement of pregnancy incompetence attack); ROW-7017: 'I mean I am questioning your parenting skills' (ADD-002 — explicit acknowledgment that this is a parenting competence challenge, not just practical advice). The trigger (Olivia had a calf scratch; Eli used a bandage with antibiotic cream; helmet was on) is genuinely minor; the attack cluster is disproportionate. Eli's points are largely correct (knee/elbow pads don't protect the calf; scratches at the playground under Becky's care were characterized as 'stuff happens'). Pattern: bike/physical safety used as new vector for inadequacy attack in school-year period."
+    },
+    {
+      "flag_id": "RF01-B019-F002",
+      "arc_signal_ref": "RF01-B019-S002",
+      "row": "ROW-7161-7170",
+      "date": "2024-09-14",
+      "rf_tags": ["RF-01", "RF-05"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-004", "RF01-ADD-005", "RF01-ADD-001"],
+      "arc": "ARC-RF01-001",
+      "summary": "September 14 — Physical harm allegations relayed via Olivia; Eli's newborn Alice used as concern extension. Context: Eli had Olivia during a visit on the day of Kristi's (Eli's mother?) medical crisis (ROW-7151-7158 — Eli took Olivia to hospital to visit family). Melissa delivers a cluster of allegations attributed to Olivia approximately 9 hours after the visit. ROW-7161: 'Be more gentle with Olivia'; ROW-7162: 'She said you tickle too hard and she doesn't like it'; ROW-7163: 'She said that you kept twisting her arm and it hurt and you'd say sorry but kept doing it'; ROW-7164: 'And she said that you choked her and she couldn't breathe for a bit' (ADD-004 + ADD-005 — choking allegation; most serious physical allegation in the record; attributed to Olivia's account; potential foundation for physical abuse narrative); ROW-7165: 'She said you were just playing but you okay too rough and she doesn't like it and she doesn't want you to do that to Alice either' (ADD-001 — Alice, born ~2-3 days prior, used as concern extension; Olivia's worry framed as evidence of risk to newborn); ROW-7166: 'She doesn't want you to get in trouble but said she is worried that if you are so rough on her that you will be too rough on Alice and she doesn't want Alice to go through that' (ADD-004 + ADD-001 — Olivia positioned as protective of newborn Alice against Eli's roughness; Olivia's reported 'worry' frames Eli as threat to infant); ROW-7167: 'So keep your hands off my girl. Don't play like that with her'; ROW-7168: 'You used to do that shit with me and tell me you weren't hurting me. Don't do that to her. Don't play with her like that' (ADD-005 — Melissa alleges Eli previously physically harmed her, establishing a pattern; this allegation appears for the first time in the record and extends the physical harm narrative to Melissa personally); ROW-7169-7170: 'Keep your hands off her / She gets hurt you deal with me' (threat). Structural note: Melissa was present in background during Eli-Olivia interactions (per ROW-7327 referencing Melissa 'laughing in the background'). The choking allegation at ROW-7164 is particularly significant — it does not appear in any earlier batch and arrives within days of Alice's birth, when Eli's parenting of a newborn is most scrutinized. The cluster uses Olivia simultaneously as (1) alleged victim, (2) source of the allegations, and (3) vehicle for expressing concern about Alice. B-019 subsequently contains ROW-7364 (Melissa reiterates Olivia's fear about Alice on Oct 2) — the Sep 14 physical harm narrative is restated 18 days later."
+    },
+    {
+      "flag_id": "RF01-B019-F003",
+      "arc_signal_ref": "RF01-B019-S003",
+      "row": "ROW-7325-7490",
+      "date": "2024-10-02",
+      "rf_tags": ["RF-01", "RF-05"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-004", "RF01-ADD-005"],
+      "arc": "ARC-RF01-001",
+      "summary": "October 2 — Comprehensive inadequate-father dump triggered by Eli raising Olivia's disrespectful behavior at a doctor's visit. 165-message cluster containing abandonment arc language, third written gatekeeping admission, explicit custody threat acknowledgment, Alice incest-framing, and physical harm allegation against Melissa. Key nodes: ROW-7332: 'She said she didn't say anything disrespectful at the dr and you are lying' (ADD-004 — Olivia's contrary account relayed to challenge Eli's account; ADD-003 — Olivia's account positioned as definitive over Eli's direct experience); ROW-7333: 'She's upset that you made that up' (ADD-004 — Olivia's emotion used to support Melissa's dismissal); ROW-7343-7344: 'you also get what you give. So maybe rethink how you talk to her and how you treat her' (ADD-002); ROW-7348: 'This coming from the guy that regularly tells her that her mom is crazy. How many times have you said that to her?' (ADD-005 — allegation that Eli tells Olivia 'your mom is crazy'; unsubstantiated in the record; counter-framing designed to reverse the parental alienation attribution); ROW-7364: 'She told me after she met Alice that she was afraid you would hurt Alice because you are too rough with her' (ADD-004 + ADD-001 — restatement and amplification of Sep 14 choking narrative; Olivia's 'fear' about Alice extended 18 days later); ROW-7365-7366: 'I have first hand experience with that cause you used to physically harm me too and then claim it wasn't hurting me / So don't take what you do wrong and try to put it on me' (ADD-005 — Melissa directly alleges Eli physically harmed her during their relationship; presented as validation of Olivia's choking report); ROW-7367: 'Did you tell the Dr you made her a new sister/cousin. Maybe she should notate that' (ADD-001 + ADD-005 — 'sister/cousin' incest framing of Alice applied to the doctor context; suggesting Alice's existence should be medically noteworthy because of the uncle/niece relationship between Eli and Abby); ROW-7386: 'She wasn't doing anything disrespectful to you. She said you yell at her for everything. She's told me that you yell at her for making noise or moving around next to you' (ADD-004 — Olivia's reported characterization of Eli as someone who yells relayed as rebuttal); ROW-7458-7465: Sustained inadequacy recap — melatonin characterization ('drug her'), cat-allergy fifth iteration ('chose the cats over your daughter for over 2 years'), ROW-7459: 'You walked out on her. You went from being around all the time to hardly ever' (ADD-002 — abandonment arc core language; fourth written iteration of 'walked out' narrative, following B-006 ROW-2168, B-017 ROW-6514-6516), ROW-7460: 'She sees you raising another family while giving her no time' (ADD-001 — Alice/Abby as 'new family' framing; fifth written iteration), ROW-7461: 'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody' (CRITICAL — explicit acknowledgment that Melissa's ongoing inadequacy campaign is designed to build a sole custody case; she attributes any recent Eli engagement to fear of losing custody rather than genuine care); ROW-7462-7464: hung-up characterization, cat allergy fifth iteration; ROW-7465: 'You never helped with her care when she was sick until yesterday. Then chastise me for missing too much work'; ROW-7478: 'I used to ask her if she wanted to call you in the mornings to keep communication going' (THIRD WRITTEN GATEKEEPING ADMISSION — follows ROW-3151 'I'm the reason she calls you most days' and ROW-3353-3355 'That's why you are called most mornings. Because I ask.'; now explicitly framed as Melissa's positive contribution; confirms ongoing pattern); ROW-7479: 'I used to remind you of her mail days at primrose and even wrote a note on your behalf one day' (admission of intermediary control extending to school communications); ROW-7480-7483: Birthday present inclusion, photos shared as discretionary gifts ('I don't have to give you pictures of her / I do so you are included in her life because you should be' — frames Eli's access to information about Olivia as contingent on Melissa's goodwill); ROW-7488-7490: 'Oh and you act like you eat so healthy. If it was so healthy over there why did Abby gain like 75 pounds before she got pregnant' (ADD-001 — Abby's pregnancy weight used to attack the household's health standards; fourth pregnancy-as-attack reference). ROW-7461 is the most structurally significant single message in this cluster: Melissa explicitly acknowledges that her ongoing inadequacy campaign ('all the things you don't do') is framed as a custody strategy, and that any improvement in Eli's engagement is reactive rather than genuine."
+    }
+  ],
+
+  "primary_flag_count": 3,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B019-P001",
+      "row": "ROW-7071",
+      "date": "2024-09-08",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "September 8 — 'Also quit using Olivia's skateboard. It's made for her, not your fat ass' (ROW-7071); 'You break so much shit' (ROW-7086). Context: Eli discovered the skateboard's trucks were loose and tightened them; Melissa accuses him of loosening them by riding it ('Convenient there was no issues until you tested it'). ADD-002 adjacent — characterizes Eli as careless and destructive with Olivia's belongings. Peripheral."
+    },
+    {
+      "flag_id": "RF01-B019-P002",
+      "row": "ROW-7128-7130",
+      "date": "2024-09-13",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "September 13 — 'Just that your so busy not being a coparent' (ROW-7128); 'You say that everyday' (ROW-7130). Context: Eli declines to take Olivia while Melissa visits hospitalized father because Eli may also be going to the hospital. Brief ADD-002 jab during medical coordination. Peripheral."
+    },
+    {
+      "flag_id": "RF01-B019-P003",
+      "row": "ROW-7229-7231",
+      "date": "2024-09-20",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "September 20 — 'She was telling me twice now how you guys argue about her needing to go home earlier. Don't make her feel bad' (ROW-7230); 'And Abby bitching about her riding in the cart. If she wants to ride in the fucking cart let her. It wasn't any of her business' (ROW-7231). ADD-004 — Olivia's reports about household dynamics at Eli's home relayed; ADD-001 — Abby's parenting input characterized as unwelcome interference. Peripheral."
+    },
+    {
+      "flag_id": "RF01-B019-P004",
+      "row": "ROW-7241",
+      "date": "2024-09-22",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "September 22 — Melissa sends a Facebook video (joke song about absent fathers) with commentary: 'This is a joke song but unfortunately you made it true for Olivia' (ROW-7241). ADD-002 — using external media to characterize Eli as the absent-father archetype; Olivia invoked as the subject of the characterization ('made it true for Olivia'). Eli responds with an eyeroll. Peripheral."
+    },
+    {
+      "flag_id": "RF01-B019-P005",
+      "row": "ROW-7305-7308",
+      "date": "2024-09-30",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "September 30 — 'Why'd you hang up on Olivia?' (ROW-7305); 'No she didn't / She said she'd be right back and hold on' (ROW-7307-7308). Context: Eli says Olivia told him she would call back; Melissa says Olivia said to hold on. Eli acknowledges misunderstanding (ROW-7309: 'I misunderstood'). Default-suspicion framing — Eli assumed to have hung up on Olivia. RF-04 peripheral."
+    }
+  ],
+
+  "peripheral_flag_count": 5,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": "RF01-B019-S001-S003",
+      "signal_count_before": 19,
+      "signal_count_after": 22,
+      "severity": 2,
+      "notes": "B-019 adds 3 Sev-2 signals — first triple-signal batch in Phase A. Total: 22 signals (2 Sev-1, 20 Sev-2). Last signal date updated: 2024-08-20 → 2024-10-02. Signals: S001 (ROW-6953-7023, Sep 5 — pregnancy incompetence attacks); S002 (ROW-7161-7170, Sep 14 — choking allegation via Olivia; Alice born ~Sep 11-12); S003 (ROW-7325-7490, Oct 2 — comprehensive dump with abandonment arc, third gatekeeping admission, custody strategy acknowledgment, Alice incest-framing). Pattern: B-019 is the most signal-dense batch in Phase A. B-019 introduces three new sub-patterns: (1) physical safety incidents as ADD-002 trigger, (2) physical abuse allegations via Olivia/about Melissa, (3) ROW-7461 explicit custody strategy acknowledgment. Third written gatekeeping admission (ROW-7478) corroborates ARC-RF02-001 required-intermediary arc."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B019-001",
+      "row": "ROW-7161-7170",
+      "date": "2024-09-14",
+      "priority": "high",
+      "summary": "Physical harm allegations relayed via Olivia within days of Alice's birth. ROW-7164 choking allegation ('he choked her and she couldn't breathe for a bit') is the most serious physical allegation in the record — it uses Olivia as source while Melissa delivers, arriving approximately 2-3 days after Alice's birth. ROW-7165-7166: Olivia's reported worry that Eli will harm Alice similarly. ROW-7168: Melissa's allegation that Eli 'used to physically harm me' personally. Document for RF-01 and RF-05 arcs. Note: the choking allegation does not appear in any prior batch and has no corroborating evidence in the record. The timing — within days of Alice's birth when Eli's fitness to parent the newborn is newly relevant — should be noted in the synthesis report. Cross-reference ROW-7364 (Oct 2 restatement)."
+    },
+    {
+      "cp3_id": "CP3-RF01-B019-002",
+      "row": "ROW-7461",
+      "date": "2024-10-02",
+      "priority": "high",
+      "summary": "Explicit acknowledgment that Melissa's ongoing inadequacy campaign is a custody strategy. ROW-7461: 'You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody.' This is significant because: (1) Melissa explicitly characterizes her ongoing inadequacy narrative ('all the things you don't do') as a vehicle toward sole custody; (2) she attributes any improvement in Eli's engagement to fear of losing custody rather than genuine care; (3) she acknowledges the campaign is ongoing. Document alongside ROW-6290/6312 (B-017 sole custody filing threats), ROW-5303/5308 (B-015 court evidence framing), and B-014 cat-allergy lawyer letter. Pattern: Melissa explicitly frames her narrative construction as a legal strategy."
+    },
+    {
+      "cp3_id": "CP3-RF01-B019-003",
+      "row": "ROW-7478",
+      "date": "2024-10-02",
+      "priority": "medium",
+      "summary": "Third written admission of gatekeeping/controlling Olivia's calls to Eli. ROW-7478: 'I used to ask her if she wanted to call you in the mornings to keep communication going.' Prior admissions: ROW-3151 ('I'm the reason she calls you most days. I normally ask her if she wants to call you in the am'); ROW-3353-3355 ('That's why you are called most mornings. Because I ask.'). Now framed as Melissa's positive contribution to co-parenting — she views her control of Olivia's calls as beneficent. Connect to ARC-RF02-001 (required-intermediary arc) and ROW-6819 coaching admission (B-018). Also document ROW-7479: 'I used to remind you of her mail days at primrose and even wrote a note on your behalf one day' — extends intermediary control to school communications, framed as goodwill."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "High-conflict batch with cooperative interludes. Sep 4-8 mixed (bike incident Sep 5, skateboard dispute Sep 8, school coordination generally cooperative). Sep 9-13: moderate — school year logistics, Melissa's father hospitalization providing context for some cooperation. Sep 14: Alice born ~Sep 11-12; choking allegation arrives Sep 14 evening. Sep 15-27: moderate — Alice jaundice coordination, Olivia visits, dental/eye appointment sharing, Olivia birthday party Sep 25-26. Oct 1: Eli takes Olivia to Children's hospital for bee sting (medical cooperation). Oct 2: largest conflict cluster in the batch.",
+    "alice_birth_significance": "Alice (Abby and Eli's daughter) born approximately Sep 11-12, 2024. Alice's birth immediately activates new attack vectors: (1) ROW-6971/6976/7015 (Sep 5, pre-birth) — pregnancy incompetence attacks; (2) ROW-7165-7166/7364 (Sep 14 and Oct 2) — Alice-as-concern-extension via Olivia's 'fears'; (3) ROW-7367 (Oct 2) — 'sister/cousin' incest framing applied to Alice in medical context; (4) ROW-7460 (Oct 2) — 'She sees you raising another family while giving her no time'; (5) ROW-7488-7490 (Oct 2) — Abby's pregnancy weight as household-health attack. Alice's birth creates a rich new ADD-001 dimension: Eli's relationship with Alice simultaneously used to frame his abandonment of Olivia and to imply danger to a newborn.",
+    "third_gatekeeping_admission": "ROW-7478 is the third written admission of Melissa controlling Olivia's phone calls to Eli. Pattern across three batches: ROW-3151 (B-009, Aug 2023) — 'I normally ask her if she wants to call you in the am. I'm the reason she calls you most days'; ROW-3353-3355 (B-010, Sep 2023) — 'That's why you are called most mornings. Because I ask.'; ROW-7478 (B-019, Oct 2024) — 'I used to ask her if she wanted to call you in the mornings to keep communication going' (framed positively). All three characterize Melissa as the gatekeeper of Olivia-Eli phone contact, with Melissa framing this as beneficial rather than controlling.",
+    "custody_strategy_acknowledgment": "ROW-7461 ('You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody') is the most explicit written acknowledgment that Melissa's inadequacy narrative is a custody strategy. It establishes that: (1) she is actively building a record for sole custody; (2) she believes her narrative campaign is effective; (3) she characterizes any Eli engagement as reactive to this pressure. Cross-reference with the triage hot-period: Jan 2025 and Feb 2025 escalation peaks may relate to custody motion activity.",
+    "physical_abuse_narrative_emergence": "B-019 introduces three physical harm allegations: (1) ROW-7163-7164: arm twisting and choking allegations attributed to Olivia; (2) ROW-7168: Melissa alleges Eli 'used to physically harm me too'; (3) ROW-7365: Melissa explicitly states 'you used to physically harm me.' These allegations are new in the record (no prior mention in B-001 through B-018). Their emergence simultaneously with Alice's birth (within days) and positioned as evidence that Eli will harm the newborn is structurally significant. Note: the B-019 physical harm narrative is restated and amplified on Oct 2 (ROW-7364-7366), suggesting deliberate repetition rather than a one-time complaint.",
+    "bee_sting_cooperation": "ROW-7310-7318 (Oct 1): Eli takes Olivia to Diley Ridge Children's after a bee sting — 'Got her from Jeannette - gave her 5ml of antihistamine. Stopping and getting some ice to put on it. Then going to Diley Ridge Childrens.' Eli provides detailed medical instructions to Melissa (ROW-7311) and coordinates with Heitzman's office (ROW-7508). This is proactive co-parenting on a medical issue — notable counter-indicator to the 'never helped with her care when she was sick' claim in ROW-7465."
+  }
+}

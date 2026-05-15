@@ -1,0 +1,54 @@
+{
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "generated_from_cp2": "2026-04-28",
+  "cp2_completed": "2026-04-28",
+  "status": "confirmed",
+
+  "cp2_answers_summary": {
+    "Q1_triggers": "Unpredictable — Eli reports he CANNOT identify reliable triggers. 'There have been times I was expecting escalation and didn't get it and other times where I didn't think anything was going to happen and she blew up.' Eli identifies this as the same dynamic as when they were married — walking on eggshells. Apply: cycle types in this dataset are CONTENT-CORRELATED patterns (identifiable from the record) but not Eli-confirmed reliable triggers. Do not classify any episode as provoked by Eli's communication style.",
+    "Q2_de_escalation": "Yes — starting 2025, Eli began using ChatGPT/AI to guide his responses. AI helped him identify Melissa's manipulations, tactics, and filter noise from substance requiring a response. Confirmed: Phase B/C sent messages are deliberately filtered, strategically calibrated AI-guided communication. Any Melissa escalation over these intentionally measured responses is unambiguous de-escalation resistance.",
+    "Q3_temporal": "Confirmed holiday volatility AND Halloween specifically. Eli identified both holiday periods and Halloween as periods of increased volatility.",
+    "Q4_oct2024_silence": "No explanation known. Eli has no reason for the Oct-Dec 2024 communication drop following EP-0917.",
+    "Q5_may2025": "Confirmed — EP-1078 (May 4 2025) is approximately when the AI-guided communication strategy was implemented. This is the Phase A/B inflection point.",
+    "Q6_worst_exchanges": "No specific worst exchange identified. Eli reports being 'either numb to it or just don't let it bother me anymore.' This is documented as an impact finding — emotional numbing as a coping response to sustained hostile communication exposure."
+  },
+
+  "addenda": [
+    {
+      "id": "RF13-ADD-001",
+      "title": "Escalation Trigger Unpredictability — Walking-on-Eggshells Pattern",
+      "rule": "Eli confirmed (CP2 Q1) that escalation was UNPREDICTABLE — he could not reliably identify triggers. This is the walking-on-eggshells dynamic: no safe behavioral strategy exists because the hostile response is not consistently tied to Eli's communication choices. For cycle detection: identify content correlates from the text record (Abby references, logistics disputes, scheduling, legal topics) as apparent triggers, but do NOT classify episodes as Eli-provoked. Cycle names (CYC-001 through CYC-005) describe content correlates, not cause-and-effect trigger-response pairs. Severity rule: the unpredictability itself is clinically significant — a sustained pattern of unpredictable hostile responses produces a trauma-adjacent hypervigilance state. Note unpredictability in arc synthesis as a pattern-level finding. Individual episode flags are not affected — flag all hostile episodes with asymmetric escalation profile regardless of trigger content.",
+      "why": "Q1 confirmed Eli could not predict escalation reliably. 'Sometimes I was expecting escalation and didn't get it and other times where I didn't think anything was going to happen and she blew up.' This is a known coercive-control dynamic: unpredictable hostility prevents the target from developing effective protective strategies.",
+      "how_to_apply": "In all batches: flag hostile episodes by escalation shape (asymmetric = primary RF-13 indicator), not by trigger topic. For cycle objects: label as 'content-correlated' cycle type, note that Eli himself cannot confirm these as reliable triggers. In arc synthesis: note unpredictability as a pattern characteristic that is distinct from and more significant than predictable conflict (which would allow behavioral adaptation)."
+    },
+    {
+      "id": "RF13-ADD-002",
+      "title": "AI-Guided Communication — Phase B/C Baseline Elevation",
+      "rule": "Beginning approximately May 4 2025 (EP-1078 inflection, B-025), Eli began using AI (ChatGPT) to guide responses: filtering noise, identifying manipulation tactics, deciding what merited a response. Phase B/C sent messages represent deliberately filtered, strategically calibrated communication. Apply escalation resistance scoring with elevated weight in Phase B/C: (1) Eli's measured, brief, logistics-focused responses are intentional de-escalation; (2) Melissa's hostile escalation OVER these deliberate attempts is unambiguous de-escalation resistance; (3) Any flooding, DARVO, or hostility directed at AI-guided measured responses earns delta +1.5 (maximum de-escalation resistance delta per supplement). Phase A (2022-2024): standard delta scoring — Eli's communication was unguided, responses may be reactive. Phase B/C (2025+): ARC-RF13-003 (de-escalation resistance) signals carry elevated weight because the baseline is intentional, not coincidental.",
+      "why": "Q2 and Q5 both confirmed AI-guided communication starting ~2025/EP-1078. The intentionality of Phase B/C de-escalation attempts means Melissa's escalation over them cannot be attributed to communication ambiguity or poor phrasing by Eli.",
+      "how_to_apply": "B-001 through B-024: standard delta scoring. B-025 onward: note 'AI-guided communication strategy active' in each flag record. Weight any Melissa escalation over Eli's measured responses at maximum resistance delta. ARC-RF13-003 escalation note in synthesis: the de-escalation resistance arc is especially significant in Phase B/C because Eli's responses were professionally optimized for de-escalation."
+    },
+    {
+      "id": "RF13-ADD-003",
+      "title": "Temporal Pattern — Holiday + Halloween Cluster",
+      "rule": "Eli confirmed (CP2 Q3) increased volatility around holidays AND Halloween. Five temporal trigger windows for this dataset: (1) Halloween/late October (Oct 25-Nov 2); (2) Thanksgiving/late November (Nov 20-Dec 1); (3) Christmas (Dec 22-27); (4) Valentine's Day / February 14-15; (5) New Year's / early January (Jan 1-7). Apply temporal correlation flag when 2+ hostile episodes fall within 10 days of these dates. Confirmed Halloween correlation: EP-0093 (Oct 31 2022, 48 msgs) is the first hostile episode in the dataset and falls on Halloween. The Halloween window expands the prior temporal pattern (holiday cluster was identified for Nov/Dec/Feb only). Apply: in each batch, note whether hostile episode dates fall within a temporal trigger window.",
+      "why": "Q3 confirmed holiday + Halloween volatility. The Halloween correlation was not identified in the triage pattern analysis but is confirmed here. EP-0093 (Oct 31 2022) is the first hostile episode in the dataset and falls on Halloween — this is the strongest documentary confirmation of the Halloween pattern.",
+      "how_to_apply": "Flag temporal correlations in episode records. For arc synthesis: the five-window temporal pattern means hostile escalation is predictable (by calendar, even if not by message content) — this is relevant to GAL context because it shows escalation is structurally driven, not reactive to Eli's communication."
+    },
+    {
+      "id": "RF13-ADD-004",
+      "title": "Emotional Numbing — Impact Finding",
+      "rule": "Eli reported (CP2 Q6) no specific worst exchange — 'I'm either numb to it or just don't let it bother me anymore.' This is an impact finding, not a calibration adjustment. Emotional numbing is a documented adaptation to sustained hostile communication exposure: when hostile patterns become normalized, the recipient's memory and affect-response to individual events diminishes even as cumulative harm increases. Apply as: (1) Arc synthesis note in ARC-RF13-001 (trajectory): absence of a memorable worst exchange may reflect normalization, not absence of harm; (2) CP3 narrative context item — Eli's emotional detachment from hostile episodes is a coping adaptation that may appear to a GAL as indifference but reflects long-term exposure impact; (3) Do NOT use Eli's numbness as a reason to downgrade any severity classification — the model's severity ratings are based on objective escalation metrics, not Eli's subjective distress at any individual event. No individual flag classification impact.",
+      "why": "Q6 answered with clear emotional detachment. Clinically, this is consistent with normalization of trauma-adjacent patterns: the sustained hostile communication exposure has produced affect-numbing as a protective response.",
+      "how_to_apply": "Note in ARC-RF13-001 synthesis narrative. Generate CP3 item at arc close: 'Eli's reported emotional detachment from hostile episodes reflects normalization of sustained hostile exposure — present to GAL as evidence of long-term pattern impact, not indifference.' Severity classifications are unaffected."
+    },
+    {
+      "id": "RF13-ADD-005",
+      "title": "Oct 2024 Behavioral Silence — Unresolved, Conservative Treatment",
+      "rule": "The post-EP-0917 communication drop (Oct 3 - Dec 15 2024, B-020) has no known explanation (Q4 confirmed). Conservative treatment: do not generate a primary RF-13 flag for the silence itself. Document as: structural context in ARC-RF13-001 trajectory arc — 'Behavioral withdrawal following mega-cluster EP-0917; cause unknown; no court order identified (per pipeline-manifest.json); consistent with prior behavioral-withdrawal pattern.' Distinguish from de-escalation: the silence was Melissa's, not Eli's. B-020 generates zero or minimal RF-13 primary flags. The silence is notable because it followed the largest single hostile episode prior to the Phase B cluster — it may represent escalation fatigue, a strategic withdrawal, or response to an external event not captured in the text record.",
+      "why": "Q4 confirmed Eli has no explanation. The absence of an explanation means we cannot classify the silence as strategic de-escalation (which might reduce the trajectory arc severity assessment) or as response to external event (which might be explanatory).",
+      "how_to_apply": "B-020: zero or near-zero primary RF-13 flags. Document the silence period in ARC-RF13-001 arc state as a trajectory feature — 'Phase A post-peak withdrawal; unresolved.' Do not generate a flag for the absence of hostility."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-018",
+    "row_range": { "start": 6557, "end": 6943 },
+    "date_range": { "start": "2024-08-05", "end": "2024-09-02" },
+    "message_count": 387,
+    "timezone_note": "Entirely EDT (UTC-4). ROW-6557 is Aug 5 21:37 EDT — the single Aug 5 message following B-017's Aug 4 escalation. Sep 3 was a gap day with no messages; B-018 actual last message is ROW-6943 Sep 2 21:56 EDT. RF-02 B-018 sms_end listed as ROW-6944 (Sep 4) — minor date labeling discrepancy in RF-02 file. DST change Nov 3, 2024 ahead.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF01-B018-F001",
+      "arc_signal_ref": "RF01-B018-S001",
+      "row": "ROW-6783-6831",
+      "date": "2024-08-19-20",
+      "rf_tags": ["RF-01"],
+      "severity": 2,
+      "calibration_addenda_triggered": ["RF01-ADD-002", "RF01-ADD-004", "RF01-ADD-001"],
+      "arc": "ARC-RF01-001",
+      "summary": "August 19-20 — Inadequate-father cluster triggered by Eli's 12-minute school supply drop-off appearance (Aug 19) and child support payment delay, containing the first explicit written admission of Olivia conversation coaching. Key nodes: ROW-6783: 'Feels like you just wanted to make an appearance to look involved' (motivational attribution attack following Eli's brief school visit; ROW-6783-6784: 'Without actually being involved'); ROW-6795: 'Be more present in her life and maybe she will feel more connected to you and tell you stuff like she does with me' (ADD-002 + ADD-004 — Olivia's closeness with Melissa vs. Eli framed as consequence of Eli's failure to be present); ROW-6796-6800: Sustained critique of school visit quality — 'You got to the school and I sent you the room number at 6:01. At 6:13 you were calling saying you were done / Instead you went to the drive thru and had her leave her meal in the car while you went into Walmart to find me and buy canned air' (ADD-002 — Eli's logistical choices during brief visit used as evidence of poor parenting priorities); ROW-6801: 'You can't be too busy for your daughter' (ADD-002); ROW-6802-6808: Melissa catalogues her own list of household accomplishments (bed assembly, faucet replacement, school prep, doctor visits) as implicit contrast to Eli's 12-minute involvement; ROW-6809: 'Tell em again how busy you are and don't have time for her' (ADD-002 sarcastic — 'tell em' framing implies Eli presents this narrative to others); ROW-6811: 'You had no clue who her teacher was, what her bus schedule or number was or what PowerSchool even was' (ADD-002 — school logistics ignorance as evidence of uninvolvement; note: PowerSchool established since kindergarten per ROW-6773, suggesting Eli has maintained some access but Melissa frames his non-awareness as disengagement); ROW-6814: 'You can bust your ass all you want when it amounts to 12 minutes does it really matter?' (ADD-002 — 12-minute quantification as evidence school involvement was meaningless); ROW-6815-6816: 'I'll be ensuring she does her homework and helping her with that most nights / What's got you so busy that you don't have time for this sweet little girl that you helped bring into the world?' (ADD-002 — comparative engagement + emotional appeal framing); **ROW-6819: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me so get off your high horse'** (CRITICAL — explicit written admission of coaching Olivia's conversations with Eli; Melissa admits to (1) directing Olivia to have conversations with Eli, (2) scripting content for those conversations, and (3) cueing Olivia's recall of prior conversations — this is direct written evidence of managing the father-daughter relationship as intermediary; the admission is made defensively in response to Eli's criticism, suggesting Melissa views this as positive involvement rather than interference); ROW-6824: 'As I said your lack of attention to her and making her low priority leads to difficulty connecting with you therefore making it hard to converse with you' (ADD-002 + ADD-004 — Olivia's conversational difficulty with Eli attributed to Eli's inadequacy; connects to ROW-6819 loop: Melissa's coaching creates the very dependency on her as intermediary that she then cites as evidence of Eli's failure); ROW-6827: 'You're reaching out to me saying you want to talk to her but get frustrated that she's not conversating with you. You need to build a relationship with her and stop making excuses as to why you can't' (ADD-002 — framing Eli's desire to reach Olivia directly as inadequacy, while Melissa positions herself as the necessary conduit); ROW-6829: 'You spend a lot of time on the phone playing video games as she stated yesterday she can hear the gun noises as she talks to you' (ADD-004 — Olivia's reported observations weaponized as evidence of distracted parenting); ROW-6830: 'You also spend time talking to Milo and Abby and clanging dishes and other stuff while you talk to her' (ADD-001 — Abby in context of divided attention during Olivia calls; third iteration of distracted-by-Abby framing alongside ROW-6831: 'What do you expect from her when that is what you give her'). ROW-6819 is the most direct written admission of conversation management/coaching in the record. The structural dynamic: Melissa positions herself as essential intermediary → cites Olivia's dependence on that intermediary as evidence of Eli's failure → criticizes Eli's attempts to connect directly as inadequate."
+    }
+  ],
+
+  "primary_flag_count": 1,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B018-P001",
+      "row": "ROW-6582-6585",
+      "date": "2024-08-08",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "August 8 — 'I don't want to hear about me being off work cause frankly my use of time is not your business but secondly you never take off work to help her. You always have excuses so I don't want to hear it' (ROW-6582); 'If I don't take off she has no one to care for her' (ROW-6583-6584); 'I don't have the opportunity to be an absent parent and just be like no I'm not doing anything. You do it' (ROW-6585). Context: Melissa responding to something Eli said about her taking time off work during Olivia's staph treatment. ADD-002 adjacent — characterizes Eli as 'absent parent' who 'always has excuses.' The triggering message from Eli is not in the extracted rows; partial context. Peripheral — less sustained and contextually reactive compared to Aug 20 cluster."
+    },
+    {
+      "flag_id": "RF01-B018-P002",
+      "row": "ROW-6873-6874",
+      "date": "2024-08-27",
+      "rf_tags": ["RF-04", "RF-01"],
+      "severity": "peripheral",
+      "summary": "August 27 — 'Did you yell at her or something?' (ROW-6873); 'She called me crying from the bus' (ROW-6874). Context: First week of school; Olivia called from the bus upset. Melissa's immediate default assumption is that Eli caused the distress ('Did you yell at her?'). Eli confirms he did not, and ROW-6879 clarifies Olivia was crying because she missed Melissa (normal first-week-of-school separation). Default-suspicion framing — Eli's interaction assumed to be the cause of Olivia's distress absent other explanation. RF-04 peripheral (emotional relay assumption); RF-01 peripheral (assumes Eli as harm source)."
+    },
+    {
+      "flag_id": "RF01-B018-P003",
+      "row": "ROW-6934",
+      "date": "2024-09-02",
+      "rf_tags": ["RF-01"],
+      "severity": "peripheral",
+      "summary": "September 2 — 'You ever get poor Milo to a parade?' (ROW-6934). Context: Melissa sharing photos from the Labor Day canal parade with Olivia. ADD-001 adjacent — invoking Milo's absence from Olivia's activities as mild comparative jab; 'poor Milo' framing implies Milo (Eli's dog, in this context living with Eli and Abby) is deprived compared to Olivia's active lifestyle with Melissa. Mild — more teasing register than sustained attack. Peripheral."
+    }
+  ],
+
+  "peripheral_flag_count": 3,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "new_signal",
+      "signal_ref": "RF01-B018-S001",
+      "signal_count_before": 18,
+      "signal_count_after": 19,
+      "severity": 2,
+      "notes": "B-018 adds 1 Sev-2 signal (ROW-6783-6831, Aug 19-20). Total: 19 signals (2 Sev-1, 17 Sev-2). Last signal date updated: 2024-08-04 → 2024-08-20. ROW-6819 ('I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me') is the most direct written admission of conversation coaching/management in the record — Melissa explicitly states she scripts content for Olivia's conversations with Eli and cues Olivia's recall. Pattern: B-018 breaks the three-consecutive-primary-batch streak (B-015/B-016/B-017) but still produces a primary signal in the school-year-start context. De-escalation from B-017's Aug 4 intensity; 13 cooperative days before next escalation."
+    }
+  },
+
+  "cp3_items": [
+    {
+      "cp3_id": "CP3-RF01-B018-001",
+      "row": "ROW-6783-6831",
+      "date": "2024-08-19-20",
+      "priority": "high",
+      "summary": "Aug 19-20 inadequate-father cluster with explicit coaching admission. ROW-6819 is the critical element: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me.' This is the first direct written admission of Melissa scripting/directing Olivia's conversations with Eli — (1) she tells Olivia to have conversations with Eli; (2) she provides content for those conversations; (3) she cues Olivia's recall of things shared with Melissa. The structural loop: Melissa creates Olivia's dependence on her as conversational intermediary, then cites that dependence as evidence of Eli's failure to connect. Also document: ROW-6795 'maybe she will feel more connected to you and tell you stuff like she does with me' — frames Olivia's openness with Melissa (likely produced by Melissa's coaching) as organic evidence of superior parenting. Cluster also contains sustained ADD-002 school-visit quantification ('12 minutes,' 'amounts to 12 minutes does it really matter') — document for RF-01 arc. Cross-reference with ARC-RF02-001 (required-intermediary arc): ROW-6827 'You're reaching out to me saying you want to talk to her' explicitly positions Melissa as necessary conduit for Eli-Olivia communication."
+    }
+  ],
+
+  "batch_observations": {
+    "tone_assessment": "High cooperative baseline with one Aug 19-20 escalation. Aug 5-18 period is the most sustained cooperative stretch in Phase A: Olivia's salon appointment (ROW-6561-6581), staph treatment coordination (ROW-6586-6717), lemonade stand (ROW-6647-6693 — Eli attends, contributes $6 to total), birthday party coordination (ROW-6847-6861 — Melissa picks up gift, Eli takes Olivia for card). Aug 19-20 escalation triggered by brief school supply drop-off and child support payment delay. Full return to cooperative content Aug 21 onward through Labor Day weekend.",
+    "coaching_admission_significance": "ROW-6819 is structurally significant across multiple RF dimensions. For RF-01: direct evidence that Melissa actively manages what Olivia says to Eli (scripting content, cueing recall), undermining organic father-daughter conversation and positioning Melissa as necessary intermediary. For RF-02: connects to ARC-RF02-001 (required-intermediary arc) — Melissa's coaching means even Olivia's direct phone calls to Eli may be Melissa-mediated in content. For RF-09: Melissa offers this coaching as evidence of her positive involvement while Eli raised concerns about Olivia's conversational difficulty — the coaching itself is the subject of deflection.",
+    "school_year_start_pattern": "B-018 introduces a new attack vector: school-year logistics as evidence of uninvolvement. Melissa's critique of Eli for not knowing teacher name, bus number, or PowerSchool (ROW-6811) establishes a school-year template for inadequate-father narrative. Note counter-context: Eli was actively present at the school supply drop-off (Aug 19), attended the lemonade stand (Aug 11), and facilitated birthday party attendance (Aug 25) — all in this batch.",
+    "tennessee_mention": "ROW-6730 (Aug 14): 'I think we're going to TN' — context unclear (trip or relocation consideration). Monitoring alongside NC relocation inquiry (B-013 ROW-4588) and RF-02 relocation arc. Not enough context to flag; note for B-019+ observation.",
+    "child_support_contempt_threat": "ROW-6881 (Aug 29): 'You still haven't paid support like you said you would. I'm filing contempt' — Eli explains ODJFS process; payment was coming through paycheck withholding. RF-05 primary (legal threat); RF-01 peripheral — legal threats have been used as inadequate-father framing in prior batches (B-017 ROW-6312). Note: Eli's response (ROW-6882-6883) is practical/informational without escalation.",
+    "eli_response_pattern": "Eli continues the established de-escalation pattern — does not engage with character attacks (ROW-6817: 'Look I get your point of view. That's not what I am trying to discuss because that is a bigger issue than I care to delve into tonight'), focuses on practical co-parenting logistics. The Aug 20 conflict ends without Eli substantively contesting the inadequate-father narrative."
+  }
+}

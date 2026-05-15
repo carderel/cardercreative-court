@@ -1,0 +1,65 @@
+{
+  "batch_id": "B-017",
+  "date_range": {
+    "start": "2024-07-16",
+    "end": "2024-08-05"
+  },
+  "message_count": "~581",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 7,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Jul-Aug 2024. S-007: Eli advises Melissa to 'double up in allergy meds' on Aug 4 when ragweed is 'very high' and tree pollen is high (ROW-6256). Second documented instance of Eli proactively tracking and advising about Olivia's allergy medication compliance per ADD-004 pattern. ARC-RF14-002 signal 3. ROW-8482 (Aug 4): Melissa continuing cat-allergy allegation ('The fact that you knew she was allergic to cats and chose to not have her visit...') \u2014 cat is now dead (since Apr 1); Melissa using post-death context to relitigate past access restrictions. RF-15 primary territory, RF-14 peripheral."
+  },
+  "primary_flags": [
+    {
+      "signal_id": "RF14-S-007",
+      "row_ref": "ROW-6256/8391",
+      "date": "2024-08-04",
+      "direction": "Sent",
+      "severity": 1,
+      "arc": "ARC-RF14-002",
+      "arc_signal_num": 3,
+      "type": "Medical compliance \u2014 allergy medication (Eli documenting concern)",
+      "description": "ROW-8391: 'She may want to double up in allergy meds today ragweed is \"very high\" and \"tree pollen\" is high.' Eli actively monitoring pollen counts and advising Melissa to administer enhanced allergy medication dose. Second allergy-meds compliance reminder (after S-005 Jun 9). Per ADD-004: allergy medication inconsistently administered at Melissa's household. Melissa's response (ROW-8392): 'Ok' \u2014 brief acknowledgment. Pattern of Eli having to remind Melissa about allergy meds on high-allergen days confirmed.",
+      "addenda_applied": [
+        "RF14-ADD-004"
+      ]
+    }
+  ],
+  "peripheral_flags": [
+    {
+      "row_ref": "ROW-8482",
+      "date": "2024-08-04",
+      "direction": "Received",
+      "type": "RF-15 primary / RF-14 peripheral",
+      "note": "Melissa relitigating cat-allergy scheme ('chose not to have her visit because it wasn't fair to the cats') after cat's death. RF-15 primary (weaponized allergy access restriction); RF-14 peripheral."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "ROW-8482 peripheral \u2014 cat-allergy continuation (RF-15 primary). No new standalone RF-14-001 signal.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "RF14-S-007: Second allergy-meds compliance reminder. Signal count now 3. Pattern: Eli consistently documenting medical compliance concern. Promotes to ACTIVE.",
+      "state": "ACTIVE"
+    }
+  ]
+}

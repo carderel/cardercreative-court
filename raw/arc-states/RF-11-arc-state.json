@@ -1,0 +1,158 @@
+{
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "generated": "2026-04-28",
+  "arc_id": "ARC-RF11-001",
+  "arc_name": "Parentification / Child-Exposure Pattern",
+  "status": "ACTIVE",
+  "resolution": "unresolved_at_dataset_close",
+  "signal_count": 5,
+  "severity_distribution": {
+    "1": 0,
+    "2": 5,
+    "3": 0
+  },
+  "direction_distribution": {
+    "received_melissa": 4,
+    "sent_eli": 1,
+    "bilateral": 1
+  },
+  "arc_lifecycle": {
+    "CANDIDATE": "B-001 (initialized at calibration)",
+    "WATCHING": "B-028 (S002 \u2014 2nd signal, Oct 2025)",
+    "ACTIVE": "B-029 (S003+S004 \u2014 3rd and 4th signals, Nov 2025)"
+  },
+  "phase_distribution": {
+    "A": 0,
+    "B": 1,
+    "C": 4
+  },
+  "dominant_mechanism": "Parentification of visit-compliance decisions \u2014 Melissa explicitly frames court-ordered visit refusals as Olivia's autonomous choice, burdening the child with adult legal decisions",
+  "signals": [
+    {
+      "signal_id": "S001",
+      "batch": "B-027",
+      "date": "2025-08-14",
+      "row_ref": "ROW-14097 + ROW-14146 + ROW-14207",
+      "severity": 2,
+      "direction": "received",
+      "mechanism": "counselor_relay_weaponization + child_as_parental_support_judge",
+      "anchor_quotes": [
+        "ROW-14097: 'She's told the counselor before how she's afraid to talk to you about things and how she feels cause you would just yell at her and not listen'",
+        "ROW-14207: 'She sees who supports her'"
+      ],
+      "compound": "COMP-RF11-001 (RF-11+RF-04+RF-08)",
+      "arc_state_after": "CANDIDATE (1 signal)",
+      "note": "First text-record evidence of therapeutic context weaponized in adult conflict. Counselor relay + child positioned as parental support referee."
+    },
+    {
+      "signal_id": "S002",
+      "batch": "B-028",
+      "date": "2025-10-04",
+      "row_ref": "ROW-14490-14517",
+      "severity": 2,
+      "direction": "received",
+      "mechanism": "fear_relay_parentification + child_safety_determinator",
+      "anchor_quotes": [
+        "ROW-14490: 'Why are you telling her she has to stay at your house when she wants to come home because the judge said so'",
+        "ROW-14508: 'She doesn't feel safe and supported as evidenced by the texts I got'"
+      ],
+      "compound": "COMP-RF11-002 (RF-11+RF-02+RF-04)",
+      "arc_state_after": "WATCHING (2 signals)",
+      "note": "Court order inverted as child-endangerment framing; Olivia's texts to Melissa during Eli's parenting time deployed as evidence."
+    },
+    {
+      "signal_id": "S003",
+      "batch": "B-029",
+      "date": "2025-11-22",
+      "row_ref": "ROW-8436-8438 adjacent (Nov 22 police report gap)",
+      "severity": 2,
+      "direction": "received",
+      "mechanism": "legal_proceedings_exposure_police_report",
+      "anchor_quotes": [
+        "CP2 Q4 confirmed: Melissa told Olivia about Eli's Nov 22 2025 police report filing. Olivia stopped talking to Eli for over a week."
+      ],
+      "compound": "COMP-RF11-003 (RF-11+RF-02)",
+      "arc_state_after": "ACTIVE (3 signals)",
+      "note": "Behavioral impact documented. Child told father filed police report about her visit refusal \u2014 child made aware of legal enforcement action arising from her own behavior."
+    },
+    {
+      "signal_id": "S004",
+      "batch": "B-029",
+      "date": "2025-11-25",
+      "row_ref": "ROW-14841 area",
+      "severity": 2,
+      "direction": "received",
+      "mechanism": "explicit_parentification_court_compliance",
+      "anchor_quotes": [
+        "ROW-14841 area: 'It was her choice not to go and I am not expected to forcibly remove her from the home'"
+      ],
+      "compound": "COMP-RF11-004 (RF-11+RF-02+RF-04)",
+      "arc_state_after": "ACTIVE (4 signals)",
+      "note": "Strongest text-documented parentification statement in the dataset. Court-order compliance explicitly placed on Olivia's decision-making. Melissa abdicates enforcement responsibility."
+    },
+    {
+      "signal_id": "S005",
+      "batch": "B-030",
+      "date": "2026-02-15",
+      "row_ref": "ROW-15098-15175",
+      "severity": 2,
+      "direction": "bilateral",
+      "mechanism": "bilateral_child_exposure_domestic_argument + adult_legal_framing_to_children",
+      "anchor_quotes": [
+        "ROW-15102 (received): 'Her, Milo and Alice were hiding in her room. Milo was telling Olivia if it kept going they might need to leave and they discussed going out the window because they were both scared.'",
+        "ROW-15103 (received): 'you pulled your phone out and said let\\'s educate ourselves today. Looked up verbal abuse and told them it\\'s not illegal.'"
+      ],
+      "cp2_confirmation": "Q1 confirmed: Children ages 10, 6, 1 home in small house. Eli confirms children asked about verbal abuse and he looked it up and explained. Out-of-character incident \u2014 sinus infection, steroids, sleep deprivation. Eli apologized. Eli-direction Sev-2 (mitigated but confirmed).",
+      "compound": "COMP-RF11-005 (RF-11+RF-04+RF-09)",
+      "arc_state_after": "ACTIVE (5 signals) \u2014 final signal; arc unresolved at dataset close",
+      "note": "Only bilateral signal in the pass. Eli-direction: children directly present during adult argument + children involved in adult legal-definitional discussion (verbal abuse). Melissa-direction: trauma narrative deployed as ongoing visit-refusal engine through Apr 2026."
+    }
+  ],
+  "compound_patterns": [
+    {
+      "id": "COMP-RF11-001",
+      "batch": "B-027",
+      "signal": "S001",
+      "type": "RF-11+RF-04+RF-08",
+      "description": "Counselor relay weaponization \u2014 therapeutic content used as inadequacy ammunition + Olivia as parental support judge"
+    },
+    {
+      "id": "COMP-RF11-002",
+      "batch": "B-028",
+      "signal": "S002",
+      "type": "RF-11+RF-02+RF-04",
+      "description": "Fear relay parentification \u2014 court order inverted as endangerment framing; child as safety determinator"
+    },
+    {
+      "id": "COMP-RF11-003",
+      "batch": "B-029",
+      "signal": "S003",
+      "type": "RF-11+RF-02",
+      "description": "Police report child-exposure \u2014 legal enforcement context disclosed to child; documented behavioral impact"
+    },
+    {
+      "id": "COMP-RF11-004",
+      "batch": "B-029",
+      "signal": "S004",
+      "type": "RF-11+RF-02+RF-04",
+      "description": "Explicit parentification \u2014 'her choice not to go'; court-compliance decision transferred to child"
+    },
+    {
+      "id": "COMP-RF11-005",
+      "batch": "B-030",
+      "signal": "S005",
+      "type": "RF-11+RF-04+RF-09",
+      "description": "Bilateral hiding incident \u2014 Eli-direction: child exposure to adult argument + verbal abuse framing; Melissa-direction: amplification deployment (COMP-RF04-029, RF-09 S011)"
+    }
+  ],
+  "arc_synthesis": {
+    "primary_mechanism_melissa": "Parentification of visit-compliance decisions: Melissa consistently frames Olivia's court-ordered visit refusals as Olivia's autonomous choice, relieving Melissa of enforcement responsibility while burdening Olivia with adult legal decisions. Text-documented in ROW-14841 ('it was her choice'). Confirmed escalating from fear-relay framing (B-028) through explicit autonomy-framing (B-029) through police-report disclosure (B-029).",
+    "primary_mechanism_eli": "Feb 2026 domestic argument: children directly present and affected; Eli's responsive explanation of 'verbal abuse' to frightened children constitutes adult legal framing in children's presence. Single out-of-character incident; mitigated by context, health factors, apology. Sev-2 bilateral.",
+    "stabilizer_pattern": "CP2 Q3 confirmed: Olivia serves as Melissa's emotional stabilizer. ADD-006 context: each documented parentification signal reflects a sustained behavioral pattern, not isolated incidents. The therapeutic relationship deployment (S001 B-027) is the most direct text-record evidence of the stabilizer mechanism.",
+    "police_report_impact": "S003 (B-029): Police report disclosure to child is the highest-consequence RF-11 signal from a child-welfare perspective. Telling a 10-year-old that her father 'called the police' about her visit refusal places the child in the adult legal conflict and produces documented behavioral impact (week-long silence toward Eli). This signal is likely to be the most significant RF-11 item for GAL analysis.",
+    "phase_pattern": "Zero Phase A signals \u2014 cooperative baseline period, no RF-11 behavioral indicators visible in text record. One Phase B signal (B-027 counselor relay, Aug 2025) preceding Phase C escalation. Four Phase C signals concentrated in Oct-Feb 2025-2026 window \u2014 all within the visit-refusal cascade period. Pattern intensifies with legal/custody pressure.",
+    "therapist_pattern": "ADD-004 behavioral note: Melissa engages therapists then terminates when called out (Q6). This pattern itself is clinically significant \u2014 suggests strategic therapeutic engagement rather than genuine treatment for Olivia. Cannot be directly flagged from text record but is critical context for GAL evaluation of Olivia's therapeutic history.",
+    "cross_rf_density": "5 of 5 signals are compound patterns. Most structurally embedded in RF-02 (visit-refusal cascade) \u2014 RF-11 cannot be analyzed in isolation from the gatekeeping arc. RF-04 involved in 4 of 5 compounds. RF-09 compound in S005 (Feb 2026 amplification triple). RF-08 compound in S001 (counselor relay)."
+  }
+}

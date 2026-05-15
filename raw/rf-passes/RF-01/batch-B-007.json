@@ -1,0 +1,164 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-007",
+    "row_range": {"start": 2230, "end": 2580},
+    "date_range": {"start": "2023-04-03", "end": "2023-06-02"},
+    "message_count": 351,
+    "mms_note": "MMS for this date range exist on a separate MMS sheet and are not separately analyzed in this batch; SMS-only analysis.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "timezone_note": "All source timestamps are UTC. Entire B-007 date range is EDT (UTC-4). DST began Mar 12 in B-006; B-007 is fully post-DST.",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. One primary RF-01 flag (Sev 2). Dominant event: Apr 21-28 Abby exclusion cluster — Melissa characterizes Abby as 'mean' and 'bitch/whore' (ROW-2373), relays Olivia's 'adamant' refusal to see Eli if Abby is present (ROW-2379, ROW-2396-2399), then claims 'that was her making that plan all on her own' (ROW-2408). First instance in the record of Eli's actual custodial contact being conditioned on Abby's exclusion, operationalized through Olivia's voiced preferences. RF01-ADD-001 (Abby attack vector) fully activated. Post-incident pattern: 5+ consecutive evenings of 'Olivia doesn't want to call' following Apr 21. ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 9 signals (2 Sev-1, 7 Sev-2)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 351,
+    "primary_flags": 1,
+    "primary_severity_distribution": {"1": 0, "2": 1, "3": 0},
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {"RF-04": 3, "RF-02": 1},
+    "no_flag_messages": 350,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "flag_id": "RF01-B007-S001",
+      "message_ids": ["ROW-2373", "ROW-2374", "ROW-2375", "ROW-2376", "ROW-2377", "ROW-2378", "ROW-2379", "ROW-2395", "ROW-2396", "ROW-2397", "ROW-2398", "ROW-2399", "ROW-2401", "ROW-2402", "ROW-2403", "ROW-2404", "ROW-2405", "ROW-2406", "ROW-2407", "ROW-2408", "ROW-2409"],
+      "date_range": {"start": "2023-04-21", "end": "2023-04-28"},
+      "severity": 2,
+      "flag_type": "primary",
+      "rf_category": "RF-01",
+      "calibration_addenda_triggered": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-004"],
+      "arc_signal": true,
+      "arc_ref": "ARC-RF01-001",
+      "cp3_item": true,
+      "cp3_ref": "CP3-RF01-B007-001",
+      "confidence": "high",
+
+      "message_texts": {
+        "ROW-2373": "And Abby doesn't need to tell her that she can't have a treat if she tells me what's going on. That bitch can shut her fucking whore mouth",
+        "ROW-2374": "You both shouldn't be telling her not to tell me stuff. That's shady",
+        "ROW-2375": "And don't be leaving her in the car with Abby alone either. That's contempt of court",
+        "ROW-2376": "Don't ever leave olivia in the car by herself or with just Abby. I will file contempt charges",
+        "ROW-2377": "Don't teach her to lie or keep things from me and check your bitch when she's being mean to Olivia",
+        "ROW-2378": "She was only with you for three hours. There is no reason she should be left alone. You can't handle three hours a week? Wtf. You are a fucking idiot",
+        "ROW-2379": "Olivia was crying saying Abby was mean to her and wants me to tell you not to bring her around much anymore",
+        "ROW-2395": "Will you be leaving her in the car by herself?",
+        "ROW-2396": "She said she doesn't want Abby around",
+        "ROW-2397": "[Eli]: I wont be leaving her in the car",
+        "ROW-2398": "She said she doesn't want Abby around cause Abby was mean to her last time",
+        "ROW-2399": "She said that she doesn't want to go if Abby is there",
+        "ROW-2401": "Olivia was crying after you dropped her off. She said that after she said she was going to tell me that you left her in the car unsupervised that Abby said 'sounds like Olivia doesn't want any peeps'. She said that it hurt her feelings. She doesn't understand why she would get in trouble or be punished for doing what she's supposed to. It was unnecessary",
+        "ROW-2402": "You shouldn't have left her in the car unsupervised",
+        "ROW-2403": "You shouldn't then try to teach her to keep things from me.",
+        "ROW-2404": "Abby shouldn't punish her by not including her",
+        "ROW-2405": "You guys are incapable of making good choices",
+        "ROW-2406": "Instead of trying to argue about it why don't you just listen to your daughters requests.",
+        "ROW-2407": "She actually told me this morning that she wants me to pick her up from primrose and that you can pick her up from here and if Abby's in the car she won't have to go.",
+        "ROW-2408": "That was her making that plan all on her own.",
+        "ROW-2409": "She is adamant that she doesn't want to go with you if Abby is with you. She says milo can come"
+      },
+
+      "context_notes": "Apr 21: Eli picked up Olivia for approximately 3-hour visit. At some point Olivia was briefly left in or near the car. When Olivia told Melissa she would report being left unsupervised, Abby reportedly said 'sounds like Olivia doesn't want any peeps' (i.e., treats). Melissa's immediate evening response (ROW-2373-2379) characterized Abby with extreme misogynistic profanity ('that bitch can shut her fucking whore mouth'), framed Abby as dangerous to leave Olivia with (ROW-2375-2376, contempt threat), accused both Eli and Abby of teaching Olivia to keep secrets (ROW-2374, ROW-2377), and relayed that Olivia was 'crying' and 'wants me to tell you not to bring her around much anymore' (ROW-2379). Apr 27-28: When Eli attempted to schedule the next pickup, Melissa conditioned it on Abby's absence (ROW-2396-2399). When Eli asked how Abby was mean, Melissa provided the 'peeps' incident narrative (ROW-2401), then escalated to 'you guys are incapable of making good choices' (ROW-2405), claimed Olivia independently devised a plan to allow Eli's pickup only if Abby is not in the car (ROW-2407), and stated Olivia is 'adamant' and 'her plan all on her own' (ROW-2408). Crucially: ROW-2409 notes Olivia accepts Milo (Abby's son, who also lives with Eli) but not Abby — indicating targeted rejection of Abby specifically.",
+
+      "rf01_analysis": "This cluster constitutes full activation of the Abby attack vector (RF01-ADD-001) through Olivia's voiced preferences. The sequence: (1) Melissa privately characterizes Abby with extreme hostility to Eli ('that bitch / fucking whore mouth') — this framing almost certainly reflects how Melissa discusses Abby in Olivia's environment; (2) Melissa relays Olivia's 'crying' and demand that Abby not come around (ROW-2379); (3) Six days later, Melissa relays Olivia's 'adamant' refusal to be with Eli if Abby is present (ROW-2399), claiming this is 'her plan all on her own' (ROW-2408). The 'her plan all on her own' claim is a canonical coaching-deflection: when a child has a highly specific, adult-benefit-aligned position, the custodial parent claiming 'she came up with this herself' is a recognized alienation pattern. The result is structural: Olivia's contact with Eli is now conditioned on Abby's exclusion, and Melissa has weaponized Olivia's voiced preferences to achieve this. Since Abby lives with Eli, conditioning Olivia's willingness to be with Eli on Abby's absence creates a direct loyalty conflict between Olivia's attachment to her father and her coached (or at minimum amplified) rejection of Abby. RF01-ADD-002 (Sev 2 minimum): 'Can't handle three hours a week' (ROW-2378) + 'incapable of making good choices' (ROW-2405) constitute sustained inadequate-father framing. RF01-ADD-004: ROW-2379, ROW-2396, ROW-2398, ROW-2399, ROW-2407-2409 all deploy Olivia's voiced reactions as mechanisms for restricting Eli's custodial arrangements.",
+
+      "arc_note": "ARC-RF01-001 +1 Sev-2 signal. The Apr 21-28 cluster is the most operationally significant RF-01 event to date: prior signals were narrative framing (abandonment language, inadequate-father characterizations); this signal represents the pattern being operationalized into actual custodial access conditions. Olivia's willingness to visit Eli is now contingent on Abby's exclusion — a structural outcome of the Abby attack vector."
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-2289-2291",
+      "reason_noted": "Apr 9: Eli had physical therapy and couldn't pick Olivia up at expected time. Melissa relays: ROW-2289 'She said come on! He said he would! Dang it'; ROW-2291 'She said meanie.' Near-boundary RF01-ADD-004: Melissa relays Olivia's disappointment and frustration with Eli's broken schedule plan. ROW-2294 follows: 'I'll just pick her up since you are going back on your promise to her' — Melissa positions herself as intervening to protect Olivia from Eli's unreliability. Not primary flag: the complaint is specific and situational; Eli did forget about PT, and this is a single instance. Pattern watch: the relay of Olivia's critical reactions to Eli's missed plans is a recurring minor pattern."
+    },
+    {
+      "message_id": "ROW-2308",
+      "reason_noted": "Apr 13: 'She said she doesn't want to call back.' Melissa relays Olivia's refusal to return Eli's call. Single instance. Pattern watch: see post-Apr-21 call refusal pattern note in batch_narrative_note."
+    },
+    {
+      "message_id": "ROW-2334",
+      "reason_noted": "Apr 15: After Eli acknowledged that he forgets to call Olivia ('You know I have trouble keeping track of time'), Melissa sent an Amazon link to a dementia clock — a device for people with cognitive impairment. This is contemptuous but directed at Eli, not Olivia. RF-04 (peripheral flagged). Near-boundary RF-01: if this framing ('your dad has dementia') reaches Olivia, it would be significant disparagement. Noted as RF-04 primary."
+    },
+    {
+      "message_id": "ROW-2380-2409",
+      "reason_noted": "Apr 22 through Apr 28: Post-Apr-21 'Olivia doesn't want to call' pattern. ROW-2380 (Apr 22): 'She said she didn't want to call back.' ROW-2384 (Apr 23): 'She says she doesn't want to.' ROW-2415 (Apr 30): 'She said she didn't want to.' ROW-2417 (May 1): 'She doesn't want to call though.' ROW-2420 (May 2): 'She sent you to voicemail.' ROW-2423 (May 3): 'She sent you to voicemail' / 'She said no.' ROW-2431 (May 4): 'She said not right now.' That is 7 consecutive call refusals across 13 days directly following the Apr 21 Abby incident. Individual refusals are not RF-01 primary (a child not wanting to talk on a given night is normal), but the temporal cluster is analytically significant: the Abby explosion (Apr 21) correlates with an immediate and sustained withdrawal of Olivia's phone contact with Eli. Whether this reflects Olivia's emotional response to the Abby situation or Melissa gating communication more actively post-conflict, it is the most sustained phone-refusal cluster in the record to date. RF-02 peripheral territory."
+    },
+    {
+      "message_id": "ROW-2460-2468",
+      "reason_noted": "May 9-10: After pickup, Melissa texts: 'She's screaming when she pees cause you did something to her vagina when you picked her up' (ROW-2460). Before clarification, this framing is alarming. ROW-2463 (20 minutes later): 'For clarity she said you hurt it because you picked her up and her outfit went up and gave her a wedgie in the front and she screamed and you put her down. She is not saying you touched it or anything.' ROW-2464 clarifies this was a clothing incident. ROW-2468 (next morning): 'Still hurting but not screaming when she pees. You need to be more careful with her. She's always getting hurt by you.' ROW-2460's initial framing ('you did something') before clarification is concerning. ROW-2468's 'she's always getting hurt by you' is the first 'always' framing of Eli causing physical harm to Olivia. Not RF-01 primary: this is RF-04 (characterizing Eli as physically dangerous/careless). RF-01 adjacent: the 'always getting hurt by you' frame contributes to a broader characterization of Eli as unsafe with Olivia. Pattern watch."
+    },
+    {
+      "message_id": "ROW-2566",
+      "reason_noted": "Jun 1: Melissa relays that Olivia 'only wants' Eli to pick her up on condition of swimming at Melissa's house. Context: Eli missed the scheduling window because he didn't answer when Melissa called; Melissa called Olivia to ask. Olivia's condition — swim with her at Melissa's house — is logistically specific and may reflect Melissa's suggestion. Eli then reveals he can't swim due to a healing skin condition. Result: no pickup. Near-boundary RF-01: Olivia's voiced preference is used as a gating condition on access, with a condition Eli cannot fulfill. RF-02 peripheral: conditional pickup mechanism. Not RF-01 primary: the condition (swimming) is activity-based, not Abby-exclusion based; single instance."
+    },
+    {
+      "message_id": "ROW-2372",
+      "reason_noted": "Apr 21: 'Don't be leaving Olivia in the car by herself. Cars are getting stolen all the time. It's not safe.' This opens the Apr 21 cluster. The car-safety concern itself is not RF-01. Context: Eli briefly left Olivia in or near the car during the visit. Whether this constitutes a safety violation is disputed. Melissa's escalation from a car-safety concern to 'that bitch can shut her fucking whore mouth' (ROW-2373) within three minutes reveals the Abby attack vector underlying the safety framing."
+    },
+    {
+      "message_id": "ROW-2274-2275",
+      "reason_noted": "Apr 7: Eli explains the family didn't attend Easter church service because of flower-related allergies. Melissa: 'That's not a reason to not go to church. Each church is different. / I don't remember a bunch of flowers last year.' Melissa disputes Eli's parenting decision (church attendance) and dismisses his health rationale. Near-boundary RF01-ADD-003 (cross-household authority override): Melissa challenges a parenting decision Eli made during his custodial time. Not primary flag: this is a minor, isolated challenge, not a sustained authority-override pattern. RF-04 candidate."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-2289-2294",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Apr 9: Eli missed planned pickup due to forgotten PT appointment. Melissa relays Olivia's reaction ('come on! He said he would! Dang it' / 'meanie') and frames Eli as breaking a promise to Olivia. ROW-2294: 'I'll just pick her up since you are going back on your promise to her.' RF-04: using Olivia's disappointment as contemptuous evidence of Eli's unreliability; Melissa positioning herself as Olivia's protector against Eli's failed commitments. RF-01 near-boundary: part of the developing 'Eli makes promises to Olivia he doesn't keep' pattern.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2334",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Apr 15: After Eli acknowledged difficulty tracking time, Melissa sent an Amazon link to a 'Dementia Clock 2.0 with 15 Custom Reminders' — a device marketed to Alzheimer's/dementia patients. RF-04: contemptuous characterization of Eli as cognitively impaired. RF-01 near-boundary: if Olivia is aware that Melissa views her father as cognitively impaired, this would be significant disparagement.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2460-2468",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "May 9-10: 'She's screaming when she pees cause you did something to her vagina when you picked her up' (alarming initial framing, clarified as clothing wedgie accident 20 minutes later). ROW-2468 following morning: 'She's always getting hurt by you.' RF-04: first 'always' framing of Eli causing physical harm; characterizes Eli as habitually careless with Olivia's physical safety. RF-01 adjacent: if communicated to Olivia, 'you're always getting hurt by your dad' contributes to fear/avoidance framing.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2566",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "note": "Jun 1: 'She said she only wants you to pick her up if you take her to the house and swim with her.' Melissa conditions Eli's pickup access on Olivia's voiced activity requirement (swimming at Melissa's house) — a condition Eli could not fulfill (healing skin). RF-02: conditional pickup using Olivia's voiced preference as gating mechanism. Context: Eli had failed to schedule by the expected time, so Melissa called Olivia to ask — giving Melissa the opportunity to shape Olivia's conditions for the visit.",
+      "confidence": "medium"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_continuation_note": "ARC-RF01-001 (Abandonment/Blame Attribution Narrative): ACTIVE, +1 Sev-2 signal (RF01-B007-S001). Total signals: 9 (2 Sev-1, 7 Sev-2). The Apr 21-28 cluster represents a structural escalation: prior signals were narrative framing; this signal operationalizes the pattern into actual custodial access conditions. The Abby exclusion demand (conditioned on Olivia's voiced refusal) is the most direct manifestation of the Abby attack vector to date. Watching for: whether the Abby exclusion condition is maintained or escalated in B-008+; whether the 'Olivia doesn't want to call' pattern following Apr 21 normalizes or resolves."
+  },
+
+  "batch_narrative_note": "B-007 is structurally divided by the Apr 21 Abby incident. Pre-Apr 21 (Apr 3 – Apr 20): broadly cooperative communication — Melissa coordinates VR outing, shares Olivia's Dave & Busters win, facilitates multiple pickups without friction, shares Olivia's humor and activities warmly. This is the cooperative baseline. Apr 21: the Abby incident interrupts cooperative tone sharply. Melissa's response to the car/peeps situation escalates immediately to extreme profanity directed at Abby (ROW-2373) and allegations of coaching Olivia to lie (ROW-2374). Post-Apr 21 (Apr 22 – Jun 2): communication recovers some baseline cooperative tone for child-sharing (swim class updates, school activities, health check-ins), but the 'Olivia doesn't want to call' pattern is notably elevated (7 call refusals across 13 days post-incident). The Apr 27-28 follow-up cluster formalizes the Abby exclusion demand. The batch ends with cooperative content resuming (pool, last day of school, tooth fairy, summer activities). The B-005 pattern observation is confirmed: RF-01 primary signals cluster around access conflicts; cooperative periods are separated by the Abby attack vector activations. B-007 introduces a new structural element — for the first time, Eli's custodial access has been explicitly conditioned on Abby's exclusion, using Olivia's voiced preferences as the mechanism.",
+
+  "cooperative_data_notes": "Pre-Apr 21 cooperative content is high: Melissa coordinates VR outing (Apr 7-9, $22/person), shares Olivia's Dave & Busters ticket win (755 tickets), coordinates Easter Sunday VR (Apr 9, 3:20pm), shares spring fest enthusiasm and book fair purchases, asks Eli to participate in Father's Day event at Primrose (ROW-2579-2580). Post-Apr 21 cooperative content resumes: swim class level-up notification (May 7), pool installation updates and invitation to swim with Olivia (May 28, 'Pool should be done tomorrow if you want to come swim with her' ROW-2548), last day of school logistics. Melissa facilitates tooth pulling and shares Olivia's humor/activities throughout. The Father's Day Primrose invitation (ROW-2579-2580, June 2) is a notably positive closing note — 'They are having some kind of Father's Day thing at primrose and you should be there for her.'",
+
+  "checkpoint_items_generated": {
+    "cp3_count": 1,
+    "cp3_items": [
+      {
+        "cp3_ref": "CP3-RF01-B007-001",
+        "message_ids": ["ROW-2373", "ROW-2379", "ROW-2396-2409"],
+        "date": "2023-04-21 to 2023-04-28",
+        "attorney_flag": "Melissa's written language ('that bitch can shut her fucking whore mouth,' ROW-2373) combined with relaying Olivia's 'adamant' refusal to see Eli if Abby is present (ROW-2399) and Melissa's claim that this was 'her plan all on her own' (ROW-2408). Attorney relevance: (1) evidence of extreme hostility toward Abby communicated to Eli in writing — likely reflects verbal environment Olivia is exposed to; (2) the 'her plan all on her own' deflection is a coaching-pattern marker; (3) Olivia's contact with Eli being made contingent on Abby's exclusion represents a structural access intervention facilitated through Olivia's voiced preferences; (4) ROW-2409 — Olivia accepts Milo but not Abby — indicates targeted rejection of Abby specifically, inconsistent with a child-driven preference and consistent with coached aversion."
+      }
+    ],
+    "cp4_count": 0
+  }
+}

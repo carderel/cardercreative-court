@@ -1,0 +1,212 @@
+{
+  "batch_id": "B-019",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "batch_status": "complete",
+
+  "date_range": {
+    "start": "2024-09-05",
+    "end": "2024-10-03"
+  },
+
+  "row_range": {
+    "sms_start": "ROW-6944",
+    "sms_end": "ROW-7523",
+    "mms_start": "ROW-12246",
+    "mms_end": "ROW-12265",
+    "note": "Date-based extraction used per B-007+ protocol. SMS rows sequential; MMS rows anomalous (ROW-12xxx range). ROW numbering reflects a slight discontinuity from B-018 extraction session — B-019 begins at ROW-6944 in current script's convention (Sep 5, 2024), consistent with date-based extraction standard."
+  },
+
+  "message_count": 608,
+
+  "primary_flags": [
+    {
+      "flag_id": "B019-RF02-001",
+      "severity": 1,
+      "arc_id": "ARC-RF02-002",
+      "arc_signal_number": 40,
+      "message_ids": ["ROW-7214", "ROW-7215"],
+      "date": "2024-09-19",
+      "signal_type": "required_intermediary_explicit_reassertion",
+      "flag_summary": "'I tell you that you need to make these plans the night before and instead you made them with her' — explicit reassertion that Eli must route scheduling through Melissa, not directly with Olivia",
+      "excerpts": [
+        {"row": "ROW-7214", "direction": "Received", "text": "I tell you that you need to make these plans the night before and instead you made them with her and we don't have time to discuss everything because I had to go to work"},
+        {"row": "ROW-7215", "direction": "Received", "text": "So I can pick her up when I'm done at the hospital"}
+      ],
+      "analysis": "Context: Eli arranged to pick Olivia up from Janette's (after-school care) on Sep 19, apparently having confirmed plans with Olivia without routing through Melissa. Melissa responds explicitly: Eli must make plans with her first, the night before. This is a direct verbal reassertion of the required-intermediary rule first flagged at ROW-299 and ROW-416 (B-001, B-002: 'I've told you this before but you keep making plans with her'/'you keep making plans to pick her up with her and not me'). Across 24 months the rule has been stated, enforced, and now restated. ROW-7206 (same exchange, Eli): 'I know better than to make plans with her and not you' — Eli explicitly acknowledges the required-intermediary dynamic, demonstrating its normalization. The signal is Sev 1 (reiteration of established rule rather than new escalation), but its analytical weight is elevated by Eli's acknowledgment that the rule is internalized as expected behavior.",
+      "arc_impact": "ARC-RF02-002 signal count: 39 → 40."
+    },
+    {
+      "flag_id": "B019-RF02-002",
+      "severity": 1,
+      "arc_id": "ARC-RF02-001",
+      "arc_signal_number": 25,
+      "message_ids": ["ROW-7237"],
+      "date": "2024-09-21",
+      "signal_type": "phone_withheld_direct_statement",
+      "flag_summary": "'She doesn't have her phone' — Olivia's direct contact channel down; Melissa's direct statement confirms phone withheld",
+      "excerpts": [
+        {"row": "ROW-7234", "direction": "Received", "text": "Go outside"},
+        {"row": "ROW-7235", "direction": "Sent", "text": "I sent a text saying I was stepping out for food"},
+        {"row": "ROW-7237", "direction": "Received", "text": "She doesn't have her phone"},
+        {"row": "ROW-7238", "direction": "Received", "text": "Where r u"},
+        {"row": "ROW-7239", "direction": "Received", "text": "We're just saying hello then off we go"}
+      ],
+      "analysis": "Eli has reached out and Melissa responds on her own channel that Olivia doesn't have her phone. The direct contact channel to Olivia is down; communication must route through Melissa's phone. This follows the established phone-withheld pattern: prior instances include ROW-5802 (B-016, Jun 28 2024: 'She doesn't have her phone'), ROW-5583-5586 (B-015, Jun 11 2024: 'If you want to talk to Olivia tonight you will need to call my phone'). The pattern of phone removal recurs approximately monthly-to-bimonthly. ARC-RF02-001 signal 25. This instance is brief and without additional context, suggesting routine phone management rather than conflict-triggered removal.",
+      "arc_impact": "ARC-RF02-001 signal count: 24 → 25. Last signal batch updated to B-019."
+    },
+    {
+      "flag_id": "B019-RF02-003",
+      "severity": 1,
+      "arc_id": "ARC-RF02-002",
+      "arc_signal_number": 41,
+      "message_ids": ["ROW-7478"],
+      "date": "2024-10-03",
+      "signal_type": "bidirectional_communication_control_fifth_confirmation_past_tense",
+      "flag_summary": "Fifth explicit bidirectional control confirmation with analytically significant past-tense shift: 'I used to ask her if she wanted to call you in the mornings to keep communication going' — 'used to' implies this practice has stopped",
+      "excerpts": [
+        {"row": "ROW-7477", "direction": "Received", "text": "I've included you in picking out her glasses, Dr visits and happenings at school"},
+        {"row": "ROW-7478", "direction": "Received", "text": "I used to ask her if she wanted to call you in the mornings to keep communication going"},
+        {"row": "ROW-7479", "direction": "Received", "text": "I used to remind you of her mail days at primrose and even wrote a note on your behalf one day"}
+      ],
+      "analysis": "Fifth explicit confirmation that Melissa was the primary driver of Olivia's morning calls to Eli. Prior four confirmations: ROW-3151 (B-009: 'I'm the reason she calls you most days'), ROW-3353-3356 (B-010: 'That's why you are called most mornings. Because I ask.'), ROW-4368-4369 (B-012: 'It's usually me asking her if she wants to call you. I was busy and didn't ask her yesterday.'), ROW-4383-4385 (B-012: 'She normally only calls because I ask if she wants to or I just dial you'). Critically, this fifth confirmation uses PAST TENSE ('I used to ask her'), implying that Melissa has stopped this practice. The shift from present to past tense is analytically significant: if Melissa has ceased prompting morning calls, Olivia's spontaneous call frequency should be expected to decline — which would explain the concentration of contact-conflict relay events in 2024 (six instances, Apr–Aug) as Eli attempts outreach that is less frequently prompted by Melissa. The past-tense shift emerges in a defensive context (extended grievance list ROW-7468-7486) where Melissa is cataloging her cooperative contributions. The framing 'to keep communication going' positions it as Melissa's cooperative gesture — while simultaneously acknowledging that without her prompting, communication would not have happened.",
+      "arc_impact": "ARC-RF02-002 signal count: 40 → 41. Fifth bidirectional control confirmation. Past tense 'used to' flags potential cessation of call-prompting behavior, which would structurally reduce Olivia-Eli contact frequency."
+    }
+  ],
+
+  "primary_flag_count": 3,
+  "primary_flag_severity_distribution": {"1": 3, "2": 0, "3": 0},
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B019-P001",
+      "rf_category": "RF-15",
+      "severity": 2,
+      "message_ids": ["ROW-7161", "ROW-7162", "ROW-7163", "ROW-7164", "ROW-7165", "ROW-7166", "ROW-7167", "ROW-7168", "ROW-7169", "ROW-7364", "ROW-7365", "ROW-7366"],
+      "date": "2024-09-15",
+      "flag_summary": "Physical harm allegations against Eli: 'She said that you choked her and she couldn't breathe for a bit' + 'Keep your hands off my girl' + personal history invoked ('You used to do that shit with me') — Sev 2, cross-pass priority",
+      "excerpts": [
+        {"row": "ROW-7161", "direction": "Received", "text": "Be more gentle with Olivia"},
+        {"row": "ROW-7162", "direction": "Received", "text": "She said you tickle too hard and she doesn't like it"},
+        {"row": "ROW-7163", "direction": "Received", "text": "She said that you kept twisting her arm and it hurt and you'd say sorry but kept doing it"},
+        {"row": "ROW-7164", "direction": "Received", "text": "And she said that you choked her and she couldn't breathe for a bit"},
+        {"row": "ROW-7165", "direction": "Received", "text": "She said you were just playing but you okay too rough and she doesn't like it and she doesn't want you to do that to Alice either"},
+        {"row": "ROW-7166", "direction": "Received", "text": "She doesn't want you to get in trouble but said she is worried that if you are so rough on her that you will be too rough on Alice and she doesn't want Alice to go through that"},
+        {"row": "ROW-7167", "direction": "Received", "text": "So keep your hands off my girl. Don't play like that with her."},
+        {"row": "ROW-7168", "direction": "Received", "text": "You used to do that shit with me and tell me you weren't hurting me. Don't do that to her. Don't play with her like that"},
+        {"row": "ROW-7169", "direction": "Received", "text": "Keep your hands off her"},
+        {"row": "ROW-7364", "direction": "Received", "text": "She told me after she met Alice that she was afraid you would hurt Alice because you are too rough with her and thought you'd do the same to Alice"},
+        {"row": "ROW-7365", "direction": "Received", "text": "I have first hand experience with that cause you used to physically harm me too and then claim it wasn't hurting me"},
+        {"row": "ROW-7366", "direction": "Received", "text": "So don't take what you do wrong and try to put it on me"}
+      ],
+      "rf02_nexus": "Melissa invokes physical harm allegations and her own personal history (ROW-7168: 'You used to do that shit with me') as a basis for access restriction framing ('Keep your hands off my girl,' ROW-7169). The timing (Sep 14-15, one week after Alice's birth) links the allegation to Eli's reduced availability during the newborn period. The concern extended to Alice (ROW-7165-7166) functions as an escalation: the allegation is no longer limited to Olivia but invoked to raise safety concerns about Eli's conduct with a newborn. This is a distinct RF-15 escalation pattern from the incest/pedophilia narrative deployments — this is a physical harm narrative.",
+      "cross_pass_priority": true,
+      "context": "Sep 14 visit: Eli was with Olivia on Sep 14, dealing with family emergency (Eli's relative in hospital with jaundice; driving Kristi to Riverside hospital). Olivia was at Eli's home. The rough-play allegations surface Sep 15 at 3am (ROW-7161-7169) — after Olivia has returned to Melissa. Eli did not respond to this cluster at the time; no response messages follow until ROW-7171 (next afternoon, topic change to logistics). Alice was born approximately Sep 11-12 based on context (ROW-7113-7114 Sep 11, first night at hospital; ROW-7174 Sep 15 mentions 'no change in swelling... pretty confident that they will not need to do the surgery'). Physical harm allegation arrives within days of Alice's birth."
+    },
+    {
+      "flag_id": "B019-P002",
+      "rf_category": "RF-11",
+      "severity": 1,
+      "message_ids": ["ROW-7047", "ROW-7461"],
+      "date": "2024-09-08",
+      "flag_summary": "Two legal threat instances: (1) contempt threat for daycare payment (Sep 8); (2) implicit full custody threat — 'I recently pointed out all the things you don't do that would easily give me full custody' (Oct 3)",
+      "excerpts": [
+        {"row": "ROW-7046", "direction": "Received", "text": "You never paid the last daycare"},
+        {"row": "ROW-7047", "direction": "Received", "text": "So... you're in contempt for that"},
+        {"row": "ROW-7461", "direction": "Received", "text": "You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody"}
+      ],
+      "context": "ROW-7047: daycare payment dispute; Eli responds 'Paid' (ROW-7050). ROW-7461: extended Oct 3 grievance list; Melissa positions herself as having conducted a legal assessment and shared it with Eli, framing his recent increased involvement as reactive to her legal leverage. This implies ongoing custody case calculus on Melissa's part.",
+      "cross_pass_priority": false
+    },
+    {
+      "flag_id": "B019-P003",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "message_ids": ["ROW-7458", "ROW-7459", "ROW-7460", "ROW-7461", "ROW-7462", "ROW-7463", "ROW-7464", "ROW-7465"],
+      "date": "2024-10-03",
+      "flag_summary": "Sustained parental delegitimizing attack spanning ~50 messages in Oct 3 exchange — 'She sees you raising another family while giving her no time' / 'You walked out on her' / 'You weren't present and involved in anything'",
+      "excerpts": [
+        {"row": "ROW-7458", "direction": "Received", "text": "You gave her melatonin to get her to sleep instead of just being with her to comfort her. Your first choice was to drug her. You refused to keep cats away from her though she was allergic."},
+        {"row": "ROW-7459", "direction": "Received", "text": "You walked out on her. You went from being around all the time to hardly ever"},
+        {"row": "ROW-7460", "direction": "Received", "text": "She sees you raising another family while giving her no time"},
+        {"row": "ROW-7461", "direction": "Received", "text": "You weren't present and involved in anything until I recently pointed out all the things you don't do that would easily give me full custody"},
+        {"row": "ROW-7462", "direction": "Received", "text": "You hang up on her and get rude to her when you're noise sensitive"},
+        {"row": "ROW-7463", "direction": "Received", "text": "You're exact quote was that you didn't put the cats in the basement because it wasn't fair to the cats."},
+        {"row": "ROW-7464", "direction": "Received", "text": "Then continued to choose the cats over your daughter for over 2 years"},
+        {"row": "ROW-7465", "direction": "Received", "text": "You never helped with her care when she was sick until yesterday."}
+      ],
+      "context": "Extended dispute triggered by disagreement about Olivia's disrespect at Oct 1 urgent care visit (bee sting) escalating to full parental fitness catalog. Melissa's grievance list (ROW-7458-7486) covers: melatonin use, cat allergy handling, presence reduction after separation, raising another family, noise sensitivity hang-ups, not attending doctor appointments, never helping with sick care. Some allegations overlap with established RF-04 sub-patterns.",
+      "cross_pass_priority": false
+    },
+    {
+      "flag_id": "B019-P004",
+      "rf_category": "RF-05",
+      "severity": 1,
+      "message_ids": ["ROW-7231"],
+      "date": "2024-09-20",
+      "flag_summary": "Abby derogated as 'bitching' over Olivia's shopping cart behavior — dismissal of partner's authority in Olivia's presence",
+      "excerpts": [
+        {"row": "ROW-7231", "direction": "Received", "text": "And Abby bitching about her riding in the cart. If she wants to ride in the fucking cart let her. It wasn't any of her business"}
+      ],
+      "context": "Melissa challenges Abby's parenting input regarding Olivia riding in a grocery cart. Dismissal of Abby's authority ('It wasn't any of her business') is consistent with ARC-RF02-005 counter-current: while B-017-B-018 showed Abby-inclusive invitations, Melissa simultaneously maintains that Abby has no authority in Olivia-related decisions. Olivia relayed this complaint to Melissa — suggesting Olivia is communicating negative Abby interactions to Melissa (consistent with ARC-RF02-002 content curation dynamic).",
+      "cross_pass_priority": false
+    }
+  ],
+
+  "peripheral_flag_count": 4,
+
+  "cooperative_data_points": [
+    {
+      "cdp_id": "B019-CDP-001",
+      "date": "2024-09-13",
+      "message_ids": ["ROW-7125"],
+      "summary": "Melissa proactively offers Eli access to Olivia to spare Olivia from a third consecutive hospital night — genuinely child-focused facilitation during family medical crisis",
+      "quality": "high_quality_facilitation"
+    },
+    {
+      "cdp_id": "B019-CDP-002",
+      "date": "2024-09-28",
+      "message_ids": ["ROW-7281", "ROW-7282"],
+      "summary": "Melissa requests Eli watch Olivia while she visits her hospitalized father — invites Eli access around her hospital visit scheduling",
+      "quality": "routine_cooperation"
+    },
+    {
+      "cdp_id": "B019-CDP-003",
+      "date": "2024-10-01",
+      "message_ids": ["ROW-7310", "ROW-7311", "ROW-7312", "ROW-7313", "ROW-7315"],
+      "summary": "Eli manages Olivia's bee sting allergic reaction with full coordination — takes her to urgent care, provides detailed medical instructions to Melissa on return; cooperative medical co-parenting",
+      "quality": "routine_cooperation"
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF02-001": {
+      "signal_added": true,
+      "new_signal_count": 25,
+      "last_signal_batch": "B-019",
+      "last_signal_date": "2024-09-21",
+      "note": "ROW-7237: 'She doesn't have her phone' — routine phone removal, direct statement."
+    },
+    "ARC-RF02-002": {
+      "signal_added": true,
+      "signals_added_count": 2,
+      "new_signal_count": 41,
+      "last_signal_batch": "B-019",
+      "last_signal_date": "2024-10-03",
+      "sub_pattern_note": "Required-intermediary explicit reassertion (ROW-7214-7215, signal 40). Fifth bidirectional control confirmation with past-tense shift (ROW-7478, signal 41): 'I used to ask her if she wanted to call you in the mornings' — implies practice has ceased, which would structurally reduce Olivia-Eli call frequency."
+    },
+    "ARC-RF02-003": {"signal_added": false},
+    "ARC-RF02-004": {"signal_added": false},
+    "ARC-RF02-005": {"signal_added": false, "note": "ROW-7231: Abby described as 'bitching' — Melissa dismisses Abby's authority in Olivia-related decisions, consistent with arc pattern but not at signal threshold for promotion."},
+    "ARC-RF02-006": {"signal_added": false, "note": "ROW-7103 (Sep 9) and ROW-7110-7111 (Sep 10-11): Tennessee/Sevierville TN vacation planned for Jul 12-19 (2025). Not NC. Not an ARC-RF02-006 signal."}
+  },
+
+  "batch_notes": [
+    "B-019 occurs during Eli's newborn period (Alice born approx. Sep 11-12, 2024) and Melissa's father's hospitalization (Sep 12-15+). Both circumstances explain reduced Eli availability and Melissa's hospital-related scheduling. These external factors should be weighed when interpreting access gaps and scheduling difficulties in this batch.",
+    "ROW-7478 past-tense shift is the analytically highest-priority item in B-019 for ARC-RF02-002. The statement 'I used to ask her if she wanted to call you in the mornings' — emerging in a defensive grievance context — represents a fifth bidirectional control confirmation AND an implicit admission that the prompting practice has stopped. If Melissa ceased morning-call prompting (timing unclear), this would structurally depress Olivia-initiated call frequency and shift contact patterns. This connects to the concentration of contact-conflict relay events in B-014–B-019 (six instances Apr–Oct 2024).",
+    "ROW-7206 (Eli, Sep 18): 'I know better than to make plans with her and not you.' This is Eli explicitly acknowledging the required-intermediary norm as an expected operating condition — not disputing it, but accepting it. For Phase 2 synthesis: this represents normalization of the required-intermediary dynamic from Eli's perspective, which is analytically significant (the rule has been successfully internalized by the non-gating parent).",
+    "RF-15 Sep 15 allegations (ROW-7161-7169): Physical harm narrative is a distinct escalation track from the incest/pedophilia narrative documented in B-007 through B-016. The timing (Alice's birth, first week) and the extension to Alice safety concern (ROW-7165-7166) suggest the narrative is being deployed in a high-stakes period. The personal history invocation (ROW-7168: 'You used to do that shit with me') links intimate partner context to child harm concern — a cross-narrative pattern worth tracking for Phase 2.",
+    "Tennessee vacation booked (Sevierville TN, Jul 12-19 2025): NOT an ARC-RF02-006 signal (that arc tracks NC). However, the Tennessee plans should be noted as they confirm no NC relocation action steps in this period.",
+    "ROW-7325-7523 (Oct 3) extended dispute is analytically notable because it generates multiple simultaneously-occurring patterns: (1) parental fitness attack (RF-04), (2) physical harm extension (RF-15), (3) bidirectional control confirmation (RF-02 ROW-7478), and (4) legal threat (RF-11 ROW-7461). A single conflict thread producing four RF indicators across four categories is consistent with the multi-mechanism conflict escalation pattern documented in prior batches."
+  ]
+}

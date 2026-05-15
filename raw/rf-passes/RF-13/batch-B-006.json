@@ -1,0 +1,78 @@
+{
+  "batch_id": "B-006",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2023-02-22",
+    "end": "2023-04-03"
+  },
+  "row_range": {
+    "start": 1840,
+    "end": 2026
+  },
+  "message_count": 514,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "WATCHING",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 4,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 2,
+    "note": "Post-Valentine hostile period: EP-0230 Feb 22 2023 (45 msgs, FLOOD) + EP-0273 Mar 30 2023 (62 msgs, FLOOD). Two hostile episodes in the 5 weeks following the Valentine's mega-cluster. Combined 107 hostile msgs. ADD-001 trigger-unpredictability: EP-0230 occurs 8 days after the EP-0219 mega-cluster, suggesting hostility is not correlated with a specific recurring trigger but persists as a sustained pattern."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B006-001",
+      "episode_cluster": [
+        "EP-0230",
+        "EP-0273"
+      ],
+      "dates": "2023-02-22 and 2023-03-30",
+      "total_messages": 107,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "sustained Phase A hostile period \u2014 two episodes in 5 weeks post-mega-cluster",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured responses; Eli not re-initiating between episodes",
+        "received_direction": "hostile initiation 8 days after mega-cluster (EP-0230) and again 5 weeks later (EP-0273)",
+        "net_escalation": "moderate-high (Sev-2: combined 107 msgs, post-mega-cluster continuation)",
+        "de_escalation_resistance": "Eli disengages after each episode; Melissa re-initiates at Feb 22 and Mar 30"
+      },
+      "cycle_classification": "CYC-002 content-correlated (logistics/scheduling likely precursors per triage topic data); post-holiday period re-escalation cycle",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 5,
+      "cross_rf_note": "B-006 contains RF-04 primary flags (2 flags, Sev-1/Sev-2). RF-04 DARVO episodes co-located with hostile episode periods."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Post-mega-cluster hostile period persists for 5 weeks (Feb 22 - Mar 30). Trajectory pattern: hostile episodes are not isolated spikes but sustained across weeks.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "Eli disengages; Melissa re-initiates 8 days later (EP-0230) and again 5 weeks later (EP-0273). Between-episode resistance pattern: 5th and 6th documented instances.",
+      "state": "ACTIVE"
+    }
+  ]
+}

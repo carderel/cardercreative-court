@@ -1,0 +1,63 @@
+{
+  "batch_id": "B-027",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2025-07-17",
+    "end": "2025-08-28"
+  },
+  "row_range": {
+    "start": 9917,
+    "end": 14235
+  },
+  "message_count": 503,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 7,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Jul 2025: 1 primary RF-09 signal. S008 Sev-2 Level A \u2014 'There's no threats' denial of documented threat ROW-9957. XREF-001 created."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B027-001",
+      "signal_id": "S008",
+      "severity": 2,
+      "date": "2025-07-19",
+      "row_ref": "ROW-9957-9964",
+      "direction": "received",
+      "evidence_level": "A",
+      "type": "direct_textual_contradiction_threat_denial",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-003"
+      ],
+      "compound_pattern": "COMP-RF09-005",
+      "cross_rf": "RF-05 (S020 DARVO-denial mechanism B-027 ROW-9964); RF-04 (DARVO cluster)",
+      "xref_pair": "XREF-001",
+      "message_text": "ROW-9957: 'I'll screenshot this and file for full custody' | ROW-9960: 'Call me crazy if you want to but that is what will happen' | ROW-9964: 'There's no threats'",
+      "summary": "Jul 19 2025: The clearest Level A cross-reference pair in the dataset. Within the same message cluster, Melissa issues an explicit legal custody threat then denies it. Sequence: ROW-9957 'I'll screenshot this and file for full custody' \u2014 direct documented legal threat; ROW-9960 'Call me crazy if you want to but that is what will happen' \u2014 threat reinforcement; ROW-9964 'There's no threats' \u2014 explicit denial of the threat made 7 messages earlier in the same cluster. This is Level A (direct textual contradiction): the denial and the denied statement are both in the text record, in the same batch, and require no corroboration beyond the messages themselves. XREF-001: crossref-index.json entry created. Sev-2 per ADD-001 (Level A = Sev-2 minimum). ADD-003 compound: DARVO sequence containing explicit reality-denial \u2192 RF-09+RF-04 primary. RF-05 compound: S020 (RF-05 pass) documented ROW-9964 as DARVO-denial mechanism \u2014 this is the same event; compound flag COMP-RF09-005 covers RF-09+RF-05. The denial 'There's no threats' is the most efficiently documentable gaslighting event in the dataset: anchor message and denial message are both in the same message cluster with no ambiguity."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [
+    {
+      "xref_id": "XREF-001",
+      "status": "resolved",
+      "evidence_level": "A",
+      "anchor_row": "ROW-9964",
+      "contradiction_row": "ROW-9957-9960",
+      "resolution": "Both anchor and contradiction are in the same cluster; no forward search required."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S008 signal added; first Level A cross-reference pair confirmed (XREF-001)",
+      "new_state": "ACTIVE",
+      "signal_count": 8
+    }
+  ]
+}

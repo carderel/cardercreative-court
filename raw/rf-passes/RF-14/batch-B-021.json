@@ -1,0 +1,50 @@
+{
+  "batch_id": "B-021",
+  "date_range": {
+    "start": "2024-12-18",
+    "end": "2025-01-08"
+  },
+  "message_count": "~482",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 12,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Dec 2024\u2013Jan 2025. Jan 5, 2025: 'Seems unnecessarily dangerous' (ROW-10698) \u2014 Melissa commenting on driving in bad weather to Gahanna; not household safety concern. ROW-10954-10955 (Jan 16, 2025): 'Then for you to take someone who is looking for help and supply them with alcohol and watch inappropriate content with them' \u2014 Melissa's continuing Abby-alcohol accusation. RF-15 primary (false allegation continuation), RF-14 peripheral per ADD-001. ROW-10936-10937: 'You've hurt her. You let her down.' \u2014 emotional harm claims, RF-09/RF-04 territory. No primary RF-14 flags."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [
+    {
+      "row_ref": "ROW-10954-10955",
+      "date": "2025-01-16",
+      "direction": "Received",
+      "type": "RF-15 primary / RF-14 peripheral",
+      "note": "Melissa's Abby-alcohol supply accusation continuation. RF-15 Category A/B primary. RF-14 peripheral per ADD-001 compound boundary."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "ROW-10954 peripheral \u2014 Abby-alcohol accusation continuation (RF-15 primary). No new standalone RF-14-001 signal.",
+      "state": "ACTIVE"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 ACTIVE (4 signals)",
+      "state": "ACTIVE"
+    }
+  ]
+}

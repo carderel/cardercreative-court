@@ -1,0 +1,57 @@
+{
+  "batch_id": "B-029",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2025-10-16",
+    "end": "2025-12-16"
+  },
+  "row_range": {
+    "start": 10785,
+    "end": 11100
+  },
+  "message_count": 505,
+  "phase": "C",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 13,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B029-001",
+      "date": "2025-11-05",
+      "row_ref": "ROW-14746",
+      "severity": 2,
+      "rf15_category": "C",
+      "direction": "received",
+      "summary": "Predation-framing DARVO 10th instance. Nov 5 2025. ROW-14746: 'I don't think fucking her cousin and giving her a sister cousin is wise but here we are.' \u2014 Response to Eli invoking the 9-month parenting plan clause. Category C (incest/predation framing): 'fucking her cousin' is the 10th documented predation-DARVO instance in the RF-04 record, now classified as RF-15 primary. Sev-2 (part of sustained multi-year incest-framing pattern per ADD-002). Phase C ADD-002 active.",
+      "exact_quote": "ROW-14746: 'I don't think fucking her cousin and giving her a sister cousin is wise but here we are'",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 15,
+      "compound_patterns": [
+        "RF-04+RF-15"
+      ],
+      "cross_rf_note": "RF-04 B-029 RF04-B029-002 Sev-2 primary flag documents this as the 10th predation-DARVO instance in the RF-04 arc. RF-15 primary flag identifies the false allegation content."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

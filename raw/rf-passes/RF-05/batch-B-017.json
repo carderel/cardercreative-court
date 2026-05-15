@@ -1,0 +1,61 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-017",
+    "row_range": { "start": 6013, "end": 6556 },
+    "date_range": { "start": "2024-07-16", "end": "2024-08-05" },
+    "message_count": 544,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 544,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 0, "2": 1, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 543,
+    "flag_rate": "0.2%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B017-001",
+      "row_range": "ROW-6279 through ROW-6524",
+      "timestamp": "2024-08-04",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-6279 (Received): 'I'll contempt your sss' | ROW-6280 (Received): 'Ass' | ROW-6290 (Received): 'Your answers are good evidence to show the court as to why you shouldn't have custody' | ROW-6312 (Received): 'I'm going to show these messages to the lawyer and file for sole custody so they can see how unreliable you are and how you push off your responsibilities. So that I don't have to run anything by you as far as daycare or anything' | ROW-6342 (Received): 'I think I have a solid case as to why you shouldn't have shared custody' | ROW-6345-6346 (Received): 'I have those texts'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST EXPLICIT SOLE CUSTODY FILING THREAT. ADD-002 temporal rule: first instance of sole-custody filing threat = Sev-2. This flag covers the Aug 4-5 mega-cluster (COMP-RF04-016: RF-04+RF-05 per RF-04 pass; ROW-6279-6524 ~80 messages). The RF-05 component within this compound has four distinct elements: (1) ROW-6279-6280 'I'll contempt your ass' — contempt threat as cluster opener, contemptuous register; (2) ROW-6290 'Your answers are good evidence to show the court as to why you shouldn't have custody' — evidence-framing threat: Eli's communication in real-time reframed as future court evidence against him; creates observer/jury effect on Eli's speech; (3) ROW-6312 'I'm going to show these messages to the lawyer and file for sole custody so they can see how unreliable you are and how you push off your responsibilities. So that I don't have to run anything by you as far as daycare or anything' — CORE SIGNAL: first explicit sole-custody filing threat in the dataset. Prior custody threats established 'full custody' as aspirational goal; this message adds: (a) specific method ('show these messages to the lawyer'); (b) explicit filing intent ('file for sole custody'); (c) stated relief sought ('don't have to run anything by you as far as daycare or anything') — framing Eli's elimination from decision-making as the functional goal; (4) ROW-6342 'I think I have a solid case as to why you shouldn't have shared custody' — self-assessed legal viability claim, amplifying ROW-6312. Adjacent signals: ROW-6333 (not in RF-04 summary but from session context): 'I'm not threatening lawfare. I'm calling the lawyer tomorrow and showing them how you are unreliable' — DARVO denial of lawfare framing; ROW-6315 (Eli/Sent): 'Note that I want this in text since you're threatening with lawfare' — Eli explicitly names 'lawfare' on record. ADD-002: Sev-2 for sole-custody-filing-threat as new sub-category. The contempt elements within the cluster are Sev-1 recurring; the sole custody threat category is first-instance Sev-2.",
+      "peripheral_flags": [],
+      "context_notes": "Trigger: Aug 4-5 scheduling dispute over morning childcare — Eli had committed to watch Olivia but work meetings arose. COMP-RF04-016 is the longest single attack sequence in the RF-04 dataset to this point (~80 messages). The RF-05 component is a sub-thread within that larger compound. Eli's on-record use of 'lawfare' (ROW-6315 Sent) is significant for future synthesis: it establishes Eli's contemporaneous perception of Melissa's legal-threat strategy and creates a record that he named the pattern. The 'don't have to run anything by you as far as daycare' framing reveals the functional goal of the custody threat: eliminating Eli from co-parenting decision-making, not just gaining physical custody. Note: ROW-6345-6346 'I have those texts' — evidence-collection reference after sole custody filing threat; implies Melissa is already accumulating a legal file.",
+      "pattern_tags": ["first_sole_custody_filing_threat", "evidence_framing_threat", "lawfare_named_by_eli", "DARVO_denial_lawfare", "COMP_RF04_016"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'I'm going to show these messages to the lawyer and file for sole custody so they can see how unreliable you are and how you push off your responsibilities' (ROW-6312); 'Your answers are good evidence to show the court as to why you shouldn't have custody' (ROW-6290); 'I think I have a solid case as to why you shouldn't have shared custody' (ROW-6342)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF04-016 (RF-04+RF-05 per RF-04 pass)"],
+    "note": "ARC-RF05-001 ACTIVE. B-017 adds S-016: first explicit sole-custody filing threat (ROW-6312). This signal represents a qualitative escalation: prior legal threats targeted financial compliance and parenting conduct via contempt; B-017 introduces custody-elimination as the stated relief sought. The 'don't have to run anything by you as far as daycare' framing is critical — it reveals the threat's functional goal is not joint-custody modification but Eli's operational removal from co-parenting. Eli's 'lawfare' naming (ROW-6315) is the first on-record identification of Melissa's legal-threat pattern as a strategic tool."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 1,
+    "cp4_count": 0,
+    "items": [
+      "CP3-RF05-003 (HIGH): ROW-6312 (Aug 4 2024) — First explicit sole-custody filing threat. ATTORNEY MUST REVIEW. Melissa states: 'I'm going to show these messages to the lawyer and file for sole custody so they can see how unreliable you are and how you push off your responsibilities.' Key elements: (1) explicit filing intent with specific legal mechanism ('show these messages to the lawyer'); (2) stated relief sought — elimination of Eli from daycare and co-parenting decisions ('don't have to run anything by you as far as daycare or anything'); (3) evidence-framing context (ROW-6290 'Your answers are good evidence to show the court'); (4) Eli explicitly named this 'lawfare' on record (ROW-6315 Sent). Note for attorney: this is the first instance of the sole-custody threat category; later escalations (B-027, B-028) build on this foundation. Cross-ref: COMP-RF04-016 (RF-04+RF-05 compound per RF-04 pass)."
+    ]
+  },
+  "batch_observations": {
+    "tone_assessment": "B-017 (Jul-Aug 2024) is the most significant Phase A RF-05 batch after B-015. The sole-custody filing threat introduces a new and qualitatively more severe threat category: custody elimination rather than financial compliance. The Aug 4-5 mega-cluster represents the convergence of RF-04 peak contempt (shit father, employment attack, financial false accusation, DARVO resolution) with the RF-05 first-instance sole-custody threat. The ADD-002 temporal calibration assigns Sev-2 correctly — this is a new sub-category, not a repeat.",
+    "cross_rf_context": "RF-04 B-017: COMP-RF04-016 (Aug 4-5 mega-cluster Sev-2: ROW-6279-6524 — sustained inadequate-father, employment attack, financial false accusation, Abby pregnancy weaponization 3rd, DARVO resolution). RF-05 is confirmed compound component. Also: RF04-B017-P05 (ROW-6201-6202 'oof' child support lapse) is RF-04 peripheral; RF-04 primary ARC-RF04-001-S46."
+  }
+}

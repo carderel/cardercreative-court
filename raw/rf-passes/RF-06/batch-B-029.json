@@ -1,0 +1,58 @@
+{
+  "batch_id": "B-029",
+  "date_range": {
+    "start": "2025-09-14",
+    "end": "2025-10-31",
+    "note": "date-filtered batch"
+  },
+  "message_count": 482,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-008: contempt declaration for daycare Sep 14 2025 (ROW-14343). Explicit legal status declaration. ARC-RF06-001 Signal 8."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-008",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 8,
+      "date": "2025-09-14",
+      "orig_rows": [
+        "14343"
+      ],
+      "messages": [
+        {
+          "orig_row": "14343",
+          "direction": "Received",
+          "date": "2025-09-14",
+          "text": "You're in contempt for not paying daycare"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 Melissa declares Eli in contempt for daycare non-payment. In context of ADD-002 (executed court action confirmed) and ongoing payment history: 'You're in contempt' is a specific legal status declaration, not a casual remark. The declaration co-occurs with the dance enrollment dispute (B-028/B-029 overlap) \u2014 financial pressure deployed alongside activity enrollment conflict. ARC-RF06-001 Signal 8.",
+      "addendum_applied": "ADD-002 (executed contempt action \u2014 prior summons gives this declaration weight)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "ACTIVE",
+      "signals_cumulative": 8
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "rf_pass": "RF-08",
+  "rf_name": "Triangulation",
+  "pass_status": "complete",
+  "priority": 6,
+  "tier": 1,
+  "eli_signal": "confirmed",
+  "progress": {
+    "total_batches": 31,
+    "batches_completed": 31,
+    "batches_remaining": 0,
+    "last_batch_completed": "B-031",
+    "next_batch": null,
+    "halt_reason": null
+  },
+  "date_coverage": {
+    "covered_through": "2026-04-12",
+    "remaining_from": null
+  },
+  "cumulative_statistics": {
+    "messages_analyzed": 10637,
+    "primary_flags": 11,
+    "severity_distribution": {
+      "1": 4,
+      "2": 6,
+      "3": 1
+    },
+    "peripheral_flags": 2,
+    "active_arcs": 1,
+    "watching_arcs": 0,
+    "candidate_arcs": 0,
+    "resolved_arcs": 0,
+    "compound_patterns": 11
+  },
+  "triage_profile": {
+    "keyword_hit_count": 5,
+    "direction": {
+      "sent": 3,
+      "received": 2,
+      "pct_received": 40
+    },
+    "phase_distribution": {
+      "A": 5,
+      "B": 0,
+      "C": 0
+    },
+    "hot_periods": [
+      "2022-08",
+      "2025-03",
+      "2025-04"
+    ],
+    "temporal_concentration": "sparse",
+    "months_with_signal": 3,
+    "pass_mode": "full_pass_all_31_batches_cp1_override",
+    "key_note": "CP1 override: keywords don't capture relay-through-Olivia pattern. Elevated to Tier 1 full pass. Primary signal landscape identified through cross-RF analysis: RF-01 ADD-004 relay signals (B-007-B-028) + ROW-6819 coaching admission (B-018) + Naomi's-father peer-parent relay (B-031). 5 keyword hits are false-positive / logistics noise."
+  },
+  "cross_rf_context": {
+    "rf01_arc_state": "analysis-output/arc-states/RF-01-arc-state.json",
+    "rf01_status": "complete",
+    "rf01_active_arcs": [
+      "ARC-RF01-001"
+    ],
+    "rf01_add004_relay_batches": [
+      "B-007",
+      "B-008",
+      "B-009",
+      "B-010",
+      "B-017",
+      "B-018",
+      "B-019",
+      "B-022",
+      "B-026",
+      "B-028"
+    ],
+    "rf02_status": "complete",
+    "rf02_active_arcs": [
+      "ARC-RF02-001",
+      "ARC-RF02-002",
+      "ARC-RF02-004",
+      "ARC-RF02-006"
+    ],
+    "rf04_status": "complete",
+    "rf04_active_arcs": [
+      "ARC-RF04-001",
+      "ARC-RF04-002"
+    ],
+    "rf05_status": "complete",
+    "rf07_status": "complete",
+    "cross_rf_note": "Primary RF-08 signal source is RF-01 ADD-004 relay pattern (Melissa using Olivia to deliver alienating content and to source intelligence about Eli's household). ROW-6819 (B-018) is the explicit coaching admission that anchors the arc. RF-04 B-031 peer-parent relay (ROW-15592) introduces the Naomi's-father mechanism. RF-02 ARC-RF02-001 (required-intermediary) is structurally related but distinct: RF-08 flags use of the CHILD as conduit, not adult intermediaries."
+  },
+  "calibration_addenda": [
+    "RF08-ADD-001",
+    "RF08-ADD-002",
+    "RF08-ADD-003",
+    "RF08-ADD-004"
+  ],
+  "calibration_addenda_file": "analysis-output/calibration/addenda-RF-08.json",
+  "cp2_status": "complete",
+  "cp2_generated": "2026-04-24",
+  "cp2_completed": "2026-04-26",
+  "cp2_file": "analysis-output/checkpoints/cp2-RF-08-review.json",
+  "pending_cp2_items": [],
+  "pending_cp3_items": [],
+  "arc_state_file": "analysis-output/arc-states/RF-08-arc-state.json",
+  "key_findings": {
+    "arc_anchor": "ROW-6819 (B-018, Aug 19-20 2024): 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me' \u2014 explicit written coaching admission; Sev-3 primary; ARC-RF08-001 activation event",
+    "pre_signal_phase": "B-007 through B-010 (Apr-Oct 2023): 3 Sev-1 pre-signals documenting early relay framing and intelligence-channel assertion",
+    "post_activation_pattern": "Physical harm allegations via Olivia (B-019 Sep 2024); abandonment arc relay in Olivia's voice (B-022 Feb 2025); visit refusal cascade relay (B-028 Aug 2025)",
+    "peer_parent_relay": "ROW-15592 (B-031 Apr 12 2026): Naomi's father cited as corroborating witness for Olivia's distress \u2014 peer-parent network relay mechanism introduced at dataset close",
+    "abby_targeting": "Behavioral loyalty coaching confirmed via Olivia's gift-giving pattern (CP2 Q5) \u2014 no standalone primary flag but applies as severity context for relay signals involving Abby"
+  },
+  "session_log": [
+    {
+      "session": 1,
+      "date": "2026-04-24",
+      "batches_processed": [
+        "B-001"
+      ],
+      "primary_flags_added": 0,
+      "peripheral_flags_added": 1,
+      "arcs_updated": [],
+      "compounds_added": 0,
+      "notes": "RF-08 pass initialized. B-001 calibration batch processed (365 messages, Jan 11-Oct 2 2022). Zero primary RF-08 flags \u2014 confirms low baseline in cooperative early period. Arc state initialized at CANDIDATE. 5 calibration questions generated. Halted per protocol awaiting CP2."
+    },
+    {
+      "session": 2,
+      "date": "2026-04-26",
+      "batches_processed": ["B-002","B-003","B-004","B-005","B-006","B-007","B-008","B-009","B-010","B-011","B-012","B-013","B-014","B-015","B-016","B-017","B-018","B-019","B-020","B-021","B-022","B-023","B-024","B-025","B-026","B-027","B-028","B-029","B-030","B-031"],
+      "primary_flags_added": 11,
+      "peripheral_flags_added": 1,
+      "arcs_updated": ["ARC-RF08-001 CANDIDATE\u2192WATCHING (B-009); WATCHING\u2192ACTIVE (B-018); 11 signals added (S001-S011)"],
+      "compounds_added": 11,
+      "notes": "CP2 calibration completed. Q5 answered (Abby behavioral loyalty coaching confirmed). Q1-Q4 unanswered \u2014 conservative defaults applied per addenda. 4 addenda confirmed. Full pass completed B-002 through B-031 in single session. 11 primary signals: 4 Sev-1 (S001-S003 pre-signals + S008), 6 Sev-2 (S005-S007, S009-S011), 1 Sev-3 (S004 ROW-6819 coaching admission). 11 compound patterns (9 RF-08+RF-01; 2 RF-08+RF-04; 1 triple RF-08+RF-01+RF-15; 1 triple RF-08+RF-01+RF-02). ARC-RF08-001 unresolved at dataset close. Key finding: ROW-6819 (Aug 2024) is the explicit written coaching admission \u2014 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me.' Peer-parent relay introduced at B-031 (Naomi's father, ROW-15592)."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "batch_id": "B-031",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2026-01-08",
+    "end": "2026-04-12"
+  },
+  "row_range": {
+    "sms_primary_start": "ROW-8500",
+    "sms_primary_end": "ROW-8595",
+    "sms_secondary_note": "Additional SMS entries in ROW-15470/15472/15485 range and ROW-15490–15600; MMS dataset spans ROW-14970–ROW-15600.",
+    "mms_start": "ROW-14970",
+    "mms_end": "ROW-15600"
+  },
+  "message_count": 477,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B031-PF-001",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 61,
+      "row_ref": "ROW-14978 / ROW-14984",
+      "date": "2026-01-10",
+      "severity": 2,
+      "verbatim": "You should talk to me about these things instead of her [ROW-14978] / If you really wanted to talk to her you could call my phone and ask to talk to her [ROW-14984]",
+      "note": "ARC-RF02-002 Signal 61, Sev 2. Jan 10. Ninth explicit required-intermediary enforcement instance. Context: Eli contacted Olivia directly about hygiene and behavior concerns. Melissa intercepted the direct communication and reasserted the intermediary rule: 'You should talk to me about these things instead of her' (ROW-14978). When Eli responded that he was trying to communicate with Olivia, Melissa replied: 'If you really wanted to talk to her you could call my phone and ask to talk to her' (ROW-14984) — reformulating even basic parent-child communication as a request that must route through Melissa's phone and permission. Analytically significant companion message: ROW-14983 (same exchange): 'I think a lot of the behavior problems while she's at your house stems from her not wanting to be there. She has refused to go there every weekend' — Melissa contextualizes the enforcement with a sweeping characterization of Olivia's visit willingness that simultaneously justifies the intermediary role and frames Eli's parenting time as unwanted. Sev 2: (1) explicit subject-matter domain extension into daily-behavior reporting (hygiene/conduct concerns now required to route through Melissa), (2) explicit reformulation of how Eli must reach Olivia even when she is willing ('call my phone and ask'), (3) ninth documented enforcement instance, consistent with established pattern."
+    },
+    {
+      "flag_id": "B031-PF-002",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 62,
+      "row_ref": "ROW-15098 / ROW-15099 / ROW-15101 / ROW-15103 / ROW-15107 / ROW-15109",
+      "date": "2026-02-15 to 2026-02-16",
+      "severity": 2,
+      "verbatim": "Olivia called me and said she is scared [ROW-15098] / She said she doesn't want to go to your house on weekends at all [ROW-15101] / She pretty upset and said she would like to pause weekends for awhile, not forever cause she wants to see her sister [ROW-15103] / She specifically stated she would like to pause the weekends with you [ROW-15107] / I'm just telling you what she said [ROW-15109]",
+      "note": "ARC-RF02-002 Signal 62, Sev 2. Feb 15-16. Post-Valentine's incident relay cascade — indefinite weekend-pause relay, highest scope claim in arc to date. Context: Feb 14 incident (Valentine's Day weekend) precipitated a cascade of relay claims. Olivia called Melissa saying she was scared. Melissa relays a multi-part escalation: (1) fear-of-Eli relay (ROW-15098), (2) total weekend refusal relay ('doesn't want to go to your house on weekends at all' ROW-15101), (3) indefinite-pause relay — Olivia requests to 'pause weekends for awhile, not forever cause she wants to see her sister' (ROW-15103). ROW-15109 is the broker-gating disclaimer: 'I'm just telling you what she said.' Sev 2: the 'pause weekends' relay is the most expansive scope claim in the arc — not a single weekend refusal but an open-ended suspension of Eli's scheduled parenting time conveyed exclusively through Melissa as relay channel, with Melissa disclaiming agency. ROW-15119-15120 (Feb 20, same signal cluster): 'she keeps saying she is scared of you / I'm only trying to repair things for her but you should be the one putting in the work' — Melissa repositions herself as repairer-intermediary, places remediation obligation on Eli. ROW-8576 (Feb 27): 'You can come but she says she's not coming out' — visit-refusal at physical threshold, Melissa does not intervene to require attendance. ROW-15153-15155 (Feb 28): 'She's just not budging / I talked her into letting me call you in the car so you could apologize. You sent us to voicemail' — Melissa positions her intermediary role as the only mechanism by which reconciliation could occur; outcome conditioned on Eli's in-the-moment availability."
+    },
+    {
+      "flag_id": "B031-PF-003",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 63,
+      "row_ref": "ROW-15179 / ROW-15181 / ROW-15183 / ROW-15185",
+      "date": "2026-03-09",
+      "severity": 1,
+      "verbatim": "Olivia still says she doesn't want to go [ROW-15179] / She said you traumatized her and she's still not ready to go back to your house yet [ROW-15183] / I'm trying to help her work through it [ROW-15185]",
+      "note": "ARC-RF02-002 Signal 63, Sev 1. Mar 9. 'Traumatized' is new language in the arc — the strongest rhetorical weight applied to a relay claim in the dataset. Prior relay claims have cited fear ('afraid of you'), reluctance ('doesn't want to go'), and preference ('wants to pause weekends'). The introduction of 'traumatized' elevates the relay claim from preference/reluctance to reported psychological harm. The source of the trauma is not specified in this message. ROW-15185 ('I'm trying to help her work through it') completes the broker-gating frame: Melissa is positioned as Olivia's therapeutic intermediary, and by extension as the evaluator of when Olivia is 'ready' to resume visits. ROW-15189 (Mar 13, same signal period): 'I know. She still says she's not going but we will be there' — Melissa appears for pickup but frames attendance as contingent on Olivia's willingness, not on the court order. ROW-15482 (Mar 23): 'Olivia still says she's not going this weekend. I don't know why you don't start with a couple hours after work' — continued weekend-pause relay with suggestion that Eli should reduce his parenting time expectations. ROW-15486 (Mar 25): 'That's fine with me but she says she doesn't want to go. I'd suggest calling and talking to her' — Melissa maintains broker-disclaiming posture while directing Eli to negotiate access through Melissa's relay channel."
+    },
+    {
+      "flag_id": "B031-PF-004",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 64,
+      "row_ref": "ROW-15510 / ROW-15513",
+      "date": "2026-04-02 to 2026-04-03",
+      "severity": 1,
+      "verbatim": "Olivia told you last Friday that she would be more comfortable coming over on the weekends and being around you again if you'd pick her up during the week for a few hours. She specifically told... [ROW-15510] / You should be reaching out to me about it not her [ROW-15513]",
+      "note": "ARC-RF02-002 Signal 64, Sev 1. Apr 2-3. Tenth explicit required-intermediary enforcement. Apr 2 (ROW-15510): Melissa relays Olivia's stated conditions for resuming weekend visits — Olivia had told Eli directly that midweek pickups would make her more comfortable, and Melissa relays this message back to Eli with the framing 'Olivia told you last Friday that...' — Melissa mediating communication about communication preferences. Apr 3 (ROW-15513): Eli apparently texted Olivia directly in response. Melissa immediately reasserts the intermediary rule: 'You should be reaching out to me about it not her' — tenth documented explicit enforcement. Analytically significant: the tenth enforcement comes during the resolution phase of the arc's longest visit-refusal cascade. Eli's direct contact with Olivia to attempt reconciliation is treated as a rule violation; the approved pathway remains contact through Melissa. Note: ROW-15554 (Apr 9) — 'She says she will go to your house this weekend though' — Olivia ultimately agreed to attend; signal 64 does not prevent eventual visit occurrence but continues to route all contact and access negotiation through the required-intermediary channel. The arc ends with 64 cumulative signals and the intermediary rule structurally intact."
+    },
+    {
+      "flag_id": "B031-PF-005",
+      "arc_id": "ARC-RF02-001",
+      "signal_number": 27,
+      "row_ref": "ROW-15508",
+      "date": "2026-04-01",
+      "severity": 1,
+      "verbatim": "I saw you come across her phone and she immediately flipped you to voicemail",
+      "note": "ARC-RF02-001 Signal 27, Sev 1. Apr 1. Resumes arc after 10-batch quiet streak (last signal B-020, Oct 24 2024 — 17 months without a primary signal). Analytically distinct: this is the clearest third-party observation of deliberate call blocking in the dataset. In all prior signals, Melissa reports the mechanism (DND, Olivia declining, phone removed) but is not a real-time witness. Here Melissa is present and observes Olivia actively flip Eli to voicemail in the moment. The behavioral description — 'immediately flipped you to voicemail' — describes a deliberate affirmative act by Olivia, not a passive missed call. Structural context: the signal occurs on Apr 1, two days before Signal 64 (Apr 3 required-intermediary enforcement when Eli texted Olivia directly). Taken together, Apr 1-3 documents: (1) Olivia actively declining Eli's calls, (2) Melissa observing and reporting this to Eli without intervening, (3) Eli attempting direct text contact, (4) Melissa immediately enforcing the intermediary rule against the text. The arc's quiet period (B-021–B-030, 13 consecutive batches) reflects the dataset shift from phone-blocking as the primary mechanism to visit-refusal relay as the dominant gatekeeping pattern; phone access gating resumes at the arc's final documented instance."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B031-PERIPH-001",
+      "row_ref": "ROW-15499 / ROW-15500",
+      "date": "2026-03-28",
+      "rf_category": "RF-04",
+      "severity": 2,
+      "verbatim": "You obviously know you haven't been a good father [ROW-15499] / Olivia sees your lack of effort. She tells me that you love Milo and Alice more than her [ROW-15500]",
+      "note": "RF-04 Sev 2. Mar 28. Extended parental fitness attack relayed through Olivia's attributed statements. 'She tells me that you love Milo and Alice more than her' — Milo/Alice sibling-preference claim deployed as relay-authenticated fitness attack. Olivia's attributed statement is used as third-party corroboration for the 'lack of effort' characterization. The relay mechanism (Olivia says) gives the accusation child-source authority while insulating Melissa from direct attribution. 'You obviously know you haven't been a good father' is Melissa's direct framing. March 28 context: occurring during the ongoing visit-refusal cascade (Signal 63: Mar 9 'traumatized' relay; Mar 23 and Mar 25 weekend-pause relays); fitness attack co-occurs with access-blockage period."
+    },
+    {
+      "flag_id": "B031-PERIPH-002",
+      "row_ref": "ROW-15589 / ROW-15591 / ROW-15593 / ROW-15595 / ROW-15597",
+      "date": "2026-04-12",
+      "rf_category": "RF-15",
+      "severity": 1,
+      "verbatim": "Why do you keep trying to make Olivia think I'm abusing her? [ROW-15589] / She said she has a bruise on her arm and you said it looked like a finger mark [ROW-15591] / That's not ok to say to a child [ROW-15593]",
+      "note": "RF-15 Sev 1. Apr 12. Eli observed a bruise on Olivia's arm and noted it appeared to be a finger mark — a legitimate parental safety inquiry. Melissa reframes the inquiry as Eli attempting to make Olivia believe Melissa is abusing her ('Why do you keep trying to make Olivia think I'm abusing her?'). The sequence: Eli asks Olivia about the bruise → Olivia reports the exchange to Melissa → Melissa texts Eli framing the inquiry as an abuse allegation against herself. The reframe converts a factual observation about a bruise into an accusation that Eli is engaged in alienation of Olivia against Melissa. 'That's not ok to say to a child' attributes harm to Eli's safety inquiry rather than to the bruise origin. Cross-pass item: connects to the RF-15 escalation pattern throughout the dataset in which physical harm observations are reframed as false allegations by Eli."
+    },
+    {
+      "flag_id": "B031-PERIPH-003",
+      "row_ref": "Feb–Mar 2026 cluster",
+      "date": "2026-02 to 2026-03",
+      "rf_category": "RF-11",
+      "severity": 1,
+      "verbatim": "[Multiple contempt and legal threat messages, Feb–Mar 2026]",
+      "note": "RF-11 Sev 1 cluster. Feb–Mar 2026. Continued legal-threat escalation consistent with the B-029/B-030 trajectory ('agreement ready to sign to get it started' Sep 17; 'I just called the lawyer' Nov 25; contempt-for-relay-blocked-visits paradox Nov 25). The Feb–Mar cluster continues the pattern of deploying legal or contempt framing during the same period as the Signal 62-63 visit-refusal cascade, structurally pairing access blockade with legal pressure. No new highest-severity instance identified; cluster is consistent with established RF-11 trajectory."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-14985-14990 (approx.)",
+      "date": "2026-01-14",
+      "description": "Musical audition facilitation: Melissa proactively notified Eli of Olivia's upcoming musical audition and facilitated his involvement or awareness. Advance notice provided."
+    },
+    {
+      "row_ref": "ROW-15030-15045 (approx.)",
+      "date": "2026-02-02 to 2026-02-03",
+      "description": "Eli health disclosure and coordination: Eli disclosed to Melissa that he was sick (flu/pneumonia) and had surgery upcoming. Melissa acknowledged and coordinated around the health situation. Medical disclosure coordinated cooperatively across parenting schedules."
+    },
+    {
+      "row_ref": "ROW-15160-15170 (approx.)",
+      "date": "2026-03-04",
+      "description": "Collaborative grade discussion: Melissa and Eli engaged in a cooperative discussion about Olivia's academic progress and grades. Both parties contributed without adversarial framing. Among the cooperative academic coordination instances in the dataset."
+    },
+    {
+      "row_ref": "ROW-15200-15210 (approx.)",
+      "date": "2026-03-18",
+      "description": "Olivia food preferences facilitation: Melissa provided Eli with a detailed list of Olivia's current food preferences, dislikes, and dietary information. Proactive informational support enabling Eli to better host Olivia during parenting time. High-quality cooperative data point."
+    },
+    {
+      "row_ref": "ROW-15554 / ROW-15560-15580 (approx.)",
+      "date": "2026-04-09 to 2026-04-12",
+      "description": "Lion King musical coordination: ROW-15554 (Apr 9): 'She says she will go to your house this weekend though' — Olivia agreed to attend Eli's weekend after months of relay-mediated refusals. Melissa coordinated Olivia's attendance at the Lion King musical during Eli's parenting weekend. Olivia ultimately attended. The Lion King coordination is the highest-quality cooperative instance in the B-031 period and represents the first successful parenting weekend after the extended Signal 62-63 visit-refusal cascade."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-8500 / ROW-8501",
+      "date": "2026-01-08 to 2026-01-09",
+      "consideration": "ARC-RF02-001 near-miss. Eli: 'You know why she is not answering calls or texts.' Melissa: 'She didn't want to' / 'She had her phone and it's working... She was annoyed that you texted me about it.' Phone confirmed operational; Olivia's non-response is attributed to preference ('didn't want to') and annoyance at Eli's escalation to Melissa. Not flagged: phone working, Olivia's choice not to respond is preference rather than a blocking mechanism. Consistent with the arc's established pattern of preference-relay as the ARC-RF02-002 channel; no DND or access-control infrastructure implicated."
+    },
+    {
+      "row_ref": "ROW-15023",
+      "date": "2026-01-28",
+      "consideration": "ARC-RF02-002 borderline event. Melissa: 'There's no rescheduling of the weekends unless it's due to her illness. So your next scheduled weekend will resume on feb 13.' Context: Eli's flu/pneumonia illness caused a postponed parenting weekend. Melissa unilaterally determines there is no makeup time, with the next scheduled weekend resuming on the normal cycle without compensation for the illness-postponed visit. Access-control dimension: Melissa asserts unilateral authority to decide whether postponed parenting time is made up. Not flagged as a primary signal: the illness postponement creates genuine scheduling complexity; no explicit required-intermediary framing; access decision is unilateral but logistically grounded. Noted for RF-02 synthesis regarding Melissa's unilateral scheduling authority."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "1 new primary signal (27); Signal 27 (ROW-15508, Apr 1, Sev 1): Melissa witnesses Olivia actively flipping Eli to voicemail in real time — 'I saw you come across her phone and she immediately flipped you to voicemail'; clearest third-party observation of deliberate call blocking in the dataset; resumes arc after 10-batch quiet streak (B-021–B-030, Dec 2024 – Apr 2026, 17 months); phone-blocking mechanism resumes in context of the ongoing visit-refusal cascade; signal_count advances to 27; last_signal_batch=B-031; last_signal_date=2026-04-01",
+    "ARC-RF02-002": "4 new primary signals (61-64); Signal 61 (ROW-14978/14984, Jan 10, Sev 2): 9th explicit required-intermediary enforcement, domain extended to daily behavior reporting (hygiene/conduct), Melissa reformulates even phone access to Olivia as requiring request through Melissa's phone; Signal 62 (ROW-15098-15109, Feb 15-16, Sev 2): post-Valentine's indefinite weekend-pause relay — 'She said she doesn't want to go to your house on weekends at all... would like to pause weekends for awhile'; most expansive scope claim in arc; physical threshold refusal (ROW-8576 Feb 27); Signal 63 (ROW-15179-15185, Mar 9, Sev 1): 'traumatized' relay language — highest rhetorical weight applied to a relay claim in the dataset; Melissa positions herself as evaluator of when Olivia is 'ready' to resume visits; Signal 64 (ROW-15510/15513, Apr 2-3, Sev 1): 10th explicit enforcement during reconciliation phase — Eli's direct contact attempt to repair relationship intercepted and rerouted through Melissa channel; arc ends with intermediary structure intact; Olivia ultimately attended Eli's April weekend (ROW-15554) through Melissa's relay of agreement; signal_count advances to 64; last_signal_batch=B-031; last_signal_date=2026-04-03",
+    "ARC-RF02-004": "no new primary signals; remains ACTIVE; signal_count remains 4",
+    "ARC-RF02-005": "no new signals; remains WATCHING; signal_count remains 2",
+    "ARC-RF02-006": "no new signals; remains ACTIVE at 4 signals; no new relocation evidence in B-031",
+    "ARC-RF02-003": "no new signals; remains CANDIDATE"
+  },
+
+  "batch_notes": "B-031 (Jan 8 – Apr 12, 2026, 477 messages) is the final batch of the RF-02 pass. The batch completes a three-month visit-refusal cascade that dominated B-028 through B-031 (Aug 2025 – Apr 2026). ARC-RF02-002 advances to 64 cumulative signals — its highest count in the dataset — and adds four new signals across three analytically distinct sub-patterns: (1) explicit required-intermediary domain extension into daily behavior reporting (Signal 61, 9th enforcement), (2) indefinite weekend-pause relay with 'traumatized' escalation language (Signals 62-63, highest scope and rhetorical weight in arc), and (3) tenth enforcement during the reconciliation phase (Signal 64). The arc ends with the required-intermediary structure intact: even Eli's direct communication with Olivia to repair the relationship is intercepted and rerouted through Melissa. ARC-RF02-001 returns after a 17-month quiet streak with the clearest observational instance in the dataset — Melissa witnessing Olivia actively flipping Eli to voicemail in real time (Signal 27, ROW-15508). The dataset ends on an ambivalent note: Olivia attended Eli's April weekend (ROW-15554, Apr 9; Lion King coordination, Apr 12), but the intermediary structure through which that attendance was brokered remains architecturally unchanged. RF-02 pass is complete. 31 batches, 13,879 messages analyzed, 101 primary flags, 92 peripheral flags, 4 active arcs (ARC-RF02-001, ARC-RF02-002, ARC-RF02-004, ARC-RF02-006)."
+}

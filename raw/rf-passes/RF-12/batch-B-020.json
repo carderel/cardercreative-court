@@ -1,0 +1,105 @@
+{
+  "batch_id": "B-020",
+  "date_range": {
+    "start": "2024-10-04",
+    "end": "2024-12-17",
+    "note": "date-filtered batch"
+  },
+  "message_count": 380,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "calibration_addenda_active": [
+    "RF12-ADD-001",
+    "RF12-ADD-002",
+    "RF12-ADD-003",
+    "RF12-ADD-004",
+    "RF12-ADD-005",
+    "RF12-ADD-006",
+    "RF12-ADD-007",
+    "RF12-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-001: stop-texting performative pattern Nov 17-18 2024 (ROW-7627). Says stop, then sends 7+ messages immediately. ARC-RF12-002 promotes to WATCHING at Signal 1."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-001",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF12-002",
+      "arc_signal": 1,
+      "date_range": "2024-11-17 to 2024-11-18",
+      "orig_rows": [
+        "7627",
+        "7630",
+        "7631",
+        "7632",
+        "7635",
+        "7636",
+        "7637"
+      ],
+      "messages": [
+        {
+          "orig_row": "7627",
+          "direction": "Received",
+          "date": "2024-11-17",
+          "text": "Stop texting me unless something is wrong"
+        },
+        {
+          "orig_row": "7630",
+          "direction": "Received",
+          "date": "2024-11-18",
+          "text": "She tries this at home and I tell her that if she doesn't eat the dinner then she can't have anything else the rest of the night"
+        },
+        {
+          "orig_row": "7631",
+          "direction": "Received",
+          "date": "2024-11-18",
+          "text": "It's the same thing except I don't text you every time it happens"
+        },
+        {
+          "orig_row": "7632",
+          "direction": "Received",
+          "date": "2024-11-18",
+          "text": "Instead I parent her and handle it"
+        },
+        {
+          "orig_row": "7635",
+          "direction": "Received",
+          "date": "2024-11-18",
+          "text": "Then stop texting me"
+        },
+        {
+          "orig_row": "7636",
+          "direction": "Received",
+          "date": "2024-11-18",
+          "text": "For Christ sake"
+        },
+        {
+          "orig_row": "7637",
+          "direction": "Received",
+          "date": "2024-11-18",
+          "text": "She is at your house. You should be able to parent"
+        }
+      ],
+      "classification": "RF-12 primary Sev-1 \u2014 Stop-texting performative pattern (ADD-006): Melissa says 'Stop texting me unless something is wrong' (ROW-7627), then immediately continues texting with 7+ messages about the same parenting topic (ROW-7630 through 7645). The 'stop texting' demand followed by continued texting creates false documentation: it appears in the record that Eli was texting despite her request, when in fact she initiated multiple messages after the demand. Eli responding to her subsequent messages (ROW-7628/7629) is then framed as continued contact after her stated request. ARC-RF12-002 Signal 1. ARC-RF12-002 promotes to WATCHING.",
+      "addendum_applied": "ADD-006 (stop texting me \u2014 performative boundary manufacture for court documentation). ADD-002 (Eli's responses are not RF-12; the manufactured context is the signal)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF12-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    },
+    {
+      "arc": "ARC-RF12-002",
+      "state": "WATCHING",
+      "signals_cumulative": 1
+    }
+  ]
+}

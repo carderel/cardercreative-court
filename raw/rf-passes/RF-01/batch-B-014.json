@@ -1,0 +1,71 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-014",
+    "row_range": { "start": 4864, "end": 5238 },
+    "date_range": { "start": "2024-03-28", "end": "2024-05-09" },
+    "message_count": 375,
+    "timezone_note": "Entirely EDT (UTC-4). DST started Mar 10, 2024; next change Nov 3, 2024. Note: RF-02 batch file showed anomalous last_row of ROW-11811 — confirmed incorrect. Actual row range established via date-based extraction: 4864-5238.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"]
+  },
+
+  "primary_flags": [],
+
+  "primary_flag_count": 0,
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF01-B014-P001",
+      "row": "ROW-4907-4912",
+      "date": "2024-03-30",
+      "rf_tags": ["RF-04", "RF-02"],
+      "severity": "peripheral",
+      "summary": "Mar 30 — Cat allergy dispute: 'You're like I can't go to church... but you were fine exposing her to cat dander unnecessarily' (ROW-4907); 'You didn't respect her allergies... You took her into your house with the cats and made no attempt to clean' (ROW-4910); 'You were fine subjecting her to it even though she needed her inhaler. Didn't stop until my lawyer sent you a letter' (ROW-4912). Character attack framing Eli as knowingly endangering Olivia's health until legal compulsion. ADD-002 adjacent (inadequate/endangering father). RF-04 primarily; RF-02 adjacent (legal threat reference). Context: Eli had already communicated that cat (Tahko) was gone as of Mar 31 (ROW-4918) and was doing deep clean."
+    },
+    {
+      "flag_id": "RF01-B014-P002",
+      "row": "ROW-4991-4994",
+      "date": "2024-04-07",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "Apr 7 — 'Your daughter is upset that you hung up on her' (ROW-4991); Eli corrects: 'I didn't hang up. I will call her but can't talk' (ROW-4993); Melissa: 'She said you hung up' (ROW-4994). Melissa relaying Olivia's interpretation over Eli's corrective account without acknowledgment. 'Your daughter' framing + repeating Olivia's characterization as fact. RF-04 peripheral."
+    },
+    {
+      "flag_id": "RF01-B014-P003",
+      "row": "ROW-5156-5158",
+      "date": "2024-04-30",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "Apr 30 — 'She was mad because you hung up on her' (ROW-5156); Eli: 'I didn't. I started to drop the phone and hung up' (ROW-5157); Melissa: 'She said she don't care' (ROW-5158). Melissa relays Olivia's anger as settled despite Eli's corrective explanation; 'She said she don't care' effectively ends Eli's ability to correct the record through the channel Melissa controls. RF-04 peripheral; phone-call anger relayed without correction."
+    },
+    {
+      "flag_id": "RF01-B014-P004",
+      "row": "ROW-5185",
+      "date": "2024-05-04",
+      "rf_tags": ["RF-04"],
+      "severity": "peripheral",
+      "summary": "May 4 — 'You're unreliable' (ROW-5185), in context of Eli unable to afford bringing Olivia on a plane trip due to car breakdown. ADD-002 adjacent (inadequate/unreliable father). Single sentence in logistics dispute; mild. RF-04 peripheral."
+    }
+  ],
+
+  "peripheral_flag_count": 4,
+
+  "arc_updates": {
+    "ARC-RF01-001": {
+      "action": "no_new_signal",
+      "notes": "0 primary signals this batch. ARC-RF01-001 remains ACTIVE with 15 total signals. B-014 is a relatively quiet spring batch. Pattern: triage identified Jan 2025/Feb 2025/Aug 2025 as hot periods; spring 2024 (B-011 through B-014) is consistently lower-intensity. Note: ROW-5203 (May 7) contains Eli's explicit documented statement: 'I make sure she is respectful about and to you. I never talk about you around her and discourage any negative talk regarding you. You're her mom and I make sure she is respectful of you. I need you to do the same.' — significant for the record as Eli's contemporaneous standard."
+    }
+  },
+
+  "cp3_items": [],
+
+  "batch_observations": {
+    "tone_assessment": "Low-moderate conflict. Cooperative baseline with scattered friction. April content includes: Easter activity coordination (ROW-4886-4898), eclipse watching together (ROW-4995), dental appointment (ROW-5002), Finding Nemo school performance coordination (ROW-5086-5093), tornado weather communication. Most friction is payment-related (multiple daycare/support demands) or brief phone-call disputes.",
+    "eli_explicit_standard": "ROW-5203 (May 7): Eli explicitly states: 'I make sure she is respectful about and to you. I never talk about you around her and discourage any negative talk regarding you. You're her mom and I make sure she is respectful of you. I need you to do the same.' This is Eli's documented contemporaneous co-parenting standard, directly relevant to RF-01 arc assessment. The message is unsolicited context for an apparent exchange Melissa framed as 'Y u mad bro?' (ROW-5202). Melissa's response dismisses it as Eli being 'too sensitive' (ROW-5210) rather than acknowledging the substance.",
+    "counter_indicators_continued": "ROW-5008-5012 (Apr 11): Third batch in which Melissa corrects Olivia's misperception about Eli — 'She's too sensitive... she was upset cause you called her mismatched socks... Said you made fun of her / I was like he was teasing you' (ROW-5012). This continues the pattern of Melissa occasionally correcting Olivia's negative misreadings (previously ROW-4275 B-012; ROW-4724 B-013).",
+    "pregnancy_inquiry": "ROW-5127 (Apr 27): 'Abby preggers?' — Melissa asks directly about Abby's pregnancy status. Context unclear; possibly prompted by Olivia hearing something. Monitoring for RF-01/RF-15 implications if Abby pregnancy becomes a content area for Melissa.",
+    "outer_banks_vacation": "Outer Banks trip (May 19-26, 2024) appears approaching — ROW-5181 references Melissa's trip context. Eli unable to afford bringing Olivia via plane. Melissa references her brother as backup. Relevant to RF-02 (extended custody absence during vacation). Not RF-01 primary."
+  }
+}

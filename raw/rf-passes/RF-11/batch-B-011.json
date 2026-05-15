@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-011",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2023-10-05",
+    "end": "2023-11-25"
+  },
+  "row_range": {
+    "start": 3724,
+    "end": 4052
+  },
+  "message_count": 500,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Oct\u2013Nov 2023: No RF-11 primary signals. Conflict present (RF-04) but no child-involvement indicators in text record."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

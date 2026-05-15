@@ -1,0 +1,197 @@
+{
+  "batch_id": "B-015",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "batch_status": "complete",
+
+  "source_rows": {
+    "first_row": "ROW-5239",
+    "last_row": "ROW-11938",
+    "total_messages": 514,
+    "sms_messages": 387,
+    "mms_messages": 127,
+    "date_start": "2024-05-11",
+    "date_end": "2024-06-13",
+    "extraction_method": "date_based",
+    "row_anomaly_note": "MMS rows follow anomalous numbering sequence (ROW-11812–ROW-11938). Both segments cover same date range."
+  },
+
+  "batch_summary": {
+    "primary_flags": 3,
+    "severity_distribution": {"1": 3, "2": 0, "3": 0},
+    "peripheral_flags": 4,
+    "arc_signals_added": {"ARC-RF02-001": 1, "ARC-RF02-002": 1, "ARC-RF02-006": 1},
+    "new_arcs_opened": [],
+    "arcs_promoted": [],
+    "cooperative_data_points": 3,
+    "critical_cross_pass_content": "ROW-5307-5317 (May 14): Most severe RF-15 content in dataset — Melissa insinuates Eli sexually assaulted Abby and potentially raped another woman, directly linking these insinuations to gatekeeping ('reservations about her staying with you'). Sev 2, cross-referenced for RF-15 pass. This is the first RF-15 content explicitly tethered to an access-restriction rationale.",
+    "analytical_character": "Moderate RF-02 activity with one landmark cross-pass finding. ARC-RF02-001 confirmed still operational (8:30 DND, May 14). ARC-RF02-006 receives second NC reference (vacation sentiment, May 26). Two-week NC vacation by Melissa/Olivia (May 18–26 approx.) during which Eli had limited phone contact — vacation period contact dynamics noted. Peripheral RF-15 content is highest-severity false-allegation in dataset and represents qualitative escalation: prior RF-15 flags were incest narrative jokes; this batch introduces direct sexual assault insinuation linked to access restriction rationale."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "B015-PF-001",
+      "row_range": "ROW-5264–5266",
+      "date": "2024-05-14",
+      "severity": 1,
+      "arc": "ARC-RF02-001",
+      "signal_type": "dnd_mechanism_confirmed_still_operational",
+      "title": "DND 8:30pm Cutoff Confirmed Still Operational — Olivia Relays Call Denial",
+      "messages": [
+        {"row": "ROW-5263", "dir": "Sent", "text": "She not available?"},
+        {"row": "ROW-5264", "dir": "Received", "text": "She said you didn't call"},
+        {"row": "ROW-5265", "dir": "Sent", "text": "I did it just went straight to 'not answering '"},
+        {"row": "ROW-5266", "dir": "Received", "text": "Past 8:30 then"}
+      ],
+      "analysis": "Eli reports his call went straight to 'not answering' (voicemail/DND). Melissa confirms: 'Past 8:30 then.' This is the clearest, most concise DND confirmation in the dataset since B-009 (ROW-2961-2962). The architecture operates identically to its earliest documented form (B-001, September 2022): DND blocks calls after 8:30, Melissa routes the outcome through the child (who tells Melissa 'you didn't call'), and Melissa relays. The mechanism is confirmed still active in May 2024 — 20 months after first documentation. Olivia's statement ('he said you didn't call') also demonstrates that Olivia's contact narrative is shaped by what Melissa's DND causes her to observe: no call arrived, therefore dad didn't call.",
+      "arc_notes": "Twenty-month operational continuity of DND mechanism confirmed. The Olivia relay dynamic here — Olivia says 'you didn't call' because the DND prevented the call from reaching her — illustrates how the infrastructure shapes child's perception of parental contact attempts."
+    },
+    {
+      "flag_id": "B015-PF-002",
+      "row_range": "ROW-5440",
+      "date": "2024-05-26",
+      "severity": 1,
+      "arc": "ARC-RF02-006",
+      "signal_type": "out_of_state_relocation_second_reference",
+      "title": "Second NC Relocation Reference — Vacation Sentiment from Outer Banks",
+      "messages": [
+        {"row": "ROW-5394", "dir": "Received", "text": "740 starfish ct Corolla nc"},
+        {"row": "ROW-5395", "dir": "Received", "text": "https://www.twiddy.com/outer-banks/corolla/ocean-sands-n/rentals/brazilian-sun/"},
+        {"row": "ROW-5440", "dir": "Received", "text": "We don't want to go home. This is exactly why I want to live out here"},
+        {"row": "ROW-5441", "dir": "Sent", "text": "Yeah but it wouldn't be like it is in vacation."}
+      ],
+      "analysis": "Melissa is vacationing in Corolla, NC (Outer Banks). ROW-5440 expresses desire to live in NC: 'This is exactly why I want to live out here.' Eli's response ('Yeah but it wouldn't be like it is in vacation') appropriately contextualizes vacation feeling. This is the second NC reference since ROW-4588-4589 (Feb 21: 'You still good if we move to NC? I may be able to get into a job over there'). Important distinction: the February reference was a logistical inquiry tied to a job opportunity; this reference is a vacation-sentiment expression. The two references differ in character — the February reference is more significant as it involved a concrete employment hook. Combined, the pattern warrants continued tracking but CANDIDATE status remains appropriate. No action step documented.",
+      "arc_notes": "ARC-RF02-006 second signal. Vacation-context attenuation applies: 'I want to live out here' is a common vacation sentiment and does not constitute escalation to statement of intent. However, combined with the February job-inquiry reference, the NC interest has now appeared twice in 3 months across different contexts. CANDIDATE status maintained; WATCHING threshold requires action step, escalation to firm intent, or third reference."
+    },
+    {
+      "flag_id": "B015-PF-003",
+      "row_range": "ROW-5583–5586",
+      "date": "2024-06-11",
+      "severity": 1,
+      "arc": "ARC-RF02-002",
+      "signal_type": "contact_access_routed_through_melissa_disciplinary",
+      "title": "Olivia's Devices Removed — Contact Routed Through Melissa, Refusal Relayed",
+      "messages": [
+        {"row": "ROW-5583", "dir": "Received", "text": "If you want to talk to Olivia tonight you will need to call my phone. Her phone has been taken away for the night"},
+        {"row": "ROW-5584", "dir": "Received", "text": "She keeps running her mouth her iPads going too"},
+        {"row": "ROW-5585", "dir": "Received", "text": "I just saw you tried to call. She's still cranky and said she didn't care."},
+        {"row": "ROW-5586", "dir": "Received", "text": "She's still mad at me from taking her phone"}
+      ],
+      "analysis": "Melissa removes Olivia's phone and iPad as discipline for behavioral issues (described in ROW-5587-5600). Eli's contact is now fully routed through Melissa's phone. Melissa relays that Olivia 'said she didn't care' about talking to Eli — a contact refusal conveyed through the intermediary rather than by Olivia directly. Analytically, this illustrates the structural dependence of Eli's contact access on Melissa's device decisions: when Olivia's devices are controlled by Melissa (whether by DND infrastructure or disciplinary removal), Melissa becomes the sole gateway to contact, and Olivia's contact willingness/availability is filtered through Melissa's relay. The behavior prompting device removal (Olivia hitting and verbally abusing Melissa, ROW-5588-5591) is documented separately; the ARC-RF02-002 element is the resulting contact routing architecture.",
+      "arc_notes": "Disciplinary device removal creates same functional architecture as DND infrastructure: contact gated through Melissa's device. Melissa relaying Olivia's 'said she didn't care' continues the contact-refusal-relay sub-pattern documented in B-014 (three instances in April-May). Now four such relays across B-014–B-015."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B015-PF-P01",
+      "row_range": "ROW-5307–5317",
+      "date": "2024-05-14",
+      "severity": 2,
+      "primary_rf": "RF-15",
+      "signal_type": "sexual_assault_insinuation_access_restriction_linked",
+      "title": "CRITICAL RF-15 — Sexual Assault Insinuation Against Eli, Linked Explicitly to Access Restriction",
+      "messages": [
+        {"row": "ROW-5307", "dir": "Received", "text": "I've got quite a few reservations about her staying with you"},
+        {"row": "ROW-5308", "dir": "Received", "text": "1.  You chose a cat over your daughter"},
+        {"row": "ROW-5309", "dir": "Received", "text": "2.  You have the ability to see her but choose to do so for about 3 hours a week"},
+        {"row": "ROW-5310", "dir": "Received", "text": "3.  The more I think about the night Abby was drunk the more I wonder what your intentions were and what you actually may have done"},
+        {"row": "ROW-5311", "dir": "Received", "text": "You clearly set her up to get drunk and that was after sending her weird messages sexual in nature. Then as long as Milo was crying you didn't try to help him. Instead I go up to find you standing over her with her left breast out"},
+        {"row": "ROW-5312", "dir": "Received", "text": "That kid was up there crying a long time. I thought he was sick and that's why I brought Tylenol up only to find that. I don't know who you thought would watch him"},
+        {"row": "ROW-5313", "dir": "Received", "text": "I don't know why you gave her a bottle of tequila"},
+        {"row": "ROW-5314", "dir": "Received", "text": "The more I e thought of that night the more I really question what really happened"},
+        {"row": "ROW-5315", "dir": "Received", "text": "At the time I didn't think anything of it except she was really drunk because I didn't think you could do something like that"},
+        {"row": "ROW-5316", "dir": "Received", "text": "Then the way she was yelling and fighting after I just thought she was really out of it but now I wonder if she still thought you were attacking her"},
+        {"row": "ROW-5317", "dir": "Received", "text": "Then I remember that you said you told her not to tell anyone that she had been raped before because you had a friend that was raped and when she told someone she got raped by that guy cause he knew she wouldn't tell. I wonder if you were that guy"}
+      ],
+      "analysis": "HIGHEST-SEVERITY FALSE ALLEGATION IN DATASET. Melissa deploys a multi-part insinuation sequence that: (1) frames 'reservations about her staying with you' as access-restriction justification (RF-02 nexus), (2) accuses Eli of deliberately getting his partner Abby drunk to facilitate sexual assault ('you clearly set her up to get drunk'), (3) insinuates Eli sexually assaulted Abby while she was incapacitated, (4) suggests Abby's subsequent distress ('yelling and fighting') may have been resistance to assault rather than intoxication, and (5) insinuates Eli may be the 'guy' who raped Abby's friend who had previously disclosed rape. The context trigger: Eli expressed concern about Olivia's summer care arrangements at a third party's house. Melissa pivoted from childcare discussion to sexual assault insinuation unprompted by any assertion from Eli. This escalates beyond all prior RF-15 content: prior deployments were 'incest narrative' jokes and one pedophilia insinuation (cheerleading). This is direct sexual assault/rape allegation framing. CRITICAL CROSS-PASS FLAG: reserve for full RF-15 analysis. RF-02 nexus: explicit statement 'I've got quite a few reservations about her staying with you' followed by sexual assault insinuation as item #3 — Melissa is articulating a gatekeeping rationale that includes fabricated criminal allegations against Eli.",
+      "arc_notes": "RF-02 nexus documented: sexual assault insinuation deployed as access-restriction justification. This represents a potential new gatekeeping mechanism — using false allegations as the basis for denying or restricting parental access. If Melissa repeats or escalates this framing in future batches (e.g., in communications with attorneys, GAL, or CPS), the RF-02 / RF-15 intersection becomes critical."
+    },
+    {
+      "flag_id": "B015-PF-P02",
+      "row_range": "ROW-5268–5272",
+      "date": "2024-05-14",
+      "severity": 1,
+      "primary_rf": "RF-04",
+      "signal_type": "parental_competence_attack_employment",
+      "title": "Employment Delegitimization — 'You Always Get Fired'",
+      "excerpt": "I don't believe that you quit. You always get fired because you don't put in the effort / lol. So you thought with a new baby coming it would be better to be away from the house so you don't have to deal with it.",
+      "analysis": "When Eli announces a voluntary job change (TransPak → WowBrands full-time), Melissa immediately asserts he was fired and attributes a pattern of employment failure to lack of effort. She then speculates his motive is avoiding the new baby. Eli provides a factual explanation; Melissa dismisses it. Pattern consistent with RF-04 — systematic delegitimization of Eli's competence and motives, including in contexts unrelated to parenting."
+    },
+    {
+      "flag_id": "B015-PF-P03",
+      "row_range": "ROW-5302",
+      "date": "2024-05-14",
+      "severity": 1,
+      "primary_rf": "RF-04",
+      "signal_type": "comparative_parental_trustworthiness_dismissal",
+      "title": "Explicit Comparative Trustworthiness Claim — 'More Comfortable With Them Than You'",
+      "excerpt": "I don't know why that would be a firm no. I'm way more comfortable with her spending a whole day with them than you",
+      "analysis": "In the same May 14 exchange, Melissa explicitly states she is more comfortable with Olivia spending a day with Aston's family (acquaintances) than with Eli (Olivia's father). This is a direct comparative delegitimization of Eli's fitness as a parent — positioning strangers as safer than Olivia's own father. Delivered in same exchange as the sexual assault insinuations (ROW-5310–5317), it functions as a precursor statement to those insinuations. RF-04."
+    },
+    {
+      "flag_id": "B015-PF-P04",
+      "row_range": "ROW-11919",
+      "date": "2024-06-01",
+      "severity": 1,
+      "primary_rf": "RF-05",
+      "signal_type": "derogatory_naming_partner",
+      "title": "Garden Tool Named 'Abby' — Derogatory Targeting of Eli's Partner",
+      "excerpt": "Say hello to our newest addition. This is Abby the garden hoe",
+      "analysis": "Melissa sends an MMS naming a garden hoe 'Abby' — a deliberate derogatory double-entendre targeting Eli's partner Abby ('hoe' as slang for promiscuous woman). This is RF-05 (derogatory conduct toward Eli's household/partner). The act of naming a garden tool after Eli's partner and transmitting it to Eli is purposeful humiliation of his partner. Analytically notable in the context of the same batch's sexual assault insinuations involving Abby (ROW-5311–5316): Melissa has now both insinuated Abby was sexually assaulted by Eli and named a 'hoe' after her — a paired degradation of Abby that operates on two distinct registers."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_range": "ROW-5443–5448",
+      "date": "2024-05-28",
+      "type": "access_facilitation",
+      "description": "Melissa asked Eli to pick up Olivia while she was getting out late from work. Eli picked up and delivered Olivia. Routine logistics cooperation."
+    },
+    {
+      "row_range": "ROW-5534–5545",
+      "date": "2024-06-03",
+      "type": "access_facilitation",
+      "description": "Melissa asked Eli if he could watch Olivia on days school was canceling field trips. Eli confirmed Friday availability, took Olivia to the office. Proactive accommodation."
+    },
+    {
+      "row_range": "ROW-5601–5603",
+      "date": "2024-06-12",
+      "type": "father_day_facilitation",
+      "description": "Melissa proactively informed Eli about Father's Day event at Primrose, invited him to attend, and suggested alternatives when he couldn't make time. When Eli couldn't attend, she asked if he wanted to pick Olivia up instead ('Let me talk to her,' ROW-5620)."
+    }
+  ],
+
+  "vacation_contact_note": {
+    "period": "2024-05-18 to approx. 2024-05-26",
+    "description": "Melissa and Olivia vacationed in Corolla, NC (Outer Banks). During this period, Melissa shared photos and updates, and Eli had contact via Olivia's new phone (ROW-5406: 'Call her phone'). Melissa actively shared vacation updates. No explicit blocking or contact gatekeeping documented during vacation — Melissa appears to have facilitated some contact. Vacation is the context for the second NC relocation reference (ROW-5440)."
+  },
+
+  "arc_state_changes": [
+    {
+      "arc_id": "ARC-RF02-001",
+      "change": "signal_added",
+      "signals_added": ["ROW-5264-5266"],
+      "new_signal_count": 23,
+      "notes": "DND mechanism confirmed still operational in May 2024 (20 months after first documentation). Mechanism identical to original: 8:30pm cutoff blocks call, Olivia observes no call, Melissa relays Olivia's denial."
+    },
+    {
+      "arc_id": "ARC-RF02-002",
+      "change": "signal_added",
+      "signals_added": ["ROW-5583-5586"],
+      "new_signal_count": 33,
+      "notes": "Contact-refusal-relay sub-pattern continues. Disciplinary device removal creates same functional gateway architecture as DND infrastructure."
+    },
+    {
+      "arc_id": "ARC-RF02-006",
+      "change": "signal_added",
+      "signals_added": ["ROW-5440"],
+      "new_signal_count": 2,
+      "new_status": "CANDIDATE",
+      "notes": "Second NC reference. Vacation-context attenuation applies. CANDIDATE status maintained. Watch for third reference or action step (job application, housing research, school inquiry)."
+    }
+  ],
+
+  "batch_notes": "B-015 contains the highest-severity cross-pass content in the dataset: ROW-5307-5317, where Melissa insinuates Eli sexually assaulted his partner and potentially raped another woman, explicitly linking these insinuations to 'reservations about her staying with you.' This represents a qualitative escalation from prior RF-15 content (incest narrative jokes, pedophilia insinuation) to direct criminal allegation framing tethered to an access-restriction rationale. The RF-02 nexus is clear: the false allegations are deployed as gatekeeping justification. For RF-02 pass purposes, this is tracked as a peripheral flag; for the RF-15 pass, it will require full analysis. ARC-RF02-001 twenty-month operational continuity confirmed. ARC-RF02-006 receives second NC signal but remains CANDIDATE. Father's Day facilitation (ROW-5601–5603) and vacation-period updates represent genuine cooperative behaviors. The Olivia behavioral incident (hitting Melissa, verbal abuse: 'get your hands off me bitch') is analytically significant as a child-adjustment indicator that may warrant attention in the broader GAL analysis, though it is outside the RF-02 scope."
+}

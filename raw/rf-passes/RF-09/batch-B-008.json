@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-008",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2023-06-02",
+    "end": "2023-07-15"
+  },
+  "row_range": {
+    "start": 2580,
+    "end": 2954
+  },
+  "message_count": 509,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 1,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jun\u2013Jul 2023: birthday event compound cluster (RF-04). 'Gaslighting' language in RF-04 flag type descriptor (analytic label, not message quote). No primary RF-09 signals \u2014 no documentable denial claims in message text."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

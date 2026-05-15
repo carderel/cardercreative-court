@@ -1,0 +1,133 @@
+{
+  "batch_id": "B-011",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2023-10-05", "end": "2023-11-25" },
+  "row_range": { "start": 3723, "end": 4052 },
+  "message_count": 330,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "cooperative/administrative",
+    "conflict_ratio": "~0.06",
+    "rf04_activity": "low — 2 targeted Sev-1 clusters within otherwise cooperative communication",
+    "notable_context": "Daily co-parenting logistics, Halloween planning, school updates, Olivia health (urgent care Nov 10), holiday shopping coordination. Two distinct RF-04 deployments: Oct 26 calling dispute and Oct 31 Halloween planning."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B011-001",
+      "severity": 1,
+      "date": "2023-10-26",
+      "row_ref": "ROW-3892-3900",
+      "type": "contemptuous_intelligence_attack + blame_dismissal",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "summary": "Calling dispute contempt cluster. ROW-3892: 'We called you 3 times dumbass' — contemptuous intelligence attack (ADD-002) triggered by Eli expressing he never received calls. Eli defends factually (ROW-3893-3895: 'I don't show any calls from you guys / I have had my phone on me waiting this whole time'). Melissa dismisses: ROW-3897 'That's on your end' + ROW-3900 'Quit blaming everyone else for your crap' — Eli's factual defense reframed as blame-shifting. DARVO-adjacent: legitimate defense → labeled as character flaw (blame avoidance). 'Dumbass' is 4th confirmed instance of ADD-002 contemptuous intelligence attack label (prior: B-006 ROW-2167+2186 ×2; B-010 ROW-3609 ×1).",
+      "verbatim_key_messages": [
+        "ROW-3892 (Received): \"We called you 3 times dumbass\"",
+        "ROW-3893 (Sent): \"I don't show any calls from you guys\"",
+        "ROW-3894 (Sent): \"I have had my phone on me waiting this whole time.\"",
+        "ROW-3897 (Received): \"That's on your end\"",
+        "ROW-3900 (Received): \"Quit blaming everyone else for your crap\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B011-002",
+      "severity": 1,
+      "date": "2023-10-31",
+      "row_ref": "ROW-3935",
+      "type": "abby_causal_attribution + inadequate_father_framing",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Halloween 2023 Abby-causal-attribution. Context: Eli proposes taking Olivia trick-or-treating in his neighborhood for 'more candy' (ROW-3933). Melissa's response (ROW-3935): 'You're not trying to get her more candy. You're trying to not fight with Abby. Olivia is more important.' Mechanism: Eli's stated parenting rationale is overridden and replaced with an Abby-conflict-avoidance motive — same causal-attribution mechanism as B-008 ROW-2951 ('it's Abby that's not letting you go'). Inadequate-father framing: 'Olivia is more important' implies Eli is currently deprioritizing Olivia for Abby. Notably, this is the second consecutive Halloween Abby-framework attack (Year 1: B-002 Halloween cluster, COMP-RF04-001, Oct 31 2022). Pattern: Halloween annually triggers Abby-framework deployment.",
+      "verbatim_key_messages": [
+        "ROW-3933 (Sent): \"Yeah. There or here. I would rather her come here to my area she will get more candy\"",
+        "ROW-3935 (Received): \"You're not trying to get her more candy. You're trying to not fight with Abby. Olivia is more important\"",
+        "ROW-3936 (Received): \"She has friends in this neighborhood\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B011-P01",
+      "row_ref": "ROW-3778-3779",
+      "date": "2023-10-11",
+      "type": "character_attribution_contempt",
+      "note": "Calling schedule dispute. ROW-3778: 'You didn't call because you forgot to call per usual' — assigns carelessness as fixed character trait. ROW-3779: 'Cause you treat the cut off time as the target time to call' — contemptuous pattern attribution. Mild; no escalation."
+    },
+    {
+      "flag_id": "RF04-B011-P02",
+      "row_ref": "ROW-3787",
+      "date": "2023-10-11",
+      "type": "brief_contempt",
+      "note": "'You don't listen' — brief contemptuous dismissal during fair schedule dispute."
+    },
+    {
+      "flag_id": "RF04-B011-P03",
+      "row_ref": "ROW-3968",
+      "date": "2023-11-07",
+      "type": "comparative_competitive_framing",
+      "note": "After Eli notes Olivia was in tears at dropoff ('She was in tears again. It's hard leaving and coming back'), Melissa responds: 'She doesn't cry with me anymore.' Implicit comparative: Eli's parenting produces distress, Melissa's does not. Peripheral — isolated, no guilt induction escalation."
+    },
+    {
+      "flag_id": "RF04-B011-P04",
+      "row_ref": "ROW-4015",
+      "date": "2023-11-16",
+      "type": "contemptuous_dismissal",
+      "note": "ROW-4015: 'Answer the phone and you'd know' — hostile/contemptuous response to Eli's text asking what she was calling about. Brief."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S28",
+          "batch": "B-011",
+          "date": "2023-10-26",
+          "row": "ROW-3892-3900",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Calling dispute — 'dumbass' (4th ADD-002 instance) + blame dismissal 'Quit blaming everyone else for your crap' when Eli provides factual defense."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S29",
+          "batch": "B-011",
+          "date": "2023-10-31",
+          "row": "ROW-3935",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Halloween 2023 Abby-causal-attribution — 'You're not trying to get her more candy. You're trying to not fight with Abby. Olivia is more important.' Second consecutive Halloween Abby-framework attack. Eli's autonomous decision overridden with Abby-conflict-avoidance motive."
+        }
+      ],
+      "signal_count_after": 29
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [],
+      "signal_count_after": 8,
+      "note": "No qualifying child-as-emotional-lever mechanism in B-011. ROW-3727-3728 (Olivia crying about daycare) is cooperative co-parenting communication, not guilt deployment. ROW-3968 comparative framing kept peripheral."
+    }
+  },
+
+  "compound_patterns": [],
+
+  "cp3_item": {
+    "id": "CP3-RF04-011",
+    "batch": "B-011",
+    "summary": "ROW-3892+3935 (Oct 26+31 B-011) — 'dumbass' 4th ADD-002 instance (ROW-3892, Oct 26); second consecutive Halloween Abby-framework attack (ROW-3935, Oct 31): 'You're not trying to get her more candy. You're trying to not fight with Abby. Olivia is more important'; Halloween annual Abby-attack pattern established (B-002 Year 1 → B-011 Year 2); ARC-RF04-001 signals 28-29."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 2,
+    "severity_1": 2,
+    "severity_2": 0,
+    "peripheral_flags": 4,
+    "compound_patterns": 0,
+    "arc_rf04_001_signals_added": 2,
+    "arc_rf04_002_signals_added": 0
+  }
+}

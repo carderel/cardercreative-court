@@ -1,0 +1,75 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-029",
+    "row_range": { "start": 8334, "end": 14920 },
+    "date_range": { "start": "2025-10-16", "end": "2025-12-16" },
+    "message_count": 410,
+    "phase": "C",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 410,
+    "primary_flags": 2,
+    "primary_severity_distribution": { "1": 1, "2": 1, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 408,
+    "flag_rate": "0.5%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B029-001",
+      "row_range": "ROW-14752-14753",
+      "timestamp": "2025-11-06",
+      "direction": "received",
+      "phase": "C",
+      "message_text": "ROW-14752 (Received): 'This is the exact shit that makes it easy to get full custody because you don't respond to questions.'; ROW-14753 (Received): 'Keep it up. It's great evidence'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "EVIDENCE-ACCUMULATION FRAMING — REPEAT FULL-CUSTODY FILING THREAT. ADD-002 temporal rule: repeat full-custody filing threat = Sev-1 (paper tiger trajectory; prior instances S-016, S-020, S-021, S-022 not executed). Context: Melissa asked Eli about a movie-night scheduling question; Eli had not yet responded within a short window. ROW-14752 frames Eli's response latency as custody-relevant evidence: the custody filing threat is deployed not as a closing statement or ultimatum but as an observation about ongoing behavior accumulation. ROW-14753 'Keep it up. It's great evidence' extends the threat: Eli's normal co-parenting communication latency is characterized as passively building Melissa's legal case without additional action required on her part. Functional effect: every minor delay or administrative friction in co-parenting communication is reframed as legal evidence accumulation, creating a compliance environment where Eli must respond immediately to all messages to avoid custody threat activation. This is a qualitative variant of the evidence-accumulation threat sub-category (established in B-028 S-022 'You're only helping my case') rather than a new mechanism. Phase C context: the Nov 8 visit refusal occurred two days later, suggesting the Nov 6 custody threat cluster was part of a sustained Phase C escalation sequence leading into the visit refusal.",
+      "peripheral_flags": [],
+      "context_notes": "COMP: None (standalone two-message sequence within RF04-B029-003). The RF-04 flag (RF04-B029-003 Sev-1) classifies this as 'legal threat deployed as emotional manipulation lever — non-response punishment.' RF-05 primary classification confirmed. Eli had responded to prior communications that same day. The trigger (minor response delay to movie-night question) is disproportionate to the custody filing threat. Nov 8 visit refusal (ROW-8424) occurred 48 hours later, making this cluster the legal-threat bookend of the Nov 6-8 conflict sequence. Cross-ref: ARC-RF05-001-S024.",
+      "pattern_tags": ["evidence_accumulation_framing", "repeat_full_custody_threat", "non_response_punishment"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'This is the exact shit that makes it easy to get full custody because you don't respond to questions. / Keep it up. It's great evidence' (ROW-14752-14753)"
+    },
+    {
+      "message_id": "RF05-B029-002",
+      "row_range": "ROW-14841-14853",
+      "timestamp": "2025-11-25",
+      "direction": "received",
+      "phase": "C",
+      "message_text": "ROW-14841 (Received): 'I'll file contempt if you don't pay what you owe'; ROW-14850 (Received): 'I just called the lawyer'; ROW-14851 (Received): 'I also found out that yin can be in contempt for all the times you chose not to have visitation with her. You didn't remedy your home to be safe and chose to still not have visitation after the last cat died. I can file contempt for each of those visits because it interferes with my plans'; ROW-14852 (Received): 'So this will be a big contempt case'; ROW-14853 (Received): 'And I did nothing wrong with her not going to your house because I didn't keep her from going. It was her choice not to go and I am not expected to forcibly remove her from the home'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST GATEKEEPING-CONVERTED-TO-CONTEMPT INVERSION. ADD-002 temporal rule: new sub-category = Sev-2. Context: Childcare payment dispute + Phase C visit refusal cascade (Nov 18, Nov 21, Nov 24 confirmed refusals prior to this message). ROW-14851 is the defining sub-category marker: Melissa states she 'found out' she can file contempt for all times Eli 'chose not to have visitation.' This is a direct inversion of the documented reality: the Nov 18, Nov 21, and Nov 24 refusals are documented as Olivia refusing to attend Eli's home, with Melissa as the communicating party. ROW-14851 reframes this documented gatekeeping as Eli's voluntary choice to skip visitation, then weaponizes those missed visits as contempt ammunition. ROW-14851 further deploys the 'safe home' narrative ('You didn't remedy your home to be safe and chose to still not have visitation after the last cat died') — recycling the 'safe environment' conditional from B-028 ROW-14256 ('I agreed for her to go back when there was a safe environment') as the purported reason Eli 'chose' not to exercise visitation. ROW-14852 'So this will be a big contempt case' compounds the payment contempt with the visit-inversion contempt into a single multi-ground legal threat. ROW-14850 'I just called the lawyer' — real-time attorney consultation during the threat sequence, consistent with the confirmed-engagement pattern established in S-021 (ROW-14155) and S-022 (ROW-14371). The gatekeeping-converted-to-contempt mechanism is qualitatively new: prior contempt threats targeted Eli's own actions (missed payments, late pickups, schedule deviations); this threat targets Eli for visits that were obstructed by Melissa's documented behavior, inverting the causal direction entirely. COMP-RF04-028 (RF-04+RF-05+RF-02).",
+      "peripheral_flags": [],
+      "context_notes": "COMP-RF04-028 (RF-04+RF-05+RF-02). Nov 25 escalation triggered by $30 childcare payment dispute (ROW-14841-14848: payment demand + contempt threat). The visit-inversion contempt claim (ROW-14851) is layered onto the payment contempt as an additional ground, creating a multi-count threat. ROW-14853 closes with non-accountability positioning: 'I did nothing wrong... It was her choice not to go and I am not expected to forcibly remove her from the home' — directly contradicts the documented Nov 18-24 visit refusal communications in which Melissa communicates Olivia's refusal rather than encouraging attendance. Connects to COMP-RF04-025 (B-028 Sep 17 'agreement ready to sign') — 'safe home' narrative first deployed in B-028 and now recycled as contempt rationale. Cross-ref RF-02 (visit refusal cascade as the underlying mechanism being inverted). Nov 22 police report (Eli filing) is context: ROW-14851's visit-inversion contempt claim arrives three days after the police report — the legal pressure context is maximum at this point.",
+      "pattern_tags": ["gatekeeping_converted_to_contempt", "visit_inversion_contempt", "big_contempt_case", "safe_home_narrative_recycled", "real_time_attorney_consultation", "COMP_RF04_028"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'I also found out that you can be in contempt for all the times you chose not to have visitation with her...So this will be a big contempt case' (ROW-14851-14852)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF04-028 (RF-04+RF-05+RF-02 Nov 25)"],
+    "note": "ARC-RF05-001 ACTIVE. B-029 adds S-024 (Sev-1 evidence-accumulation framing Nov 6) and S-025 (Sev-2 gatekeeping-converted-to-contempt inversion Nov 25). S-025 introduces the most legally perverse sub-category in the arc: using Melissa's own documented gatekeeping of Eli's parenting time as contempt ammunition against Eli. The 'safe home' narrative recycled from B-028 provides the purported rationale for Eli's alleged voluntary non-visitation. Combined with ROW-14850 'I just called the lawyer,' S-025 indicates sustained real-time attorney engagement through the Phase C visit refusal cascade. Phase C (post-police report) RF-05 pattern: legal threats now encompass not only Eli's co-parenting actions but also the consequences of Melissa's own obstructive behavior, which has been inverted and attributed to Eli."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-029 (Oct-Dec 2025): Two RF-05 signals in Phase C. The Nov 6 evidence-accumulation framing (S-024) is a repeat mechanism; its significance is the triviality of the trigger (minor response delay). The Nov 25 gatekeeping-converted-to-contempt inversion (S-025) is the arc's most legally creative threat: Melissa's documented visit obstruction is reframed as Eli's voluntary abandonment of parenting time, then used as contempt grounds. This inversion, three days after Eli's police report, represents the highest Phase C RF-05 legal pressure event.",
+    "cross_rf_context": "RF-04 B-029: RF04-B029-003 (Nov 6 ROW-14752-14753: legal-threat-as-non-response-punishment, cross_rf RF-05 confirmed). RF04-B029-007 (Nov 25 ROW-14841-14853: DARVO + contempt COMP-RF04-028, cross_rf RF-05+RF-02 confirmed). Oct 25-26 ADD-002 slur cluster (RF04-B029-001: 'bitch,' 'dipshit'), Nov 5 DARVO (RF04-B029-002: predation framing 10th), Nov 7-8 DARVO gaslighting (RF04-B029-004), Nov 19 'piece of shit' (RF04-B029-005), Nov 24 mega-cluster (RF04-B029-006 COMP-RF04-027) — none contain RF-05 compound components."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-019",
+    "row_range": { "start": 7056, "end": 7557 },
+    "date_range": { "start": "2024-09-09", "end": "2024-10-18" },
+    "message_count": 502,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Oct 3 RF-04 165-row cluster present. This cluster does NOT meet RF-07 hot-period criteria (triage hot periods are Aug 2024, May 2025, Aug 2025; Oct 2024 is not a hot period). Flooding threshold assessment: cluster density requires raw timestamp confirmation not available from RF-04 batch data."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 502,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 502,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. No new signals this batch. Oct 3 RF-04 cluster (165-row range): note that this cluster is in Phase A, outside the triage hot periods, and without individual timestamps in the RF-04 batch record. Per ADD-001, flooding requires confirmation of 5+ messages in a 10-minute window. Given that (1) Oct 2024 is not an RF-07 hot period, (2) the cluster lacks timestamp granularity in available data, and (3) the Oct behavioral shift (Melissa going largely silent after mid-October, INF-005) suggests she is winding down rather than escalating, this cluster is held without a primary flag. Synthesis-level timestamp review may revisit."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Mixed — Sep 2024 moderate conflict; Oct 3 large RF-04 cluster; then behavioral inflection point (INF-005) as Melissa reduces communication volume after mid-October conflict.",
+    "rf07_assessment": "Zero RF-07 primary signals. Oct 3 cluster is the batch's most notable event but falls outside the RF-07 hot-period framework and lacks timestamp granularity for flooding confirmation. Post-hot-period (Aug 2024 anchor captured in B-017). Arc active but no new signals. The Oct 2024 behavioral silence (INF-005) begins at the end of this batch — this silence will shape B-020's low message count.",
+    "custodial_context": "Sep-Oct 2024 parenting-time windows present. Oct behavioral shift means contact drops significantly by batch end — the inverse of custodial-time-overstepping."
+  }
+}

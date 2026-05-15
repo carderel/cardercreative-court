@@ -1,0 +1,52 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-026",
+    "row_range": { "start": 7868, "end": 9916 },
+    "date_range": { "start": "2025-06-11", "end": "2025-07-16" },
+    "message_count": 300,
+    "phase": "B",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Phase B. Jun-Jul 2025. Three-block data structure. Next batch (B-027) contains the Aug 2025 hot period anchor events."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 300,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 300,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE. No new signals this batch. Jun-Jul 2025 inter-hot-period. Next batch (B-027) is the Aug 2025 hot period batch containing the second mega-cluster (S-004) and read-receipt pressure (S-005)."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Elevated Phase B — Jun-Jul 2025 post-hot-period. RF-04 and RF-05 signals continue. Communication pattern elevated from Phase A baseline but no RF-07 primary threshold events this batch.",
+    "rf07_assessment": "Zero RF-07 primary signals. Jun-Jul 2025 is inter-hot-period (between May 2025 and Aug 2025 hot periods). Jul 19 full-custody threat cluster (B-027 pre-cursor) does not begin until next batch. Arc active at 3 signals.",
+    "custodial_context": "Jun-Jul 2025 parenting-time weekends. No custodial-time-overstepping cluster at ADD-004 threshold confirmed this batch."
+  }
+}

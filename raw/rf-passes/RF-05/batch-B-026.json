@@ -1,0 +1,42 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-026",
+    "row_range": { "start": 7868, "end": 9916 },
+    "date_range": { "start": "2025-06-11", "end": "2025-07-16" },
+    "message_count": 300,
+    "phase": "B",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 300,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 300,
+    "flag_rate": "0.0%"
+  },
+  "flagged_messages": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "note": "ARC-RF05-001 ACTIVE. No RF-05 signals in B-026. Phase B first full batch. COMP-RF04-022 (Jun 14 predation DARVO + Jun 27 Abby-liar cluster) is RF-04+RF-15 compound only — no legal-threat or custody-threat component. Jul 12 'dingus' contempt (ROW-9857) is aggressive tone only, below RF-05 primary threshold. The Jul 11-16 cooperative period (birthday trip, illness medical updates) is notable absence of threat activity."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-026 (Jun-Jul 2025): Zero RF-05 primary flags. Phase B opens with continued arc pause — no legal threats or custody threats in this batch. The Jun 14 DARVO event (COMP-RF04-022) is RF-04+RF-15 primary without a legal-threat component. Jun 27 Abby-liar validation cluster is RF-04 only. Jul 11-16 Tennessee birthday trip is a notably cooperative extended period. The Jun 27-Jul 16 arc gap extends the B-020 through B-026 low-RF-05 period (Oct 2024 through mid-Jul 2025).",
+    "cross_rf_context": "RF-04 B-026: COMP-RF04-022 (Jun 14 predation-DARVO RF-04+RF-15; Jun 27 Abby-liar validation). No RF-05 compound component confirmed. Jul 12 contempt tone (ROW-9857 'dingus') noted RF-04 Sev-1; no RF-05 cross-tag."
+  }
+}

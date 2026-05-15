@@ -1,0 +1,75 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-027",
+    "row_range": { "start": 8014, "end": 14235 },
+    "date_range": { "start": "2025-07-17", "end": "2025-08-28" },
+    "message_count": 503,
+    "phase": "B",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 503,
+    "primary_flags": 2,
+    "primary_severity_distribution": { "1": 0, "2": 2, "3": 0 },
+    "peripheral_flags_total": 0,
+    "peripheral_rf_distribution": {},
+    "no_flag_messages": 501,
+    "flag_rate": "0.4%"
+  },
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B027-001",
+      "row_range": "ROW-9943-9964",
+      "timestamp": "2025-07-19",
+      "direction": "received",
+      "phase": "B",
+      "message_text": "ROW-9957 (Received): 'I'll screenshot this and file for full custody because you obviously aren't worried about what is best for her'; ROW-9958 (Received): 'When the judge sees that her own father can't be bothered to spend time with her on a regular weekend schedule that he hasn't done in 4 years and can't be bothered to watch her for a remainder of a day while her mother tries to get better from a medical illness and would rather drop her off while someone is under the influence of Percocet than to rearrange his schedule for one weekend I think he will see what I'm saying'; ROW-9960 (Received): 'I'll be contacting my lawyer'; ROW-9964 (Received): 'There's no threats. It is and has been very clear that you don't put her best interest first. Instead you put whatever is more convenient for you first. With that being your mindset you shouldn't be included in the decision making process with her. Full custody doesn't take away visitation just means you aren't involved with decision making. So no threat. Just stating my plan of action'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "DARVO-WRAPPED FULL-CUSTODY THREAT WITH PRE-CONSTRUCTED COURT NARRATIVE. ADD-002 temporal rule: DARVO-denial-of-threat mechanism = new legal-threat sub-category → Sev-2. Context: Melissa was in the ER; Eli had Olivia and offered to keep her rather than drop her off with Melissa on Percocet. Melissa escalated into a major custody threat cluster. ROW-9957 delivers the explicit custody filing threat weaponizing the ER situation as child-welfare evidence. ROW-9958 is a ~100-word pre-constructed court narrative delivered in real-time — Melissa constructs and delivers the exact argument the judge would receive, deploying inadequate-father framing ('hasn't done in 4 years'), martyrdom (mother 'tries to get better from a medical illness'), and the Percocet context as proof of Eli's prioritization failure. ROW-9960 adds a second explicit threat ('I'll be contacting my lawyer'). ROW-9964 is the defining sub-category marker: immediately after two explicit custody filing threats, Melissa states 'There's no threats' and reframes full custody demand as a non-threatening 'plan of action.' This DARVO-denial-of-threat mechanism is a first in the arc: the act of denying a threat while simultaneously making it adds a gaslighting layer to the legal threat pattern. Functional effect: Eli cannot respond to the threat as a threat without being characterized as misinterpreting a mere 'plan of action'; the denial preemptively delegitimizes his documentation of the threat. Prior full-custody threats (S-016 Aug 2024) lacked this denial mechanism. Combined with the sophisticated court-narrative construction in ROW-9958, this cluster introduces two new qualitative elements to the threat pattern. ADD-001 does not reduce scope: custody filing threats are core RF-05, not Abby-framework attacks.",
+      "peripheral_flags": [],
+      "context_notes": "COMP-RF04-023 (RF-04+RF-05). Jul 19 ER cluster. Trigger: Melissa was hospitalized; Eli had Olivia and proposed extending care rather than dropping her with a medicated parent. Melissa used the request as the trigger for a sustained inadequate-father attack (ROW-9943-9964: 22 messages). The inadequate-father framing is RF-04 primary; the custody filing threats and DARVO-denial are RF-05 primary. ROW-9963 invokes the prior surgery drop-off as martyrdom evidence ('Like the last time you dropped her off right after my surgery while I was still under the influence of anesthesia'), establishing a behavior pattern in the court-narrative construction. The 6-month arc gap (B-020 through B-024) is now broken — this is the first Phase B RF-05 primary signal.",
+      "pattern_tags": ["darvo_denial_of_threat", "pre_constructed_court_narrative", "full_custody_filing_threat", "COMP_RF04_023"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'I'll screenshot this and file for full custody' (ROW-9957) / 'There's no threats...Just stating my plan of action' (ROW-9964)"
+    },
+    {
+      "message_id": "RF05-B027-002",
+      "row_range": "ROW-8105 + ROW-14063-14162",
+      "timestamp": "2025-08-14",
+      "direction": "received",
+      "phase": "B",
+      "message_text": "ROW-14080 (Received): 'Seeing how disinterested you are I think it's best the weekends don't restart. She's better off with me full time.'; ROW-14083 (Received): 'Also I've been looking at houses and may move soon'; ROW-14145 (Received): 'My Dr actually told me that I shouldn't have her around you but that was after I had already been talking to you about it.'; ROW-14154 (Received): 'Just more reasons why I'm filing for full custody'; ROW-14155 (Received): 'Already been talking to the lawyer about it'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST CONFIRMED ONGOING ATTORNEY ENGAGEMENT + ACCESS WITHDRAWAL THREAT + RELOCATION SIGNAL. ADD-002 temporal rule: 'already consulting attorney for custody action' = new legal-threat sub-category → Sev-2. All prior custody filing threats in the arc used future tense: 'I will file,' 'I'll be contacting my lawyer,' 'I'm going to show these messages.' ROW-14155 'Already been talking to the lawyer about it' is the FIRST past-tense confirmed engagement — Melissa has moved from threatening to engage an attorney to reporting that she has already done so. This shifts the threat from hypothetical to active-engagement status. ROW-14154 'Just more reasons why I'm filing for full custody' deploys the Aug 14 dispute cluster (dance studio conflict) as additional evidence accumulation, consistent with an ongoing legal strategy rather than an in-context threat. ROW-14080 adds a direct access withdrawal threat: 'I think it's best the weekends don't restart. She's better off with me full time' — unilateral suspension of parenting plan weekend time framed as child-welfare decision. ROW-14083 introduces a relocation signal: 'I've been looking at houses and may move soon' — presented mid-conflict as an ambient threat; relocation during custody proceedings is a recognized legal pressure mechanism. ROW-14145 deploys medical professional credentialing: 'My Dr actually told me that I shouldn't have her around you' — a physician's professional opinion against Eli's parental suitability introduced as third-party validation of the custody case, consistent with building a court narrative. The convergence of confirmed legal engagement + access withdrawal + relocation signal + medical credentialing in a single cluster is the highest RF-05 compound intensity in the dataset to this point. COMP-RF04-024 (RF-04+RF-05+RF-11).",
+      "peripheral_flags": [],
+      "context_notes": "COMP-RF04-024 (RF-04+RF-05+RF-11). Aug 14-15 mega-cluster (~80+ messages). Trigger: dance studio open house dispute (Eli questioning cost and logistics). The cluster includes 'shit father' second dataset instance (ROW-14072), 'dumbass' 8th instance (ROW-8105), 'you didn't even want her' extreme inadequate-father allegation (ROW-14162), 'started another family and pushed her out' family-displacement framing (ROW-14146), and child counselor relay (ROW-14097). These are RF-04+RF-11 primary components. The RF-05 primary components are: ROW-14080 access withdrawal, ROW-14083 relocation signal, ROW-14145 medical credentialing, ROW-14154-14155 confirmed attorney engagement. Aug 28 Labor Day visit refusal cascade (primarily RF-02) initiates in this same batch — the confirmed attorney engagement in ROW-14155 contextualizes the forthcoming visit refusal as a legally-staged action rather than a spontaneous parenting decision.",
+      "pattern_tags": ["confirmed_attorney_engagement", "access_withdrawal_threat", "relocation_signal", "medical_credentialing", "COMP_RF04_024"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'Already been talking to the lawyer about it' (ROW-14155) / 'the weekends don't restart. She's better off with me full time' (ROW-14080)"
+    }
+  ],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": ["COMP-RF04-023 (RF-04+RF-05)", "COMP-RF04-024 (RF-04+RF-05+RF-11)"],
+    "note": "ARC-RF05-001 ACTIVE. B-027 adds S-020 and S-021 — two Sev-2 signals in a single batch, first multi-Sev-2 batch since B-016. S-020 introduces the DARVO-denial-of-threat sub-category (ROW-9964: 'There's no threats...Just stating my plan of action' immediately following two explicit custody filing threats). S-021 introduces the first confirmed-ongoing-attorney-engagement sub-category (ROW-14155: 'Already been talking to the lawyer about it'). Both signals occur within major RF-04 compound clusters (COMP-RF04-023, COMP-RF04-024), consistent with the arc pattern of legal threats embedded in emotional-manipulation escalation sequences. The S-021 cluster (access withdrawal + relocation signal + medical credentialing + confirmed attorney engagement) represents the highest RF-05 compound intensity in the dataset to this point — exceeded only by what is expected in B-028. The 6-month arc gap (B-020 through B-026) ends here."
+  },
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "B-027 (Jul-Aug 2025): Two Sev-2 RF-05 signals — highest RF-05 density batch since B-016. The 6-month arc pause (Oct 2024 through mid-Jul 2025) ends abruptly with the Jul 19 ER-triggered custody threat cluster. Both signals introduce new sub-categories: DARVO denial of threat (S-020) and confirmed attorney engagement (S-021). The Aug 14 mega-cluster is the most legally dangerous in the dataset to this point: five simultaneous legal-threat mechanisms (access withdrawal, relocation signal, medical credentialing, confirmed attorney engagement, and evidence-accumulation framing). Attorney awareness of confirmed legal consultation (ROW-14155) is warranted — this is no longer a hypothetical filing threat.",
+    "cross_rf_context": "RF-04 B-027: COMP-RF04-023 (Jul 19 full-custody threat mega-cluster: RF-04+RF-05). COMP-RF04-024 (Aug 14-15 sustained mega-cluster: RF-04+RF-05+RF-11: 'shit father' 2nd + 'dumbass' 8th + 'you didn't even want her' + confirmed attorney engagement + access withdrawal + relocation signal + medical credentialing + counselor relay). Both compounds confirmed RF-05 primary components. Aug 25-26 contempt/dance cluster (COMP-RF04-B027-004) has no RF-05 primary."
+  }
+}

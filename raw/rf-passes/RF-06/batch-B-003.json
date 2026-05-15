@@ -1,0 +1,87 @@
+{
+  "batch_id": "B-003",
+  "date_range": {
+    "start": "2022-11-08",
+    "end": "2022-12-14",
+    "orig_row_start": 738,
+    "orig_row_end": 1108
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-001: contempt threat cluster Nov 11-14 2022 (ROW-783/789/790/824/828). First documented financial coercion cluster. Lawyer retainer invoked. ARC-RF06-001 Signal 1."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-001",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF06-001",
+      "arc_signal": 1,
+      "date_range": "2022-11-11 to 2022-11-14",
+      "orig_rows": [
+        "783",
+        "789",
+        "790",
+        "824",
+        "828"
+      ],
+      "messages": [
+        {
+          "orig_row": "783",
+          "direction": "Received",
+          "date": "2022-11-11",
+          "text": "You gonna pay or do I file contempt?"
+        },
+        {
+          "orig_row": "789",
+          "direction": "Received",
+          "date": "2022-11-11",
+          "text": "You're in contempt at this point"
+        },
+        {
+          "orig_row": "790",
+          "direction": "Received",
+          "date": "2022-11-11",
+          "text": "You need to borrow off someone or something otherwise you'll be going back to court"
+        },
+        {
+          "orig_row": "824",
+          "direction": "Received",
+          "date": "2022-11-14",
+          "text": "You still haven't paid your half of daycare and swim which was due last Thursday. If I don't see payment soon I'll reach out to the lawyer. She's still on retainer"
+        },
+        {
+          "orig_row": "828",
+          "direction": "Received",
+          "date": "2022-11-14",
+          "text": "This isn't pay when you feel like it. Your ordered by the court to pay within 7 days"
+        }
+      ],
+      "classification": "RF-06 primary Sev-1 \u2014 First confirmed financial coercion cluster. Nov 11: immediate escalation to contempt threats ('You gonna pay or do I file contempt?' / 'You're in contempt at this point' / 'going back to court') for a daycare payment timing issue. Nov 14: lawyer-retainer leverage ('She's still on retainer'). This is the first documented contempt threat cluster in the text record. Note: Eli confirmed in CP2 that a contempt summons was actually filed June 3, 2022 (in B-001 date range) \u2014 the 'again' language in B-004 references that prior action. Per ADD-002. ARC-RF06-001 Signal 1.",
+      "addendum_applied": "ADD-002 (child support court action \u2014 executed; contempt action confirmed by CP2). ADD-005 (payment leverage co-deployed with hostile messaging pattern)."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 1
+    }
+  ]
+}

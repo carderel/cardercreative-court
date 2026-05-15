@@ -1,0 +1,116 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "generated": "2026-04-26",
+  "status": "complete",
+  "completed": "2026-04-27",
+
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 1,
+    "tone_assessment": "Lowest-conflict period. No RF-09 primary signals. Baseline confirmed: Jan-Oct 2022 is the pre-escalation cooperative period. DARVO patterns begin in B-001 (RF-04 flag ROW-50-61) but do not yet involve documentable reality claims with textual contradictions.",
+    "note": "Zero primary flags is the correct calibration result for B-001. RF-09 signal is expected primarily in Phase A escalation batches (B-007 onward) and concentrated around the mega-cluster periods (Aug 2024, Aug 2025) and the DARVO-dense Phase B/C batches. The cross-reference methodology (RF-09-SUPPLEMENT.md) requires identifying which specific denials are most significant before classifying earlier batches."
+  },
+
+  "group_a_clear_flags": [],
+
+  "group_b_ambiguous_flags": [
+    {
+      "id": "CP2-RF09-AMB-001",
+      "row": "ROW-50-61",
+      "date": "2022-08-28",
+      "direction": "received",
+      "message_text": "ROW-50: 'You want to tell her about being respectful at church but you text me while church is going on and sit and draw' | ROW-58: 'I've sat next to you. You bring a notebook. I've seen you' | ROW-61: 'Check your own etiquette'",
+      "current_classification": "NOT FLAGGED (RF-09). RF-04 primary (DARVO pivot).",
+      "ambiguity": "The 'I've seen you' framing implies Melissa is asserting a factual claim about Eli's behavior as counter-evidence. If Eli disputes that he draws during church service, this could be a Level C event rewrite. But no cross-reference pair is documentable from available text data.",
+      "cp2_question": "In Aug 2022, did Melissa's claim that she'd seen you drawing/texting during church service accurately describe your behavior? Was this factually true, or was it a distortion used to deflect your legitimate concern about Olivia?"
+    }
+  ],
+
+  "group_c_non_flags": [
+    {
+      "id": "CP2-RF09-NF-001",
+      "row": "B-001 overall",
+      "reason_not_flagged": "Phase A triage keywords present but no primary RF-09 signals. Early DARVO sequences are RF-04 primary without documentable reality-denial claims.",
+      "cp2_question": "In the Jan-Oct 2022 period, were there incidents you recall where Melissa denied saying something or denied that an event happened that you knew for certain was true — either in text or in verbal conversations?"
+    }
+  ],
+
+  "calibration_questions": [
+    {
+      "id": "CP2-RF09-Q1",
+      "topic": "Outside-text-record denials — verbal conversations",
+      "question": "The cross-reference methodology can only document denials against the text record. But some of the most significant gaslighting may involve denying verbal conversations — things said on the phone, at exchanges, or in person. (a) Are there specific conversations or events from outside the text record that Melissa later denied in messages? For example, did she ever text 'I never said that' about something she told you in person or by phone? (b) Did she ever deny the content of verbal agreements you reached (e.g., about scheduling, finances, parenting arrangements) that weren't confirmed in writing?",
+      "why_asked": "Text-record gaslighting is Level A (highest evidence). Denials of verbal conversations or off-text events are harder to document but still classifiable as RF-09 if the pattern is consistent.",
+      "classification_impact": "Medium — may generate RF-09 contextual notes for high-confidence patterns even without direct text contradiction"
+    },
+    {
+      "id": "CP2-RF09-Q2",
+      "topic": "Topics with genuine disagreement vs. gaslighting",
+      "question": "RF-09 requires distinguishing systematic reality-denial from genuine different recollections. (a) Are there topics where you think you and Melissa genuinely have different memories or interpretations — where you wouldn't say she's deliberately lying but you just remember events differently? (b) Conversely, are there topics where you're confident she knows she's misrepresenting events — where the distortion feels deliberate rather than a memory difference? This helps set the threshold for the pass.",
+      "why_asked": "The 'Not This' exclusions in RF-09 include genuine disagreement and faulty memory on minor details. Calibrating the threshold prevents over-flagging ambiguous cases.",
+      "classification_impact": "High — determines the confidence threshold for Sev-1 vs. Sev-2 classifications"
+    },
+    {
+      "id": "CP2-RF09-Q3",
+      "topic": "Coaching admission — subsequent denial",
+      "question": "ROW-6819 (Aug 2024, B-018) is Melissa's explicit written admission that she coaches Olivia's conversations with you: 'I've told her to have conversations and I also give her things to tell you about.' Has Melissa ever subsequently denied coaching Olivia, either in text messages or verbally? For example, has she ever said 'I never told Olivia what to say to you' or framed the coaching admission as being taken out of context? Any subsequent denial of ROW-6819's content would be a direct Level A gaslighting event.",
+      "why_asked": "ROW-6819 is the strongest available text-record anchor in the dataset. If Melissa denied it or tried to reframe it after the fact, that's the clearest Level A RF-09 signal available.",
+      "classification_impact": "High — if confirmed, generates RF-09 Level A primary flag with the strongest evidentiary foundation in the dataset"
+    },
+    {
+      "id": "CP2-RF09-Q4",
+      "topic": "The Feb 15 2026 incident — characterization vs. admitted facts",
+      "question": "The dataset documents (B-030, RF-04 COMP-RF04-029) that on Feb 15 2026, you admitted raising your voice during a domestic argument while Olivia was present. The RF-04 pass documented that Melissa subsequently amplified this admitted fact: raised voice → verbal abuse → traumatized child → drinking problem → ongoing alcoholism allegation. (a) Did Melissa, at any point before or during the Feb 15 incident, acknowledge in text that you had never been physically violent with her or Olivia? If so, her subsequent 'drinking problem' and 'verbal abuse' characterizations would contrast with prior statements. (b) Did she ever deny or walk back any of the amplified characterizations after making them?",
+      "why_asked": "The Feb 15 amplification sequence is a strong Level C-D distortion candidate (admitted fact distorted into escalating characterizations). Evidence from prior batches that Melissa herself characterized your behavior differently would create Level A or B cross-references.",
+      "classification_impact": "High — if prior contradicting statements exist, this becomes Level A-B evidence with the strongest amplification narrative in the dataset"
+    },
+    {
+      "id": "CP2-RF09-Q5",
+      "topic": "Legal threat denials — documented vs. denied",
+      "question": "The RF-05 pass documented 26 legal threats (contempt, custody filings, attorney engagement). The RF-05-ADD-005 DARVO-denial mechanism (Jul 2025, S-020) documented Melissa denying the nature of threats she had made. (a) Beyond the Jul 2025 instance, are there other times Melissa denied making a specific legal threat after making it? For example, did she ever say 'I never threatened to file for custody' after documented threats? (b) Did she ever claim 'I was just telling you what my attorney said' as a way of distancing herself from threats she'd made?",
+      "why_asked": "Legal threat denials are a high-value RF-09 pattern because the threat record is documented and the denials create direct Level A contradictions. The DARVO-denial mechanism in RF-05 suggests this is an active pattern.",
+      "classification_impact": "High — threat denials create Level A cross-references with clear evidentiary value"
+    },
+    {
+      "id": "CP2-RF09-Q6",
+      "topic": "'You're crazy / making things up' language",
+      "question": "The RF-09 taxonomy identifies 'claiming the other parent is crazy, unstable, making things up' as a behavioral indicator. (a) Has Melissa used this type of language about you — calling you unstable, saying you're imagining things, suggesting you have mental health problems that distort your perception? (b) Has she made these characterizations in text (which would be directly documentable) or mainly verbally? (c) Has she ever made these characterizations to Olivia, other family members, or third parties?",
+      "why_asked": "This is RF-09 Level E (pattern-based, not contradiction-based) but escalates to Sev-2-3 if sustained. It also connects to the peer-parent network documented in RF-08 (B-031) — if Melissa's 'making things up' narrative has been distributed to Naomi's father or other parents.",
+      "classification_impact": "Medium — generates Level E flags that are lower individual weight but high cumulative weight if sustained across multiple batches"
+    }
+  ],
+
+  "addenda_proposed": [
+    {
+      "id": "RF09-ADD-001-PROPOSED",
+      "title": "Cross-Reference Evidence Pairs — Classification Framework",
+      "rule_draft": "[PENDING CP2 ANSWER] The core classification rule for this pass: flag RF-09 primary when a message contains a reality claim (denial, rewrite, minimization) that can be cross-referenced against a documented message. Severity per Level: Level A (direct textual contradiction) = Sev-2 minimum; Level B (agreement denial) = Sev-2; Level C (event rewrite) = Sev-1 to Sev-2 depending on significance; Level D (minimization) = Sev-1; Level E ('you're crazy' without specific claim) = Sev-1. Severity elevation: Sev-3 reserved for sustained Level A-B denial of the same documented fact across 3+ instances, or combined with 'you're crazy' language attacking Eli's sanity.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF09-ADD-002-PROPOSED",
+      "title": "ROW-6819 Coaching Admission as Forward RF-09 Anchor",
+      "rule_draft": "[PENDING CP2 ANSWER Q3] If Eli confirms Melissa later denied coaching: flag any post-ROW-6819 denial of coaching content as Level A RF-09 Sev-2 primary. ROW-6819 is explicitly in the record and any denial is documentable. If no subsequent denial was made, note ROW-6819 as a 'forward anchor' and flag any denial if encountered in later batches.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF09-ADD-003-PROPOSED",
+      "title": "DARVO-Denial Compound Rule",
+      "rule_draft": "[PENDING CP2 ANSWER] When Melissa deploys DARVO that includes a specific reality denial (not just deflection), compound flag RF-09 primary + RF-04 primary. Pure DARVO without a documentable denial is RF-04 only. The compound should be generated when: (1) Melissa makes an explicit 'I never said' or 'that didn't happen' claim, AND (2) the claim occurs within a DARVO sequence, AND (3) a contradicting text exists. This applies retroactively to RF-04 compound flags in B-017, B-022, B-029, B-030, B-031.",
+      "status": "pending_cp2"
+    }
+  ],
+
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda with Eli's calibration answers. Update calibration file. Set cp2_status to complete. Resume B-002 processing. Initialize crossref-index.json as active.",
+    "if_reclassification_needed": "Update B-001 with any newly identified signals. Adjust arc state accordingly. Resume B-002.",
+    "arc_initialization_note": "ARC-RF09-001 (systematic reality-distortion pattern) should initialize to CANDIDATE at B-001. Expected activation: Phase B/C escalation period. The ROW-6819 coaching admission and the Feb 2026 admitted-incident amplification sequence are the strongest anticipated arc activation candidates.",
+    "crossref_methodology_note": "RF-09-SUPPLEMENT.md Section 2.3 (forward awareness): when a reality claim is detected before contradicting evidence is processed, create an 'unresolved_claim' entry in the WATCHING arc. Resolve retroactively as later batches are processed. All resolved pairs go into crossref-index.json.",
+    "cross_rf_note": "RF-04 DARVO clusters are the primary compound candidate pool. RF-05 legal threat denials are Level A candidates. RF-08 coaching admission denial would be Level A. Generate compound flags (RF-09+RF-04) for all DARVO sequences that include documentable reality claims per RF09-ADD-003."
+  }
+}

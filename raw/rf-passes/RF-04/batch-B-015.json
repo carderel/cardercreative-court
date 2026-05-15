@@ -1,0 +1,193 @@
+{
+  "batch_id": "B-015",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2024-05-11", "end": "2024-06-13" },
+  "row_range": { "start": 5238, "end": 5624 },
+  "message_count": 387,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "mixed — moderate RF-04 activity; one Sev-3 event (first in RF-04 dataset); batch otherwise cooperative",
+    "conflict_ratio": "~0.12",
+    "rf04_activity": "elevated — 1 Sev-3 (false rape allegation, most severe event in dataset), 2 Sev-1 primaries; batch otherwise cooperative",
+    "notable_context": "Olivia on NC vacation with Melissa (May 18-26 — OBX, Corolla). Vaping dispute near park (May 13). Career/job change (Eli left Trans/[company] for Ryan's position — May 14). Abby pregnancy context: ROW-5270 ('new baby coming') in context of job change; combined with ROW-5309-5316 rape allegation, connects pregnancy to alleged incident. Melissa's father hospitalized (Jun 29 — outside batch). Olivia behavioral incident Jun 12 (hitting Melissa, 'bitch' comment). Father's Day event at Primrose (Jun 14). ROW-5542 Melissa seizure (Jun 5 — cooperative response). Bed bug/bug inquiry Jun 29 (outside batch — B-016)."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B015-001",
+      "severity": 1,
+      "date": "2024-05-12",
+      "row_ref": "ROW-5253-5255",
+      "type": "contemptuous_cascade_triggered_by_playfulness",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "summary": "May 12 contemptuous three-message cascade. Context: Eli and Melissa arranged park visit for Olivia; Eli sent a playful formal-English response (ROW-5252: 'Indeed, it doth sound most agreeable.'). Melissa's response: ROW-5253: 'You're a douche' — ADD-002 contemptuous labeling; ROW-5254: 'Go find something to do' — contemptuous dismissal; ROW-5255: 'Too much time on your hands?' — contemptuous character jab. Three-message contempt cluster triggered by a non-provocative playful message during cooperative co-parenting arrangement. Pattern: contemptuous response to Eli's neutral/positive communication; disproportionate to any stimulus. ARC-RF04-001-S39.",
+      "verbatim_key_messages": [
+        "ROW-5252 (Sent): \"Indeed, it doth sound most agreeable.\"",
+        "ROW-5253 (Received): \"You're a douche\"",
+        "ROW-5254 (Received): \"Go find something to do\"",
+        "ROW-5255 (Received): \"Too much time on your hands?\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B015-002",
+      "severity": 1,
+      "date": "2024-05-14",
+      "row_ref": "ROW-5267-5272",
+      "type": "contemptuous_character_attack_career + new_baby_framing",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "May 14 career character attack cluster. Context: Eli announces he left his previous employer (Trans/[company]) and accepted a position with Ryan (new employer). ROW-5267: 'You got fired then I suspect' — contemptuous reframing of Eli's career decision as concealed firing. ROW-5268: 'I don't believe that you quit. You always get fired because you don't put in the effort' — two-part contemptuous character attack: (a) false-disbelief framing, (b) 'always get fired' character generalization attributing firing as fixed personal trait (effort-deficiency). ROW-5270: 'So you thought with a new baby coming it would be better to be away from the house so you don't...' [message truncated] — 'new baby coming' framing connects Eli's job change to flight from domestic consequences; in context of same-session ROW-5301-5316 rape allegation, implies fleeing accountability for alleged incident. ROW-5271: 'I don't buy it' — dismissive false-disbelief repetition. ARC-RF04-001-S40.",
+      "verbatim_key_messages": [
+        "ROW-5266 (Sent): \"I am not working from home anymore except Mon and Fri, in the office Tue, Wed & Thurs.  I quit Trans[...]\"",
+        "ROW-5267 (Received): \"You got fired then I suspect\"",
+        "ROW-5268 (Received): \"I don't believe that you quit.  You always get fired because you don't put in the effort\"",
+        "ROW-5270 (Received): \"So you thought with a new baby coming it would be better to be away from the house so you don't\"",
+        "ROW-5271 (Received): \"According to you wow never paid on time and now you go back to that voluntarily. I don't buy it\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B015-003",
+      "severity": 3,
+      "date": "2024-05-14",
+      "row_ref": "ROW-5301-5316",
+      "type": "false_rape_allegation + self_distrust_predation_insinuation + inadequate_father_enumeration",
+      "arc_ref": ["ARC-RF04-001", "ARC-RF04-002"],
+      "addenda_applied": [],
+      "compound": "COMP-RF04-014",
+      "summary": "May 14 false rape allegation cluster — FIRST SEV-3 EVENT IN RF-04 DATASET. Context: Eli expressed concern about Olivia going unsupervised to Aston's house (summer care arrangements). ROW-5301: 'I'm way more comfortable with her spending a whole day with them than you' — inadequate-father escalation: strangers safer than Olivia's own father. ROW-5302: 'You'd rather too. That's good' — twists Eli's parenting concern into self-admission (Eli agrees he shouldn't have unsupervised access). ROW-5303: 'But that's also really concerning that you don't trust yourself either' — EXTRAORDINARY reframe: Eli's legitimate safety concern about Aston's home becomes admission that Eli doesn't trust himself with Olivia — predation insinuation directed at Olivia (not Abby). ROW-5306: 'I've got quite a few reservations about her staying with you.' ROW-5307: '1. You chose a cat over your daughter.' ROW-5308: '2. You have the ability to see her but choose to do so for about 3 hours a week.' ROW-5309: '3. The more I think about the night Abby was drunk the more I wonder what your intentions were and what you actually ma[de happen]' — EXPLICIT RAPE ALLEGATION: Melissa revisits a past incident ('the night Abby was drunk') and states she wonders what Eli's 'intentions were' and what 'actually happened.' ROW-5310: 'You clearly set her up to get drunk and that was after sending her weird messages sexual in nature. Then as long as Milo[...]' — deliberate-intoxication-for-assault framing + sexual communications allegation; Milo's presence noted. ROW-5311: 'That kid [Milo] was up there crying a long time.' ROW-5312: 'I don't know why you gave her a bottle of tequila' — weapon-of-assault framing. ROW-5313: 'The more I've thought of that night the more I really question what really happened.' ROW-5314: 'At the time I didn't think anything of it except she was really drunk because I didn't think you could do something like[...]' — explicit admission she now believes Eli capable of rape. ROW-5315: 'Then the way she was yelling and fighting after I just thought she was really out of it but now I wonder if she still th[...]' — 'yelling and fighting' reframed as possible resistance. ROW-5316: 'Then I remember that you said you told her not to tell anyone that she had been raped before because you had a friend th[...]' — most damaging: alleges Eli instructed Abby to conceal rape (implying he is the perpetrator). Structure: (a) inadequate-father enumeration establishes 'reservations,' (b) self-distrust insinuation eliminates Eli's moral standing, (c) false rape allegation delivered as accumulated-suspicion narrative. Delivered same day as ROW-5268 career attack; ROW-5270 'new baby coming' framing connects the alleged incident to Abby's possible pregnancy. COMP-RF04-014 (RF-04+RF-15+RF-05+RF-01). ARC-RF04-001-S41.",
+      "verbatim_key_messages": [
+        "ROW-5301 (Received): \"I don't know why that would be a firm no. I'm way more comfortable with her spending a whole day with them than you\"",
+        "ROW-5303 (Received): \"But that's also really concerning that you don't trust yourself either\"",
+        "ROW-5306 (Received): \"I've got quite a few reservations about her staying with you\"",
+        "ROW-5307 (Received): \"1.  You chose a cat over your daughter\"",
+        "ROW-5308 (Received): \"2.  You have the ability to see her but choose to do so for about 3 hours a week\"",
+        "ROW-5309 (Received): \"3.  The more I think about the night Abby was drunk the more I wonder what your intentions were and what you actually ma...\"",
+        "ROW-5310 (Received): \"You clearly set her up to get drunk and that was after sending her weird messages sexual in nature. Then as long as Milo...\"",
+        "ROW-5312 (Received): \"I don't know why you gave her a bottle of tequila\"",
+        "ROW-5314 (Received): \"At the time I didn't think anything of it except she was really drunk because I didn't think you could do something like...\"",
+        "ROW-5315 (Received): \"Then the way she was yelling and fighting after I just thought she was really out of it but now I wonder if she still th...\"",
+        "ROW-5316 (Received): \"Then I remember that you said you told her not to tell anyone that she had been raped before because you had a friend th...\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B015-004",
+      "severity": 1,
+      "date": "2024-06-13",
+      "row_ref": "ROW-5606",
+      "type": "child_relay_guilt_fathers_day",
+      "arc_ref": "ARC-RF04-002",
+      "addenda_applied": [],
+      "summary": "Jun 13 Father's Day guilt relay. Context: Eli informs Melissa he cannot attend the Father's Day event at Primrose daycare (3:30-4:30 PM) due to a work meeting (ROW-5608: 'I have a meeting in that window'). ROW-5606: 'She's going to be sad that you won't be there and the other dads will' — child's anticipated emotional distress relayed as inadequate-father lever. 'The other dads will' — explicit comparison framing Eli as the absent father against a backdrop of present fathers. Context note: Eli offers to pick Olivia up the night before instead (ROW-5605). ARC-RF04-002-S12.",
+      "verbatim_key_messages": [
+        "ROW-5605 (Sent): \"Not going to be able to make it tomorrow to primrose.  Can I pick her up tonight instead?\"",
+        "ROW-5606 (Received): \"She's going to be sad that you won't be there and the other dads will\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B015-P01",
+      "row_ref": "ROW-5259-5261",
+      "date": "2024-05-13",
+      "type": "child_distance_relay_to_undercut_factual_defense",
+      "note": "ROW-5259: 'She said it was 6 feet' — child-relay used to contradict Eli's stated vaping distance (Eli: 'over ten feet'; Olivia: 'six feet'). RF-11 cross-tag (child instrumentalized in adult dispute). Mild ARC-RF04-002 adjacent; no escalation."
+    },
+    {
+      "flag_id": "RF04-B015-P02",
+      "row_ref": "ROW-5566-5567",
+      "date": "2024-06-09",
+      "type": "cross_rf_threat",
+      "note": "ROW-5566: 'If my baby drowns I will murder you' + ROW-5567: 'For real though' — direct threat against Eli contingent on harm to Olivia during his parenting time. RF-05 primary (direct threat / intimidation). RF-04 peripheral: contemptuous framing of Eli's water supervision as negligent in advance of any incident. Note: 'For real though' intensifies the threat as not purely rhetorical."
+    },
+    {
+      "flag_id": "RF04-B015-P03",
+      "row_ref": "ROW-5599",
+      "date": "2024-06-12",
+      "type": "inadequate_father_jab",
+      "note": "ROW-5599: 'Your kid is out of control' — contemptuous inadequate-father framing; attributes Olivia's behavioral incident (hitting Melissa, saying 'bitch') to Eli's parenting. Brief; in context of disciplinary exchange."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S39",
+          "batch": "B-015",
+          "date": "2024-05-12",
+          "row": "ROW-5253-5255",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'You're a douche' + 'Go find something to do' + 'Too much time on your hands?' — three-message contempt cascade triggered by Eli's non-provocative playful formal response during cooperative arrangement."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S40",
+          "batch": "B-015",
+          "date": "2024-05-14",
+          "row": "ROW-5267-5272",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'You got fired then I suspect' + 'You always get fired because you don't put in the effort' + 'new baby coming' framing — contemptuous character attack on Eli's career announcement; effort-deficiency generalization as fixed character trait."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S41",
+          "batch": "B-015",
+          "date": "2024-05-14",
+          "row": "ROW-5301-5316",
+          "severity": 3,
+          "calibration_status": "analysis",
+          "summary": "FALSE RAPE ALLEGATION CLUSTER — first Sev-3 event in RF-04 dataset. 'The more I think about the night Abby was drunk... wonder what your intentions were and what you actually made happen.' + 'You clearly set her up to get drunk after sending her weird messages sexual in nature.' + 'I don't know why you gave her a bottle of tequila.' + 'The way she was yelling and fighting' (alleged resistance). + 'You told her not to tell anyone that she had been raped before.' Enumerated inadequate-father list (cat, 3 hrs/week) leads to rape allegation as third 'reservation.' ROW-5303 self-distrust insinuation re: Olivia. COMP-RF04-014 (RF-04+RF-15+RF-05+RF-01)."
+        }
+      ],
+      "signal_count_after": 41
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S12",
+          "batch": "B-015",
+          "date": "2024-06-13",
+          "row": "ROW-5606",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'She's going to be sad that you won't be there and the other dads will' — Father's Day event guilt relay; child emotional state relayed as inadequate-father lever; 'other dads will' comparison framing."
+        }
+      ],
+      "signal_count_after": 12
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-014",
+      "batch": "B-015",
+      "date": "2024-05-14",
+      "row_ref": "ROW-5301-5316",
+      "rf_tags": ["RF-04", "RF-15", "RF-05", "RF-01"],
+      "summary": "Fourteenth compound multi-RF episode — HIGHEST SEVERITY IN DATASET. RF-04 (Sev-3: false rape allegation delivered as enumerated inadequate-father reservations; ROW-5303 self-distrust insinuation re: Olivia; ARC-RF04-001-S41) + RF-15 (false sexual crime allegation — escalation from predation-framing pattern to explicit rape allegation; most severe RF-15 event in dataset) + RF-05 (weaponizable false rape allegation; same-session court threat ROW-5699 context; intimidation via legal weaponization potential) + RF-01 (inadequate/predatory-father narrative: 'I'm more comfortable with strangers than with you' + self-distrust framing eliminates Eli's moral standing as protective parent; ARC-RF01-001 escalation). This event represents the apex escalation of the predation narrative arc: from 'she was 7 when you met' (B-003) → 'banging your niece' (B-010) → 'Abby preggers?' (B-014) → explicit rape allegation delivered as parental fitness concern (B-015)."
+    }
+  ],
+
+  "cp3_item": {
+    "id": "CP3-RF04-015",
+    "batch": "B-015",
+    "summary": "ROW-5301-5316 (May 14 B-015) — FIRST SEV-3 EVENT IN RF-04 DATASET: false rape allegation cluster. Melissa delivers enumerated 'reservations about her staying with you': (1) chose cat over daughter; (2) 3 hrs/week; (3) 'The more I think about the night Abby was drunk the more I wonder what your intentions were and what you actually made happen' — explicit rape allegation framing. ROW-5303: 'But that's also really concerning that you don't trust yourself either' — Eli's parenting concern about Aston's house reframed as admission he can't be trusted alone with Olivia. ROW-5316: 'You told her not to tell anyone that she had been raped before' — concealment-of-rape allegation. COMP-RF04-014 (RF-04+RF-15+RF-05+RF-01 — highest compound severity in dataset). ARC-RF04-001-S41. Context: same session as ROW-5270 'new baby coming' framing, connecting pregnancy to alleged incident. Predation narrative arc escalation peak: frivolous predation hints (B-003/B-004/B-006) → explicit sexual slur (B-010) → covert pregnancy framing (B-014) → explicit rape allegation as parental fitness argument (B-015)."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 4,
+    "severity_1": 3,
+    "severity_2": 0,
+    "severity_3": 1,
+    "peripheral_flags": 3,
+    "compound_patterns": 1,
+    "arc_rf04_001_signals_added": 3,
+    "arc_rf04_002_signals_added": 1
+  }
+}

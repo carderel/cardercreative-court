@@ -1,0 +1,66 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-008",
+    "row_range": { "start": 2580, "end": 2954 },
+    "date_range": { "start": "2023-06-02", "end": "2023-07-15" },
+    "message_count": 375,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 375,
+    "primary_flags": 1,
+    "primary_severity_distribution": { "1": 1, "2": 0, "3": 0 },
+    "peripheral_flags_total": 1,
+    "peripheral_rf_distribution": { "RF-04": 1 },
+    "no_flag_messages": 374,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B008-001",
+      "row_range": "ROW-2724 and ROW-2821",
+      "timestamp": "2023-06-16 and 2023-06-30",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-2724: 'I'm going to hit you with a contempt of you don't pay' | ROW-2821: 'Seeing if you're gonna pay or if I need to go file the motion'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Fifth and sixth instances of financial-contempt/motion-filing threat. ADD-002: Sev-1 (recurring pattern, paper tiger trajectory). 'Hit you with a contempt' — aggressive phrasing ('hit') that combines contempt threat with combative language. 'File the motion' — specific reference to filing a formal court motion, slightly more concrete than 'file contempt' framing. Both instances are in the established compliance-pressure cycle: payment delayed → contempt threatened → payment made. No new threat category.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "ROW-2924-2951 (RF-04 pass COMP-RF04-008): Jul 14-15 birthday event compound — Abby 'insecure and immature' + 'dump her' + 'you're a shit dad' + gaslighting sequence. RF-04 primary. RF-05 peripheral: 'shit dad' framing contributes to compliance-pressure environment but no direct threat language in this specific cluster per RF-05 taxonomy.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "Two separate instances in June 2023, approximately two weeks apart. Both in the payment-enforcement context. ROW-2936 (Jul 14): 'We all know it's Abby that's not letting you go because she is insecure and immature' — RF-04 Abby-causation; not RF-05.",
+      "pattern_tags": ["contempt_filing_threat", "motion_filing_threat", "financial_compliance", "aggressive_phrasing"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'I'm going to hit you with a contempt of you don't pay' (ROW-2724)"
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0
+  },
+
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+
+  "batch_observations": {
+    "tone_assessment": "B-008 (Jun-Jul 2023) continues the established financial-contempt pattern with two more instances. The arc is consistent and the threat type is predictable at this stage. Low-conflict ratio batch (0.06) with minimal RF-05 signal outside the payment-enforcement pattern."
+  }
+}

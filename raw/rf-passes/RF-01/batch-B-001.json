@@ -1,0 +1,189 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-001",
+    "row_range": {"start": 2, "end": 366},
+    "mms_row_range": {"start": 9981, "end": 10108},
+    "date_range": {"start": "2022-01-11", "end": "2022-10-03"},
+    "message_count": 365,
+    "mms_count": 128,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "cp2_complete": true,
+    "cp2_completed_date": "2026-04-23",
+    "cross_rf_context_loaded": "RF-02-arc-state-final.json",
+    "notes": "CALIBRATION BATCH — CP2 review required before proceeding to B-002. Phase A baseline: communication is largely cooperative in this period. RF-01 signals are sparse and low-severity, consistent with triage heatmap showing hot periods Jan 2025/Feb 2025/Aug 2025. Gap between Jan 11 and Aug 22 is a data gap in source (no messages in that period). Three primary flags established as earliest candidate signals; none individually sufficient for arc promotion."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 365,
+    "primary_flags": 2,
+    "primary_flags_pre_calibration": 3,
+    "primary_severity_distribution": {"1": 1, "2": 1, "3": 0},
+    "calibration_dismissed": 1,
+    "calibration_elevated": 1,
+    "peripheral_flags_total": 5,
+    "peripheral_rf_distribution": {"RF-02": 3, "RF-04": 1, "RF-05": 1},
+    "no_flag_messages": 363,
+    "flag_rate": "0.5%"
+  },
+
+  "flagged_messages": [
+    {
+      "signal_id": "RF01-B001-S001",
+      "message_id": "ROW-43",
+      "timestamp": "2022-08-29 00:01:05 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "Olivia said you were yelling at her in church and someone saw her crying. She doesn't have to stand up at church",
+      "primary_rf": "RF-01",
+      "primary_severity": 1,
+      "primary_reasoning": "Melissa uses Olivia's reported account ('Olivia said you were yelling') to challenge Eli's parenting conduct during his custodial time, then overrides Eli's parenting decision by declaring 'She doesn't have to stand up at church.' Per RF-01 behavioral indicators: 'undermining the other parent's authority, parenting decisions, or relationship with the child.' Severity 1 because: (1) this is the earliest instance in the dataset; (2) church participation is a legitimate co-parenting discussion topic — ambiguity remains about whether this is concern-sharing or authority-undermining; (3) the 'Olivia said' framing uses the child as the vehicle for the challenge but does not rise to clear alienation. Flagged as pending CP2 calibration: 'Is there a pattern of Melissa using Olivia's reported words to challenge your parenting decisions, or was this an isolated concern?'",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "Melissa pivots Eli's church behavior concern into a criticism of his parenting conduct and judgment ('Check your own etiquette' in ROW-61). Mild emotional manipulation: framing Eli's parenting as the problem when he raised a co-parenting topic.",
+          "confidence": "medium"
+        }
+      ],
+      "context_notes": "Sequence: Eli took Olivia to church (his custodial time). Afterward, Melissa texts that Olivia reported Eli was 'yelling at her' and someone saw her crying. Eli explains he was not yelling but asked Olivia to stand respectfully. Eli then reveals (ROW-45): 'she whipped out the my mom said' — Olivia invoked Melissa's household rule to resist Eli's request during Eli's parenting time. This is the most analytically significant element: Olivia was equipped with Melissa's authority ('my mom said') to override Eli's parenting decisions during his custodial period. Melissa's subsequent messages (ROW-48-54) validate Olivia's sitting preference and criticize Eli's conduct rather than supporting his parental role.",
+      "pattern_tags": ["parenting_authority_undermining", "child_used_as_reporter", "cross_household_rule_invocation"],
+      "arc_references": ["ARC-RF01-001"],
+      "image_reference": null,
+      "quote_excerpt": "Olivia said you were yelling at her in church and someone saw her crying. She doesn't have to stand up at church",
+      "calibration_status": "confirmed",
+      "calibration_note": "CP2: Confirmed at Sev 1. 'My mom said' override is a confirmed recurring multi-occurrence pattern. Eli has addressed it with Olivia repeatedly: 'my rules are different at my house.' Melissa consistently sides with Olivia's account of Eli's conduct unless it serves her not to. Addenda RF01-ADD-003 and RF01-ADD-004 applied.",
+      "journal_crossref_date": "2022-08-29"
+    },
+    {
+      "signal_id": "RF01-B001-S002",
+      "message_id": "ROW-292",
+      "timestamp": "2022-09-27 01:12:19 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "You taught her that",
+      "primary_rf": "RF-01",
+      "primary_severity": 1,
+      "primary_reasoning": "Melissa explicitly attributes a negative child behavior directly to Eli's influence: 'You taught her that.' Per RF-01 behavioral indicators: 'blaming the other parent for the child's behavior; attributing negative traits or actions to the other parent's influence.' The follow-up ROW-293 ('Always remember that') amplifies this into a persistent attribution directive — instructing Eli to permanently associate the negative behavior with his own influence. Together, these messages establish a blame narrative: whatever Olivia did (captured in the accompanying video ROW-10060) is not incidental but a direct product of Eli's parenting. Severity 1 because: (1) single isolated incident; (2) the video content is unknown and the specific behavior being attributed is not stated; (3) early Phase A, no established pattern yet.",
+      "peripheral_flags": [],
+      "context_notes": "Full sequence: ROW-10060 (Sep 27 00:39:32) — Melissa sends Eli a video of Olivia doing something. ROW-290 (00:39:54) — 'We need to talk to her before Friday. 🤦🏼‍♀️' ROW-291 (00:50:58) — Eli responds '🙄😑' (dismissive). ROW-292 (01:12:19) — 'You taught her that.' ROW-293 (01:12:24) — 'Always remember that.' The 21-minute delay between Eli's dismissive response (ROW-291) and Melissa's attribution (ROW-292) suggests the attribution was sent in direct response to Eli's dismissiveness. 'Always remember that' is punitive framing — not collaborative co-parenting. The video content is unknown but the behavior was concerning enough for Melissa to want to discuss before an upcoming event ('before Friday') and to lay responsibility on Eli when he did not engage.",
+      "pattern_tags": ["negative_behavior_attribution", "blame_assignment", "punitive_directive"],
+      "arc_references": [],
+      "image_reference": "ROW-10060 (video — content confirmed by Eli: Olivia twerking, a family in-joke since age 2)",
+      "quote_excerpt": "You taught her that / Always remember that",
+      "calibration_status": "dismissed",
+      "calibration_note": "CP2: Dismissed. Olivia was twerking — confirmed by Eli as a recurring family inside joke since age ~2. Melissa's attribution ('You taught her that') in this specific context is not a genuine negative behavior attribution. Pattern type remains valid for future batches where the attributed behavior is genuinely negative. Addendum RF01-ADD-001 applied.",
+      "journal_crossref_date": "2022-09-27"
+    },
+    {
+      "signal_id": "RF01-B001-S003",
+      "message_id": "ROW-361",
+      "timestamp": "2022-10-02 20:33:55 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "We were singing savage love in the car.",
+      "primary_rf": "RF-01",
+      "primary_severity": 2,
+      "primary_reasoning": "Three-message sequence (ROW-361–363): Melissa describes a car sing-along where she sang a lyric from 'Savage Love' directly to Olivia ('did somebody break your heart?'), and Olivia responded 'yeah. My dad when he left me.' Melissa then relays this exchange verbatim to Eli. Per RF-01 behavioral indicators: 'child expressing negative feelings about the other parent that appear coached, primed, or facilitated.' ELEVATED to Sev 2 post-CP2: Eli confirms this is a coached narrative, not ambiguous. Melissa has 'been proclaiming the narrative since we split that I left to start a new family' and has 'said this multiple times in front of Olivia.' Olivia has expressed abandonment language directly to Eli in person, over the phone, and through Melissa. This is not a child organically processing divorce — it is a deliberately maintained narrative. The Savage Love relay is not transparent co-parenting; it is 'guilt not cooperative' (Eli's characterization). The setup (Melissa singing a leading heartbreak question directly to Olivia) combined with Olivia's scripted-sounding response confirms facilitation.",
+      "peripheral_flags": [],
+      "context_notes": "Full sequence: ROW-361 (20:33:55) 'We were singing savage love in the car.' ROW-362 (20:34:11) 'I sang \"did somebody break your heart?\"' ROW-363 (20:34:30) 'She said \"yeah. My dad when he left me\"'. Eli's response (ROW-364, 23:27:55): 'Aww' — Eli confirms this was a genuine response; he has consistently told Olivia she is his daughter no matter what and that what happened between her parents is not her fault. Eli notes Melissa began discussing the divorce with Olivia in abandonment terms at the very beginning ('I feel like this was discussed at the beginning of the divorce and Melissa has been subtly reinforcing it over the years').",
+      "pattern_tags": ["abandonment_framing", "child_disclosure_relay", "primed_exchange", "coached_narrative_confirmed"],
+      "arc_references": ["ARC-RF01-001"],
+      "image_reference": null,
+      "quote_excerpt": "She said 'yeah. My dad when he left me'",
+      "calibration_status": "elevated",
+      "calibration_note": "CP2: Elevated Sev 1 → Sev 2. Confirmed coached narrative. Addendum RF01-ADD-002 applied. All future abandonment language signals flagged at Sev 2 minimum.",
+      "journal_crossref_date": "2022-10-02"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-256_through_260",
+      "reason_noted": "Sep 22, 2022: Melissa shares Olivia's impression of Eli in the car — mocking his air fryer enthusiasm ('I have an air fryer. You should get an air fryer...') and pretending to hug and kiss the appliance. Melissa finds this hilarious. Near-boundary for RF-01: Olivia is mimicking/mocking Eli, and Melissa is sharing it approvingly with Eli. NOT flagged because: (1) the impression is affectionate ribbing, not contemptuous disparagement; (2) Melissa is sharing it with Eli directly, suggesting she finds it funny rather than encouraging covert derision; (3) a child imitating a parent's enthusiasm is developmentally normal. Group C — CP2 note: Is this pattern of Melissa sharing Olivia's 'impressions' of Eli something Eli recognizes? Does it feel playful or does it carry an edge?"
+    },
+    {
+      "message_id": "ROW-365",
+      "reason_noted": "Oct 2, 2022: 'She's sending you to voicemail not me.' Already primary RF-02 flag (ARC-RF02-001 signal). Near-boundary for RF-01 primary: the 'not me' comparison frames Olivia's communication avoidance as selective toward Eli, potentially reinforcing differential attachment narrative. NOT flagged as RF-01 primary because the framing is factual (Eli is going to voicemail while Melissa is in contact) and the communication gatekeeping is already established as RF-02 arc pattern. Retained as RF-01 peripheral cross-reference. Group C — CP2 note: How does Eli experience this framing when Melissa highlights that Olivia will talk to her but not to him?"
+    },
+    {
+      "message_id": "ROW-50_through_61",
+      "reason_noted": "Aug 29, 2022: Melissa's counter-criticism of Eli during church behavior discussion ('You want to tell her about being respectful at church but you text me while church is going on...Check your own etiquette'). NOT flagged as RF-01 because this criticism is directed at Eli directly, not through or about the child. RF-04/RF-05 peripheral. Group C."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-122",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "cross_rf_note": "Already primary RF-02 flag (ARC-RF02-001 signal 1). In RF-01 context: Melissa relaying 'She said she doesn't want to talk' creates a pattern where the child's stated preference is used to justify blocked phone access. If this preference is managed rather than organic, it is RF-01 adjacent (encouraging child's avoidance of other parent). Low confidence for RF-01 at this stage.",
+      "confidence": "low"
+    },
+    {
+      "message_id": "ROW-185",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "cross_rf_note": "Already primary RF-02 flag (ARC-RF02-001 signal 4). In RF-01 context: Second instance of Melissa relaying child's stated unwillingness to talk. Same RF-01 adjacency concern as ROW-122. The additional framing 'She's been in a mood' normalizes Olivia's avoidance of Eli without exploring it.",
+      "confidence": "low"
+    },
+    {
+      "message_id": "ROW-365",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "cross_rf_note": "Already primary RF-02 flag (ARC-RF02-001 signal 5). In RF-01 context: 'Not me' framing creates comparison between Olivia's willingness to communicate with Melissa vs. Eli. Third RF-01-adjacent cross-reference from the phone blocking arc.",
+      "confidence": "low"
+    },
+    {
+      "message_id": "ROW-335",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Oct 1, 2022: 'Are you stupid?' — derogatory language in response to Eli's scheduling confusion about the skate party timing. RF-04 primary observation (demeaning/contemptuous communication). Not RF-01 primary because it is directed at Eli in co-parenting communication, not through or about Olivia.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-336",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "Oct 1, 2022: 'When you thought you heard your parents talking about your brother being slow are you sure they weren't talking about you' — personal attack using family members, implying intellectual disability. RF-05 primary observation (intimidation/demeaning). Immediately follows ROW-335. Not RF-01 primary.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 1,
+    "arcs_created_this_batch": ["ARC-RF01-001"],
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_arc_detail": {
+      "arc_id": "ARC-RF01-001",
+      "name": "Abandonment/Blame Attribution Narrative",
+      "status": "candidate",
+      "signals": 3,
+      "signal_refs": ["RF01-B001-S001", "RF01-B001-S002", "RF01-B001-S003"],
+      "note": "Three candidate signals: (1) church incident — Olivia's 'my mom said' invocation during Eli's time; (2) 'You taught her that / Always remember that' — explicit negative behavior attribution; (3) Savage Love / 'My dad when he left me' — abandonment language in child's relay. Signals are sparse (3 across 535 messages in an 8+ month window), all Sev 1, all in Phase A baseline. Pattern direction: Melissa attributing negative qualities/feelings to Eli's parenting and relaying child's apparent negative feelings about Eli. Not yet sufficient for WATCHING promotion — needs signal confirmation in subsequent batches. Note compound pattern potential with ARC-RF02-001 (phone blocking): the 'she doesn't want to talk' relay pattern is RF-01 adjacent if phone avoidance is facilitated."
+    }
+  },
+
+  "cooperative_data_notes": "B-001 contains substantial cooperative co-parenting content. Multiple instances of Melissa relaying Olivia's positive wishes to see Eli (ROW-236, ROW-354, ROW-358). Melissa shares photos, videos, school/medical updates openly. Communication tone in Sep-Oct 2022 is largely constructive. The RF-01 signals identified exist within an otherwise cooperative baseline — this is analytically important: the blame attribution and abandonment framing are notable precisely because they contrast with the surrounding cooperative tone. They represent early, isolated pattern seeds that will require longitudinal tracking.",
+
+  "checkpoint_items_generated": {
+    "cp2_count": 3,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": [
+      "CP2: All 3 primary flags pending calibration review",
+      "CP2-GROUP-A: ROW-292-293 — 'You taught her that / Always remember that' (clear negative behavior attribution, Group A candidate)",
+      "CP2-GROUP-B: ROW-361-363 — Savage Love / abandonment framing (ambiguous intent — co-parenting transparency vs. weaponized relay, Group B)",
+      "CP2-GROUP-B: ROW-43 — Church incident (ambiguous — parenting concern vs. authority undermining, Group B)",
+      "CP2-GROUP-C: ROW-256-260 — Olivia's air fryer impression of Eli (near-boundary, NOT flagged — affectionate ribbing)",
+      "CP2-GROUP-C: ROW-365 — 'She's sending you to voicemail not me' (near-boundary, RF-02 primary, RF-01 peripheral only)",
+      "CP2-GROUP-C: ROW-50-61 — Church counter-criticism directed at Eli (near-boundary, NOT RF-01 — directed at Eli not through child)"
+    ]
+  }
+}

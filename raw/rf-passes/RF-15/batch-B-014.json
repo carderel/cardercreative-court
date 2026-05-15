@@ -1,0 +1,56 @@
+{
+  "batch_id": "B-014",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2024-03-27",
+    "end": "2024-05-09"
+  },
+  "row_range": {
+    "start": 4762,
+    "end": 5168
+  },
+  "message_count": 506,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "WATCHING",
+    "ARC-RF15-002": "WATCHING"
+  },
+  "arc_signals_cumulative": 4,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "1 primary RF-15 flag(s). See primary_flags for details."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF15-B014-001",
+      "date": "2024-04",
+      "row_ref": "ROW-4762-5168_range",
+      "severity": 1,
+      "rf15_category": "C",
+      "direction": "received",
+      "summary": "Apr 2024 incest-framing instance. Pre-cursor to May 2024 false danger cluster. RF-04 B-014 has 3 primary flags including a Sev-1 with RF-15 cross-reference. Category C (incest/predation framing building toward B-015/B-016 peak). Sev-1.",
+      "exact_quote": "Apr 2024 \u2014 see RF-04 B-014 for exact text.",
+      "arc_associations": [
+        "ARC-RF15-001",
+        "ARC-RF15-002"
+      ],
+      "arc_signal_number": 6,
+      "compound_patterns": [
+        "RF-04+RF-15"
+      ]
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

@@ -1,0 +1,47 @@
+{
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "generated_from_cp2": "2026-04-26",
+  "cp2_completed": "2026-04-27",
+  "status": "confirmed",
+
+  "cp2_answers_summary": {
+    "Q1_verbal_denials": "Yes — Melissa made verbal denials of statements she made outside the text record, but Eli cannot recall specific incidents. Apply: no standalone primary flags from verbal-only denials without text corroboration; flag when a text claim denies something with no textual origin (e.g., denying a verbal agreement).",
+    "Q2_genuine_vs_deliberate": "Yes to both — some areas of genuine different recollection AND some deliberate misrepresentation. Calibration threshold: apply Sev-1 when the denial concerns an area with plausible genuine disagreement; apply Sev-2 when the denial involves a documented fact or shows clear pattern/repetition.",
+    "Q3_coaching_denial": "No — Melissa has NOT denied the ROW-6819 coaching admission. ROW-6819 stands undenied. Eli's observation: 'That admission of coaching is interesting. Now that is benign in the regard to the subject but that just means she is comfy coaching on all subjects.' ROW-6819 treated as a forward anchor (flag any denial if encountered in B-002+) but not a current cross-reference pair.",
+    "Q4_feb15_prior_statements": "No — Melissa did not acknowledge prior to Feb 2026 that Eli had never been physically violent with her or Olivia. The Feb 15 amplification (raised voice → verbal abuse → traumatized → drinking problem) is Level C/D distortion without a Level A anchor from prior statements.",
+    "Q5_legal_threat_denials": "No additional instances beyond the documented Jul 2025 'There's no threats' denial (ROW-9964). Apply ADD-001 Level A rule for ROW-9964.",
+    "Q6_crazy_making_things_up": "Yes, multiple times confirmed. Melissa has called Eli crazy/making things up/unstable on multiple occasions. Elevated to ADD-004 sustained pattern addendum."
+  },
+
+  "addenda": [
+    {
+      "id": "RF09-ADD-001",
+      "title": "Cross-Reference Evidence Classification Framework",
+      "rule": "Apply the RF-09-SUPPLEMENT.md evidence-level hierarchy across all 31 batches: Level A (direct textual contradiction: 'I never said X' + ROW showing X was said) = Sev-2 minimum; Level B (agreement denial: 'we never agreed to that' + documented agreement) = Sev-2; Level C (event rewrite: 'that's not what happened' + record sequence showing what happened) = Sev-1 to Sev-2 depending on significance of the event rewritten; Level D (minimization: 'it wasn't that bad' + record sequence showing severity) = Sev-1; Level E (reality questioning: 'you're crazy / making things up' without specific denied claim) = Sev-1 per incident, Sev-2 when sustained across multiple episodes. Severity elevation to Sev-3: reserved for sustained Level A denial of the same documented fact across 3+ instances, or Level A combined with sustained 'you're crazy' language that frames Eli's entire account as delusional.",
+      "why": "Q2 confirmed that some denials are deliberate and some are genuine different recollections. Conservative threshold per Q2: apply higher severity (Sev-2) only when denial concerns documented facts; apply Sev-1 for areas with plausible genuine disagreement. Q6 confirmed the 'you're crazy' pattern is sustained across multiple instances — this elevates the arc severity over time.",
+      "how_to_apply": "For each message, detect reality claims (Section 2.1 claim trigger phrases in supplement). Apply backward search protocol (Section 2.2): (1) check current batch; (2) check prior batch outputs; (3) if no prior contradiction found, create unresolved_claim entry in arc WATCHING state. All cross-reference pairs go in crossref-index.json with full documentation per Section 3 schema."
+    },
+    {
+      "id": "RF09-ADD-002",
+      "title": "ROW-6819 Coaching Admission — Forward Anchor, Undenied",
+      "rule": "ROW-6819 (B-018, Aug 2024: 'I've told her to have conversations and I also give her things to tell you about. I remind her of some of the things she's told me') stands undenied as of dataset close. Do NOT generate a cross-reference pair for this event (no denial exists). Treat as a forward anchor: if any message in B-002 through B-031 contains denial of coaching Olivia, flag as Level A RF-09 Sev-2. Contextual note for all coaching-adjacent flags: 'Eli observed at CP2 that Melissa's comfort with the admission suggests coaching is habitual and normalized across subjects, not situational' — this is a narrative observation for synthesis, not a primary classification driver.",
+      "why": "Q3 confirmed no subsequent denial was made. The absence of denial is itself significant: Melissa saw no need to walk back the coaching admission, which is consistent with Eli's observation that it reflects normalized behavior.",
+      "how_to_apply": "B-002 through B-031: scan for any 'I never told Olivia what to say' or 'I don't coach her' type language. If found, create Level A cross-reference pair with ROW-6819. If not found, note 'ROW-6819 coaching admission stands undenied at dataset close' in the arc state synthesis notes."
+    },
+    {
+      "id": "RF09-ADD-003",
+      "title": "DARVO-Denial Compound Rule",
+      "rule": "When a message cluster contains both (a) a DARVO sequence (attack + reverse-victim-offender framing) AND (b) a specific documentable reality denial, compound-flag RF-09 primary + RF-04 primary. Pure DARVO without a documentable denial claim is RF-04 only. Activation criteria for compound: Melissa explicitly states 'I never said X,' 'that didn't happen,' 'there's no threat,' 'you agreed,' 'you are delusional,' or similar within a DARVO sequence AND the claim is cross-referenceable against text. Apply this retroactively when B-017, B-022, B-027, B-029, B-030, B-031 are processed — these batches contain known DARVO-denial compound candidates from RF-04 cross-reference analysis. Severity: Sev-2 when the denied statement is documentable Level A or B; Sev-1 when Level C-D.",
+      "why": "The RF-04 pass already identified COMP-RF04-019 (B-022) as an RF-04+RF-09 compound at the preliminary stage. The DARVO-denial overlap is systematic — Melissa's DARVO mechanism in later batches consistently includes explicit reality claims that are documentable. Q2 and Q6 both confirm deliberate misrepresentation patterns.",
+      "how_to_apply": "Priority DARVO-denial batches to watch: B-017 (Aug 4 mega-cluster); B-022 (Jan 15 'you gaslight everything'); B-027 (Jul 19 'there's no threats' = Level A confirmed); B-029 (Nov 7-8 'you are delusional' + 'you haven't gone along'); B-030 (Feb 15 amplification); B-031 (Apr 12 bruise DARVO). For each, identify whether the DARVO sequence includes documentable reality claims and cross-reference accordingly."
+    },
+    {
+      "id": "RF09-ADD-004",
+      "title": "Sustained 'You're Crazy / Making Things Up' Pattern",
+      "rule": "Eli confirmed (CP2 Q6) that Melissa has accused him of being crazy, making things up, or having an unstable perception of reality on multiple occasions. Apply as RF-09 Level E with the following arc escalation: first documented instance = Sev-1 (arc candidate); second documented instance in the same conflict period = Sev-1 (arc watching); sustained use across multiple conflict periods = Sev-2 (arc active). Track instances in the arc state. The specific formulations to watch: 'you're delusional' (ROW-14755, B-029 confirmed); 'you gaslight' directed at Eli (ROW-7724-7725, ROW-7740, B-022 confirmed); 'you're making things up'; 'that's not what you heard'; 'you're imagining things'; 'you have a problem.' Note: the DARVO inversion (accusing Eli of gaslighting while Melissa is engaging in DARVO) is a distinct sub-pattern — flag these as RF-09+RF-04 compound per ADD-003.",
+      "why": "Q6 confirmed multiple instances. The 'you gaslight everything' language in B-022 (ROW-7740) is particularly significant because it's an explicit projection of RF-09 behavior onto Eli in the middle of a DARVO sequence — a documented case of the manipulative party naming their own behavior and attributing it to the victim.",
+      "how_to_apply": "In each batch, scan for any language that directly challenges Eli's perception, memory, or sanity. Flag each instance individually (Level E) and update arc count. Note whether the accusation is specific ('you lied about X') or global ('you gaslight everything'). Global accusations are higher severity because they attack Eli's reality-perception wholesale rather than contesting a specific fact."
+    }
+  ]
+}

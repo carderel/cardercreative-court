@@ -1,0 +1,83 @@
+{
+  "batch_id": "B-027",
+  "date_range": {
+    "start": "2025-07-01",
+    "end": "2025-08-02"
+  },
+  "row_range": {
+    "orig_row_min": 7944,
+    "orig_row_max": 15465,
+    "note": "Date-filtered batch; orig_row range reflects unsorted Excel order within date window"
+  },
+  "message_count": 360,
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": {
+    "ARC-RF14-001": "ACTIVE",
+    "ARC-RF14-002": "ACTIVE"
+  },
+  "arc_signals_cumulative_at_batch_start": {
+    "ARC-RF14-001": 8,
+    "ARC-RF14-002": 6
+  },
+  "calibration_addenda_active": [
+    "RF14-ADD-001", "RF14-ADD-002", "RF14-ADD-003", "RF14-ADD-004",
+    "RF14-ADD-005", "RF14-ADD-006", "RF14-ADD-007", "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "arc_signals_this_batch": {
+      "ARC-RF14-001": 0,
+      "ARC-RF14-002": 1
+    },
+    "note": "Melissa explicitly discloses she is taking Percocet (opioid narcotic) and is on medication that impairs her ability to drive and make legal decisions — while responsible for Olivia's care. Context: scheduling dispute Jul 19, 2025. ROW-9942 is the first disclosure (Percocet); ROW-13954 is the extended admission (can't drive, can't make legal decisions). Both are Received direction. Genuine RF-14 Sev-1 signal for ARC-RF14-002."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-014",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF14-002",
+      "arc_signal_number": 7,
+      "date": "2025-07-19",
+      "orig_rows": ["9942", "13954", "13960"],
+      "messages": [
+        {
+          "orig_row": "9942",
+          "direction": "Received",
+          "text": "I'm getting my prescriptions now but I'm going to take a Percocet and sleep"
+        },
+        {
+          "orig_row": "13954",
+          "direction": "Received",
+          "text": "I'm taking medicine that I'm not allowed to drive a vehicle or make legal decisions while on but you think it's a great idea to bring her ho[me]..."
+        },
+        {
+          "orig_row": "13960",
+          "direction": "Received",
+          "text": "I'm looking out for her best interest. I think she is better with a parent that is not under the influence of medication"
+        }
+      ],
+      "classification": "RF-14 primary Sev-1 — Melissa's narcotic use (Percocet) while caregiving responsibility active. Self-disclosure: (1) explicitly states she is taking Percocet (schedule II opioid); (2) admits the medication prohibits her from driving or making legal decisions; (3) simultaneously argues she is the better caregiver (ROW-13960). Olivia's care situation during this period unclear — scheduling dispute about where Olivia would be that evening. ARC-RF14-002 Genuine Safety Documentation Signal 7.",
+      "addendum_applied": "ADD-006 (Eli's references factual — not applicable here; this is Melissa self-disclosing narcotic use). ADD-003 not applicable (Gary not involved). Core RF-14 substance safety signal: impaired caregiver/substance use while caregiving.",
+      "cross_rf_note": "No RF-15 overlap — this is Melissa's own disclosure, not a fabricated allegation. Standalone RF-14 primary."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals in B-027. ACTIVE state holds. 8 cumulative signals.",
+      "state": "ACTIVE",
+      "signals_cumulative": 8
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "S-014: Melissa Percocet disclosure Jul 19, 2025 — narcotic use while caregiving. Signal 7.",
+      "state": "ACTIVE",
+      "signals_cumulative": 7
+    }
+  ]
+}

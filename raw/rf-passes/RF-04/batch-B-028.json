@@ -1,0 +1,290 @@
+{
+  "batch_id": "B-028",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2025-08-28", "end": "2025-10-16" },
+  "row_range": { "start": 8197, "end": 14546 },
+  "message_count": 502,
+  "phase": "B/C",
+  "analysis_date": "2026-04-24",
+
+  "batch_notes": "Three-block data structure: (1) Sequential block ROW-8197–8332 (Sep 3–Oct 16, predominantly Sent/Eli messages); (2) Third parallel block ROW-14237–14546 (Aug 28–Oct 16, predominantly Received/Melissa messages). Unique messages ~446 after media-only row exclusions. B-028 is Phase B/C boundary batch (phase_boundary: true per triage). Note: B-028 third parallel block starts at ROW-14237 (Aug 28) overlapping with B-027's endpoint date (Aug 28); Aug 28 messages in third parallel block are assigned to B-028 as the initiation of the Labor Day visit refusal cascade. Triage row_range (14236–8332) is corrupt; authoritative date range is Aug 28–Oct 16.",
+
+  "batch_summary": {
+    "dominant_tone": "elevated conflict — visit refusal cascade (Aug 28-30, Oct 10) + multiple legal threat clusters (Sep 17, Sep 28, Oct 4); significant cooperative periods: Sep 2-13 thumb injury coordination + dance class logistics, Sep 24-26 knee injury coordination, Oct 1-2 birthday party logistics; B/C phase boundary batch with transition visible: Phase B attack patterns continuing while Phase C visit refusal entrenchment beginning",
+    "conflict_ratio": "~0.29 batch overall (triage); ~0.50-0.70 within primary flag clusters",
+    "rf04_activity": "high — 6 primary flags (3 Sev-2, 3 Sev-1): Aug 28-30 visit refusal DARVO; Sep 2 image-based harm allegation (new mechanism); Sep 8 'idiot' ADD-002; Sep 17 'agreement ready to sign' full custody legal cluster (COMP-RF04-025); Sep 28 contempt threats; Oct 4-7 child fear relay 'so afraid of you' cluster (COMP-RF04-026)",
+    "notable_context": "Aug 28-29: Labor Day weekend visit refusal — Olivia 'adamant she doesn't want to go'; Melissa offering alternatives (trade weekends, festivals); Eli invoking parenting plan; Melissa framing prior visit gap as safety-conditional ('I agreed for her to go back when there was a safe environment'). Sep 2: Melissa sends image (ROW-14294) then asks 'Why are you smacking her?' — new image-based harm allegation mechanism; third point in harm allegation trajectory. Sep 3-4: Dance class logistics (cooperative); thumb fracture from Aug 31 (Melissa sharing thorough medical updates — significantly cooperative). Sep 8: Exchange dropoff dispute triggers 'idiot.' Sep 17: Homework dispute + 'Abby said I wasn't the boss' relay triggers major cluster: full custody 'agreement ready to sign' escalation (most advanced legal threat in dataset). Sep 19: Eli running late to dropoff triggers brief 'calling police' threat (ROW-8262) + 'filing contempt' threats. Sep 28: ~15-min late pickup triggers contempt filing threats. Oct 4-7: Return from weekend at Eli's — Melissa relays Olivia 'begging me not to say anything cause she's so afraid of you'; Abby-as-conflict-source (Abby told Olivia she was a 'horrible sister'); homework failure used as custody evidence. Oct 10: Second visit refusal in batch ('She says you're going to have to drag her out' ROW-14531; 'Olivia said don't bother coming' ROW-14541) — primarily RF-02; RF-04 peripheral."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B028-001",
+      "severity": 2,
+      "date": "2025-08-28",
+      "row_ref": "ROW-14237-14275",
+      "type": "DARVO + inadequate_father_historical + safe_environment_rewrite + do_you_boo_4th + visit_refusal_attribution",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Aug 28-30 visit refusal DARVO cluster. Context: Labor Day weekend visit refusal — Olivia refusing to come for Eli's weekend; Melissa communicating Olivia's position. ROW-14237: 'She may be having an issue adjusting to the change since she hasn't had overnights with you on many years, Milo has gotten older and now there is a baby. It may take time for her to adjust to that and patience and understanding is needed' — family-displacement/adjustment framing imported from Aug 14 B-027 pattern; prior-absence-as-cause attribution. ROW-14243: 'The conversation led her to scream into the couch and cry cause you kept trying to gaslight her about it' — DARVO gaslight accusation against Eli during a reported conversation with Olivia; reframes Eli's boundary-holding as traumatizing gaslight. ROW-14252: 'And you just didn't do it for 4 years' — contemptuous historical indictment; Olivia's current refusal attributed to Eli's prior 4-year absence. ROW-14256: 'I agreed for her to go back when there was a safe environment' — KEY: retroactive rewrite of prior visit gap period as safety-conditional; Melissa positions her own acquiescence in prior visits as having required a safety threshold; new mechanism: constructing retrospective safety narrative to normalize future safety-based gatekeeping. ROW-14259: 'Stop trying to blame me for your lack of interest' — DARVO dismissal of Eli's boundary-setting as blame-shifting. ROW-14270-14272: 'Someone should've told you that it wasn't optional for you / But you've made it optional for the last several years / So how do you expect her to understand now?' — Olivia's visit refusal attributed entirely to Eli's prior voluntary absence; DARVO: Melissa's role in facilitating/normalizing refusal erased. ROW-14275 (Aug 30): 'It's already been over week since you've seen her but you do you boo' — 4th 'do you boo' instance (B-025 ROW-9655 first; B-027 ROW-14162 second; B-027 ROW-14207 third); contemptuous dismissal of Eli's position in visit refusal dispute. ARC-RF04-001-S68. Key new mechanism: 'safe environment' retroactive rewrite — positions prior visit absence as having been Melissa's safety judgment rather than voluntary abandonment, creating future hook for safety-based gatekeeping.",
+      "verbatim_key_messages": [
+        "ROW-14243 (Received): \"The conversation led her to scream into the couch and cry cause you kept trying to gaslight her about it\"",
+        "ROW-14256 (Received): \"I agreed for her to go back when there was a safe environment\"",
+        "ROW-14259 (Received): \"Stop trying to blame me for your lack of interest\"",
+        "ROW-14271 (Received): \"Someone should've told you that it wasn't optional for you\"",
+        "ROW-14272 (Received): \"But you've made it optional for the last several years\"",
+        "ROW-14275 (Received): \"It's already been over week since you've seen her but you do you boo\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B028-002",
+      "severity": 1,
+      "date": "2025-09-02",
+      "row_ref": "ROW-14294-14295",
+      "type": "image_based_harm_allegation + physical_harm_trajectory + new_mechanism",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Sep 2 image-based harm allegation. Context: Melissa sends an image to Eli (ROW-14294: MMS image file 2025-09-02_084204_melissa-moose_2588.jpg) then immediately asks 'Why are you smacking her?' (ROW-14295). Mechanism is new in dataset: Melissa deploying a visual artifact as evidence of physical harm against Olivia — prior harm allegations used child relay (Sep 2024 choking delivered via ROW-7164; Jun 2025 vaping/pinching delivered via ROW-9735-9739). This instance uses an image as the primary delivery vehicle rather than Olivia's relayed account. Without image content available for analysis, severity assessment is uncertain — image could be: (a) legitimate misinterpretation of roughhousing/play; (b) cropped/decontextualized photo; (c) genuine concern warranting inquiry. ATTORNEY NOTE: The image file (2025-09-02_084204_melissa-moose_2588.jpg) requires direct review to assess allegation validity. Physical harm allegation trajectory in RF-04 dataset: B-019 ROW-7164 (Sep 2024 choking claim, child relay) → B-025 ROW-9735-9739 (Jun 2025 vaping/threat/harm-fear relay) → B-028 ROW-14295 (Sep 2025 image-based 'smacking' allegation). Third instance; new delivery mechanism; cross-reference RF-15 when that pass runs. ARC-RF04-001-S69.",
+      "verbatim_key_messages": [
+        "ROW-14294 (Received): \"[IMAGE: 2025-09-02_084204_melissa-moose_2588.jpg]\"",
+        "ROW-14295 (Received): \"Why are you smacking her?\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B028-003",
+      "severity": 1,
+      "date": "2025-09-08",
+      "row_ref": "ROW-8208",
+      "type": "ADD-002_slur_idiot_2nd + contemptuous_dismissal + parenting_plan_dispute",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "summary": "Sep 8 'idiot' ADD-002 second instance. Context: Eli and Melissa in exchange dropoff dispute — Eli referencing a prior agreement to return Olivia Saturday 9pm (ROW-8206); Melissa's position that parenting plan requires Sunday return (ROW-8207). ROW-8208: 'You keep saying that she is expected to stay the weekend per the shared parenting plan that's why I was asking if you still planned to bring her home Saturday or if you were doing what you were supposed to idiot' — 'idiot' embedded in substantive parenting plan message; contemptuous intelligence attack. Second 'idiot' ADD-002 instance (first: B-024 ROW-9526 May 4 2025). ARC-RF04-001-S70.",
+      "verbatim_key_messages": [
+        "ROW-8208 (Received): \"You keep saying that she is expected to stay the weekend per the shared parenting plan that's why I was asking if you still planned to bring her home Saturday or if you were doing what you were supposed to idiot\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B028-004",
+      "severity": 2,
+      "date": "2025-09-17",
+      "row_ref": "ROW-14362-14372",
+      "type": "full_custody_legal_threat_peak + shared_parenting_termination_demand + ADD-002_adjacent + Abby_negative_influence_relay + inadequate_father + child_relay_homework",
+      "arc_ref": "ARC-RF04-001, ARC-RF04-002",
+      "addenda_applied": [],
+      "compound_pattern": "COMP-RF04-025",
+      "summary": "Sep 17 full-custody 'agreement ready to sign' cluster — most advanced legal custody threat in dataset. Context: homework dispute; Eli failed to have Olivia complete assigned iReady homework. ROW-14362: 'She said that you told her she didn't have to do it and that Abby said I wasn't the boss' — Abby-as-negative-influence relay via child; Abby undermining Melissa's homework authority delivered as child's account. ROW-14363: 'Furthermore for Olivia's sake you guys should stop talking shit about me around her especially since you have Milo doing it too. She was pretty upset last weekend after being at your house with Milo making fun of me. She asked if she could punch Jim in the face' — false allegation of household adults mocking Melissa; Milo implicated; Olivia's distress relay and inflammatory request relayed. ROW-14364: 'Per the shared parenting plan visitation can't interfere with schoolwork and now it is' — parenting plan weaponization against homework failure. ROW-14365: 'Olivia said...Abby was listening and told you that I'm not the boss of you do then you told Olivia she didn't have to do it' — elaboration of Abby-negative-influence relay; Abby-as-authority-underminer. ROW-14366: 'This just further demonstrates why you shouldn't have shared parenting' — shared parenting termination demand; homework failure used as custody evidence. ROW-14367: 'My lawyer already said I had a strong case this further demonstrates that' — attorney-validated legal threat. ROW-14371: 'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started. You're only helping my case.' — PEAK LEGAL ESCALATION IN DATASET: prior custody threats were forward-looking intentions ('I'll file,' 'I'm filing'); this instance is past-completed ('already had consultation, agreement ready to sign'); highest legal threat specificity in RF-04 record. ROW-14372: 'Also sounds like you need an exterminator at your house. Olivia said she's worried about Milo's safety because of the many pincher bugs in his room' — new mechanism: child relay used to allege inadequate home environment/safety risk; ARC-RF04-002-S22. COMP-RF04-025 (RF-04+RF-05). ARC-RF04-001-S71; ARC-RF04-002-S22.",
+      "verbatim_key_messages": [
+        "ROW-14362 (Received): \"She said that you told her she didn't have to do it and that Abby said I wasn't the boss\"",
+        "ROW-14365 (Received): \"Olivia said...Abby was listening and told you that I'm not the boss of you do then you told Olivia she didn't have to do it\"",
+        "ROW-14366 (Received): \"This just further demonstrates why you shouldn't have shared parenting\"",
+        "ROW-14367 (Received): \"My lawyer already said I had a strong case this further demonstrates that\"",
+        "ROW-14371 (Received): \"I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started. You're only helping my case.\"",
+        "ROW-14372 (Received): \"Also sounds like you need an exterminator at your house. Olivia said she's worried about Milo's safety because of the many pincher bugs in his room\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B028-005",
+      "severity": 1,
+      "date": "2025-09-28",
+      "row_ref": "ROW-14445-14455",
+      "type": "contempt_threat_cluster + contemptuous_character_attack + parenting_plan_weaponization",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": [],
+      "summary": "Sep 28 contempt threat cluster. Context: Eli returning Olivia slightly late (dinner delay; still eating as of ROW-14450). ROW-14445: 'By court order she is supposed to be home by 6' — parenting plan weaponization. ROW-14447: 'You really want contempt charges don't you' — rhetorical contempt threat framing; contemptuous characterization of Eli's lateness as intentional defiance. ROW-14448: 'You think I won't file again?' — threat escalation. ROW-14451: 'Too late. I'm filing cause I'm tired of your shit' — filing declaration + contemptuous profanity character attack; 'tired of your shit' frames filing as response to Eli's general character rather than specific late pickup. ROW-14454: 'Per the parenting agreement/court order you are not allowed to keep Olivia from calling me' — parenting plan provision weaponized as additional contempt basis. ROW-14455: Screenshot sent (ROW-14455) — documentation of contempt filing intent. Six-message cluster triggered by minor late pickup; contemptuous profanity escalation in closing statement. ARC-RF04-001-S72.",
+      "verbatim_key_messages": [
+        "ROW-14447 (Received): \"You really want contempt charges don't you\"",
+        "ROW-14448 (Received): \"You think I won't file again?\"",
+        "ROW-14451 (Received): \"Too late. I'm filing cause I'm tired of your shit\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B028-006",
+      "severity": 2,
+      "date": "2025-10-04",
+      "row_ref": "ROW-14490-14517",
+      "type": "child_fear_relay + so_afraid_of_you + alarming_framing + Abby_harmful_actor + horrible_dad_attack + inadequate_home + child_mediated_alarm",
+      "arc_ref": "ARC-RF04-001, ARC-RF04-002",
+      "addenda_applied": [],
+      "compound_pattern": "COMP-RF04-026",
+      "summary": "Oct 4-7 child fear relay cluster — 'so afraid of you' framing. Context: Return from weekend at Eli's; Olivia's texts to Melissa during the weekend cited as evidence. ROW-14490: 'Why are you telling her she has to stay at your house when she wants to come home because the judge said so' — judge/court-order weaponized as coercive tool (reframing court order compliance as Eli threatening child with judge authority). ROW-14492: 'And try not to fight with each other while she's at your house' — instruction implying ongoing household conflict; Abby-as-conflict-source framing. ROW-14494: 'She's not sure she even wants to spend the weekend at your house anymore. She said she needs to think about it.' — child preference relay as visit withdrawal leverage. ROW-14495: 'Last week Abby telling her she is a horrible sister is not cool and Olivia was begging me not to say anything cause she's so afraid of you. That's not ok.' — KEY: 'so afraid of you' — new child-fear-of-Eli framing; Olivia's fear of Eli deployed as inadequate/dangerous-father evidence; Abby-as-harmful-actor (Abby told Olivia she's a 'horrible sister') + child's fear of Eli's response positioned as corroboration of dangerous home environment. ROW-14496: 'So I need you to not be yelling at her for telling me and to work on how you're going to keep this from happening moving forward so she feels safe and not attacked' — preemptive blame frame; positions any Eli response as potential yelling/attack. ROW-14499: 'you better not stop her from contacting me next time...I'm still contemplating contempt charges' — legal threat close. Oct 7: ROW-14507: 'Also what about the horrible sister thing? She was a horrible sister you a horrible dad and Milo a horrible brother all at the same time' — 'horrible dad' ADD-002-adjacent character attack; minimization defense ('everyone was bad'). ROW-14508: 'She doesn't feel safe and supported as evidenced by the texts I got' — safety framing; child's texts to Melissa during Eli's parenting time deployed as evidence against Eli. ROW-14517: 'the feedback I got in text the last weekend she was with you was very alarming. Also the conversation I had with her while she was crying in her room and begging me not to say anything to you was very heartbreaking and alarming. So you need to ensure that the adults in your home are treating her appropriately and with respect and maturity' — 'alarming' repeated ×2; crying-in-room child distress relay with 'begging me not to say anything' guilt amplifier; sustained inadequate-home framing; Abby implicated as source of unsafe adult conduct. COMP-RF04-026 (RF-04+RF-11). ARC-RF04-001-S73; ARC-RF04-002-S23.",
+      "verbatim_key_messages": [
+        "ROW-14495 (Received): \"Last week Abby telling her she is a horrible sister is not cool and Olivia was begging me not to say anything cause she's so afraid of you. That's not ok.\"",
+        "ROW-14507 (Received): \"Also what about the horrible sister thing? She was a horrible sister you a horrible dad and Milo a horrible brother all at the same time\"",
+        "ROW-14508 (Received): \"She doesn't feel safe and supported as evidenced by the texts I got\"",
+        "ROW-14517 (Received): \"the feedback I got in text the last weekend she was with you was very alarming. Also the conversation I had with her while she was crying in her room and begging me not to say anything to you was very heartbreaking and alarming.\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B028-P01",
+      "row_ref": "ROW-14343-14344",
+      "date": "2025-09-14",
+      "type": "contempt_legal_threat_daycare",
+      "note": "ROW-14343: 'You're in contempt for not paying daycare' — ROW-14344: 'Per the spp you have 7 days to pay it after receipt and that was yesterday' — daycare payment contempt threat; primarily RF-05 territory; RF-04 peripheral (legal weaponization as contempt mechanism)."
+    },
+    {
+      "flag_id": "RF04-B028-P02",
+      "row_ref": "ROW-14350",
+      "date": "2025-09-16",
+      "type": "contemptuous_minimization_sarcasm",
+      "note": "ROW-14350: 'At least you're finally doing something for her' — contemptuous sarcastic minimization of Eli's positive parenting effort (Halloween costume ordering); single-message standalone; mild."
+    },
+    {
+      "flag_id": "RF04-B028-P03",
+      "row_ref": "ROW-14419-14421",
+      "date": "2025-09-19",
+      "type": "contempt_legal_threat_dropoff",
+      "note": "ROW-14419: 'If you were wanting to debate from the plan you should have asked' — ROW-14420: 'You don't you are now withhholding her from me' — ROW-14421: 'Have fun paying contempt charges, court costs and lawyer fees' — legal threat cluster for dropoff timing dispute; primarily RF-05; RF-04 peripheral."
+    },
+    {
+      "flag_id": "RF04-B028-P04",
+      "row_ref": "ROW-14520",
+      "date": "2025-10-07",
+      "type": "contemptuous_minimization",
+      "note": "ROW-14520: 'Making your time less and less.' — contemptuous minimization of Eli's late pickup time request; single-message standalone; low severity."
+    },
+    {
+      "flag_id": "RF04-B028-P05",
+      "row_ref": "ROW-14527",
+      "date": "2025-10-10",
+      "type": "child_relay_visit_refusal_justification",
+      "note": "ROW-14527: 'She said it's because she doesn't want to be screamed at by Milo and you probably won't have anything she wants to eat' — child relay providing justification for Oct 10 visit refusal; Milo-as-conflict-source; inadequate-food-provision framing. Primarily RF-02; RF-04 peripheral (child relay mechanism)."
+    },
+    {
+      "flag_id": "RF04-B028-P06",
+      "row_ref": "ROW-14276",
+      "date": "2025-08-31",
+      "type": "financial_contempt_pressure",
+      "note": "ROW-14276: 'You're behind on daycare. You owed $360 due by August 28' — financial debt framing; stands alone; primarily RF-05; RF-04 peripheral."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S68",
+          "batch": "B-028",
+          "date": "2025-08-28",
+          "row": "ROW-14237-14275",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Aug 28-30 visit refusal DARVO cluster: 'I agreed for her to go back when there was a safe environment' (ROW-14256) — retroactive safety-conditional rewrite of prior visit gap; 'cause you kept trying to gaslight her' DARVO accusation (ROW-14243); 'you've made it optional...so how do you expect her to understand now?' (ROW-14271-14272) — visit refusal attributed to Eli's prior absence; 'do you boo' 4th instance (ROW-14275 Aug 30)."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S69",
+          "batch": "B-028",
+          "date": "2025-09-02",
+          "row": "ROW-14294-14295",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Image-based harm allegation: Melissa sends image (ROW-14294) then asks 'Why are you smacking her?' (ROW-14295). New mechanism: visual artifact as physical harm evidence. Third harm allegation in trajectory (Sep 2024 choking → Jun 2025 vaping/pinching → Sep 2025 image). Requires attorney image review. Cross-reference RF-15."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S70",
+          "batch": "B-028",
+          "date": "2025-09-08",
+          "row": "ROW-8208",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'you were supposed to idiot' — 2nd 'idiot' ADD-002 instance (first: B-024 ROW-9526). Contemptuous intelligence attack embedded in parenting plan dispute message."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S71",
+          "batch": "B-028",
+          "date": "2025-09-17",
+          "row": "ROW-14362-14372",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Full custody 'agreement ready to sign' cluster: 'My lawyer already said I had a strong case' (ROW-14367) + 'I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started' (ROW-14371) — most advanced legal threat in dataset; past-completed consultation with agreement ready. 'This just further demonstrates why you shouldn't have shared parenting' (ROW-14366) — shared parenting termination demand. Abby-negative-influence relay via child (ROW-14362/14365). COMP-RF04-025 (RF-04+RF-05)."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S72",
+          "batch": "B-028",
+          "date": "2025-09-28",
+          "row": "ROW-14445-14455",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Contempt threat cluster triggered by ~15-min late pickup: 'You really want contempt charges don't you' (ROW-14447) + 'You think I won't file again?' (ROW-14448) + 'Too late. I'm filing cause I'm tired of your shit' (ROW-14451) — contemptuous profanity + filing declaration. Six-message cluster."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S73",
+          "batch": "B-028",
+          "date": "2025-10-04",
+          "row": "ROW-14490-14517",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Child fear relay cluster: 'Olivia was begging me not to say anything cause she's so afraid of you' (ROW-14495) — new child-fear-of-Eli framing; 'horrible dad' attack (ROW-14507); 'She doesn't feel safe and supported as evidenced by the texts I got' (ROW-14508); 'was very heartbreaking and alarming' ×2 child distress relay (ROW-14517); Abby-as-harmful-actor (told Olivia she was 'horrible sister'). COMP-RF04-026 (RF-04+RF-11)."
+        }
+      ],
+      "signal_count_after": 73
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S22",
+          "batch": "B-028",
+          "date": "2025-09-17",
+          "row": "ROW-14372",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "Child relay as inadequate-home-environment allegation: 'Olivia said she's worried about Milo's safety because of the many pincher bugs in his room' — child's reported concern about home safety conditions relayed to imply Eli's home is unsafe; new mechanism: child-relayed home environment concern as inadequacy weapon. Part of Sep 17 custody cluster; ARC-RF04-001-S71 overlap."
+        },
+        {
+          "signal_ref": "ARC-RF04-002-S23",
+          "batch": "B-028",
+          "date": "2025-10-04",
+          "row": "ROW-14495 + ROW-14517",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "'Olivia was begging me not to say anything cause she's so afraid of you' (ROW-14495) — child's fear of Eli weaponized as inadequate/dangerous-father evidence; child's reported emotional state deployed as corroboration of Melissa's alarm. ROW-14517: 'the conversation I had with her while she was crying in her room and begging me not to say anything to you was very heartbreaking and alarming' — sustained child distress relay with 'alarming' framing; child's crying + fear amplified as guilt delivery. ARC-RF04-001-S73 overlap."
+        }
+      ],
+      "signal_count_after": 23
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-025",
+      "date": "2025-09-17",
+      "row_ref": "ROW-14362-14372",
+      "rf_combination": ["RF-04", "RF-05"],
+      "summary": "RF-04 (Emotional Manipulation) + RF-05 (Intimidation/Threats): Sep 17 full-custody escalation. Trigger: homework dispute + Abby-negative-influence relay. RF-04 (Sev-2: shared parenting termination demand 'This just further demonstrates why you shouldn't have shared parenting' ROW-14366; Abby-as-authority-underminer relay via child ROW-14362/14365; child-relay inadequate-home allegation 'pincher bugs' ROW-14372; inadequate-father framing; ARC-RF04-001-S71; ARC-RF04-002-S22) + RF-05 (attorney validation 'My lawyer already said I had a strong case' ROW-14367; full custody 'agreement ready to sign' peak legal threat ROW-14371 — most advanced custody legal threat in dataset: past-completed consultation, agreement pending signature). Structural note: prior full custody threats in dataset were declaratory future intentions; this instance establishes past-completed legal steps (consultation done, agreement ready) — qualitative escalation from intent to imminent action.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001-S71", "ARC-RF04-002-S22"]
+    },
+    {
+      "compound_id": "COMP-RF04-026",
+      "date": "2025-10-04",
+      "row_ref": "ROW-14490-14517",
+      "rf_combination": ["RF-04", "RF-11"],
+      "summary": "RF-04 (Emotional Manipulation) + RF-11 (Inappropriate Child Involvement): Oct 4-7 child fear relay cluster. RF-04 (Sev-2: 'so afraid of you' child-fear framing ROW-14495; 'horrible dad' ADD-002-adjacent ROW-14507; 'alarming' ×2 child distress relay ROW-14508/14517; sustained inadequate-home framing; judge weaponization ROW-14490; Abby-as-conflict-source ROW-14492; ARC-RF04-001-S73; ARC-RF04-002-S23) + RF-11 (child's texts to Melissa during Eli's parenting time deployed as evidence against Eli ROW-14508; child positioned as source of 'alarming feedback' about Eli's home environment; child 'begging me not to say anything' positions Olivia as participant in concealment behavior ROW-14495/14517; child's in-home experience of Abby's comment converted to adult custody dispute evidence). Structural note: Oct 4-7 cluster represents Phase B/C transition pattern — Phase B attack sophistication (professional credentialing, child relay) continuing while Phase C visit refusal entrenchment growing.",
+      "severity": 2,
+      "arc_refs": ["ARC-RF04-001-S73", "ARC-RF04-002-S23"]
+    }
+  ],
+
+  "cp3_item": {
+    "cp3_id": "CP3-RF04-028",
+    "batch": "B-028",
+    "type": "pattern_escalation",
+    "priority": "high",
+    "summary": "B-028 Phase B/C boundary escalation events: (1) Aug 28-30 'safe environment' retroactive rewrite: Melissa positions prior visit gap as her own safety judgment ('I agreed for her to go back when there was a safe environment') — creates retrospective narrative that Eli's home was unsafe, establishing hook for future safety-based gatekeeping. (2) Sep 2 image-based harm allegation ('Why are you smacking her?'): NEW MECHANISM — visual artifact deployed as physical harm evidence; third point in harm allegation trajectory (B-019 choking → B-025 vaping/pinching → B-028 image). Attorney image review required (file: 2025-09-02_084204_melissa-moose_2588.jpg). (3) Sep 17 COMP-RF04-025 (RF-04+RF-05): 'agreement ready to sign' — most advanced legal custody threat in dataset; past-completed attorney consultation with agreement pending signature; qualitative escalation from declaratory intent to imminent action; Abby-negative-influence relay via child (homework context). (4) 'do you boo' at 4 confirmed instances: B-025 ROW-9655, B-027 ROW-14162, B-027 ROW-14207, B-028 ROW-14275. (5) Oct 4-7 COMP-RF04-026 (RF-04+RF-11): 'so afraid of you' — new child-fear-of-Eli framing deployed as home-safety/inadequacy evidence; sustained 'alarming' characterization. (6) Oct 10 visit refusal cascade: second visit refusal in batch; primarily RF-02 (see RF-02 arc documentation) but confirms Phase C entrenchment beginning."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 6,
+    "severity_1": 3,
+    "severity_2": 3,
+    "severity_3": 0,
+    "peripheral_flags": 6,
+    "compound_patterns": 2,
+    "arc_rf04_001_signals_added": 6,
+    "arc_rf04_002_signals_added": 2
+  }
+}

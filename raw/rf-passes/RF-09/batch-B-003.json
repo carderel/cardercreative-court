@@ -1,0 +1,53 @@
+{
+  "batch_id": "B-003",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2022-11-06",
+    "end": "2022-12-12"
+  },
+  "row_range": {
+    "start": 713,
+    "end": 1092
+  },
+  "message_count": 504,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Nov 2022: 1 primary RF-09 signal. S001 arc candidate initialized. DARVO-adjacent lying accusation, Level E."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B003-001",
+      "signal_id": "S001",
+      "severity": 1,
+      "date": "2022-11-28",
+      "row_ref": "ROW-1055",
+      "direction": "received",
+      "evidence_level": "E",
+      "type": "reality_questioning_lied_accusation",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-004"
+      ],
+      "compound_pattern": "COMP-RF09-001",
+      "cross_rf": "RF-04 (DARVO-inversion context)",
+      "message_text": "Then you lied to me",
+      "summary": "Nov 2022: Melissa accuses Eli of lying within a dispute sequence. ROW-1055: 'Then you lied to me' \u2014 direct accusation that Eli's account of events is false. No specific cross-referenceable claim (not 'I never said X'); global credibility attack. Evidence Level E: reality-questioning accusation without documentable denial anchor. First arc signal: ARC-RF09-001 initialized at CANDIDATE. ADD-004 applied: first documented 'you're lying' instance, tracked in arc. Note: this is a DARVO-inversion context \u2014 Melissa accuses Eli of dishonesty while in a conflict sequence where she is the primary aggressor (RF-04 ARC-RF04-001 context). COMP-RF09-001: RF-09+RF-04 per ADD-003 (accusation occurs within DARVO-adjacent sequence)."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S001 signal added",
+      "new_state": "CANDIDATE",
+      "signal_count": 1
+    }
+  ]
+}

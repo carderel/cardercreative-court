@@ -1,0 +1,158 @@
+{
+  "batch_id": "B-029",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-09-14",
+    "end": "2025-10-31"
+  },
+  "row_range": {
+    "sms_start": "ROW-8230",
+    "sms_end": "ROW-8404",
+    "sms_note": "SMS data for this date range falls entirely in the secondary SMS table section (ROW-8xxx); no separate primary SMS section entries detected for Sep–Oct 2025.",
+    "mms_start": "ROW-14342",
+    "mms_end": "ROW-14649"
+  },
+  "message_count": 483,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B029-PF-001",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 55,
+      "row_ref": "ROW-14354",
+      "date": "2025-09-17",
+      "severity": 1,
+      "verbatim": "If you can't follow thru on homework she won't be able to go there during the week anymore",
+      "note": "ARC-RF02-002 Signal 55. Sep 17. Homework-conditional-access 5th instance. Melissa conditions Eli's weekday parenting time access on homework completion: 'If you can't follow thru on homework she won't be able to go there during the week anymore.' Prior instances: ROW-4336-4348 (B-012, Jan 18 2024), ROW-4393-4411 (B-012, Jan 25 2024), ROW-4533-4539 (B-013, Feb 15 2024), ROW-4825-4827 (B-013, Mar 20 2024). This is the fifth documented instance, occurring 18 months after the prior cluster, in the context of a homework disagreement (ROW-14353-14381: Melissa alleges Olivia did no homework during Eli's time; Eli disputes). The homework-conditional-access mechanism: Melissa reserves unilateral authority to eliminate Eli's weekday access as a consequence for perceived homework non-compliance — framing parenting time as a privilege contingent on Melissa's assessment of Eli's academic co-parenting. The 'during the week' formulation extends the threat explicitly to weekday visits."
+    },
+    {
+      "flag_id": "B029-PF-002",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 56,
+      "row_ref": "ROW-14495 / ROW-14496",
+      "date": "2025-10-04",
+      "severity": 2,
+      "verbatim": "Last week Abby telling her she is a horrible sister is not cool and Olivia was begging me not to tell you cause she's so afraid of you. That's not ok. [ROW-14495] / So I need you to not be yelling at her for telling me and to work on how you're going to keep this from happening moving forward so she feels safe and not attacked [ROW-14496]",
+      "note": "ARC-RF02-002 Signal 56, Sev 2. Oct 4. Safety/fear relay with explicit intermediary-channel framing. Three interlocking elements: (1) Relay content: Melissa relays that Olivia told her about an incident at Eli's house (Abby calling Olivia a 'horrible sister') and that Olivia was 'begging me not to tell you cause she's so afraid of you' — safety/fear domain relay consistent with B-026 (ROW-9743) and B-028 (ROW-8173/ROW-14495). (2) Intermediary framing: Melissa positions Olivia's routing of this disclosure through Melissa as necessary because Olivia is 'so afraid of you' — Melissa is the required intermediary because direct communication with Eli is unsafe for Olivia. (3) Instructions on intermediary use: ROW-14496 instructs Eli 'not to be yelling at her for telling me' — explicit instruction that Olivia's use of the Melissa-channel must not be penalized by Eli. Together these constitute a structured enforcement of the intermediary norm: Olivia routes sensitive disclosures through Melissa → Melissa relays to Eli → Eli is instructed not to punish Olivia for using that channel. Sev 2: articulated intermediary-necessity framing (safety/fear domain) with explicit channel-protection instruction. Cross-reference: ROW-14499 (same exchange): 'And you better not stop her from contacting me next time she wants to. That is in the court order that you can't do that' — bidirectional channel control assertion."
+    },
+    {
+      "flag_id": "B029-PF-003",
+      "arc_id": "ARC-RF02-002",
+      "signal_number": 57,
+      "row_ref": "ROW-14523 / ROW-14524 / ROW-14525 / ROW-14526 / ROW-14527 / ROW-14531 / ROW-14534 / ROW-14541",
+      "date": "2025-10-10",
+      "severity": 1,
+      "verbatim": "Olivia says she doesn't want to spend the weekend with you [ROW-14523] / She said she wants to go to your house in the morning then stay until 8 [ROW-14525] / And that's all the time she wants to go [ROW-14526] / She said it's because she doesn't want to be screamed at by Milo and you probably won't have anything she wants to eat [ROW-14527] / She says you're going to have to drag her out [ROW-14531] / I'm not the one saying she's not coming. She's saying that [ROW-14534] / Olivia said don't bother coming [ROW-14541]",
+      "note": "ARC-RF02-002 Signal 57. Oct 10. Weekend visit-refusal cascade — Eli's scheduled parenting weekend does not occur. Chronology: (1) Melissa opens with full weekend refusal: 'Olivia says she doesn't want to spend the weekend with you' (ROW-14523); (2) Relay negotiates downward: 'She said she wants to go to your house in the morning then stay until 8' (ROW-14525) with rationale embedded in relay: 'doesn't want to be screamed at by Milo and you probably won't have anything she wants to eat' (ROW-14527); (3) Melissa distances from relay: 'I'm not the one saying she's not coming. She's saying that' (ROW-14534), 'Like I said I told her that she will need to come out and talk to you' (ROW-14535); (4) Escalation to full refusal: 'She says you're going to have to drag her out' (ROW-14531); (5) Terminal relay: 'Olivia said don't bother coming' (ROW-14541) — visit cancelled. Despite Melissa's claim to have encouraged Olivia to attend (ROW-14532: 'I told her to take to you when you get here and see if all her concerns are addressed'), the terminal relay ('don't bother coming') forecloses the visit without Eli reaching Olivia directly. Third consecutive visit-refusal cascade (B-028 Aug 26-Sep 5, B-028 Signal 54; B-029 Oct 10, Signal 57). Eli continues to have no direct mechanism to verify or engage Olivia's stated preferences. ROW-14534 ('I'm not the one saying she's not coming') is analytically notable — Melissa explicitly disclaims ownership of the relay while functioning as its exclusive channel."
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B029-PERIPH-001",
+      "row_ref": "ROW-14371",
+      "date": "2025-09-17",
+      "rf_category": "RF-11",
+      "severity": 2,
+      "verbatim": "I've already had the initial consultation with the lawyer for full custody and have the agreement ready to sign to get it started. You're only helping my case.",
+      "note": "RF-11 Sev 2. Sep 17 — embedded in the Sep 17 homework escalation exchange. Most concrete legal-action language in the dataset to date: 'agreement ready to sign to get it started' is a specific legal formality framing (retainer agreement), not merely 'I'm talking to a lawyer.' The Sep 17 exchange also contains ROW-14367 ('My lawyer already said I had a strong case this further demonstrates that') three messages earlier. Cross-reference: B-028 PERIPH-001 (ROW-14154-14155 Aug 14, 'Already been talking to the lawyer') — B-029 escalates from past-tense lawyer contact to present-tense 'agreement ready to sign.' Fourth full-custody lawyer-threat cluster (B-017, B-027, B-028, B-029). The rapid escalation in specificity across three batches (Aug 14: 'already been talking to the lawyer' → Sep 17: 'agreement ready to sign') is analytically significant for monitoring trajectory."
+    },
+    {
+      "flag_id": "B029-PERIPH-002",
+      "row_ref": "ROW-14343 / ROW-14344 / ROW-14367 / ROW-14417 / ROW-14418 / ROW-14419 / ROW-14421 / ROW-14447 / ROW-14448 / ROW-14449 / ROW-14451",
+      "date": "2025-09-14 to 2025-09-28",
+      "rf_category": "RF-11",
+      "severity": 1,
+      "verbatim": "You're in contempt for not paying daycare [ROW-14343] / Per the spp you have 7 days to pay it after receipt and that was yesterday [ROW-14344] / My lawyer already said I had a strong case this further demonstrates that [ROW-14367] / I'm filing contempt charges Monday [ROW-14417] / You aren't holding to the agreement [ROW-14418] / Have fun paying contempt charges, court costs and lawyer fees [ROW-14421] / You really want contempt charges don't you [ROW-14447] / You think I won't file again? [ROW-14448] / Too late. I'm filing cause I'm tired of your shit [ROW-14451]",
+      "note": "RF-11 Sev 1 cluster. Sep 14-28. Sustained contempt-threat pattern: three distinct contempt-threat events across 14 days — (1) Sep 14 daycare payment contempt (ROW-14343-14344); (2) Sep 19 Spirit of Halloween drop-off timing contempt (ROW-14417-14421: 'I'm filing contempt charges Monday / Have fun paying contempt charges'); (3) Sep 28 late Olivia return contempt (ROW-14447-14451: 'Too late. I'm filing cause I'm tired of your shit'). Together with PERIPH-001 (ROW-14371 Sep 17 full-custody 'agreement ready to sign'), this batch contains four legally-threatening communications in 14 days — highest RF-11 density in the dataset."
+    },
+    {
+      "flag_id": "B029-PERIPH-003",
+      "row_ref": "ROW-14350 / ROW-14363 / ROW-14507",
+      "date": "2025-09-16 to 2025-10-07",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "At least you're finally doing something for her [ROW-14350] / Furthermore for Olivia's sake you guys should stop talking shit about me around her especially since you have Milo doing it too [ROW-14363] / She was a horrible sister you a horrible dad and Milo a horrible brother all at the same time [ROW-14507]",
+      "note": "RF-04 Sev 1 cluster. Sep 16 – Oct 7. Three-element fitness cluster: (1) 'At least you're finally doing something for her' (ROW-14350, Sep 16) — back-handed concession framing Eli's Halloween costume purchase as an exceptional rather than baseline parenting act; (2) 'stop talking shit about me around her especially since you have Milo doing it too' (ROW-14363, Sep 17) — parental-alienation accusation via Milo; (3) 'She was a horrible sister you a horrible dad and Milo a horrible brother all at the same time' (ROW-14507, Oct 7) — Melissa relays a formulation ('all at the same time') that appears to reframe Eli's reported correction of Olivia's behavior into a fitness-attack relay. Cross-reference: RF-04 cluster intensifying across B-027, B-028, B-029."
+    },
+    {
+      "flag_id": "B029-PERIPH-004",
+      "row_ref": "ROW-14362 / ROW-14363 / ROW-14495",
+      "date": "2025-09-17 to 2025-10-04",
+      "rf_category": "RF-05",
+      "severity": 1,
+      "verbatim": "She said that you told her she didn't have to do it and that Abby said I wasn't the boss [ROW-14362] / stop talking shit about me around her especially since you have Milo doing it too [ROW-14363] / Last week Abby telling her she is a horrible sister is not cool [ROW-14495]",
+      "note": "RF-05 Sev 1 cluster. Sep 17 – Oct 4. Abby-delegitimization pattern continues: (1) ROW-14362 (Sep 17) relays Olivia reporting Abby said 'I wasn't the boss' regarding Melissa's homework instructions — Abby positioned as undermining Melissa's parental authority via Olivia; (2) ROW-14363 (Sep 17) extends to general trash-talking accusation (Milo included); (3) ROW-14495 (Oct 4) relays 'Abby telling her she is a horrible sister is not cool' — Abby positioned as verbal abuser of Olivia. All three are relay-sourced accusations against Abby. Cross-reference: B-019 ROW-7231, B-020 ROW-7553, B-023 ROW-9523/9571 for prior Abby-delegitimization relay instances."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-14383-14405 / ROW-8250-8253",
+      "date": "2025-09-18",
+      "description": "Neighborhood SWAT/homicide investigation: A neighbor was found dead under suspicious circumstances; husband arrested. Melissa provided detailed real-time communication about the unfolding police incident (crime scene unit, SWAT, roads blocked), explained how she kept Olivia safe (upstairs, away from windows), and coordinated with Eli when she considered bringing Olivia elsewhere. Eli (ROW-8250-8253) provided safety guidance and asked follow-up questions. Highest-intensity crisis communication in recent dataset — cooperative, information-dense, emotionally appropriate."
+    },
+    {
+      "row_ref": "ROW-8271-8272 / ROW-14424-14432",
+      "date": "2025-09-24",
+      "description": "Olivia knee injury: Olivia called Eli from the bus in tears about a knee injury (fell previous day). Eli immediately texted Melissa with details and told Olivia to rest/ice/elevate. Melissa provided context (prior fall, went to park after, was fine), took Olivia to urgent care (~45 min), and provided results (no break, wrapped if desired). Cooperative medical coordination."
+    },
+    {
+      "row_ref": "ROW-14456-14459",
+      "date": "2025-09-28 to 2025-09-29",
+      "description": "Choir enrollment notification: Melissa informed Eli that Olivia signed up for school choir (Thursday mornings at 8), had already covered her work shifts to take Olivia, and directed Eli to the parent portal for full details. Proactive inclusion of Eli in Olivia's extracurricular enrollment decision."
+    },
+    {
+      "row_ref": "ROW-14465-14476 / ROW-8296-8297",
+      "date": "2025-09-30 to 2025-10-01",
+      "description": "Birthday party schedule coordination: Melissa proactively communicated that Olivia had two birthday party invitations during Eli's October weekends (Oct 12 and Oct 25), asked Eli what he wanted to do, and proposed logistics for each. Eli (ROW-8296) confirmed the Oct 12 plan and offered flexibility on Oct 25. Cooperative scheduling communication across Eli's parenting time."
+    },
+    {
+      "row_ref": "ROW-14559-14561 / ROW-14632",
+      "date": "2025-10-20 to 2025-10-29",
+      "description": "Canada surprise trip notification: Melissa proactively told Eli she was taking Olivia on a surprise trip to Canada (Niagara Falls) Nov 1-4 (Olivia's school days off Nov 3-4), asked Eli not to tell Olivia, and provided the Airbnb address (4931 Walnut Street, Niagara Falls, ON). Same destination as B-016 Canada vacation. Full location transparency."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-8270",
+      "date": "2025-09-21",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-8270): 'Did her phone die?' Melissa (ROW-14423): 'Idk. Probably.' Ambiguous response, no explanation provided, but no documented blocking mechanism either. Not flagged. ARC-RF02-001 extends quiet streak to 12 consecutive batches (B-021 through B-029). Signal count remains 26."
+    },
+    {
+      "row_ref": "ROW-8306",
+      "date": "2025-10-07",
+      "consideration": "ARC-RF02-001 near-miss. Eli (ROW-8306): 'She not have her phone?' Melissa (ROW-14500): 'She's had her phone all night.' Contact confirmed. Not flagged."
+    },
+    {
+      "row_ref": "ROW-8390 / ROW-8391 / ROW-8392",
+      "date": "2025-10-28",
+      "consideration": "ARC-RF02-001 near-miss. Eli: 'Is her phone dead / Dead / It went straight to vm.' Melissa (ROW-14621-14626): 'Idk / She's sick today and staying home / Idk / I don't have a medical degree / Started coughing and sneezing and runny nose last night. Sore throat today. Prob a cold / And she's awake.' Sick-child context with natural explanation. Not flagged."
+    },
+    {
+      "row_ref": "ROW-14509",
+      "date": "2025-10-07",
+      "consideration": "ARC-RF02-002 near-miss. Melissa (ROW-14509): 'I will ask her if she wants to go tonight. She does have homework that needs to be completed.' — Melissa frames weekday visit willingness as going through Melissa's consultation, with homework condition attached. Visit occurs (Eli picks up ROW-8311-8312, drops off at 8:30). Not flagged: visit facilitated, homework framing consistent with background relay norm."
+    },
+    {
+      "row_ref": "ROW-14494",
+      "date": "2025-10-04",
+      "consideration": "ARC-RF02-002 near-miss. Melissa (ROW-14494): 'She's not sure she even wants to spend the weekend at your house anymore. She said she needs to think about it.' Mid-week relay of Olivia's uncertainty about upcoming weekend. No visit occurs the following weekend (Oct 10 Signal 57 cascade). The Oct 4 message is the precursor relay to the Oct 10 cascade; logged here for completeness rather than as standalone primary signal."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; ARC-RF02-001 quiet for 12 consecutive batches (B-021 through B-029, Dec 2024 – Oct 2025); near-misses: ROW-8270 (Sep 21, phone dead — 'idk/probably'), ROW-8306 (Oct 7, phone confirmed present), ROW-8390-8392 (Oct 28, phone to VM — sick child); signal_count remains 26",
+    "ARC-RF02-002": "3 new primary signals (55-57); Signal 55 (ROW-14354, Sep 17, Sev 1): homework-conditional-access 5th instance — 'If you can't follow thru on homework she won't be able to go there during the week anymore'; Signal 56 (ROW-14495-14496, Oct 4, Sev 2): safety/fear relay with intermediary-channel protection instruction — 'begging me not to tell you cause she's so afraid of you... not be yelling at her for telling me'; Signal 57 (ROW-14523-14541, Oct 10, Sev 1): weekend visit-refusal cascade — 'Olivia said don't bother coming'; signal_count advances to 57; last_signal_batch=B-029; last_signal_date=2025-10-10",
+    "ARC-RF02-004": "no new primary signals; remains ACTIVE; ROW-14354 homework-conditional-access threat has ARC-RF02-004 adjacent valence but flagged as ARC-RF02-002 primary",
+    "ARC-RF02-005": "no new signals; remains WATCHING; signal_count remains 2",
+    "ARC-RF02-006": "no new primary signals; Canada trip (Niagara Falls, Nov 1-4) is vacation — same destination as B-016; proactively notified with address (ROW-14559-14561, ROW-14632); not a relocation signal; arc remains ACTIVE at 4 signals",
+    "ARC-RF02-003": "no new signals; remains CANDIDATE"
+  },
+
+  "batch_notes": "B-029 (Sep 14 – Oct 31, 2025, 483 messages) produces 3 primary flags, all ARC-RF02-002, continuing the escalating visit-access pattern from B-028. The homework-conditional-access sub-pattern resumes after an 18-month gap (Signal 55, Sep 17) — functionally identical to the B-012-B-013 cluster. The Oct 4 Sev 2 signal (Signal 56) is analytically significant: Melissa articulates a full three-element intermediary enforcement structure in a single exchange — (1) Olivia routes disclosures through Melissa due to fear of Eli, (2) Melissa relays to Eli, (3) Eli is instructed not to punish Olivia for using the Melissa channel. The Oct 10 weekend visit-refusal cascade (Signal 57) is the third in three batches (B-028 Aug 26-Sep 5, B-028 Sep 3-5, B-029 Oct 10), establishing a durable visit-access mediation sub-pattern. RF-11 reaches its highest density in the dataset: four legally threatening communications in 14 days (Sep 14-28), culminating in the most specific legal-action language yet — 'agreement ready to sign' (ROW-14371, Sep 17). ARC-RF02-001 extends quiet streak to 12 consecutive batches. ARC-RF02-006 activity is Canada vacation (Niagara Falls, same as B-016), with proactive notification — not a relocation signal. Cooperative density is moderate: SWAT/homicide crisis communication (Sep 18) is highest-quality crisis coordination in the dataset."
+}

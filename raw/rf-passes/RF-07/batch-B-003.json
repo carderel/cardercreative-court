@@ -1,0 +1,59 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-003",
+    "row_range": {
+      "start": 713,
+      "end": 1092
+    },
+    "date_range": {
+      "start": "2022-11-06",
+      "end": "2022-12-12"
+    },
+    "message_count": 380,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": [
+      "RF07-ADD-001",
+      "RF07-ADD-002",
+      "RF07-ADD-003",
+      "RF07-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 380,
+    "primary_flags": 0,
+    "primary_severity_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 380,
+    "flag_rate": "0.0%"
+  },
+  "flagged_messages": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 watching state maintained. No new signals this batch."
+  },
+  "compound_patterns": [],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Moderate conflict \u2014 Nov 2022 includes first RF-05 contempt threat (S-002). Increasing Abby-targeting language. No message-flooding instances; communication pattern still within normal co-parenting range for RF-07.",
+    "rf07_assessment": "Zero RF-07 primary signals. ARC-RF07-001 watching. No flooding candidates. Nov contempt threats (RF-05 primary) do not cross RF-07 flooding or continuation threshold.",
+    "custodial_context": "Eli's parenting time (weekends) occurs throughout this batch. No Received-direction contact into identified parenting-time windows at density sufficient for ADD-004 custodial-time-overstepping flag."
+  }
+}

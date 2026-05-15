@@ -1,0 +1,41 @@
+{
+  "batch_id": "B-030",
+  "date_range": {
+    "start": "2025-11-02",
+    "end": "2026-01-02",
+    "note": "date-filtered batch"
+  },
+  "message_count": 401,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-10",
+  "rf_name": "Refusal to Co-Parent",
+  "calibration_addenda_active": [
+    "RF10-ADD-001",
+    "RF10-ADD-002",
+    "RF10-ADD-003",
+    "RF10-ADD-004",
+    "RF10-ADD-005",
+    "RF10-ADD-006",
+    "RF10-ADD-007",
+    "RF10-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Structural gap analysis: no primary RF-10 flags. Note: ongoing structural information exclusion (ADD-007 \u2014 medical record access; ADD-006 \u2014 single-disclosure friction) persists through dataset close. Therapist gatekeeping (ADD-008) not documented in this batch. Arc state: CANDIDATE (1 signal ARC-RF10-001, 0 ARC-RF10-002)."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF10-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 1
+    },
+    {
+      "arc": "ARC-RF10-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    }
+  ]
+}

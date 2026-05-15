@@ -1,0 +1,41 @@
+{
+  "rf_pass": "RF-04",
+  "generated_from_cp2": "2026-04-23",
+  "addenda": [
+    {
+      "id": "RF04-ADD-001",
+      "title": "DARVO — Confirmed Structural Pattern",
+      "rule": "DARVO sequences are confirmed as a recurrent behavioral pattern, not episodic. Eli confirmed: 'She likes to deflect and go on the attack if she feels questioned.' Flag all DARVO sequences. Severity: when all three components present (Deny/ignore the concern, Attack Eli's conduct, Reverse Victim/Offender) = Sev 2. Partial DARVO (Attack + Reverse without explicit Deny) = Sev 1. The pattern is most reliably triggered when Eli asserts parenting authority, raises a co-parenting concern, or challenges Melissa's account.",
+      "why": "Eli confirmed recurrence. The pattern is structural — it reflects Melissa's habitual response to perceived challenge.",
+      "how_to_apply": "Watch for sequences where Eli makes a co-parenting point or raises a concern and Melissa responds by attacking Eli's conduct/character rather than engaging with the substance. The reversal (Eli becomes the one with the problem) is the key marker. Apply to all 31 batches."
+    },
+    {
+      "id": "RF04-ADD-002",
+      "title": "Contemptuous Intelligence/Competence Attacks",
+      "rule": "Contemptuous attacks targeting Eli's intelligence or parenting competence ('Are you stupid?' etc.) flag as RF-04 primary. The ROW-336 brother reference was a general intelligence insult, NOT a weaponization of a known sensitive topic — Eli is clear the brother situation is not a sensitive subject and he was not affected beyond the insult itself. Remove 'family_vulnerability_weaponized' from ROW-336 characterization. Track these attacks as disproportionate-response contempt: the trigger (scheduling error, logistics question, parenting decision) is always minor relative to the contemptuous response.",
+      "why": "Eli confirmed ROW-336 was an insult but not a known sensitive topic. Pattern calibration: contempt as RF-04 = disproportionate shaming/humiliation, not targeted trauma weaponization.",
+      "how_to_apply": "Flag direct contemptuous attacks on Eli's intelligence or competence as RF-04. Note the trigger context to assess proportionality. Single contemptuous message = Sev 1; sustained contemptuous campaign within an episode = Sev 2."
+    },
+    {
+      "id": "RF04-ADD-003",
+      "title": "Child-Mediated Guilt Relay — Text Record Sufficiency",
+      "rule": "When Melissa relays Olivia's emotional expressions about Eli's absence, inadequacy, or harm (sadness, hurt, fear, abandonment language) directly to Eli without protective framing, flag as RF-04 primary. Classification is based on the text record — Eli's recollection or non-recollection of a specific message does not change the classification. The relay act itself is the manipulation. Eli did not recall the specific Oct 2, 2022 Savage Love message; keep Sev 2 and note non-recollection. Going forward: apply this standard consistently.",
+      "why": "Eli does not recall the specific Savage Love message but the text record clearly shows the relay mechanism. CP2 did not invalidate the classification.",
+      "how_to_apply": "When Melissa relays Olivia's emotional expressions about Eli to Eli: flag as RF-04 primary (child-guilt relay). Sev 1 if brief/isolated relay without added editorializing. Sev 2 if the relay is extended, has added pressure framing ('she cried,' 'she's devastated'), or is repeated across messages."
+    },
+    {
+      "id": "RF04-ADD-004",
+      "title": "Inside Joke / Playful Context Exclusion",
+      "rule": "ROW-292-293 ('You taught her that / Always remember that') confirmed as inside joke context (twerking). Not RF-04. Apply broadly: when message tone is plausibly playful and Eli has confirmed the underlying context is a shared joke, exclude from RF-04 flagging. Guilt-attributing language in an established playful context is different from genuine guilt-tripping.",
+      "why": "Eli confirmed ROW-292-293 was the twerking inside joke. Exclusion correct.",
+      "how_to_apply": "Screen accusatory-sounding messages against known inside joke or playful context before flagging. When context is uncertain, flag as ambiguous and note for synthesis."
+    },
+    {
+      "id": "RF04-ADD-005",
+      "title": "Eli Phase A Reactive Responses — Not RF-04",
+      "rule": "Eli's Phase A dismissive or sarcastic Sent responses (emoji responses, brief sarcasm like '\"donation\" 🙄') are Phase A reactive behavior under the 'genuine emotional expression / setting boundaries' exclusion in RF-04's Not This list. Do NOT flag these as RF-04 from Eli's direction. Flag Eli's Sent messages as RF-04 only if they show sustained guilt-tripping campaigns, deliberate DARVO, or emotional hostage-taking — behaviors qualitatively distinct from frustration-reactive sarcasm.",
+      "why": "Eli's Phase A responses are pre-awareness reactive patterns, not manipulation campaigns.",
+      "how_to_apply": "Apply throughout all phases. Phase B and C Eli-Sent messages should be held to the same standard — sarcasm or brief dismissiveness is not RF-04 without a sustained manipulation pattern."
+    }
+  ]
+}

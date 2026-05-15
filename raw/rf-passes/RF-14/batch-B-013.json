@@ -1,0 +1,46 @@
+{
+  "batch_id": "B-013",
+  "date_range": {
+    "start": "2024-02-01",
+    "end": "2024-03-27"
+  },
+  "row_range": {
+    "start": null,
+    "end": null
+  },
+  "message_count": "~440",
+  "analysis_date": "2026-05-05",
+  "arc_state_at_batch_start": "WATCHING",
+  "arc_signals_cumulative": 4,
+  "calibration_addenda_active": [
+    "RF14-ADD-001",
+    "RF14-ADD-002",
+    "RF14-ADD-003",
+    "RF14-ADD-004",
+    "RF14-ADD-005",
+    "RF14-ADD-006",
+    "RF14-ADD-007",
+    "RF14-ADD-008"
+  ],
+  "rf_pass": "RF-14",
+  "rf_name": "Substance/Safety",
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Feb-Mar 2024 (date-based). No primary RF-14 flags. Medical coordination cooperative (Feb 25: fever/strep/amoxicillin allergy concern \u2014 ROW-6316 area). Cat-allergy scheme quiet this specific window (escalation occurs Mar 31 in B-014). No substance or safety primary flags."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF14-001",
+      "event": "No new signals \u2014 WATCHING (3 signals)",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF14-002",
+      "event": "No new signals \u2014 WATCHING (1 signal)",
+      "state": "WATCHING"
+    }
+  ]
+}

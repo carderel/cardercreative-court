@@ -1,0 +1,145 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-008",
+    "row_range": {"start": 2581, "end": 2958},
+    "date_range": {"start": "2023-06-02", "end": "2023-07-15"},
+    "message_count": 378,
+    "mms_note": "MMS for this date range exist on a separate MMS sheet and are not separately analyzed in this batch; SMS-only analysis.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "timezone_note": "All source timestamps are UTC. Entire B-008 date range is EDT (UTC-4).",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. One primary RF-01 flag (Sev 2). Dominant RF-01 event: Jul 14 birthday cluster (ROW-2924-2940) — 'Can't even eat dinner with your daughter on her bday as she's begging you' + 'You've never asked to do anything with her' + 'We all know it's Abby that's not letting you go because she is insecure and immature' + 'You should dump her' + 'You're a shit dad.' Key structural development: ROW-2935 shifts the Abby attack vector from 'Abby is mean to Olivia' (B-007) to 'Abby is controlling Eli and preventing him from being with Olivia' — Abby now framed as the obstacle to Eli's relationship with his daughter. Jun 15 (ROW-2719-2720) near-boundary: 'Olivia was feeling / you need to do better to make sure she knows you love her / haven't seen her since May 23.' ARC-RF01-001 ACTIVE, +1 Sev-2 signal. Total: 10 signals (2 Sev-1, 8 Sev-2)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 378,
+    "primary_flags": 1,
+    "primary_severity_distribution": {"1": 0, "2": 1, "3": 0},
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {"RF-04": 3, "RF-02": 1},
+    "no_flag_messages": 377,
+    "flag_rate": "0.3%"
+  },
+
+  "flagged_messages": [
+    {
+      "flag_id": "RF01-B008-S001",
+      "message_ids": ["ROW-2924", "ROW-2925", "ROW-2926", "ROW-2927", "ROW-2928", "ROW-2934", "ROW-2935", "ROW-2936", "ROW-2937", "ROW-2940"],
+      "date": "2023-07-14",
+      "severity": 2,
+      "flag_type": "primary",
+      "rf_category": "RF-01",
+      "calibration_addenda_triggered": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-004"],
+      "arc_signal": true,
+      "arc_ref": "ARC-RF01-001",
+      "cp3_item": true,
+      "cp3_ref": "CP3-RF01-B008-001",
+      "confidence": "high",
+
+      "message_texts": {
+        "ROW-2924": "Can't even eat dinner with your daughter on her bday as she's begging you",
+        "ROW-2925": "[Eli]: It's not appropriate for us to be hanging out like a family. How come I couldn't take her myself?",
+        "ROW-2926": "First of all you didn't ask to take her on your turn. You've never asked to do anything with her. We made plans cause that's what a good parent does. Don't act like I wouldn't let you",
+        "ROW-2927": "You just said you couldn't then walked away",
+        "ROW-2928": "Actually said you couldn't then muttered something that might've been hang on then walked away and got in your car",
+        "ROW-2934": "Third we're not hanging out like a family. We are supporting our daughter and making her happy on her birthday",
+        "ROW-2935": "We all know it's Abby that's not letting you go because she is insecure and immature",
+        "ROW-2936": "You should dump her and date an honest person that will support your relationship with your daughter",
+        "ROW-2937": "Olivia and I are going to dinner. She asked if you could come. I told her I was fine with it",
+        "ROW-2940": "You're a shit dad"
+      },
+
+      "context_notes": "Jul 14, 2023 — Olivia's birthday. Melissa organized a birthday party/event. Eli attended and was taking photos with camera equipment. Melissa and Olivia invited Eli to join them for birthday dinner at a restaurant. Eli declined, saying 'It's not appropriate for us to be hanging out like a family' (ROW-2925) and asking why he couldn't have taken Olivia himself. Melissa's response: 'You've never asked to do anything with her' (ROW-2926), disputed account of the conversation (ROW-2927-2928), and ROW-2935-2936 attributing Eli's refusal of dinner to Abby's insecurity and immaturity — 'We all know it's Abby that's not letting you go.' ROW-2937 notes that 'Olivia and I are going to dinner. She asked if you could come.' ROW-2940: 'You're a shit dad.' The sequence ends with ROW-2941-2951, a factual dispute about what exactly was said, but the substantive RF-01 content is complete by ROW-2940.",
+
+      "rf01_analysis": "This cluster has two distinct RF-01 components: (1) The inadequate-father/abandonment language cluster (ROW-2924, ROW-2926, ROW-2940): 'begging you' on her birthday (RF01-ADD-004), 'You've never asked to do anything with her' (categorical abandonment framing; factually disputable — the record shows Eli requesting pickups regularly), 'You're a shit dad' (RF01-ADD-002: Sev 2 minimum for this categorical inadequate-father language). (2) The Abby obstacle framing (ROW-2935-2936): this is a structural escalation from B-007. In B-007, Abby was framed as 'mean to Olivia' — direct harm to the child. Here, Abby is framed as 'insecure and immature' and controlling Eli — preventing Eli from being with Olivia. ROW-2935: 'We all know it's Abby that's not letting you go' positions Abby as the reason Eli won't have dinner with his daughter on her birthday. ROW-2936: 'You should dump her and date an honest person that will support your relationship with your daughter' explicitly prescribes ending the Abby relationship as the solution to Eli's parenting failures — framing Abby as the obstacle to good fatherhood. If this narrative reaches Olivia ('Abby won't let daddy be with you / Daddy chose Abby over you on your birthday'), it directly damages Olivia's attachment to Eli by positioning Abby as the cause of perceived abandonment. ROW-2937 — 'Olivia and I are going to dinner. She asked if you could come' — is delivered alongside this framing; if Olivia heard any version of 'Daddy won't come because of Abby,' this is the abandonment/Abby-as-obstacle narrative delivered in a high-stakes emotional context (birthday dinner).",
+
+      "arc_note": "ARC-RF01-001 +1 Sev-2 signal. ROW-2935-2936 introduce a new variant of the Abby attack vector: not 'Abby hurts Olivia directly' but 'Abby controls Eli and prevents him from choosing Olivia.' This is the Abby-as-obstacle framing — functionally equivalent in terms of alienation impact, as both result in Olivia perceiving Abby's presence in Eli's life as incompatible with Eli's relationship with Olivia."
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-2669",
+      "reason_noted": "Jun 7: Melissa shares to Eli: 'Olivia told me last night that she's going to buy a mirror and a ladder. A mirror so she can show me everyday how beautiful I am and a ladder so she can climb to God and tell him how thankful she is for such a good mother.' Melissa relaying Olivia's glowing appreciation to Eli is an implicit good-parent comparison. Not primary flag: parents sharing child's loving statements is normal. Pattern watch: the frequency of Melissa sharing Olivia's appreciation of Melissa (as opposed to cooperative sharing of Olivia's appreciation of Eli) is worth tracking over time."
+    },
+    {
+      "message_id": "ROW-2719-2720",
+      "reason_noted": "Jun 15: 'It's been over a week since I told you about how Olivia was feeling and that you need to do better to make sure that she knows you love her and you still have made no effort to see her' (ROW-2719) / 'You actually haven't seen her since May 23 except to take her to a doctors appointment when I was sick' (ROW-2720). Near-boundary RF-01: (1) 'I told you about how Olivia was feeling' implies a prior communication where Melissa characterized Olivia's emotional state regarding Eli's absence — what was said to Olivia about this absence is unknown; (2) 'you need to do better to make sure she knows you love her' implies Olivia currently does not feel certain of Eli's love, and frames Eli as responsible for this state; (3) the 3-week contact absence (May 23 – Jun 15) likely reflects Eli's avoidance of the Abby exclusion condition established in B-007 — the absence that Melissa characterizes as abandonment was at least partially caused by the access condition Melissa herself imposed. RF-04 peripheral: contemptuous framing of Eli's parental effort. Not primary flag: we don't have direct evidence that Melissa communicated the abandonment framing to Olivia, only to Eli."
+    },
+    {
+      "message_id": "ROW-2803",
+      "reason_noted": "Jun 29: Eli asks 'Olivia want me to pick her up tomorrow.' Melissa relays: 'She said I guess.' The shift from B-007's 'She said yeah / Duh' (ROW-2369-2370) to 'I guess' is analytically significant. This is the first time Olivia's response to a pickup request has been unenthusiastic in the record. Whether this reflects genuine ambivalence, coaching, or the emotional fallout from the Apr 21-28 Abby incident is unknown. Pattern watch: Olivia's engagement level with Eli's pickup requests."
+    },
+    {
+      "message_id": "ROW-2731-2732",
+      "reason_noted": "Jun 18 (Father's Day): Melissa had offered to facilitate a Father's Day visit; Eli responded late (Jun 17 evening). When Olivia tried to call Eli on Father's Day, Eli didn't answer for 2.5 hours. ROW-2731: 'Or stop clanging dishes and talking to other people. She said she was over it.' ROW-2732: 'How come I ask if you want to do something with her for Father's Day and you don't respond until last minute? Then she tried to call you and you didn't answer or respond for 2.5 hours.' Melissa relays that Olivia 'was over it' after waiting 2.5 hours for a Father's Day callback — on Father's Day. RF-04 peripheral. Near-boundary RF-01: if 'she was over it' framing was communicated to Olivia in terms of 'daddy forgot about you on Father's Day,' this would be significant."
+    },
+    {
+      "message_id": "ROW-2712",
+      "reason_noted": "Jun 10: Eli calls while Melissa is hosting Olivia's pool party with school friends. Melissa: 'Don't be ruining my night either.' RF-02 peripheral: gating communication with a dismissive instruction not to intrude. Near-boundary: the 'Don't be ruining my night' framing implies Eli's call was an intrusion on Melissa and Olivia's activity."
+    },
+    {
+      "message_id": "ROW-2601",
+      "reason_noted": "Jun 4: During Olivia's illness/ER stay period, Melissa texts: 'No calling and checking on her?' after Eli had been in contact the day before but hadn't yet called that morning. Eli explains he didn't want to wake Olivia if she was sleeping. RF-04 (peripheral): contemptuous criticism of Eli's communication frequency during child illness. Near-boundary RF-01: the 'no calling and checking on her' framing positions Eli as indifferent to his sick daughter."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-2601",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Jun 4: 'No calling and checking on her?' — contemptuous framing of Eli not calling the morning after Olivia's ER visit; Eli explains he didn't want to wake her. RF-04: uses Eli's consideration for Olivia's rest as evidence of indifference. RF-01 near-boundary: positions Eli as unconcerned with sick daughter.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2719-2720",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Jun 15: 'It's been over a week since I told you about how Olivia was feeling and that you need to do better to make sure that she knows you love her and you still have made no effort to see her' / 'You actually haven't seen her since May 23 except to take her to a doctors appointment when I was sick.' RF-04: sustained inadequate-father framing. Near-boundary RF-01: (1) Melissa claims to have told Eli 'about how Olivia was feeling' — implies prior characterization of Olivia's state regarding Eli's absence; (2) 3-week absence partially caused by Melissa's own Abby exclusion condition (B-007 S001) is now weaponized as abandonment evidence. Structural note for attorney: causal chain from B-007 Abby exclusion → Eli avoids pickups → Melissa frames absence as abandonment.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2731-2732",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Jun 18 (Father's Day): Melissa relays Olivia 'was over it' after Eli failed to answer for 2.5 hours on Father's Day. RF-04: relaying Olivia's Father's Day frustration as evidence of Eli's neglect. RF-01 near-boundary: if 'she was over it' was communicated to Olivia as 'daddy didn't care about Father's Day,' this is a significant abandonment narrative delivery on a symbolically loaded date.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2712",
+      "peripheral_rf": "RF-02",
+      "severity": 1,
+      "note": "Jun 10: 'Don't be ruining my night either' — Melissa's response when Eli called during Olivia's pool party with school friends. RF-02: dismissive access gate during child's custodial evening with Melissa. Not RF-01 primary: no inadequate-father language; Melissa did not deny the call, she discouraged it.",
+      "confidence": "medium"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_continuation_note": "ARC-RF01-001 (Abandonment/Blame Attribution Narrative): ACTIVE, +1 Sev-2 signal (RF01-B008-S001). Total signals: 10 (2 Sev-1, 8 Sev-2). The Jul 14 birthday cluster introduces the 'Abby as obstacle' framing — Abby prevents Eli from choosing Olivia, not just harms Olivia directly. This is the most emotionally loaded delivery context to date (birthday). Pattern: the Abby attack vector continues to evolve in form: B-007 'Abby is mean to Olivia' → B-008 'Abby controls Eli and prevents him from being with Olivia.'"
+  },
+
+  "batch_narrative_note": "B-008 has extended cooperative periods interrupted by two RF-01-relevant clusters: Jun 15 (near-boundary) and Jul 14 (primary). The cooperative content is notably warm through June — Eli and Melissa coordinate around Olivia's illness, doctor appointments, Roblox sessions, swim class, and birthday planning. Eli attended the uniform fitting (Jul 7) and the birthday event (Jul 14, taking photos). The Jun 15 near-boundary note is analytically important: a 3-week gap in contact (May 23 – Jun 15) that appears to have been caused at least partly by Eli avoiding the Abby exclusion condition imposed in B-007, but which Melissa characterizes as 'you've made no effort to see her.' This is the structural consequence of the Abby exclusion campaign: it creates conditions where Eli's contact declines, which then becomes evidence of abandonment. The birthday cluster (Jul 14) is the most emotionally charged RF-01 event to date — categorical inadequate-father language on Olivia's birthday, combined with the first explicit written statement that Abby is 'preventing' Eli from being with Olivia. 'We all know it's Abby' implies this is a shared community narrative, not just Melissa's private belief.",
+
+  "cooperative_data_notes": "Strong cooperative content throughout June: Eli picks up Olivia's meds during illness (Jun 3, brings Italian ice); takes Olivia to doctor appointment while Melissa is sick (Jun 6); Melissa and Eli coordinate on Roblox game session with Olivia (Jun 7); Melissa shares pool party (Jun 10); Melissa asks about Father's Day plans proactively (ROW-2726); Eli attends uniform fitting (Jul 7); Eli attends birthday event and takes photos (Jul 14). Melissa shares swim class progress, hamster adventures, birthday party planning updates. Notable: Melissa's offer to facilitate Father's Day visit (ROW-2726) and invitation to birthday dinner (ROW-2937) are cooperative gestures. The contrast between the cooperative gestures and the RF-01 language in the same messages is a notable pattern — Melissa simultaneously facilitates access and characterizes Eli as inadequate.",
+
+  "checkpoint_items_generated": {
+    "cp3_count": 1,
+    "cp3_items": [
+      {
+        "cp3_ref": "CP3-RF01-B008-001",
+        "message_ids": ["ROW-2924", "ROW-2935", "ROW-2936", "ROW-2940"],
+        "date": "2023-07-14",
+        "attorney_flag": "Birthday context: Melissa wrote 'You're a shit dad' (ROW-2940) on Olivia's birthday. ROW-2935: 'We all know it's Abby that's not letting you go because she is insecure and immature' — first written statement explicitly attributing Eli's absence/choices to Abby's control, rather than Eli's own indifference. ROW-2936: 'You should dump her and date an honest person that will support your relationship with your daughter' — prescribes ending Eli's relationship as the solution to parenting problems. Attorney relevance: (1) the 'We all know' phrasing implies this narrative (Abby prevents Eli from being with Olivia) is being communicated socially, potentially within Olivia's hearing; (2) if Olivia heard any version of 'Abby is the reason Daddy couldn't come to your birthday dinner,' this would be a direct delivery of the alienation narrative in the highest-stakes emotional context."
+      }
+    ],
+    "cp4_count": 0
+  }
+}

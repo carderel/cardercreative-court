@@ -1,0 +1,80 @@
+{
+  "batch_id": "B-002",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2022-10-03",
+    "end": "2022-11-05"
+  },
+  "row_range": {
+    "start": 367,
+    "end": 874
+  },
+  "message_count": 508,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "CANDIDATE",
+    "ARC-RF13-002": "CANDIDATE",
+    "ARC-RF13-003": "CANDIDATE"
+  },
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 1,
+    "note": "Halloween hostile episode EP-0093 (Oct 31 2022, 48 msgs, flooding). First hostile episode post-calibration. Confirms ADD-003 Halloween temporal pattern. Asymmetric escalation shape confirmed \u2014 Melissa escalates; Eli responds measured. ARC-RF13-002 promoted to WATCHING (2nd role-consistency data point after B-001 EP-0009). ARC-RF13-003 WATCHING confirmed."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B002-001",
+      "episode_id": "EP-0093",
+      "date": "2022-10-31",
+      "message_count": 48,
+      "phase": "A",
+      "flooding_detected": true,
+      "severity": 1,
+      "escalation_shape": "asymmetric",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "measured, fewer messages than received",
+        "received_direction": "escalating hostile tone, flooding (48 msgs, ~9 hr span)",
+        "net_escalation": "moderate (Sev-1 threshold met)",
+        "de_escalation_resistance": "Eli responds measured; Melissa does not de-escalate"
+      },
+      "cycle_classification": "CYC-003 \u2014 Halloween temporal window (Oct 25-Nov 2 trigger period); first holiday-pattern confirmation",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 1,
+      "cross_rf_note": "EP-0093 may contain RF-04 DARVO elements. Direction imbalance (received 31/48 msgs = 65%) consistent with RF-04 initiator pattern."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-002",
+      "event": "EP-0093 is the 2nd asymmetric-role data point (after B-001 EP-0009). Melissa = escalator, Eli = de-escalator confirmed across 2 independent episodes.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF13-003",
+      "event": "EP-0093: Eli's measured response to flooding not acknowledged. Melissa continues hostile pattern. 2nd de-escalation resistance data point.",
+      "state": "WATCHING"
+    },
+    {
+      "arc": "ARC-RF13-001",
+      "event": "EP-0093 confirms trajectory rising. First hostile episode post-calibration.",
+      "state": "CANDIDATE"
+    }
+  ]
+}

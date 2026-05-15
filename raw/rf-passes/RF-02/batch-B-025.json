@@ -1,0 +1,123 @@
+{
+  "batch_id": "B-025",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-05-04",
+    "end": "2025-05-29"
+  },
+  "row_range": {
+    "sms_start": "ROW-9505",
+    "sms_end": "ROW-9704",
+    "sms_secondary_section": "ROW-7806 to ROW-7832 (secondary SMS table section, May 22-29 — Eli-sent entries)",
+    "mms_start": "ROW-13405",
+    "mms_end": "ROW-15416"
+  },
+  "message_count": 507,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B025-PF-001",
+      "row_ref": "ROW-9660",
+      "date": "2025-05-21",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 50,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "I asked if she wanted to call you to tell you about the call and she said yes and told me to call",
+      "context": "Melissa notified Eli (ROW-9651, May 19) that she had enrolled Olivia in counseling. Eli (ROW-9652): 'Olivia can call me.' Melissa interprets this as dismissal (ROW-9653-9655: 'I was going to tell you about the counseling session but ok / Cause that seems like something that the two parents should know about / But you do you boo'). Eli clarifies (ROW-9656: 'I do want to know what's going on with her'). Melissa (ROW-9660): 'I asked if she wanted to call you to tell you about the call and she said yes and told me to call' — Melissa claims Olivia wanted to tell Eli about the counseling session but directed Melissa to make the call rather than calling herself. Eli then bypasses the relay and calls Olivia directly (ROW-9661): 'I called Olivia directly and asked if she wanted to tell me about the counseling session. She said no.' Also appears in MMS as ROW-13591.",
+      "analytical_note": "Signal 50 extends required-intermediary pattern into Olivia's counseling domain. Melissa positions herself as the conduit for communicating Olivia's therapeutic experiences to Eli — even when Olivia ostensibly 'wanted to tell you.' The claim 'she said yes and told me to call' structurally asserts the same pattern documented throughout the arc: Olivia's communications with Eli route through Melissa as required intermediary. Analytically significant CA-RF02-02 (child preference relay authenticity) data point: Melissa claims Olivia wants to share the counseling session with Eli; when Eli calls Olivia directly, Olivia says no, she does not want to discuss it. The divergence between Melissa's relay and Olivia's direct response suggests either (a) Olivia changed her mind, or (b) Melissa's characterization of Olivia's wishes was inaccurate. Either outcome supports the arc's core pattern — Melissa positions herself as the intermediary for Olivia-Eli communication, including in sensitive therapeutic contexts.",
+      "arc_promotion": null
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B025-PERIPH-001",
+      "row_ref": "ROW-9523 / ROW-9571",
+      "date": "2025-05-04",
+      "rf_category": "RF-05",
+      "severity": 1,
+      "verbatim": "I'm not having this conversation with you. Abby literally called her rude because she just wanted you to wait an hour so she could go to church. You don't call a 9 year old rude cause she is coming up [ROW-9523] / U don't want to hear anything that psycho has to say. Her excuses are all bullshit [ROW-9571]",
+      "note": "RF-05 Sev 1 Abby-delegitimization during the Cosi/church scheduling dispute. Melissa frames Abby as the aggressor against Olivia ('called her rude' — Eli disputes this, ROW-9525: 'She called YOU rude'), then escalates to explicit derogatory characterization ('psycho'). The dispute originates from a last-minute invitation from Eli for Olivia to attend Milo's birthday trip to COSI; Melissa objected to the scheduling conflict with Olivia's 10:30 church service. Also appears in MMS as ROW-13423, ROW-13471. RF-05 Sev 1 — consistent with prior Abby-delegitimization pattern."
+    },
+    {
+      "flag_id": "B025-PERIPH-002",
+      "row_ref": "ROW-9540-ROW-9541 / ROW-9558-ROW-9562",
+      "date": "2025-05-04",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "She feels left out by you anyways so these instances don't help that feeling [ROW-9540] / She clutches on to that ring you got her and I feel like it's cause she feels like it's her only constant connection. I did that with stuff my dad got me cause of that [ROW-9541] / You went from April 2 to April 24 without seeing her. [ROW-9558] / So yeah. She feels left behind [ROW-9559] / I can't imagine not seeing my kid for over 3 weeks. My heart would be broken [ROW-9562]",
+      "note": "RF-04 Sev 1 during the Cosi dispute. Two-part attack: (1) Olivia's emotional attachment to Eli framed as symptom of abandonment (ring-clutching = compensating for absent father); (2) the Apr 2 – Apr 24 absence (illness-related, explained at ROW-9560: 'Milo was sick and then I was sick then Abby was sick. That's 3 weeks') weaponized as evidence of Eli's indifference. Both elements use Olivia's emotional state and physical behavior as evidentiary ammunition against Eli's parental fitness. Also appears in MMS as ROW-13440-13441, ROW-13458-13462. RF-04 Sev 1."
+    },
+    {
+      "flag_id": "B025-PERIPH-003",
+      "row_ref": "ROW-9536",
+      "date": "2025-05-04",
+      "rf_category": "RF-11",
+      "severity": 1,
+      "verbatim": "If you don't have anything constructive or a solution stop texting me. Otherwise it's harassment and I will file harassment",
+      "note": "RF-11 Sev 1. Melissa threatens legal harassment filing against Eli for continuing to text during the Cosi dispute. Issued mid-dispute when Eli continued texting after Melissa said she wanted to stop the conversation. Consistent with prior RF-11 pattern (B-016, B-017, B-018, B-019 contempt/legal threats). Also appears in MMS as ROW-13436."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-9608-ROW-9614",
+      "date": "2025-05-09",
+      "description": "Eli picks up canker sore medication for Olivia at CVS and coordinates with Melissa before administering. Melissa confirms the product and provides background context on Olivia's mouth pain. Cooperative health management."
+    },
+    {
+      "row_ref": "ROW-9638-ROW-9650",
+      "date": "2025-05-16",
+      "description": "Melissa asks Eli for his schedule to plan a date; Eli supportively encourages her to take time for herself ('She's part of your life, but she isn't your whole life'). Melissa ultimately declines but the exchange demonstrates mutual warmth about co-parenting balance."
+    },
+    {
+      "row_ref": "ROW-9672-ROW-9686 / ROW-7809-ROW-7815",
+      "date": "2025-05-25 to 2025-05-26",
+      "description": "Memorial Day weekend access: Melissa proactively asks about Eli's availability; Eli takes Olivia for an extended visit including a trip to see Eli's mother. Melissa cooperatively extends the visit when she's not home yet ('Can I pick her up from your house?'). Eli keeps Olivia until Melissa is available."
+    },
+    {
+      "row_ref": "ROW-9702-ROW-9704",
+      "date": "2025-05-29",
+      "description": "School last-day pickup: Melissa emails the school to authorize Eli to pick up Olivia, suggests he can go earlier if he wants, and provides detailed instructions on the pickup procedure. High-quality access facilitation — previously arranged cooperative pickup (noted in B-021 cooperative data points)."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-9524",
+      "date": "2025-05-04",
+      "consideration": "ARC-RF02-001 near-miss. Melissa (ROW-9524): 'So I'm going to block you for the night cause I'm not going to del with this.' Block threat stated but not implemented — Eli texted at ROW-9525 (1 minute later) and both parties continued exchanging messages through ROW-9589. Not flagged: block was not implemented and subsequent communication occurred normally."
+    },
+    {
+      "row_ref": "ROW-9516-ROW-9517",
+      "date": "2025-05-04",
+      "consideration": "ARC-RF02-002 near-miss. Melissa relays Olivia's church condition: 'When I asked if she wanted to go she said as long as it wasn't during her church time.' Olivia's preference conveyed through Melissa. Not flagged as primary: church preference is a reasonable scheduling constraint, and the relay mechanism in this instance is facilitative (working to get Olivia to the COSI trip rather than blocking access)."
+    },
+    {
+      "row_ref": "ROW-9638",
+      "date": "2025-05-16",
+      "consideration": "ARC-RF02-002 near-miss. Eli (ROW-9638): 'She want me to pick her up after work tomorrow?' — Eli continuing to route access requests through Melissa (internalized required-intermediary norm). Not flagged as primary: facilitative context, consistent baseline behavior."
+    },
+    {
+      "row_ref": "ROW-9690-ROW-9693",
+      "date": "2025-05-27",
+      "consideration": "ARC-RF02-002 near-miss. Melissa relays that Olivia asked about the phone location tracking before leaving: 'She said cause my dads always crashing his cars and I wanted to make sure you could see where I was / She was afraid you were going to wreck your car with her in it.' Olivia's safety concern relayed through Melissa. Not flagged as primary: safety concern relay with natural explanation (Eli had prior car accidents); no access-blocking mechanism."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; block threat (ROW-9524, May 4) near-miss — not implemented; signal_count remains 26",
+    "ARC-RF02-002": "signal_count now 50; one signal — ROW-9660 (May 21, counseling session relay, signal 50); analytically significant CA-RF02-02 data point: Melissa claims Olivia asked her to call Eli about counseling; Eli calls Olivia directly and finds Olivia does not want to discuss it — divergence between relay claim and direct response; required-intermediary framework now documented in scheduling, affective, and therapeutic communication domains",
+    "ARC-RF02-004": "no new signals; remains ACTIVE",
+    "ARC-RF02-005": "no new signals; remains WATCHING",
+    "ARC-RF02-006": "no new signals; remains WATCHING"
+  },
+
+  "batch_notes": "Second consecutive lower-density RF-02 batch (1 primary flag). May 4 Cosi dispute is analytically rich for RF-05 (Abby-psycho) and RF-04 (ring-clutching abandonment framing, illness-absence weaponized) content but limited on RF-02. The May 21 counseling relay (signal 50) is the most analytically developed signal this batch: required-intermediary pattern now operating in the therapeutic domain, with a CA-RF02-02 integrity challenge (Melissa's relay claim vs. Olivia's direct statement). Four cooperative data points — strong facilitation density. Melissa enrolls Olivia in counseling (May 19, ROW-9651) unilaterally; Eli receives notification after the fact (RF-07 cross-pass item). Eli continues internalized required-intermediary norm for access requests (ROW-9638, ROW-9663-9666). New relationship disclosure May 28: Melissa tells Eli about a man she's dating; parenting plan compliance on significant-other exposure discussed cooperatively (ROW-7826-7831)."
+}

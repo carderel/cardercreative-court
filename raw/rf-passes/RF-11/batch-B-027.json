@@ -1,0 +1,53 @@
+{
+  "batch_id": "B-027",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2025-07-17",
+    "end": "2025-08-28"
+  },
+  "row_range": {
+    "start": 9917,
+    "end": 14235
+  },
+  "message_count": 503,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Aug 2025: 1 RF-11 primary flag. S001 \u2014 counselor relay + child-as-parental-support-judge. Arc initialized at 1 signal (CANDIDATE)."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF11-B027-001",
+      "signal_id": "S001",
+      "severity": 2,
+      "date": "2025-08-14",
+      "row_ref": "ROW-14097 + ROW-14146 + ROW-14207",
+      "direction": "received",
+      "type": "counselor_relay_weaponization + child_as_parental_support_judge",
+      "arc_ref": "ARC-RF11-001",
+      "addenda_applied": [
+        "RF11-ADD-001",
+        "RF11-ADD-003",
+        "RF11-ADD-004",
+        "RF11-ADD-006"
+      ],
+      "compound_pattern": "COMP-RF11-001",
+      "cross_rf": "RF-04 (COMP-RF04-024, B-027 Aug 14-15 mega-cluster); RF-08 (counselor-relay mechanism)",
+      "message_text": "ROW-14097: 'She\\'s told the counselor before how she\\'s afraid to talk to you about things and how she feels cause you would just yell at her and not listen' | ROW-14146: 'so she doesn\\'t feel like you started another family and pushed her out' | ROW-14207: 'She sees who supports her'",
+      "summary": "Aug 2025: Melissa deploys Olivia's therapeutic statements as adult-conflict ammunition against Eli within the Aug 14-15 mega-cluster. Three-component RF-11 mechanism: (1) ROW-14097 counselor relay \u2014 Melissa cites Olivia's statements to her therapist as evidence of Eli's inadequacy ('afraid to talk to you'), positioning the therapeutic relationship as a corroborating source for the inadequate-father narrative. Per ADD-004 behavioral context: therapy non-continuity pattern (Melissa drops therapists when called out) suggests strategic therapeutic engagement rather than genuine treatment. (2) ROW-14146 \u2014 Olivia's alleged emotional displacement ('started another family and pushed her out') deployed as guilt framing: Olivia's therapeutic expression weaponized in adult conflict. (3) ROW-14207 'She sees who supports her' \u2014 child positioned as referee of parental support quality; Olivia placed in the role of judging which parent is the better parent. ADD-006 context: Olivia-as-stabilizer pattern confirmed at CP2 \u2014 counselor relay is documentary evidence of the broader parentification pattern. Compound COMP-RF11-001: RF-11+RF-04+RF-08 \u2014 counselor relay is both RF-08 mechanism (relay-through-therapeutic-content) and RF-04 inadequacy-weapon; RF-11 primary because child's therapeutic context is directly weaponized in adult conflict."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF11-001",
+      "event": "S001 \u2014 arc initialized at first signal",
+      "new_state": "CANDIDATE",
+      "signal_count": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "batch_id": "B-017",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2024-07-15",
+    "end": "2024-08-05"
+  },
+  "row_range": {
+    "start": 5967,
+    "end": 6299
+  },
+  "message_count": 582,
+  "phase": "A",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 8,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jul-Aug 2024. Aug 4 mega-cluster (EP-0854 311 msgs). RF-04/RF-05/RF-07/RF-08 all active. RF-15 cross-references in notes but no standalone primary RF-15 flag \u2014 the mega-cluster involves DARVO and legal threats but the false allegation mechanism in this window belongs to B-016 (Jun 2024) and B-018-B-019 (Sep-Oct 2024) flanking batches."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

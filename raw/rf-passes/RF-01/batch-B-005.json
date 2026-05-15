@@ -1,0 +1,102 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-01",
+    "batch_id": "B-005",
+    "row_range": {"start": 1463, "end": 1840},
+    "date_range": {"start": "2023-01-18", "end": "2023-02-21"},
+    "message_count": 378,
+    "mms_note": "MMS for this date range exist on a separate MMS sheet and are not separately analyzed in this batch; SMS-only analysis.",
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "timezone_note": "All source timestamps are UTC. Entire B-005 date range is EST (UTC-5). All local times in this file are EST.",
+    "calibration_addenda_active": ["RF01-ADD-001", "RF01-ADD-002", "RF01-ADD-003", "RF01-ADD-004", "RF01-ADD-005"],
+    "notes": "Phase A. Relatively quiet RF-01 batch. No primary flags. Dominant events: (1) ongoing Eli-Olivia contact and outings (swim, Red Robin, bounce place); (2) Feb 12 car accident involving Eli and Abby — extended Feb 15 dispute about lawsuit and Olivia's involvement; (3) Feb 10 Abby-illness-as-reason dispute. The Abby attack vector appears in lower-intensity form (ROW-1684) but does not rise to primary flag threshold. The Feb 15 'teaching bad stuff / scammer' characterization (ROW-1734, 1751) is RF-04 primary rather than RF-01. ARC-RF01-001 ACTIVE, no new signal this batch. Total: 6 signals (2 Sev-1, 4 Sev-2)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 378,
+    "primary_flags": 0,
+    "primary_severity_distribution": {"1": 0, "2": 0, "3": 0},
+    "peripheral_flags_total": 3,
+    "peripheral_rf_distribution": {"RF-04": 2, "RF-08": 1},
+    "no_flag_messages": 378,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-1600",
+      "reason_noted": "Feb 1: 'You told Olivia you were thinking of picking her up on Wednesday then never said anything else about it. She is expecting you to pick her up tonight. You need to do better with communication.' Melissa relays Olivia's expectation that Eli would pick her up, and criticizes Eli's follow-through on a verbal promise to Olivia. Near-boundary RF01-ADD-004: Melissa uses Olivia's disappointed expectation as evidence of Eli's parental unreliability. Not primary flag: the complaint is logistical and specific; no sustained inadequate-father narrative language. Pattern watch: Melissa regularly documents instances where Eli communicated plans to Olivia but did not follow through — this becomes a pattern of 'Eli makes promises to Olivia he doesn't keep' if it recurs."
+    },
+    {
+      "message_id": "ROW-1684",
+      "reason_noted": "Feb 10: 'You've been telling her all week you can't spend time with her cause Abby is sick and now she's magically better.' Melissa asserts Eli told Olivia all week that Abby's illness prevented him from seeing Olivia. This activates the Abby-prioritization narrative: Abby's health situation = reason Olivia doesn't get time with Eli. Eli's response (ROW-1687): he was waiting an extra day to avoid passing illness to Olivia. Near-boundary RF-01: the 'Abby over Olivia' framing is present but grounded in a specific health situation rather than a sustained coached narrative. RF-04 primary (contemptuous challenge to Eli's explanation). Not flagged RF-01 primary: does not meet the sustained abandonment/inadequate-father language threshold of RF01-ADD-002. Noted as continuation of Abby attack vector in lower-intensity form."
+    },
+    {
+      "message_id": "ROW-1718",
+      "reason_noted": "Feb 15: 'I don't know why you felt the need to tell Olivia you were talking to lawyers. She doesn't need involved in that.' Context: Eli had a car accident Feb 12; on Valentine's Day (Feb 14) he told Olivia he had a present for her but couldn't see her because he was meeting with lawyers (ROW-1724). Melissa's concern about Eli's communication to Olivia about the lawsuit is potentially RF-08 (inappropriate child involvement) — but the concern cuts both ways: Melissa told Olivia about the accident (ROW-1722) and Eli told Olivia about lawyer meetings. Both parties are criticizing the other's communication with Olivia about adult legal matters. Neither rises to RF-01 primary in this instance. Noted as RF-08 candidate."
+    },
+    {
+      "message_id": "ROW-1734",
+      "reason_noted": "Feb 15: 'I don't want you teaching her how to be a scammer.' Context: Melissa accuses Eli of potentially fraudulent behavior in his car accident lawsuit (waiting until he confirmed the other driver had insurance before seeking medical care). Melissa frames this as a negative value she doesn't want modeled for Olivia. Near-boundary RF-01: if Melissa communicates 'your dad is a scammer' to Olivia, this would be significant character disparagement. In this context it is adult-to-adult. RF-04 primary: contemptuous negative character attribution. Noted: the 'teaching her bad values' frame (also ROW-1751, 1758) — Melissa positioning herself as the guardian of Olivia's moral development against Eli's bad influence — is a subtle RF-01 adjacent pattern."
+    },
+    {
+      "message_id": "ROW-1792-1795",
+      "reason_noted": "Feb 15: 'I work really hard to help her understand right from wrong. We have conversations and she has the positive influence of church' / 'we eliminate bad influence as much as we can which is why Emily isn't around.' Melissa positions herself as Olivia's primary moral educator, with church as a positive influence she provides and 'bad influences' as things she actively eliminates from Olivia's environment. Near-boundary RF-01: Melissa positioning her household as the source of Olivia's moral framework and values, with Eli's influence (and others') characterized as potentially harmful. Not flagged: this is Melissa characterizing her own parenting approach, not explicitly disparaging Eli to Olivia. Pattern watch: if this 'I protect her from bad influences' framing is applied to Eli specifically or used to justify limiting Eli's influence, it escalates."
+    },
+    {
+      "message_id": "ROW-1817",
+      "reason_noted": "Feb 17: 'Olivia said anytime I call you I expect you to answer.' Melissa relays Olivia's stated expectation that Eli will always answer her calls. Near-boundary RF01-ADD-004: Melissa relays Olivia's expressed demand of Eli's availability, potentially positioning Eli as failing a standard Olivia has set. However: this is likely a natural child expression of wanting phone access to her dad, relayed faithfully. Not RF-01 primary because: (1) the specific missed call appears isolated; (2) Eli appears generally responsive throughout this batch. RF-02 peripheral (contact availability expectations)."
+    },
+    {
+      "message_id": "ROW-1556",
+      "reason_noted": "Jan 27: 'Olivia was just asking about it wanting to know if you were picking her up and what ti[me].' Cooperative data: Melissa relaying Olivia's anticipation of seeing Eli. Contrasts with the pattern of relaying Olivia's disappointment or criticism — here Melissa communicates Olivia's positive desire to see her dad. Cooperative baseline reference."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-1684",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Feb 10: 'You've been telling her all week you can't spend time with her cause Abby is sick and now she's magically better.' Contemptuous challenge to Eli's illness-related absence from Olivia. RF-04 primary: dismisses Eli's health precaution as an excuse. Abby attack vector reference (Abby's situation = reason Eli doesn't see Olivia). RF-01 near-boundary noted but not flagged.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1734",
+      "peripheral_rf": "RF-04",
+      "severity": 1,
+      "note": "Feb 15: 'I don't want you teaching her how to be a scammer' / (ROW-1751) 'I don't want you being one of those people and teaching her that.' Contemptuous characterization of Eli as a fraudulent/dishonest person whose behavior models bad values for Olivia. RF-04: negative character attribution. RF-01 near-boundary: if this framing reaches Olivia, it would be significant disparagement.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1718-1724",
+      "peripheral_rf": "RF-08",
+      "severity": 1,
+      "note": "Feb 15: 'I don't know why you felt the need to tell Olivia you were talking to lawyers. She doesn't need involved in that' / 'You told her you have a present for her but couldn't see her today because you were seeing lawyers.' Both parties have communicated aspects of the accident/lawsuit to Olivia. RF-08 (triangulation/inappropriate child involvement) candidate: child is aware of adult legal disputes. Note: this is a two-way dynamic — Melissa told Olivia about the accident, Eli told Olivia about lawyer meetings. Not a unilateral RF-08 flag.",
+      "confidence": "medium"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "arc_continuation_note": "ARC-RF01-001 (Abandonment/Blame Attribution Narrative): remains ACTIVE, no new signal this batch. Total signals: 6 (2 Sev-1, 4 Sev-2). The Abby attack vector appears in near-boundary form (ROW-1684) but does not produce a primary flag. Quiet batch between the surgery period (B-004) and the expected escalation in later batches."
+  },
+
+  "batch_narrative_note": "B-005 is the quietest RF-01 batch to date. The absence of primary flags is analytically significant: the batch contains substantial Eli-Olivia contact (Jan 18 outing, Jan 22 swim, Jan 25 lunch, Jan 27 outing, Feb 4-5 outings, Feb 18 outing) and correspondingly more cooperative communication from Melissa. The pattern hypothesis: RF-01 primary signals cluster around moments of access conflict (Halloween, surgery morning, late dropoff) rather than during periods of cooperative contact. When Eli is actively engaging with Olivia, Melissa's messaging is more cooperative; the abandonment narrative activates when Eli's presence is being requested and not delivered. B-005 represents a period of higher Eli-Olivia contact that corresponds with lower RF-01 intensity.",
+
+  "cooperative_data_notes": "High cooperative content. Melissa: facilitates multiple Eli-Olivia outings without friction; coordinates on swim logistics (Jan 22); initiates surprise lunch with Eli (Jan 25 — 'she refused lunch, do you want to pick her up?'); shares Olivia's activities and humor (Roblox, Valentine craft, Dreamscape); offers to supply chairs for movie night; volunteers Eli for dentist appointment (Feb 8: 'Are you able to take her? I'm not going to be able to. I'll have to reschedule if you can't'). Notably warm communication tone throughout most of the batch. The Feb 15 conflict (car accident/lawsuit) is temporally isolated.",
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

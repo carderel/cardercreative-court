@@ -1,0 +1,119 @@
+{
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "pass_status": "complete",
+  "priority": 7,
+  "tier": 1,
+  "eli_signal": "confirmed",
+  "progress": {
+    "total_batches": 31,
+    "batches_completed": 31,
+    "batches_remaining": 0,
+    "last_batch_completed": "B-031",
+    "next_batch": null,
+    "halt_reason": null
+  },
+  "date_coverage": {
+    "covered_through": "2026-04-12",
+    "remaining_from": null
+  },
+  "cumulative_statistics": {
+    "messages_analyzed": 10637,
+    "primary_flags": 11,
+    "severity_distribution": {
+      "1": 7,
+      "2": 4,
+      "3": 0
+    },
+    "peripheral_flags": 1,
+    "active_arcs": 1,
+    "watching_arcs": 0,
+    "candidate_arcs": 0,
+    "resolved_arcs": 0,
+    "compound_patterns": 8,
+    "crossref_pairs_level_a": 1,
+    "crossref_pairs_total": 1,
+    "unresolved_claims": 1
+  },
+  "calibration_addenda": [
+    "RF09-ADD-001",
+    "RF09-ADD-002",
+    "RF09-ADD-003",
+    "RF09-ADD-004"
+  ],
+  "calibration_addenda_file": "analysis-output/calibration/addenda-RF-09.json",
+  "cp2_status": "complete",
+  "cp2_generated": "2026-04-27",
+  "cp2_completed": "2026-04-27",
+  "cp2_file": "analysis-output/checkpoints/cp2-RF-09-review.json",
+  "pending_cp2_items": [],
+  "pending_cp3_items": [],
+  "arc_state_file": "analysis-output/arc-states/RF-09-arc-state.json",
+  "crossref_index_file": "analysis-output/rf-passes/RF-09/crossref-index.json",
+  "key_findings": {
+    "arc_anchor": "No single arc-activation anchor event (unlike RF-08). Arc ACTIVE by accumulation: 3rd signal (S003, B-009 Aug 2023) activates arc on DARVO-inversion pattern.",
+    "dominant_mechanism": "DARVO-inversion: Melissa systematically projects gaslighting onto Eli across 7+ distinct conflict periods (S001, S002, S003, S005, S006, S009, S010).",
+    "strongest_evidence": "XREF-001 (Level A): ROW-9957 'I'll screenshot this and file for full custody' denied by ROW-9964 'There's no threats' in same cluster (B-027, Jul 19 2025).",
+    "feb_2026_amplification": "S011 (B-030): admitted fact (raised voice) amplified to verbal abuse \u2192 traumatized \u2192 drinking problem \u2192 alcoholism \u2014 Level C event rewrite driving Phase C visit-refusal engine through dataset close.",
+    "phase_c_escalation": "Sev-2 signals concentrated in Phase B/C: S006 (Jan 2025), S008 (Jul 2025), S010 (Nov 2025), S011 (Feb 2026). Pattern intensifies with legal/custody pressure.",
+    "row6819_forward_anchor": "ROW-6819 coaching admission undenied at dataset close \u2014 Eli's CP2 observation: Melissa's comfort with admission indicates normalized coaching across all subjects.",
+    "structural_note": "RF-09 is not standalone \u2014 8 of 11 signals are RF-09+RF-04 compounds. The gaslighting mechanism in this dataset is the DARVO inversion: Melissa names and attributes to Eli the behavior she is documented engaging in. For Phase 2 synthesis, RF-09 cannot be separated from RF-04 arc analysis."
+  },
+  "session_log": [
+    {
+      "session": 1,
+      "date": "2026-04-27",
+      "batches_processed": [
+        "B-001"
+      ],
+      "primary_flags_added": 0,
+      "peripheral_flags_added": 1,
+      "arcs_updated": [],
+      "compounds_added": 0,
+      "notes": "RF-09 pass initialized. B-001 calibration batch processed (365 messages, Jan 11-Oct 2 2022). Zero primary RF-09 flags \u2014 confirms low baseline. CP2 generated. Arc state initialized at CANDIDATE."
+    },
+    {
+      "session": 2,
+      "date": "2026-04-27",
+      "batches_processed": [
+        "B-002",
+        "B-003",
+        "B-004",
+        "B-005",
+        "B-006",
+        "B-007",
+        "B-008",
+        "B-009",
+        "B-010",
+        "B-011",
+        "B-012",
+        "B-013",
+        "B-014",
+        "B-015",
+        "B-016",
+        "B-017",
+        "B-018",
+        "B-019",
+        "B-020",
+        "B-021",
+        "B-022",
+        "B-023",
+        "B-024",
+        "B-025",
+        "B-026",
+        "B-027",
+        "B-028",
+        "B-029",
+        "B-030",
+        "B-031"
+      ],
+      "primary_flags_added": 11,
+      "peripheral_flags_added": 0,
+      "arcs_updated": [
+        "ARC-RF09-001 CANDIDATE\u2192WATCHING (B-005, S002); WATCHING\u2192ACTIVE (B-009, S003); 11 signals added (S001-S011)"
+      ],
+      "compounds_added": 8,
+      "notes": "CP2 calibration answers confirmed. 4 addenda applied. Full pass completed B-002 through B-031. 11 primary signals: 7 Sev-1 (S001-S005, S007, S009), 4 Sev-2 (S006, S008, S010, S011). 8 compound patterns (7 RF-09+RF-04; 1 RF-09+RF-05; COMP-RF09-006 triple with RF-08 context). Level A cross-reference pair confirmed: XREF-001 (ROW-9957/ROW-9964 B-027). Key findings: dominant mechanism is DARVO-inversion (accusing Eli of gaslighting across 7+ conflict periods); Feb 2026 amplification sequence is strongest Level C signal; ROW-6819 coaching admission stands undenied. ARC-RF09-001 unresolved at dataset close."
+    }
+  ]
+}

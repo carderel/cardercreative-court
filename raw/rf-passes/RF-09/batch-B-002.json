@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-002",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2022-10-03",
+    "end": "2022-11-05"
+  },
+  "row_range": {
+    "start": 367,
+    "end": 712
+  },
+  "message_count": 508,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Oct\u2013Nov 2022: predominantly logistical communication. No RF-09 primary signals. Communication volume moderate. DARVO language absent. Baseline cooperative period continues."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

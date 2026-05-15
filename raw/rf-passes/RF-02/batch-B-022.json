@@ -1,0 +1,122 @@
+{
+  "batch_id": "B-022",
+  "rf_pass": "RF-02",
+  "rf_name": "Gatekeeping",
+  "date_range": {
+    "start": "2025-01-14",
+    "end": "2025-02-14"
+  },
+  "row_range": {
+    "sms_start": "ROW-7715",
+    "sms_end": "ROW-9099",
+    "mms_start": "ROW-12712",
+    "mms_end": "ROW-15304"
+  },
+  "message_count": 478,
+  "batch_status": "complete",
+  "analysis_date": "2026-04-23",
+
+  "primary_flags": [
+    {
+      "flag_id": "B022-PF-001",
+      "row_ref": "ROW-8952",
+      "date": "2025-01-16",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 46,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "She sais she doesn't want to talk on the phone to you today because you upset her and she wants me to tell you to leave her alone tonight",
+      "context": "Follows Eli cancelling Olivia's Jan 15 visit (Alice post-vaccine, Olivia sick with a cold). Melissa spent Jan 15 relaying Olivia's distress through a sustained escalation campaign (ROW-7725-7750, ROW-8957-8966). ROW-8953 (Eli): 'Ok.' and apology. ROW-8956 (Melissa): 'She wants to be left alone tonight.' ROW-8952 is the explicit gating moment: Olivia's phone access decision is communicated through Melissa rather than Olivia directly telling Eli. Also appears in MMS as ROW-12741. Supporting prior-day instance: ROW-8718-8719 (B-021, Dec 18) — same sick-child access relay structure.",
+      "analytical_note": "Olivia's preference not to speak with Eli is mediated through Melissa as required intermediary: 'she wants me to tell you.' Olivia's emotional state (upset about visit cancellation) is narrativized and transmitted via Melissa rather than through direct child-to-parent communication. The access decision (leave her alone tonight) is framed as coming from Olivia but executed by Melissa as gatekeeper. This continues the relay mechanism documented across the arc — including conflict-amplified contact framing and access refusal mediation.",
+      "arc_promotion": null
+    },
+    {
+      "flag_id": "B022-PF-002",
+      "row_ref": "ROW-9098-ROW-9099",
+      "date": "2025-02-14",
+      "direction": "Received",
+      "type": "SMS",
+      "arc": "ARC-RF02-002",
+      "arc_signal_number": 47,
+      "severity": 1,
+      "rf_category": "RF-02",
+      "verbatim": "She shouldn't have to tell you to ask me / You should be doing that before ask her",
+      "context": "Eli texted (ROW-9096 / ROW-12923 MMS): 'I had asked her if she wanted me to pick her up tomorrow after work. She said ask you.' — Olivia directed her father to seek Melissa's approval before confirming the pickup. Melissa responds (ROW-9097): 'Yeah that's fine' then (ROW-9098-9099): 'She shouldn't have to tell you to ask me / You should be doing that before ask her.' Also appears as ROW-12925-12926 in MMS dataset.",
+      "analytical_note": "Seventh explicit enforcement of the required-intermediary rule. Two analytically critical elements: (1) Eli must ask Melissa before asking Olivia — the rule itself is reiterated and now explicitly normative ('should be doing that before'); (2) MOST SIGNIFICANT: Olivia herself has now internalized the required-intermediary norm — when Eli asked her about the pickup, she redirected him to Melissa rather than answering directly ('She said ask you'). Both Eli (ROW-7206, B-019; ROW-12439, B-020) and now Olivia are operating under the norm without prompting. The required-intermediary structure has migrated from external enforcement to behavioral internalization by both participants. This is the clearest documentation of the normalization trajectory's endpoint: Olivia herself enforces the rule she has lived under.",
+      "arc_promotion": null
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "B022-PERIPH-001",
+      "row_ref": "ROW-7727-ROW-8960",
+      "date": "2025-01-15 to 2025-01-16",
+      "rf_category": "RF-04",
+      "severity": 2,
+      "verbatim": "You are completely useless as a father. I stand by that. I'm not sorry for saying that nor will I ever be until you become an actual father and not a soerm donor cause that's mostly what you are at this point. You have no fatherly instincts as it comes to your own daughter [ROW-7727] / She deserves so much better [ROW-7728] / I'm deeply saddened that I picked you as her father. If I had it all to do again I would choose differently. You are the biggest mistake I've ever made in my life. The only good is that I have Olivia. [ROW-8959] / You are shallow and selfish beyond belief. Would rather let your daughter down and tear her heart out then a have an argument with Abby. [ROW-8960]",
+      "note": "Extended two-day RF-04 Sev 2 attack triggered by Eli's visit cancellation (Alice post-vaccine illness concern). Continues and intensifies the Jan 8 B-021 RF-04 Sev 2 attack (ROW-8914-8927). Now constitutes back-to-back Sev 2 parental fitness attacks within 8 days. Key phrases: 'sperm donor,' 'no fatherly instincts,' 'biggest mistake I've ever made.' Note Abby-blame overlay (ROW-8960: 'rather let your daughter down... than have an argument with Abby') — connecting RF-04 attack to RF-05 Abby-delegitimization. Also appears in MMS as ROW-12741-12745. Cross-pass priority: RF-04 Sev 2 cluster now spanning B-021 and B-022."
+    },
+    {
+      "flag_id": "B022-PERIPH-002",
+      "row_ref": "ROW-8961-ROW-8966",
+      "date": "2025-01-16",
+      "rf_category": "RF-15",
+      "severity": 3,
+      "verbatim": "Now I see that you were fostering a weird relationship with her [gas station teenager]. Encouraging a teen to have a crush on you even wanting to go to her graduation [ROW-8963] / You've not been involved with much of what Olivia does but sure was involved when she was cheerleading. Trying to be around little girls? Now you are commenting on her 8 year old friends tik tok. It's gross. You need to get help. [ROW-8963] / Meeting Abby when she was a day away from turning 8, watching her grow up then turning that sexual is gross. Doug said that you told him that you felt Abby was giving you looks like she was into you while you did her senior pics. My sister said you kept contacting Abby after that while she was in class in high school. [ROW-8964] / My sister said you always gave her pedophile vibes but I didn't see it. Love makes you blind I guess. [ROW-8965] / Then for you to take someone who is looking for help and supply them with alcohol and watch inappropriate content with them and all of that is just gross. I can see all of this clearly now and I should be happy you have limited time around Olivia [ROW-8966]",
+      "note": "CRITICAL — Most severe RF-15 in dataset. First explicit pedophilia/grooming allegation against Eli: (1) gas station teenager allegation; (2) cheerleading/little girls pattern insinuation; (3) 8-year-old friend TikTok allegation; (4) Abby/grooming allegation with alleged third-party witness statement (Doug); (5) Melissa's sister's 'pedophile vibes' characterization; (6) supply-alcohol/inappropriate-content allegation. RF-02 intersection: ROW-8966 explicitly frames Eli's 'limited time around Olivia' as justified and welcome given these allegations — the false allegations are deployed as rationale for access restriction. This is the clearest documented linkage in the dataset between RF-15 (false allegations) and RF-02 (gatekeeping), constituting Sev 3 because it is (a) explicit, (b) sustained across multiple messages, (c) names third-party witnesses, and (d) is directly connected to current limited access. Also appears as ROW-12746-12751 in MMS dataset. CROSS-PASS PRIORITY: highest analytical weight in RF-15 arc."
+    },
+    {
+      "flag_id": "B022-PERIPH-003",
+      "row_ref": "ROW-9081-ROW-9082",
+      "date": "2025-02-10",
+      "rf_category": "RF-04",
+      "severity": 1,
+      "verbatim": "You've never done anything for her birthday. You walked out on her 5th birthday when family was supposed to come [ROW-9081] / You didn't show up to her party on her 6th birthday [ROW-9082]",
+      "note": "Historical birthday failure allegations deployed during dispute about Olivia's upcoming birthday (Melissa planning July 12-19 TN vacation over birthday). Eli pushed back: 'That's not giving consent. Informing me that you're doing it is not the same as permission... next year I want to see her in her actual birthday' (ROW-9076). Melissa responds by invalidating Eli's birthday claim with historical failures rather than engaging on the consent-vs-notification distinction. RF-04 Sev 1. Also appears in MMS as ROW-12906-12907."
+    }
+  ],
+
+  "cooperative_data_points": [
+    {
+      "row_ref": "ROW-8998-ROW-9001",
+      "date": "2025-01-27",
+      "description": "Tetanus vaccine coordination: Melissa checks whether Olivia needs one, confirms not due until age 11, shares information proactively. Eli and Melissa align efficiently."
+    },
+    {
+      "row_ref": "ROW-9026-ROW-9032",
+      "date": "2025-02-06",
+      "description": "Melissa asks Eli to do school last-day pickup (May 29) and helps plan making it special — balloons, selfies with friends, dinner celebration. Proactive positive access facilitation."
+    },
+    {
+      "row_ref": "ROW-9093",
+      "date": "2025-02-13",
+      "description": "Melissa proactively notifies Eli he cannot call Olivia because she just dropped her off at choir practice — thoughtful advance notice of access window status."
+    }
+  ],
+
+  "near_miss_log": [
+    {
+      "row_ref": "ROW-8993",
+      "date": "2025-01-21",
+      "consideration": "ARC-RF02-001 near-miss. Eli: 'I tried to call her but it goes straight to vm.' Melissa: 'She's sending you to voicemail then cause she's got the phone in her hands watching videos.' Olivia is actively declining Eli's call while holding the phone (sick day, stomach virus). Not flagged: this is likely genuine child behavior on a sick day, distinct from DND infrastructure or Melissa-directed blocking. Context (stomach virus, recovering) provides natural explanation."
+    },
+    {
+      "row_ref": "ROW-9076",
+      "date": "2025-02-10",
+      "consideration": "ARC-RF02 birthday access near-miss. Eli pushes back on Olivia's birthday (July 2025) being subsumed by TN vacation. Melissa dismisses: 'You can't block our vacation / It's her birthday she should get to do what she wants.' Not flagged as ARC-RF02 primary because (a) vacation was pre-discussed, (b) Eli explicitly declines to block it and only requests future birthday access, (c) Melissa provides advance address information. Analytically relevant for birthday access pattern if recurrence follows."
+    }
+  ],
+
+  "arc_summary": {
+    "ARC-RF02-001": "no new primary signals; supporting instance: ROW-8993 Jan 21 (Olivia sending Eli to voicemail while holding phone — not flagged, sick day); ROW-9093 Feb 13 (Melissa preemptively manages Eli's call access window — 'you can't call this morning'); signal_count remains 26",
+    "ARC-RF02-002": "signal_count now 47; two signals this batch — ROW-8952 (phone access refusal mediated through Melissa, Jan 16, signal 46) and ROW-9098-9099 (seventh explicit required-intermediary enforcement, Feb 14, signal 47); CRITICAL DEVELOPMENT: Olivia herself (ROW-9096) now redirects Eli to seek Melissa's approval — normalization documented at child-level, extending earlier documentation of Eli-level normalization (ROW-7206 B-019, ROW-12439 B-020)",
+    "ARC-RF02-004": "no new signals; remains ACTIVE",
+    "ARC-RF02-005": "no new signals; remains WATCHING",
+    "ARC-RF02-006": "no new signals; TN vacation July 12-19, 2025 confirmed (same Sevierville vacation noted in B-019, not NC relocation); remains WATCHING"
+  },
+
+  "batch_notes": "Analytically the most significant batch since B-009. Two distinct high-severity peripheral patterns: (1) RF-04 Sev 2 escalation continues from B-021, now including 'sperm donor' characterization and 'biggest mistake I've ever made'; (2) RF-15 Sev 3 — first explicit pedophilia allegation in dataset, deployed immediately after visit cancellation and directly connected to Olivia access restriction ('I should be happy you have limited time around Olivia'). The RF-15 Sev 3 is the highest-severity item in the dataset to date and constitutes a cross-pass priority for all RF-15-relevant analyses. On the RF-02 arc: the most analytically significant development is the normalization trajectory reaching Olivia herself — she now redirects her father to seek maternal approval for plans, without prompting, implementing the required-intermediary rule from the child's side. This confirms the norm has been structurally embedded in Olivia's behavioral schema. Context: Eli's illness (102 fever Jan 20); Jan 15 visit cancellation (Alice vaccine day, Olivia sick cold) triggered escalation cascade."
+}

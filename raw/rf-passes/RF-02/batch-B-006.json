@@ -1,0 +1,160 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-006",
+    "row_range": {"start": 1840, "end": 2228},
+    "date_range": {"start": "2023-02-22", "end": "2023-04-03"},
+    "episode_range": {"start": "EP-0229", "end": "EP-0277"},
+    "message_count": 389,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": "8% conflict batch. ARC-RF02-001 phone-blocking arc resumes after two quiet batches (ROW-1948). 'Not to your house' restriction re-emerges 3 months post-surgery without medical framing (ROW-2138, 2147) — promotes ARC-RF02-004 to WATCHING. March 31 conflict cluster (ROW-2135 through ROW-2192) is the most analytically dense exchange of the batch: conditional access threat, house restriction, grooming attack, and extended personal attacks. Two child preference relays (ROW-2077, ROW-2201). First appearance of homework-as-access-condition (ROW-1869)."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 389,
+    "primary_flags": 6,
+    "primary_severity_distribution": {"1": 3, "2": 3, "3": 0},
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": {"RF-05": 1, "RF-15": 1},
+    "no_flag_messages": 383,
+    "flag_rate": "1.5%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-1869",
+      "date": "2023-02-23",
+      "direction": "Received",
+      "verbatim_message": "You didn't do her math homework. If you don't ensure her homework is done when you take her she won't go with you. Per the dissolution visitation can't interfere with her homework. Be a parent and e[nsure — message truncated at SMS limit]",
+      "severity": 2,
+      "rf_indicators": ["conditional_access", "access_denial_threat"],
+      "calibration_note": null,
+      "flag_reasoning": "Melissa explicitly conditions Olivia's continued access to Eli on his completion of homework during his parenting time: 'she won't go with you' is a direct access withdrawal threat. The dissolution agreement is weaponized as the justification — Melissa frames a parenting standard (homework completion) as a gate on visitation, making compliance with her expectations a prerequisite for continued visits. This is the first appearance of homework-as-access-condition in the dataset. Context: Olivia had visited Eli the night prior; Melissa texted after midnight to report the homework was not done.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-1948",
+      "date": "2023-03-07",
+      "direction": "Received",
+      "verbatim_message": "I don't need a text. Just call her before 8:30.",
+      "severity": 1,
+      "rf_indicators": ["phone_access_control", "cutoff_enforcement"],
+      "arc_signal": "ARC-RF02-001",
+      "calibration_note": "CA-RF02-01",
+      "flag_reasoning": "ARC-RF02-001 resumption signal after two consecutive quiet batches (B-004, B-005). Melissa reiterates the 8:30pm cutoff as the operative rule, dismissing Eli's advance notice text ('I don't need a text') while reaffirming the time boundary. Per CA-RF02-01: the 8:30pm cutoff is a unilaterally imposed, moving-target restriction. The two-batch quiet period (post-surgery recovery, adjusted call patterns) did not resolve the arc — it was dormant. Context: Eli had texted 'On my way home. Call her shortly' (ROW-1947); Melissa's response rejects even advance notice and restates the time-only rule.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2077",
+      "date": "2023-03-23",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't want to call but she loves you too",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay fitting the CA-RF02-02 pattern. Context: Eli had missed his call window and acknowledged it explicitly ('Shit. I missed my call window'), then offered Olivia the option to call back. Melissa relays that Olivia doesn't want to call. Some mitigation — Olivia declining to call after a missed-window scenario is plausible. However, per CA-RF02-02: the preference cannot be independently verified while the DND infrastructure remains in place, and the relay functions to close out Eli's contact for the night. The softening tag ('but she loves you too') is consistent with the CA-RF02-02 pattern of cushioning access denial with reassurance.",
+      "confidence": "medium"
+    },
+    {
+      "message_id": "ROW-2138-2147-2149",
+      "date": "2023-03-31",
+      "direction": "Received",
+      "verbatim_message": "ROW-2138: 'And not your house' | ROW-2147: 'And not to your house' | ROW-2149 (Melissa response to Eli's question): 'As many times as I need'",
+      "severity": 2,
+      "rf_indicators": ["location_restriction", "access_condition", "indefinite_restriction_assertion"],
+      "arc_signal": "ARC-RF02-004",
+      "flag_reasoning": "'Not to your house' restriction re-emerges on March 31, 2023 — approximately 3 months after Olivia's tonsil surgery (December 28-29, 2022). No medical explanation is offered; Melissa does not reference cat allergy, surgery recovery, or physician guidance. When Eli responds 'And how many times are you going to ask about my house? I haven't brought her in yet' (ROW-2148), Melissa replies: 'As many times as I need' (ROW-2149) — asserting indefinite unilateral authority over where Eli may take Olivia with no stated basis. Per the B-004 watch note: if the restriction persists post-surgery without medical justification, flag as primary RF-02 and promote ARC-RF02-004. That threshold is met. The 'As many times as I need' language is the clearest statement of indefinite control over Eli's parenting location in the dataset to date.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2145",
+      "date": "2023-03-31",
+      "direction": "Received",
+      "verbatim_message": "Answer the questions or I'll plan on picking her up",
+      "severity": 2,
+      "rf_indicators": ["conditional_access", "access_denial_threat", "procedural_gatekeeping"],
+      "flag_reasoning": "Melissa threatens to cancel the next day's visit if Eli does not answer her questions within her self-imposed 9pm planning deadline. Access is explicitly conditioned on timely procedural compliance: 'Answer the questions or I'll plan on picking her up.' Context: Eli had initiated the visit request at 1:00am (ROW-2135-2136), Melissa responded 45 minutes later with the house restriction (ROW-2138) and a payment demand (ROW-2139), then cited the 9pm planning rule as grounds for the cancellation threat (ROW-2140). The procedural rule is weaponized as an access gate — non-compliance with Melissa's timeline equals visit cancellation.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2201",
+      "date": "2023-04-02",
+      "direction": "Received",
+      "verbatim_message": "She said she doesn't to call.",
+      "severity": 1,
+      "rf_indicators": ["child_preference_relay", "phone_access_control"],
+      "arc_signal": "ARC-RF02-002",
+      "calibration_note": "CA-RF02-02",
+      "flag_reasoning": "Child preference relay (CA-RF02-02 pattern). Context: Eli's ringer was off, he missed the call window, apologized, and extended an open invitation ('Sorry call anytime', ROW-2200). Melissa relays Olivia's preference not to call. The relay closes out Eli's contact for the evening. Per CA-RF02-02: the preference cannot be independently verified under the DND infrastructure. Note: Eli had also suggested a call after 8:45pm or 9pm (ROW-2198), which is past the 8:30 cutoff — the DND would be active during that window. The preference relay in this context is consistent with the CA-RF02-02 pattern regardless of whether Olivia genuinely declined.",
+      "confidence": "medium"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-1854",
+      "reason_noted": "Melissa establishes a 9pm planning deadline: 'You need to have it planned out by 9 pm the night before because I don't have time on the am and we need to have a plan.' This pre-notification requirement creates a procedural access condition — Eli must submit visit plans by 9pm the night before or face compliance-based demands. Not flagged as standalone RF-02 since advance planning is a reasonable co-parenting practice in isolation, but the deadline is later invoked as a basis for the conditional visit threat (ROW-2140, 2143, 2145). Tracking as an access-condition element."
+    },
+    {
+      "message_id": "ROW-1895-1896",
+      "reason_noted": "Melissa relays a missed call with context: 'We're out right now. Just saw we missed your call but she won't be able to hear you right now to call you back.' This is a legitimate cooperative relay — Melissa provides specific context (they're out, it's noisy), explains why call-back isn't possible. Not a CA-RF02-02 flag: (1) context is specific and plausible, (2) no DND infrastructure invoked, (3) not a blanket preference statement. Positive co-parenting data point."
+    },
+    {
+      "message_id": "ROW-1957",
+      "reason_noted": "Melissa relays 'She said not right now' (March 8, after Eli apparently attempted to call). Brief preference relay. Not flagged as primary because: (1) no additional context to assess authenticity, (2) no DND framing mentioned, (3) the scenario (child busy) is plausible and the relay is minimal. Near CA-RF02-02 boundary but does not clear the flag threshold without additional markers."
+    },
+    {
+      "message_id": "ROW-1940-1942",
+      "reason_noted": "When Eli texts 'If she is still awake and wants to call I am free' (ROW-1939), Melissa responds: 'You say that all the time' (ROW-1940), 'You know the rules' (ROW-1941), 'She called you twice earlier and left voicemail and you still didn't call her back' (ROW-1942). 'You know the rules' is a direct invocation of the 8:30pm cutoff system (CA-RF02-01). Not flagged as a separate primary flag since this is context immediately preceding the clean ROW-1948 enforcement signal. But analytically significant as showing the rules-invocation pattern extends to Melissa dismissing Eli's offer to talk without formally re-enforcing the cutoff time."
+    },
+    {
+      "message_id": "ROW-2182",
+      "reason_noted": "After the March 31 conflict cluster, Eli de-escalates: 'I didn't call you names. You started it that. I know you want money, I would like to pay that. That car accident set me waaay back - and it's going to be a long time before I recover any of th[at].' Eli attempts to de-escalate and explain context. Melissa responds with a sustained attack (ROW-2183-2192: payment history, Christian morality, 'you're not a good father'). This asymmetry — Eli de-escalating, Melissa maintaining the attack — is a pattern element relevant to RF-13 (escalation trajectory, future pass)."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-2035",
+      "peripheral_rf": "RF-05",
+      "severity": 1,
+      "note": "Melissa refers to Abby (Eli's girlfriend) as 'slut McGee': 'Is that what slut McGee had?' (in reference to Milo's illness). Derogatory language directed at Eli's partner in co-parenting communications. Consistent with prior RF-05 labeling of Abby. Sev 1 — isolated but part of the recurring derogatory-labeling pattern toward Abby.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-2168-2171",
+      "peripheral_rf": "RF-15",
+      "severity": 2,
+      "note": "Grooming allegation cluster. ROW-2168: 'Who's the dumbass that's fucking his niece? A girl he met when she was 7. That's some dumb shit there.' ROW-2171: 'You are fucking your niece and about to go to jail for no payment.' Melissa repeats the incest/grooming framing (Abby as Eli's 'niece' because she is Olivia's cousin) and escalates by linking it to a jail threat ('no payment'). Per cp1-context: Abby is Eli's girlfriend and Olivia's cousin — 'niece' framing is attack language, not a substantiated allegation. This is RF-15 (False Allegations/Projection). Second major instance of this narrative in the dataset (first: B-004 ROW-1288). The threat of jail in the same sentence compounds it with RF-05 intimidation.",
+      "confidence": "high"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 2,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": ["ARC-RF02-004"],
+    "arcs_resolved_this_batch": [],
+    "arc_signals_added": {
+      "ARC-RF02-001": ["ROW-1948"],
+      "ARC-RF02-002": ["ROW-2077", "ROW-2201"],
+      "ARC-RF02-003": [],
+      "ARC-RF02-004": ["ROW-2138", "ROW-2147"]
+    },
+    "arc_001_cumulative_signals": 11,
+    "arc_002_cumulative_signals": 4,
+    "arc_004_promotion_note": "ARC-RF02-004 formally opened and promoted to WATCHING in B-006. Basis: 'not to your house' restriction re-emerges (ROW-2138, ROW-2147) approximately 3 months post-surgery with no medical framing offered. Melissa's declaratory 'As many times as I need' (ROW-2149) asserts indefinite unilateral authority over visit location. The B-004 watch condition ('if restriction persists post-surgery without medical justification, open ARC-RF02-004') has been met.",
+    "arc_001_note": "ARC-RF02-001 resumes after two quiet batches (B-004/B-005). ROW-1948 is the clean enforcement signal ('I don't need a text. Just call her before 8:30.'). The post-surgery quiet period is analytically accounted for — the arc did not resolve, it was dormant."
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

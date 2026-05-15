@@ -1,0 +1,37 @@
+{
+  "batch_id": "B-006",
+  "date_range": {
+    "start": "2023-02-22",
+    "end": "2023-04-02",
+    "orig_row_start": 1851,
+    "orig_row_end": 2221
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "calibration_addenda_active": [
+    "RF06-ADD-001",
+    "RF06-ADD-002",
+    "RF06-ADD-003",
+    "RF06-ADD-004",
+    "RF06-ADD-005",
+    "RF06-ADD-006",
+    "RF06-ADD-007",
+    "RF06-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Routine financial communication in 2023-02. No primary RF-06 signals."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "state": "WATCHING",
+      "signals_cumulative": 2
+    }
+  ]
+}

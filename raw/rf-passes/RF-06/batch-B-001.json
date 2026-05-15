@@ -1,0 +1,60 @@
+{
+  "batch_id": "B-001",
+  "date_range": {
+    "start": "2022-01-11",
+    "end": "2022-10-02"
+  },
+  "row_range": {
+    "start": 2,
+    "end": 366
+  },
+  "message_count": 365,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "calibration_addenda_active": [],
+  "rf_pass": "RF-06",
+  "rf_name": "Financial Coercion",
+  "pass_context": {
+    "rf06_definition": "RF-06 flags: using money, child support, shared expenses, or financial arrangements as tools of control or punishment. Key indicators: withholding/threatening financial support; access contingent on financial compliance; financial disparity as leverage; refusing expenses as punishment; frivolous financial accounting demands; hiding assets/income; children's needs as financial leverage; threatening increased support as retaliation.",
+    "cross_rf_foundation": {
+      "rf02_context": "RF-02 complete (101 flags). Financial coercion often layers on top of gatekeeping \u2014 access conditional on financial compliance is both RF-02 and RF-06. Watch for financial conditions attached to visitation agreements.",
+      "rf05_context": "RF-05 complete (26 flags, paper-tiger trajectory). Some threat signals may have financial components \u2014 legal threats about support, contempt threats with financial implications. 'Big contempt case' (Nov 25 2025, B-029) may have financial dimensions.",
+      "dataset_context": "Divorce filed July 2021. Child support arrangement established ~late 2021/early 2022 (approximate per CP1 context). Dataset begins Jan 2022 \u2014 financial arrangement should be established by dataset start. 36 keyword hits, 86% received = Melissa is dominant financial coercion direction.",
+      "known_signal_areas": [
+        "Phase A heavy (29/36 hits in Phase A): financial dynamics active throughout Phase A",
+        "Hot periods: 2024-08, 2024-06, 2023-09 \u2014 financial disputes concurrent with major conflict clusters",
+        "Aug 2024 mega-cluster (EP-0854, 311 msgs): possible financial component to this peak episode",
+        "Phase C continuation: 5 hits in Phase C (B-029-B-031 area)"
+      ]
+    },
+    "anticipated_arcs": [
+      "ARC-RF06-001: Financial Leverage Pattern \u2014 using money/support as control lever"
+    ],
+    "not_this_boundaries": [
+      "Legitimate disputes about expense allocation",
+      "Requesting transparency required by court order",
+      "Genuine inability to pay vs. strategic withholding",
+      "Reasonable cost-sharing requests"
+    ]
+  },
+  "calibration_episode": {
+    "batch_tone": "Cooperative baseline Jan-Oct 2022. Financial arrangement recently established post-divorce (filed July 2021). Expected period of financial adjustment \u2014 disputes possible but should be distinguishable from weaponization. No financial coercion anticipated in cooperative period.",
+    "rf06_flag": false,
+    "reason_not_flagged": "Jan-Oct 2022 is the cooperative pre-escalation baseline. RF-06 triage Phase A dominant (29 hits) but concentrated in later Phase A. B-001 expected zero financial coercion signals \u2014 financial arrangement recently established, cooperative baseline confirmed. Confirming zero RF-06 primary flags for B-001. CP2 critical for establishing the financial arrangement context."
+  },
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jan-Oct 2022 calibration batch. Zero RF-06 primary flags. Cooperative baseline \u2014 no financial coercion in pre-escalation period. RF-06 signal expected in Phase A (later batches) and Phase B/C. Arc ARC-RF06-001 initialized at CANDIDATE. CP2 needed to establish financial arrangement context (child support structure, expense sharing agreements) before signal classification can proceed."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF06-001",
+      "event": "Financial Leverage arc initialized \u2014 B-001 baseline: no financial coercion in cooperative period; CP2 needed for financial arrangement context",
+      "state": "CANDIDATE"
+    }
+  ]
+}

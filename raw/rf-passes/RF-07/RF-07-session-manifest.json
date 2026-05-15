@@ -1,0 +1,114 @@
+{
+  "rf_pass": "RF-07",
+  "rf_name": "Boundary Violations",
+  "pass_status": "complete",
+  "priority": 5,
+  "tier": 1,
+  "eli_signal": "confirmed_high",
+
+  "progress": {
+    "total_batches": 31,
+    "batches_completed": 31,
+    "batches_remaining": 0,
+    "last_batch_completed": "B-031",
+    "next_batch": null,
+    "halt_reason": null
+  },
+
+  "date_coverage": {
+    "covered_through": "2026-04-12",
+    "remaining_from": null
+  },
+
+  "cumulative_statistics": {
+    "messages_analyzed": 10637,
+    "primary_flags": 12,
+    "severity_distribution": { "1": 8, "2": 4, "3": 0 },
+    "peripheral_flags": 3,
+    "active_arcs": 1,
+    "watching_arcs": 0,
+    "candidate_arcs": 0,
+    "resolved_arcs": 0,
+    "compound_patterns": 4
+  },
+
+  "triage_profile": {
+    "keyword_hit_count": 111,
+    "direction": { "sent": 39, "received": 72, "pct_received": 65 },
+    "phase_distribution": { "A": 79, "B": 19, "C": 13 },
+    "hot_periods": ["2025-05", "2024-08", "2025-08"],
+    "temporal_concentration": "spread",
+    "months_with_signal": 36,
+    "pass_mode": "full_pass_all_31_batches",
+    "key_note": "39 Sent hits = meaningful bidirectional component. B-001 baseline confirmed: 0 RF-07 primary signals in the low-conflict Jan-Oct 2022 period. Flooding threshold (5+ messages/10 min without response) and continuation-after-stop boundary are the primary classification mechanisms. May 2025 spike (hot period) linked to Eli beginning to hold communication boundaries — Melissa's escalation in response is RF-07 per CP1 context."
+  },
+
+  "cross_rf_context": {
+    "rf01_arc_state": "analysis-output/arc-states/RF-01-arc-state.json",
+    "rf01_status": "complete",
+    "rf01_active_arcs": ["ARC-RF01-001"],
+    "rf02_arc_state": "analysis-output/arc-states/RF-02-arc-state-final.json",
+    "rf02_status": "complete",
+    "rf02_active_arcs": ["ARC-RF02-001", "ARC-RF02-002", "ARC-RF02-004", "ARC-RF02-006"],
+    "rf04_arc_state": "analysis-output/arc-states/RF-04-arc-state-B003.json",
+    "rf04_status": "complete",
+    "rf04_active_arcs": ["ARC-RF04-001", "ARC-RF04-002"],
+    "rf05_arc_state": "analysis-output/arc-states/RF-05-arc-state-B001.json",
+    "rf05_status": "complete",
+    "rf05_active_arcs": ["ARC-RF05-001"],
+    "rf07_arc_state": "analysis-output/arc-states/RF-07-arc-state.json",
+    "rf07_status": "complete",
+    "rf07_active_arcs": ["ARC-RF07-001"],
+    "cross_rf_note": "RF-07 complete. 4 compound patterns generated (COMP-RF07-001 through COMP-RF07-004). All compound with RF-04; COMP-RF07-001 and COMP-RF07-002 are triple-compounds with RF-05 also. RF-07 confirmed flooding (S-012 Apr 12 2026) retroactively supports flooding-candidate designations for S-001 (Aug 2024) and S-004 (Aug 2025) — raw timestamp review at synthesis will confirm."
+  },
+
+  "calibration_addenda": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+  "calibration_addenda_file": "analysis-output/calibration/addenda-RF-07.json",
+
+  "cp2_status": "complete",
+  "cp2_generated": "2026-04-24",
+  "cp2_completed": "2026-04-24",
+  "cp2_file": "analysis-output/checkpoints/cp2-RF-07-review.json",
+
+  "pending_cp2_items": [],
+
+  "pending_cp3_items": [],
+
+  "arc_state_file": "analysis-output/arc-states/RF-07-arc-state.json",
+
+  "key_findings": {
+    "confirmed_flooding": "S-012 (Apr 12 2026): 5 messages in 3:14 (14:24:25–14:27:39 UTC) — only ADD-001-confirmed flooding event in dataset",
+    "flooding_candidates": "S-001 (Aug 4-5 2024 ~80 msgs) and S-004 (Aug 14-15 2025 ~80 msgs) — pending synthesis timestamp confirmation",
+    "most_distinctive_signal": "S-003 (May 2025): Melissa issues 'stop texting me / harassment' stop command then immediately continues messaging — clearest continuation-after-self-demand in dataset",
+    "hot_period_anchors": {
+      "aug_2024": "S-001 (COMP-RF07-001)",
+      "may_2025": "S-003 (COMP-RF07-002)",
+      "aug_2025": "S-004 (COMP-RF07-003)"
+    },
+    "phase_c_pattern": "Sev-1 signals in Phase C (S-007 through S-011) confirm pattern maintenance without attenuation — response-time norm-setting, legal-evidence coercion, punitive non-disclosure",
+    "arc_state": "ARC-RF07-001 ACTIVE; unresolved at dataset close; 12 signals (4 Sev-2, 8 Sev-1)"
+  },
+
+  "session_log": [
+    {
+      "session": 1,
+      "date": "2026-04-24",
+      "batches_processed": ["B-001"],
+      "primary_flags_added": 0,
+      "peripheral_flags_added": 1,
+      "arcs_updated": [],
+      "compounds_added": 0,
+      "notes": "RF-07 pass initialized. B-001 calibration batch processed (365 messages, Jan-Oct 2022). Zero primary RF-07 flags — confirms low baseline in cooperative early period. No message flooding instances (longest rapid cluster ROW-50-61 spans 34 minutes). Arc state initialized at zero. CP2 calibration questions generated across 5 dimensions. Halted per protocol."
+    },
+    {
+      "session": 2,
+      "date": "2026-04-24",
+      "batches_processed": ["B-002","B-003","B-004","B-005","B-006","B-007","B-008","B-009","B-010","B-011","B-012","B-013","B-014","B-015","B-016","B-017","B-018","B-019","B-020","B-021","B-022","B-023","B-024","B-025","B-026","B-027","B-028","B-029","B-030","B-031"],
+      "primary_flags_added": 12,
+      "peripheral_flags_added": 2,
+      "arcs_updated": ["ARC-RF07-001 watching→ACTIVE (B-017); 12 signals added (S-001–S-012)"],
+      "compounds_added": 4,
+      "notes": "CP2 calibration completed. 4 addenda confirmed (ADD-001 through ADD-004). Full pass completed B-002 through B-031 in single session. 12 primary signals: 4 Sev-2 (S-001 Aug 2024 flooding candidate, S-003 May 2025 continuation-after-self-demand, S-004 Aug 2025 flooding candidate, S-012 Apr 2026 CONFIRMED FLOODING), 8 Sev-1 (S-002, S-005 through S-011). 4 compound patterns (all with RF-04; COMP-RF07-001 and COMP-RF07-002 also with RF-05). ARC-RF07-001 unresolved at dataset close. Arc state file written to analysis-output/arc-states/RF-07-arc-state.json."
+    }
+  ]
+}

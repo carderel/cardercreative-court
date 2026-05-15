@@ -1,0 +1,61 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-016",
+    "row_range": { "start": 5625, "end": 6012 },
+    "date_range": { "start": "2024-06-14", "end": "2024-07-15" },
+    "message_count": 388,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Pre-hot-period batch immediately preceding B-017 August 2024 anchor. Contains ROW-5808 stop command — confirmed Eli compliance, not RF-07 against Eli."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 388,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 1,
+    "no_flag_messages": 388,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-5808-peripheral",
+      "timestamp": "2024-07",
+      "direction": "received",
+      "message_text": "ROW-5808 (Received): 'Now shut the fuck up and leave me alone'",
+      "assessment": "Melissa's stop command — explicit 'leave me alone' directive. Per ADD-003 calibration, this would constitute a stop signal triggering the continuation-after-stop rule if Eli continued. RF-04 batch record confirms Eli stopped responding after ROW-5808 (contemptuous dismissal following Eli's explanation). ADD-002 and ADD-003 apply: (1) Eli complied — NOT RF-07 against Eli; (2) Melissa's own RF-04 primary flag for contempt (ROW-5808 is ARC-RF04-001 signal). Directional calibration note: ROW-5808 is a Melissa stop-command that Eli respected. No continuation-after-stop signal generated here.",
+      "cp2_flag": false
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 watching state maintained. B-016 is immediately pre-hot-period. Next batch (B-017) contains the Aug 2024 mega-cluster (triage hot period anchor). ROW-5808 stop command noted as directional calibration — Eli complied, establishing the contrast with Melissa's own continuation-after-stop behavior in later batches."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Elevated — Jun-Jul 2024 conflict period. Jun 17 work-address contempt cluster (RF-04 primary). Jun 28 callback dispute. Jun 30 Milo-character attack. Jul 13 Olivia's 10th birthday context. ROW-5808 'shut the fuck up and leave me alone' is the batch's defining RF-04 signal.",
+    "rf07_assessment": "Zero RF-07 primary signals. ROW-5808 noted as directional calibration: Melissa issued a stop command and Eli complied. This establishes the ADD-003 baseline contrast — Eli's compliance with stop commands, versus Melissa's later continuation into Eli's silence in Phase B. Pre-hot-period; B-017 is the first RF-07 signal batch.",
+    "custodial_context": "Jul 2024 includes Olivia's 10th birthday (Jul 13) — parenting-time logistics context. No custodial-time-overstepping cluster identified at ADD-004 threshold this batch."
+  }
+}

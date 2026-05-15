@@ -1,0 +1,26 @@
+{
+  "batch_id": "B-007",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2023-04-03",
+    "end": "2023-06-02"
+  },
+  "row_range": {
+    "start": 2229,
+    "end": 2579
+  },
+  "message_count": 502,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 1,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Apr\u2013Jun 2023 (Phase A): RF-08 intelligence-channel signal this period. No RF-09 primary signals. Relay-through-Olivia begins but no documentable reality-denial language."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": []
+}

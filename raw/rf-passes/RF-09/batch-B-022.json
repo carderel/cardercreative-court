@@ -1,0 +1,54 @@
+{
+  "batch_id": "B-022",
+  "rf_pass": "RF-09",
+  "rf_name": "Gaslighting",
+  "date_range": {
+    "start": "2025-01-15",
+    "end": "2025-02-15"
+  },
+  "row_range": {
+    "start": 7714,
+    "end": 7761
+  },
+  "message_count": 642,
+  "analysis_date": "2026-04-27",
+  "arc_state_at_batch_start": "ACTIVE",
+  "arc_signals_cumulative": 5,
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "Jan 2025: 1 primary RF-09 signal. S006 Sev-2 \u2014 'you gaslight everything' sustained global accusation. Arc Sev-2 sustained."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF09-B022-001",
+      "signal_id": "S006",
+      "severity": 2,
+      "date": "2025-01-15",
+      "row_ref": "ROW-7724-7740",
+      "direction": "received",
+      "evidence_level": "E",
+      "type": "sustained_darvo_inversion_gaslight_global_accusation",
+      "arc_ref": "ARC-RF09-001",
+      "addenda_applied": [
+        "ADD-001",
+        "ADD-003",
+        "ADD-004"
+      ],
+      "compound_pattern": "COMP-RF09-004",
+      "cross_rf": "RF-04 (DARVO mega-cluster B-022 ROW-7714-7761)",
+      "message_text": "ROW-7724: 'You gaslight' | ROW-7740: 'You gaslight everything'",
+      "summary": "Jan 2025: Melissa deploys explicit, comprehensive DARVO-inversion \u2014 accuses Eli of gaslighting 'everything.' Context: Jan 15 2025 conflict cluster (RF-04 primary, B-022 mega-cluster). ROW-7724: 'You gaslight' \u2014 brief accusation. ROW-7740: 'You gaslight everything' \u2014 escalated global indictment of Eli's entire perception of reality. This is the most significant Level E signal in Phase A/B transition: not a dispute about a specific claim, but a comprehensive attack on Eli's credibility as a reporter of reality. ADD-004 arc escalation: 'You gaslight everything' is the 5th+ documented instance of Melissa attacking Eli's perception, and first use of global ('everything') qualifier \u2014 arc severity elevates to Sev-2 (sustained across multiple conflict periods). Elevation justification per ADD-001: 'Level E = Sev-2 when sustained across multiple episodes.' The Jan 2025 cluster comes after documented instances in B-003, B-005, B-009, B-019 \u2014 five distinct conflict periods. ADD-003 compound: this occurs at the center of a DARVO mega-cluster (RF-04 B-022 primary) \u2014 explicit gaslight accusation within DARVO = COMP-RF09-004 RF-09+RF-04. Sub-pattern: DARVO-inversion naming is the clearest example in the dataset of the manipulative party projecting their own behavior onto the target."
+    }
+  ],
+  "peripheral_flags": [],
+  "crossref_unresolved": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF09-001",
+      "event": "S006 signal added; arc severity escalated to Sev-2 (ADD-004 sustained threshold)",
+      "new_state": "ACTIVE",
+      "signal_count": 6
+    }
+  ]
+}

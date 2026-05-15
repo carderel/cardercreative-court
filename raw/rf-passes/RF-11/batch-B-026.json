@@ -1,0 +1,25 @@
+{
+  "batch_id": "B-026",
+  "rf_pass": "RF-11",
+  "rf_name": "Inappropriate Child Involvement",
+  "date_range": {
+    "start": "2025-06-11",
+    "end": "2025-07-16"
+  },
+  "row_range": {
+    "start": 7868,
+    "end": 9916
+  },
+  "message_count": 510,
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": "CANDIDATE",
+  "arc_signals_cumulative": 0,
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jun\u2013Jul 2025: No RF-11 primary signals. Approaching B-027 counselor relay cluster."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

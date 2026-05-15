@@ -1,0 +1,15 @@
+{
+  "arc_state_metadata": {
+    "rf_pass": "RF-02",
+    "last_updated_batch": null,
+    "last_updated_timestamp": null,
+    "total_active_arcs": 0,
+    "total_watching_arcs": 0,
+    "total_resolved_arcs": 0,
+    "total_compound_patterns": 0
+  },
+  "active_arcs": [],
+  "watching_arcs": [],
+  "resolved_arcs": [],
+  "compound_patterns": []
+}

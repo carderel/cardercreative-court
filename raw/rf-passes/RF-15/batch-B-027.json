@@ -1,0 +1,37 @@
+{
+  "batch_id": "B-027",
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "date_range": {
+    "start": "2025-07-17",
+    "end": "2025-08-28"
+  },
+  "row_range": {
+    "start": 10048,
+    "end": 10430
+  },
+  "message_count": 503,
+  "phase": "B",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF15-001": "ACTIVE",
+    "ARC-RF15-002": "ACTIVE"
+  },
+  "arc_signals_cumulative": 13,
+  "calibration_addenda_active": [
+    "RF15-ADD-001",
+    "RF15-ADD-002",
+    "RF15-ADD-003",
+    "RF15-ADD-004",
+    "RF15-ADD-005",
+    "RF15-ADD-006"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Jul-Aug 2025. Phase B hostile cluster. RF-05 peak period (S-021 attorney engagement). RF-15 cross-reference notes present but no standalone primary \u2014 harm allegation mechanism is in B-025/B-026 and B-028/B-029 flanking batches."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": []
+}

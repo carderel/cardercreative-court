@@ -1,0 +1,42 @@
+{
+  "batch_id": "B-005",
+  "date_range": {
+    "start": "2023-01-18",
+    "end": "2023-02-22",
+    "orig_row_start": 1480,
+    "orig_row_end": 1850
+  },
+  "message_count": 371,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "calibration_addenda_active": [
+    "RF12-ADD-001",
+    "RF12-ADD-002",
+    "RF12-ADD-003",
+    "RF12-ADD-004",
+    "RF12-ADD-005",
+    "RF12-ADD-006",
+    "RF12-ADD-007",
+    "RF12-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "note": "Tone baseline analysis: no primary RF-12 strategic communication signals in 2023-01."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF12-001",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    },
+    {
+      "arc": "ARC-RF12-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0
+    }
+  ]
+}

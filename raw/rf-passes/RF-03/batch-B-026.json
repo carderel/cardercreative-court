@@ -1,0 +1,49 @@
+{
+  "batch_id": "B-026",
+  "date_range": {
+    "start": "2025-05-30",
+    "end": "2025-06-29",
+    "note": "date-filtered batch"
+  },
+  "message_count": 282,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-03",
+  "rf_name": "Weaponized Logistics",
+  "calibration_addenda_active": [
+    "RF03-ADD-001",
+    "RF03-ADD-002",
+    "RF03-ADD-003",
+    "RF03-ADD-004",
+    "RF03-ADD-005",
+    "RF03-ADD-006",
+    "RF03-ADD-007"
+  ],
+  "batch_summary": {
+    "primary_flags": 0,
+    "peripheral_flags": 1,
+    "note": "Vaping/asthma scheme continuation (B-026). RF-03 peripheral per ADD-001."
+  },
+  "primary_flags": [],
+  "peripheral_flags": [
+    {
+      "id": "P-RF03-003",
+      "direction": "Received",
+      "primary_rf": "RF-15+RF-02",
+      "note": "Continued vaping/asthma/pinching allegation events. RF-03 peripheral per ADD-001."
+    }
+  ],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF03-001",
+      "state": "WATCHING",
+      "signals_cumulative": 2,
+      "event": "No new signals in B-026. WATCHING state holds."
+    },
+    {
+      "arc": "ARC-RF03-002",
+      "state": "CANDIDATE",
+      "signals_cumulative": 0,
+      "event": "No Activity Enrollment Obstruction signals."
+    }
+  ]
+}

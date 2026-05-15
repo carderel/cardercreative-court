@@ -1,0 +1,97 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-08",
+    "batch_id": "B-010",
+    "row_range": {
+      "start": 3343,
+      "end": 3722
+    },
+    "date_range": {
+      "start": "2023-08-21",
+      "end": "2023-10-04"
+    },
+    "message_count": 380,
+    "phase": "A",
+    "processing_timestamp": "2026-04-26",
+    "calibration_addenda_active": [
+      "RF08-ADD-001",
+      "RF08-ADD-002",
+      "RF08-ADD-003",
+      "RF08-ADD-004"
+    ]
+  },
+  "batch_statistics": {
+    "total_messages_analyzed": 380,
+    "primary_flags": 1,
+    "primary_severity_distribution": {
+      "1": 1,
+      "2": 0,
+      "3": 0
+    },
+    "peripheral_flags_total": 0,
+    "no_flag_messages": 379,
+    "flag_rate": "0.26%"
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF08-B010-S003",
+      "arc_signal_ref": "ARC-RF08-001-S003",
+      "rows": "ROW-3627-3630",
+      "date": "2023-09-26",
+      "severity": 1,
+      "rf_tags": [
+        "RF-08",
+        "RF-01"
+      ],
+      "calibration_addenda_triggered": [
+        "RF08-ADD-001",
+        "RF08-ADD-002"
+      ],
+      "arc": "ARC-RF08-001",
+      "arc_promotion": "WATCHING: 3 signals (numerical ACTIVE threshold met; activation deferred to ROW-6819 per ADD-002)",
+      "compound_id": "COMP-RF08-003",
+      "summary": "Pre-signal \u2014 Olivia availability/loyalty relay. ROW-3628: 'You miss out on seeing her all the time.' ROW-3629: 'You did better while she was in cheerleading then. Quit when she quit. I really hope you weren't just making yourself available because there was a court order.' Context: Melissa uses Olivia's schedule and engagement history to relay the abandonment-arc narrative \u2014 Eli was present when externally obligated (court-ordered cheerleading involvement) but absent by choice otherwise. Cross-reference RF01-B010-S001 (ADD-004). RF-08 classification: Olivia's reported relationship quality and schedule preferences are relayed as evidence of Eli's parenting failures. Note: pre-signal per ADD-002. Arc meets numerical ACTIVE threshold (3 signals) but activation is deferred to ROW-6819 per CP2 ADD-002 protocol \u2014 coaching admission is the designated arc activation anchor.",
+      "exact_quotes": [
+        "ROW-3628 (Received): 'You miss out on seeing her all the time.'",
+        "ROW-3629 (Received): 'You did better while she was in cheerleading then. Quit when she quit. I really hope you weren\\'t just making yourself available because there was a court order.'"
+      ],
+      "rf08_mechanism": "Availability/loyalty relay: Olivia's schedule and relationship quality are reported through Melissa as evidence of Eli's abandonment arc narrative."
+    }
+  ],
+  "peripheral_flags": [],
+  "unflagged_notable": [],
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [
+      "COMP-RF08-003"
+    ],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF08-001 WATCHING: 3 signals (S001-S003). Arc has met the 3-signal numerical threshold for ACTIVE promotion under standard protocol, but CP2 ADD-002 designates ROW-6819 (B-018) as the mandatory arc activation anchor. Arc held at WATCHING until B-018."
+  },
+  "compound_patterns": [
+    {
+      "id": "COMP-RF08-003",
+      "rf_passes": [
+        "RF-08",
+        "RF-01"
+      ],
+      "rf01_ref": "RF01-B010-S001",
+      "description": "Olivia availability relay compounds with RF-01 ADD-004: ROW-3627-3630 uses Olivia's engagement history as evidence for the abandonment arc (RF-01) while simultaneously triangulating Olivia's reported experience as co-parenting pressure (RF-08)."
+    }
+  ],
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+  "batch_observations": {
+    "tone_assessment": "Phase A. Aug-Oct 2023. Third pre-signal confirms the relay-through-Olivia pattern is established well before the coaching admission.",
+    "rf08_assessment": "One Sev-1 pre-signal. Arc at WATCHING with 3 signals \u2014 activation held for ROW-6819. The abandonment-arc relay (Olivia's reported experience of Eli's availability) is the clearest pre-signal of the coached narrative that will be explicitly confirmed at ROW-6819.",
+    "cross_rf_context": "RF-01 ADD-004 compound. The abandonment arc ('you miss out on seeing her / you did better when court-ordered') is the same arc delivered explicitly in Olivia's voice at ROW-7752 (B-022-F002, Feb 2025): 'she asked why you used to visit everyday and now you barely do.'"
+  }
+}

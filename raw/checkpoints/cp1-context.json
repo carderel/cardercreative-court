@@ -1,0 +1,109 @@
+{
+  "checkpoint": 1,
+  "date_reviewed": "2026-04-22",
+  "status": "complete",
+
+  "parties": {
+    "eli": "Father, plaintiff, Sent direction",
+    "melissa": "Mother, defendant, Received direction",
+    "olivia": "Daughter, child subject of GAL evaluation",
+    "abby": "Eli's girlfriend; also Olivia's cousin (Eli's niece by family relation). Together since mid-2022. Melissa repeatedly frames this relationship as inappropriate ('uncle/niece') in messages. This framing is used as an attack vector — not a substantiated allegation."
+  },
+
+  "key_dates": {
+    "divorce_filed": "2021-07",
+    "child_support_hearing": "approximately late 2021 or late 2022",
+    "abby_relationship_start": "mid-2022",
+    "data_start": "2022-01-11",
+    "data_end": "2026-04-12",
+    "police_report_olivia_refused_custody": "2025-11-22"
+  },
+
+  "inflection_point_clarifications": {
+    "INF-001": {
+      "date": "2022-09-15",
+      "status": "confirmed_real",
+      "eli_context": "Abby entered picture mid-2022; September 2022 detection is roughly correct for when it became visible in communications"
+    },
+    "INF-002": {
+      "date": "2022-11-11",
+      "status": "possibly_real",
+      "eli_context": "Child support court hearing occurred approximately late 2022. Promote from low to medium confidence. The November 2022 legal reference may reflect communications around this hearing."
+    },
+    "INF-003": {
+      "date": "2024-08-04",
+      "status": "confirmed_real",
+      "eli_context": "Major escalation spike. No additional context provided beyond an intense conflict period."
+    },
+    "INF-004": {
+      "date": "2024-10-03",
+      "status": "confirmed_real",
+      "eli_context": "Second spike within two months. No specific triggering event identified."
+    },
+    "INF-005": {
+      "date": "2024-10-18",
+      "status": "confirmed_behavioral",
+      "eli_context": "NOT a court order. Melissa went silent after an intense early-October conflict. The drop reflects her behavioral response (withdrawal/stonewalling), not an external intervention. Analytically significant as a pattern: conflict -> silence."
+    },
+    "INF-007": {
+      "date": "2025-05-04",
+      "status": "confirmed_real",
+      "eli_context": "Eli began holding communication boundaries. Melissa escalated in response and appeared to be in a persistently negative mood. This spike is the behavioral consequence of boundary-setting."
+    }
+  },
+
+  "additional_inflection_points": [
+    {
+      "date": "2025-11-22",
+      "description": "Police report filed — Olivia refused to come with Eli for his custody weekend. Melissa was present and aware.",
+      "significance": "Key Phase C anchor event. Messages leading up to this date (especially B-028 showing Melissa's messages about Olivia 'not wanting to go' and 'you will have to drag her out') may document a buildup to the refusal. Relevant to RF-01, RF-02, RF-08, RF-11."
+    }
+  ],
+
+  "known_context": [
+    {
+      "topic": "abby_relationship_attacks",
+      "context": "Melissa's messages referring to Eli's relationship with Abby as inappropriate (uncle/niece framing, references to her being 7 when they met) are attack language, not substantiated allegations. Do not treat these as RF-14 safety concerns. Flag as RF-05 (intimidation/threats), RF-04 (emotional manipulation), and RF-15 (false allegations/projection) as appropriate."
+    },
+    {
+      "topic": "oct_2024_silence",
+      "context": "The Oct 18, 2024 communication drop is Melissa's behavioral withdrawal after conflict, not a court-ordered communication restriction. Do not treat the silence as neutral — flag the stonewalling behavior under RF-10 (Refusal to Co-Parent) analysis."
+    },
+    {
+      "topic": "may_2025_spike_context",
+      "context": "The May 2025 spike was triggered by Eli beginning to hold communication boundaries. Melissa's escalation in response is consistent with RF-07 (Boundary Violations) and RF-13 (Escalation Patterns). Eli's boundary-setting behavior should be noted as Phase B transition behavior, not flagged as problematic."
+    },
+    {
+      "topic": "phase_c_olivia_refusal",
+      "context": "The Nov 22, 2025 police report documents Olivia refusing custody transfer. B-028 (Aug-Oct 2025) messages already show Melissa communicating that Olivia 'does not want to go' and 'you will have to drag her out.' The sequence from Melissa's messaging to the refusal to the police report is a key analytical cluster."
+    }
+  ],
+
+  "rf_priority_overrides": [
+    {
+      "rf": "RF-02",
+      "override": "Elevated to Priority 1 — Eli identified Gatekeeping as one of the two worst patterns in his experience. Full pass, all batches."
+    },
+    {
+      "rf": "RF-08",
+      "override": "Elevated from Tier 3 to Tier 1 — Eli flagged Triangulation as a concern despite low keyword count. Keywords don't capture relay-through-Olivia pattern. Full pass, all batches."
+    },
+    {
+      "rf": "RF-11",
+      "override": "Elevated from Tier 3 to Tier 1 — Eli flagged Inappropriate Child Involvement as a concern. Nov 22, 2025 police report and Aug-Oct 2025 messages are anchor events. Full pass, all batches."
+    }
+  ],
+
+  "batch_plan_adjustments": [
+    {
+      "batch": "B-022",
+      "note": "642 messages (Jan-Feb 2025, 29% conflict). Keep intact — high conflict cluster should stay together for arc continuity."
+    },
+    {
+      "batch": "B-031",
+      "note": "61 messages (Apr 8-12, 2026). This appears to be the full available data through April 12, 2026. Process as final batch."
+    }
+  ],
+
+  "general_notes": "Eli is the father in an active GAL custody evaluation. He and Melissa divorced (filed July 2021). Their daughter Olivia is the subject. Eli's girlfriend Abby is also Olivia's cousin, which Melissa uses as an attack vector throughout the record. The entire 51-month dataset is post-filing — there is no pre-litigation baseline. Eli identified Gatekeeping and Parental Alienation as the worst patterns from his lived experience, with Triangulation, Emotional Manipulation, Intimidation/Threats, Gaslighting, Inappropriate Child Involvement, Escalation Patterns, False Allegations/Projection, and Boundary Violations also flagged as significant concerns."
+}

@@ -1,0 +1,96 @@
+{
+  "rf_pass": "RF-15",
+  "rf_name": "False Allegations/Projection",
+  "arc_state_version": "final",
+  "last_updated": "2026-04-28",
+  "dataset_close": "2026-04-12",
+
+  "arcs": [
+    {
+      "arc_id": "ARC-RF15-001",
+      "arc_name": "False Allegation Pattern",
+      "status": "ACTIVE",
+      "unresolved_at_dataset_close": true,
+      "signal_count": 15,
+      "severity_distribution": { "1": 4, "2": 9, "3": 2 },
+      "lifecycle": [
+        { "state": "CANDIDATE", "batch": "B-001", "event": "Arc initialized — cooperative baseline; no false allegations in pre-escalation period." },
+        { "state": "WATCHING", "batch": "B-007", "event": "B-007 (Apr 22 2023): First confirmed false allegation cluster — Abby character assassination ('whore mouth') + false suppression claim ('Abby doesn't need to tell her she can't have a treat if she tells me'). Two Category C/A instances establish WATCHING." },
+        { "state": "ACTIVE", "batch": "B-015", "event": "B-015/B-016 (May-Jun 2024): False danger framing (self-danger conversion B-015) + explicit incest statement B-016 ('doesn't know she shouldn't fuck her uncle'). Third-party reach confirmed (Q1: family, Facebook, Campbell Nov 2020). Systematic false narrative confirmed — arc ACTIVE." }
+      ],
+      "pre_dataset_context": {
+        "campbell_message": "Christopher Campbell, Nov 9 2020 (Google message): 'maybe spend less time cheeting on your wife and i would have any respect for you' — professional photography partner who cut contact with Eli based on Melissa's narrative. Predates dataset by 14+ months. Source: CP2 Q1.",
+        "facebook_posts": "Melissa made allegations on Facebook (confirmed Q1); no screenshots recovered. Third-party public narrative confirmed.",
+        "significance": "The false allegation campaign was active before the dataset period. The text record is the DOCUMENTED SUBSET of a larger narrative campaign. This supports Sev-3 classification for the most explicit in-text instances (B-016) because third-party systematic reach is independently confirmed."
+      },
+      "allegation_taxonomy": {
+        "Category_A_fabricated": [
+          "Pinching threat (B-025 ROW-9736) — no basis confirmed by Eli; Olivia relay with no Eli-side verification"
+        ],
+        "Category_B_distorted": [
+          "Vaping/asthma allegation (B-025) — real incident weaponized in manufactured cat-allergy gatekeeping scheme",
+          "Alcoholism allegation (B-030 ROW-15498) — one-beer-at-dinner distorted into 'drinking problem' pattern claim",
+          "Inadequate-father enumeration (B-015 ROW-5307-5316) — legitimate parenting behaviors recast as neglect evidence"
+        ],
+        "Category_C_sexual_predation": [
+          "First Abby-attack sexual slur (B-007 ROW-2373) — 'whore mouth'",
+          "Cheer game incest reference (B-009 ROW-3240) — 'Abby pregnant or what'",
+          "Self-danger conversion (B-015 ROW-5302) — 'you don't trust yourself either'",
+          "Explicit incest statement (B-016 ROW-5862) — 'doesn't know she shouldn't fuck her uncle' — Sev-3",
+          "Predation DARVO 10th instance (B-029 ROW-14746) — 'fucking her cousin'"
+        ],
+        "Category_D_projection": [
+          "PROJ-001: 'you gaslight everything' (B-022 ROW-7740) — RF-09 documents Melissa's systematic reality-distortion",
+          "PROJ-002: 'Abby makes false allegations' (B-016 ROW-5862) — RF-15 documents Melissa's own false allegation pattern",
+          "PROJ-003: Suppression claim — Abby told Olivia not to tell Melissa (B-007) — ROW-6819 is Melissa's coaching admission",
+          "PROJ-004: 'trying to make her think I'm abusing her' (B-031) — RF-11 documents Melissa's child-exposure patterns"
+        ],
+        "Category_E_self_danger_conversion": [
+          "B-015 ROW-5302: 'That's really concerning that you don't trust yourself either' — Eli's reasonable caution about childcare = self-admission of danger"
+        ]
+      },
+      "arc_synthesis": "ARC-RF15-001 documents a systematic false allegation pattern spanning the full dataset (2022-2026) that predates the dataset (Campbell Nov 2020). The pattern has two dominant tracks: (1) Sexual predation/incest framing of the Eli/Abby relationship — sustained from B-007 (Apr 2023) through B-029 (Nov 2025), escalating from character slurs to explicit incest statements, confirmed communicated to family, Facebook, and professional contacts; (2) Physical harm allegations delivered via Olivia relay (vaping, pinching, bruise), which compound RF-08 (coaching mechanism) with RF-15 (false allegation content). Secondary tracks: alcoholism fabrication (Phase C), inadequate-father enumeration (B-015), and self-danger conversion. The false allegation pattern is unresolved at dataset close. No formal CPS or police reports confirmed (Q3) — Sev-3 classification based on systematic third-party narrative reach, not institutional filings.",
+      "gal_significance": "The false allegation pattern has two GAL-relevant dimensions: (1) the incest/predation narrative was communicated outside the co-parenting channel to family members and on Facebook, meaning the GAL's investigation may encounter these allegations from third-party sources — the text record provides the documentary refutation; (2) the harm-via-relay mechanism (vaping, pinching, bruise) demonstrates a pattern of Olivia being used to deliver allegations that are either fabricated (pinching), distorted (vaping embedded in manufactured medical gatekeeping), or DARVO projections (bruise welfare check). The GAL should be aware that Olivia-sourced harm allegations may reflect coaching rather than independent report."
+    },
+    {
+      "arc_id": "ARC-RF15-002",
+      "arc_name": "Systematic Projection Pattern",
+      "status": "ACTIVE",
+      "unresolved_at_dataset_close": true,
+      "signal_count": 15,
+      "severity_distribution": { "1": 4, "2": 9, "3": 2 },
+      "lifecycle": [
+        { "state": "CANDIDATE", "batch": "B-001", "event": "Projection arc initialized. No projection in cooperative baseline." },
+        { "state": "WATCHING", "batch": "B-007", "event": "B-007: False suppression claim — Melissa accuses Abby of telling Olivia not to share things with Melissa (PROJ-003) while ROW-6819 (B-018) will confirm Melissa's own systematic coaching. First projection pair candidate." },
+        { "state": "ACTIVE", "batch": "B-016", "event": "B-016 (Jun 30 2024): 'Abby makes false allegations' accusation (PROJ-002) — at the point where Melissa is making explicit false incest allegations about Abby and Eli in the same message. Melissa accuses Abby of the behavior Melissa is engaging in the same sentence. Multiple confirmed projection pairs — arc ACTIVE." }
+      ],
+      "projection_pairs": [
+        {
+          "id": "PROJ-001",
+          "accusation": "'You gaslight everything' (ROW-7740, B-022 Jan 15 2025)",
+          "cross_rf_documentation": "RF-09 ARC-RF09-001: 11-signal systematic reality-distortion pattern. DARVO-inversion is the dominant RF-09 mechanism — Melissa projects gaslighting onto Eli across 7+ distinct conflict periods. Eli is documented as the de-escalator; the dataset does not contain Eli-side reality claims.",
+          "projection_confirmed": true
+        },
+        {
+          "id": "PROJ-002",
+          "accusation": "'Abby... is a liar, makes false allegations' (ROW-5862, B-016 Jun 30 2024)",
+          "cross_rf_documentation": "RF-15 ARC-RF15-001: Melissa has a documented systematic false allegation pattern communicated to multiple channels. No documented false allegations by Abby in the record.",
+          "projection_confirmed": true
+        },
+        {
+          "id": "PROJ-003",
+          "accusation": "Suppression claim — 'Abby doesn't need to tell her she can't have a treat if she tells me' (B-007 ROW-2374, Apr 22 2023)",
+          "cross_rf_documentation": "RF-08 ARC-RF08-001: ROW-6819 is Melissa's explicit coaching admission — Melissa tells Olivia what to say and mines Olivia's reports about Eli's household. The suppression allegation against Abby mirrors Melissa's own documented coaching behavior.",
+          "projection_confirmed": true
+        },
+        {
+          "id": "PROJ-004",
+          "accusation": "'Why do you keep trying to make Olivia think I'm abusing her?' (ROW-15588, B-031 Apr 12 2026)",
+          "cross_rf_documentation": "RF-11 ARC-RF11-001: Melissa's parentification pattern includes exposing Olivia to adult legal conflict, placing adult compliance decisions on Olivia ('her choice not to go'), and weaponizing counselor statements. Eli's welfare check (asking about a bruise) is protective behavior — the inverse of the documented pattern.",
+          "projection_confirmed": true
+        }
+      ],
+      "arc_synthesis": "ARC-RF15-002 documents a systematic pattern of Melissa accusing Eli of behaviors she herself is documented engaging in. Four confirmed projection pairs span B-007 through B-031 with cross-RF documentation. The dominant projection mechanism is DARVO-adjacent: Melissa names her own behavior (gaslighting, false allegations, coaching, child-exposure) and attributes it to Eli. This is distinct from standard DARVO (which deflects without naming the specific behavior). The projection pattern serves a dual function: (1) it provides Melissa with a pre-emptive defense ('I said he does X first') against future documentation of her own X behavior; (2) it creates a competing narrative for the GAL ('both parties accuse each other of X'). The cross-RF documentation refutes the competing narrative — the record supports only one party's X behavior in each projection pair."
+    }
+  ]
+}

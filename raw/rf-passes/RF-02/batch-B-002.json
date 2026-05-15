@@ -1,0 +1,200 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-02",
+    "batch_id": "B-002",
+    "row_range": {"start": 367, "end": 712},
+    "date_range": {"start": "2022-10-03", "end": "2022-11-05"},
+    "episode_range": {"start": "EP-0054", "end": "EP-0101"},
+    "message_count": 346,
+    "phase": "A",
+    "processing_timestamp": "2026-04-23",
+    "calibration_addenda_active": ["CA-RF02-01", "CA-RF02-02", "CA-RF02-03"],
+    "notes": ""
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 346,
+    "primary_flags": 5,
+    "primary_severity_distribution": {"1": 3, "2": 2, "3": 0},
+    "peripheral_flags_total": 4,
+    "peripheral_rf_distribution": {"RF-05": 2, "RF-09": 1, "RF-01": 1},
+    "no_flag_messages": 341,
+    "flag_rate": "1.4%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "ROW-416",
+      "timestamp": "2022-10-07 23:28:19 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "Although it seems it needs to be on speaker since you keep making plans to pick her up with her and not me",
+      "primary_rf": "RF-02",
+      "primary_severity": 1,
+      "primary_reasoning": "Second instance (first was ROW-299, B-001) of Melissa objecting to Eli coordinating pickup directly with Olivia. Per CA-RF02-03: Eli's practice is to ask Olivia about her week and then explicitly defer to Melissa for final coordination ('I'll coordinate with your mom'). Melissa characterizes this normal father-daughter scheduling conversation as 'making plans with her' — a framing that positions Melissa as the required intermediary for all Eli-Olivia contact. The word 'keep' signals this is a repeated objection, not a first concern. The comment is tacked onto an unrelated complaint about speakerphone, which functions as a vehicle for embedding the gatekeeping directive.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-414: Melissa criticizes how Eli conducts phone calls with Olivia ('stop calling while you're at the store and half ass paying attention to her'). ROW-415: Melissa states she didn't put the phone on speaker — Olivia did, and prefers it that way. ROW-416 follows, embedding the direct-contact objection into a complaint about phone conduct. All three messages in the same episode function as a sustained critique of Eli's phone engagement style, with the direct-contact objection as the most analytically significant element.",
+      "pattern_tags": ["direct_olivia_contact_objection", "required_intermediary_framing"],
+      "arc_references": ["ARC-RF02-002"],
+      "image_reference": null,
+      "quote_excerpt": "you keep making plans to pick her up with her and not me",
+      "calibration_status": "confirmed",
+      "calibration_addendum_applied": "CA-RF02-03",
+      "journal_crossref_date": "2022-10-07"
+    },
+    {
+      "message_id": "ROW-607",
+      "timestamp": "2022-10-30 02:04:24 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "You literally had all day to call but waited past 8:30",
+      "primary_rf": "RF-02",
+      "primary_severity": 1,
+      "primary_reasoning": "Continued enforcement of the 8:30pm phone blocking rule (ARC-RF02-001). Per CA-RF02-01: the 8:30pm cutoff is a unilateral, selectively enforced restriction. Severity 1 (not 2) here because contextual mitigation applies: Eli was texting after midnight asking to call Olivia, which is a genuinely late hour for a child (ROW-603 00:09, ROW-604 00:50, ROW-606 00:56). Melissa's response denies the call and adds a blame attribution ('had all day') rather than facilitating any contact path. The arc signal value is in the enforcement pattern, not the specific hour.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-603 (midnight): Eli texts 'Call her about nine' — likely referring to 9am the next morning. ROW-604-606 (12:50-12:56am): Eli then asks to call now, at midnight. Melissa responds at 2am with enforcement language. Contextual mitigation: midnight is genuinely late for a child. However, Melissa's response provides no alternative pathway (e.g., 'call in the morning') — it is purely enforcement. Sixth signal in ARC-RF02-001.",
+      "pattern_tags": ["phone_access_blocking", "8pm_cutoff_enforcement"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "You literally had all day to call but waited past 8:30",
+      "calibration_status": "confirmed",
+      "calibration_addendum_applied": "CA-RF02-01",
+      "journal_crossref_date": "2022-10-30"
+    },
+    {
+      "message_id": "ROW-618-649",
+      "timestamp": "2022-10-31 14:39:41 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "[Cluster] ROW-618: 'No' / ROW-619: 'We don't need you' / ROW-649: 'She wanted you to go. I didn't need you to go with her.'",
+      "primary_rf": "RF-02",
+      "primary_severity": 2,
+      "primary_reasoning": "Halloween access denial cluster with self-admitting gatekeeping. Eli asked to take Olivia trick-or-treating (ROW-617). Melissa refused (ROW-618-619: 'No. We don't need you.'). Analytically significant: at ROW-649, Melissa herself admits 'She wanted you to go. I didn't need you to go with her.' This is direct evidence that Melissa's judgment ('We don't need you') overrode Olivia's expressed preference for time with her father. Per RF-02: claiming child doesn't want access with other parent — here the inverse: Melissa denies access despite the child wanting it, and subsequently acknowledges this. Severity 2: this is not an ambiguous situation. Melissa's own words confirm that her gatekeeping decision contravened Olivia's preference. The 'We don't need you' framing also collapses Olivia's separate interest in her father into a household unit that has already decided Eli is unnecessary.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-05",
+          "severity": 2,
+          "note": "The Halloween conflict includes sustained derogatory attacks: 'We don't need you,' 'She deserves a better dad,' 'It's sad that you'd rather take someone else's kid than your own,' 'You'd rather let Olivia down than make Abby mad and that's pathetic.' High-density attack cluster in ROW-618-654.",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "ROW-617: Eli asks 'Does she want me to pick her up about 5 and go around my neighborhood?' ROW-618: 'No.' ROW-619: 'We don't need you.' ROW-615 (same night at midnight): Melissa relays Olivia saying 'If you're not going to call imma call my dad' — showing Olivia actively wanted contact with Eli the same evening. ROW-649 (later in conflict): 'She wanted you to go. I didn't need you to go with her.' Eli subsequently attempted to come over anyway (ROW-661-662: 'About ten or 15 mins away... came over. Drive through and didn't see you guys.') — further evidence Eli made the effort despite the denial.",
+      "pattern_tags": ["access_denial", "child_preference_override", "gatekeeping_admitted", "darvo_adjacent"],
+      "arc_references": ["ARC-RF02-001", "ARC-RF02-003"],
+      "image_reference": null,
+      "quote_excerpt": "We don't need you / She wanted you to go. I didn't need you to go with her.",
+      "calibration_status": "confirmed",
+      "journal_crossref_date": "2022-10-31"
+    },
+    {
+      "message_id": "ROW-668",
+      "timestamp": "2022-11-02 00:47:00 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "I've told you long ago that no calls after 8:30",
+      "primary_rf": "RF-02",
+      "primary_severity": 1,
+      "primary_reasoning": "Seventh signal in ARC-RF02-001 — continued enforcement of the unilateral 8:30pm phone restriction. Eli had explained he was on back-to-back work calls (conference call then Zoom) that ran over. Melissa's response does not acknowledge the legitimate work context; it restates the rule as an absolute. Context: ROW-669 shows Eli immediately raising the selective enforcement issue — 'But you let her call plenty of times after 8:30' — which is a contemporaneous documentation of the CA-RF02-01 pattern (selective enforcement). This is the first time Eli explicitly surfaces the double standard in writing.",
+      "peripheral_flags": [],
+      "context_notes": "ROW-665: Eli asks Melissa to have Olivia call back (11:38pm) — he was on a conference call that ran over. ROW-666: Melissa 'You could've called before that.' ROW-667: Eli explains Zoom call ran over. ROW-668: 8:30 rule stated. ROW-669: Eli raises selective enforcement. ROW-670: Melissa 'We have boundaries. You need to respect that.' ROW-675: 'I always encourage her to call you and what not but you need to respect boundaries.' ROW-678: 'You may call at 8 am tomorrow.' All contact denied for the night.",
+      "pattern_tags": ["phone_access_blocking", "8pm_cutoff_enforcement", "selective_enforcement_documented"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "I've told you long ago that no calls after 8:30",
+      "calibration_status": "confirmed",
+      "calibration_addendum_applied": "CA-RF02-01",
+      "journal_crossref_date": "2022-11-02"
+    },
+    {
+      "message_id": "ROW-679",
+      "timestamp": "2022-11-02 00:58:42 UTC",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "Your comment about her calling other nights past 8:30 just shows how much you don't respect boundaries. I have her call you back those nights that you don't call on time if it's not interfering with school schedule",
+      "primary_rf": "RF-02",
+      "primary_severity": 2,
+      "primary_reasoning": "This message is analytically significant beyond the arc continuation value. Melissa responds to Eli's selective enforcement observation (ROW-669) by explicitly stating her gatekeeping authority: 'I have her call you back those nights that you don't call on time if it's not interfering with school schedule.' Unpacked: (1) Melissa controls IF Olivia calls Eli back; (2) Melissa controls WHEN ('don't call on time' = Eli is only allowed to receive Olivia's call if he complies with Melissa's schedule); (3) Melissa controls WHETHER a callback happens based on her assessment of school schedule impact. This is the clearest statement in the record to date of Melissa's self-appointed gatekeeping role over Olivia-to-Eli communication. Severity 2 because this is not enforcement of a specific rule but an explicit articulation of a unilateral control structure.",
+      "peripheral_flags": [],
+      "context_notes": "This message directly responds to Eli's selective enforcement challenge (ROW-669: 'But you let her call plenty of times after 8:30'). Rather than acknowledging the inconsistency, Melissa reframes her selective permission of Olivia's outgoing calls as a conditional reward Eli receives when he follows her schedule. The framing inverts the parent-child dynamic: Eli's ability to receive calls from his daughter is presented as a privilege Melissa grants when she judges he has been compliant. This is gatekeeping infrastructure articulated in plain language.",
+      "pattern_tags": ["phone_access_blocking", "gatekeeping_authority_stated", "conditional_communication_access", "selective_enforcement_justified"],
+      "arc_references": ["ARC-RF02-001"],
+      "image_reference": null,
+      "quote_excerpt": "I have her call you back those nights that you don't call on time if it's not interfering with school schedule",
+      "calibration_status": "confirmed",
+      "calibration_addendum_applied": "CA-RF02-01",
+      "journal_crossref_date": "2022-11-02"
+    }
+  ],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-545",
+      "reason_noted": "Melissa relays 'She said you were kissing her way too much on Friday' — child complaint about Eli's physical affection during his custodial time, relayed to Eli by Melissa. Near-boundary RF-01 (undermining Eli's parenting by relaying child criticism about his parenting behavior). Not RF-02 primary because this does not restrict access. Will be relevant to RF-01 pass."
+    },
+    {
+      "message_id": "ROW-614",
+      "reason_noted": "Melissa tells Eli 'She says to calm so she can answer on her phone' before Olivia takes Eli's call. Minor gatekeeping element — Melissa is managing the preconditions for Olivia accepting Eli's call. Not flagged as standalone RF-02 because the message is also offering access (Olivia will call). Noting as part of the pattern of Melissa as intermediary/manager of Olivia-to-Eli contact."
+    },
+    {
+      "message_id": "ROW-682",
+      "reason_noted": "Melissa states 'Milo and Abby need to Covid test since you said they got really sick. I don't want Olivia exposed to it' — conditional access based on household health testing. Near-boundary RF-02 (adding conditions to access). Not flagged because the condition has a facially legitimate health rationale; COVID testing was a reasonable precaution in late 2022. Would escalate if similar health-based conditions appear without legitimate basis in later batches."
+    },
+    {
+      "message_id": "ROW-656",
+      "reason_noted": "Melissa says 'I don't know how you live with yourself. Your daughter is begging you to go with her and you tell her no so you can go with another kid.' Analytically: Melissa denied Eli's request to take Olivia trick-or-treating (ROW-618-619), yet now frames it as Eli refusing Olivia. DARVO framing — she blocked access, then blamed Eli for not having access. Peripheral RF-09 (Gaslighting) and RF-04 (manipulation). Not primary RF-02 because this is characterization after the fact, not a gatekeeping act."
+    }
+  ],
+
+  "peripheral_flags_summary": [
+    {
+      "message_id": "ROW-619",
+      "peripheral_rf": "RF-05",
+      "severity": 2,
+      "note": "High-density attack cluster in the Halloween episode (ROW-618-656). Key messages: 'We don't need you' (ROW-619), 'She deserves a better dad' (ROW-621), 'It's sad that you'd rather take someone else's kid than your own' (ROW-620), 'You'd rather let Olivia down than make Abby mad and that's pathetic' (ROW-639), 'You'll regret treating her poorly and not making the time and effort for her. You'll regret it one day but it will be too late' (ROW-653-654). 10+ message sustained attack sequence.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-636",
+      "peripheral_rf": "RF-05",
+      "severity": 2,
+      "note": "'I also find it hilarious that you said you weren't going to be Abby's taxi and was going to make her clean but yet here you are still being the house bitch and taxi.' Derogatory language ('house bitch'); ridicule of Eli's relationship dynamic with Abby. Personal attack using Eli's domestic situation as mockery.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-656",
+      "peripheral_rf": "RF-09",
+      "severity": 1,
+      "note": "DARVO framing: Melissa denied Eli's Halloween pickup request (ROW-618-619) then later claimed 'Your daughter is begging you to go with her and you tell her no' (ROW-656). The narrative inverts what occurred in the record: the denial was Melissa's, not Eli's. Gaslighting indicator — the written record contradicts Melissa's characterization.",
+      "confidence": "high"
+    },
+    {
+      "message_id": "ROW-545",
+      "peripheral_rf": "RF-01",
+      "severity": 1,
+      "note": "Melissa relays Olivia's complaint that 'you were kissing her way too much on Friday' — child's criticism of Eli's parenting behavior during his custodial time, transmitted to Eli by Melissa. Mild alienation indicator: relaying child's negative feedback about Eli's parenting style.",
+      "confidence": "medium"
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 1,
+    "arcs_promoted_this_batch": ["ARC-RF02-002 (CANDIDATE → WATCHING)", "ARC-RF02-003 (new CANDIDATE)"],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "arc_signals_added": {
+      "ARC-RF02-001": ["ROW-607", "ROW-668", "ROW-679"],
+      "ARC-RF02-002": ["ROW-416"],
+      "ARC-RF02-003": ["ROW-618-649"]
+    }
+  },
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  }
+}

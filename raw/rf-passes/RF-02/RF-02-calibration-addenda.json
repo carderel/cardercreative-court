@@ -1,0 +1,43 @@
+{
+  "calibration_source": "CP2",
+  "rf_pass": "RF-02",
+  "generated_from_batch": "B-001",
+  "cp2_completed": "2026-04-23",
+  "addenda_active_from_batch": "B-002",
+
+  "addenda": [
+    {
+      "id": "CA-RF02-01",
+      "title": "8:30pm DND Rule — Confirmed Unilateral + Moving Target + Selective Enforcement",
+      "applies_to": ["ARC-RF02-001", "phone_access_blocking", "unilateral_restriction"],
+      "calibration": "The 8:30pm Do Not Disturb system was confirmed unilateral — Melissa imposed it without agreement. Two additional facts elevate analytical significance: (1) the cutoff was a moving target — Eli calling at 8:25pm (before the stated cutoff) still generated complaints, indicating the time was not a genuine fixed boundary but a floor that moved against Eli; (2) selective enforcement confirmed — Olivia could call Eli after 8:30 when she chose to, meaning the restriction applied to Eli specifically, not to Olivia's bedtime routine. The bedtime framing ('Olivia needs to start her bedtime routine') was the stated justification but did not govern Olivia's own outgoing calls. This is a definitively gatekeeping infrastructure, not a household routine.",
+      "severity_guidance": "ROW-124 and ROW-125 confirmed at Severity 2. The selective enforcement element adds a new sub-pattern to watch: any future message where Olivia or Melissa initiates contact with Eli after the claimed cutoff time is analytically significant — flag as CA-RF02-01 pattern.",
+      "forward_watch": "Look for: (1) Olivia calling/texting Eli after 8:30pm in future batches (demonstrates selective enforcement across time); (2) Melissa resetting or referencing cutoff times; (3) complaints about calls that are within any stated window."
+    },
+    {
+      "id": "CA-RF02-02",
+      "title": "Child Preference Relay — Authenticity Uncertain, Infrastructure Context Governs",
+      "applies_to": ["child_preference_relay", "ROW-122", "ROW-185", "ROW-365"],
+      "calibration": "Eli reports that at the time, he took the 'she doesn't want to talk' messages at face value — he tried to be understanding, even though it upset him. He now has uncertainty about whether Olivia's preference was genuine or managed. Analytical guidance: do not definitively classify as coaching without additional evidence. However, the infrastructure blocking context (a DND system already confirmed as active) means these statements cannot be verified as independently expressed child preference. The absence of independent verification is the flag, regardless of whether Melissa was deliberately managing Olivia's preference or simply relaying it. Maintain flags at existing severity.",
+      "severity_guidance": "ROW-122, ROW-185, ROW-365 confirmed at Severity 1. No adjustment. Future instances: flag when Melissa relays that Olivia 'doesn't want to' communicate with Eli; note whether DND system is also active in that window.",
+      "forward_watch": "Pattern to watch: does 'she doesn't want to talk' language persist or escalate as the relationship deteriorates? Does Melissa ever provide evidence (e.g., 'I asked Olivia if she wanted to call and she said no') or does it remain an unsubstantiated relay?"
+    },
+    {
+      "id": "CA-RF02-03",
+      "title": "Eli-Olivia Scheduling Conversations — Normal Parent-Child Communication, Not Coordination",
+      "applies_to": ["ROW-299", "conditional_access", "direct_olivia_contact_objection"],
+      "calibration": "Eli clarifies what 'making plans with her' actually means in context: he was having normal father-daughter conversations about Olivia's week ('do you have homework Monday? plans Tuesday? how about Wednesday?') and explicitly deferring final coordination to Melissa ('I'll coordinate with your mom'). This is appropriate, child-centered parenting behavior — asking a child about her schedule to minimize disruption to her life is not 'making plans with her' in any coordination-bypass sense. Melissa's framing of these conversations as a problem mischaracterizes normal parent-child communication as a co-parenting boundary violation. ROW-299 is confirmed as flagged (not near-boundary).",
+      "severity_guidance": "ROW-299 confirmed at Severity 1. The misframing of normal parent-child contact as improper coordination is a gatekeeping sub-pattern — Melissa is signaling that Eli's direct relationship with Olivia (including normal scheduling conversation) is subject to her control. Flag future instances where Melissa objects to Eli having scheduling conversations directly with Olivia.",
+      "forward_watch": "Watch for: (1) Melissa objecting to Eli-Olivia direct communication about parenting time or visitation; (2) Melissa positioning herself as required intermediary for all Eli-Olivia contact; (3) escalation of this pattern over time (does Melissa increasingly restrict or object to Eli-Olivia direct relationship?). This pattern, if sustained, contributes to RF-01 (Parental Alienation) through communication channel control."
+    }
+  ],
+
+  "arc_updates": [
+    {
+      "arc_id": "ARC-RF02-001",
+      "update": "Selective enforcement confirmed by CP2. DND rule confirmed as one-directional (against Eli) rather than a household bedtime routine. Moving target confirmed — calls before stated cutoff still generated complaints. Arc scope expanded to include selective enforcement as sub-indicator. Severity and active status unchanged."
+    }
+  ],
+
+  "cp2_summary_note": "All 6 primary flags from B-001 confirmed. No flags downgraded. ROW-299 promoted from near-boundary to confirmed flag. ARC-RF02-001 scope enriched with selective enforcement and moving-target sub-patterns. Calibration addenda CA-RF02-01 through CA-RF02-03 active for all subsequent batches."
+}

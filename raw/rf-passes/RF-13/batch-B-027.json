@@ -1,0 +1,75 @@
+{
+  "batch_id": "B-027",
+  "rf_pass": "RF-13",
+  "rf_name": "Escalation Patterns",
+  "date_range": {
+    "start": "2025-07-17",
+    "end": "2025-08-28"
+  },
+  "row_range": {
+    "start": 10048,
+    "end": 10430
+  },
+  "message_count": 503,
+  "phase": "B",
+  "analysis_date": "2026-04-28",
+  "arc_state_at_batch_start": {
+    "ARC-RF13-001": "ACTIVE",
+    "ARC-RF13-002": "ACTIVE",
+    "ARC-RF13-003": "ACTIVE"
+  },
+  "arc_signals_cumulative": 16,
+  "calibration_addenda_active": [
+    "RF13-ADD-001",
+    "RF13-ADD-002",
+    "RF13-ADD-003",
+    "RF13-ADD-004",
+    "RF13-ADD-005"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "hostile_episodes": 4,
+    "note": "Phase B hostile cluster: EP-1159 Jul 19 (59 msgs, FLOOD) + EP-1169 Jul 31 (14 msgs) + EP-1180 Aug 14 (121 msgs, FLOOD) + EP-1187 Aug 25 (22 msgs). 216 total hostile msgs. ADD-002 active throughout. RF-05 PEAK (S-022 Sep 2025 'agreement ready to sign' in adjacent batch), RF-09 XREF-001 (ROW-9964 'There\u2019s no threats' denial, Jul 2025 B-027). Four hostile episodes in 6 weeks."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "RF13-B027-001",
+      "episode_cluster": [
+        "EP-1159",
+        "EP-1169",
+        "EP-1180",
+        "EP-1187"
+      ],
+      "dates": "2025-07-19 through 2025-08-25",
+      "total_messages": 216,
+      "phase": "B",
+      "flooding_detected": true,
+      "severity": 2,
+      "escalation_shape": "sustained Phase B cluster \u2014 4 hostile episodes in 6 weeks",
+      "primary_escalator": "received",
+      "delta_profile": {
+        "sent_direction": "AI-guided measured responses throughout (ADD-002)",
+        "received_direction": "4 hostile episodes in 6 weeks; EP-1180 is 121-msg peak; flooding most episodes",
+        "net_escalation": "elevated Sev-2 (ADD-002 elevated weight; 216 hostile msgs over AI-guided communication)",
+        "de_escalation_resistance": "ADD-002 applies: AI-guided communication strategy in effect; Melissa initiates 4 hostile episodes in 6 weeks regardless"
+      },
+      "cycle_classification": "CYC-004 legal-ceiling (RF-05 S-021 confirmed attorney engagement; S-022 approaching); Phase B peak hostile period",
+      "arc_associations": [
+        "ARC-RF13-001",
+        "ARC-RF13-002",
+        "ARC-RF13-003"
+      ],
+      "arc_signal_number": 17,
+      "cross_rf_note": "RF-09 XREF-001: ROW-9964 'There\u2019s no threats' denial in B-027 (Jul 2025). RF-05 S-020 DARVO-denial mechanism in this window. RF-07 S-004 Aug 2025 flooding candidate (~80 msgs). Phase B is the highest compound-flag density period."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF13-001",
+      "event": "Phase B cluster: 216 hostile msgs in 6 weeks despite AI-guided communication. No Phase B attenuation.",
+      "state": "ACTIVE"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-07",
+    "batch_id": "B-018",
+    "row_range": { "start": 6557, "end": 7055 },
+    "date_range": { "start": "2024-08-06", "end": "2024-09-08" },
+    "message_count": 499,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF07-ADD-001", "RF07-ADD-002", "RF07-ADD-003", "RF07-ADD-004"],
+    "note": "Post-mega-cluster batch. Aug 8 re-opening of Aug 4-5 dispute noted. ROW-6819 coaching admission (RF-01 primary). ROW-7029 child relay demand noted as RF-07 peripheral."
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 499,
+    "primary_flags": 0,
+    "primary_severity_distribution": { "1": 0, "2": 0, "3": 0 },
+    "peripheral_flags_total": 1,
+    "no_flag_messages": 499,
+    "flag_rate": "0.0%"
+  },
+
+  "flagged_messages": [],
+
+  "unflagged_notable": [
+    {
+      "message_id": "ROW-7029-peripheral",
+      "timestamp": "2024-09",
+      "direction": "received",
+      "message_text": "ROW-7029 (Received): [Melissa demands Olivia call/contact Eli via child intermediary]",
+      "assessment": "Child relay demand — Melissa directs communication through Olivia rather than directly to Eli. RF-01 primary mechanism (child as messenger). RF-07 peripheral: using child as communication relay channel is adjacent to multi-channel escalation (ADD consideration), but Eli's phone was accessible and this is a single message rather than a flooding or continuation pattern. Not RF-07 primary. Cross-ref RF-01 ARC-RF01-001.",
+      "cp2_flag": false
+    }
+  ],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 0,
+    "watching_arc_count": 1,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF07-001 ACTIVE (promoted in B-017, S-001). Arc remains active; no new signals this batch. Post-mega-cluster context: Aug 4-5 episode closed; Aug 8 brief re-opening (noted in B-017 unflagged_notable) does not generate additional RF-07 signal."
+  },
+
+  "compound_patterns": [],
+
+  "checkpoint_items_generated": {
+    "cp2_count": 0,
+    "cp3_count": 0,
+    "cp4_count": 0,
+    "items": []
+  },
+
+  "batch_observations": {
+    "tone_assessment": "Mixed — predominantly cooperative Aug 6-Sep 8 2024. Aug 6-7 post-mega-cluster cool-down. ROW-6819 coaching admission (Melissa tells Olivia what to say) is the batch's most significant event from RF-01 perspective. Sep 2024 more routine logistics.",
+    "rf07_assessment": "Zero RF-07 primary signals post-mega-cluster. Aug 8 re-opening (4 messages, 4 days after mega-cluster closure) assessed as re-initiation rather than continuation — outside ADD-003 continuation-after-stop window. ROW-7029 child relay demand is RF-01 primary, RF-07 peripheral only. Arc active from B-017 but accumulating no new signals this batch.",
+    "custodial_context": "Weekend parenting-time windows continue. No concentrated non-urgent contact into Eli's parenting time at ADD-004 threshold this batch."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "batch_id": "B-025",
+  "date_range": {
+    "start": "2025-05-04",
+    "end": "2025-05-29",
+    "note": "date-filtered batch"
+  },
+  "message_count": 303,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "calibration_addenda_active": [
+    "RF12-ADD-001",
+    "RF12-ADD-002",
+    "RF12-ADD-003",
+    "RF12-ADD-004",
+    "RF12-ADD-005",
+    "RF12-ADD-006",
+    "RF12-ADD-007",
+    "RF12-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-003: stop-contacting + harassment threat then continues texting, May 4 2025 (ROW-13430). Sev-2 \u2014 harassment threat invoked. EP-1078 AI start date. ARC-RF12-002 Signal 2."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-003",
+      "severity": "Sev-2",
+      "direction": "Received",
+      "arc": "ARC-RF12-002",
+      "arc_signal": 2,
+      "date": "2025-05-04",
+      "orig_rows": [
+        "13430",
+        "13432",
+        "13433",
+        "13434",
+        "13436",
+        "13437",
+        "13438",
+        "13439",
+        "13440"
+      ],
+      "messages": [
+        {
+          "orig_row": "13430",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "I'm not doing this. Stop contacting me"
+        },
+        {
+          "orig_row": "13432",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "Olivia said it was meant to be"
+        },
+        {
+          "orig_row": "13433",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "She said that"
+        },
+        {
+          "orig_row": "13434",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "I didn't"
+        },
+        {
+          "orig_row": "13436",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "If you don't have anything constructive or a solution stop texting me. Otherwise it's harassment and I will file harassment"
+        },
+        {
+          "orig_row": "13437",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "Looks like the church has a 9:00 service. I just looked it up. She said she'd go to that then she can go with you"
+        },
+        {
+          "orig_row": "13438",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "I knew they had a 10:30 and 12 but they have an earlier 9 too"
+        },
+        {
+          "orig_row": "13439",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "She feels left out by you anyways so these instances don't help that feeling"
+        },
+        {
+          "orig_row": "13440",
+          "direction": "Received",
+          "date": "2025-05-04",
+          "text": "She clutches on to that ring you got her and I feel like it's cause she feels like it's her only constant connection"
+        }
+      ],
+      "classification": "RF-12 primary Sev-2 \u2014 Escalated stop-texting/harassment-framing pattern (ADD-006). Sequence: (1) ROW-13430: 'Stop contacting me'; (2) ROW-13432-13434: Melissa immediately sends 3 more messages; (3) ROW-13436: 'stop texting me... it's harassment and I will file harassment' \u2014 explicitly invokes harassment threat while she is actively texting; (4) ROW-13437-13440: Melissa sends 4+ more messages on parenting topics. The harassment threat escalates this to Sev-2: Melissa is building a record she could use to accuse Eli of harassment while she herself continues the exchange. This is EP-1078 date (AI-guided communication start): Melissa's response to Eli's new communication pattern. Per ADD-005 and ADD-007. Cross-reference RF-07 (manufactured boundary violation). ARC-RF12-002 Signal 2.",
+      "addendum_applied": "ADD-006 (stop texting performative \u2014 harassment threat while continuing to text). ADD-007 (escalation when calm responses don't work \u2014 EP-1078 start date). RF-07 cross-ref for manufactured boundary violation."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF12-001",
+      "state": "WATCHING",
+      "signals_cumulative": 1
+    },
+    {
+      "arc": "ARC-RF12-002",
+      "state": "WATCHING",
+      "signals_cumulative": 2
+    }
+  ]
+}

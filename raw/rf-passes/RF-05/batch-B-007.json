@@ -1,0 +1,90 @@
+{
+  "batch_metadata": {
+    "rf_pass": "RF-05",
+    "batch_id": "B-007",
+    "row_range": { "start": 2229, "end": 2579 },
+    "date_range": { "start": "2023-04-03", "end": "2023-06-02" },
+    "message_count": 351,
+    "phase": "A",
+    "processing_timestamp": "2026-04-24",
+    "calibration_addenda_active": ["RF05-ADD-001", "RF05-ADD-002", "RF05-ADD-003", "RF05-ADD-004", "RF05-ADD-005"]
+  },
+
+  "batch_statistics": {
+    "total_messages_analyzed": 351,
+    "primary_flags": 2,
+    "primary_severity_distribution": { "1": 1, "2": 1, "3": 0 },
+    "peripheral_flags_total": 2,
+    "peripheral_rf_distribution": { "RF-04": 2 },
+    "no_flag_messages": 349,
+    "flag_rate": "0.6%"
+  },
+
+  "flagged_messages": [
+    {
+      "message_id": "RF05-B007-001",
+      "row_range": "ROW-2374 through ROW-2379",
+      "timestamp": "2023-04-22",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-2374: 'And Abby doesn't need to tell her that she can't have a treat if she tells me what's going on. That bitch can shut her fucking whore mouth' | ROW-2376: 'And don't be leaving her in the car with Abby alone either. That's contempt of court' | ROW-2377: 'Don't ever leave olivia in the car by herself or with just Abby. I will file contempt charges' | ROW-2378: 'Don't teach her to lie or keep things from me and check your bitch when she's being mean to Olivia' | ROW-2379: 'She was only with you for three hours. There is no reason she should be left alone. You can't handle three hours a week? Wtf. You idiot'",
+      "primary_rf": "RF-05",
+      "primary_severity": 2,
+      "primary_reasoning": "FIRST parenting-conduct contempt threat in dataset. ADD-002 temporal rule: first instance in a new legal-threat category = Sev-2. Prior contempt threats (B-003, B-004, B-007 ROW-2479) were all financial-enforcement threats. ROW-2376-2377 introduces a qualitatively different threat category: contempt filing to control Eli's parenting conduct (specifically, leaving Olivia with Abby). 'That's contempt of court' + 'I WILL file contempt charges' — the capitalized present-tense 'WILL' signals heightened certainty vs. the questioning 'do I need to file contempt?' of prior financial threats. This threat is closer to Eli's stated primary fear: using legal mechanisms to control access to and parenting of Olivia, with Abby as the compliance vector. Melissa is asserting that Eli cannot leave Olivia with Abby — if followed, this would restrict Abby's involvement in Eli's household. The threat functions as both a legal threat and a relationship-control mechanism (forcing Eli to choose between his household arrangement and avoiding legal action). Per ADD-001: the Abby element here is RF-04+RF-15 primary, but the contempt filing threat for parenting conduct is RF-05 Sev-2 primary. Cross-reference: RF-04 pass identified this cluster as COMP-RF04-007 (RF-04+RF-01+RF-05) — Eli-reacts-to-Abby-exclusion-demand + child relay mechanism. The RF-05 component is the contempt filing threat.",
+      "peripheral_flags": [
+        {
+          "rf": "RF-04",
+          "severity": 2,
+          "note": "ROW-2374: 'That bitch can shut her fucking whore mouth' — extreme Abby attack (COMP-RF04-007 per RF-04 B-007). RF-04 primary. ADD-001: RF-05 peripheral aggressive-tone only for the Abby-attack language itself.",
+          "confidence": "high"
+        },
+        {
+          "rf": "RF-04",
+          "severity": 1,
+          "note": "ROW-2380/2397-2410: Olivia relay — 'Olivia was crying saying Abby was mean to her' / 'She said she doesn't want Abby around' / 'She is adamant that she doesn't want to go with you if Abby is with you' — Abby-exclusion demand via Olivia-voice relay. RF-04+RF-01 primary (COMP-RF04-007).",
+          "confidence": "high"
+        }
+      ],
+      "context_notes": "The parenting-conduct contempt threat (ROW-2376-2377) is embedded within a multi-vector attack: Abby verbal aggression ('whore mouth'), contempt threat for conduct, child-relay exclusion demand (Olivia doesn't want Abby), and intelligence contempt ('You idiot'). The cluster represents the first instance where legal-threat language is used to control Eli's relationship with Abby rather than to enforce financial obligations. This is a qualitative escalation in the RF-05 pattern.",
+      "pattern_tags": ["parenting_conduct_contempt", "first_conduct_contempt", "abby_exclusion_legal_threat", "sev2_new_category"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'Don't ever leave olivia in the car by herself or with just Abby. I will file contempt charges' (ROW-2377)"
+    },
+    {
+      "message_id": "RF05-B007-002",
+      "row_range": "ROW-2479",
+      "timestamp": "2023-05-15",
+      "direction": "received",
+      "phase": "A",
+      "message_text": "ROW-2479: 'Or do I need to file another contempt? This is getting old'",
+      "primary_rf": "RF-05",
+      "primary_severity": 1,
+      "primary_reasoning": "Fourth instance of financial-contempt filing threat. ADD-002: Sev-1 (recurring, paper tiger trajectory). The 'This is getting old' tag is notable — Melissa herself characterizes the payment dispute as a recurring issue, confirming the compliance-cycle pattern. The frustration framing does not reduce the threat value for the arc record; it reinforces the established pattern.",
+      "peripheral_flags": [],
+      "context_notes": "Isolated message in a separate episode from the Apr 22 Abby-contempt cluster. Financial enforcement continuation.",
+      "pattern_tags": ["contempt_filing_threat", "repeat_financial", "compliance_cycle"],
+      "arc_references": ["ARC-RF05-001"],
+      "quote_excerpt": "'Or do I need to file another contempt? This is getting old' (ROW-2479)"
+    }
+  ],
+
+  "unflagged_notable": [],
+
+  "arc_state_snapshot": {
+    "active_arc_count": 1,
+    "watching_arc_count": 0,
+    "candidate_arc_count": 0,
+    "arcs_promoted_this_batch": [],
+    "arcs_resolved_this_batch": [],
+    "compounds_detected_this_batch": [],
+    "candidate_signals_held": 0,
+    "note": "ARC-RF05-001 ACTIVE. B-007 adds signals S006 (Sev-2, parenting-conduct contempt — new category) and S007 (Sev-1, financial contempt repeat). The parenting-conduct contempt (ROW-2376-2377) is the arc's second Sev-2 signal and represents the first direct legal threat to Eli's parenting choices rather than financial obligations."
+  },
+
+  "checkpoint_items_generated": { "cp2_count": 0, "cp3_count": 0, "cp4_count": 0, "items": [] },
+
+  "batch_observations": {
+    "tone_assessment": "B-007 (Apr-Jun 2023) introduces the most significant RF-05 escalation to date: the parenting-conduct contempt threat targeting Olivia's contact with Abby. This is the first time Melissa weaponizes legal action to control Eli's household arrangement. The threat language shifts from questioning ('do I need to file?') to declarative ('I WILL file contempt charges'). Combined with the financial contempt repeat, B-007 has the highest RF-05 flag count of any batch to date (2 primary flags).",
+    "cross_rf_context": "RF-04 pass: COMP-RF04-007 (ROW-2373 B-007) is this batch's primary RF-04 compound. The RF-05 parenting-conduct contempt (ROW-2376-2377) is embedded in that same cluster but operates as RF-05 primary independent of the RF-04 Abby-attack primary."
+  }
+}

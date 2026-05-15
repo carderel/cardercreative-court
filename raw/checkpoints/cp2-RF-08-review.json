@@ -1,0 +1,108 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-08",
+  "rf_name": "Triangulation",
+  "generated": "2026-04-24",
+  "status": "complete",
+  "completed": "2026-04-26",
+
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 1,
+    "tone_assessment": "Lowest-conflict period. No RF-08 primary signals. Baseline confirmed: Jan-Oct 2022 predates the relay-through-Olivia pattern's documented emergence (coaching admission is Aug 2024; visible relay signals begin earlier per RF-01).",
+    "note": "Zero primary flags is the correct calibration result for B-001. RF-08 signal is expected in later batches — primarily around the coaching admission (B-018), the Phase B/C escalation period (B-024 onward), the Nov 22 2025 police report cluster (B-028-B-029), and the dataset-closing period. CP2 calibration establishes the operative rules before those batches are processed."
+  },
+
+  "group_a_clear_flags": [],
+
+  "group_b_ambiguous_flags": [
+    {
+      "id": "CP2-RF08-AMB-001",
+      "row": "ROW-124–ROW-125",
+      "date": "2022-09-03",
+      "direction": "received",
+      "message_text": "ROW-124: 'It goes to voicemail after 8:30 because you've been told not to call after 8:30' | ROW-125: 'Since you wouldn't listen I set it long time ago to do not disturb at 8:30 so you couldn't just keep calling after I tell you not to'",
+      "current_classification": "NOT FLAGGED (RF-08). RF-02 primary (phone-blocking arc ARC-RF02-001).",
+      "ambiguity": "Melissa's characterization of Eli as a 'non-listener' who must be technically blocked rather than verbally managed could be framing she also uses with Olivia. If Olivia was taught 'daddy won't listen so I have to block him,' that would be early triangulation. However, from the text alone there's no evidence this framing reached Olivia in this batch.",
+      "cp2_question": "In this period (Sep 2022), had Melissa communicated to Olivia that you 'don't listen' or that the 8:30 call cutoff was your fault? Did Olivia show any signs of having been told about the call restrictions?"
+    }
+  ],
+
+  "group_c_non_flags": [
+    {
+      "id": "CP2-RF08-NF-001",
+      "row": "Multiple Aug 2022 messages",
+      "reason_not_flagged": "Triage Aug 2022 hot period — 1-2 messages with triangulation keywords. Assessed as likely logistics mentions (Eli asking about family plans or Melissa referencing her family context). No third-party involvement in co-parenting dispute detected in available data.",
+      "cp2_question": "In Aug 2022, was there a specific incident involving Melissa's family (her mother, siblings, or others) being brought into co-parenting issues? Were you aware of any extended family members being told about disputes between you two around this time?"
+    }
+  ],
+
+  "calibration_questions": [
+    {
+      "id": "CP2-RF08-Q1",
+      "topic": "Relay through Olivia — operative definition and earliest instance",
+      "question": "The RF-08 taxonomy centers on 'using children as messengers.' In this case the key concern is Melissa using Olivia to relay messages, information, or pressure to you — and using her conversations with Olivia as an intelligence channel about your household. Two specific sub-questions: (a) When did you first become aware that Olivia was being used to relay content between you and Melissa? Was this early in the dataset (2022-2023) or later? (b) What did this look like in practice — did Olivia deliver specific demands or messages from Melissa? Did she report things Melissa had said about you? Did she ask questions that seemed prompted rather than genuinely curious? Understanding the earliest instances will help calibrate how far back in the dataset to flag this pattern.",
+      "why_asked": "The primary RF-08 signal in this dataset will come from the relay-through-Olivia pattern, which the keyword triage missed entirely. Without Eli's recollection of when and how this started, the pass may miss early signals that appear as routine logistics.",
+      "classification_impact": "High — determines whether relay signals appear in Phase A batches (B-002 through B-016) or primarily in Phase B/C"
+    },
+    {
+      "id": "CP2-RF08-Q2",
+      "topic": "Coaching and scripting — distinguishing coached from independent reporting",
+      "question": "ROW-6819 (August 2024, B-018) is an explicit written admission by Melissa that she coached Olivia on what to say and remember in conversations with you. This is the anchor event for the coaching sub-pattern. Before this pass proceeds: (a) Did you experience coaching-influenced communication from Olivia before August 2024? If so, when did it seem like Olivia's questions or statements started reflecting scripted or prompted content rather than her own thoughts? (b) After August 2024, how did this change? Did the coaching become more overt? (c) How do you generally distinguish between Olivia independently sharing something about Melissa's household versus relaying a prompted message? This calibration will help distinguish RF-08 primary (Melissa using Olivia as a channel) from normal parent-child sharing.",
+      "why_asked": "The coaching admission at ROW-6819 is the dataset's most explicit RF-08 documentation. But the pattern likely began much earlier. Eli's calibration on what coached vs. independent behavior looks like in Olivia is essential for classifying earlier batches accurately.",
+      "classification_impact": "High — determines severity scaling for coaching signals and which Olivia-relay instances in earlier batches qualify as RF-08 primary"
+    },
+    {
+      "id": "CP2-RF08-Q3",
+      "topic": "Extended family triangulation — Melissa's network",
+      "question": "The taxonomy includes 'involving extended family in co-parenting disputes.' From the text record, Melissa's family members don't appear frequently in the messages directly, but that doesn't mean they weren't involved. (a) Did Melissa's mother, sisters, or other relatives contact you directly about co-parenting matters? Did you ever receive messages or calls from Melissa's family about custody, Olivia, or disputes? (b) Were there situations where Melissa invoked her family's views or opinions as authority in co-parenting arguments ('my mom says you should...' or 'everyone in my family agrees that...')? (c) Did Olivia's relationship with Melissa's extended family ever seem to be used as a contrast to her relationship with your side — creating an 'us vs. them' dynamic Olivia was placed in the middle of?",
+      "why_asked": "Extended family triangulation often happens off-record (phone calls, in-person conversations). Eli's knowledge of Melissa's family involvement is the only way to capture this.",
+      "classification_impact": "Medium — may generate peripheral notes or CP3 items if significant off-record triangulation existed"
+    },
+    {
+      "id": "CP2-RF08-Q4",
+      "topic": "Peer-parent network and social triangulation",
+      "question": "B-031 (Apr 12, 2026) contains a reference to 'Naomi was telling her dad yesterday that Olivia doesn't like that you yell at her' — Melissa appears to relay information from Naomi's father as corroboration of Olivia's distress. B-029 (Nov 24, 2025, ROW-14839) references a similar dynamic: 'Naomi was telling her dad.' This suggests Melissa has a peer-parent relay network — other parents who were told about disputes and fed information back. (a) Do you know who Naomi's father is? Were you ever aware of him being involved in co-parenting dynamics? (b) Are there other parents from Olivia's social circle (school parents, sports parents, etc.) who you believe were given Melissa's narrative about you? Did any of them ever contact you or treat you differently? (c) Did Melissa ever reference teachers, coaches, or other school staff as allies in disputes ('her teacher agrees,' 'the coach knows what you're like')?",
+      "why_asked": "The Naomi's-father relay mechanism in B-029 and B-031 suggests Melissa built a peer-parent information network. This is a distinct RF-08 sub-pattern (third-party alliance building) that won't appear clearly in the text unless Eli can confirm the context.",
+      "classification_impact": "Medium — may generate new arc for peer-parent triangulation if confirmed; affects B-028–B-031 analysis"
+    },
+    {
+      "id": "CP2-RF08-Q5",
+      "topic": "Abby as triangulated target — using Olivia to monitor/report on Abby",
+      "question": "The RF-01 and RF-04 passes documented Melissa's sustained Abby-targeting throughout the dataset (uncle/niece framing, inappropriate relationship allegations, 'she better check herself' threat). RF-08 asks a related but distinct question: did Melissa use Olivia as a way to monitor or gather information about Abby? (a) Did Olivia seem to ask about Abby in ways that felt prompted — about Abby's presence, activities, or relationship with Eli — and then report back to Melissa? (b) Were there times when Melissa seemed to have information about Abby (what she was doing, where she was, how she interacted with Olivia) that could only have come through Olivia? (c) Did Olivia ever seem conflicted about Abby in ways that shifted over time — initially comfortable, then more resistant — in patterns that correlated with Melissa's messaging escalation about the relationship? This distinction matters: RF-01 flags what Olivia is told to say about Eli; RF-08 flags whether Olivia was actively positioned as an information source feeding Melissa's Abby-targeting strategy.",
+      "why_asked": "The Abby dynamic is the most sustained long-arc element in the dataset. If Melissa was using Olivia to gather intelligence about Abby specifically — not just relaying alienating content — that is a distinct RF-08 mechanism. Eli is the only person who can describe what this looked like from inside the household.",
+      "classification_impact": "High — if confirmed, generates a second RF-08 arc (Abby-targeting through Olivia intelligence-gathering) that spans Phase A through C; significantly expands signal count"
+    }
+  ],
+
+  "addenda_proposed": [
+    {
+      "id": "RF08-ADD-001-PROPOSED",
+      "title": "Relay-Through-Olivia — Coached vs. Independent Reporting Distinction",
+      "rule_draft": "[PENDING CP2 ANSWER] Once Eli establishes the operative distinction between coached and independent reporting: Flag as RF-08 primary when Olivia's statements or reports to Eli contain content consistent with Melissa's messaging narratives (inadequate-father framing, Abby-inappropriate framing, etc.) in ways that suggest prompting rather than independent child expression. Flag as RF-08 Sev-2 when Olivia delivers content that mirrors active RF-01 or RF-04 signals from Melissa's messages in the same period. Flag as RF-08 Sev-1 when Olivia relays logistical demands or preferences in ways that appear to come from Melissa rather than the child's own wishes.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF08-ADD-002-PROPOSED",
+      "title": "Coaching Admission ROW-6819 as Arc Anchor",
+      "rule_draft": "[PENDING CP2 ANSWER] ROW-6819 provides explicit written confirmation of coaching. Use this as the arc activation event for ARC-RF08-001. Retrospective signals before Aug 2024 that pattern-match to coached content should be flagged as arc pre-signals (Sev-1) with a note that they precede the confirmed coaching admission.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF08-ADD-003-PROPOSED",
+      "title": "Peer-Parent Relay Classification Rule",
+      "rule_draft": "[PENDING CP2 ANSWER] If Eli confirms Naomi's-father relay is part of a network: Flag as RF-08 Sev-2 when Melissa invokes a third-party peer-parent's corroboration of Olivia's distress or Eli's behavior ('Naomi's dad said...' / '[other parent] told me...'). This is distinct from Melissa's own characterizations — it adds apparent third-party corroboration to her narrative.",
+      "status": "pending_cp2"
+    }
+  ],
+
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda with Eli's calibration answers. Update calibration file. Set cp2_status to complete. Resume B-002 processing.",
+    "if_reclassification_needed": "Update B-001 with any newly identified signals. Adjust arc state accordingly. Resume B-002.",
+    "arc_initialization_note": "ARC-RF08-001 (relay-through-Olivia) should initialize to watching state at B-001 or B-002. Per RC-ARC-STATE.md, a watching arc requires 2 signals. If B-001 yields 0 primary signals (as currently assessed), initialize at candidate state and promote to watching when the first two signals appear in early batches. The ROW-6819 coaching admission (B-018) will be the primary arc activation event — promote to ACTIVE at that point regardless of prior signal count if the coaching admission qualifies as a 3rd signal.",
+    "cross_rf_note": "All RF-01 ADD-004 relay signals should generate RF-08 compound flags when processed. The RF-01 pass documented 27 primary signals; ADD-004 relay signals within those 27 are RF-08 compound candidates. Cross-reference during B-001 through B-031 processing."
+  }
+}

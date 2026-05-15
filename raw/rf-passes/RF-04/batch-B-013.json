@@ -1,0 +1,152 @@
+{
+  "batch_id": "B-013",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "date_range": { "start": "2024-02-01", "end": "2024-03-27" },
+  "row_range": { "start": 4448, "end": 4862 },
+  "message_count": 415,
+  "analysis_date": "2026-04-24",
+
+  "batch_summary": {
+    "dominant_tone": "cooperative/administrative with two RF-04 clusters",
+    "conflict_ratio": "~0.07",
+    "rf04_activity": "low-moderate — 2 primary flags; batch otherwise cooperative (Olivia illness, school, Valentine's Day, Eli travel)",
+    "notable_context": "Melissa's flu illness (Feb 16-17). Olivia strep (Feb 25). Eli's business travel (Feb 19-22). Valentine's Day logistics (cooperative). Finding Nemo school choir (cooperative). NC relocation mention ROW-4587-4588 (RF-02 signal — 'You still good if we move to NC?'). Court threat ROW-4612 (RF-05). Olivia's emotional hurt over Eli's Roblox comment (Mar 15) resolved cooperatively."
+  },
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B013-001",
+      "severity": 1,
+      "date": "2024-03-15",
+      "row_ref": "ROW-4773",
+      "type": "contemptuous_intelligence_attack",
+      "arc_ref": "ARC-RF04-001",
+      "addenda_applied": ["ADD-002"],
+      "summary": "ROW-4773: 'You really need to be more careful of what you say. Think before you speak. Some of the dumb shit that comes out of you...' — ADD-002 contemptuous intelligence attack (message truncated in extraction). Context: Eli told Olivia that Roblox wasn't fun for him but he played it because he loves her; Olivia was hurt (she thought everyone liked it). Melissa's response escalates from relaying Olivia's hurt feelings (ROW-4772, mild) to contemptuous character attack in the next message (ROW-4773). 'Dumb shit that comes out of you' deploys intelligence-deficiency framing against Eli's innocent verbal mistake rather than addressing the impact on Olivia. ADD-002 adjacent ('dumb shit' mirrors 'dumbass' contempt-labeling pattern).",
+      "verbatim_key_messages": [
+        "ROW-4772 (Received): \"I still feel bad for her. She looked crushed. I could tell it hurt her feelings.\"",
+        "ROW-4773 (Received): \"You really need to be more careful of what you say. Think before you speak.  Some of the dumb shit that comes out of you...\""
+      ]
+    },
+    {
+      "flag_id": "RF04-B013-002",
+      "severity": 2,
+      "date": "2024-03-18",
+      "row_ref": "ROW-4793-4802",
+      "type": "child_relay_guilt + extreme_contempt_slur",
+      "arc_ref": ["ARC-RF04-001", "ARC-RF04-002"],
+      "addenda_applied": [],
+      "compound": "COMP-RF04-012",
+      "summary": "Mar 18 calling dispute contempt cluster. Context: Eli notified Melissa he was out of the bathroom and available for Olivia to call (ROW-4796). ROW-4793: 'She tells me about how it hurts her that you don't have time for her' — child emotional relay deploying Olivia's expressed distress as inadequate-father lever. ROW-4794: 'She was telling you that she wanted to talk to you and that she was upset that you wanted to get off the phone. You hurt her feelings.' ROW-4798: 'Quit playing with her feelings' — contemptuous accusation that Eli deliberately manipulates Olivia emotionally. ROW-4799: 'Now you've upset her cause you said she could call and then didn't answer our phone calls.' ROW-4800: 'Such a worthless dick' — extreme contemptuous personal slur; escalation from child-relay guilt to severe character assassination. ROW-4802: 'Then why the fuck didn't you answer.' Eli maintains phone was in hand the entire time (ROW-4801). Structure: child-relay guilt delivery → contemptuous escalation → extreme slur → profane challenge. DARVO-adjacent: Eli's factual explanation displaced by contemptuous labeling ('playing with her feelings' → 'worthless dick').",
+      "verbatim_key_messages": [
+        "ROW-4793 (Received): \"She tells me about how it hurts her that you don't have time for her\"",
+        "ROW-4794 (Received): \"She was telling you that she wanted to talk to you and that she was upset that you wanted to get off the phone. You hurt her feelings.\"",
+        "ROW-4798 (Received): \"Quit playing with her feelings\"",
+        "ROW-4800 (Received): \"Such a worthless dick\"",
+        "ROW-4801 (Sent): \"I have my phone in my hand!!!\"",
+        "ROW-4802 (Received): \"Then why the fuck didn't you answer\""
+      ]
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B013-P01",
+      "row_ref": "ROW-4568",
+      "date": "2024-02-17",
+      "type": "contemptuous_parenting_script",
+      "note": "ROW-4568: 'I think you meant how are you doing? Are you feeling better? Do you need me to do anything to help take care of our daughter? And is Olivia ok?' — sarcastic correction scripting what Eli 'should' have said when asking about Olivia during Melissa's illness. Contemptuous redirect; mild."
+    },
+    {
+      "flag_id": "RF04-B013-P02",
+      "row_ref": "ROW-4612",
+      "date": "2024-02-23",
+      "type": "cross_rf_legal_threat",
+      "note": "ROW-4612: 'Beginning this year through my work I'm no longer required to pay a retainer so it's easier to take you to court if needed' — RF-05 primary (legal threat inserted with payment reminders). RF-04 peripheral (intimidation framing)."
+    },
+    {
+      "flag_id": "RF04-B013-P03",
+      "row_ref": "ROW-4717-4723",
+      "date": "2024-03-10",
+      "type": "child_relay_complaint_softened",
+      "note": "ROW-4717: 'Olivia is upset. She said that you think your game is more important than her.' Child complaint relay. However, ROW-4723: 'I think she was lashing out with disrespect because she felt hurt' — Melissa provides protective contextualization. Partial ARC-RF04-002 pattern but softened; kept peripheral."
+    },
+    {
+      "flag_id": "RF04-B013-P04",
+      "row_ref": "ROW-4772",
+      "date": "2024-03-15",
+      "type": "mild_guilt_induction",
+      "note": "'I still feel bad for her. She looked crushed. I could tell it hurt her feelings.' — mild guilt delivery. Immediately precedes the primary flag ROW-4773 contemptuous escalation."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-001-S33",
+          "batch": "B-013",
+          "date": "2024-03-15",
+          "row": "ROW-4773",
+          "severity": 1,
+          "calibration_status": "analysis",
+          "summary": "'Think before you speak. Some of the dumb shit that comes out of you...' — ADD-002 contemptuous intelligence attack following Eli's innocent verbal mistake that hurt Olivia's feelings."
+        },
+        {
+          "signal_ref": "ARC-RF04-001-S34",
+          "batch": "B-013",
+          "date": "2024-03-18",
+          "row": "ROW-4793-4802",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "Mar 18 calling dispute — child-relay guilt delivery + extreme slur. 'She tells me about how it hurts her that you don't have time for her' → 'Quit playing with her feelings' → 'Such a worthless dick' → 'Then why the fuck didn't you answer.' COMP-RF04-012. Dual-arc (also ARC-RF04-002-S10)."
+        }
+      ],
+      "signal_count_after": 34
+    },
+    "ARC-RF04-002": {
+      "status": "ACTIVE",
+      "new_signals": [
+        {
+          "signal_ref": "ARC-RF04-002-S10",
+          "batch": "B-013",
+          "date": "2024-03-18",
+          "row": "ROW-4793",
+          "severity": 2,
+          "calibration_status": "analysis",
+          "summary": "'She tells me about how it hurts her that you don't have time for her' — child-relayed emotional distress deployed as inadequate-father lever; escalates into 'worthless dick' contempt cluster. Dual-arc (also ARC-RF04-001-S34)."
+        }
+      ],
+      "signal_count_after": 10
+    }
+  },
+
+  "compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-012",
+      "batch": "B-013",
+      "date": "2024-03-18",
+      "row_ref": "ROW-4793-4802",
+      "rf_tags": ["RF-04", "RF-05"],
+      "summary": "Twelfth compound multi-RF episode. RF-04 (child-relay guilt + inadequate-father + 'quit playing with her feelings' DARVO-adjacent reframing of Eli's honest behavior + extreme contempt) + RF-05 ('Such a worthless dick' — severe contemptuous personal slur / threatening-tone attack). Eli holds phone, notified Olivia she could call; Melissa accuses him of playing with Olivia's feelings and delivers severe slur when call fails to connect despite Eli's readiness."
+    }
+  ],
+
+  "cp3_item": {
+    "id": "CP3-RF04-013",
+    "batch": "B-013",
+    "summary": "ROW-4793-4800 (Mar 18 B-013) — child-relay guilt + 'Such a worthless dick' extreme slur compound (ROW-4793: 'She tells me about how it hurts her that you don't have time for her'; ROW-4798: 'Quit playing with her feelings'; ROW-4800: 'Such a worthless dick'); COMP-RF04-012 (RF-04+RF-05); ARC-RF04-001 signals 33-34; ARC-RF04-002 signal 10. Notable non-RF-04: ROW-4587-4588 NC relocation mention (RF-02 signal)."
+  },
+
+  "batch_statistics": {
+    "primary_flags": 2,
+    "severity_1": 1,
+    "severity_2": 1,
+    "peripheral_flags": 4,
+    "compound_patterns": 1,
+    "arc_rf04_001_signals_added": 2,
+    "arc_rf04_002_signals_added": 1
+  }
+}

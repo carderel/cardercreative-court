@@ -1,0 +1,157 @@
+{
+  "batch_id": "B-031",
+  "rf_pass": "RF-04",
+  "rf_name": "Emotional Manipulation",
+  "batch_status": "complete",
+  "analysis_date": "2026-04-24",
+
+  "date_range": {
+    "start": "2026-04-08",
+    "end": "2026-04-12"
+  },
+
+  "row_range": {
+    "sequential_block": "none",
+    "parallel_block": "ROW-15540–ROW-15599",
+    "note": "Sequential block past ROW-8595 contains out-of-order Nov-Dec 2024 data (documented in B-030). B-031 period sourced entirely from parallel block (ROW-15540–15599). Triage specified ROW-15540–15600 but ROW-15600 does not exist in the source file; total messages: 60."
+  },
+
+  "batch_metadata": {
+    "total_messages": 60,
+    "phase": "C",
+    "conflict_ratio": 0.17,
+    "episode_range": "EP-1370 through EP-1375",
+    "note": "Final batch — dataset closes Apr 12, 2026. 5-day window. Conflict_ratio 0.17 consistent with Phase C pattern of lower-density conflict punctuated by discrete RF events."
+  },
+
+  "phase_context": "Phase C final batch. Visit-refusal mechanism (Olivia 'not going') persists but resolves within hours (ROW-15553). Bruise incident Apr 12 produces the final primary RF-04 signal in the dataset — DARVO reframing of Eli's parental concern check as systematic abuse-accusation campaign against Melissa. Third-party relay through peer-parent network (Naomi's father) is a new mechanism not seen in prior batches; implies the Melissa narrative about Eli has spread beyond the household.",
+
+  "primary_flags": [
+    {
+      "flag_id": "RF04-B031-001",
+      "date": "2026-04-12",
+      "rows": "ROW-15588–ROW-15596",
+      "severity": 2,
+      "category": "DARVO_reverse + false_characterization + third_party_relay",
+      "arc_signal": "ARC-RF04-001-S89",
+      "compound_id": "COMP-RF04-030",
+      "summary": "Apr 12 DARVO bruise/abuse reversal cluster: Eli noticed a bruise on Olivia's arm, asked what happened to make sure she was okay; Olivia said she didn't know, mentioned roughhousing with Emily. Melissa opens with 'Why do you keep trying to make Olivia think I'm abusing her?' (ROW-15588) — DARVO: Eli's appropriate parental welfare check reframed as systematic campaign to plant abuse suspicions in Olivia's mind against Melissa. 'She said she has a bruise on her arm and you said it looked like a finger mark' (ROW-15589) — Melissa characterizes Eli's observation as an accusation. ROW-15590-15591: defensive explanation of bruise origin (skateboarding, roller skates). ROW-15592: ESCALATION — 'Also Naomi was telling her dad yesterday that Olivia doesn't like that you yell at her for no reason. Olivia was telling her about valentine weekend and how she can't talk to you and you were screaming for no reason' — third-party relay through Naomi's father (new mechanism: peer-parent network as Eli-harmful characterization validator); 'valentine weekend' = Feb 15 2026 incident (COMP-RF04-029) now circulating through peer network two months later; 'screaming for no reason' amplifies admitted raised voice into screaming-without-cause framing. Eli clarifies clearly and factually (ROW-15593): noticed bruise, asked what happened, let it be, not making accusations. Melissa: 'You didn't make me aware' (ROW-15594) — false denial while Eli just communicated in this thread; 'You asked her if she was being abused' (ROW-15595) — false characterization of Eli's stated question. Eli maintains factual account (ROW-15596). Cross-ref RF-09 (words reframed), RF-11 (Olivia as harm-informant; Naomi-as-relay third party), RF-15 (DARVO abuse reversal: 'trying to make Olivia think I'm abusing her').",
+      "exact_messages": [
+        { "row": "ROW-15588", "direction": "Received", "date": "2026-04-12 14:24:25", "text": "Why do you keep trying to make Olivia think I'm abusing her?" },
+        { "row": "ROW-15589", "direction": "Received", "date": "2026-04-12 14:24:41", "text": "She said she has a bruise on her arm and you said it looked like a finger mark" },
+        { "row": "ROW-15590", "direction": "Received", "date": "2026-04-12 14:25:16", "text": "Nobody over here touches her.   She skateboards, has heeleys, roller skates" },
+        { "row": "ROW-15591", "direction": "Received", "date": "2026-04-12 14:26:00", "text": "She just went skating last weekend where she took a lot of falls. She's a kid. Bruises happen. I'd say one bruise final yeh falls she took last weekend is pretty damn good." },
+        { "row": "ROW-15592", "direction": "Received", "date": "2026-04-12 14:27:39", "text": "Also Naomi was telling her dad yesterday that Olivia doesn't like that you yell at her for no reason.   Olivia was telling her about valentine weekend and how she can't talk to you and you were screaming for no reason" },
+        { "row": "ROW-15593", "direction": "Sent", "date": "2026-04-12 18:08:07", "text": "In response to your question, I noticed a bruise and asked Olivia what happened to make sure she was okay. She said she didn't know and then mentioned it might have been from roughhousing with Emily, including what she described as a headlock. My understanding is this would have been during play at school or outside. I didn't press her further and let it be. I wanted to make you aware in case it needs attention. I'm not making any accusations." },
+        { "row": "ROW-15594", "direction": "Received", "date": "2026-04-12 18:09:16", "text": "You didn't make me aware" },
+        { "row": "ROW-15595", "direction": "Received", "date": "2026-04-12 18:09:23", "text": "You asked her if she was being abused" },
+        { "row": "ROW-15596", "direction": "Sent", "date": "2026-04-12 18:14:23", "text": "I did not ask her if she was being abused. I asked what happened to cause that bruise to make sure she was okay. She said she didn't know and then mentioned roughhousing. That's all I addressed." }
+      ],
+      "cp3_item": "CP3-RF04-033"
+    }
+  ],
+
+  "peripheral_flags": [
+    {
+      "flag_id": "RF04-B031-P001",
+      "date": "2026-04-09",
+      "rows": "ROW-15549–ROW-15550",
+      "severity": "peripheral",
+      "category": "visit_refusal_framing",
+      "summary": "'She still says she's not going. Maybe she will change her mind' + shrug emoji (ROW-15549-15550) — visit-refusal framing with passive-indifferent positioning continues into final batch. Melissa presents Olivia's refusal as outside her control and her own role as passive informant. Resolves within hours (ROW-15553: 'She says she will go to your house this weekend though'). Peripheral: documents Phase C visit-refusal pattern continuity into Apr 2026 but resolves before becoming active gatekeeping event. Cross-ref RF-02."
+    },
+    {
+      "flag_id": "RF04-B031-P002",
+      "date": "2026-04-09",
+      "rows": "ROW-15552",
+      "severity": "peripheral",
+      "category": "contempt_passive_aggressive",
+      "summary": "'Well I was going to share some info but since you won't answer nevermind' — contemptuous passive-aggressive information withholding when Eli doesn't respond immediately during evening. Low-level contempt; no escalation. Documents punitive non-disclosure pattern as baseline communication style."
+    },
+    {
+      "flag_id": "RF04-B031-P003",
+      "date": "2026-04-11",
+      "rows": "ROW-15576",
+      "severity": "peripheral",
+      "category": "contempt_characterization",
+      "summary": "'You just don't listen.' — contemptuous personal characterization during exchange location confusion. Melissa changed meeting location from Walmart to Aldi; Eli was at Walmart per the original plan. 'You just don't listen' attributes the confusion to Eli's personal failing rather than the location change. Mild DARVO element: Melissa changed the plan, Eli followed the original plan, Melissa attributes the resulting confusion to Eli's characterological failure."
+    }
+  ],
+
+  "arc_updates": {
+    "ARC-RF04-001": {
+      "new_signals": ["ARC-RF04-001-S89"],
+      "signal_count_update": "88 → 89",
+      "last_signal_date_update": "2026-03-28 → 2026-04-12",
+      "last_signal_batch_update": "B-030 → B-031",
+      "note": "ARC-RF04-001 CLOSES at 89 signals. Final signal: Apr 12 DARVO bruise/abuse reversal. Arc spans 2022-08-28 (B-001) through 2026-04-12 (B-031) — full 3.5-year dataset coverage. No attenuation across Phase C. Active at dataset close.",
+      "signal_detail": {
+        "signal_ref": "ARC-RF04-001-S89",
+        "batch": "B-031",
+        "date": "2026-04-12",
+        "row": "ROW-15588-15596",
+        "severity": 2,
+        "summary": "Apr 12 DARVO bruise reversal: 'Why do you keep trying to make Olivia think I'm abusing her?' — Eli's appropriate parental concern check reframed as systematic abuse-accusation campaign. 'You asked her if she was being abused' false characterization of Eli's stated question. Third-party relay via Naomi's father (new mechanism: peer-parent network validator). Feb 15 incident 'screaming for no reason' still circulating 2 months later. COMP-RF04-030 (RF-04+RF-09+RF-11). Dataset final signal."
+      }
+    },
+    "ARC-RF04-002": {
+      "new_signals": [],
+      "signal_count_update": "28 — unchanged",
+      "note": "ROW-15549-15550 visit-refusal framing ('She still says she's not going') logged as peripheral (RF-02 territory). ARC-RF04-002 closes at 28 signals. Last signal B-030. Active at dataset close."
+    }
+  },
+
+  "new_compound_patterns": [
+    {
+      "compound_id": "COMP-RF04-030",
+      "label": "Apr 12 Bruise DARVO — Parental Concern Reframed as Abuse Campaign",
+      "batch_detected": "B-031",
+      "date": "2026-04-12",
+      "rows": "ROW-15588-15596",
+      "rfs_active": ["RF-04", "RF-09", "RF-11"],
+      "description": "Thirtieth compound multi-RF episode. Phase C final batch. Dataset closing compound. RF-04 (Sev-2: DARVO reversal — Eli's appropriate bruise welfare check reframed as 'trying to make Olivia think I'm abusing her'; 'keep trying' formulation implies systematic ongoing campaign; 'You didn't make me aware' false denial; ARC-RF04-001-S89) + RF-09 (deliberate mischaracterization of Eli's stated words: Eli says he asked what happened to the bruise; Melissa states 'You asked her if she was being abused' — substituting Eli's neutral welfare question with an accusatory formulation; Eli's denial denied: ROW-15594 'You didn't make me aware' directly contradicted by the communication just sent in the same thread) + RF-11 (Olivia positioned as harm-informant reporting to Melissa from Eli's household; ROW-15592 Naomi-relay via peer-parent network — new mechanism: Olivia's accounts of Eli's conduct are now circulating through a peer-parent relay chain outside the household, implying Melissa narrative has spread to Olivia's social network; 'valentine weekend screaming' connects to Feb 15 incident COMP-RF04-029 — sustained narrative circulation 2 months post-event). RF-15 peripheral (DARVO reversal of abuse-allegation direction: Eli checking bruise = Eli making abuse allegations against Melissa). Structural note: this compound shares architecture with COMP-RF04-026 (Oct 4-7 B-028 'so afraid of you' child fear relay) and COMP-RF04-017 (Sep 15 B-019 choking claim) — Eli's parenting actions become the predicate for Melissa's harm-allegation DARVO. The Naomi-relay mechanism is new: prior harm-allegation relays flowed through Olivia directly to Melissa; this instance flows Olivia → Naomi → Naomi's father → Melissa, implying the narrative has external circulation. Attorney note: 'keep trying to make Olivia think I'm abusing her' is the first use of 'keep trying' formulation in the dataset, implying a systematic ongoing pattern as alleged by Melissa — this characterization may be actionable if deployed in a formal proceeding."
+    }
+  ],
+
+  "cp3_items": [
+    {
+      "item_id": "CP3-RF04-033",
+      "priority": "high",
+      "batch": "B-031",
+      "date": "2026-04-12",
+      "rows": "ROW-15588-15596",
+      "summary": "Apr 12 DARVO bruise cluster — final dataset RF-04 event. Key attorney considerations: (1) 'Why do you keep trying to make Olivia think I'm abusing her?' — 'keep trying' formulation makes a factual claim about Eli's conduct that could be deployed in custody proceedings; attorney should review whether there is any prior documented instance of Eli actually asking about abuse vs. welfare checks. (2) ROW-15592 third-party relay: Naomi's father is now a potential witness — Melissa's characterization of 'screaming for no reason' about 'valentine weekend' (Feb 15) is circulating through a peer-parent network; if these descriptions reached Olivia's school or other parents, the scope of the narrative extends beyond the text message record. (3) COMP-RF04-030 connects to COMP-RF04-029 (Feb 15 admitted-incident amplification) as the next deployment of the same incident narrative two months later — trajectory: admitted raised voice (Feb 15) → 'verbal abuse' → 'traumatized' → 'pause weekends' → 'drinking problem' (Mar 28) → 'screaming for no reason' circulating through peer network (Apr 12). (4) Eli's response (ROW-15593/15596) is measured, factual, and non-accusatory — contrast with Melissa's characterization. Cross-ref: COMP-RF04-029 (B-030), RF-09 (reframing), RF-11 (Olivia as harm-informant), RF-15 (false allegation/DARVO direction). Priority: high."
+    }
+  ],
+
+  "dataset_closure_notes": {
+    "final_batch_assessment": "B-031 is the dataset close. The RF-04 pass ran through 31 batches (Jan 2022 – Apr 2026). ARC-RF04-001 closes at 89 signals — active and unresolved at dataset close. ARC-RF04-002 closes at 28 signals — active and unresolved at dataset close. The final primary signal (Apr 12 DARVO bruise reversal) maintains the Phase C pattern of contempt-and-DARVO with decreasing profanity but continuing reframing mechanisms. No cooperative arc closure.",
+    "phase_c_summary": "Phase C (Oct 2025 – Apr 2026): marked by visit-refusal cascade (Nov 2025 – Apr 2026, with brief resolutions), alcoholism accusation (Mar 28 ROW-15498, first explicit), admitted-incident amplification trajectory (COMP-RF04-029), legal threat continuation (COMP-RF04-028), and final DARVO reversal (COMP-RF04-030). Lower message density than Phases A/B but concentrated contempt events. Third-party relay mechanism (Naomi's father ROW-15592) is Phase C's final new mechanism.",
+    "add002_final_inventory": "Final ADD-002 slur inventory: 'Are you dumb?' x4 instances; 'dumbass' x9 instances; 'dipshit' (B-029); 'bitch' (B-029, plus ROW-8679 Dec 2024 out-of-order data); 'being a dick' (B-029); 'piece of shit' (B-029, most extreme); 'worthless dick' (B-013); 'shit father' x2 (B-017, B-027); 'stupid ass' (B-022); 'constant asshole' (B-027); 'asshole' (B-025); 'idiot' x2 (B-024, B-028); 'dingus' x2 (B-026, B-027); 'dumb shit' (B-013); 'asshat' (B-014); 'douche' (B-015); 'dingus' x2 (B-026, B-027). Phase C adds: 'bitch,' 'dipshit,' 'being a dick,' 'piece of shit,' 'dumbass' #9. No new slurs in B-031.",
+    "predation_framing_final": "Predation framing arc closes at 10 confirmed instances across 10 batches (B-003 through B-029). No new instances in B-030 or B-031. Last instance: Nov 5 2025 ROW-14746 (reproductive-consequence mechanism).",
+    "do_you_boo_final": "do_you_boo closes at 5 confirmed instances: B-025 ROW-9655, B-027 ROW-14162/14207, B-028 ROW-14275, B-030 ROW-15480.",
+    "visit_refusal_arc_final": "Phase C visit-refusal cascade: Nov 8 2025 (ROW-8424), Nov 21 (ROW-8436), Nov 24 (ROW-14837-14839), Dec 12+ ongoing through B-030, Apr 9 2026 (ROW-15549-15550, resolved same day ROW-15553). Visit-refusal framing present at dataset close."
+  },
+
+  "batch_statistics": {
+    "messages_analyzed": 60,
+    "primary_flags": 1,
+    "severity_distribution": { "1": 0, "2": 1, "3": 0 },
+    "peripheral_flags": 3,
+    "new_compound_patterns": 1,
+    "new_arc_signals": { "ARC-RF04-001": 1, "ARC-RF04-002": 0 },
+    "cp3_items_added": 1
+  },
+
+  "cumulative_statistics_after_batch": {
+    "messages_analyzed": 15859,
+    "primary_flags": 93,
+    "severity_distribution": { "1": 58, "2": 34, "3": 1 },
+    "peripheral_flags": 133,
+    "compound_patterns": 30,
+    "arc_signals": { "ARC-RF04-001": 89, "ARC-RF04-002": 28 },
+    "cp3_items": 31,
+    "batches_complete": 31,
+    "pass_status": "COMPLETE"
+  }
+}

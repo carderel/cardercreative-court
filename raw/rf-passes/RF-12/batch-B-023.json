@@ -1,0 +1,63 @@
+{
+  "batch_id": "B-023",
+  "date_range": {
+    "start": "2025-02-15",
+    "end": "2025-03-03",
+    "note": "date-filtered batch"
+  },
+  "message_count": 244,
+  "analysis_date": "2026-05-05",
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "calibration_addenda_active": [
+    "RF12-ADD-001",
+    "RF12-ADD-002",
+    "RF12-ADD-003",
+    "RF12-ADD-004",
+    "RF12-ADD-005",
+    "RF12-ADD-006",
+    "RF12-ADD-007",
+    "RF12-ADD-008"
+  ],
+  "batch_summary": {
+    "primary_flags": 1,
+    "peripheral_flags": 0,
+    "note": "S-002: 'For the record' documentation language Feb 15 2025 (ROW-9149). ARC-RF12-001 promotes to WATCHING at Signal 1."
+  },
+  "primary_flags": [
+    {
+      "flag_id": "S-002",
+      "severity": "Sev-1",
+      "direction": "Received",
+      "arc": "ARC-RF12-001",
+      "arc_signal": 1,
+      "date": "2025-02-15",
+      "orig_rows": [
+        "9149"
+      ],
+      "messages": [
+        {
+          "orig_row": "9149",
+          "direction": "Received",
+          "date": "2025-02-15",
+          "text": "For the record I'm not saying your floor is dirty. That's her words"
+        }
+      ],
+      "classification": "RF-12 primary Sev-1 \u2014 Explicit 'for the record' documentation language. The phrase marks the message as being composed with an audience in mind beyond Eli \u2014 likely Melissa's attorney or a future GAL/court reviewer. The statement is a clarification of a previous allegation (Olivia reported dirty floor at Eli's), defensively attributed to Olivia rather than Melissa. The 'for the record' framing indicates awareness of how the statement will appear in a legal record. Per ADD-001: no immediate legal event correlation (mid-Feb 2025, 8 months before police report). Sev-1. ARC-RF12-001 Signal 1. ARC-RF12-001 promotes to WATCHING.",
+      "addendum_applied": "ADD-001 (legal timeline correlation \u2014 no immediate legal event; Sev-1). The explicit 'for the record' language is the signal."
+    }
+  ],
+  "peripheral_flags": [],
+  "arc_updates": [
+    {
+      "arc": "ARC-RF12-001",
+      "state": "WATCHING",
+      "signals_cumulative": 1
+    },
+    {
+      "arc": "ARC-RF12-002",
+      "state": "WATCHING",
+      "signals_cumulative": 1
+    }
+  ]
+}

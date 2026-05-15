@@ -1,0 +1,76 @@
+{
+  "checkpoint": "CP2",
+  "rf_pass": "RF-12",
+  "rf_name": "Strategic Communication",
+  "generated": "2026-04-28",
+  "status": "pending",
+  "calibration_batch_summary": {
+    "batch_id": "B-001",
+    "date_range": "2022-01-11 through 2022-10-02",
+    "messages_analyzed": 365,
+    "primary_flags": 0,
+    "peripheral_flags": 0,
+    "tone_assessment": "Cooperative baseline \u2014 pre-awareness period for both parties. B-001 is the Phase A tone profile establishment batch. Zero RF-12 primary signals expected. Triage hot periods 2025-02 and 2025-08 (Phase B) \u2014 consistent with strategic communication emerging after confirmed attorney engagement (Sep 2025, RF-05 S-021). RF-12 is the most analytically subtle pass: genuine communication improvement (Eli's Phase B/C AI-guided shift) must be distinguished from strategic/performative communication (Melissa's potential litigation preparation)."
+  },
+  "calibration_questions": [
+    {
+      "id": "CP2-RF12-Q1",
+      "topic": "Legal dates \u2014 correlation with tone changes",
+      "question": "RF-12 analysis requires correlating communication tone shifts with legal timeline events. Please provide the key legal dates you're aware of, as specifically as possible: (a) When was the divorce finalized? (b) Any hearings, motions, or orders between 2022-2026? (c) When was the GAL appointed (approximate)? (d) Any attorney consultations or engagement dates \u2014 yours or Melissa's? (The RF-05 record shows Melissa mentioned confirmed attorney engagement in Sep 2025 (S-021). Eli's attorney contacts?) (e) Any contempt filings, custody modification filings, or other formal legal actions?",
+      "why_asked": "Tone shifts coinciding with known legal events are the strongest RF-12 signals. Without the legal timeline, strategic communication timing cannot be assessed. This is the most important CP2 question for RF-12.",
+      "classification_impact": "Critical \u2014 legal timeline required before any Severity 2+ RF-12 flags can be confirmed; strategic communication without legal correlation = Sev-1 maximum"
+    },
+    {
+      "id": "CP2-RF12-Q2",
+      "topic": "Melissa's communication tone \u2014 abrupt shifts",
+      "question": "(a) Has Melissa's communication style ever changed suddenly \u2014 not gradually improved, but shifted overnight to a noticeably different register (more formal, more 'reasonable-sounding,' more legalistic)? (b) If yes: when did this happen, and what was happening around that time (legal event, conflict peak, etc.)? (c) Has she ever explicitly referenced 'the record,' 'documented,' 'for the record,' or attorney involvement in routine co-parenting messages (not during actual threat exchanges)? Give examples if you recall.",
+      "why_asked": "Abrupt tone shifts tied to legal events are the primary RF-12 signal. 'For the record' language is a strong indicator of documentation awareness \u2014 crafting messages for a legal audience.",
+      "classification_impact": "High \u2014 confirmed abrupt shift correlated with legal event = Sev-2+ RF-12; 'for the record' language = Sev-1-2 depending on context and frequency"
+    },
+    {
+      "id": "CP2-RF12-Q3",
+      "topic": "Known bait patterns",
+      "question": "The bait-and-switch is RF-12's most significant pattern: Melissa provokes a reaction, then pivots to reasonable tone, capturing your emotional response next to her 'calm' message. (a) Are there specific topics, phrases, or situations that reliably provoke a strong reaction from you \u2014 things Melissa knows will get a rise? (b) Has she ever done something like this: say something that pushed your buttons, then when you responded emotionally, she pivoted to 'see, you're the one being hostile'? (c) The Abby/uncle-niece framing was clearly a button-push topic \u2014 are there others?",
+      "why_asked": "Knowing the bait triggers enables identification of bait-and-switch sequences in the record. The RF-04 record (93 flags) already documents DARVO mechanisms \u2014 RF-12 asks whether these were deliberately set up to capture quotable reactions.",
+      "classification_impact": "High \u2014 identifying known bait triggers enables retroactive identification of bait-and-switch sequences across the full dataset"
+    },
+    {
+      "id": "CP2-RF12-Q4",
+      "topic": "Eli's Phase B/C communication change \u2014 Melissa's adaptation",
+      "question": "You started using AI-guided communication (ChatGPT) around May 2025 (RF-13 ADD-002). (a) Did Melissa seem to notice or react to the change in your communication style? Did she comment on it? (b) Did she seem to adapt \u2014 e.g., try harder to provoke, change tactics, or find new ways to get an emotional response? (c) Are there any instances where you felt like she was specifically trying to get you to break from your AI-guided pattern \u2014 pushing harder on trigger topics, escalating when calm responses weren't working?",
+      "why_asked": "Melissa's response to Eli's genuine communication change is analytically important: if she escalated tactics to try to break the new pattern, that itself is evidence of strategic communication (she is aware of the communication dynamic and adapting to it). This distinguishes her from a party who is simply emotional vs. one who is strategically managing the record.",
+      "classification_impact": "High \u2014 if Melissa adapted tactics in response to Eli's Phase B/C change, it establishes communication-strategy awareness = strong RF-12 indicator"
+    },
+    {
+      "id": "CP2-RF12-Q5",
+      "topic": "Performing reasonableness in context",
+      "question": "(a) Has Melissa ever made an offer that sounded reasonable in text but that you knew, in context, she never intended to follow through on? (b) Has she ever made conciliatory statements in text \u2014 'I want to work together,' 'I'm always willing to cooperate' \u2014 that were directly contradicted by her behavior? Give examples if you recall. (c) Did you ever have the feeling that certain of her messages were written FOR a third party \u2014 like a GAL or attorney \u2014 rather than actually directed at you?",
+      "why_asked": "Performative reasonableness (saying reasonable things for the record while behavior remains hostile) is the core RF-12 finding. The attorney note on RF-12 flags asks: what would a GAL see if shown only this message without the behavioral context?",
+      "classification_impact": "High \u2014 each confirmed performatively-reasonable message is an RF-12 primary flag; pattern of them establishes ARC-RF12-001 Strategic Campaign"
+    }
+  ],
+  "addenda_proposed": [
+    {
+      "id": "RF12-ADD-001-PROPOSED",
+      "title": "Legal Timeline Correlation Rule",
+      "rule_draft": "[PENDING CP2 Q1] For each RF-12 tone shift: note proximity to legal dates (within 30 days = high correlation; 31-90 days = medium; 90+ days = low). Sev-2+ requires high or medium correlation OR multiple indicators. The legal timeline established at CP2 is the anchor for all subsequent tone-shift severity scoring.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF12-ADD-002-PROPOSED",
+      "title": "Eli Phase B/C Genuine Change Rule",
+      "rule_draft": "[PENDING CP2] Eli's communication change from May 2025 (EP-1078 ChatGPT inflection) is GENUINE improvement per RF-13 ADD-002. Do NOT flag Eli's Phase B/C measured, de-escalating responses as RF-12 strategic communication. Only flag Eli's communication as RF-12 if: (1) it contains explicit documentation language ('for the record'); or (2) there is clear evidence of performative reasonableness used to bait a reaction. Melissa's strategic adaptation TO Eli's Phase B/C change IS flaggable.",
+      "status": "pending_cp2"
+    },
+    {
+      "id": "RF12-ADD-003-PROPOSED",
+      "title": "Bait-and-Switch Known Triggers",
+      "rule_draft": "[PENDING CP2 Q3] Known bait triggers to be confirmed at CP2. Pre-identified candidates from Tier 1 record: (1) Abby/uncle-niece framing \u2014 strongest documented trigger; (2) holiday windows (Halloween, Thanksgiving, Christmas) \u2014 multi-year confirmed escalation; (3) logistics/scheduling requests \u2014 RF-03 candidates double as bait topics; (4) legal/contempt references. Each bait trigger confirmed at CP2 generates a detection rule for retroactive bait-and-switch identification.",
+      "status": "pending_cp2"
+    }
+  ],
+  "post_cp2_instructions": {
+    "if_no_reclassification": "Confirm addenda. Initialize ARC-RF12-001 and ARC-RF12-002 at CANDIDATE. Establish tone profile baselines from B-001 through B-003 before flagging tone shifts. Apply bait-switch-index.json schema for each identified sequence. Hot periods 2025-02, 2025-08 are primary signal batches. Legal timeline correlation required for Sev-2+ flags.",
+    "signal_sourcing_note": "RF-12 is cross-RF dependent more than any other pass. At each batch: (1) check for tone shifts against established baseline; (2) check for bait-and-switch sequences using RF-04 DARVO compounds as candidate events; (3) score performative reasonableness for any 'calm' Melissa messages in hostile clusters; (4) correlate with legal timeline when known. Phase A baseline (B-001-B-005) = build profiles. Phase B (B-025+) = primary flagging window."
+  }
+}
